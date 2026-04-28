@@ -7,8 +7,6 @@ type Props = {
   className?: string;
 };
 
-// Per-firm visual identity — deterministic so logos stay consistent.
-// Each firm gets a dark navy gradient + a single accent color.
 const ACCENTS: Record<string, string> = {
   Coastal: "#3052ff",
   "Second Wind": "#0ea5e9",
@@ -37,23 +35,21 @@ export function BrandLogo({
   className = "",
 }: Props) {
   const initials = initialsFor(review.shortName);
-  const accent = ACCENTS[review.shortName] ?? "#3052ff";
+  const accent = ACCENTS[review.shortName] ?? "#1a2540";
 
   return (
     <span
       role="img"
       aria-label={`${review.name} logo`}
-      className={`relative inline-flex items-center justify-center shrink-0 overflow-hidden ${
+      className={`relative inline-flex items-center justify-center shrink-0 overflow-hidden bg-white ${
         rounded ? "rounded-xl" : "rounded-md"
       } ${className}`}
       style={{
         width: size,
         height: size,
-        background: `linear-gradient(135deg, #0f172a 0%, #1e293b 60%, ${accent} 180%)`,
-        boxShadow: `inset 0 0 0 1px rgba(255,255,255,0.08)`,
+        boxShadow: `inset 0 0 0 1px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04)`,
       }}
     >
-      {/* Accent dot in upper right */}
       <span
         aria-hidden
         className="absolute"
@@ -64,15 +60,15 @@ export function BrandLogo({
           height: size * 0.13,
           borderRadius: 999,
           background: accent,
-          boxShadow: `0 0 ${size * 0.25}px ${accent}55`,
         }}
       />
       <span
-        className="font-display text-white font-semibold tracking-tight"
+        className="font-display font-semibold tracking-tight"
         style={{
           fontSize: size * 0.42,
           letterSpacing: "-0.02em",
           lineHeight: 1,
+          color: "#0f172a",
         }}
       >
         {initials}
