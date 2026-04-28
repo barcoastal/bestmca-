@@ -17,7 +17,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mcasettlementreviews.com"),
+  metadataBase: new URL("https://www.mcasettlementreviews.com"),
   title: {
     default:
       "MCA Settlement Reviews — Independent Ratings of MCA Debt Relief Companies",
@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
+  verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
+    : undefined,
 };
 
 export default function RootLayout({

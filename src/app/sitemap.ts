@@ -3,7 +3,7 @@ import { REVIEWS } from "@/data/reviews";
 import { GUIDES } from "@/data/guides";
 import { INDUSTRIES } from "@/data/industries";
 
-const SITE = "https://mcasettlementreviews.com";
+const SITE = "https://www.mcasettlementreviews.com";
 
 const COMPARABLE = [
   "second-wind-consultants",

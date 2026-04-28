@@ -1,6 +1,6 @@
 import type { Review } from "@/data/reviews";
 
-const SITE = "https://mcasettlementreviews.com";
+const SITE = "https://www.mcasettlementreviews.com";
 
 export function reviewSchema(review: Review) {
   return {
