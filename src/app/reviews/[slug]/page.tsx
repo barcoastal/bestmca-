@@ -11,6 +11,10 @@ import { AlternativeCallout } from "@/components/review/AlternativeCallout";
 import { ConcernsList } from "@/components/review/ConcernsList";
 import { TestimonialCarousel } from "@/components/review/TestimonialCarousel";
 import { CaseStudyGrid } from "@/components/review/CaseStudyGrid";
+import { ExternalResources } from "@/components/review/ExternalResources";
+import { PublicReviewSources } from "@/components/review/PublicReviewSources";
+import { CoastalFAQ } from "@/components/review/CoastalFAQ";
+import { BrandLogo } from "@/components/review/BrandLogo";
 import { reviewSchema, aggregateRatingSchema, jsonLd } from "@/lib/schema";
 
 export const dynamicParams = false;
@@ -27,7 +31,32 @@ export async function generateMetadata({
   const { slug } = await params;
   const review = getReviewBySlug(slug);
   if (!review) return {};
-  const title = `${review.name} Review (2026): ${review.score.toFixed(1)}/5 Rating`;
+
+  if (review.isCoastal) {
+    return {
+      title:
+        "Coastal Debt Resolve Reviews 2026: Is Coastal Debt Legit? Complaints, Cost, and Verdict",
+      description:
+        "Independent 2026 review of Coastal Debt Resolve. 4.9/5 rating across 800+ verified reviews, transparent pricing, in-house attorneys. Read pros, cons, complaints, and our complete verdict.",
+      keywords: [
+        "Coastal Debt Resolve reviews",
+        "Coastal Debt Resolve complaints",
+        "Is Coastal Debt Resolve legit",
+        "Coastal Debt review",
+        "Coastal Debt Resolve cost",
+        "Coastal Debt Resolve BBB",
+      ],
+      openGraph: {
+        title: "Coastal Debt Resolve Reviews 2026: Independent Verdict",
+        description:
+          "We reviewed Coastal Debt Resolve and ranked it #1 of 10 MCA settlement firms in 2026. Here is what we found.",
+        type: "article",
+      },
+      alternates: { canonical: `/reviews/${review.slug}` },
+    };
+  }
+
+  const title = `${review.name} Review (2026): ${review.score.toFixed(1)}/5 Rating, Pros, Cons, Complaints`;
   const description = review.oneLineVerdict;
   return {
     title,
@@ -77,10 +106,18 @@ export default async function ReviewPage({
               <span>·</span>
               <span className="text-ink-soft">Ranked #{review.rank}</span>
             </div>
-            <h1 className="mt-4 font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">
-              {review.name} Review
-            </h1>
-            <p className="mt-4 text-lg text-ink-soft leading-relaxed">
+            <div className="mt-5 flex items-center gap-4">
+              <BrandLogo review={review} size={64} />
+              <div>
+                <h1 className="font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">
+                  {review.name} Review
+                </h1>
+                <div className="mt-1 text-sm text-ink-subtle">
+                  {review.websiteLabel}
+                </div>
+              </div>
+            </div>
+            <p className="mt-5 text-lg text-ink-soft leading-relaxed">
               {review.oneLineVerdict}
             </p>
             {isCoastal && (
@@ -175,6 +212,12 @@ export default async function ReviewPage({
             </div>
           </section>
 
+          {/* Public review platforms (every firm) */}
+          <PublicReviewSources review={review} />
+
+          {/* External verification (every firm) */}
+          <ExternalResources review={review} />
+
           {/* Concerns (only for non-Coastal) */}
           {!isCoastal && review.concerns && review.concerns.length > 0 && (
             <ConcernsList concerns={review.concerns} />
@@ -200,6 +243,7 @@ export default async function ReviewPage({
                   </ul>
                 </section>
               )}
+              <CoastalFAQ />
             </>
           )}
 
@@ -239,10 +283,20 @@ export default async function ReviewPage({
               <div className="text-xs uppercase tracking-[0.18em] font-semibold text-ink-subtle">
                 Top-ranked alternative
               </div>
-              <div className="mt-2 font-display text-lg font-semibold text-navy">
-                Coastal Debt Resolve
+              <div className="mt-3 flex items-center gap-3">
+                <BrandLogo
+                  review={{
+                    name: "Coastal Debt Resolve",
+                    shortName: "Coastal",
+                    websiteLabel: "coastaldebt.com",
+                  }}
+                  size={40}
+                />
+                <div className="font-display text-lg font-semibold text-navy">
+                  Coastal Debt Resolve
+                </div>
               </div>
-              <div className="mt-1 flex items-center gap-2">
+              <div className="mt-2 flex items-center gap-2">
                 <span className="font-display text-2xl font-semibold text-navy tabular-nums">
                   4.9
                 </span>

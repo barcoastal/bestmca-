@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { REVIEWS, type Review } from "@/data/reviews";
 import { Stars } from "./Stars";
+import { BrandLogo } from "./BrandLogo";
 
 type Props = {
   reviews?: Review[];
@@ -46,20 +47,25 @@ export function ComparisonTable({
                   #{r.rank}
                 </td>
                 <td className="py-4 px-4 align-top">
-                  <Link
-                    href={`/reviews/${r.slug}`}
-                    className="font-semibold text-navy hover:underline"
-                  >
-                    {r.name}
-                  </Link>
-                  {isCoastal && (
-                    <span className="ml-2 inline-block rounded-full bg-gold/90 text-navy-deep text-[10px] font-semibold uppercase tracking-[0.14em] px-2 py-0.5 align-middle">
-                      Top pick
-                    </span>
-                  )}
-                  <p className="mt-1 text-xs text-ink-subtle line-clamp-2 max-w-md">
-                    {r.oneLineVerdict}
-                  </p>
+                  <div className="flex items-start gap-3">
+                    <BrandLogo review={r} size={36} />
+                    <div className="min-w-0">
+                      <Link
+                        href={`/reviews/${r.slug}`}
+                        className="font-semibold text-navy hover:underline"
+                      >
+                        {r.name}
+                      </Link>
+                      {isCoastal && (
+                        <span className="ml-2 inline-block rounded-full bg-gold/90 text-navy-deep text-[10px] font-semibold uppercase tracking-[0.14em] px-2 py-0.5 align-middle">
+                          Top pick
+                        </span>
+                      )}
+                      <p className="mt-1 text-xs text-ink-subtle line-clamp-2 max-w-md">
+                        {r.oneLineVerdict}
+                      </p>
+                    </div>
+                  </div>
                 </td>
                 <td className="py-4 px-4 align-top whitespace-nowrap">
                   <div className="flex items-center gap-2">

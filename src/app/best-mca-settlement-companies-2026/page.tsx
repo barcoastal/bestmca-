@@ -3,6 +3,7 @@ import { REVIEWS, COASTAL } from "@/data/reviews";
 import { Stars } from "@/components/review/Stars";
 import { ComparisonTable } from "@/components/review/ComparisonTable";
 import { CTABanner } from "@/components/review/CTABanner";
+import { BrandLogo } from "@/components/review/BrandLogo";
 
 export const metadata = {
   title: "Best MCA Settlement Companies of 2026: Top 10 Ranked",
@@ -75,6 +76,7 @@ export default function BestOfPage() {
                     <span className="font-display text-3xl font-semibold text-navy tabular-nums">
                       #{r.rank}
                     </span>
+                    <BrandLogo review={r} size={44} />
                     <h3 className="font-display text-2xl font-semibold text-navy">
                       {r.name}
                     </h3>

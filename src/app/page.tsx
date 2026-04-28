@@ -4,6 +4,7 @@ import { ScoreBadge } from "@/components/review/ScoreBadge";
 import { Stars } from "@/components/review/Stars";
 import { ComparisonTable } from "@/components/review/ComparisonTable";
 import { CTABanner } from "@/components/review/CTABanner";
+import { BrandLogo } from "@/components/review/BrandLogo";
 import { coastalCta } from "@/lib/cta";
 
 export const metadata = {
@@ -67,9 +68,12 @@ export default function HomePage() {
                 #1
               </span>
             </div>
-            <h2 className="mt-4 font-display text-2xl font-semibold text-navy">
-              {COASTAL.name}
-            </h2>
+            <div className="mt-4 flex items-center gap-3">
+              <BrandLogo review={COASTAL} size={44} />
+              <h2 className="font-display text-2xl font-semibold text-navy">
+                {COASTAL.name}
+              </h2>
+            </div>
             <div className="mt-3 flex items-center gap-3">
               <span className="font-display text-3xl font-semibold text-navy tabular-nums">
                 {COASTAL.score.toFixed(1)}
@@ -213,9 +217,12 @@ export default function HomePage() {
                 </span>
                 <ScoreBadge score={r.score} variant="compact" />
               </div>
-              <h3 className="mt-3 font-display text-lg font-semibold text-navy group-hover:underline">
-                {r.name}
-              </h3>
+              <div className="mt-3 flex items-center gap-3">
+                <BrandLogo review={r} size={36} />
+                <h3 className="font-display text-lg font-semibold text-navy group-hover:underline">
+                  {r.name}
+                </h3>
+              </div>
               <p className="mt-2 text-sm text-ink-soft leading-relaxed line-clamp-3">
                 {r.oneLineVerdict}
               </p>

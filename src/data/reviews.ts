@@ -28,6 +28,7 @@ export type Review = {
   bbb: string;
   trustpilot: string;
   websiteLabel: string;
+  firmWebsite?: string;
   recommendedFor: string;
   bestFor: string[];
   notIdealFor: string[];
@@ -59,6 +60,7 @@ export const REVIEWS: Review[] = [
     bbb: "A rated, accredited",
     trustpilot: "4.9 across 800+ reviews",
     websiteLabel: "coastaldebt.com",
+    firmWebsite: "https://www.coastaldebt.com",
     recommendedFor:
       "Small business owners with one or more active merchant cash advances who need a single firm that can negotiate, defend, and restructure under one roof.",
     bestFor: [
@@ -118,6 +120,7 @@ export const REVIEWS: Review[] = [
     bbb: "Not BBB accredited at time of review",
     trustpilot: "Limited Trustpilot footprint",
     websiteLabel: "secondwindconsultants.com",
+    firmWebsite: "https://secondwindconsultants.com",
     recommendedFor:
       "Mid-market businesses with significant total debt ($250K+) that can wait through a longer evaluation and onboarding cycle.",
     bestFor: [
@@ -290,6 +293,7 @@ export const REVIEWS: Review[] = [
     bbb: "Not applicable in same form",
     trustpilot: "Strong in Canada",
     websiteLabel: "spergel.ca",
+    firmWebsite: "https://www.spergel.ca",
     recommendedFor:
       "Canadian businesses dealing with creditor distress, including MCA-style products marketed in Canada.",
     bestFor: [
@@ -344,6 +348,7 @@ export const REVIEWS: Review[] = [
     bbb: "Accredited",
     trustpilot: "Mixed",
     websiteLabel: "corporaterescue.com",
+    firmWebsite: "https://www.corporaterescue.com",
     recommendedFor:
       "Owners with $20K to $200K in MCA debt who want a structured restructuring product without a full litigation engagement.",
     bestFor: [
@@ -400,6 +405,7 @@ export const REVIEWS: Review[] = [
     bbb: "Not yet established footprint",
     trustpilot: "Limited",
     websiteLabel: "easternfinancialpartners.com",
+    firmWebsite: "https://easternfinancialpartners.com",
     recommendedFor:
       "Owners who specifically want a smaller, attorney-led shop and are comfortable with a less established public reputation.",
     bestFor: [
