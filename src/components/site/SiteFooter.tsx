@@ -75,9 +75,10 @@ export function SiteFooter() {
         <div className="mx-auto max-w-6xl px-5 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-ink-subtle">
           <p className="max-w-3xl leading-relaxed">
             <span className="font-medium text-ink-muted">Disclosure:</span> We
-            may receive compensation from companies featured on this site. This
-            does not affect our editorial ratings, which are based on the
-            criteria explained on our{" "}
+            do not accept compensation, referral fees, affiliate payments, or
+            sponsorships from any company featured on this site. This site
+            exists solely to publish real, sourced reviews of MCA settlement
+            firms based on the criteria explained on our{" "}
             <Link
               href="/methodology"
               className="underline underline-offset-2 hover:text-navy"

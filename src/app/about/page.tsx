@@ -52,10 +52,13 @@ export default function AboutPage() {
           Compensation disclosure
         </h2>
         <p>
-          We may receive compensation from firms featured on this site through
-          referral arrangements. Compensation does not influence editorial
-          ratings. Our top-ranked firm earned its position through the same
-          scoring process applied to every other firm on the list. If the
+          We do not accept compensation, referral fees, affiliate payments, or
+          sponsorships from any company featured on this site. There is no
+          paid placement, no pay-to-play, and no firm has bought its way into
+          a higher ranking. This site exists solely to publish real, sourced
+          reviews of MCA settlement firms so small business owners can make an
+          informed choice. Our top-ranked firm earned its position through the
+          same scoring process applied to every other firm on the list. If the
           ratings ever shifted, the order would shift with them.
         </p>
         <h2 className="font-display text-2xl font-semibold text-navy mt-10">

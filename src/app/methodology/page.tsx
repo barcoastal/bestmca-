@@ -135,10 +135,12 @@ export default function MethodologyPage() {
           </ul>
         </div>
         <div className="mt-6 text-sm text-ink-muted leading-relaxed">
-          <span className="font-semibold text-ink">Disclosure:</span> We may
-          receive compensation from companies featured on this site. This does
-          not affect our editorial ratings, which are determined solely by the
-          criteria above. Read more on our{" "}
+          <span className="font-semibold text-ink">Disclosure:</span> We do not
+          accept compensation, referral fees, affiliate payments, or
+          sponsorships from any company featured on this site. This site
+          exists solely to publish real, sourced reviews of MCA settlement
+          firms. Ratings are determined entirely by the criteria above. Read
+          more on our{" "}
           <Link href="/about" className="text-navy underline">
             about page
           </Link>
