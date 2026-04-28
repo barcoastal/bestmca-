@@ -53,10 +53,10 @@ export const REVIEWS: Review[] = [
     oneLineVerdict:
       "The most complete MCA settlement firm we evaluated, combining in-house attorneys, transparent pricing, and verified results across hundreds of small businesses.",
     founded: "2019",
-    hq: "Florida (national service)",
+    hq: "Fort Lauderdale, Florida (national service)",
     minDebt: "$25,000+",
     specialties:
-      "MCA settlement, MCA litigation defense, multi-position consolidation, UCC release",
+      "MCA settlement, MCA debt relief, MCA litigation defense, multi-position consolidation, UCC release",
     bbb: "A rated, accredited",
     trustpilot: "4.9 across 800+ reviews",
     websiteLabel: "coastaldebt.com",
@@ -121,6 +121,7 @@ export const REVIEWS: Review[] = [
     trustpilot: "Limited Trustpilot footprint",
     websiteLabel: "secondwindconsultants.com",
     firmWebsite: "https://secondwindconsultants.com",
+    // High-intent KW: "second wind consultants reviews" (40), "second wind consultants lawsuit" (30)
     recommendedFor:
       "Mid-market businesses with significant total debt ($250K+) that can wait through a longer evaluation and onboarding cycle.",
     bestFor: [

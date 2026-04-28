@@ -9,9 +9,18 @@ import { coastalCta } from "@/lib/cta";
 
 export const metadata = {
   title:
-    "Best MCA Settlement Companies of 2026: Independent Reviews and Rankings",
+    "Best MCA Debt Relief & Settlement Companies of 2026 — Independent Reviews",
   description:
-    "We rated 10 merchant cash advance settlement firms across transparency, results, communication, cost, and litigation defense. See which firms made the top of the list.",
+    "Independent rankings of the best MCA debt relief and merchant cash advance settlement companies in 2026. Compare 10 firms across transparency, results, communication, cost, and litigation defense.",
+  keywords: [
+    "mca debt relief",
+    "mca debt relief reviews",
+    "best mca debt relief companies",
+    "mca settlement",
+    "mca debt settlement",
+    "merchant cash advance settlement",
+    "best mca settlement company",
+  ],
   alternates: { canonical: "/" },
 };
 

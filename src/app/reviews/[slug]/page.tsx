@@ -56,11 +56,18 @@ export async function generateMetadata({
     };
   }
 
-  const title = `${review.name} Review (2026): ${review.score.toFixed(1)}/5 Rating, Pros, Cons, Complaints`;
+  const title = `${review.name} Reviews (2026): ${review.score.toFixed(1)}/5 Rating, Pros, Cons, Lawsuit Risk`;
   const description = review.oneLineVerdict;
   return {
     title,
     description,
+    keywords: [
+      `${review.name.toLowerCase()} reviews`,
+      `${review.name.toLowerCase()} complaints`,
+      `${review.name.toLowerCase()} lawsuit`,
+      `is ${review.name.toLowerCase()} legit`,
+      `${review.name.toLowerCase()} bbb`,
+    ],
     openGraph: { title, description, type: "article" },
     alternates: { canonical: `/reviews/${review.slug}` },
   };
@@ -110,7 +117,8 @@ export default async function ReviewPage({
               <BrandLogo review={review} size={64} />
               <div>
                 <h1 className="font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">
-                  {review.name} Review
+                  {review.name} Reviews
+                  <span className="text-ink-subtle font-normal"> · 2026</span>
                 </h1>
                 <div className="mt-1 text-sm text-ink-subtle">
                   {review.websiteLabel}
