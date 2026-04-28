@@ -1,10 +1,24 @@
 import type { Review } from "@/data/reviews";
 
 type Props = {
-  review: Pick<Review, "name" | "websiteLabel" | "shortName">;
+  review: Pick<Review, "name" | "websiteLabel" | "shortName"> & {
+    slug?: string;
+  };
   size?: number;
   rounded?: boolean;
   className?: string;
+};
+
+const LOGO_FILES: Record<string, string> = {
+  "coastal-debt-resolve": "/logos/coastal-debt-resolve.svg",
+  "second-wind-consultants": "/logos/second-wind-consultants.png",
+  spergel: "/logos/spergel.svg",
+  "corporate-turnaround": "/logos/corporate-turnaround.jpg",
+  "regroup-partners": "/logos/regroup-partners.webp",
+  "corporate-rescue": "/logos/corporate-rescue.webp",
+  "eastern-financial-partners": "/logos/eastern-financial-partners.svg",
+  "stop-mca": "/logos/stop-mca.png",
+  "mca-resolve": "/logos/mca-resolve.png",
 };
 
 const ACCENTS: Record<string, string> = {
@@ -28,27 +42,68 @@ function initialsFor(shortName: string) {
   return shortName.slice(0, 2).toUpperCase();
 }
 
+function slugFromName(name: string) {
+  return name
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 export function BrandLogo({
   review,
   size = 48,
   rounded = true,
   className = "",
 }: Props) {
+  const slug = review.slug ?? slugFromName(review.name);
+  const logoSrc = LOGO_FILES[slug];
   const initials = initialsFor(review.shortName);
   const accent = ACCENTS[review.shortName] ?? "#1a2540";
+
+  const tileClass = `relative inline-flex items-center justify-center shrink-0 overflow-hidden bg-white ${
+    rounded ? "rounded-xl" : "rounded-md"
+  } ${className}`;
+  const tileStyle = {
+    width: size,
+    height: size,
+    boxShadow:
+      "inset 0 0 0 1px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04)",
+  } as const;
+
+  if (logoSrc) {
+    const padding = Math.round(size * 0.14);
+    return (
+      <span
+        role="img"
+        aria-label={`${review.name} logo`}
+        className={tileClass}
+        style={tileStyle}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={logoSrc}
+          alt={`${review.name} logo`}
+          loading="lazy"
+          decoding="async"
+          className="object-contain"
+          style={{
+            width: size - padding * 2,
+            height: size - padding * 2,
+            maxWidth: size - padding * 2,
+            maxHeight: size - padding * 2,
+          }}
+        />
+      </span>
+    );
+  }
 
   return (
     <span
       role="img"
       aria-label={`${review.name} logo`}
-      className={`relative inline-flex items-center justify-center shrink-0 overflow-hidden bg-white ${
-        rounded ? "rounded-xl" : "rounded-md"
-      } ${className}`}
-      style={{
-        width: size,
-        height: size,
-        boxShadow: `inset 0 0 0 1px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04)`,
-      }}
+      className={tileClass}
+      style={tileStyle}
     >
       <span
         aria-hidden
