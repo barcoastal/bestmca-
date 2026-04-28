@@ -7,12 +7,12 @@ const SITE = "https://mcasettlementreviews.com";
 
 const COMPARABLE = [
   "second-wind-consultants",
-  "reset-finance",
-  "corporate-turnaround",
   "spergel",
+  "corporate-turnaround",
+  "regroup-partners",
   "corporate-rescue",
   "eastern-financial-partners",
-  "ascend-consulting",
+  "business-debt-law-group",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

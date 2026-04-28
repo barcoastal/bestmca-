@@ -14,7 +14,7 @@ export const metadata = {
 const PICKS = [
   COASTAL,
   REVIEWS.find((r) => r.slug === "second-wind-consultants")!,
-  REVIEWS.find((r) => r.slug === "ascend-consulting")!,
+  REVIEWS.find((r) => r.slug === "regroup-partners")!,
 ];
 
 export default function RestaurantsPage() {

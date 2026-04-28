@@ -13,6 +13,7 @@ import { TestimonialCarousel } from "@/components/review/TestimonialCarousel";
 import { CaseStudyGrid } from "@/components/review/CaseStudyGrid";
 import { ExternalResources } from "@/components/review/ExternalResources";
 import { PublicReviewSources } from "@/components/review/PublicReviewSources";
+import { CompetitorReviewBoxes } from "@/components/review/CompetitorReviewBoxes";
 import { CoastalFAQ } from "@/components/review/CoastalFAQ";
 import { BrandLogo } from "@/components/review/BrandLogo";
 import { reviewSchema, aggregateRatingSchema, jsonLd } from "@/lib/schema";
@@ -133,6 +134,16 @@ export default async function ReviewPage({
                 Editor&rsquo;s top pick · 2026
               </div>
             )}
+            {review.warning && (
+              <div className="mt-5 rounded-2xl border border-bad/40 bg-bad-soft/40 p-4">
+                <div className="text-xs uppercase tracking-[0.16em] font-semibold text-bad">
+                  Editorial Warning
+                </div>
+                <p className="mt-2 text-sm text-ink-soft leading-relaxed">
+                  {review.warning}
+                </p>
+              </div>
+            )}
           </div>
           <div className="md:justify-self-end">
             <ScoreBadge score={review.score} rank={review.rank} />
@@ -219,6 +230,9 @@ export default async function ReviewPage({
               </ul>
             </div>
           </section>
+
+          {/* Real public review quotes for this firm (when available) */}
+          {!isCoastal && <CompetitorReviewBoxes review={review} />}
 
           {/* Public review platforms (every firm) */}
           <PublicReviewSources review={review} />

@@ -49,7 +49,7 @@ export const INDUSTRIES: Industry[] = [
       "Salon and beauty businesses run on appointment-based cash flow with material weekly variance. A daily MCA pull that is sized off a peak week becomes catastrophic on a slow one. The right firm understands the appointment cycle and negotiates payment structures aligned to actual revenue patterns.",
     whyDifferentSecond:
       "Many salon owners hold personal guarantees on their MCAs, which means a default can put personal credit and household assets at risk. A firm with attorneys on staff matters more here than in industries with cleaner business-personal separation.",
-    picks: pickByName(["Coastal", "Eastern Financial", "Corporate Rescue"]),
+    picks: pickByName(["Coastal", "Eastern Financial", "Regroup"]),
   },
   {
     slug: "mca-debt-relief-for-staffing-companies",
@@ -66,7 +66,7 @@ export const INDUSTRIES: Industry[] = [
       "Staffing operators have a unique exposure: they pay W-2 weekly but collect from clients monthly or longer. MCAs sized off gross billings rather than collections create a structural mismatch. The right firm models cash flow against actual collection cadence, not gross invoicing.",
     whyDifferentSecond:
       "Many staffing MCAs are stacked because the original advance was used to make payroll on a client invoice that arrived late. A firm that understands AR factoring and the difference between billings and collections is essential.",
-    picks: pickByName(["Coastal", "Second Wind", "Reset"]),
+    picks: pickByName(["Coastal", "Second Wind", "Regroup"]),
   },
   {
     slug: "mca-debt-relief-for-security-firms",

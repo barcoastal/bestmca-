@@ -7,8 +7,9 @@ type Props = {
   className?: string;
 };
 
-function logoUrl(domain: string, size: number) {
-  return `https://logo.clearbit.com/${domain}?size=${size * 2}`;
+function googleFavicon(domain: string, size: number) {
+  const px = Math.max(64, size * 2);
+  return `https://www.google.com/s2/favicons?domain=${domain}&sz=${px}`;
 }
 
 export function BrandLogo({
@@ -17,8 +18,9 @@ export function BrandLogo({
   rounded = true,
   className = "",
 }: Props) {
-  const domain = review.websiteLabel.split(",")[0].trim();
+  const domain = review.websiteLabel.split(",")[0].trim().replace(/^www\./, "");
   const showLogo = domain.includes(".");
+
   return (
     <span
       className={`relative inline-flex items-center justify-center bg-white border border-line shrink-0 overflow-hidden ${
@@ -26,23 +28,32 @@ export function BrandLogo({
       } ${className}`}
       style={{ width: size, height: size }}
     >
+      {/* Monogram fallback always rendered behind the image */}
       <span
         aria-hidden
-        className="absolute inset-0 flex items-center justify-center font-display font-semibold text-navy bg-paper-soft"
-        style={{ fontSize: size * 0.42 }}
+        className="absolute inset-0 flex items-center justify-center font-display font-semibold text-white"
+        style={{
+          fontSize: size * 0.46,
+          background: `linear-gradient(135deg, #1a2540 0%, #2c3a5f 100%)`,
+        }}
       >
         {review.shortName.charAt(0)}
       </span>
       {showLogo && (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src={logoUrl(domain, size)}
+          src={googleFavicon(domain, size)}
           alt={`${review.name} logo`}
           width={size}
           height={size}
           loading="lazy"
-          className="relative z-10 object-contain bg-white"
-          style={{ width: size, height: size }}
+          decoding="async"
+          className="relative z-10 object-contain"
+          style={{
+            width: size * 0.7,
+            height: size * 0.7,
+            background: "transparent",
+          }}
         />
       )}
     </span>

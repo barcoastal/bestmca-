@@ -8,12 +8,12 @@ import { Stars } from "@/components/review/Stars";
 
 const COMPARABLE_SLUGS = [
   "second-wind-consultants",
-  "reset-finance",
-  "corporate-turnaround",
   "spergel",
+  "corporate-turnaround",
+  "regroup-partners",
   "corporate-rescue",
   "eastern-financial-partners",
-  "ascend-consulting",
+  "business-debt-law-group",
 ];
 
 export const dynamicParams = false;
