@@ -7,9 +7,27 @@ type Props = {
   className?: string;
 };
 
-function googleFavicon(domain: string, size: number) {
-  const px = Math.max(64, size * 2);
-  return `https://www.google.com/s2/favicons?domain=${domain}&sz=${px}`;
+// Per-firm visual identity — deterministic so logos stay consistent.
+// Each firm gets a dark navy gradient + a single accent color.
+const ACCENTS: Record<string, string> = {
+  Coastal: "#3052ff",
+  "Second Wind": "#0ea5e9",
+  Spergel: "#16a34a",
+  "Corporate Turnaround": "#a16207",
+  Regroup: "#7c3aed",
+  "Corporate Rescue": "#db2777",
+  "Eastern Financial": "#0891b2",
+  BDLG: "#475569",
+  "Stop MCA": "#dc2626",
+  "MCA Resolve": "#9ca3af",
+};
+
+function initialsFor(shortName: string) {
+  const words = shortName.split(/\s+/);
+  if (words.length >= 2) {
+    return (words[0][0] + words[1][0]).toUpperCase();
+  }
+  return shortName.slice(0, 2).toUpperCase();
 }
 
 export function BrandLogo({
@@ -18,44 +36,47 @@ export function BrandLogo({
   rounded = true,
   className = "",
 }: Props) {
-  const domain = review.websiteLabel.split(",")[0].trim().replace(/^www\./, "");
-  const showLogo = domain.includes(".");
+  const initials = initialsFor(review.shortName);
+  const accent = ACCENTS[review.shortName] ?? "#3052ff";
 
   return (
     <span
-      className={`relative inline-flex items-center justify-center bg-white border border-line shrink-0 overflow-hidden ${
+      role="img"
+      aria-label={`${review.name} logo`}
+      className={`relative inline-flex items-center justify-center shrink-0 overflow-hidden ${
         rounded ? "rounded-xl" : "rounded-md"
       } ${className}`}
-      style={{ width: size, height: size }}
+      style={{
+        width: size,
+        height: size,
+        background: `linear-gradient(135deg, #0f172a 0%, #1e293b 60%, ${accent} 180%)`,
+        boxShadow: `inset 0 0 0 1px rgba(255,255,255,0.08)`,
+      }}
     >
-      {/* Monogram fallback always rendered behind the image */}
+      {/* Accent dot in upper right */}
       <span
         aria-hidden
-        className="absolute inset-0 flex items-center justify-center font-display font-semibold text-white"
+        className="absolute"
         style={{
-          fontSize: size * 0.46,
-          background: `linear-gradient(135deg, #1a2540 0%, #2c3a5f 100%)`,
+          top: size * 0.14,
+          right: size * 0.14,
+          width: size * 0.13,
+          height: size * 0.13,
+          borderRadius: 999,
+          background: accent,
+          boxShadow: `0 0 ${size * 0.25}px ${accent}55`,
+        }}
+      />
+      <span
+        className="font-display text-white font-semibold tracking-tight"
+        style={{
+          fontSize: size * 0.42,
+          letterSpacing: "-0.02em",
+          lineHeight: 1,
         }}
       >
-        {review.shortName.charAt(0)}
+        {initials}
       </span>
-      {showLogo && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={googleFavicon(domain, size)}
-          alt={`${review.name} logo`}
-          width={size}
-          height={size}
-          loading="lazy"
-          decoding="async"
-          className="relative z-10 object-contain"
-          style={{
-            width: size * 0.7,
-            height: size * 0.7,
-            background: "transparent",
-          }}
-        />
-      )}
     </span>
   );
 }
