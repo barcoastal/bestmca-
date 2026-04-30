@@ -113,6 +113,7 @@ export const REVIEWS: Review[] = [
       "Public testimonial wall with named clients and business types",
       "Documented case studies across real estate, flooring, food delivery, seafood, and trucking",
       "BBB accredited, A rating",
+      "Sponsor of the 2026 BBB Southeast Florida Torch Awards for Ethics (June 25, 2026)",
     ],
   },
   {

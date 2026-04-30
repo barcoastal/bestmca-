@@ -6,6 +6,7 @@ import { ComparisonTable } from "@/components/review/ComparisonTable";
 import { CTABanner } from "@/components/review/CTABanner";
 import { BrandLogo } from "@/components/review/BrandLogo";
 import { coastalCta } from "@/lib/cta";
+import { NEWS } from "@/data/news";
 
 export const metadata = {
   title:
@@ -240,6 +241,59 @@ export default function HomePage() {
               </div>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* Latest News */}
+      <section className="mx-auto max-w-6xl px-5 pb-8">
+        <header className="mb-6 flex items-end justify-between">
+          <div>
+            <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
+              Latest News
+            </div>
+            <h2 className="mt-2 font-display text-3xl font-semibold text-navy">
+              Industry updates and editorial notes
+            </h2>
+          </div>
+          <Link
+            href="/news"
+            className="hidden sm:inline-flex text-sm font-semibold text-navy hover:underline"
+          >
+            All news →
+          </Link>
+        </header>
+        <div className="grid gap-4 md:grid-cols-2">
+          {NEWS.slice(0, 2).map((n) => {
+            const date = new Date(
+              n.publishedAt + "T00:00:00Z",
+            ).toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+              timeZone: "UTC",
+            });
+            return (
+              <Link
+                key={n.slug}
+                href={`/news/${n.slug}`}
+                className="block rounded-2xl border border-line bg-white p-6 hover:shadow-md transition-shadow"
+              >
+                <div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] font-semibold text-warn">
+                  <span>{n.category}</span>
+                  <span className="text-ink-subtle">·</span>
+                  <time className="text-ink-subtle" dateTime={n.publishedAt}>
+                    {date}
+                  </time>
+                </div>
+                <h3 className="mt-3 font-display text-xl font-semibold text-navy leading-snug">
+                  {n.title}
+                </h3>
+                <p className="mt-2 text-sm text-ink-soft line-clamp-3">
+                  {n.excerpt}
+                </p>
+              </Link>
+            );
+          })}
         </div>
       </section>
 

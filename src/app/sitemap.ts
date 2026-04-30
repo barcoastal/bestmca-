@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { REVIEWS } from "@/data/reviews";
 import { GUIDES } from "@/data/guides";
 import { INDUSTRIES } from "@/data/industries";
+import { NEWS } from "@/data/news";
 
 const SITE = "https://www.mcasettlementreviews.com";
 
@@ -62,5 +63,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [...staticPages, ...reviews, ...compares, ...guides, ...industries];
+  const news: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE}/news`,
+      lastModified: now,
+      priority: 0.7,
+    },
+    ...NEWS.map((n) => ({
+      url: `${SITE}/news/${n.slug}`,
+      lastModified: new Date(n.publishedAt),
+      priority: 0.75,
+    })),
+  ];
+
+  return [
+    ...staticPages,
+    ...reviews,
+    ...compares,
+    ...guides,
+    ...industries,
+    ...news,
+  ];
 }

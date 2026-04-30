@@ -4,6 +4,7 @@ const NAV = [
   { href: "/best-mca-settlement-companies-2026", label: "Best of 2026" },
   { href: "/reviews/coastal-debt-resolve", label: "Reviews" },
   { href: "/guides/what-is-mca-settlement", label: "Guides" },
+  { href: "/news", label: "News" },
   { href: "/methodology", label: "Methodology" },
   { href: "/about", label: "About" },
 ];
