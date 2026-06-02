@@ -25,6 +25,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       priority: 0.95,
     },
+    {
+      url: `${SITE}/mca-settlement-companies-bbb-ratings`,
+      lastModified: now,
+      priority: 0.9,
+    },
     { url: `${SITE}/methodology`, lastModified: now, priority: 0.6 },
     { url: `${SITE}/about`, lastModified: now, priority: 0.5 },
     {
