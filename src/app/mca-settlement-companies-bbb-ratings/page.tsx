@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BBB_RECORDS, BBB_COASTAL, bbbGradeTone, type BBBRecord } from "@/data/bbb";
 import { Stars } from "@/components/review/Stars";
+import { BrandLogo } from "@/components/review/BrandLogo";
 import { CTABanner } from "@/components/review/CTABanner";
 import { jsonLd } from "@/lib/schema";
 
@@ -179,8 +180,6 @@ export default function BBBRatingsPage() {
     })),
   };
 
-  const others = BBB_RECORDS.filter((r) => !r.isCoastal);
-
   return (
     <article className="bg-paper">
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(faqSchema)} />
@@ -206,85 +205,73 @@ export default function BBBRatingsPage() {
         </div>
       </header>
 
-      {/* Featured: Coastal */}
-      <section className="mx-auto max-w-5xl px-5 pt-14">
-        <div className="relative overflow-hidden rounded-3xl border border-gold bg-gold-soft/30 p-8 md:p-10">
-          <div
-            aria-hidden
-            className="absolute -top-16 -right-16 h-56 w-56 rounded-full bg-gold/15 blur-3xl"
-          />
-          <div className="relative">
-            <div className="flex items-start justify-between gap-6 flex-wrap">
-              <div className="min-w-0">
-                <span className="rounded-full bg-gold text-navy-deep text-[10px] font-semibold uppercase tracking-[0.16em] px-3 py-1">
-                  Our #1 Pick · Best BBB Standing
-                </span>
-                <h2 className="mt-4 font-display text-3xl md:text-4xl font-semibold text-navy">
-                  {BBB_COASTAL.name}
-                </h2>
-                <div className="mt-3">
-                  <AccreditationPill record={BBB_COASTAL} />
-                </div>
-              </div>
-              <div className="flex flex-col items-center gap-1.5 shrink-0">
-                <GradeBadge grade={BBB_COASTAL.grade} size="lg" />
-                <span className="text-[10px] uppercase tracking-[0.16em] text-ink-subtle font-semibold">
-                  BBB Grade
-                </span>
-              </div>
-            </div>
-            <p className="mt-5 text-ink-soft leading-relaxed max-w-3xl">
-              {BBB_COASTAL.takeaway}
-            </p>
-            <div className="mt-5">
-              <MetaRow record={BBB_COASTAL} />
-            </div>
-            <CardLinks record={BBB_COASTAL} />
-          </div>
-        </div>
-      </section>
-
-      {/* The rest, as boxes */}
+      {/* Stacked chart: one firm per row, ranked top to bottom */}
       <section className="mx-auto max-w-5xl px-5 py-12">
-        <h2 className="font-display text-2xl font-semibold text-navy mb-6">
-          The rest of the field
-        </h2>
-        <div className="grid gap-5 md:grid-cols-2">
-          {others.map((r) => (
+        <div className="space-y-4">
+          {BBB_RECORDS.map((r, i) => (
             <div
               key={r.name}
-              className="flex flex-col rounded-2xl border border-line bg-white p-6 transition-shadow hover:shadow-md"
+              className={`rounded-2xl border p-6 md:p-7 transition-shadow hover:shadow-md ${
+                r.isCoastal
+                  ? "border-gold bg-gold-soft/30"
+                  : "border-line bg-white"
+              }`}
             >
-              <div className="flex items-start justify-between gap-4">
-                <div className="min-w-0">
-                  <h3 className="font-display text-xl font-semibold text-navy leading-snug">
-                    {r.name}
-                  </h3>
-                  <div className="mt-2">
-                    <AccreditationPill record={r} />
+              <div className="flex items-start gap-4 md:gap-5">
+                <span className="font-display text-2xl md:text-3xl font-semibold text-ink-subtle tabular-nums leading-none pt-1 w-7 shrink-0">
+                  {i + 1}
+                </span>
+                <BrandLogo
+                  review={{
+                    name: r.name,
+                    shortName: r.shortName,
+                    slug: r.slug,
+                    websiteLabel: "",
+                  }}
+                  size={56}
+                />
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-start justify-between gap-4 flex-wrap">
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h3 className="font-display text-xl md:text-2xl font-semibold text-navy leading-snug">
+                          {r.name}
+                        </h3>
+                        {r.isCoastal && (
+                          <span className="rounded-full bg-gold text-navy-deep text-[9px] font-semibold uppercase tracking-[0.14em] px-2 py-0.5">
+                            Our #1
+                          </span>
+                        )}
+                      </div>
+                      <div className="mt-2 flex flex-wrap items-center gap-2">
+                        <AccreditationPill record={r} />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-center gap-1 shrink-0">
+                      <GradeBadge grade={r.grade} size="lg" />
+                      <span className="text-[9px] uppercase tracking-[0.16em] text-ink-subtle font-semibold">
+                        BBB Grade
+                      </span>
+                    </div>
                   </div>
+
+                  <div className="mt-3">
+                    <MetaRow record={r} />
+                  </div>
+
+                  <p className="mt-3 text-sm text-ink-soft leading-relaxed">
+                    {r.takeaway}
+                  </p>
+
+                  {r.entityNote && (
+                    <p className="mt-3 text-xs text-ink-muted italic">
+                      {r.entityNote}
+                    </p>
+                  )}
+
+                  <Quotes record={r} />
+                  <CardLinks record={r} />
                 </div>
-                <GradeBadge grade={r.grade} size="lg" />
-              </div>
-
-              <div className="mt-4">
-                <MetaRow record={r} />
-              </div>
-
-              <p className="mt-4 text-sm text-ink-soft leading-relaxed">
-                {r.takeaway}
-              </p>
-
-              {r.entityNote && (
-                <p className="mt-3 text-xs text-ink-muted italic">
-                  {r.entityNote}
-                </p>
-              )}
-
-              <Quotes record={r} />
-
-              <div className="mt-auto">
-                <CardLinks record={r} />
               </div>
             </div>
           ))}
