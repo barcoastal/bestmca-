@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BBB_RECORDS, BBB_COASTAL, bbbGradeTone, type BBBRecord } from "@/data/bbb";
 import { Stars } from "@/components/review/Stars";
 import { BrandLogo } from "@/components/review/BrandLogo";
+import { BBBSeal } from "@/components/review/BBBSeal";
 import { CTABanner } from "@/components/review/CTABanner";
 import { jsonLd } from "@/lib/schema";
 
@@ -270,6 +271,13 @@ export default function BBBRatingsPage() {
                   )}
 
                   <Quotes record={r} />
+
+                  {r.isCoastal && (
+                    <div className="mt-4">
+                      <BBBSeal campaign="bbb-seal-coastal-row" />
+                    </div>
+                  )}
+
                   <CardLinks record={r} />
                 </div>
               </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BBBSeal } from "@/components/review/BBBSeal";
 
 export function SiteFooter() {
   return (
@@ -13,6 +14,13 @@ export function SiteFooter() {
             and restructuring companies. We rate firms across transparency,
             results, communication, cost, and litigation defense.
           </p>
+          <div className="mt-5">
+            <BBBSeal campaign="bbb-seal-footer" />
+            <p className="mt-2 text-[11px] text-ink-subtle max-w-xs leading-relaxed">
+              Our #1 rated firm, Coastal Debt Resolve, is BBB Accredited with an
+              A+ rating.
+            </p>
+          </div>
         </div>
         <div>
           <div className="text-xs uppercase tracking-[0.18em] text-ink-subtle font-medium">
