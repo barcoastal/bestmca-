@@ -53,7 +53,7 @@ export const BBB_RECORDS: BBBRecord[] = [
     profileUrl:
       "https://www.bbb.org/us/fl/fort-lauderdale/profile/debt-relief-services/coastal-debt-resolve-0633-92025913",
     takeaway:
-      "The only firm here that is both BBB Accredited and rated A+. Complaint volume is the highest in the table, but that tracks its client base, the largest in this comparison, and BBB keeps it at A+ because the firm responds to and resolves complaints. Accreditation requires that responsiveness; an F-rated firm with two ignored complaints does not have it.",
+      "The only firm here that is both BBB Accredited and rated A+. BBB keeps it at A+ because the firm responds to and resolves complaints. Accreditation requires that responsiveness; an F-rated firm with two ignored complaints does not have it.",
     quotes: [],
   },
   {
