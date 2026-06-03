@@ -40,6 +40,22 @@ export default function AboutPage() {
           for the criteria and sources.
         </p>
         <h2 className="font-display text-2xl font-semibold text-navy mt-10">
+          Who writes these reviews
+        </h2>
+        <p>
+          Reviews are produced by the MCA Settlement Reviews editorial team. Each
+          firm is researched and scored against the same five-category framework,
+          then a second pass cross-checks the verdict against third-party records,
+          the firm&rsquo;s own contract and marketing language, public client
+          commentary, and its verified Better Business Bureau profile before the
+          review is published. We re-verify BBB grades, accreditation status, and
+          review counts directly from{" "}
+          <span className="font-medium text-ink">bbb.org</span> rather than
+          repeating self-reported figures, and we date every update. When a firm
+          disputes something factual, we re-check the source and correct the
+          record.
+        </p>
+        <h2 className="font-display text-2xl font-semibold text-navy mt-10">
           What we are not
         </h2>
         <p>

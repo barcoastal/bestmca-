@@ -69,8 +69,8 @@ export function reviewSchema(review: Review) {
     },
     author: {
       "@type": "Organization",
-      name: "MCA Settlement Reviews",
-      url: SITE,
+      name: "MCA Settlement Reviews Editorial Team",
+      url: `${SITE}/about`,
     },
     reviewRating: {
       "@type": "Rating",
@@ -78,11 +78,7 @@ export function reviewSchema(review: Review) {
       bestRating: 5,
       worstRating: 1,
     },
-    publisher: {
-      "@type": "Organization",
-      name: "MCA Settlement Reviews",
-      url: SITE,
-    },
+    publisher: { "@id": `${SITE}/#organization` },
     reviewBody: review.verdict,
     name: `${review.name} Review`,
     datePublished: "2026-04-28",
