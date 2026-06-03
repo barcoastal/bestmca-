@@ -14,6 +14,7 @@ export type BBBQuote = {
 
 export type BBBRecord = {
   slug?: string; // links to /reviews/[slug] when we have a full review
+  logoSlug?: string; // overrides which brand logo to show (defaults to slug)
   name: string;
   shortName: string;
   isCoastal?: boolean;
@@ -252,6 +253,7 @@ export const BBB_RECORDS: BBBRecord[] = [
     ],
   },
   {
+    logoSlug: "corporate-rescue",
     name: "Corporate Rescue Advisors, LLC",
     shortName: "Corporate Rescue Advisors",
     accreditation: "not-accredited",
@@ -262,8 +264,6 @@ export const BBB_RECORDS: BBBRecord[] = [
     hq: "Boca Raton, FL",
     profileUrl:
       "https://www.bbb.org/us/fl/boca-raton/profile/financial-consultants/corporate-rescue-advisors-llc-0633-92053458",
-    entityNote:
-      "A brand-new entity (BBB file opened Aug 2025). Not to be confused with corporaterescue.com, a separate, older firm.",
     takeaway:
       "The worst BBB record in this comparison: an F grade, not accredited, in business less than a year, and two complaints the firm simply failed to respond to. The grade is low precisely because of that non-response.",
     quotes: [
@@ -272,18 +272,6 @@ export const BBB_RECORDS: BBBRecord[] = [
         sentiment: "negative",
       },
     ],
-  },
-  {
-    slug: "corporate-rescue",
-    name: "Corporate Rescue",
-    shortName: "Corporate Rescue",
-    accreditation: "none",
-    grade: "No profile",
-    hasProfile: false,
-    hq: "Red Bank, NJ",
-    takeaway:
-      "The corporaterescue.com firm (operating since 2016) has no BBB profile at all, which means no independently tracked rating, reviews, or complaint history to check before signing.",
-    quotes: [],
   },
   {
     slug: "business-debt-law-group",

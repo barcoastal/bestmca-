@@ -226,7 +226,7 @@ export default function BBBRatingsPage() {
                   review={{
                     name: r.name,
                     shortName: r.shortName,
-                    slug: r.slug,
+                    slug: r.logoSlug ?? r.slug,
                     websiteLabel: "",
                   }}
                   size={56}
