@@ -112,6 +112,14 @@ export default async function GuidePage({
               </Link>
             </li>
           ))}
+          <li>
+            <Link
+              href="/mca-settlement-companies-bbb-ratings"
+              className="text-navy hover:underline"
+            >
+              Compare every MCA settlement company by its real BBB rating
+            </Link>
+          </li>
         </ul>
       </section>
     </article>

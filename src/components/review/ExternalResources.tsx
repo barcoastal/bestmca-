@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Review } from "@/data/reviews";
 
 type Props = {
@@ -63,6 +64,16 @@ export function ExternalResources({ review }: Props) {
           </li>
         ))}
       </ul>
+      <p className="mt-5 text-sm text-ink-muted">
+        See how {review.shortName} stacks up against every firm we cover in our{" "}
+        <Link
+          href="/mca-settlement-companies-bbb-ratings"
+          className="font-semibold text-navy underline underline-offset-2"
+        >
+          MCA settlement companies BBB ratings comparison
+        </Link>
+        .
+      </p>
     </section>
   );
 }

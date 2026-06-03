@@ -170,6 +170,9 @@ const FAQ = [
   },
 ];
 
+const SITE = "https://www.mcasettlementreviews.com";
+const PAGE_URL = `${SITE}/mca-settlement-companies-bbb-ratings`;
+
 export default function BBBRatingsPage() {
   const faqSchema = {
     "@context": "https://schema.org",
@@ -181,9 +184,62 @@ export default function BBBRatingsPage() {
     })),
   };
 
+  // Ranked ItemList of every firm's BBB standing. Each item carries a nested
+  // Review with the BBB letter grade so the ranking is machine-readable.
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "MCA Settlement Companies Ranked by BBB Record",
+    description:
+      "Merchant cash advance settlement and debt-relief firms ranked by their verified Better Business Bureau record: accreditation status, letter grade, and customer-review average.",
+    url: PAGE_URL,
+    numberOfItems: BBB_RECORDS.length,
+    itemListOrder: "https://schema.org/ItemListOrderDescending",
+    itemListElement: BBB_RECORDS.map((r, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Organization",
+        name: r.name,
+        ...(r.profileUrl ? { url: r.profileUrl } : {}),
+        ...(typeof r.starRating === "number" && r.reviewCount
+          ? {
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: r.starRating,
+                bestRating: 5,
+                worstRating: 1,
+                reviewCount: r.reviewCount,
+              },
+            }
+          : {}),
+        review: {
+          "@type": "Review",
+          author: { "@type": "Organization", name: "MCA Settlement Reviews" },
+          reviewBody: r.takeaway,
+          ...(r.hasProfile
+            ? {
+                name: `${r.name} BBB record: ${r.grade}${
+                  r.accreditation === "accredited"
+                    ? ", BBB Accredited"
+                    : r.accreditation === "not-accredited"
+                      ? ", not accredited"
+                      : ""
+                }`,
+              }
+            : { name: `${r.name}: no BBB profile` }),
+        },
+      },
+    })),
+  };
+
   return (
     <article className="bg-paper">
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(faqSchema)} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLd(itemListSchema)}
+      />
 
       <header className="border-b border-line bg-paper-soft">
         <div className="mx-auto max-w-5xl px-5 py-16">
@@ -206,8 +262,33 @@ export default function BBBRatingsPage() {
         </div>
       </header>
 
+      {/* How to read a BBB grade */}
+      <section className="mx-auto max-w-5xl px-5 pt-12">
+        <div className="rounded-2xl border border-line bg-paper-soft p-7">
+          <h2 className="font-display text-2xl font-semibold text-navy">
+            How to read a BBB grade
+          </h2>
+          <p className="mt-3 text-ink-soft leading-relaxed">
+            The Better Business Bureau scores a business from A+ down to F, and
+            separately marks whether it is{" "}
+            <span className="font-semibold text-navy">BBB Accredited</span>.
+            Those two signals matter more than raw complaint counts, which simply
+            scale with how many clients a firm serves. Accreditation requires a
+            company to meet BBB standards and respond to complaints, so a firm
+            that is accredited and rated A+ has both passed the bar and stayed
+            responsive. A firm that is not accredited, or carries a C, D, or F,
+            has not. Among MCA settlement companies, that gap is wide: a few hold
+            A+ accredited records, while others sit at B, F, or have no BBB
+            profile at all.
+          </p>
+        </div>
+      </section>
+
       {/* Stacked chart: one firm per row, ranked top to bottom */}
       <section className="mx-auto max-w-5xl px-5 py-12">
+        <h2 className="font-display text-3xl font-semibold text-navy mb-7">
+          Every MCA settlement company&apos;s BBB rating, ranked
+        </h2>
         <div className="space-y-4">
           {BBB_RECORDS.map((r, i) => (
             <div

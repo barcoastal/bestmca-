@@ -59,7 +59,14 @@ export default function BestOfPage() {
           <Link href="/methodology" className="text-navy underline">
             methodology page
           </Link>
-          .
+          . You can also compare every firm by its{" "}
+          <Link
+            href="/mca-settlement-companies-bbb-ratings"
+            className="text-navy underline"
+          >
+            real Better Business Bureau rating
+          </Link>
+          , verified directly from bbb.org.
         </p>
       </section>
 
