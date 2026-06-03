@@ -3,6 +3,7 @@ import { Inter, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
+import { organizationSchema, websiteSchema, jsonLd } from "@/lib/schema";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -45,6 +46,14 @@ export default function RootLayout({
       className={`${inter.variable} ${sourceSerif.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-paper text-ink">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLd(organizationSchema())}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLd(websiteSchema())}
+        />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />

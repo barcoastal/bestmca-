@@ -4,6 +4,7 @@ import { Stars } from "@/components/review/Stars";
 import { BrandLogo } from "@/components/review/BrandLogo";
 import { BBBSeal } from "@/components/review/BBBSeal";
 import { CTABanner } from "@/components/review/CTABanner";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { jsonLd } from "@/lib/schema";
 
 export const metadata = {
@@ -243,6 +244,13 @@ export default function BBBRatingsPage() {
 
       <header className="border-b border-line bg-paper-soft">
         <div className="mx-auto max-w-5xl px-5 py-16">
+          <div className="mb-5">
+            <Breadcrumbs
+              items={[
+                { name: "BBB Ratings", path: "/mca-settlement-companies-bbb-ratings" },
+              ]}
+            />
+          </div>
           <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
             Verified BBB Records · {VERIFIED_DATE}
           </div>

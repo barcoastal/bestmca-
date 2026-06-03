@@ -16,7 +16,12 @@ import { PublicReviewSources } from "@/components/review/PublicReviewSources";
 import { CompetitorReviewBoxes } from "@/components/review/CompetitorReviewBoxes";
 import { CoastalFAQ } from "@/components/review/CoastalFAQ";
 import { BrandLogo } from "@/components/review/BrandLogo";
-import { reviewSchema, aggregateRatingSchema, jsonLd } from "@/lib/schema";
+import {
+  reviewSchema,
+  aggregateRatingSchema,
+  breadcrumbSchema,
+  jsonLd,
+} from "@/lib/schema";
 
 export const dynamicParams = false;
 
@@ -94,6 +99,15 @@ export default async function ReviewPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLd(aggregateRatingSchema(review))}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLd(
+          breadcrumbSchema([
+            { name: "Best Companies 2026", path: "/best-mca-settlement-companies-2026" },
+            { name: review.name, path: `/reviews/${review.slug}` },
+          ]),
+        )}
       />
 
       {/* Hero */}

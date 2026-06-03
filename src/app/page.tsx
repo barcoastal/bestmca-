@@ -69,7 +69,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-5 pt-16 pb-20 grid gap-12 md:grid-cols-[1.4fr_1fr] items-center">
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
-              2026 Independent Review · Updated April 2026
+              2026 Independent Review · Updated June 2026
             </div>
             <h1 className="mt-4 font-display text-4xl md:text-6xl font-semibold text-navy leading-[1.05] tracking-tight">
               The best MCA settlement companies of 2026, ranked by people who

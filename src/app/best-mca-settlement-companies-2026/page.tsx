@@ -4,6 +4,7 @@ import { Stars } from "@/components/review/Stars";
 import { ComparisonTable } from "@/components/review/ComparisonTable";
 import { CTABanner } from "@/components/review/CTABanner";
 import { BrandLogo } from "@/components/review/BrandLogo";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 
 export const metadata = {
   title:
@@ -26,6 +27,11 @@ export default function BestOfPage() {
     <article className="bg-paper">
       <header className="border-b border-line bg-paper-soft">
         <div className="mx-auto max-w-5xl px-5 py-16">
+          <div className="mb-5">
+            <Breadcrumbs
+              items={[{ name: "Best Companies 2026", path: "/best-mca-settlement-companies-2026" }]}
+            />
+          </div>
           <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
             2026 Independent Ranking
           </div>
