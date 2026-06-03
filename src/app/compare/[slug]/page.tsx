@@ -6,20 +6,10 @@ import { HeadToHeadTable } from "@/components/review/HeadToHeadTable";
 import { CTABanner } from "@/components/review/CTABanner";
 import { Stars } from "@/components/review/Stars";
 
-const COMPARABLE_SLUGS = [
-  "second-wind-consultants",
-  "spergel",
-  "corporate-turnaround",
-  "regroup-partners",
-  "corporate-rescue",
-  "eastern-financial-partners",
-  "business-debt-law-group",
-];
-
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return COMPARABLE_SLUGS.map((s) => ({ slug: `coastal-debt-vs-${s}` }));
+  return COMPETITORS.map((c) => ({ slug: `coastal-debt-vs-${c.slug}` }));
 }
 
 function parseCompareSlug(slug: string) {

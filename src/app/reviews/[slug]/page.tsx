@@ -148,6 +148,14 @@ export default async function ReviewPage({
                 Editor&rsquo;s top pick · 2026
               </div>
             )}
+            {!isCoastal && (
+              <Link
+                href={`/legit/${review.slug}`}
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-navy hover:underline"
+              >
+                Is {review.shortName} legit or a scam? Read our verdict →
+              </Link>
+            )}
             {review.warning && (
               <div className="mt-5 rounded-2xl border border-bad/40 bg-bad-soft/40 p-4">
                 <div className="text-xs uppercase tracking-[0.16em] font-semibold text-bad">

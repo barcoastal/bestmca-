@@ -1,20 +1,12 @@
 import type { MetadataRoute } from "next";
-import { REVIEWS } from "@/data/reviews";
+import { REVIEWS, COMPETITORS } from "@/data/reviews";
 import { GUIDES } from "@/data/guides";
 import { INDUSTRIES } from "@/data/industries";
 import { NEWS } from "@/data/news";
 
 const SITE = "https://www.mcasettlementreviews.com";
 
-const COMPARABLE = [
-  "second-wind-consultants",
-  "spergel",
-  "corporate-turnaround",
-  "regroup-partners",
-  "corporate-rescue",
-  "eastern-financial-partners",
-  "business-debt-law-group",
-];
+const COMPARABLE = COMPETITORS.map((c) => c.slug);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -56,6 +48,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const legit: MetadataRoute.Sitemap = COMPETITORS.map((c) => ({
+    url: `${SITE}/legit/${c.slug}`,
+    lastModified: now,
+    priority: 0.75,
+  }));
+
   const guides: MetadataRoute.Sitemap = GUIDES.map((g) => ({
     url: `${SITE}/guides/${g.slug}`,
     lastModified: now,
@@ -85,6 +83,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticPages,
     ...reviews,
     ...compares,
+    ...legit,
     ...guides,
     ...industries,
     ...news,
