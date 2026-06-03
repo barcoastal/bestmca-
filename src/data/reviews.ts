@@ -67,7 +67,7 @@ export const REVIEWS: Review[] = [
     minDebt: "$25,000+",
     specialties:
       "MCA settlement, MCA debt relief, MCA litigation defense, multi-position consolidation, UCC release",
-    bbb: "A rated, accredited",
+    bbb: "A+ rated, accredited",
     trustpilot: "4.9 across 800+ reviews",
     websiteLabel: "coastaldebt.com",
     firmWebsite: "https://www.coastaldebt.com",
@@ -112,7 +112,7 @@ export const REVIEWS: Review[] = [
       "800+ five-star reviews on Trustpilot",
       "Public testimonial wall with named clients and business types",
       "Documented case studies across real estate, flooring, food delivery, seafood, and trucking",
-      "BBB accredited, A rating",
+      "BBB accredited, A+ rating",
       "Sponsor of the 2026 BBB Southeast Florida Torch Awards for Ethics (June 25, 2026)",
     ],
   },

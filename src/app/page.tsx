@@ -5,6 +5,7 @@ import { Stars } from "@/components/review/Stars";
 import { RankingChart } from "@/components/review/RankingChart";
 import { CTABanner } from "@/components/review/CTABanner";
 import { BrandLogo } from "@/components/review/BrandLogo";
+import { BBBSeal } from "@/components/review/BBBSeal";
 import { coastalCta } from "@/lib/cta";
 import { NEWS } from "@/data/news";
 
@@ -25,9 +26,44 @@ export const metadata = {
   alternates: { canonical: "/" },
 };
 
+const HOME_FAQ = [
+  {
+    q: "What is MCA settlement?",
+    a: "MCA settlement is the process of negotiating with a merchant cash advance funder to reduce the total owed, restructure the daily or weekly payment, or release a UCC lien. Because MCAs are structured as purchases of future receivables rather than loans, they need a different approach than ordinary debt relief.",
+  },
+  {
+    q: "How do you rank the companies?",
+    a: "Each firm is scored across five categories: transparency and disclosures, settlement results, client communication, cost and fee structure, and litigation defense capability. We read the contracts, check public client commentary, and verify third-party records on BBB, Trustpilot, and court filings. We do not accept compensation, referral fees, or sponsorships from any firm featured.",
+  },
+  {
+    q: "Which MCA settlement company has the best BBB rating?",
+    a: "Coastal Debt Resolve is the only firm in our comparison that is both BBB Accredited and rated A+. You can see every firm's verified BBB grade, accreditation status, and customer-review average on our BBB ratings comparison page.",
+  },
+  {
+    q: "Is MCA settlement the same as bankruptcy?",
+    a: "No. Settlement negotiates down what you owe while keeping the business operating and usually avoids the long-term credit and public-record consequences of bankruptcy. Bankruptcy is a legal proceeding of last resort. For many small businesses with active MCAs, settlement or restructuring resolves the problem without filing.",
+  },
+];
+
 export default function HomePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: HOME_FAQ.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       {/* Hero */}
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 pt-16 pb-20 grid gap-12 md:grid-cols-[1.4fr_1fr] items-center">
@@ -155,6 +191,65 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* BBB record band */}
+      <section className="bg-paper-soft border-y border-line">
+        <div className="mx-auto max-w-6xl px-5 py-14 grid gap-10 md:grid-cols-[1.3fr_1fr] items-center">
+          <div>
+            <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
+              Verified, not self-reported
+            </div>
+            <h2 className="mt-3 font-display text-3xl md:text-4xl font-semibold text-navy leading-tight">
+              We pulled every firm&rsquo;s real BBB record
+            </h2>
+            <p className="mt-4 text-base text-ink-soft leading-relaxed max-w-xl">
+              Accreditation status, letter grade, and customer-review average for
+              every MCA settlement company we cover, read directly from bbb.org.
+              The spread is wide: a few hold A+ accredited records, while others
+              sit at B, F, or have no BBB profile at all.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              <GradeChip grade="A+" tone="good" label="Coastal Debt Resolve" />
+              <GradeChip grade="B" tone="ok" label="MCA Resolve" />
+              <GradeChip grade="F" tone="bad" label="Corporate Rescue Advisors" />
+            </div>
+            <Link
+              href="/mca-settlement-companies-bbb-ratings"
+              className="mt-7 inline-flex items-center justify-center rounded-full bg-navy text-white px-6 py-3 text-sm font-semibold hover:bg-navy-deep transition-colors"
+            >
+              Compare all BBB ratings →
+            </Link>
+          </div>
+          <div className="rounded-3xl border border-line bg-white p-7 shadow-sm">
+            <div className="text-[10px] uppercase tracking-[0.22em] font-semibold text-warn">
+              Our #1 pick
+            </div>
+            <div className="mt-3 flex items-center gap-3">
+              <BrandLogo review={COASTAL} size={44} />
+              <div className="font-display text-xl font-semibold text-navy">
+                {COASTAL.name}
+              </div>
+            </div>
+            <div className="mt-4 flex items-center gap-3">
+              <span className="inline-flex items-center justify-center rounded-xl bg-win-soft text-win font-display text-2xl font-semibold px-3 py-1.5">
+                A+
+              </span>
+              <div className="text-sm text-ink-soft leading-snug">
+                BBB Accredited
+                <br />
+                <span className="text-ink-subtle">since February 2024</span>
+              </div>
+            </div>
+            <p className="mt-4 text-sm text-ink-muted leading-relaxed">
+              The only firm in our comparison that is both BBB Accredited and
+              rated A+.
+            </p>
+            <div className="mt-5">
+              <BBBSeal campaign="homepage-bbb-band" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why we rank Coastal #1 */}
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-6xl px-5 py-16 grid gap-12 md:grid-cols-2 items-start">
@@ -186,6 +281,9 @@ export default function HomePage() {
             >
               Get a free MCA review →
             </Link>
+            <div className="mt-7">
+              <BBBSeal campaign="homepage-coastal-seal" />
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
@@ -193,7 +291,7 @@ export default function HomePage() {
               { label: "Trustpilot reviews", value: "800+" },
               { label: "Min debt", value: "$25K" },
               { label: "In-house attorneys", value: "Yes" },
-              { label: "BBB", value: "A, accredited" },
+              { label: "BBB", value: "A+, accredited" },
               { label: "Free initial review", value: "Yes" },
             ].map((s) => (
               <div
@@ -305,11 +403,66 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="mx-auto max-w-3xl px-5 py-16">
+        <header className="mb-8">
+          <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
+            Common questions
+          </div>
+          <h2 className="mt-2 font-display text-3xl md:text-4xl font-semibold text-navy">
+            MCA settlement, answered
+          </h2>
+        </header>
+        <div className="space-y-4">
+          {HOME_FAQ.map((f) => (
+            <details
+              key={f.q}
+              className="group rounded-xl border border-line bg-white p-5"
+            >
+              <summary className="cursor-pointer list-none font-semibold text-navy flex items-center justify-between gap-4">
+                {f.q}
+                <span className="text-ink-subtle group-open:rotate-45 transition-transform">
+                  +
+                </span>
+              </summary>
+              <p className="mt-3 text-ink-soft leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <div className="mx-auto max-w-6xl px-5">
         <CTABanner campaign="homepage-bottom" />
       </div>
     </div>
+  );
+}
+
+function GradeChip({
+  grade,
+  tone,
+  label,
+}: {
+  grade: string;
+  tone: "good" | "ok" | "bad";
+  label: string;
+}) {
+  const cls =
+    tone === "good"
+      ? "bg-win-soft text-win"
+      : tone === "ok"
+        ? "bg-warn-soft text-warn"
+        : "bg-bad-soft text-bad";
+  return (
+    <span className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-3 py-1.5 text-xs">
+      <span
+        className={`inline-flex items-center justify-center rounded-md px-1.5 py-0.5 font-display text-sm font-semibold ${cls}`}
+      >
+        {grade}
+      </span>
+      <span className="font-medium text-ink-soft">{label}</span>
+    </span>
   );
 }
 

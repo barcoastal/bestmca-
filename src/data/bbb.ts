@@ -289,6 +289,10 @@ export const BBB_RECORDS: BBBRecord[] = [
 
 export const BBB_COASTAL = BBB_RECORDS.find((r) => r.isCoastal)!;
 
+export function getBBBBySlug(slug: string) {
+  return BBB_RECORDS.find((r) => r.slug === slug);
+}
+
 export function bbbGradeTone(grade: string): "good" | "ok" | "bad" | "none" {
   if (grade === "A+" || grade === "A") return "good";
   if (grade === "B" || grade === "C") return "ok";
