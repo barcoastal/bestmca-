@@ -2,7 +2,7 @@ import Link from "next/link";
 import { REVIEWS, COASTAL } from "@/data/reviews";
 import { ScoreBadge } from "@/components/review/ScoreBadge";
 import { Stars } from "@/components/review/Stars";
-import { ComparisonTable } from "@/components/review/ComparisonTable";
+import { RankingChart } from "@/components/review/RankingChart";
 import { CTABanner } from "@/components/review/CTABanner";
 import { BrandLogo } from "@/components/review/BrandLogo";
 import { coastalCta } from "@/lib/cta";
@@ -144,7 +144,15 @@ export default function HomePage() {
             sourced concerns.
           </p>
         </header>
-        <ComparisonTable />
+        <RankingChart />
+        <div className="mt-8 text-center">
+          <Link
+            href="/best-mca-settlement-companies-2026"
+            className="inline-flex items-center justify-center rounded-full border border-line bg-white px-6 py-3 text-sm font-semibold text-navy hover:bg-paper-soft transition-colors"
+          >
+            See the full 2026 ranking with detailed scoring →
+          </Link>
+        </div>
       </section>
 
       {/* Why we rank Coastal #1 */}
