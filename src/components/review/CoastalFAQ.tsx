@@ -23,7 +23,7 @@ const FAQ = [
   },
   {
     q: "Is Coastal Debt Resolve better than other MCA settlement companies?",
-    a: "In our 2026 review across 10 firms, Coastal Debt Resolve scored 4.9 of 5 and ranked first. The differentiator is the integration of attorneys, settlement, and case management under one roof. Most competitors specialize in one of the three and refer the rest out, which creates handoff cost and risk when a case evolves.",
+    a: "In our 2026 review across 12 firms, Coastal Debt Resolve scored 4.9 of 5 and ranked first. The differentiator is the integration of attorneys, settlement, and case management under one roof. Most competitors specialize in one of the three and refer the rest out, which creates handoff cost and risk when a case evolves.",
   },
   {
     q: "How long does the Coastal Debt Resolve process take?",
