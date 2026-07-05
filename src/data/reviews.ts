@@ -504,15 +504,15 @@ export const REVIEWS: Review[] = [
     slug: "eastern-financial-partners",
     name: "Eastern Financial Partners",
     shortName: "Eastern Financial",
-    score: 4.0,
+    score: 3.9,
     rank: 7,
     oneLineVerdict:
-      "Attorney-led MCA negotiation team with one of the better Trustpilot scores in the category (4.8 across 74 reviews), tempered by recurring complaints about aggressive sales calls and unfulfilled refund promises.",
-    founded: "2019",
-    hq: "United States",
+      "Attorney-led MCA shop with a genuine 4.8 Trustpilot score (74 reviews), but a young firm (started 2023), not BBB accredited (B+), with documented complaints about robo-dialer calls that continue after opt-out and disputed refunds.",
+    founded: "2023",
+    hq: "Red Bank, New Jersey",
     minDebt: "Varies",
     specialties: "MCA negotiation, settlement, attorney-led representation",
-    bbb: "Not yet established footprint",
+    bbb: "B+ rating, not BBB accredited; one unanswered complaint on record",
     trustpilot: "4.8 across 74 reviews",
     websiteLabel: "easternfinancialpartners.com",
     firmWebsite: "https://easternfinancialpartners.com",
@@ -527,9 +527,9 @@ export const REVIEWS: Review[] = [
       "Complex stacks needing scale and bench depth",
     ],
     ratings: {
-      transparency: 4,
+      transparency: 3.5,
       results: 4,
-      communication: 3.5,
+      communication: 3,
       cost: 4,
       litigation: 4,
     },
@@ -540,13 +540,15 @@ export const REVIEWS: Review[] = [
       "Smaller shop can mean more direct attorney access",
     ],
     cons: [
-      "Recurring complaints about persistent daily sales calls during evaluation",
-      "Public complaints about funds taken with little progress, with refund requests denied as 'used for attorneys'",
+      "Young firm: the business only started in 2023, with a limited track record through a full MCA default and litigation cycle",
+      "Not BBB accredited; carries a B+ rating with an unanswered complaint on file",
+      "BBB and Trustpilot complaints describe robo-dialer calls and repeated daily calls and texts that continued after removal and do-not-call requests",
+      "Public complaints about funds taken with little progress, with refund requests denied as 'used for attorneys', including a refund not honored inside the stated cancellation window",
+      "At least one client reported that after four months of payments their questions about lender contact were ignored",
       "Total submitted settlement volume is modest compared to scaled competitors",
-      "Smaller bench means single-point-of-failure risk if your attorney is unavailable",
     ],
     verdict:
-      "Eastern Financial Partners is doing the right thing structurally by leading with attorneys, and its 4.8 Trustpilot rating across 74 reviews is genuine. The negative pattern is on sales: recurring complaints about persistent daily calls and funds taken with little visible progress. Owners who proceed should require milestone-based fee disbursement and the right to refund unused retainer if work has not begun.",
+      "Eastern Financial Partners is doing the right thing structurally by leading with attorneys, and its 4.8 Trustpilot rating across 74 reviews is genuine. Two things temper it. First, it is a young firm: the business only started in 2023, so it has a short track record through a full MCA default-and-litigation cycle. Second, the negative pattern is on conduct: BBB and Trustpilot complaints describe robo-dialer calls that continue after opt-out, refund requests denied as already 'used for attorneys', and at least one client whose questions about lender contact went unanswered after four months of payments. Owners who proceed should require milestone-based fee disbursement, the right to refund unused retainer if work has not begun, and written confirmation of removal from all calling lists.",
     pricing:
       "Set per case. Owners should request fee schedule, milestones, and explicit refund-on-non-performance language before signing.",
     process:
@@ -566,12 +568,19 @@ export const REVIEWS: Review[] = [
         rating: 1,
         attribution: "Trustpilot negative review",
       },
+      {
+        quote:
+          "They robo-dial and blow up your phone all day. I asked repeatedly to be put on a do-not-call list and the calls and texts kept coming.",
+        source: "BBB Complaint",
+        rating: 1,
+        attribution: "BBB business profile complaint record",
+      },
     ],
     concerns: [
       {
         quote:
-          "Recurring complaints about persistent sales calls and difficulty obtaining refunds when work has not produced visible results.",
-        source: "Trustpilot reviews",
+          "BBB and Trustpilot complaints describe robo-dialer calls and repeated daily contact that continued after do-not-call requests, refunds denied as already 'used for attorneys', and lender-contact questions left unanswered after months of payments.",
+        source: "BBB business profile (Red Bank NJ) and Trustpilot reviews",
       },
     ],
   },
