@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { REVIEWS, COASTAL } from "@/data/reviews";
+import { RANKED, COASTAL } from "@/data/reviews";
 import { Stars } from "@/components/review/Stars";
 import { ComparisonTable } from "@/components/review/ComparisonTable";
 import { CTABanner } from "@/components/review/CTABanner";
@@ -82,7 +82,7 @@ export default function BestOfPage() {
           Each firm, in detail
         </h2>
         <div className="space-y-6">
-          {REVIEWS.map((r) => (
+          {RANKED.map((r) => (
             <Link
               key={r.slug}
               href={`/reviews/${r.slug}`}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { REVIEWS, COASTAL } from "@/data/reviews";
+import { RANKED, COASTAL } from "@/data/reviews";
 import { ScoreBadge } from "@/components/review/ScoreBadge";
 import { Stars } from "@/components/review/Stars";
 import { RankingChart } from "@/components/review/RankingChart";
@@ -13,7 +13,7 @@ export const metadata = {
   title:
     "Best MCA Debt Relief & Settlement Companies of 2026 — Independent Reviews",
   description:
-    "Independent rankings of the best MCA debt relief and merchant cash advance settlement companies in 2026. Compare 12 firms across transparency, results, communication, cost, and litigation defense.",
+    "Independent rankings of the best MCA debt relief and merchant cash advance settlement companies in 2026. Compare 16 firms across transparency, results, communication, cost, and litigation defense.",
   keywords: [
     "mca debt relief",
     "mca debt relief reviews",
@@ -172,7 +172,7 @@ export default function HomePage() {
             The 2026 Ranking
           </div>
           <h2 className="mt-3 font-display text-3xl md:text-4xl font-semibold text-navy">
-            Top 12 MCA settlement and restructuring firms
+            Top 16 MCA settlement and restructuring firms
           </h2>
           <p className="mt-3 text-base text-ink-soft leading-relaxed">
             Ranked by composite score across five rating categories. Click any
@@ -321,7 +321,7 @@ export default function HomePage() {
           </h2>
         </header>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {REVIEWS.map((r) => (
+          {RANKED.map((r) => (
             <Link
               key={r.slug}
               href={`/reviews/${r.slug}`}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { REVIEWS, type Review } from "@/data/reviews";
+import { RANKED, type Review } from "@/data/reviews";
 import { getBBBBySlug, bbbGradeTone } from "@/data/bbb";
 import { Stars } from "./Stars";
 import { BrandLogo } from "./BrandLogo";
@@ -36,7 +36,7 @@ function BBBChip({ slug }: { slug: string }) {
 // Stacked leaderboard: one firm per row, ranked top to bottom. Matches the
 // visual language of the BBB ratings chart for a consistent feel across the site.
 export function RankingChart({
-  reviews = REVIEWS,
+  reviews = RANKED,
   highlightSlug = "coastal-debt-resolve",
 }: Props) {
   return (

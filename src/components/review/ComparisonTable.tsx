@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { REVIEWS, type Review } from "@/data/reviews";
+import { RANKED, type Review } from "@/data/reviews";
 import { Stars } from "./Stars";
 import { BrandLogo } from "./BrandLogo";
 
@@ -9,7 +9,7 @@ type Props = {
 };
 
 export function ComparisonTable({
-  reviews = REVIEWS,
+  reviews = RANKED,
   highlightSlug = "coastal-debt-resolve",
 }: Props) {
   return (

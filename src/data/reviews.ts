@@ -121,7 +121,7 @@ export const REVIEWS: Review[] = [
     name: "Second Wind Consultants",
     shortName: "Second Wind",
     score: 4.4,
-    rank: 2,
+    rank: 3,
     oneLineVerdict:
       "An established Massachusetts restructuring firm with strong public reviews and a long operating history. Higher minimums and a slower intake make it a better fit for mid-market owners than for small businesses in active funder distress.",
     founded: "2009",
@@ -204,7 +204,7 @@ export const REVIEWS: Review[] = [
     name: "Spergel",
     shortName: "Spergel",
     score: 4.5,
-    rank: 3,
+    rank: 2,
     oneLineVerdict:
       "An exceptional Canadian licensed insolvency firm with one of the strongest review records in the category. Limited US footprint means most US MCA owners cannot use them.",
     founded: "1989",
@@ -276,7 +276,7 @@ export const REVIEWS: Review[] = [
     name: "Corporate Turnaround",
     shortName: "Corporate Turnaround",
     score: 3.7,
-    rank: 4,
+    rank: 9,
     oneLineVerdict:
       "Long pedigree in turnaround consulting, but recurring BBB complaints about deceptive billing and undelivered creditor contact pull this firm down significantly.",
     founded: "1998",
@@ -351,7 +351,7 @@ export const REVIEWS: Review[] = [
     name: "Regroup Partners",
     shortName: "Regroup",
     score: 3.8,
-    rank: 5,
+    rank: 7,
     oneLineVerdict:
       "Consolidation and restructuring firm with no upfront fees and several positive long-term client outcomes. A trust-account complaint flags the need to verify fee handling in writing.",
     founded: "2010s",
@@ -432,7 +432,7 @@ export const REVIEWS: Review[] = [
     name: "Corporate Rescue",
     shortName: "Corporate Rescue",
     score: 3.5,
-    rank: 6,
+    rank: 11,
     oneLineVerdict:
       "Software-driven restructuring playbook with positive individual reviews from a small sample size, but a serious fraud allegation in public reviews requires careful diligence before engaging.",
     founded: "2017",
@@ -505,7 +505,7 @@ export const REVIEWS: Review[] = [
     name: "Eastern Financial Partners",
     shortName: "Eastern Financial",
     score: 3.9,
-    rank: 7,
+    rank: 5,
     oneLineVerdict:
       "Attorney-led MCA shop with a genuine 4.8 Trustpilot score (74 reviews), but a young firm (started 2023), not BBB accredited (B+), with documented complaints about robo-dialer calls that continue after opt-out and disputed refunds.",
     founded: "2023",
@@ -589,7 +589,7 @@ export const REVIEWS: Review[] = [
     name: "Business Debt Law Group",
     shortName: "BDLG",
     score: 3.7,
-    rank: 8,
+    rank: 10,
     oneLineVerdict:
       "Litigation-focused law firm useful for owners already sued by an MCA funder. Less efficient than combined settlement-and-defense firms for pre-litigation cases.",
     founded: "Varies by entity",
@@ -645,7 +645,7 @@ export const REVIEWS: Review[] = [
     name: "Business Debt Adjusters",
     shortName: "Business Debt Adjusters",
     score: 3.4,
-    rank: 9,
+    rank: 13,
     oneLineVerdict:
       "Long-tenured New Jersey firm with an A rating on its BBB profile and some documented payment-reduction wins, but it is not BBB accredited and draws complaints about high-frequency phone contact and at least one lien dispute. Set written expectations on fees and contact before signing.",
     founded: "2016",
@@ -720,7 +720,7 @@ export const REVIEWS: Review[] = [
     name: "Stop MCA",
     shortName: "Stop MCA",
     score: 3.2,
-    rank: 10,
+    rank: 14,
     oneLineVerdict:
       "Settlement firm with aggressive marketing presence and intermittent outcomes per public commentary. Approach with diligence on fee structure and creditor-contact verification.",
     founded: "Recent entrant",
@@ -776,7 +776,7 @@ export const REVIEWS: Review[] = [
     name: "MCA Debt Advisors",
     shortName: "MCA Debt Advisors",
     score: 2.6,
-    rank: 11,
+    rank: 15,
     oneLineVerdict:
       "Pennsylvania firm carrying an F rating on its BBB profile with 25 complaints on file (six left unanswered) and public reviews alleging large fees for little delivered work. High-caution; verify every fee and creditor contact independently.",
     founded: "2020",
@@ -842,7 +842,7 @@ export const REVIEWS: Review[] = [
     name: "MCA Resolve",
     shortName: "MCA Resolve",
     score: 2.5,
-    rank: 12,
+    rank: 16,
     oneLineVerdict:
       "Significant pattern of negative public reviews and BBB complaints alleging undelivered services, fees taken without creditor contact, and instructions that put clients in default. We do not recommend.",
     founded: "Recent entrant",
@@ -914,10 +914,291 @@ export const REVIEWS: Review[] = [
       },
     ],
   },
+  {
+    slug: "national-credit-partners",
+    name: "National Credit Partners",
+    shortName: "National Credit Partners",
+    score: 4.0,
+    rank: 4,
+    oneLineVerdict:
+      "One of the more established names in business debt relief (A+ BBB, accredited since 2018), focused on debt modification and restructuring more than attorney-led MCA settlement. Reviews are mostly positive with a few complaints about fee clarity.",
+    founded: "2018",
+    hq: "Costa Mesa, California",
+    minDebt: "Varies",
+    specialties: "Business debt modification, MCA restructuring, creditor negotiation",
+    bbb: "A+ rating, BBB accredited since 2018",
+    trustpilot: "Mostly positive, with occasional complaints about fee transparency",
+    websiteLabel: "nationalcreditpartners.com",
+    firmWebsite: "https://nationalcreditpartners.com",
+    recommendedFor:
+      "Owners who want an established, BBB-accredited firm for broad business debt modification and are comfortable clarifying the fee math in writing before signing.",
+    bestFor: [
+      "Owners who value an A+ BBB, accredited firm",
+      "Broad business debt beyond a single MCA",
+      "Restructuring and modification rather than pure litigation",
+    ],
+    notIdealFor: [
+      "Owners who specifically need attorney-led COJ or lawsuit defense",
+      "Owners who want fees tied strictly to settlement savings",
+    ],
+    ratings: {
+      transparency: 4,
+      results: 4,
+      communication: 4,
+      cost: 3.5,
+      litigation: 3.5,
+    },
+    pros: [
+      "A+ BBB rating, accredited since 2018",
+      "Roughly eight years operating with an established track record",
+      "Mostly positive client reviews citing real creditor-payoff help",
+      "Broad business-debt modification capability",
+    ],
+    cons: [
+      "Positioned around debt modification and consulting rather than attorney-led MCA settlement",
+      "Some reviews cite hidden fees and disputed contract calculations",
+      "Not primarily a litigation or Confession-of-Judgment defense shop",
+    ],
+    verdict:
+      "National Credit Partners is one of the more established, credibly-rated firms in this space, with an A+ BBB profile and accreditation since 2018. Its model leans toward business debt modification and restructuring rather than the attorney-led settlement and litigation defense that hard MCA cases often require, and a minority of reviews flag fee clarity. Owners should get the full fee math and the scope (modification vs settlement vs litigation) in writing before signing. For pure MCA distress with lawsuit or COJ risk, an attorney-led firm is a closer fit.",
+    pricing:
+      "Fees are set per case and not published. Because a few reviews mention disputed calculations, request the complete fee schedule and a worked example in writing before signing.",
+    process:
+      "Consultation and debt analysis, a proposed modification and restructuring plan, then creditor negotiation and program management.",
+    publicQuotes: [
+      {
+        quote:
+          "They went beyond the call of duty to help pay our creditors off and were instrumental in helping save the company.",
+        source: "Trustpilot",
+        rating: 5,
+        attribution: "Trustpilot review",
+      },
+      {
+        quote:
+          "I ran into hidden fees and totally wrong calculations on the contracts.",
+        source: "Trustpilot",
+        rating: 2,
+        attribution: "Trustpilot negative review",
+      },
+    ],
+    concerns: [
+      {
+        quote:
+          "A minority of reviews allege hidden fees and incorrect contract calculations, though most feedback is positive.",
+        source: "Trustpilot reviews and BBB profile (Costa Mesa CA)",
+      },
+    ],
+  },
+  {
+    slug: "rise-alliance",
+    name: "Rise Alliance",
+    shortName: "Rise Alliance",
+    score: 3.9,
+    rank: 6,
+    oneLineVerdict:
+      "A Second Wind Consultants brand focused on MCA settlement and cash-flow relief, with strong Google and Birdeye ratings (4.5+ across roughly 289 reviews) but limited standalone BBB transparency.",
+    founded: "Second Wind Consultants brand",
+    hq: "New York, New York",
+    minDebt: "Varies",
+    specialties: "MCA settlement, cash-flow relief, guaranty resolution",
+    bbb: "No standalone BBB rating; operates under the Second Wind Consultants group",
+    trustpilot: "4.5+ across roughly 289 Google and Birdeye reviews",
+    websiteLabel: "risealliance.com",
+    firmWebsite: "https://risealliance.com",
+    recommendedFor:
+      "Owners drawn to the Second Wind restructuring approach who want faster MCA settlement and are comfortable with a firm that has limited standalone third-party accreditation.",
+    bestFor: [
+      "Owners who like the Second Wind restructuring philosophy",
+      "Faster MCA settlements (often two to eight weeks)",
+      "Stacked-MCA cash-flow relief",
+    ],
+    notIdealFor: [
+      "Owners who want an independently BBB-accredited firm",
+      "Owners who need in-house litigation and COJ defense under one roof",
+    ],
+    ratings: {
+      transparency: 3.5,
+      results: 4,
+      communication: 4,
+      cost: 3.5,
+      litigation: 3.5,
+    },
+    pros: [
+      "Strong Google and Birdeye ratings (4.5+ across roughly 289 reviews)",
+      "Backed by Second Wind Consultants' restructuring experience",
+      "Fast reported settlement timelines (two to eight weeks)",
+    ],
+    cons: [
+      "No standalone BBB rating or accreditation to verify independently",
+      "Overlaps heavily with the Second Wind brand, so compare the two before choosing",
+      "Settlement-focused rather than full in-house litigation defense",
+    ],
+    verdict:
+      "Rise Alliance is a Second Wind Consultants brand, so its credibility rests largely on Second Wind's restructuring track record plus its own strong Google and Birdeye ratings. The gap is independent verification: there is no standalone BBB accreditation, and its offering overlaps with Second Wind itself. Owners interested in this approach should compare Rise Alliance and Second Wind directly, confirm which entity signs the agreement, and get settlement timelines and fees in writing.",
+    pricing:
+      "Fees are set per case and not published. Ask which entity (Rise Alliance or Second Wind) contracts with you, and get the fee schedule and expected timeline in writing.",
+    process:
+      "Consultation and analysis, a restructuring and settlement plan, then negotiation with funders. Reported average settlement window of two to eight weeks.",
+    publicQuotes: [
+      {
+        quote:
+          "The team was professional and settled our positions quickly, which took a lot of pressure off the business.",
+        source: "Google",
+        rating: 5,
+        attribution: "Google and Birdeye review aggregate (~289 reviews, 4.5+)",
+      },
+    ],
+    concerns: [
+      {
+        quote:
+          "Operates as a brand within the Second Wind Consultants group with no standalone BBB accreditation, so independent verification is limited.",
+        source: "Company disclosures and third-party review platforms",
+      },
+    ],
+  },
+  {
+    slug: "delancey-street",
+    name: "Delancey Street",
+    shortName: "Delancey Street",
+    score: 3.8,
+    rank: 8,
+    oneLineVerdict:
+      "Attorney-network business debt firm (NYC) handling MCA, SBA, and stacked debt with performance-based fees, but with no BBB rating and a thin independent review base to verify outcomes.",
+    founded: "2018",
+    hq: "New York, New York",
+    minDebt: "Around $10,000 enrolled",
+    specialties: "MCA and business debt settlement, attorney network, stacked-debt restructuring",
+    bbb: "Not BBB accredited; BBB has insufficient information to issue a rating",
+    trustpilot: "Limited, roughly 26 reviews, generally positive",
+    websiteLabel: "delanceystreet.com",
+    firmWebsite: "https://www.delanceystreet.com",
+    recommendedFor:
+      "Owners who want an attorney-network model with fees contingent on settlement and are comfortable with a firm that has a limited independent review footprint.",
+    bestFor: [
+      "Owners who want fees only after a settlement is reached",
+      "MCA plus SBA or other stacked business debt",
+      "Attorney-coordinated negotiation",
+    ],
+    notIdealFor: [
+      "Owners who want an established BBB rating to check",
+      "Owners who want a large independent review base before signing",
+    ],
+    ratings: {
+      transparency: 3.5,
+      results: 3.5,
+      communication: 4,
+      cost: 4,
+      litigation: 3.5,
+    },
+    pros: [
+      "Performance-based fees (15 to 20% of enrolled debt), nothing until a settlement is approved",
+      "Attorney-network model coordinating legal leverage",
+      "Public claim of $100M+ settled across 1,000+ cases since 2018",
+    ],
+    cons: [
+      "No BBB rating (insufficient information on file)",
+      "Thin independent review base (roughly 26 Trustpilot reviews) to verify claims",
+      "Fee is a percent of enrolled debt, not of savings, so model the total cost",
+    ],
+    verdict:
+      "Delancey Street runs an attorney-network model with performance-based fees, which is structurally sound, and it publishes strong volume claims ($100M+ across 1,000+ cases). The caution is verification: there is no BBB rating and only a small independent review base, so its results are harder to confirm from the outside than higher-volume, better-documented firms. Owners should get the fee (a percentage of enrolled debt, not savings) modeled in writing and confirm the no-fee-until-settlement terms.",
+    pricing:
+      "Charges roughly 15 to 20 percent of enrolled debt, with no fee until a settlement is negotiated and approved. Because the fee is a percent of enrolled debt rather than savings, model the total dollar cost before signing.",
+    process:
+      "Consultation, enrollment, attorney-coordinated negotiation with funders, then settlement. No fee is charged until a settlement is approved.",
+    publicQuotes: [
+      {
+        quote:
+          "They were patient and guided us through the whole debt process without pressure.",
+        source: "Trustpilot",
+        rating: 5,
+        attribution: "Trustpilot review (limited review base)",
+      },
+    ],
+    concerns: [
+      {
+        quote:
+          "No BBB rating on file and only a small independent review base, so outcome and volume claims are harder to verify externally.",
+        source: "BBB profile (no rating) and Trustpilot",
+      },
+    ],
+  },
+  {
+    slug: "national-debt-relief",
+    name: "National Debt Relief",
+    shortName: "National Debt Relief",
+    score: 3.5,
+    rank: 12,
+    oneLineVerdict:
+      "A major, highly-rated consumer debt-settlement company (A+ BBB, 4.73 across 5,900+ reviews), but it does not handle MCA-specific work, no COJ defense, court motions, or funder litigation, so it is the wrong tool for active merchant cash advance distress.",
+    founded: "2009",
+    hq: "New York, New York",
+    minDebt: "Around $7,500 (unsecured debt)",
+    specialties: "Consumer and unsecured debt settlement (not MCA-specific)",
+    bbb: "A+ rating; one of the largest debt-settlement firms",
+    trustpilot: "4.73 average across 5,900+ reviews",
+    websiteLabel: "nationaldebtrelief.com",
+    firmWebsite: "https://www.nationaldebtrelief.com",
+    recommendedFor:
+      "Owners whose problem is mainly unsecured or consumer debt (credit cards, lines of credit) rather than merchant cash advances. For MCA-specific distress, choose an MCA specialist.",
+    bestFor: [
+      "Consumers and owners with unsecured, non-MCA debt",
+      "People who want a very large, established, A+ firm",
+      "Credit card and line-of-credit settlement",
+    ],
+    notIdealFor: [
+      "Owners in active MCA distress needing settlement or defense",
+      "Anyone facing a Confession of Judgment, frozen account, or funder lawsuit",
+      "Owners who need court motions or MCA-specific litigation",
+    ],
+    ratings: {
+      transparency: 4,
+      results: 4,
+      communication: 4,
+      cost: 4,
+      litigation: 2,
+    },
+    pros: [
+      "A+ BBB rating and 4.73 average across 5,900+ reviews",
+      "Over $1B settled and 550,000+ clients, a huge, proven operation",
+      "Strong fit for unsecured and consumer debt",
+    ],
+    cons: [
+      "Does not handle MCA-specific work: no COJ challenge, no court motions, no funder litigation",
+      "Not built for active merchant cash advance distress",
+      "Owners with MCA problems would still need a separate MCA specialist",
+    ],
+    verdict:
+      "National Debt Relief is a genuinely strong, highly-rated company, but for the wrong problem. It is built for consumer and unsecured debt settlement at massive scale, and it explicitly does not challenge Confessions of Judgment, file court motions, or handle MCA funder litigation. If your core issue is merchant cash advance debt, especially with lawsuit or COJ risk, National Debt Relief is not the right firm and you would want an MCA specialist. We rank it here because owners search it, not because it competes for MCA cases.",
+    pricing:
+      "Typically 15 to 25 percent of enrolled debt on settled consumer accounts, with no upfront fees. Note this pricing is for unsecured debt programs, not MCA settlement.",
+    process:
+      "Enroll unsecured debts, pause payments into a dedicated account, and negotiate settlements over 24 to 48 months. This is a consumer-debt process, not an MCA workout.",
+    publicQuotes: [
+      {
+        quote:
+          "They settled my unsecured accounts for far less than I owed and kept me updated the whole way.",
+        source: "Trustpilot",
+        rating: 5,
+        attribution: "Trustpilot review aggregate (5,900+ reviews, 4.73 average)",
+      },
+    ],
+    concerns: [
+      {
+        quote:
+          "Explicitly does not handle MCA-specific work, no Confession of Judgment defense, court motions, or funder litigation, so it does not fit active MCA distress.",
+        source: "Company service scope and category reviews",
+      },
+    ],
+  },
 ];
 
 export const COASTAL = REVIEWS.find((r) => r.isCoastal)!;
 export const COMPETITORS = REVIEWS.filter((r) => !r.isCoastal);
+
+// Leaderboard order is driven by the rank field, not array order, so entries
+// can be appended anywhere in REVIEWS and still render in ranked position.
+export const RANKED = [...REVIEWS].sort((a, b) => a.rank - b.rank);
 
 export function getReviewBySlug(slug: string) {
   return REVIEWS.find((r) => r.slug === slug);
