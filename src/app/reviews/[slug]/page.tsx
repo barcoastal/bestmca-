@@ -16,9 +16,9 @@ import { PublicReviewSources } from "@/components/review/PublicReviewSources";
 import { CompetitorReviewBoxes } from "@/components/review/CompetitorReviewBoxes";
 import { CoastalFAQ } from "@/components/review/CoastalFAQ";
 import { BrandLogo } from "@/components/review/BrandLogo";
+import { CompetitorFAQ } from "@/components/review/CompetitorFAQ";
 import {
   reviewSchema,
-  aggregateRatingSchema,
   breadcrumbSchema,
   jsonLd,
 } from "@/lib/schema";
@@ -95,10 +95,6 @@ export default async function ReviewPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLd(reviewSchema(review))}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLd(aggregateRatingSchema(review))}
       />
       <script
         type="application/ld+json"
@@ -266,6 +262,9 @@ export default async function ReviewPage({
           {!isCoastal && review.concerns && review.concerns.length > 0 && (
             <ConcernsList concerns={review.concerns} />
           )}
+
+          {/* FAQ targeting branded modifier queries (non-Coastal) */}
+          {!isCoastal && <CompetitorFAQ review={review} />}
 
           {/* Coastal-only blocks */}
           {isCoastal && (

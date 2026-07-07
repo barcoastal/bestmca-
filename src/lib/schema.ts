@@ -2,6 +2,10 @@ import type { Review } from "@/data/reviews";
 
 const SITE = "https://www.mcasettlementreviews.com";
 
+// Build-time date so freshness signals reflect the latest deploy rather than a
+// value frozen in source. Regenerated on every static build.
+const BUILD_DATE = new Date().toISOString().split("T")[0];
+
 // Sitewide publisher entity. Strengthens E-E-A-T and entity signals.
 export function organizationSchema() {
   return {
@@ -82,7 +86,22 @@ export function reviewSchema(review: Review) {
     reviewBody: review.verdict,
     name: `${review.name} Review`,
     datePublished: "2026-04-28",
-    dateModified: "2026-06-03",
+    dateModified: BUILD_DATE,
+  };
+}
+
+// FAQPage markup. Rich results for FAQ are now limited to authoritative sites,
+// but valid FAQ structured data still reinforces topical relevance and the
+// question phrasings we want to rank for.
+export function faqSchema(items: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((it) => ({
+      "@type": "Question",
+      name: it.q,
+      acceptedAnswer: { "@type": "Answer", text: it.a },
+    })),
   };
 }
 
