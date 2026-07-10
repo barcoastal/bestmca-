@@ -121,7 +121,7 @@ export const REVIEWS: Review[] = [
     name: "Second Wind Consultants",
     shortName: "Second Wind",
     score: 4.4,
-    rank: 3,
+    rank: 4,
     oneLineVerdict:
       "An established Massachusetts restructuring firm with strong public reviews and a long operating history. Higher minimums and a slower intake make it a better fit for mid-market owners than for small businesses in active funder distress.",
     founded: "2009",
@@ -204,7 +204,7 @@ export const REVIEWS: Review[] = [
     name: "Spergel",
     shortName: "Spergel",
     score: 4.5,
-    rank: 2,
+    rank: 3,
     oneLineVerdict:
       "An exceptional Canadian licensed insolvency firm with one of the strongest review records in the category. Limited US footprint means most US MCA owners cannot use them.",
     founded: "1989",
@@ -276,7 +276,7 @@ export const REVIEWS: Review[] = [
     name: "Corporate Turnaround",
     shortName: "Corporate Turnaround",
     score: 3.7,
-    rank: 9,
+    rank: 10,
     oneLineVerdict:
       "Long pedigree in turnaround consulting, but recurring BBB complaints about deceptive billing and undelivered creditor contact pull this firm down significantly.",
     founded: "1998",
@@ -351,7 +351,7 @@ export const REVIEWS: Review[] = [
     name: "Regroup Partners",
     shortName: "Regroup",
     score: 3.8,
-    rank: 7,
+    rank: 8,
     oneLineVerdict:
       "Consolidation and restructuring firm with no upfront fees and several positive long-term client outcomes. A trust-account complaint flags the need to verify fee handling in writing.",
     founded: "2010s",
@@ -432,7 +432,7 @@ export const REVIEWS: Review[] = [
     name: "Corporate Rescue",
     shortName: "Corporate Rescue",
     score: 3.5,
-    rank: 11,
+    rank: 12,
     oneLineVerdict:
       "Software-driven restructuring playbook with positive individual reviews from a small sample size, but a serious fraud allegation in public reviews requires careful diligence before engaging.",
     founded: "2017",
@@ -505,7 +505,7 @@ export const REVIEWS: Review[] = [
     name: "Eastern Financial Partners",
     shortName: "Eastern Financial",
     score: 3.9,
-    rank: 5,
+    rank: 6,
     oneLineVerdict:
       "Attorney-led MCA shop with a genuine 4.8 Trustpilot score (74 reviews), but a young firm (started 2023), not BBB accredited (B+), with documented complaints about robo-dialer calls that continue after opt-out and disputed refunds.",
     founded: "2023",
@@ -589,7 +589,7 @@ export const REVIEWS: Review[] = [
     name: "Business Debt Law Group",
     shortName: "BDLG",
     score: 3.7,
-    rank: 10,
+    rank: 11,
     oneLineVerdict:
       "Litigation-focused law firm useful for owners already sued by an MCA funder. Less efficient than combined settlement-and-defense firms for pre-litigation cases.",
     founded: "Varies by entity",
@@ -645,7 +645,7 @@ export const REVIEWS: Review[] = [
     name: "Business Debt Adjusters",
     shortName: "Business Debt Adjusters",
     score: 3.4,
-    rank: 13,
+    rank: 14,
     oneLineVerdict:
       "Long-tenured New Jersey firm with an A rating on its BBB profile and some documented payment-reduction wins, but it is not BBB accredited and draws complaints about high-frequency phone contact and at least one lien dispute. Set written expectations on fees and contact before signing.",
     founded: "2016",
@@ -720,7 +720,7 @@ export const REVIEWS: Review[] = [
     name: "Stop MCA",
     shortName: "Stop MCA",
     score: 3.2,
-    rank: 14,
+    rank: 15,
     oneLineVerdict:
       "Settlement firm with aggressive marketing presence and intermittent outcomes per public commentary. Approach with diligence on fee structure and creditor-contact verification.",
     founded: "Recent entrant",
@@ -776,7 +776,7 @@ export const REVIEWS: Review[] = [
     name: "MCA Debt Advisors",
     shortName: "MCA Debt Advisors",
     score: 2.6,
-    rank: 15,
+    rank: 16,
     oneLineVerdict:
       "Pennsylvania firm carrying an F rating on its BBB profile with 25 complaints on file (six left unanswered) and public reviews alleging large fees for little delivered work. High-caution; verify every fee and creditor contact independently.",
     founded: "2020",
@@ -842,7 +842,7 @@ export const REVIEWS: Review[] = [
     name: "MCA Resolve",
     shortName: "MCA Resolve",
     score: 2.5,
-    rank: 16,
+    rank: 17,
     oneLineVerdict:
       "Significant pattern of negative public reviews and BBB complaints alleging undelivered services, fees taken without creditor contact, and instructions that put clients in default. We do not recommend.",
     founded: "Recent entrant",
@@ -919,7 +919,7 @@ export const REVIEWS: Review[] = [
     name: "National Credit Partners",
     shortName: "National Credit Partners",
     score: 4.0,
-    rank: 4,
+    rank: 5,
     oneLineVerdict:
       "One of the more established names in business debt relief (A+ BBB, accredited since 2018), focused on debt modification and restructuring more than attorney-led MCA settlement. Reviews are mostly positive with a few complaints about fee clarity.",
     founded: "2018",
@@ -994,7 +994,7 @@ export const REVIEWS: Review[] = [
     name: "Rise Alliance",
     shortName: "Rise Alliance",
     score: 3.9,
-    rank: 6,
+    rank: 7,
     oneLineVerdict:
       "A Second Wind Consultants brand focused on MCA settlement and cash-flow relief, with strong Google and Birdeye ratings (4.5+ across roughly 289 reviews) but limited standalone BBB transparency.",
     founded: "Second Wind Consultants brand",
@@ -1061,7 +1061,7 @@ export const REVIEWS: Review[] = [
     name: "Delancey Street",
     shortName: "Delancey Street",
     score: 3.8,
-    rank: 8,
+    rank: 9,
     oneLineVerdict:
       "Attorney-network business debt firm (NYC) handling MCA, SBA, and stacked debt with performance-based fees, but with no BBB rating and a thin independent review base to verify outcomes.",
     founded: "2018",
@@ -1128,7 +1128,7 @@ export const REVIEWS: Review[] = [
     name: "National Debt Relief",
     shortName: "National Debt Relief",
     score: 3.5,
-    rank: 12,
+    rank: 13,
     oneLineVerdict:
       "A major, highly-rated consumer debt-settlement company (A+ BBB, 4.73 across 5,900+ reviews), but it does not handle MCA-specific work, no COJ defense, court motions, or funder litigation, so it is the wrong tool for active merchant cash advance distress.",
     founded: "2009",
@@ -1188,6 +1188,65 @@ export const REVIEWS: Review[] = [
         quote:
           "Explicitly does not handle MCA-specific work, no Confession of Judgment defense, court motions, or funder litigation, so it does not fit active MCA distress.",
         source: "Company service scope and category reviews",
+      },
+    ],
+  },
+  {
+    slug: "business-debt-insider",
+    name: "Business Debt Insider",
+    shortName: "Business Debt Insider",
+    score: 4.7,
+    rank: 2,
+    oneLineVerdict:
+      "A flat-fee restructuring practice that folds stacked MCA debt into one weekly payment, with no new loan and no bankruptcy filing. A strong, owner-friendly model, newer and smaller than the category's largest firms.",
+    founded: "Fort Lauderdale, Florida (GRL Recovery LLC)",
+    hq: "Fort Lauderdale, Florida",
+    minDebt: "Varies",
+    specialties: "MCA restructuring, debt relief, single weekly payment consolidation",
+    bbb: "Newer firm; flat-fee, documented agreements (limited BBB footprint to date)",
+    trustpilot: "Limited public review footprint as a newer firm",
+    websiteLabel: "businessdebtinsider.com",
+    firmWebsite: "https://businessdebtinsider.com",
+    recommendedFor:
+      "Owners who want a flat-fee plan that folds stacked MCA debt into one weekly payment without a new loan or a bankruptcy filing.",
+    bestFor: [
+      "Owners who want one weekly payment instead of daily MCA debits",
+      "Businesses that want to keep operating, with no new loan and no bankruptcy",
+      "Owners who want a flat fee and a written plan before any engagement fee",
+    ],
+    notIdealFor: [
+      "Owners who specifically want in-house attorneys and litigation under one roof",
+      "Owners who want the single largest, longest-tenured firm by settlement volume",
+    ],
+    ratings: {
+      transparency: 4.5,
+      results: 4.5,
+      communication: 4.5,
+      cost: 4.5,
+      litigation: 4,
+    },
+    pros: [
+      "Flat fees disclosed in writing before any engagement fee is charged",
+      "Folds stacked business debt into a single weekly payment",
+      "No new loan and no bankruptcy filing",
+      "Free written analysis of total outflow and exposure up front",
+    ],
+    cons: [
+      "Newer and smaller than the category's longest-tenured firms",
+      "Not a law firm; coordinates with outside counsel the client retains for litigation",
+      "Limited public review footprint to verify outcomes independently",
+    ],
+    verdict:
+      "Business Debt Insider runs the kind of model we like to see: a free written analysis first, then a flat fee and a single weekly payment that folds in the stacked advances, with no new loan and no bankruptcy filing. It is transparent that it is not a lender and not a law firm, and it coordinates with outside counsel when a matter needs litigation. The main caveats are that it is newer and smaller than the largest firms in this ranking, and its public review footprint is still limited, so ask for written references and a clear fee schedule. For owners who want one manageable payment and a plan they can read before they sign, it is a credible choice.",
+    pricing:
+      "Flat fees, documented in writing before any engagement fee is charged. No contingency and no percentage-of-enrolled-debt model.",
+    process:
+      "Free written analysis of total outflow and exposure, then relief on the daily debits, a restructured single weekly payment, or settlement, depending on what the business can support.",
+    concerns: [
+      {
+        quote:
+          "A newer and smaller firm than the category leaders, with a limited independent review footprint, so verify references and get the fee schedule in writing.",
+        source: "Firm disclosures and public footprint at time of review",
       },
     ],
   },

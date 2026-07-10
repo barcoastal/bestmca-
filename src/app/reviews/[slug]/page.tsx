@@ -55,7 +55,7 @@ export async function generateMetadata({
       openGraph: {
         title: "Coastal Debt Resolve Reviews 2026: Independent Verdict",
         description:
-          "We reviewed Coastal Debt Resolve and ranked it #1 of 16 MCA settlement firms in 2026. Here is what we found.",
+          "We reviewed Coastal Debt Resolve and ranked it #1 of 17 MCA settlement firms in 2026. Here is what we found.",
         type: "article",
       },
       alternates: { canonical: `/reviews/${review.slug}` },
