@@ -11,6 +11,7 @@ type Props = {
 
 const LOGO_FILES: Record<string, string> = {
   "coastal-debt-resolve": "/logos/coastal-debt-resolve.svg",
+  "business-debt-insider": "/logos/business-debt-insider.svg",
   "second-wind-consultants": "/logos/second-wind-consultants.png",
   spergel: "/logos/spergel.svg",
   "corporate-turnaround": "/logos/corporate-turnaround.jpg",
@@ -19,6 +20,13 @@ const LOGO_FILES: Record<string, string> = {
   "eastern-financial-partners": "/logos/eastern-financial-partners.svg",
   "stop-mca": "/logos/stop-mca.png",
   "mca-resolve": "/logos/mca-resolve.png",
+  "national-credit-partners": "/logos/national-credit-partners.png",
+  "delancey-street": "/logos/delancey-street.png",
+  "rise-alliance": "/logos/rise-alliance.png",
+  "national-debt-relief": "/logos/national-debt-relief.png",
+  "business-debt-law-group": "/logos/business-debt-law-group.png",
+  "business-debt-adjusters": "/logos/business-debt-adjusters.png",
+  "mca-debt-advisors": "/logos/mca-debt-advisors.png",
 };
 
 const ACCENTS: Record<string, string> = {
