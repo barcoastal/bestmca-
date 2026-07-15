@@ -62,14 +62,35 @@ export function breadcrumbSchema(
   };
 }
 
+// Build a PostalAddress from the free-text hq field ("City, State" or
+// "City, State (Canada)"). Review star rich results require the reviewed item
+// to be a supported type with an address; a generic Organization is not eligible.
+function addressFromHq(hq: string) {
+  const isCanada = /canada/i.test(hq);
+  const clean = hq.replace(/\s*\(.*?\)\s*/g, "").trim();
+  const parts = clean.split(",").map((p) => p.trim());
+  const addr: Record<string, string> = {
+    "@type": "PostalAddress",
+    addressCountry: isCanada ? "CA" : "US",
+  };
+  if (parts.length >= 2) {
+    addr.addressLocality = parts[0];
+    addr.addressRegion = parts[1];
+  } else if (parts[0] && !/united states/i.test(parts[0])) {
+    addr.addressLocality = parts[0];
+  }
+  return addr;
+}
+
 export function reviewSchema(review: Review) {
   return {
     "@context": "https://schema.org",
     "@type": "Review",
     itemReviewed: {
-      "@type": "Organization",
+      "@type": "FinancialService",
       name: review.name,
       url: `https://${review.websiteLabel}`,
+      address: addressFromHq(review.hq),
     },
     author: {
       "@type": "Organization",
