@@ -1,0 +1,640 @@
+{
+  "site": "sc-domain:mcasettlementreviews.com",
+  "window": {
+    "startDate": "2026-07-13",
+    "endDate": "2026-07-19"
+  },
+  "totals": {
+    "clicks": 28,
+    "impressions": 3339,
+    "ctr": 0.008385744234800839,
+    "position": 9.572327044025156
+  },
+  "tracked": {
+    "best mca debt relief companies": {
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 15.064516129032258
+    },
+    "mca settlement companies": {
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 21.5
+    },
+    "mca debt relief reviews": {
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 34.142857142857146
+    },
+    "merchant cash advance settlement companies": {
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 18.666666666666668
+    },
+    "mca debt relief companies": {
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 15.833333333333334
+    },
+    "second wind consultants reviews": {
+      "clicks": 1,
+      "impressions": 59,
+      "ctr": 0.01694915254237288,
+      "position": 3.847457627118644
+    },
+    "eastern financial partners reviews": {
+      "clicks": 4,
+      "impressions": 1008,
+      "ctr": 0.003968253968253968,
+      "position": 4.51984126984127
+    },
+    "spergel reviews": {
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 12
+    },
+    "corporate turnaround reviews": {
+      "clicks": 1,
+      "impressions": 41,
+      "ctr": 0.024390243902439025,
+      "position": 4.804878048780488
+    },
+    "rise alliance reviews": null,
+    "regroup partners reviews": {
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3.6666666666666665
+    }
+  },
+  "topQueries": [
+    {
+      "query": "eastern financial partners reviews",
+      "clicks": 4,
+      "impressions": 1008,
+      "ctr": 0.003968253968253968,
+      "position": 4.51984126984127
+    },
+    {
+      "query": "eastern financial partners",
+      "clicks": 0,
+      "impressions": 455,
+      "ctr": 0,
+      "position": 6.492307692307692
+    },
+    {
+      "query": "second wind consultants reviews",
+      "clicks": 1,
+      "impressions": 59,
+      "ctr": 0.01694915254237288,
+      "position": 3.847457627118644
+    },
+    {
+      "query": "second wind consultants",
+      "clicks": 0,
+      "impressions": 53,
+      "ctr": 0,
+      "position": 7.452830188679245
+    },
+    {
+      "query": "eastern partners",
+      "clicks": 0,
+      "impressions": 48,
+      "ctr": 0,
+      "position": 8.8125
+    },
+    {
+      "query": "coastal debt resolve reviews",
+      "clicks": 1,
+      "impressions": 45,
+      "ctr": 0.022222222222222223,
+      "position": 16.044444444444444
+    },
+    {
+      "query": "mca debt advisors",
+      "clicks": 0,
+      "impressions": 45,
+      "ctr": 0,
+      "position": 21.377777777777776
+    },
+    {
+      "query": "corporate turnaround reviews",
+      "clicks": 1,
+      "impressions": 41,
+      "ctr": 0.024390243902439025,
+      "position": 4.804878048780488
+    },
+    {
+      "query": "mca resolve",
+      "clicks": 0,
+      "impressions": 36,
+      "ctr": 0,
+      "position": 15.25
+    },
+    {
+      "query": "eastern financial",
+      "clicks": 1,
+      "impressions": 34,
+      "ctr": 0.029411764705882353,
+      "position": 10.117647058823529
+    },
+    {
+      "query": "best mca debt relief companies",
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 15.064516129032258
+    },
+    {
+      "query": "regroup partners",
+      "clicks": 1,
+      "impressions": 27,
+      "ctr": 0.037037037037037035,
+      "position": 4.7407407407407405
+    },
+    {
+      "query": "mca debt relief reviews",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 34.142857142857146
+    },
+    {
+      "query": "mca resolve reviews",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 25.473684210526315
+    },
+    {
+      "query": "corporate turnaround bbb",
+      "clicks": 1,
+      "impressions": 18,
+      "ctr": 0.05555555555555555,
+      "position": 5.555555555555555
+    },
+    {
+      "query": "merchant cash advance settlement companies",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 18.666666666666668
+    },
+    {
+      "query": "is spergel legit in canada",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 8.071428571428571
+    },
+    {
+      "query": "mca settlement",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 35.42857142857143
+    },
+    {
+      "query": "business debt adjusters reviews",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 10.25
+    },
+    {
+      "query": "mca help services boynton beach reviews",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "query": "corporate turnaround",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 30.8
+    },
+    {
+      "query": "mca debt advisors reviews",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 34
+    },
+    {
+      "query": "mca debt relief pros",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 28.7
+    },
+    {
+      "query": "spergel reviews",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "query": "mca debt settlement",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 75.44444444444444
+    },
+    {
+      "query": "coastal debt resolve bbb",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 19.5
+    },
+    {
+      "query": "mca compliant",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 32
+    },
+    {
+      "query": "mca debt advisors review",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 16.125
+    },
+    {
+      "query": "mca debt relief for salons",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "query": "mca debt relief for staffing business",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 22.625
+    },
+    {
+      "query": "mca settlement companies",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 21.5
+    },
+    {
+      "query": "best business wind-up admin reviews",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 7.571428571428571
+    },
+    {
+      "query": "coastal debt collection",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 38.285714285714285
+    },
+    {
+      "query": "coastal debt resolve",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 19.857142857142858
+    },
+    {
+      "query": "corporate rescue",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 10.142857142857142
+    },
+    {
+      "query": "mca debt relief for professional service",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 31.571428571428573
+    },
+    {
+      "query": "mca debt relief for retail",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 66.85714285714286
+    },
+    {
+      "query": "mca debt relief for security firms",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 16
+    },
+    {
+      "query": "coastal resolve",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 32.5
+    },
+    {
+      "query": "is spergel legit",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 10.166666666666666
+    },
+    {
+      "query": "mca debt relief companies",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 15.833333333333334
+    },
+    {
+      "query": "real_.bbb",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 35.666666666666664
+    },
+    {
+      "query": "is second wind consultants legit",
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 0.2,
+      "position": 5
+    },
+    {
+      "query": "coastal debt resolve trustpilot",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 12.8
+    },
+    {
+      "query": "mca tactics",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 43.6
+    },
+    {
+      "query": "spergel mississauga reviews",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 9.4
+    },
+    {
+      "query": "best business debt settlement companies in pennsylvania 2026 rankings",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 19.25
+    },
+    {
+      "query": "best mca default attorneys rated by actual business owners - 2026",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "query": "best mca settlement companies for $250k in mca debt - 2026",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "query": "best mca settlement companies for $25k in mca debt - 2026",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.5
+    }
+  ],
+  "topPages": [
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/eastern-financial-partners",
+      "clicks": 8,
+      "impressions": 1698,
+      "ctr": 0.004711425206124852,
+      "position": 5.5082449941107186
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/",
+      "clicks": 5,
+      "impressions": 588,
+      "ctr": 0.008503401360544218,
+      "position": 12.73469387755102
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/second-wind-consultants",
+      "clicks": 5,
+      "impressions": 262,
+      "ctr": 0.019083969465648856,
+      "position": 5.7251908396946565
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/corporate-turnaround",
+      "clicks": 3,
+      "impressions": 76,
+      "ctr": 0.039473684210526314,
+      "position": 10.18421052631579
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/legit/corporate-turnaround",
+      "clicks": 2,
+      "impressions": 45,
+      "ctr": 0.044444444444444446,
+      "position": 4.333333333333334
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/coastal-debt-resolve",
+      "clicks": 2,
+      "impressions": 113,
+      "ctr": 0.017699115044247787,
+      "position": 16.256637168141594
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/compare/coastal-debt-vs-business-debt-adjusters",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.3333333333333333,
+      "position": 8
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/business-debt-insider",
+      "clicks": 1,
+      "impressions": 15,
+      "ctr": 0.06666666666666667,
+      "position": 16.133333333333333
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/corporate-rescue",
+      "clicks": 1,
+      "impressions": 34,
+      "ctr": 0.029411764705882353,
+      "position": 8
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/regroup-partners",
+      "clicks": 1,
+      "impressions": 48,
+      "ctr": 0.020833333333333332,
+      "position": 7.166666666666667
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/about",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 71.81818181818181
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/best-for-trucking-companies",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 11.25
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/best-mca-settlement-companies-2026",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 15.833333333333334
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/compare/coastal-debt-vs-national-debt-relief",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 32.85714285714286
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/compare/coastal-debt-vs-spergel",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/guides/how-much-does-mca-settlement-cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/guides/mca-debt-relief-red-flags",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 63.142857142857146
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/guides/what-is-mca-settlement",
+      "clicks": 0,
+      "impressions": 49,
+      "ctr": 0,
+      "position": 46.63265306122449
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/legit/mca-debt-advisors",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 24.074074074074073
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/mca-debt-relief-for-professional-services",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 31.571428571428573
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/mca-debt-relief-for-retail",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 73.08333333333333
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/mca-debt-relief-for-salons",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/mca-debt-relief-for-security-firms",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 16
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/mca-debt-relief-for-staffing-companies",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 22.625
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/mca-settlement-companies-bbb-ratings",
+      "clicks": 0,
+      "impressions": 100,
+      "ctr": 0,
+      "position": 19.53
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/news",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/news/coastal-debt-resolve-bbb-torch-awards-sponsorship",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/opengraph-image?24a4f3092d146bf4",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/business-debt-adjusters",
+      "clicks": 0,
+      "impressions": 40,
+      "ctr": 0,
+      "position": 22.6
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/business-debt-law-group",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 6.076923076923077
+    }
+  ]
+}
