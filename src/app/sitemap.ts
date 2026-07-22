@@ -12,11 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${SITE}/`, lastModified: now, priority: 1 },
-    {
-      url: `${SITE}/best-mca-settlement-companies-2026`,
-      lastModified: now,
-      priority: 0.95,
-    },
+    // /best-mca-settlement-companies-2026 canonicals to the homepage and is
+    // intentionally excluded here to avoid a mixed indexing signal.
     {
       url: `${SITE}/mca-settlement-companies-bbb-ratings`,
       lastModified: now,

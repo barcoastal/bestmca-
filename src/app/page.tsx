@@ -11,9 +11,9 @@ import { NEWS } from "@/data/news";
 
 export const metadata = {
   title:
-    "Best MCA Debt Relief & Settlement Companies of 2026 — Independent Reviews",
+    "Best MCA Debt Relief Companies 2026: 17 Settlement Firms Ranked",
   description:
-    "Independent rankings of the best MCA debt relief and merchant cash advance settlement companies in 2026. Compare 17 firms across transparency, results, communication, cost, and litigation defense.",
+    "Independent reviews and rankings of the 17 best MCA debt relief and merchant cash advance settlement companies of 2026. Compare BBB ratings, fees, complaints, and real results.",
   keywords: [
     "mca debt relief",
     "mca debt relief reviews",
@@ -56,6 +56,22 @@ export default function HomePage() {
     })),
   };
 
+  // Tells Google this page IS the ranked list for "best MCA debt relief
+  // companies" queries, with one entry per firm pointing at its review.
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Best MCA Debt Relief Companies 2026",
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    numberOfItems: RANKED.length,
+    itemListElement: RANKED.map((r) => ({
+      "@type": "ListItem",
+      position: r.rank,
+      name: r.name,
+      url: `https://www.mcasettlementreviews.com/reviews/${r.slug}`,
+    })),
+  };
+
   return (
     <div>
       <script
@@ -64,12 +80,22 @@ export default function HomePage() {
           __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(itemListSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       {/* Hero */}
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 pt-16 pb-20 grid gap-12 md:grid-cols-[1.4fr_1fr] items-center">
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
-              2026 Independent Review · Updated June 2026
+              2026 Independent Review · Updated{" "}
+              {new Date().toLocaleDateString("en-US", {
+                month: "long",
+                year: "numeric",
+              })}
             </div>
             <h1 className="mt-4 font-display text-4xl md:text-6xl font-semibold text-navy leading-[1.05] tracking-tight">
               The best MCA settlement companies of 2026, ranked by people who

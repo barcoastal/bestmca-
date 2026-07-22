@@ -8,18 +8,13 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 
 export const metadata = {
   title:
-    "Best MCA Debt Relief & Settlement Companies 2026: Top 10 Independent Reviews",
+    "The 17 Best MCA Settlement Firms of 2026, Compared Side by Side",
   description:
-    "The 10 best MCA debt relief and merchant cash advance settlement firms in 2026. Independent reviews, real client commentary, and category-by-category scoring across transparency, results, cost, and litigation defense.",
-  keywords: [
-    "best mca debt relief companies",
-    "mca debt relief reviews",
-    "best mca settlement company",
-    "mca settlement companies",
-    "merchant cash advance debt relief",
-    "mca debt settlement",
-  ],
-  alternates: { canonical: "/best-mca-settlement-companies-2026" },
+    "All 17 MCA debt relief and merchant cash advance settlement firms we reviewed in 2026, compared side by side with category-by-category scoring across transparency, results, cost, and litigation defense.",
+  // This page shows the same ranked leaderboard as the homepage, which was
+  // splitting head-term signal between the two (both ranked, both poorly).
+  // Canonicalizing to the homepage consolidates that authority in one place.
+  alternates: { canonical: "/" },
 };
 
 export default function BestOfPage() {
@@ -36,7 +31,7 @@ export default function BestOfPage() {
             2026 Independent Ranking
           </div>
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">
-            The 10 best MCA settlement companies of 2026
+            The 17 best MCA settlement companies of 2026
           </h1>
           <p className="mt-4 text-lg text-ink-soft leading-relaxed max-w-3xl">
             We evaluated 10 merchant cash advance settlement and restructuring
