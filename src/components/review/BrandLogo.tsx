@@ -35,7 +35,7 @@ const ACCENTS: Record<string, string> = {
   Spergel: "#16a34a",
   "Corporate Turnaround": "#a16207",
   Regroup: "#7c3aed",
-  "Corporate Rescue": "#db2777",
+  "Corporate Rescue Advisors": "#db2777",
   "Eastern Financial": "#0891b2",
   BDLG: "#475569",
   "Stop MCA": "#dc2626",

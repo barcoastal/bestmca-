@@ -429,8 +429,8 @@ export const REVIEWS: Review[] = [
   },
   {
     slug: "corporate-rescue",
-    name: "Corporate Rescue",
-    shortName: "Corporate Rescue",
+    name: "Corporate Rescue Advisors",
+    shortName: "Corporate Rescue Advisors",
     score: 3.5,
     rank: 12,
     oneLineVerdict:
@@ -471,7 +471,7 @@ export const REVIEWS: Review[] = [
       "Less depth in litigation defense than attorney-led competitors",
     ],
     verdict:
-      "Corporate Rescue has individually positive reviews and a clean-looking productized model. The concern is that the publicly available review sample is very small (4 Trustpilot reviews), and one of those reviews alleges material fraud. Owners who proceed should document every fee, verify creditor contact independently within the first 30 days, and refuse instructions to stop paying creditors without written confirmation that negotiation has begun.",
+      "Corporate Rescue Advisors has individually positive reviews and a clean-looking productized model. The concern is that the publicly available review sample is very small (4 Trustpilot reviews), and one of those reviews alleges material fraud. Owners who proceed should document every fee, verify creditor contact independently within the first 30 days, and refuse instructions to stop paying creditors without written confirmation that negotiation has begun.",
     pricing:
       "Fees vary by total debt restructured. Public marketing claims payment reductions of up to 60% but should be validated against signed agreement language.",
     process:
@@ -496,7 +496,7 @@ export const REVIEWS: Review[] = [
       {
         quote:
           "A specific allegation of $18,000+ in withdrawals across multiple accounts with no creditor contact made, plus instructions to stop paying creditors. Verify in writing before any engagement.",
-        source: "Trustpilot review of Corporate Rescue",
+        source: "Trustpilot review of Corporate Rescue Advisors",
       },
     ],
   },

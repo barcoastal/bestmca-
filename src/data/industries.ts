@@ -33,7 +33,7 @@ export const INDUSTRIES: Industry[] = [
       "Retail businesses live on inventory turnover and processor relationships. MCA daily ACH pulls can starve the inventory account at exactly the moment a reorder is due, which kills next month&rsquo;s revenue and accelerates the spiral. The right settlement firm understands inventory financing, processor freezes, and seasonal cash flow.",
     whyDifferentSecond:
       "Funders that pull aggressive UCC action against retail operators can also disrupt supplier relationships, which is why litigation defense matters as much as settlement negotiation in this category.",
-    picks: pickByName(["Coastal", "Second Wind", "Corporate Rescue"]),
+    picks: pickByName(["Coastal", "Second Wind", "Corporate Rescue Advisors"]),
   },
   {
     slug: "mca-debt-relief-for-salons",
