@@ -11,6 +11,7 @@ export type Guide = {
   metaDescription: string;
   intro: string;
   sections: GuideSection[];
+  faq?: { q: string; a: string }[];
   takeaway: string;
 };
 
@@ -56,6 +57,50 @@ export const GUIDES: Guide[] = [
           "You want to avoid Chapter 7 or Chapter 11 if possible",
           "You have not yet been sued, or a lawsuit is recent and defensible",
         ],
+      },
+      {
+        heading: "The settlement process, step by step",
+        paragraphs: [
+          "A typical engagement follows a predictable arc. Week one is document gathering and analysis: every MCA agreement, the payment history on each position, bank statements, and current revenue. From that, the firm builds the picture funders will respond to, what the business actually generates versus what the stacked positions pull.",
+          "Weeks two through four are the negotiation window. The firm contacts each funder, presents the financial reality, and works toward either a discounted payoff or a restructured schedule. Funders respond at different speeds; aggressive ones sometimes escalate before settling, which is where a firm with litigation capability keeps the process on track.",
+          "Resolution usually lands between week four and month six depending on position count and whether litigation was already in motion. A complete resolution includes signed settlement agreements for each position, UCC lien releases, and written confirmation that the account is closed. Missing any of those three invites problems later.",
+        ],
+      },
+      {
+        heading: "What happens if you default instead",
+        paragraphs: [
+          "Understanding the alternative clarifies why settlement exists. An unmanaged MCA default typically unfolds fast: default notices within days of missed remittances, ACH attempts that overdraw the account, a frozen merchant processor if the funder contacts it, and UCC notices sent to your customers instructing them to redirect payment. Contracts with a Confession of Judgment can produce an enforceable judgment in weeks with no trial.",
+          "None of that means default is unrecoverable, firms resolve post-default cases every day. It means the price of resolution rises with each escalation step. The same funder that would have taken a steep discount pre-default may demand more, plus legal fees, once a judgment is entered. Timing is the single biggest factor owners control.",
+        ],
+      },
+      {
+        heading: "Settlement vs consolidation, refinancing, and bankruptcy",
+        paragraphs: [
+          "Consolidation and reverse-consolidation products replace your MCAs with a new obligation, often at a similar true cost, and add a new creditor to the picture. They change the payment shape without reducing what you owe. Refinancing into a term loan genuinely helps when you qualify, but businesses buried in stacked MCAs with UCC filings usually do not qualify until the MCAs are resolved first.",
+          "Bankruptcy is the heaviest tool: it stops collection instantly but puts the business through a public court process with long credit consequences, and because MCAs are structured as receivable purchases, funders sometimes contest their treatment. Settlement sits between doing nothing and filing: it reduces the actual balance, keeps the matter private, and keeps the business operating. The right choice depends on whether the underlying business is viable once the daily pulls stop.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "How long does MCA settlement take?",
+        a: "Simple single-position cases can resolve in four to eight weeks. Stacked positions across multiple funders, or cases where litigation has already started, commonly run three to six months. The timeline is driven mostly by how many funders are involved and how far each has escalated.",
+      },
+      {
+        q: "Is MCA settlement legal?",
+        a: "Yes. Settlement is an ordinary commercial negotiation between you (through your representative) and the funder, ending in a written agreement both sides sign. What varies is the quality of representation, which is why we review the firms in this space.",
+      },
+      {
+        q: "Does settling an MCA hurt my business credit?",
+        a: "A negotiated settlement is significantly better for your credit picture than a default, judgment, or open UCC liens. Some funders report settled accounts, but a resolved balance with released liens positions the business to qualify for conventional financing again, which an unresolved default never does.",
+      },
+      {
+        q: "Can I negotiate an MCA settlement myself?",
+        a: "You can, and on a single small position with a cooperative funder it sometimes works. The difficulty is that funders negotiate these contracts daily and you do not, and mistakes like stopping payment without a strategy can trigger defaults and judgments. Multiple positions or any litigation risk is usually where professional representation pays for itself.",
+      },
+      {
+        q: "How much does MCA settlement cost?",
+        a: "Most firms charge either a percentage of enrolled debt (commonly 15 to 25 percent), a percentage of savings achieved, or a flat fee. The structure matters as much as the number: get the full fee schedule in writing before signing, and read our cost guide for a breakdown of each model.",
       },
     ],
     takeaway:

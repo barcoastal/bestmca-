@@ -49,6 +49,27 @@ export function CompetitorFAQ({ review }: { review: Review }) {
           {review.shortName} vs Coastal Debt Resolve →
         </Link>
       </div>
+      <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm text-ink-soft">
+        <span className="font-semibold text-ink-subtle">Before you sign:</span>
+        <Link
+          href="/guides/what-is-mca-settlement"
+          className="text-navy hover:underline"
+        >
+          How MCA settlement works
+        </Link>
+        <Link
+          href="/guides/how-much-does-mca-settlement-cost"
+          className="text-navy hover:underline"
+        >
+          What it should cost
+        </Link>
+        <Link
+          href="/guides/mca-debt-relief-red-flags"
+          className="text-navy hover:underline"
+        >
+          Red flags to avoid
+        </Link>
+      </div>
     </section>
   );
 }

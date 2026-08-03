@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GUIDES, getGuideBySlug } from "@/data/guides";
 import { CTABanner } from "@/components/review/CTABanner";
+import { faqSchema, jsonLd } from "@/lib/schema";
 
 export const dynamicParams = false;
 
@@ -34,8 +35,32 @@ export default async function GuidePage({
   const guide = getGuideBySlug(slug);
   if (!guide) notFound();
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: guide.title,
+    description: guide.metaDescription,
+    author: {
+      "@type": "Organization",
+      name: "MCA Settlement Reviews Editorial Team",
+      url: "https://www.mcasettlementreviews.com/about",
+    },
+    publisher: { "@id": "https://www.mcasettlementreviews.com/#organization" },
+    mainEntityOfPage: `https://www.mcasettlementreviews.com/guides/${guide.slug}`,
+  };
+
   return (
     <article className="bg-paper">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLd(articleSchema)}
+      />
+      {guide.faq && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLd(faqSchema(guide.faq))}
+        />
+      )}
       <header className="border-b border-line bg-paper-soft">
         <div className="mx-auto max-w-3xl px-5 py-14">
           <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
@@ -76,6 +101,34 @@ export default async function GuidePage({
             )}
           </section>
         ))}
+
+        {guide.faq && (
+          <section>
+            <h2 className="font-display text-2xl font-semibold text-navy">
+              Common questions
+            </h2>
+            <div className="mt-4 space-y-3">
+              {guide.faq.map((f, i) => (
+                <details
+                  key={i}
+                  className="group rounded-2xl border border-line bg-white p-5 open:bg-paper-soft"
+                >
+                  <summary className="cursor-pointer flex items-start justify-between gap-4 list-none">
+                    <h3 className="font-display text-base font-semibold text-navy">
+                      {f.q}
+                    </h3>
+                    <span className="text-navy text-xl leading-none shrink-0 transition-transform group-open:rotate-45">
+                      +
+                    </span>
+                  </summary>
+                  <p className="mt-3 text-sm text-ink-soft leading-relaxed">
+                    {f.a}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="rounded-2xl border-l-4 border-gold bg-gold-soft/30 p-6">
           <div className="text-xs uppercase tracking-[0.18em] font-semibold text-warn">

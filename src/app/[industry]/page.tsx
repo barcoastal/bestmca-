@@ -5,6 +5,7 @@ import { INDUSTRIES, getIndustryBySlug } from "@/data/industries";
 import { ScoreBadge } from "@/components/review/ScoreBadge";
 import { BrandLogo } from "@/components/review/BrandLogo";
 import { CTABanner } from "@/components/review/CTABanner";
+import { faqSchema, jsonLd } from "@/lib/schema";
 
 export const dynamicParams = false;
 
@@ -61,6 +62,19 @@ export default async function IndustryPage({
         <p className="text-ink-soft leading-relaxed">{i.whyDifferentSecond}</p>
       </section>
 
+      {i.sections.map((s) => (
+        <section key={s.title} className="mx-auto max-w-4xl px-5 py-8 space-y-5">
+          <h2 className="font-display text-2xl font-semibold text-navy">
+            {s.title}
+          </h2>
+          {s.body.map((p, idx) => (
+            <p key={idx} className="text-ink-soft leading-relaxed">
+              {p}
+            </p>
+          ))}
+        </section>
+      ))}
+
       <section className="mx-auto max-w-4xl px-5 py-12">
         <h2 className="font-display text-3xl font-semibold text-navy mb-8">
           Our top three picks for {i.pluralName}
@@ -99,6 +113,34 @@ export default async function IndustryPage({
                 <ScoreBadge score={r.score} variant="compact" />
               </div>
             </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-5 py-12">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLd(faqSchema(i.faq))}
+        />
+        <h2 className="font-display text-2xl font-semibold text-navy mb-6">
+          MCA debt relief for {i.pluralName}: common questions
+        </h2>
+        <div className="space-y-3">
+          {i.faq.map((f, idx) => (
+            <details
+              key={idx}
+              className="group rounded-2xl border border-line bg-white p-5 open:bg-paper-soft"
+            >
+              <summary className="cursor-pointer flex items-start justify-between gap-4 list-none">
+                <h3 className="font-display text-base font-semibold text-navy">
+                  {f.q}
+                </h3>
+                <span className="text-navy text-xl leading-none shrink-0 transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+              <p className="mt-3 text-sm text-ink-soft leading-relaxed">{f.a}</p>
+            </details>
           ))}
         </div>
       </section>
