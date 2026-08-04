@@ -50,3 +50,40 @@ body {
   font-family: var(--font-serif);
   letter-spacing: -0.02em;
 }
+
+/* Comparison table: staggered row reveal on first paint */
+@keyframes ct-fade-rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.ct-row {
+  animation: ct-fade-rise 0.4s ease-out both;
+}
+
+/* Sticky CTA bar: slide up on appear */
+@keyframes sticky-cta-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.sticky-cta-enter {
+  animation: sticky-cta-up 0.35s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ct-row,
+  .sticky-cta-enter {
+    animation: none;
+  }
+}
