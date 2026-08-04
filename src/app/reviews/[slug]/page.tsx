@@ -41,9 +41,9 @@ export async function generateMetadata({
   if (review.isCoastal) {
     return {
       title:
-        "Coastal Debt Resolve Reviews 2026: Is Coastal Debt Legit? Complaints, Cost, and Verdict",
+        "Coastal Debt Resolve Reviews 2026: Trustpilot, Complaints & Verdict",
       description:
-        "Independent 2026 review of Coastal Debt Resolve. 4.9/5 rating across 800+ verified reviews, transparent pricing, in-house attorneys. Read pros, cons, complaints, and our complete verdict.",
+        "Independent 2026 review of Coastal Debt Resolve: 4.9/5 across 800+ verified Trustpilot reviews, BBB Accredited A+, in-house attorneys. Complaints, lawsuits, cost, and our complete verdict.",
       keywords: [
         "Coastal Debt Resolve reviews",
         "Coastal Debt Resolve complaints",

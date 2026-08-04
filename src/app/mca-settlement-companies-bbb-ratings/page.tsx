@@ -257,6 +257,16 @@ export default function BBBRatingsPage() {
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">
             MCA settlement companies and their real BBB record
           </h1>
+          <p className="mt-3 text-sm text-ink-subtle">
+            Headline findings from this dataset are summarized in our{" "}
+            <Link
+              href="/state-of-mca-settlement-2026"
+              className="text-navy underline"
+            >
+              State of MCA Settlement 2026 study
+            </Link>
+            .
+          </p>
           <p className="mt-4 text-lg text-ink-soft leading-relaxed max-w-3xl">
             We pulled the actual Better Business Bureau profile for every major
             merchant cash advance settlement and debt-relief firm, the

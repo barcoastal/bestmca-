@@ -19,6 +19,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       priority: 0.9,
     },
+    {
+      url: `${SITE}/state-of-mca-settlement-2026`,
+      lastModified: now,
+      priority: 0.85,
+    },
     { url: `${SITE}/methodology`, lastModified: now, priority: 0.6 },
     { url: `${SITE}/about`, lastModified: now, priority: 0.5 },
     {

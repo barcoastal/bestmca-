@@ -22,6 +22,14 @@ const FAQ = [
     a: "Yes. Unlike most settlement-only firms, Coastal has in-house attorneys who handle Confession of Judgment defense, UCC release, frozen merchant account disputes, and active litigation under the same engagement. Owners do not pay a separate retainer if a funder escalates during the negotiation.",
   },
   {
+    q: "What is Coastal Debt Resolve's Trustpilot rating?",
+    a: "Coastal Debt Resolve holds a 4.9 of 5 average across more than 800 verified Trustpilot reviews, the largest verified review base of any firm in our comparison. The recurring themes in those reviews are named representatives, responsive communication, and fee terms disclosed in writing before signing.",
+  },
+  {
+    q: "Are there any Coastal Debt Resolve lawsuits I should know about?",
+    a: "Our review did not identify a pattern of client lawsuits against Coastal Debt Resolve. Note that in this industry, court records involving a settlement firm frequently reflect the firm defending its clients against MCA funder suits, which is part of the service, rather than claims brought by clients against the firm. As always, check current court records and the firm's BBB profile when you do your own diligence.",
+  },
+  {
     q: "Is Coastal Debt Resolve better than other MCA settlement companies?",
     a: "In our 2026 review across 17 firms, Coastal Debt Resolve scored 4.9 of 5 and ranked first. The differentiator is the integration of attorneys, settlement, and case management under one roof. Most competitors specialize in one of the three and refer the rest out, which creates handoff cost and risk when a case evolves.",
   },

@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { coastalCta, COASTAL_PHONE, COASTAL_PHONE_HREF } from "@/lib/cta";
+import { TrackedLink } from "./TrackedLink";
 
 type Props = {
   campaign: string;
@@ -25,14 +25,13 @@ export function CTABanner({
           </p>
           <p className="mt-1 text-sm text-ink-muted max-w-xl">{body}</p>
         </div>
-        <Link
+        <TrackedLink
           href={coastalCta(campaign)}
-          target="_blank"
-          rel="noopener"
+          campaign={campaign}
           className="shrink-0 inline-flex items-center justify-center rounded-full bg-navy px-5 py-3 text-sm font-semibold text-white hover:bg-navy-deep transition-colors"
         >
           {buttonLabel}
-        </Link>
+        </TrackedLink>
       </aside>
     );
   }
@@ -52,20 +51,19 @@ export function CTABanner({
         </h3>
         <p className="mt-3 text-white/75 leading-relaxed max-w-xl">{body}</p>
         <div className="mt-6 flex flex-col sm:flex-row gap-3">
-          <Link
+          <TrackedLink
             href={coastalCta(campaign)}
-            target="_blank"
-            rel="noopener"
+            campaign={campaign}
             className="inline-flex items-center justify-center rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep hover:bg-gold/90 transition-colors"
           >
             {buttonLabel}
-          </Link>
-          <Link
+          </TrackedLink>
+          <a
             href={COASTAL_PHONE_HREF}
             className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
           >
             Call {COASTAL_PHONE}
-          </Link>
+          </a>
         </div>
       </div>
     </section>

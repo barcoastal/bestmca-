@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { coastalCta } from "@/lib/cta";
+import { TrackedLink } from "./TrackedLink";
 import { Stars } from "./Stars";
 
 type Props = {
@@ -29,14 +30,13 @@ export function AlternativeCallout({ competitorName, reason }: Props) {
       </p>
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <Stars value={4.9} size="sm" showNumber />
-        <Link
+        <TrackedLink
           href={coastalCta(`alternative-callout-${competitorName}`)}
-          target="_blank"
-          rel="noopener"
+          campaign={`alternative-callout-${competitorName}`}
           className="inline-flex items-center justify-center rounded-full bg-navy px-4 py-2 text-xs font-semibold text-white hover:bg-navy-deep transition-colors"
         >
           Get a free Coastal review
-        </Link>
+        </TrackedLink>
       </div>
     </aside>
   );
