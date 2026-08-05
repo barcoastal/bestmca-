@@ -630,6 +630,291 @@ export const GUIDES: Guide[] = [
     takeaway:
       "Before you pay anyone to fix an unaffordable MCA payment, check whether the contract already obligates the funder to fix it. Reconciliation is free, fast when it works, and evidence when it does not.",
   },
+  {
+    slug: "mca-attorneys-vs-settlement-companies",
+    title: "MCA attorneys vs settlement companies: which one do you actually need?",
+    metaTitle: "MCA Attorney or Settlement Company? How to Choose (2026)",
+    metaDescription:
+      "Lawyers and settlement firms solve different MCA problems. When you need an attorney, when a settlement company is enough, what each costs, and how to find the right one in your state.",
+    intro:
+      "Owners searching for MCA help find two different animals: law firms and settlement companies. They overlap enough to be confusing and differ enough that picking wrong costs real money. Here is the clean split, and a state-by-state note on when the lawyer question actually matters.",
+    sections: [
+      {
+        heading: "What each one actually does",
+        paragraphs: [
+          "A settlement company negotiates commercial deals: reduced balances, restructured payments, coordinated multi-funder workouts. Its leverage is financial, the funder's cost of chasing you versus taking a discount today. It cannot represent you in court, file motions, or vacate a judgment.",
+          "An attorney brings legal leverage: answering lawsuits, challenging Confessions of Judgment, contesting UCC enforcement, and raising recharacterization arguments (that the advance functions as a usurious loan). Attorneys can also negotiate settlements, though a litigation shop billing hourly is not always the cheapest negotiator.",
+          "The strongest model in our rankings is the hybrid: negotiation handled at scale with attorneys in-house for the files that turn legal. That is a core reason Coastal Debt Resolve sits at #1 in our comparison.",
+        ],
+      },
+      {
+        heading: "Clear signs you need an attorney, not just a negotiator",
+        paragraphs: [
+          "Some situations are legal problems wearing a debt costume. In any of these, negotiation without counsel leaves you exposed:",
+        ],
+        bullets: [
+          "You have been served with a lawsuit, or a judgment already exists",
+          "Your contract contains a Confession of Judgment",
+          "Your bank account has been restrained or levied",
+          "UCC notices have gone to your customers or processor",
+          "The funder's conduct suggests a recharacterization or usury defense worth raising",
+        ],
+      },
+      {
+        heading: "Clear signs a settlement company is enough",
+        paragraphs: [
+          "No litigation, no COJ, payments current or barely slipping, and the core problem is arithmetic: the daily pulls exceed what the business generates. That is a negotiation file. What matters then is the firm's transparency and track record, which is exactly what our rankings score.",
+        ],
+      },
+      {
+        heading: "Does my state matter?",
+        paragraphs: [
+          "Less than the search results suggest. MCA agreements almost always choose New York or another funder-friendly forum in the contract, so the case, if there is one, usually lives there, not where your shop is. What your state does affect: COJ enforceability against you, bank levy procedure, and homestead protections if a personal guarantee is chased.",
+          "Practical implication: you rarely need a 'Montana MCA lawyer', you need counsel experienced in MCA litigation wherever the forum clause points, plus local counsel only if enforcement reaches your state. National settlement firms and MCA-focused attorneys handle exactly this split every day.",
+        ],
+      },
+      {
+        heading: "What each costs",
+        paragraphs: [
+          "Settlement companies: typically 15 to 25 percent of enrolled debt or a percentage of savings. MCA defense attorneys: hourly (often $300 to $600) or flat fees per matter; some take settlement mandates on contingency-like structures. The hybrid firms quote one fee covering both, which is worth real money the moment a file turns legal mid-negotiation.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Can a settlement company stop a lawsuit?",
+        a: "No. Only an attorney can appear in court for you. A settlement company can negotiate while a suit is pending, but the deadlines to answer a complaint run regardless, which is why sued owners need counsel first and negotiation second.",
+      },
+      {
+        q: "Do I need a lawyer in my own state?",
+        a: "Usually the contract's forum clause, most often New York, controls where disputes live, so MCA-experienced counsel matters more than local counsel. Local attorneys come into play when a judgment is enforced against assets in your state.",
+      },
+      {
+        q: "Is a law firm always the safer choice?",
+        a: "Safer legally, not always better financially. Pure litigation shops can cost more than the discount they win on a simple negotiation file. Match the tool to the problem: legal exposure means attorney, arithmetic means negotiator, both means a hybrid firm.",
+      },
+    ],
+    takeaway:
+      "Lawsuit, COJ, or frozen account: attorney. Unaffordable but not yet legal: settlement firm. Both risks live in your file: pick a firm with attorneys in-house.",
+  },
+  {
+    slug: "ucc-lien-release-mca",
+    title: "UCC liens from MCA funders: how they hurt you and how to get them released",
+    metaTitle: "MCA UCC Liens: Removal and Release After Settlement (2026)",
+    metaDescription:
+      "MCA funders file blanket UCC-1 liens that block refinancing and can reach your customers. How to find every filing, what a release requires, and the settlement mistake that leaves liens alive.",
+    intro:
+      "Every MCA you signed almost certainly produced a UCC-1 filing against your business, and those filings outlive the problems you can see. They block refinancing, spook lenders, and let funders reach your customers. Here is how to find them, what they really do, and how to get them off.",
+    sections: [
+      {
+        heading: "What the filing actually is",
+        paragraphs: [
+          "A UCC-1 financing statement is a public notice, filed with your state's Secretary of State, that a creditor claims a security interest in your assets. MCA funders typically claim everything: receivables, inventory, equipment, deposit accounts. The filing itself seizes nothing, but it establishes priority and it is public.",
+          "Two practical harms follow. First, any bank, SBA lender, or factor that searches your name sees the filings and either declines or demands subordination. Second, a funder in default posture can send notices to your account debtors, your customers, directing them to pay the funder directly, which is both a cash-flow attack and a reputation hit.",
+        ],
+      },
+      {
+        heading: "Find every filing before you negotiate",
+        paragraphs: [
+          "Search your state's Secretary of State UCC database (free in most states) for your legal entity name and any DBAs. Stacked owners are routinely surprised: filings from funders long paid off, duplicate filings, even filings from brokers who never advanced a dollar. Build the list first; every one of them is a negotiation item.",
+        ],
+      },
+      {
+        heading: "How releases actually happen",
+        paragraphs: [
+          "A proper settlement agreement obligates the funder to file a UCC-3 termination within a stated window after final payment, and gives you the right to file it yourself if they fail. That last clause matters: collections departments are diligent about filing liens and lazy about terminating them.",
+          "After final payment, verify. Pull the state record again two to four weeks later and confirm the termination is on file. If it is not, send written demand citing the agreement; funders who ignore termination obligations after being paid are exposed under UCC Article 9's own remedy provisions, and they know it.",
+        ],
+      },
+      {
+        heading: "The settlement mistake that leaves liens alive",
+        paragraphs: [
+          "Paying a discounted balance without a written release clause is the classic error. The debt is compromised, the funder loses interest, and the filing sits on the record for its full five-year life, blocking your refinance two years later when the funder's phone number no longer answers. No release language, no deal, that rule has no exceptions worth making.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "How long does a UCC lien last if nobody removes it?",
+        a: "Five years from filing in most states, and the funder can renew it. Waiting out the clock is rarely a plan; termination through settlement or demand is.",
+      },
+      {
+        q: "Can I get financing while MCA UCC liens are on file?",
+        a: "It is hard. Most lenders require first position or clean records. Some will lend against a payoff-and-release arranged at closing, which is another reason your settlement paperwork must nail the release mechanics.",
+      },
+      {
+        q: "A funder I finished paying years ago still has a filing. What do I do?",
+        a: "Send a written demand for termination under UCC 9-513; the funder generally must file or authorize termination within about 20 days once the obligation is satisfied. If they ignore it, you can file a UCC-3 with an explanation, and an attorney letter usually resolves it faster than that.",
+      },
+    ],
+    takeaway:
+      "Liens outlive debts. List every filing before negotiating, put release language in every settlement, and verify the terminations actually hit the public record.",
+  },
+  {
+    slug: "stacked-mca-debt",
+    title: "Stacked MCAs: why the third advance breaks the business, and the way out",
+    metaTitle: "Stacked MCA Debt: How to Get Out of Multiple Positions (2026)",
+    metaDescription:
+      "Why MCA stacking spirals so fast, what total daily remittance your revenue can actually carry, and how coordinated multi-funder settlement unwinds a stack without closing the business.",
+    intro:
+      "Nobody plans to stack. The second advance covered the first one's pulls; the third covered payroll; by the fourth the business is remitting a quarter of gross revenue daily. Stacking is the single most common shape of the files that reach settlement firms, and unwinding it has rules of its own.",
+    sections: [
+      {
+        heading: "The arithmetic of the spiral",
+        paragraphs: [
+          "Each advance is priced as if it were the only one: a pull sized to 10 or 15 percent of revenue is survivable alone. Three of them remit 30 to 45 percent of gross off the top, against businesses whose entire margin is often under 15 percent. From that point the stack is mathematically unpayable from operations; it is being paid from working capital, supplier float, and the owner's savings, which is why it feels fine until it suddenly does not.",
+          "Stacking also usually violates every contract in the pile. Anti-stacking clauses make each new advance an event of default on the earlier ones, leverage funders hold quietly until they want it.",
+        ],
+      },
+      {
+        heading: "Why you cannot settle a stack one funder at a time",
+        paragraphs: [
+          "Settle position one while positions two through four keep pulling daily, and you have spent your settlement cash without changing the math. Worse, funders talk: a discount granted to one repositions the others' demands. Stacks get resolved as a coordinated negotiation, one financial picture presented to all funders, priority respected, and the total resolution sized to what the business can actually fund.",
+          "Priority matters more than owners expect. First-position funders with senior UCC filings have real leverage; fourth-position funders behind three liens are often functionally unsecured and settle at the steepest discounts. A negotiator who understands the priority ladder spends your money where it buys the most.",
+        ],
+      },
+      {
+        heading: "The number that decides everything",
+        paragraphs: [
+          "Before any strategy: compute total daily remittance across all positions as a percentage of average daily revenue, and compare it to your true operating margin. That single ratio determines whether the answer is reconciliation and restructure (ratio modestly above margin), coordinated settlement (well above), or a wind-down conversation (multiples above with declining revenue). Honest firms run this math on the first call; be suspicious of any that promise outcomes before seeing it.",
+        ],
+      },
+      {
+        heading: "While the workout runs",
+        paragraphs: [
+          "Keep revenue visible and honest: hiding deposits in new accounts breaches every agreement in the stack and destroys the credibility a coordinated deal depends on. Do not take a fifth advance to buy a quiet month; each new position resets every negotiation. And keep supplier relationships current where possible, because the business's survival is the asset every funder is being asked to bet on.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "How many MCA positions can realistically be settled at once?",
+        a: "Coordinated workouts across three to six positions are routine at established firms; the record files run higher. The constraint is not the count, it is whether the business generates enough to fund a credible total resolution.",
+      },
+      {
+        q: "Should I pay the most aggressive funder first?",
+        a: "Not automatically. Aggression and legal priority are different things. Strategy usually follows the UCC priority ladder and each funder's litigation posture together, quieting the genuinely dangerous positions while junior liens wait, which is exactly the coordination a stacked workout exists to manage.",
+      },
+      {
+        q: "Is a reverse consolidation a way out of a stack?",
+        a: "It replaces many daily pulls with one, which feels like relief, but it adds a new funded position on top of the stack, usually at real cost, and resolves nothing. For most stacked files it postpones the reckoning and raises its price. See our consolidation guide for the full comparison.",
+      },
+    ],
+    takeaway:
+      "A stack is one problem, not four. Compute the remittance-to-revenue ratio, respect the priority ladder, and resolve the whole picture in one coordinated negotiation.",
+  },
+  {
+    slug: "frozen-account-mca-funder",
+    title: "Funder froze your account? What to do in the first 48 hours",
+    metaTitle: "MCA Funder Froze Your Bank or Merchant Account: First 48 Hours",
+    metaDescription:
+      "Whether it is a restrained bank account or a held merchant processor, the first 48 hours decide how bad an MCA freeze gets. The triage steps, in order, and the calls not to make.",
+    intro:
+      "A freeze is the moment an MCA problem stops being theoretical: payroll is Friday and the money will not move. Bank restraints and processor holds have different mechanics and different fixes, and the first 48 hours of response determine most of the damage. Here is the triage, in order.",
+    sections: [
+      {
+        heading: "First, identify which freeze you have",
+        paragraphs: [
+          "A merchant processing hold means the funder (or its partner processor) is holding card settlements before they reach you. It is contractual, fast, and usually reversible by agreement. A bank account restraint means a judgment exists, almost always via a Confession of Judgment or a suit you did not answer, and the funder's attorneys have served your bank. That one is legal process, and it is the more serious of the two.",
+          "You can tell the difference in one call to your bank: ask whether there is a legal restraint on the account and who served it. If the bank says restraint, get the case caption and index number; your attorney needs both.",
+        ],
+      },
+      {
+        heading: "Hour 1 to 12: stop the bleeding",
+        paragraphs: [
+          "Protect payroll first: if a restraint hit your operating account, do not deposit new funds into it, incoming money is captured too. Run essential payments from an account at a different bank that was never on file with the funder, opened properly, not hidden, your attorney will disclose it in negotiation. Notify your payroll provider before the run date; failed payroll pulls create their own cascade.",
+          "Do not call the funder and vent. Every statement is negotiation material, and desperation reprices the settlement against you. The outreach that works is representative-to-funder within a day, with a concrete proposal attached to the release.",
+        ],
+      },
+      {
+        heading: "Hour 12 to 48: the release negotiation",
+        paragraphs: [
+          "Processor holds release by agreement: funders use them to force contact, and routinely lift them against a signed payment plan or settlement framework. Speed matters because every held settlement batch is revenue your resolution will need.",
+          "Bank restraints release three ways: negotiated stipulation (fastest and most common), motion to vacate the judgment where grounds exist, COJ procedural defects and service failures are the usual ones, or satisfaction of the judgment. An attorney who works MCA files will know within one read of the paperwork which path your facts support.",
+        ],
+      },
+      {
+        heading: "After the release: fix the cause",
+        paragraphs: [
+          "A freeze is a symptom. The judgment or default that produced it is still there, and a funder who froze once will freeze again. Fold the release into a full resolution, settled balance, payment schedule, UCC release, judgment satisfaction filed with the court, rather than paying whatever unlocks the account today and facing the same funder next quarter.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Can the funder freeze my personal bank account too?",
+        a: "If you signed a personal guarantee and the judgment names you personally, yes, personal accounts can be restrained. That escalation is exactly why guarantee files need counsel before default, not after the freeze.",
+      },
+      {
+        q: "How long does a processor hold last?",
+        a: "As long as it takes to force the conversation the funder wants, days to weeks. Holds typically lift within days of a signed framework, which is why fast, credible engagement beats waiting the funder out.",
+      },
+      {
+        q: "The judgment was entered through a COJ I barely remember signing. Can it be undone?",
+        a: "Sometimes. COJ judgments get vacated for procedural defects, defective affidavits, improper venue, service failures, and New York barred out-of-state COJs in 2019. Whether attacking the judgment beats settling it is a fact-specific attorney call, and both paths often run in parallel.",
+      },
+    ],
+    takeaway:
+      "Identify the freeze type, protect payroll from a clean account, say nothing to the funder directly, and trade the release for a full resolution, not just a reopened account.",
+  },
+  {
+    slug: "mca-consolidation-vs-settlement",
+    title: "MCA consolidation vs settlement: one reduces payments, one reduces debt",
+    metaTitle: "MCA Consolidation vs Settlement: Which Actually Helps? (2026)",
+    metaDescription:
+      "Consolidation and reverse consolidation restructure MCA payments; settlement reduces the balance itself. The honest comparison, the reverse-consolidation trap, and how to choose.",
+    intro:
+      "Half the ads promising MCA relief sell consolidation; the other half sell settlement. They sound interchangeable and are nearly opposites: one changes the shape of what you pay, the other changes the amount you owe. Choosing wrong adds months and real money to the problem.",
+    sections: [
+      {
+        heading: "What consolidation really is",
+        paragraphs: [
+          "MCA consolidation replaces multiple advances with one new obligation, a term loan or a fresh advance, that pays the others off. Your daily chaos becomes one payment, which is genuine operational relief. What it does not do is reduce principal: you still owe everything, now to a new creditor, plus the new product's cost.",
+          "The reverse consolidation variant is the one to scrutinize. Instead of paying your funders off, the reverse-consolidation company deposits weekly amounts that cover your existing daily pulls while pulling its own, longer payment from you. Every original position stays alive, a new one is added on top, and the effective cost of the arrangement is routinely brutal. For stacked files it usually postpones the reckoning and raises its price.",
+        ],
+      },
+      {
+        heading: "What settlement really is",
+        paragraphs: [
+          "Settlement negotiates the balances down, commonly by 30 to 60 percent on distressed files, and restructures what remains into payments the business can carry. It resolves the debt rather than refinancing it. The costs are different in kind: settlement fees, credit and relationship consequences with the settled funders, and a process measured in weeks to months rather than a single funding event.",
+        ],
+      },
+      {
+        heading: "The decision in one question",
+        paragraphs: [
+          "Can the business fully repay everything it owes at a survivable monthly cost, if the payments were merely reshaped? If yes, and you qualify for a genuine term loan at sane pricing, consolidation is the cleaner path: no settled-debt consequences, relationships intact. If no, if full repayment is arithmetic fiction, then consolidation only rearranges an unpayable number, and settlement is the tool that changes the number itself.",
+          "The uncomfortable pattern: businesses distressed enough to be shopping for relief rarely qualify for the good consolidation products, and the products that will take them price like the problem they are. That is why so many stacked files pass through a failed consolidation on the way to the settlement that should have come first.",
+        ],
+      },
+      {
+        heading: "Questions that expose a bad consolidation offer",
+        paragraphs: [
+          "Three answers reveal most of what matters:",
+        ],
+        bullets: [
+          "Does this pay off my existing positions entirely, or sit alongside them? (Alongside means reverse consolidation)",
+          "What is the total dollar repayment across the new product's life, next to my current total payoff?",
+          "What UCC position does the new lender take, and what happens to the old filings?",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Does consolidating MCAs hurt my credit like settlement does?",
+        a: "A true consolidation that pays funders in full avoids settled-debt marks, which is its main advantage. A reverse consolidation avoids nothing if the underlying stack later defaults anyway, which is the common ending for stacks that were unpayable before the extra layer.",
+      },
+      {
+        q: "Can I consolidate first and settle later if it fails?",
+        a: "You can, and many owners do, but the failed consolidation makes the later settlement harder: one more funded position, one more UCC filing, and less cash left to fund resolutions. If the full-repayment math already fails, skipping straight to settlement preserves your leverage.",
+      },
+      {
+        q: "Is there any legitimate use of reverse consolidation?",
+        a: "As a short bridge for a fundamentally solvent business with a dated, specific revenue event ahead, arguably. As a fix for structural over-remittance, no: it adds cost to a stack that already cannot carry its cost.",
+      },
+    ],
+    takeaway:
+      "Consolidation reshapes payments; settlement reduces debt. Run the full-repayment math honestly, and be ruthless about the reverse-consolidation trap: if the offer sits alongside your positions instead of retiring them, walk.",
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
