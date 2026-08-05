@@ -7,6 +7,7 @@ import { CTABanner } from "@/components/review/CTABanner";
 import { BrandLogo } from "@/components/review/BrandLogo";
 import { BBBSeal } from "@/components/review/BBBSeal";
 import { coastalCta } from "@/lib/cta";
+import { TrackedLink } from "@/components/review/TrackedLink";
 import { NEWS } from "@/data/news";
 
 export const metadata = {
@@ -102,12 +103,19 @@ export default function HomePage() {
               actually read the contracts.
             </h1>
             <p className="mt-6 text-lg text-ink-soft leading-relaxed max-w-2xl">
-              We reviewed 10 merchant cash advance settlement and restructuring
-              firms across five categories: transparency and disclosures,
+              We reviewed {RANKED.length} merchant cash advance settlement and
+              restructuring firms across five categories: transparency and disclosures,
               settlement results, client communication, fee structure, and
               litigation defense. One firm scored above the rest.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
+              <TrackedLink
+                href={coastalCta("homepage-hero")}
+                campaign="homepage-hero"
+                className="inline-flex items-center justify-center rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep hover:bg-gold/90 transition-colors shadow-[0_2px_10px_rgba(245,184,0,0.35)]"
+              >
+                Get a free MCA review →
+              </TrackedLink>
               <Link
                 href={`/reviews/${COASTAL.slug}`}
                 className="inline-flex items-center justify-center rounded-full bg-navy text-white px-6 py-3 text-sm font-semibold hover:bg-navy-deep transition-colors"

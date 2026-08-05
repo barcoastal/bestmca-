@@ -17,6 +17,8 @@ import { CompetitorReviewBoxes } from "@/components/review/CompetitorReviewBoxes
 import { CoastalFAQ } from "@/components/review/CoastalFAQ";
 import { BrandLogo } from "@/components/review/BrandLogo";
 import { CompetitorFAQ } from "@/components/review/CompetitorFAQ";
+import { TrackedLink } from "@/components/review/TrackedLink";
+import { coastalCta } from "@/lib/cta";
 import {
   reviewSchema,
   breadcrumbSchema,
@@ -139,6 +141,17 @@ export default async function ReviewPage({
             <p className="mt-5 text-lg text-ink-soft leading-relaxed">
               {review.oneLineVerdict}
             </p>
+            <div className="mt-6">
+              <TrackedLink
+                href={coastalCta(`review-hero-${review.slug}`)}
+                campaign={`review-hero-${review.slug}`}
+                className="inline-flex items-center justify-center rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-navy-deep hover:bg-gold/90 transition-colors shadow-[0_2px_10px_rgba(245,184,0,0.3)]"
+              >
+                {isCoastal
+                  ? "Get your free MCA review from Coastal →"
+                  : "Get a free second opinion from our #1 pick →"}
+              </TrackedLink>
+            </div>
             {isCoastal && (
               <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-gold/90 text-navy-deep px-3 py-1 text-xs uppercase tracking-[0.16em] font-semibold">
                 Editor&rsquo;s top pick · 2026
