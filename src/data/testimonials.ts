@@ -120,6 +120,49 @@ export const TESTIMONIALS: Testimonial[] = [
     source: "Trustpilot",
     date: "Aug 25, 2025",
   },
+  {
+    name: "Benjamin Taber",
+    rating: 5,
+    quote:
+      "I was extremely nervous in the beginning as I have never defaulted on anything. I let Coastal Debt take over, and as it was difficult in the beginning, Angie Kelly has been there from the beginning giving me the facts and reassurance that everything will be ok. It was about a year and a half process but well worth it and kept my business alive. I highly recommend Angie Kelly and anyone at Coastal Debt to resolve these MCA issues!",
+    source: "Coastal",
+  },
+  {
+    name: "Arnie Creinin",
+    rating: 5,
+    quote:
+      "I was a bit reluctant to move forward with this until I spoke with Zachary and Natasha. They helped put my mind at ease and have been VERY good at keeping me up to date of the situation and how the process works!!",
+    source: "Trustpilot",
+    date: "Jul 2025",
+  },
+  {
+    name: "Rachel Voigt",
+    rating: 5,
+    quote:
+      "Simone has been very open and upfront with me regarding my account and needs. The weekly updates let me know that I am not forgotten and am in good hands.",
+    source: "Coastal",
+  },
+  {
+    name: "James Musser",
+    rating: 5,
+    quote:
+      "Marco has been professional, knowledgeable, and always available for any questions or problems that need to be addressed. Thank you Marco!",
+    source: "Coastal",
+  },
+  {
+    name: "Ujjwall Sai Sunder Uppuluri",
+    rating: 5,
+    quote:
+      "I think Marco did a fantastic job as my personal advisor on Coastal Debt Resolve matters. He took time to listen to my concerns, to take into account my circumstances, and recommend me the best possible route. Thank you!",
+    source: "Coastal",
+  },
+  {
+    name: "Bernard Glas",
+    rating: 5,
+    quote:
+      "My representative, Mr. Christian Alvares has been very efficient in contacting me and updating our progress in this debt resolution. He is always on top of the situation and I am very appreciative of that.",
+    source: "Coastal",
+  },
 ];
 
 export type CaseStudy = {
@@ -158,5 +201,11 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: "Seafood Market",
     quote:
       "When I found Coastal Debt Resolve, everyone was very transparent. I would say they earned my trust.",
+  },
+  {
+    name: "Georgia real estate owner",
+    industry: "Real Estate (Georgia)",
+    quote:
+      "The tipping point for me was when I was waking up every day seeing those daily drafts hit my account. I felt like I was working non-stop just to stay afloat. Filing for bankruptcy did not feel like the right move for me.",
   },
 ];
