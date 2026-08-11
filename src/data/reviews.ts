@@ -507,12 +507,12 @@ export const REVIEWS: Review[] = [
     score: 3.9,
     rank: 6,
     oneLineVerdict:
-      "Attorney-led MCA shop with a genuine 4.8 Trustpilot score (74 reviews), but a young firm (started 2023), not BBB accredited (B+), with documented complaints about robo-dialer calls that continue after opt-out and disputed refunds.",
+      "Attorney-led MCA shop with a genuine 4.8 Trustpilot score (74 reviews), but a young firm (started 2023), not BBB accredited (C+), with documented complaints about robo-dialer calls that continue after opt-out and disputed refunds.",
     founded: "2023",
     hq: "Red Bank, New Jersey",
     minDebt: "Varies",
     specialties: "MCA negotiation, settlement, attorney-led representation",
-    bbb: "B+ rating, not BBB accredited; one unanswered complaint on record",
+    bbb: "C+ rating, not BBB accredited; two unanswered complaints on record",
     trustpilot: "4.8 across 74 reviews",
     websiteLabel: "easternfinancialpartners.com",
     firmWebsite: "https://easternfinancialpartners.com",
@@ -541,7 +541,7 @@ export const REVIEWS: Review[] = [
     ],
     cons: [
       "Young firm: the business only started in 2023, with a limited track record through a full MCA default and litigation cycle",
-      "Not BBB accredited; carries a B+ rating with an unanswered complaint on file",
+      "Not BBB accredited; slipped to a C+ rating with two unanswered complaints on file",
       "BBB and Trustpilot complaints describe robo-dialer calls and repeated daily calls and texts that continued after removal and do-not-call requests",
       "Public complaints about funds taken with little progress, with refund requests denied as 'used for attorneys', including a refund not honored inside the stated cancellation window",
       "At least one client reported that after four months of payments their questions about lender contact were ignored",
@@ -647,12 +647,12 @@ export const REVIEWS: Review[] = [
     score: 3.4,
     rank: 14,
     oneLineVerdict:
-      "Long-tenured New Jersey firm with an A rating on its BBB profile and some documented payment-reduction wins, but it is not BBB accredited and draws complaints about high-frequency phone contact and at least one lien dispute. Set written expectations on fees and contact before signing.",
+      "Long-tenured New Jersey firm with an A- rating on its BBB profile and some documented payment-reduction wins, but it is not BBB accredited and draws complaints about high-frequency phone contact and at least one lien dispute. Set written expectations on fees and contact before signing.",
     founded: "2016",
     hq: "Englewood Cliffs, New Jersey",
     minDebt: "Varies",
     specialties: "Business debt settlement, MCA and creditor negotiation",
-    bbb: "A rating, not BBB accredited; one unanswered complaint on record",
+    bbb: "A- rating, not BBB accredited; one unanswered complaint on record",
     trustpilot: "Mixed; some strongly positive payment-reduction reviews",
     websiteLabel: "businessdebtadjusters.com",
     firmWebsite: "https://www.businessdebtadjusters.com",
@@ -675,18 +675,18 @@ export const REVIEWS: Review[] = [
       litigation: 3.5,
     },
     pros: [
-      "A rating on its BBB business profile",
+      "A- rating on its BBB business profile",
       "Nearly a decade in business (since 2016)",
       "Public reviews include real payment-reduction outcomes",
     ],
     cons: [
-      "Not BBB accredited despite the A rating",
+      "Not BBB accredited despite the A- rating",
       "Complaints describe high-frequency phone outreach (multiple calls per day)",
       "At least one complaint alleges a lien was placed after assurances to the contrary",
       "Mixed employee reviews raise questions about sales practices",
     ],
     verdict:
-      "Business Debt Adjusters has a longer track record than most firms in this space and its BBB profile carries an A rating, and some clients report genuine payment reductions. The offsetting concerns are that the firm is not BBB accredited, complaints describe aggressive daily phone contact, and at least one owner alleged a lien was placed after being told it would not be. Owners who engage should get a written fee schedule, a written outcome definition, and clear limits on contact frequency before signing.",
+      "Business Debt Adjusters has a longer track record than most firms in this space and its BBB profile carries an A- rating, and some clients report genuine payment reductions. The offsetting concerns are that the firm is not BBB accredited, complaints describe aggressive daily phone contact, and at least one owner alleged a lien was placed after being told it would not be. Owners who engage should get a written fee schedule, a written outcome definition, and clear limits on contact frequency before signing.",
     pricing:
       "Fee structure varies by case and is not published. Request a written fee schedule and a written description of the expected outcome before signing.",
     process:
@@ -778,17 +778,17 @@ export const REVIEWS: Review[] = [
     score: 2.6,
     rank: 16,
     oneLineVerdict:
-      "Pennsylvania firm carrying an F rating on its BBB profile with 25 complaints on file (six left unanswered) and public reviews alleging large fees for little delivered work. High-caution; verify every fee and creditor contact independently.",
+      "Pennsylvania firm carrying an F rating on its BBB profile with 26 complaints on file (seven left unanswered) and public reviews alleging large fees for little delivered work. High-caution; verify every fee and creditor contact independently.",
     founded: "2020",
     hq: "Erie, Pennsylvania",
     minDebt: "Varies",
     specialties: "MCA debt settlement, creditor negotiation",
-    bbb: "F rating, not accredited; 25 complaints on file, 6 unanswered",
+    bbb: "F rating, not accredited; 26 complaints on file, 7 unanswered",
     trustpilot: "Mixed; roughly 120 reviews on Reviews.io with recurring fee and delivery complaints",
     websiteLabel: "mcadebtadvisors.com",
     firmWebsite: "https://www.mcadebtadvisors.com",
     warning:
-      "We include this firm for completeness and brand-defense. Its BBB business profile carries an F rating with 25 complaints on file, six of them left unanswered, alleging large fees for little delivered work. Owners considering this firm should read the BBB complaint record in full before any engagement.",
+      "We include this firm for completeness and brand-defense. Its BBB business profile carries an F rating with 26 complaints on file, seven of them left unanswered, alleging large fees for little delivered work. Owners considering this firm should read the BBB complaint record in full before any engagement.",
     recommendedFor:
       "We do not currently recommend MCA Debt Advisors based on the BBB rating and complaint pattern.",
     bestFor: [],
@@ -810,12 +810,12 @@ export const REVIEWS: Review[] = [
     ],
     cons: [
       "F rating on its BBB business profile",
-      "25 BBB complaints on file, six left unanswered by the business",
+      "23 BBB complaints on file, seven left unanswered by the business",
       "Complaints allege large fees (reports of tens of thousands) for little delivered work",
       "Reports of poor communication and unreturned emails during engagements",
     ],
     verdict:
-      "We do not recommend MCA Debt Advisors at this time. The firm carries an F rating on its BBB profile with 25 complaints, six unanswered, and the recurring theme is large fees collected for limited or no delivered work. We document the pattern here so owners searching for MCA Debt Advisors find it before they sign rather than after. Anyone who still proceeds should get a written fee schedule, a written outcome definition, and should verify creditor contact independently at every step.",
+      "We do not recommend MCA Debt Advisors at this time. The firm carries an F rating on its BBB profile with 26 complaints, seven unanswered, and the recurring theme is large fees collected for limited or no delivered work. We document the pattern here so owners searching for MCA Debt Advisors find it before they sign rather than after. Anyone who still proceeds should get a written fee schedule, a written outcome definition, and should verify creditor contact independently at every step.",
     pricing:
       "Fees are not published and complaints describe large sums collected, sometimes as ACH drafts with a short two-day dispute window. Get a written fee schedule and outcome definition before signing.",
     process:
@@ -832,7 +832,7 @@ export const REVIEWS: Review[] = [
     concerns: [
       {
         quote:
-          "The BBB business profile carries an F rating with 25 complaints, six unanswered, describing large fees collected for limited or no delivered results.",
+          "The BBB business profile carries an F rating with 26 complaints, seven unanswered, describing large fees collected for limited or no delivered results.",
         source: "BBB business profile, MCA Debt Advisors LLC, Erie PA",
       },
     ],
@@ -849,12 +849,12 @@ export const REVIEWS: Review[] = [
     hq: "Delray Beach, Florida",
     minDebt: "Varies",
     specialties: "MCA debt settlement, restructuring",
-    bbb: "26 BBB complaints on record at time of review",
+    bbb: "23 BBB complaints on record at time of review",
     trustpilot: "Negative pattern across public review platforms",
     websiteLabel: "mcaresolve.com",
     firmWebsite: "https://mcaresolve.com",
     warning:
-      "We include this firm for completeness and brand-defense. Multiple public reviews and 26 BBB complaints describe undelivered services and fees taken without creditor contact. Owners considering this firm should research the BBB complaint record carefully before any engagement.",
+      "We include this firm for completeness and brand-defense. Multiple public reviews and 23 BBB complaints describe undelivered services and fees taken without creditor contact. Owners considering this firm should research the BBB complaint record carefully before any engagement.",
     recommendedFor:
       "We do not currently recommend MCA Resolve based on the pattern of public complaints.",
     bestFor: [],
@@ -872,13 +872,13 @@ export const REVIEWS: Review[] = [
       "Has a public-facing presence and intake process",
     ],
     cons: [
-      "26 BBB complaints on record at time of review",
+      "23 BBB complaints on record at time of review",
       "Multiple reviews allege fees taken with no creditor contact made",
       "Reports of being instructed to stop paying creditors, leading to default and lost fees",
       "Recurring use of words like 'scam' in public reviews",
     ],
     verdict:
-      "We do not recommend MCA Resolve at this time. The pattern across 26 BBB complaints and Trustpilot reviews is consistent: clients report being told their debt would go into default to use the service, paying substantial fees, and then discovering the firm never contacted creditors. We include this review on the site so that owners searching for MCA Resolve can find the public complaint pattern documented in one place rather than discover it after signing.",
+      "We do not recommend MCA Resolve at this time. The pattern across 23 BBB complaints and Trustpilot reviews is consistent: clients report being told their debt would go into default to use the service, paying substantial fees, and then discovering the firm never contacted creditors. We include this review on the site so that owners searching for MCA Resolve can find the public complaint pattern documented in one place rather than discover it after signing.",
     pricing:
       "Public complaints describe fees taken in full with no creditor contact subsequently made. Verify any fee handling and creditor contact independently before any engagement.",
     process:
@@ -909,7 +909,7 @@ export const REVIEWS: Review[] = [
     concerns: [
       {
         quote:
-          "26 BBB complaints on record describing a consistent pattern: instruction to default, fees collected, no creditor contact, contract canceled on first missed payment.",
+          "23 BBB complaints on record describing a consistent pattern: instruction to default, fees collected, no creditor contact, contract canceled on first missed payment.",
         source: "BBB business profile, MCA Resolve LLC, Delray Beach FL",
       },
     ],

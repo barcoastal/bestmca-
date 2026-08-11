@@ -3,6 +3,7 @@
 // live bbb.org (or BBB Canada) profile on 2026-06-02. BBB data is live and changes
 // over time; these are point-in-time snapshots. We do not fabricate any figure: where
 // a firm has no BBB profile, or a metric is not published, that is stated explicitly.
+// Grades and complaint counts re-verified against live bbb.org profiles on 2026-08-11.
 
 export type BBBAccreditation = "accredited" | "not-accredited" | "none";
 
@@ -110,6 +111,38 @@ export const BBB_RECORDS: BBBRecord[] = [
     ],
   },
   {
+    slug: "national-credit-partners",
+    name: "National Credit Partners",
+    shortName: "National Credit Partners",
+    accreditation: "accredited",
+    accreditedSince: "Nov 2018",
+    grade: "A+",
+    hasProfile: true,
+    started: "2018",
+    hq: "Costa Mesa, CA",
+    profileUrl:
+      "https://www.bbb.org/us/ca/costa-mesa/profile/corporate/national-credit-partners-1126-1000056604",
+    takeaway:
+      "A+ and accredited since 2018, one of the stronger BBB records in the category. The profile itself publishes no complaint counts, so pair it with third-party reviews when you do diligence.",
+    quotes: [],
+  },
+  {
+    slug: "national-debt-relief",
+    name: "National Debt Relief",
+    shortName: "National Debt Relief",
+    accreditation: "accredited",
+    accreditedSince: "Feb 2013",
+    grade: "A+",
+    hasProfile: true,
+    started: "2009",
+    hq: "New York, NY",
+    profileUrl:
+      "https://www.bbb.org/us/ny/new-york/profile/debt-relief-services/national-debt-relief-0121-110899",
+    takeaway:
+      "A+ and accredited since 2013 with a massive consumer review base. The caveat is scope, not standing: it is a consumer debt-settlement operation and does not handle MCA-specific work.",
+    quotes: [],
+  },
+  {
     slug: "regroup-partners",
     name: "Regroup Partners Co.",
     shortName: "Regroup",
@@ -134,6 +167,21 @@ export const BBB_RECORDS: BBBRecord[] = [
         sentiment: "negative",
       },
     ],
+  },
+  {
+    slug: "business-debt-adjusters",
+    name: "Business Debt Adjusters",
+    shortName: "Business Debt Adjusters",
+    accreditation: "not-accredited",
+    grade: "A-",
+    hasProfile: true,
+    started: "2016",
+    hq: "Englewood Cliffs, NJ",
+    profileUrl:
+      "https://www.bbb.org/us/nj/englewd-clfs/profile/debt-relief-services/business-debt-adjusters-0221-90179879",
+    takeaway:
+      "An A- with no accreditation and one complaint the business failed to respond to. Complaints describe high-frequency phone outreach; some reviews report genuine payment reductions.",
+    quotes: [],
   },
   {
     slug: "corporate-turnaround",
@@ -170,7 +218,7 @@ export const BBB_RECORDS: BBBRecord[] = [
     name: "Stop MCA",
     shortName: "Stop MCA",
     accreditation: "not-accredited",
-    grade: "A",
+    grade: "A-",
     hasProfile: true,
     starRating: 3.18,
     reviewCount: 11,
@@ -206,7 +254,7 @@ export const BBB_RECORDS: BBBRecord[] = [
     hasProfile: true,
     starRating: 3.5,
     reviewCount: 38,
-    complaints3yr: 25,
+    complaints3yr: 23,
     complaints12mo: 6,
     started: "2019",
     hq: "Delray Beach, FL",
@@ -232,15 +280,15 @@ export const BBB_RECORDS: BBBRecord[] = [
     name: "Eastern Financial Partners",
     shortName: "Eastern Financial",
     accreditation: "not-accredited",
-    grade: "B",
+    grade: "C+",
     hasProfile: true,
-    complaints3yr: 1,
+    complaints3yr: 2,
     started: "2023",
     hq: "Red Bank, NJ",
     profileUrl:
       "https://www.bbb.org/us/nj/red-bank/profile/financial-services/eastern-financial-partners-0221-90236109",
     takeaway:
-      "A B grade dragged down by a complaint the firm failed to respond to, plus multiple reviews describing harassing robo-dialed calls and texts. Its Trustpilot score is much higher than its BBB standing.",
+      "Slipped to a C+ on our August 2026 re-check, with two complaints the firm failed to respond to, plus multiple reviews describing harassing robo-dialed calls and texts. Its Trustpilot score is much higher than its BBB standing.",
     quotes: [
       {
         text: "I have asked multiple times to be put on a do not call list and they ignore it.",
@@ -274,6 +322,63 @@ export const BBB_RECORDS: BBBRecord[] = [
     ],
   },
   {
+    slug: "mca-debt-advisors",
+    name: "MCA Debt Advisors, LLC",
+    shortName: "MCA Debt Advisors",
+    accreditation: "not-accredited",
+    grade: "F",
+    hasProfile: true,
+    complaints3yr: 26,
+    started: "2020",
+    hq: "Erie, PA",
+    profileUrl:
+      "https://www.bbb.org/us/pa/erie/profile/debt-relief-services/mca-debt-advisors-llc-0141-71077651",
+    takeaway:
+      "An F with 26 complaints on file and seven left unanswered as of our August 2026 re-check. The recurring theme in complaints is large fees for little delivered work.",
+    quotes: [],
+  },
+  {
+    slug: "delancey-street",
+    name: "Delancey Street Group LLC",
+    shortName: "Delancey Street",
+    accreditation: "not-accredited",
+    grade: "Not rated",
+    hasProfile: true,
+    started: "2018",
+    hq: "New York, NY",
+    profileUrl:
+      "https://www.bbb.org/us/ny/new-york/profile/debt-relief-services/delancey-street-group-llc-0121-87176359",
+    takeaway:
+      "A profile exists but BBB states it has insufficient information to issue a rating. No complaint channel history to evaluate either way, so diligence rests on other sources.",
+    quotes: [],
+  },
+  {
+    slug: "rise-alliance",
+    name: "Rise Alliance",
+    shortName: "Rise Alliance",
+    accreditation: "none",
+    grade: "No profile",
+    hasProfile: false,
+    hq: "New York, NY",
+    entityNote:
+      "Operates as a brand within the Second Wind Consultants group; Second Wind's own profile is A+ and accredited.",
+    takeaway:
+      "No standalone BBB profile. Its public ratings live on Google and Birdeye, and its BBB-adjacent credibility rests on the Second Wind parent.",
+    quotes: [],
+  },
+  {
+    slug: "business-debt-insider",
+    name: "Business Debt Insider",
+    shortName: "Business Debt Insider",
+    accreditation: "none",
+    grade: "No profile",
+    hasProfile: false,
+    hq: "Fort Lauderdale, FL",
+    takeaway:
+      "A newer flat-fee restructuring practice with no BBB profile yet. Its model is documented agreements and disclosed flat fees; verify directly until a third-party record accumulates.",
+    quotes: [],
+  },
+  {
     slug: "business-debt-law-group",
     name: "Business Debt Law Group",
     shortName: "BDLG",
@@ -294,8 +399,8 @@ export function getBBBBySlug(slug: string) {
 }
 
 export function bbbGradeTone(grade: string): "good" | "ok" | "bad" | "none" {
-  if (grade === "A+" || grade === "A") return "good";
-  if (grade === "B" || grade === "C") return "ok";
-  if (grade === "No profile") return "none";
+  if (grade.startsWith("A")) return "good";
+  if (grade.startsWith("B") || grade.startsWith("C")) return "ok";
+  if (grade === "No profile" || grade === "Not rated") return "none";
   return "bad"; // D, F
 }
