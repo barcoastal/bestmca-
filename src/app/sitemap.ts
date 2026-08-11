@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { REVIEWS, COMPETITORS } from "@/data/reviews";
+import { GLOSSARY } from "@/data/glossary";
 import { GUIDES } from "@/data/guides";
 import { INDUSTRIES } from "@/data/industries";
 import { NEWS } from "@/data/news";
@@ -76,6 +77,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  const glossary: MetadataRoute.Sitemap = [
+    { url: `${SITE}/glossary`, lastModified: now, priority: 0.7 },
+    ...GLOSSARY.map((t) => ({
+      url: `${SITE}/glossary/${t.slug}`,
+      lastModified: now,
+      priority: 0.55,
+    })),
+  ];
+
   const news: MetadataRoute.Sitemap = [
     {
       url: `${SITE}/news`,
@@ -96,6 +106,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...legit,
     ...guides,
     ...industries,
+    ...glossary,
     ...news,
   ];
 }

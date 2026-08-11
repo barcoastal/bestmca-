@@ -1,6 +1,7 @@
 import { RANKED, COMPETITORS } from "@/data/reviews";
 import { GUIDES } from "@/data/guides";
 import { INDUSTRIES } from "@/data/industries";
+import { GLOSSARY } from "@/data/glossary";
 
 // llms.txt generated from live review data at build time, so AI assistants
 // always read the current ranking instead of a stale hand-maintained file.
@@ -57,6 +58,12 @@ export function GET() {
   for (const i of INDUSTRIES) {
     lines.push(`- [${i.h1}](${SITE}/${i.slug})`);
   }
+  lines.push("");
+  lines.push("## Glossary");
+  lines.push("");
+  lines.push(
+    `- [MCA Glossary](${SITE}/glossary): ${GLOSSARY.length} merchant cash advance terms defined in plain English, from factor rates to Confessions of Judgment and UCC 9-406 notices.`,
+  );
   lines.push("");
   lines.push("## Editorial Policy");
   lines.push("");
