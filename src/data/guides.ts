@@ -19,7 +19,7 @@ export const GUIDES: Guide[] = [
   {
     slug: "what-is-mca-settlement",
     title: "What is MCA settlement, and how does it actually work?",
-    metaTitle: "What is MCA Settlement? A Plain-English 2026 Guide",
+    metaTitle: "MCA Debt Settlement Explained: How It Works in 2026",
     metaDescription:
       "Merchant cash advance settlement explained: what it is, how negotiation works, what it costs, and when it makes sense for a small business.",
     intro:

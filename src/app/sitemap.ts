@@ -24,6 +24,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       priority: 0.85,
     },
+    { url: `${SITE}/mca-debt-relief`, lastModified: now, priority: 0.9 },
+    { url: `${SITE}/mca-debt-restructuring`, lastModified: now, priority: 0.85 },
+    { url: `${SITE}/mca-consolidation-loans`, lastModified: now, priority: 0.85 },
+    {
+      url: `${SITE}/ucc-9-406-merchant-cash-advance`,
+      lastModified: now,
+      priority: 0.8,
+    },
     { url: `${SITE}/methodology`, lastModified: now, priority: 0.6 },
     { url: `${SITE}/about`, lastModified: now, priority: 0.5 },
     {
