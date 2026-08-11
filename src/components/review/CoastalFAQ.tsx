@@ -3,11 +3,11 @@ import { jsonLd } from "@/lib/schema";
 const FAQ = [
   {
     q: "Is Coastal Debt Resolve legit?",
-    a: "Yes. Coastal Debt Resolve is a Florida-headquartered MCA settlement and litigation defense firm with an A rating and accreditation from the Better Business Bureau, 800+ verified five-star reviews on Trustpilot, and a public testimonials wall featuring named clients across multiple industries. The firm has in-house attorneys who handle both settlement and lawsuit defense.",
+    a: "Yes. Coastal Debt Resolve is a Florida-headquartered MCA settlement and litigation defense firm with an A+ rating and accreditation from the Better Business Bureau, 420+ verified Trustpilot reviews averaging 4.6, and a public testimonials wall featuring named clients across multiple industries. The firm has in-house attorneys who handle both settlement and lawsuit defense.",
   },
   {
     q: "What do Coastal Debt Resolve reviews actually say?",
-    a: "Across Trustpilot, BBB, and the firm's public testimonial page, the consistent themes in client commentary are: named representatives clients can identify (Marco, Carlos, Sarah, Simone, and others), responsive communication during a stressful situation, transparent fee disclosures pre-contract, and successful negotiated settlements. The firm holds a 4.9 average across 800+ reviews.",
+    a: "Across Trustpilot, BBB, and the firm's public testimonial page, the consistent themes in client commentary are: named representatives clients can identify (Marco, Carlos, Sarah, Simone, and others), responsive communication during a stressful situation, transparent fee disclosures pre-contract, and successful negotiated settlements. The firm holds a 4.6 Trustpilot average across 420+ reviews, alongside its 4.9 editorial score in our comparison.",
   },
   {
     q: "Are there any Coastal Debt Resolve complaints?",
@@ -23,7 +23,7 @@ const FAQ = [
   },
   {
     q: "What is Coastal Debt Resolve's Trustpilot rating?",
-    a: "Coastal Debt Resolve holds a 4.9 of 5 average across more than 800 verified Trustpilot reviews, the largest verified review base of any firm in our comparison. The recurring themes in those reviews are named representatives, responsive communication, and fee terms disclosed in writing before signing.",
+    a: "Coastal Debt Resolve holds a 4.6 of 5 average across more than 420 verified Trustpilot reviews, one of the larger verified bases among MCA specialists in our comparison. The recurring themes in those reviews are named representatives, responsive communication, and fee terms disclosed in writing before signing.",
   },
   {
     q: "Are there any Coastal Debt Resolve lawsuits I should know about?",

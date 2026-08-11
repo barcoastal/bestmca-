@@ -45,7 +45,7 @@ export async function generateMetadata({
       title:
         "Coastal Debt Resolve Reviews 2026: Trustpilot, Complaints & Verdict",
       description:
-        "Independent 2026 review of Coastal Debt Resolve: 4.9/5 across 800+ verified Trustpilot reviews, BBB Accredited A+, in-house attorneys. Complaints, lawsuits, cost, and our complete verdict.",
+        "Independent 2026 review of Coastal Debt Resolve: 4.9/5 editorial score, 4.6 across 420+ Trustpilot reviews, BBB Accredited A+, in-house attorneys. Complaints, lawsuits, cost, and our complete verdict.",
       keywords: [
         "Coastal Debt Resolve reviews",
         "Coastal Debt Resolve complaints",
@@ -359,7 +359,7 @@ export default async function ReviewPage({
                 <span className="text-xs text-ink-subtle">/ 5</span>
               </div>
               <p className="mt-3 text-sm text-ink-muted">
-                In-house attorneys, transparent pricing, and 800+ verified
+                In-house attorneys, transparent pricing, and 420+ verified
                 client reviews.
               </p>
               <Link

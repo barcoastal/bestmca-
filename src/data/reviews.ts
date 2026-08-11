@@ -68,7 +68,7 @@ export const REVIEWS: Review[] = [
     specialties:
       "MCA settlement, MCA debt relief, MCA litigation defense, multi-position consolidation, UCC release",
     bbb: "A+ rated, accredited",
-    trustpilot: "4.9 across 800+ reviews",
+    trustpilot: "4.6 across 420+ reviews",
     websiteLabel: "coastaldebt.com",
     firmWebsite: "https://www.coastaldebt.com",
     recommendedFor:
@@ -109,7 +109,7 @@ export const REVIEWS: Review[] = [
     process:
       "The flow is: free MCA review and document upload, attorney consult within 24 to 48 hours, written settlement strategy delivered, contract signed with disclosed fees, and case manager assigned. From there the team handles funder communication, settlement negotiation, UCC release, and any litigation that arises. Most cases reach a stabilized payment posture within the first 30 days.",
     proofPoints: [
-      "800+ five-star reviews on Trustpilot",
+      "420+ Trustpilot reviews at a 4.6 average, plus a public testimonial wall",
       "Public testimonial wall with named clients and business types",
       "Documented case studies across real estate, flooring, food delivery, seafood, and trucking",
       "BBB accredited, A+ rating",
@@ -128,8 +128,8 @@ export const REVIEWS: Review[] = [
     hq: "Northampton, Massachusetts",
     minDebt: "$250,000+ in many cases",
     specialties: "Business debt restructuring, MCA resolution, asset sales",
-    bbb: "A rated, accredited",
-    trustpilot: "4.4 across 680+ reviews",
+    bbb: "A+ rated, accredited",
+    trustpilot: "No Trustpilot review base; public reviews live on Google and BBB",
     websiteLabel: "secondwindconsultants.com",
     firmWebsite: "https://secondwindconsultants.com",
     recommendedFor:
@@ -152,7 +152,7 @@ export const REVIEWS: Review[] = [
     },
     pros: [
       "Long operating history (since 2009) in business debt restructuring",
-      "Strong public review profile: BBB A rated and Trustpilot 4.4 across 680+ reviews",
+      "Strong public standing: BBB A+ rated and accredited since 2014, with a solid Google review base",
       "Established relationships with several major MCA funders",
       "Handles complex multi-creditor situations well",
     ],
@@ -213,7 +213,7 @@ export const REVIEWS: Review[] = [
     specialties:
       "Licensed insolvency, consumer proposals, corporate restructuring (Canada)",
     bbb: "Not applicable in same form (Canadian)",
-    trustpilot: "5.0 across 2,500+ reviews (Canadian platform)",
+    trustpilot: "4.9 across 2,590+ reviews",
     websiteLabel: "spergel.ca",
     firmWebsite: "https://www.spergel.ca",
     recommendedFor:
@@ -233,7 +233,7 @@ export const REVIEWS: Review[] = [
       litigation: 4,
     },
     pros: [
-      "Exceptional public review record: 5.0 stars across 2,500+ Trustpilot reviews",
+      "Exceptional public review record: 4.9 stars across 2,590+ Trustpilot reviews",
       "Long-tenured Canadian insolvency firm (since 1989)",
       "Licensed trustees on staff, federally regulated",
       "Has helped 100,000+ Canadians become debt-free",
@@ -507,13 +507,13 @@ export const REVIEWS: Review[] = [
     score: 3.9,
     rank: 6,
     oneLineVerdict:
-      "Attorney-led MCA shop with a genuine 4.8 Trustpilot score (74 reviews), but a young firm (started 2023), not BBB accredited (C+), with documented complaints about robo-dialer calls that continue after opt-out and disputed refunds.",
+      "Attorney-led MCA shop with a genuine 4.4 Trustpilot score (190+ reviews), but a young firm (started 2023), not BBB accredited (C+), with documented complaints about robo-dialer calls that continue after opt-out and disputed refunds.",
     founded: "2023",
     hq: "Red Bank, New Jersey",
     minDebt: "Varies",
     specialties: "MCA negotiation, settlement, attorney-led representation",
     bbb: "C+ rating, not BBB accredited; two unanswered complaints on record",
-    trustpilot: "4.8 across 74 reviews",
+    trustpilot: "4.4 across 190+ reviews",
     websiteLabel: "easternfinancialpartners.com",
     firmWebsite: "https://easternfinancialpartners.com",
     recommendedFor:
@@ -535,7 +535,7 @@ export const REVIEWS: Review[] = [
     },
     pros: [
       "Attorney-led representation is the right structural choice for MCA cases",
-      "Strong Trustpilot rating of 4.8 across 74 reviews",
+      "Solid Trustpilot rating of 4.4 across 190+ reviews",
       "Public claim of $20M+ in submitted settlements",
       "Smaller shop can mean more direct attorney access",
     ],
@@ -548,7 +548,7 @@ export const REVIEWS: Review[] = [
       "Total submitted settlement volume is modest compared to scaled competitors",
     ],
     verdict:
-      "Eastern Financial Partners is doing the right thing structurally by leading with attorneys, and its 4.8 Trustpilot rating across 74 reviews is genuine. Two things temper it. First, it is a young firm: the business only started in 2023, so it has a short track record through a full MCA default-and-litigation cycle. Second, the negative pattern is on conduct: BBB and Trustpilot complaints describe robo-dialer calls that continue after opt-out, refund requests denied as already 'used for attorneys', and at least one client whose questions about lender contact went unanswered after four months of payments. Owners who proceed should require milestone-based fee disbursement, the right to refund unused retainer if work has not begun, and written confirmation of removal from all calling lists.",
+      "Eastern Financial Partners is doing the right thing structurally by leading with attorneys, and its 4.4 Trustpilot rating across 190+ reviews is genuine. Two things temper it. First, it is a young firm: the business only started in 2023, so it has a short track record through a full MCA default-and-litigation cycle. Second, the negative pattern is on conduct: BBB and Trustpilot complaints describe robo-dialer calls that continue after opt-out, refund requests denied as already 'used for attorneys', and at least one client whose questions about lender contact went unanswered after four months of payments. Owners who proceed should require milestone-based fee disbursement, the right to refund unused retainer if work has not begun, and written confirmation of removal from all calling lists.",
     pricing:
       "Set per case. Owners should request fee schedule, milestones, and explicit refund-on-non-performance language before signing.",
     process:
@@ -559,7 +559,7 @@ export const REVIEWS: Review[] = [
           "Brian made me feel comfortable and took the time explaining everything. The team helped me with MCA loans that were becoming difficult to manage.",
         source: "Trustpilot",
         rating: 5,
-        attribution: "Trustpilot review (74 total reviews)",
+        attribution: "Trustpilot review (190+ total reviews)",
       },
       {
         quote:
@@ -653,7 +653,7 @@ export const REVIEWS: Review[] = [
     minDebt: "Varies",
     specialties: "Business debt settlement, MCA and creditor negotiation",
     bbb: "A- rating, not BBB accredited; one unanswered complaint on record",
-    trustpilot: "Mixed; some strongly positive payment-reduction reviews",
+    trustpilot: "4.9 across 190 Trustpilot reviews",
     websiteLabel: "businessdebtadjusters.com",
     firmWebsite: "https://www.businessdebtadjusters.com",
     recommendedFor:
@@ -850,7 +850,7 @@ export const REVIEWS: Review[] = [
     minDebt: "Varies",
     specialties: "MCA debt settlement, restructuring",
     bbb: "23 BBB complaints on record at time of review",
-    trustpilot: "Negative pattern across public review platforms",
+    trustpilot: "2.7 across 86 Trustpilot reviews",
     websiteLabel: "mcaresolve.com",
     firmWebsite: "https://mcaresolve.com",
     warning:
@@ -927,7 +927,7 @@ export const REVIEWS: Review[] = [
     minDebt: "Varies",
     specialties: "Business debt modification, MCA restructuring, creditor negotiation",
     bbb: "A+ rating, BBB accredited since 2018",
-    trustpilot: "Mostly positive, with occasional complaints about fee transparency",
+    trustpilot: "3.8 across 8 Trustpilot reviews; thin base, with occasional fee-transparency complaints",
     websiteLabel: "nationalcreditpartners.com",
     firmWebsite: "https://nationalcreditpartners.com",
     recommendedFor:
@@ -1069,7 +1069,7 @@ export const REVIEWS: Review[] = [
     minDebt: "Around $10,000 enrolled",
     specialties: "MCA and business debt settlement, attorney network, stacked-debt restructuring",
     bbb: "Not BBB accredited; BBB has insufficient information to issue a rating",
-    trustpilot: "Limited, roughly 26 reviews, generally positive",
+    trustpilot: "3.9 across 26 Trustpilot reviews",
     websiteLabel: "delanceystreet.com",
     firmWebsite: "https://www.delanceystreet.com",
     recommendedFor:
@@ -1130,13 +1130,13 @@ export const REVIEWS: Review[] = [
     score: 3.5,
     rank: 13,
     oneLineVerdict:
-      "A major, highly-rated consumer debt-settlement company (A+ BBB, 4.73 across 5,900+ reviews), but it does not handle MCA-specific work, no COJ defense, court motions, or funder litigation, so it is the wrong tool for active merchant cash advance distress.",
+      "A major, highly-rated consumer debt-settlement company (A+ BBB, 4.7 across 44,900+ reviews), but it does not handle MCA-specific work, no COJ defense, court motions, or funder litigation, so it is the wrong tool for active merchant cash advance distress.",
     founded: "2009",
     hq: "New York, New York",
     minDebt: "Around $7,500 (unsecured debt)",
     specialties: "Consumer and unsecured debt settlement (not MCA-specific)",
     bbb: "A+ rating; one of the largest debt-settlement firms",
-    trustpilot: "4.73 average across 5,900+ reviews",
+    trustpilot: "4.7 across 44,900+ Trustpilot reviews",
     websiteLabel: "nationaldebtrelief.com",
     firmWebsite: "https://www.nationaldebtrelief.com",
     recommendedFor:
@@ -1159,7 +1159,7 @@ export const REVIEWS: Review[] = [
       litigation: 2,
     },
     pros: [
-      "A+ BBB rating and 4.73 average across 5,900+ reviews",
+      "A+ BBB rating and a 4.7 Trustpilot average across 44,900+ reviews",
       "Over $1B settled and 550,000+ clients, a huge, proven operation",
       "Strong fit for unsecured and consumer debt",
     ],
@@ -1180,7 +1180,7 @@ export const REVIEWS: Review[] = [
           "They settled my unsecured accounts for far less than I owed and kept me updated the whole way.",
         source: "Trustpilot",
         rating: 5,
-        attribution: "Trustpilot review aggregate (5,900+ reviews, 4.73 average)",
+        attribution: "Trustpilot review aggregate (44,900+ reviews, 4.7 average)",
       },
     ],
     concerns: [

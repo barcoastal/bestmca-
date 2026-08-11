@@ -130,8 +130,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="mt-8 flex items-center gap-3 text-xs text-ink-subtle">
-              <Stars value={4.9} size="sm" /> 4.9 average for our top-rated firm
-              · 800+ verified client reviews
+              <Stars value={4.9} size="sm" /> 4.9/5 in our review · 4.6 on Trustpilot across 420+ verified reviews
             </div>
           </div>
 
@@ -165,7 +164,7 @@ export default function HomePage() {
             </p>
             <div className="mt-5 grid grid-cols-2 gap-3 text-xs">
               <Stat label="BBB" value={COASTAL.bbb.split(",")[0]} />
-              <Stat label="Trustpilot" value="4.9 (800+)" />
+              <Stat label="Trustpilot" value="4.6 (420+)" />
               <Stat label="Min debt" value={COASTAL.minDebt} />
               <Stat label="Litigation" value="In-house attorneys" />
             </div>
@@ -322,7 +321,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-4">
             {[
               { label: "Composite score", value: "4.9 / 5" },
-              { label: "Trustpilot reviews", value: "800+" },
+              { label: "Trustpilot reviews", value: "420+" },
               { label: "Min debt", value: "$25K" },
               { label: "In-house attorneys", value: "Yes" },
               { label: "BBB", value: "A+, accredited" },

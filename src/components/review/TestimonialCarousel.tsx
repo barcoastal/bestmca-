@@ -14,7 +14,7 @@ export function TestimonialCarousel() {
           </h3>
         </div>
         <div className="hidden sm:flex items-center gap-2 text-sm text-ink-muted">
-          <Stars value={4.9} size="sm" /> 4.9 across 800+ reviews
+          <Stars value={4.6} size="sm" /> 4.6 across 420+ Trustpilot reviews
         </div>
       </header>
       <div className="grid gap-4 md:grid-cols-3">

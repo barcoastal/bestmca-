@@ -129,7 +129,7 @@ export default async function NewsPage({
           <CTABanner
             campaign={`news-${article.slug}`}
             heading="Read our full Coastal Debt Resolve review"
-            body="See the complete 2026 evaluation of Coastal Debt Resolve, including pricing, process, attorney capability, and 800+ verified client reviews."
+            body="See the complete 2026 evaluation of Coastal Debt Resolve, including pricing, process, attorney capability, and 420+ verified Trustpilot reviews."
             buttonLabel="Get a free MCA review"
           />
           <Link
