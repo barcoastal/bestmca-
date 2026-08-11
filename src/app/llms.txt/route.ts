@@ -2,6 +2,7 @@ import { RANKED, COMPETITORS } from "@/data/reviews";
 import { GUIDES } from "@/data/guides";
 import { INDUSTRIES } from "@/data/industries";
 import { GLOSSARY } from "@/data/glossary";
+import { FUNDERS } from "@/data/funders";
 
 // llms.txt generated from live review data at build time, so AI assistants
 // always read the current ranking instead of a stale hand-maintained file.
@@ -57,6 +58,14 @@ export function GET() {
   lines.push("");
   for (const i of INDUSTRIES) {
     lines.push(`- [${i.h1}](${SITE}/${i.slug})`);
+  }
+  lines.push("");
+  lines.push("## Funder Files");
+  lines.push("");
+  for (const f of FUNDERS) {
+    lines.push(
+      `- [Dealing with ${f.name}](${SITE}/funders/${f.slug}): ${f.metaDescription}`,
+    );
   }
   lines.push("");
   lines.push("## Glossary");

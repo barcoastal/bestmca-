@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { REVIEWS, COMPETITORS } from "@/data/reviews";
 import { GLOSSARY } from "@/data/glossary";
+import { FUNDERS } from "@/data/funders";
 import { GUIDES } from "@/data/guides";
 import { INDUSTRIES } from "@/data/industries";
 import { NEWS } from "@/data/news";
@@ -86,6 +87,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
+  const funders: MetadataRoute.Sitemap = [
+    { url: `${SITE}/funders`, lastModified: now, priority: 0.8 },
+    ...FUNDERS.map((f) => ({
+      url: `${SITE}/funders/${f.slug}`,
+      lastModified: now,
+      priority: 0.75,
+    })),
+  ];
+
   const news: MetadataRoute.Sitemap = [
     {
       url: `${SITE}/news`,
@@ -107,6 +117,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...guides,
     ...industries,
     ...glossary,
+    ...funders,
     ...news,
   ];
 }
