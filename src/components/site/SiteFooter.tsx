@@ -56,11 +56,34 @@ export function SiteFooter() {
           </div>
           <ul className="mt-3 space-y-2 text-sm text-ink-soft">
             <li>
+              <Link href="/mca-debt-relief" className="hover:text-navy">
+                MCA Debt Relief Options
+              </Link>
+            </li>
+            <li>
+              <Link href="/mca-debt-restructuring" className="hover:text-navy">
+                MCA Debt Restructuring
+              </Link>
+            </li>
+            <li>
+              <Link href="/mca-consolidation-loans" className="hover:text-navy">
+                MCA Consolidation Loans
+              </Link>
+            </li>
+            <li>
               <Link
                 href="/guides/what-is-mca-settlement"
                 className="hover:text-navy"
               >
                 What is MCA Settlement?
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/state-of-mca-settlement-2026"
+                className="hover:text-navy"
+              >
+                State of MCA Settlement 2026
               </Link>
             </li>
             <li>
