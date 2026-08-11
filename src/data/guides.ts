@@ -920,3 +920,225 @@ export const GUIDES: Guide[] = [
 export function getGuideBySlug(slug: string) {
   return GUIDES.find((g) => g.slug === slug);
 }
+
+GUIDES.push(
+  {
+    slug: "how-to-get-out-of-mca",
+    title: "How to get out of a merchant cash advance: the decision tree",
+    metaTitle: "How to Get Out of a Merchant Cash Advance (2026 Decision Tree)",
+    metaDescription:
+      "The realistic paths out of MCA debt, organized as a decision tree: your situation, your best first move, and what to avoid, from current-but-squeezed to sued-and-frozen.",
+    intro:
+      "Every article about escaping MCA debt lists the same six options. What owners actually need is a decision tree: given your specific situation right now, which move comes first? This guide routes you by scenario rather than listing theory.",
+    sections: [
+      {
+        heading: "Scenario 1: current on payments, but the squeeze is on",
+        paragraphs: [
+          "You have the most options and the most leverage of anyone reading this page. First move: check your agreement for a reconciliation clause and compute what a true-up would change; if revenue is down from when the advance was priced, that is free relief you are entitled to. Second: if the business can repay in full at a saner pace, propose a restructure before you miss anything, funders price cooperation higher for merchants who come to them first.",
+          "What to avoid at this stage: taking another advance to ease the pressure (that is how stacks are born) and signing anything new without reading it for fresh guarantees or Confessions of Judgment.",
+        ],
+      },
+      {
+        heading: "Scenario 2: stacked, and the math stopped working",
+        paragraphs: [
+          "Compute the number that decides everything: total daily remittance across all positions as a share of revenue, against your true margin. If it is structurally unpayable, stop optimizing single positions. Stacks resolve as one coordinated negotiation, respecting UCC priority, quieting the litigation-prone funders first, sized to what the business can actually fund.",
+          "This is the scenario where professional representation most clearly pays for itself, and where the choice of firm matters most. Vet against our red-flags list before signing with anyone.",
+        ],
+      },
+      {
+        heading: "Scenario 3: default notices arrived",
+        paragraphs: [
+          "The window between the first default notice and the first legal filing is where the best settlements in this industry happen. The funder has signaled escalation but not yet spent money on lawyers; discounts are at their deepest. Engage now, through representation if a COJ exists in your contract, and do not go silent, silence is what converts notices into filings.",
+        ],
+      },
+      {
+        heading: "Scenario 4: sued, judgment entered, or account frozen",
+        paragraphs: [
+          "Legal problems need legal tools first: answering the lawsuit before the deadline, moving to vacate defective COJ judgments, negotiating restraint releases. Settlement still happens in this scenario, post-judgment balances get compromised every day, but it happens alongside defense, not instead of it. A firm without litigation capability cannot run this scenario alone.",
+        ],
+      },
+      {
+        heading: "The moves that make every scenario worse",
+        paragraphs: [
+          "Four mistakes appear in almost every catastrophic MCA story: silently switching bank accounts (a default event that reads as fraud in court), taking a reverse consolidation on top of an unpayable stack, stopping payments as a bluff with no legal strategy behind it, and signing hardship modifications containing fresh COJs. Whatever scenario you are in, not doing these four things preserves your options.",
+        ],
+        bullets: [
+          "Do not hide revenue or switch banks without a strategy",
+          "Do not add positions to escape positions",
+          "Do not stop paying without defense prepared",
+          "Do not sign new documents unread",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "What is the fastest way out of an MCA?",
+        a: "If you have cash available, a negotiated lump-sum settlement is the fastest clean exit, distressed positions commonly resolve at meaningful discounts, with lien releases, in weeks. If you do not have cash, a restructure that converts daily pulls to an affordable payment is the fastest relief, with settlement as the endgame.",
+      },
+      {
+        q: "Can I just pay the MCA off early and be done?",
+        a: "You can, but factor-rate pricing means early payoff usually saves little or nothing, you owe the full purchased amount regardless. Some contracts include early-payoff discounts or addendums; check before wiring anything, and get a zero-balance letter and UCC termination as part of any payoff.",
+      },
+      {
+        q: "Is bankruptcy ever the right way out of MCA debt?",
+        a: "Occasionally, when the business is not viable even without the MCA pulls, or personal exposure is unmanageable. For operating businesses, settlement or restructuring resolves most MCA situations without the public process and lasting consequences of filing. Get advice on both paths before choosing either.",
+      },
+    ],
+    takeaway:
+      "Route by scenario, not by product pitch. Current: reconcile and restructure. Stacked: coordinate everything. Noticed: negotiate now. Sued: defend first. And in every scenario, avoid the four moves that destroy options.",
+  },
+  {
+    slug: "mca-confession-of-judgment",
+    title: "Signed a Confession of Judgment? What it means and what to do now",
+    metaTitle: "MCA Confession of Judgment: What to Do If You Signed One (2026)",
+    metaDescription:
+      "Most owners discover the COJ in their MCA paperwork only when it is used. What a Confession of Judgment does, where it is enforceable in 2026, and the moves that protect you before and after entry.",
+    intro:
+      "Buried in many MCA funding packages is the single most dangerous document in commercial finance: a Confession of Judgment. Most owners learn they signed one at the worst possible moment, when a judgment appears against them without a lawsuit. Here is what it is, what it is not, and what to do at each stage.",
+    sections: [
+      {
+        heading: "What you actually signed",
+        paragraphs: [
+          "A COJ is a pre-signed admission of liability. On default, real or claimed, the funder's attorney files it with a supporting affidavit, and a court clerk enters judgment against you: no complaint served, no hearing, no chance to raise defenses. Enforcement tools follow immediately: bank restraints, levies, liens on the judgment amount plus fees.",
+          "The COJ typically binds both the business and every personal guarantor, which is how a business default reaches personal bank accounts within days.",
+        ],
+      },
+      {
+        heading: "Where COJs stand in 2026",
+        paragraphs: [
+          "New York, the venue that processed most MCA COJs for a decade, banned their use against out-of-state debtors in 2019, and its recent reforms have added merchant protections with real teeth: courts have vacated thousands of judgments entered with procedural defects. But COJs remain enforceable in other states, in older agreements, and against in-state debtors where permitted. The document in your file is dangerous until a lawyer says otherwise about your specific facts.",
+        ],
+      },
+      {
+        heading: "If you signed one and are still current",
+        paragraphs: [
+          "Your job is to make sure the COJ never gets used. That means no silent defaults: if payments are becoming unsustainable, move on reconciliation, restructuring, or settlement before a missed remittance gives the funder cause. It also means professional handling of any negotiation, because a misstep that triggers default carries judgment-level consequences within days, not months.",
+        ],
+      },
+      {
+        heading: "If judgment has already been entered",
+        paragraphs: [
+          "Move on two tracks the same week. Defense: an MCA-experienced attorney reviews the entry for vacatur grounds, defective affidavits, improper venue, service failures, statutory noncompliance, which are common enough that thousands of COJ judgments have been undone. Resolution: the judgment amount itself remains negotiable, because enforcement is slower and costlier for the funder than a settlement. Restraint releases, vacatur motions, and settlement talks routinely run in parallel.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "How do I know if my MCA contract has a Confession of Judgment?",
+        a: "Search the funding package for 'confession of judgment', 'affidavit of confession', or 'COJ', it is often a separate signature page rather than a clause. If you cannot find your copy, request the full signed agreement from the funder; you are entitled to it.",
+      },
+      {
+        q: "Can a COJ judgment be undone?",
+        a: "Frequently, yes. Vacatur is granted for procedural defects, and New York's reforms made several categories of MCA COJ entries vulnerable. Success depends on your facts and venue, which is an attorney's call after reading the actual filing.",
+      },
+      {
+        q: "Are new MCA contracts still allowed to include COJs?",
+        a: "In some states yes, and some funders shifted filings to permissive venues after New York's ban. Refusing to sign one, or negotiating it out, is a legitimate ask before taking any advance, and a funder that will not fund without it is telling you how it collects.",
+      },
+    ],
+    takeaway:
+      "A COJ converts default into judgment overnight. If you signed one: never default silently. If judgment entered: vacatur review and settlement talks, same week, parallel tracks.",
+  },
+  {
+    slug: "mca-lawsuit-first-30-days",
+    title: "Served with an MCA lawsuit: what the first 30 days decide",
+    metaTitle: "MCA Lawsuit: What to Do in the First 30 Days (2026)",
+    metaDescription:
+      "A funder filed suit. The first 30 days decide whether you face a default judgment or a defensible negotiation. Deadlines, defenses, and the sequence that protects the business.",
+    intro:
+      "A process server at the counter changes the problem: this is no longer a debt to negotiate at leisure but a case with a clock. Miss the answer deadline and the funder wins everything by default. Use the window well and most MCA suits end in settlements far better than the complaint demands. Here is the sequence.",
+    sections: [
+      {
+        heading: "Week 1: the clock and the counsel",
+        paragraphs: [
+          "Find the answer deadline first, typically 20 to 30 days from service depending on the court, and calendar it in red. Then get MCA-experienced counsel reviewing the complaint; the venue is usually the one the contract chose (often New York), so experience in that forum matters more than a local address. Do not call the funder's lawyers to explain yourself; everything said becomes evidence.",
+        ],
+      },
+      {
+        heading: "Weeks 1-2: what a defense review looks for",
+        paragraphs: [
+          "MCA complaints are volume paperwork, and volume paperwork has defects. Common defense angles: recharacterization (the advance functioned as a usurious loan, no true reconciliation, fixed payments regardless of revenue), service defects, standing and assignment gaps when positions were sold between funders, damage calculations that ignore payments made, and conduct claims under newer statutes like New York's FAIR Act. Raising real defenses changes the settlement math even when the case never reaches trial.",
+        ],
+      },
+      {
+        heading: "Weeks 2-4: answer, protect, negotiate",
+        paragraphs: [
+          "File the answer on time, always, even mid-negotiation, because the deadline is leverage the funder is counting on you to miss. Protect operations in parallel: know your exposure to restraints and levies before they arrive, and manage which accounts hold operating cash. Then negotiate from the defended position: a funder facing a filed answer, real defenses, and a represented merchant reprices the case, litigation is now a cost center for them, not a shortcut.",
+        ],
+      },
+      {
+        heading: "What settlements look like after filing",
+        paragraphs: [
+          "Filed cases settle constantly, at discounts that reflect both sides' litigation costs. A complete post-filing settlement includes dismissal of the case with prejudice, mutual releases, UCC terminations, and if any judgment was entered, its satisfaction on the court record. Paying without those paper terms resolves nothing.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "What happens if I ignore an MCA lawsuit?",
+        a: "Default judgment for everything demanded: full balance, default fees, attorney fees, interest. Then enforcement: bank restraints, levies, liens, and pursuit of personal guarantors. Ignoring the suit is choosing the worst available outcome; answering preserves every other option.",
+      },
+      {
+        q: "Can I settle after being sued, or is it too late?",
+        a: "Most MCA suits end in settlement, not trial. Filing is a pressure move as much as a collection step, and funders routinely accept discounted resolutions after filing, especially against represented merchants with filed answers and credible defenses.",
+      },
+      {
+        q: "Do I need a lawyer in the state where I was sued?",
+        a: "You need counsel admitted in the forum court, which the contract usually fixed in advance (frequently New York regardless of where you operate). MCA-experienced firms handle these forums daily; your local business attorney can co-counsel but usually should not run it alone.",
+      },
+    ],
+    takeaway:
+      "Answer on time, defend for leverage, negotiate from the defended position, and paper the settlement with dismissal, releases, and UCC terminations. The suit is a phase, not the ending.",
+  },
+  {
+    slug: "mca-personal-credit",
+    title: "Do MCAs affect your personal credit? Guarantees, judgments, and what actually reports",
+    metaTitle: "Do MCAs Affect Personal Credit? What Reports and When (2026)",
+    metaDescription:
+      "MCAs are business financing, so when do they touch your personal credit? The honest map: what reports during repayment, what happens at default, and how guarantees and judgments reach your personal file.",
+    intro:
+      "Funders sell MCAs as invisible to personal credit, and during normal repayment that is mostly true. The honest answer has three stages: while you pay, when you default, and when a judgment lands on a personal guarantee. Each stage touches your personal file differently.",
+    sections: [
+      {
+        heading: "While you are paying: mostly invisible",
+        paragraphs: [
+          "Most MCA funders do not report to consumer credit bureaus, and many do not report to business bureaus either. The advance typically appeared on your personal file only once, as a hard inquiry at application if the funder pulled personal credit. This invisibility is a genuine feature during repayment, and a trap: it means the first personal-credit consequence usually arrives at the worst stage, not gradually.",
+        ],
+      },
+      {
+        heading: "At default: the business absorbs the first hits",
+        paragraphs: [
+          "Default triggers land first on the business side: UCC filings are already public record, collections activity may reach business credit files, and lenders searching the business see the distress. Your personal file still shows little, unless and until the personal guarantee activates.",
+        ],
+      },
+      {
+        heading: "When the guarantee is enforced: it gets personal",
+        paragraphs: [
+          "A funder pursuing a personal guarantor changes the picture. Judgments against you personally become public records that surface in background and credit checks; collection accounts can be reported; and in COJ scenarios a personal judgment can exist within days of default. Personal bank restraints follow judgments. This is the stage where an MCA stops being business financing and starts being a personal financial event.",
+        ],
+      },
+      {
+        heading: "Protecting your personal file",
+        paragraphs: [
+          "The strategy writes itself backward from the stages: resolve the debt before guarantee enforcement, and if resolution happens, paper it fully, judgment satisfactions filed with the court, accounts confirmed closed, so nothing lingers to surface in future checks. A negotiated settlement that never reaches personal judgment usually leaves personal credit untouched, which is one of the quiet arguments for resolving MCA distress early rather than riding it into enforcement.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Will settling an MCA show up on my personal credit report?",
+        a: "Usually not. The settlement is a private business agreement, and if no personal judgment was entered and no collection account was reported against you personally, your consumer file typically never reflects the episode.",
+      },
+      {
+        q: "My funder pulled my personal credit at funding. Does that mean it reports?",
+        a: "No, an application inquiry does not imply ongoing reporting. Most MCA funders use the pull for underwriting the guarantee, not for monthly reporting to consumer bureaus.",
+      },
+      {
+        q: "A judgment was entered against me personally. How bad is it?",
+        a: "Judgments are public records: they can restrain personal accounts, complicate mortgages and financing, and appear in background checks even where credit bureaus no longer list them. Vacatur (for defective COJ entries) or negotiated satisfaction, filed with the court, are the cleanup paths, and both are routine parts of MCA resolutions.",
+      },
+    ],
+    takeaway:
+      "During repayment, MCAs barely touch personal credit. The damage arrives through the guarantee: judgments and enforcement. Resolve before that stage and your personal file usually stays clean.",
+  },
+);

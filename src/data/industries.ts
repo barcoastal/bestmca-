@@ -280,3 +280,206 @@ export const INDUSTRIES: Industry[] = [
 export function getIndustryBySlug(slug: string) {
   return INDUSTRIES.find((i) => i.slug === slug);
 }
+
+INDUSTRIES.push(
+  {
+    slug: "mca-debt-relief-for-construction",
+    name: "Construction",
+    pluralName: "construction companies and contractors",
+    metaTitle: "MCA Debt Relief for Construction Companies (2026): Top Firms",
+    metaDescription:
+      "Best MCA debt relief and settlement firms for construction companies and contractors. How draw schedules, retainage, and bonding interact with MCA debt, and who resolves it well.",
+    h1: "Best MCA debt relief firms for construction companies",
+    intro:
+      "Contractors take MCAs to bridge the gap between paying crews weekly and getting paid on 30-to-90-day draw schedules. When a GC slow-pays or retainage stretches, the daily pulls keep coming, and construction has become one of the heaviest MCA-distress verticals in the country.",
+    whyDifferent:
+      "Construction cash flow is lumpy by design: mobilization costs land before first draw, retainage holds 5 to 10 percent hostage until closeout, and one slow-paying GC can starve three projects. Daily MCA remittance is the exact wrong shape for that revenue, and advances priced off a strong quarter become unpayable in the gap between draws.",
+    whyDifferentSecond:
+      "Contractors also carry exposure other industries do not: UCC filings and judgments can threaten bonding capacity and prequalification, which are the license to win the next job. A settlement approach that ignores the bonding picture can save the debt and lose the business.",
+    picks: pickByName(["Coastal", "Second Wind", "Regroup"]),
+    sections: [
+      {
+        title: "How MCA debt typically spirals for contractors",
+        body: [
+          "The pattern starts with payroll. A draw slips two weeks, the crew cannot wait, and an advance covers the gap. The daily pulls then eat the margin on the next draw, so the next payroll gap is wider, and a second advance covers that. Because contractor revenue arrives in large, dated chunks, stacked daily remittance hits hardest in the dead weeks between draws, exactly when the account is thinnest.",
+          "The trigger events are familiar across cases: a GC pushing payment past 60 days, retainage held through a disputed punch list, weather or inspection delays pushing a milestone, or a bonded job where cash must stay clean while the advances pull daily. By the third position, contractors are commonly remitting 25 to 40 percent of gross against single-digit margins.",
+        ],
+      },
+      {
+        title: "What a realistic construction settlement looks like",
+        body: [
+          "Contractor receivables are documentable and often near-certain, draw schedules, signed contracts, retainage ledgers, which makes restructures credible: payments timed to draw dates rather than calendar days get accepted because the funder can see the money coming. Resolved cases typically convert daily pulls into draw-aligned payments, or settle positions at a discount funded from a closing draw or retainage release.",
+          "Two construction-specific terms belong in any resolution: UCC terminations sequenced so bonding and prequalification are not disrupted mid-bid, and strict confidentiality where a funder has threatened to notice a GC or owner under UCC 9-406, because one letter to a general contractor can cost more than the entire debt.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Can MCA problems affect my bonding capacity?",
+        a: "Yes. Sureties review liens, judgments, and financial stress; open UCC filings and entered judgments can shrink or suspend bonding capacity, which for many contractors is worse than the debt itself. Resolving MCA positions with clean lien releases, before bond renewals where possible, protects the thing that wins you work.",
+      },
+      {
+        q: "A funder sent a UCC notice to my GC. What now?",
+        a: "Treat it as an emergency for the relationship, not just the finances. Get representation involved immediately: the notices are frequently defective or overbroad, they are withdrawable in negotiation, and your GC needs to hear a calm, factual version from you before rumor fills the gap.",
+      },
+      {
+        q: "Can settlement payments be timed to my draw schedule?",
+        a: "That is the standard shape of construction restructures: payments on draw dates, sized to draw amounts, with documentation showing the schedule. Funders accept revenue-shaped plans because the alternative is defaulting a business whose receivables are genuinely collectible.",
+      },
+      {
+        q: "Should I use retainage to fund a settlement?",
+        a: "Retainage releases are one of the most common funding sources for contractor lump-sum settlements, cash that arrives at closeout, exactly when a discounted payoff can be negotiated. Plan it in advance so the settlement paper is ready when the release lands.",
+      },
+    ],
+  },
+  {
+    slug: "mca-debt-relief-for-ecommerce",
+    name: "E-commerce",
+    pluralName: "e-commerce and online sellers",
+    metaTitle: "MCA Debt Relief for E-commerce Sellers (2026): Top Firms",
+    metaDescription:
+      "Best MCA debt relief firms for e-commerce businesses, Shopify and Amazon sellers, and DTC brands. Marketplace holds, ad-spend spirals, and how online sellers actually resolve MCA debt.",
+    h1: "Best MCA debt relief firms for e-commerce businesses",
+    intro:
+      "Online sellers took advances to fund inventory buys and ad spend, both of which pay back on a delay the daily pulls ignore. Add a marketplace payout hold or an ad-cost spike, and e-commerce operators end up stacked faster than almost any storefront business.",
+    whyDifferent:
+      "E-commerce margins live and die on the spread between ad cost and contribution margin, and MCA remittance comes straight out of that spread. A daily pull sized in a strong quarter can exceed the entire contribution margin when CPMs rise or a hero SKU stalls, and the operator funds the gap with the next advance.",
+    whyDifferentSecond:
+      "The platform layer adds risk storefronts do not have: Amazon and Shopify payout holds, reserve requirements, and funder instructions to payment processors can cut off cash overnight. A funder that reaches your marketplace payouts is reaching your entire revenue, which makes speed of resolution matter more here than in most verticals.",
+    picks: pickByName(["Coastal", "Eastern Financial", "Second Wind"]),
+    sections: [
+      {
+        title: "How MCA debt typically spirals for online sellers",
+        body: [
+          "The classic sequence: an inventory buy ahead of Q4, an advance to fund it, a strong season that validates the model, and a second advance in January against holiday-quarter numbers that will not repeat until next November. The daily pulls then compete with the ad budget, the operator cuts spend, revenue drops with it, and the fixed remittance becomes a larger share of a shrinking top line, the ad-spend death spiral, with an ACH attached.",
+          "Marketplace mechanics accelerate the fall. A payout hold or rising reserve on Amazon or a processor can push an otherwise-current seller into missed remittances in a single cycle, and some funders take advances specifically against marketplace payouts, giving them a direct line to the revenue source.",
+        ],
+      },
+      {
+        title: "What a realistic e-commerce settlement looks like",
+        body: [
+          "Sellers bring unusually good data to negotiations: dashboards proving revenue, margin, and seasonality to the day. Resolved cases typically restructure remittance to match contribution margin reality, monthly payments sized off trailing revenue with seasonal adjustment, or settle positions at a discount funded by an inventory selldown.",
+          "The terms that matter most here: written confirmation that funders will not contact marketplaces or processors during negotiation, UCC terminations that clear the way for inventory financing afterward, and realistic treatment of seasonality so a January payment schedule is not priced off December.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Can an MCA funder freeze my Amazon or Shopify payouts?",
+        a: "Funders can notify marketplaces and processors claiming rights over receivables, which can trigger holds or reserves, and some advances are structured directly against marketplace payouts. If your funder has threatened platform contact, treat it as the primary risk and get representation engaged before default.",
+      },
+      {
+        q: "My revenue is seasonal. Can payments reflect that?",
+        a: "Yes, and your data makes the case better than most industries can. Restructures with seasonal sizing, heavier in Q4, lighter in Q1, are routinely negotiated for sellers who can document the curve. A fixed daily pull priced off your best quarter is exactly what reconciliation and restructuring exist to fix.",
+      },
+      {
+        q: "Should I liquidate inventory to settle?",
+        a: "An inventory selldown is a legitimate settlement funding source, discounted lump sums close cases fast, but sequence it: negotiate the settlement terms first, then liquidate to fund the agreed number. Liquidating first and negotiating second hands the funder visibility into your cash and weakens the discount.",
+      },
+      {
+        q: "Will resolving MCA debt help me get inventory financing again?",
+        a: "It is usually the prerequisite. Inventory lenders and factors search UCC records and decline behind blanket MCA filings. A resolution with documented lien terminations reopens that market, which for most sellers matters more than the discount percentage.",
+      },
+    ],
+  },
+  {
+    slug: "mca-debt-relief-for-medical-dental",
+    name: "Medical and Dental",
+    pluralName: "medical and dental practices",
+    metaTitle: "MCA Debt Relief for Medical and Dental Practices (2026)",
+    metaDescription:
+      "Best MCA debt relief firms for physicians, dentists, and healthcare practices. Insurance-lag cash flow, licensing sensitivities, and how practices resolve MCA debt quietly.",
+    h1: "Best MCA debt relief firms for medical and dental practices",
+    intro:
+      "Practices take MCAs to bridge insurance reimbursement lag, fund equipment, or cover a partner buyout, high-income businesses with brutally slow receivables. When the daily pulls outpace reimbursements, providers face a distress category with sensitivities most industries never think about.",
+    whyDifferent:
+      "Practice revenue is gated by payers: claims pay in 30 to 90 days, denials and resubmissions stretch longer, and none of it moves faster because an ACH pulls daily. The revenue is nearly certain but slow, which makes practices simultaneously good restructure candidates and terrible fits for daily remittance.",
+    whyDifferentSecond:
+      "Providers carry reputational and regulatory exposure that changes the playbook: public judgments and collection actions can surface in credentialing, lender relationships, and patient perception, and equipment liens can entangle financed clinical equipment. Quiet, fast, well-papered resolution is worth real money in this vertical.",
+    picks: pickByName(["Coastal", "Second Wind", "Corporate Turnaround"]),
+    sections: [
+      {
+        title: "How MCA debt typically spirals for practices",
+        body: [
+          "The entry point is usually a timing gap with a good story: new equipment financed at the same time as an insurance-mix change, a partner departure that took patients and left overhead, or an expansion built on projected volume that credentialing delays pushed back six months. The advance covers the gap; the reimbursements that were supposed to repay it arrive on payer time, not funder time.",
+          "Because practices look creditworthy on paper, funders extend larger advances than a storefront would get, so the stacks are bigger when they break: multi-hundred-thousand-dollar positions pulling daily against receivables that pay in sixty. The practice is often profitable on an accrual basis while its operating account starves.",
+        ],
+      },
+      {
+        title: "What a realistic practice settlement looks like",
+        body: [
+          "Insurance receivables are documentable to the claim, which makes payer-timed restructures highly credible: monthly payments sized to expected reimbursement flow, presented with an aging report, get accepted because the funder can verify the money is coming. Larger practices also settle positions at discounts funded by practice-finance refinancing once UCC filings are cleared.",
+          "The vertical-specific terms: sequencing UCC terminations so equipment financing and practice lenders are not disturbed, absolute confidentiality provisions given credentialing sensitivity, and, in partnership practices, getting every guarantor identified and consistently represented before negotiation starts.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Can MCA collection actions affect my medical or dental license?",
+        a: "The debt itself does not touch licensure, but the fallout can reach adjacent processes: judgments appear in background and credentialing checks, and financial-distress disclosures arise in some payer and hospital applications. Resolving before judgment keeps the episode out of the records those processes read.",
+      },
+      {
+        q: "The funder filed against my financed equipment. Can it take it?",
+        a: "A blanket MCA UCC filing often overlaps the equipment lender's senior lien, which limits what the funder can actually seize but creates a priority mess that spooks both creditors. Resolutions in this vertical routinely include intercreditor cleanup so clinical equipment is never in play.",
+      },
+      {
+        q: "Can settlement payments be timed to insurance reimbursements?",
+        a: "Yes, payer-timed restructures are the standard shape for practices. An aging report showing claims in process is the most persuasive document a provider can put in front of a funder, because it proves the revenue exists and dates it.",
+      },
+      {
+        q: "How do I keep this quiet?",
+        a: "Negotiated resolutions are private contracts; litigation is public record. That asymmetry argues for engaging early, before filings, and for confidentiality clauses in every settlement agreement, both standard practice for firms that work healthcare files.",
+      },
+    ],
+  },
+  {
+    slug: "mca-debt-relief-for-auto-repair",
+    name: "Auto Repair",
+    pluralName: "auto repair shops and dealers",
+    metaTitle: "MCA Debt Relief for Auto Repair Shops (2026): Top Firms",
+    metaDescription:
+      "Best MCA debt relief firms for auto repair shops, tire stores, and small dealers. Parts-cost spikes, card-heavy revenue, and how shops get out from under daily MCA pulls.",
+    h1: "Best MCA debt relief firms for auto repair shops",
+    intro:
+      "Repair shops run card-heavy revenue with thin margins and parts costs that spike without notice, a profile MCA funders love to fund and shops struggle to survive. When the daily pulls start competing with parts suppliers, the bay count stops mattering.",
+    whyDifferent:
+      "Shops pay for parts today and collect when the car leaves the lift, on cards, which is exactly the revenue MCA remittance intercepts. A funder pulling 10 to 15 percent of daily card volume is effectively standing between the shop and its parts counter, and suppliers cutting off terms is the failure mode that closes shops.",
+    whyDifferentSecond:
+      "The vertical is also processor-dependent: almost all revenue settles through card processing, so a funder-triggered processor freeze stops essentially all income at once. Protecting the processor relationship is priority one in any auto-repair workout.",
+    picks: pickByName(["Coastal", "Eastern Financial", "Regroup"]),
+    sections: [
+      {
+        title: "How MCA debt typically spirals for shops",
+        body: [
+          "The first advance usually buys equipment or covers a slow month, and it looks fine against a busy shop's card volume. Then a parts-price spike or a slow fortnight lands, the daily pull keeps coming, and the shop starts floating parts on supplier terms. When suppliers tighten, the owner takes a second advance to clear the parts account, and the spiral is running: remittance eating margin, margin pressure eating supplier trust, supplier limits eating throughput.",
+          "Because revenue is card-settled daily, funders see everything and size aggressively; multi-position shops commonly remit 20 to 35 percent of gross. The endgame risk is specific to the vertical: a processor hold, triggered by missed remittances, that stops all income while rent, techs, and suppliers wait.",
+        ],
+      },
+      {
+        title: "What a realistic shop settlement looks like",
+        body: [
+          "Shops resolve well because the underlying business is usually sound: cars keep breaking, bays keep filling, and card statements prove it. Typical outcomes convert daily pulls into weekly payments sized to real volume, or settle stacked positions at discounts funded over a few strong months. Where a processor hold exists, its release is negotiated as the first term, against a signed framework, because revenue restart precedes everything else.",
+          "Two terms to insist on: written commitment that funders will not contact your processor during negotiation, and supplier-aware payment scheduling, a plan that starves the parts account fails in weeks no matter what the paperwork says.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "My funder threatened to contact my card processor. How serious is that?",
+        a: "Serious, for a card-heavy shop a processor hold is a total revenue stop. Treat the threat as the signal to get representation engaged now: holds are contractual pressure, they lift against signed frameworks, and a no-processor-contact commitment should be an explicit term of any negotiation.",
+      },
+      {
+        q: "Can I keep paying my parts suppliers during a workout?",
+        a: "You must, and credible workout plans are built around it. Suppliers on terms are the shop's real working capital; a restructure that protects supplier payments while converting funder remittance to weekly is the standard shape of auto-repair resolutions.",
+      },
+      {
+        q: "How much can a repair shop realistically settle for?",
+        a: "Industry-wide outcomes on distressed files commonly run 30 to 60 percent reductions depending on position count and escalation stage. Shops with documented volume and a survival story to tell tend to do well; be skeptical of anyone quoting your number before reading your contracts.",
+      },
+      {
+        q: "Will the UCC filings stop me from financing new equipment?",
+        a: "Usually yes, equipment lenders search UCC records and decline behind blanket MCA liens. Lien terminations, verified on the state record, belong in every settlement so the shop can finance lifts and tools again after resolution.",
+      },
+    ],
+  },
+);
