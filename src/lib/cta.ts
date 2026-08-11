@@ -1,14 +1,12 @@
-const COASTAL_BASE = "https://www.coastaldebt.com/";
-
+// CTAs route through the internal /go redirect, whose destination is
+// configurable at runtime from /admin (see src/lib/settings.ts). UTMs are
+// appended by the redirect handler.
 export function coastalCta(campaign: string, params?: Record<string, string>) {
-  const url = new URL(COASTAL_BASE);
-  url.searchParams.set("utm_source", "mcasettlementreviews");
-  url.searchParams.set("utm_medium", "referral");
-  url.searchParams.set("utm_campaign", campaign);
+  const qs = new URLSearchParams({ c: campaign });
   if (params) {
-    for (const [k, v] of Object.entries(params)) url.searchParams.set(k, v);
+    for (const [k, v] of Object.entries(params)) qs.set(k, v);
   }
-  return url.toString();
+  return `/go?${qs.toString()}`;
 }
 
 export const COASTAL_PHONE = "(888) 305-6500";

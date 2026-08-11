@@ -3,6 +3,7 @@ import { Inter, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
+import { RuntimeScripts } from "@/components/site/RuntimeScripts";
 import { organizationSchema, websiteSchema, jsonLd } from "@/lib/schema";
 
 const inter = Inter({
@@ -57,6 +58,7 @@ export default function RootLayout({
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
+        <RuntimeScripts />
       </body>
     </html>
   );
