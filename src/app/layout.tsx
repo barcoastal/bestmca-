@@ -46,6 +46,13 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${sourceSerif.variable} h-full`}
     >
+      <head>
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="0PrxTs1GjIQVnXuXoe5GFw"
+          async
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-paper text-ink">
         <script
           type="application/ld+json"
