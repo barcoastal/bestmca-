@@ -10,6 +10,19 @@ import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+async function rfetch(url, opts, tries = 4) {
+  let lastErr;
+  for (let i = 0; i < tries; i++) {
+    try {
+      return await fetch(url, opts);
+    } catch (e) {
+      lastErr = e;
+      await new Promise((r) => setTimeout(r, 3000 * (i + 1)));
+    }
+  }
+  throw lastErr;
+}
+
 const SITE = "sc-domain:mcasettlementreviews.com";
 const ENV_PATH = path.join(os.homedir(), "mirai-seo", ".env");
 const OUT_DIR = path.join(
@@ -46,7 +59,7 @@ function loadEnv(p) {
 }
 
 async function accessToken(env) {
-  const r = await fetch("https://oauth2.googleapis.com/token", {
+  const r = await rfetch("https://oauth2.googleapis.com/token", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams({
@@ -62,7 +75,7 @@ async function accessToken(env) {
 }
 
 async function query(token, body) {
-  const r = await fetch(
+  const r = await rfetch(
     `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(SITE)}/searchAnalytics/query`,
     {
       method: "POST",

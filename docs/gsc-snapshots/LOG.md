@@ -73,3 +73,21 @@ Totals: **32 clicks**, 2896 impressions, 1.1% CTR, avg pos 15.5  (vs prev: click
 | corporate turnaround reviews | 2 | 28 | 7.1% | 8.0 | +4.1 |
 | rise alliance reviews | 0 | 64 | 0.0% | 4.0 | -1.0 |
 | regroup partners reviews | 0 | 5 | 0.0% | 7.2 | +3.5 |
+
+## 2026-08-18 (window 2026-08-09 to 2026-08-15)
+
+Totals: **59 clicks**, 3472 impressions, 1.7% CTR, avg pos 17.4  (vs prev: clicks +27, impr +576, pos +1.8)
+
+| Tracked query | Clicks | Impr | CTR | Pos | Pos delta |
+|---|---|---|---|---|---|
+| best mca debt relief companies | 0 | 22 | 0.0% | 23.6 | +5.2 |
+| mca settlement companies | 0 | 13 | 0.0% | 37.3 | +15.9 |
+| mca debt relief reviews | 0 | 27 | 0.0% | 37.4 | +7.3 |
+| merchant cash advance settlement companies | 0 | 16 | 0.0% | 31.9 | +1.9 |
+| mca debt relief companies | 0 | 9 | 0.0% | 14.7 | +3.4 |
+| second wind consultants reviews | 3 | 63 | 4.8% | 5.3 | +1.1 |
+| eastern financial partners reviews | 10 | 148 | 6.8% | 6.6 | +2.0 |
+| spergel reviews | 0 | 20 | 0.0% | 12.6 | +1.3 |
+| corporate turnaround reviews | 2 | 50 | 4.0% | 7.8 | -0.2 |
+| rise alliance reviews | 7 | 55 | 12.7% | 4.1 | +0.0 |
+| regroup partners reviews | 0 | 14 | 0.0% | 8.5 | +1.3 |
