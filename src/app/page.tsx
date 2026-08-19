@@ -11,8 +11,12 @@ import { TrackedLink } from "@/components/review/TrackedLink";
 import { NEWS } from "@/data/news";
 
 export const metadata = {
-  title:
-    "Best MCA Debt Relief Companies 2026: 17 Settlement Firms Ranked",
+  // Brand leads so it survives SERP truncation and the homepage (not /about)
+  // owns the "mca settlement reviews" brand query. Head term kept second.
+  title: {
+    absolute:
+      "MCA Settlement Reviews: Best MCA Debt Relief Companies 2026",
+  },
   description:
     "Independent reviews and rankings of the 17 best MCA debt relief and merchant cash advance settlement companies of 2026. Compare BBB ratings, fees, complaints, and real results.",
   keywords: [
