@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GUIDES, getGuideBySlug } from "@/data/guides";
 import { CTABanner } from "@/components/review/CTABanner";
+import { FeaturedReviews } from "@/components/review/FeaturedReviews";
 import { faqSchema, jsonLd } from "@/lib/schema";
 
 export const dynamicParams = false;
@@ -139,6 +140,8 @@ export default async function GuidePage({
           </p>
         </section>
       </section>
+
+      <FeaturedReviews />
 
       <div className="mx-auto max-w-3xl px-5 pb-16">
         <CTABanner

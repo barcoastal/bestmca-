@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CTABanner } from "@/components/review/CTABanner";
+import { FeaturedReviews } from "@/components/review/FeaturedReviews";
 import { faqSchema, jsonLd } from "@/lib/schema";
 
 export const metadata = {
@@ -149,6 +150,8 @@ export default function Page() {
           ))}
         </div>
       </section>
+
+      <FeaturedReviews />
 
       <div className="mx-auto max-w-4xl px-5 pb-16">
         <CTABanner campaign="pillar-mca-consolidation" />

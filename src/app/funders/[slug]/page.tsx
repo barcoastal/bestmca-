@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FUNDERS, getFunderBySlug } from "@/data/funders";
 import { CTABanner } from "@/components/review/CTABanner";
+import { FeaturedReviews } from "@/components/review/FeaturedReviews";
 import { faqSchema, jsonLd } from "@/lib/schema";
 
 export const dynamicParams = false;
@@ -186,6 +187,8 @@ export default async function FunderPage({
           ))}
         </div>
       </section>
+
+      <FeaturedReviews heading="Firms we reviewed and ranked" />
 
       <div className="mx-auto max-w-4xl px-5 pb-16">
         <CTABanner

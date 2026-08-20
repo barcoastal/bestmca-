@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GLOSSARY, getGlossaryTerm } from "@/data/glossary";
 import { CTABanner } from "@/components/review/CTABanner";
+import { FeaturedReviews } from "@/components/review/FeaturedReviews";
 import { jsonLd } from "@/lib/schema";
 
 export const dynamicParams = false;
@@ -106,6 +107,8 @@ export default async function TermPage({
           ))}
         </div>
       </section>
+
+      <FeaturedReviews count={4} />
 
       <div className="mx-auto max-w-3xl px-5 pb-14">
         <CTABanner
