@@ -31,7 +31,7 @@ export function TrackedLink({
     <a
       href={href}
       target="_blank"
-      rel="noopener"
+      rel="noopener nofollow"
       className={className}
       onClick={onClick}
     >
