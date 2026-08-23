@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -46,14 +47,12 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${sourceSerif.variable} h-full`}
     >
-      <head>
-        <script
+      <body className="min-h-full flex flex-col bg-paper text-ink">
+        <Script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="0PrxTs1GjIQVnXuXoe5GFw"
-          async
+          strategy="afterInteractive"
         />
-      </head>
-      <body className="min-h-full flex flex-col bg-paper text-ink">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={jsonLd(organizationSchema())}
