@@ -48,6 +48,13 @@ export default function RootLayout({
       className={`${inter.variable} ${sourceSerif.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-paper text-ink">
+        {/* Visitor click id: minted on first pageview, forwarded to CTAs by /go */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){function g(n){var m=document.cookie.match(new RegExp('(?:^|; )'+n+'=([^;]*)'));return m?m[1]:''}if(!g('msr_cid')){document.cookie='msr_cid=msr_'+Date.now().toString(36)+Math.random().toString(36).slice(2,10)+'; path=/; max-age=31536000; SameSite=Lax';}var p=new URLSearchParams(location.search);['gclid','fbclid','msclkid'].forEach(function(k){var v=p.get(k);if(v){document.cookie='msr_'+k+'='+encodeURIComponent(v)+'; path=/; max-age=7776000; SameSite=Lax';}});})();",
+          }}
+        />
         <Script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="0PrxTs1GjIQVnXuXoe5GFw"
