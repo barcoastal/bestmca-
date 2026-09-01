@@ -45,6 +45,10 @@ export function GET(request: NextRequest) {
   }
 
   const cookieHeader = request.headers.get("cookie");
+  // Trakkit click id from THIS site's session is the id that must reach the
+  // LP lead webhook. Fall back to a persistent msr_ visitor id when the
+  // Trakkit cookie is absent.
+  const tkclid = readCookie(cookieHeader, "tkclid");
   let cid = readCookie(cookieHeader, "msr_cid");
   let setCid = false;
   if (!cid || !/^msr_[a-z0-9]+$/i.test(cid)) {
@@ -54,18 +58,15 @@ export function GET(request: NextRequest) {
       Math.random().toString(36).slice(2, 10);
     setCid = true;
   }
-  url.searchParams.set("click_id", cid);
-  for (const [param, ck] of [
-    ["gclid", "msr_gclid"],
-    ["fbclid", "msr_fbclid"],
-    ["msclkid", "msr_msclkid"],
-  ] as const) {
-    const v = readCookie(cookieHeader, ck);
-    if (v) url.searchParams.set(param, v);
+  if (tkclid) {
+    url.searchParams.set("tkclid", tkclid);
+    url.searchParams.set("click_id", tkclid);
+  } else {
+    url.searchParams.set("click_id", cid);
   }
 
   console.log(
-    `[cta-go] ${new Date().toISOString()} campaign=${campaign} dest=${url.hostname} click_id=${cid}`,
+    `[cta-go] ${new Date().toISOString()} campaign=${campaign} dest=${url.hostname} tkclid=${tkclid || "-"} click_id=${tkclid || cid}`,
   );
   const res = NextResponse.redirect(url.toString(), 302);
   if (setCid) {
