@@ -7,6 +7,7 @@ export const metadata = {
   description:
     "Every term business owners meet in MCA agreements and disputes, factor rates, holdbacks, Confessions of Judgment, UCC 9-406 notices, reconciliation, defined in plain English.",
   alternates: { canonical: "/glossary" },
+  robots: { index: false, follow: true },
 };
 
 export default function GlossaryPage() {

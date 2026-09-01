@@ -24,6 +24,7 @@ export async function generateMetadata({
     title: `${t.term}: Definition and Why It Matters | MCA Glossary`,
     description: t.definition.slice(0, 158),
     alternates: { canonical: `/glossary/${t.slug}` },
+    robots: { index: false, follow: true },
   };
 }
 

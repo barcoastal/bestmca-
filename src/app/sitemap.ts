@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
 import { REVIEWS, COMPETITORS } from "@/data/reviews";
-import { GLOSSARY } from "@/data/glossary";
 import { FUNDERS } from "@/data/funders";
 import { GUIDES } from "@/data/guides";
 import { INDUSTRIES } from "@/data/industries";
@@ -54,12 +53,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: r.isCoastal ? 0.95 : 0.85,
   }));
 
-  const compares: MetadataRoute.Sitemap = COMPARABLE.map((slug) => ({
-    url: `${SITE}/compare/coastal-debt-vs-${slug}`,
-    lastModified: now,
-    priority: 0.8,
-  }));
-
   const legit: MetadataRoute.Sitemap = COMPETITORS.map((c) => ({
     url: `${SITE}/legit/${c.slug}`,
     lastModified: now,
@@ -77,15 +70,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     priority: 0.75,
   }));
-
-  const glossary: MetadataRoute.Sitemap = [
-    { url: `${SITE}/glossary`, lastModified: now, priority: 0.7 },
-    ...GLOSSARY.map((t) => ({
-      url: `${SITE}/glossary/${t.slug}`,
-      lastModified: now,
-      priority: 0.55,
-    })),
-  ];
 
   const funders: MetadataRoute.Sitemap = [
     { url: `${SITE}/funders`, lastModified: now, priority: 0.8 },
@@ -112,11 +96,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticPages,
     ...reviews,
-    ...compares,
     ...legit,
     ...guides,
     ...industries,
-    ...glossary,
     ...funders,
     ...news,
   ];

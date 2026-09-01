@@ -34,6 +34,7 @@ export async function generateMetadata({
     title,
     description: `Side-by-side comparison of Coastal Debt Resolve and ${competitor.name} across pricing, results, and litigation defense. See which firm fits your situation.`,
     alternates: { canonical: `/compare/${slug}` },
+    robots: { index: false, follow: true },
   };
 }
 
