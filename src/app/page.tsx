@@ -42,7 +42,7 @@ const HOME_FAQ = [
   },
   {
     q: "Which MCA settlement company has the best BBB rating?",
-    a: "Coastal Debt Resolve is the only firm in our comparison that is both BBB Accredited and rated A+. You can see every firm's verified BBB grade, accreditation status, and customer-review average on our BBB ratings comparison page.",
+    a: "Multiple firms in our comparison are listed as BBB Accredited with an A+ rating. Compare their BBB grades, accreditation status, and customer-review averages on our BBB ratings page, and check the linked BBB profiles for current information.",
   },
   {
     q: "Is MCA settlement the same as bankruptcy?",
@@ -97,14 +97,10 @@ export default function HomePage() {
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
               2026 Independent Review · Updated{" "}
-              {new Date().toLocaleDateString("en-US", {
-                month: "long",
-                year: "numeric",
-              })}
+              September 11, 2026
             </div>
             <h1 className="mt-4 font-display text-4xl md:text-6xl font-semibold text-navy leading-[1.05] tracking-tight">
-              The best MCA settlement companies of 2026, ranked by people who
-              actually read the contracts.
+              The best MCA settlement companies of 2026, compared across five editorial criteria.
             </h1>
             <p className="mt-6 text-lg text-ink-soft leading-relaxed max-w-2xl">
               We reviewed {RANKED.length} merchant cash advance settlement and
@@ -134,7 +130,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="mt-8 flex items-center gap-3 text-xs text-ink-subtle">
-              <Stars value={4.9} size="sm" /> 4.9/5 in our review · 4.6 on Trustpilot across 420+ verified reviews
+              <Stars value={COASTAL.score} size="sm" /> {COASTAL.score.toFixed(1)}/5 in our review · 4.6 on Trustpilot across 420+ verified reviews
             </div>
           </div>
 
@@ -277,8 +273,8 @@ export default function HomePage() {
               </div>
             </div>
             <p className="mt-4 text-sm text-ink-muted leading-relaxed">
-              The only firm in our comparison that is both BBB Accredited and
-              rated A+.
+              Coastal is among the firms in our comparison listed as BBB
+              Accredited and rated A+.
             </p>
             <div className="mt-5">
               <BBBSeal campaign="homepage-bbb-band" />
@@ -292,10 +288,10 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-5 py-16 grid gap-12 md:grid-cols-2 items-start">
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-gold-soft">
-              Why Coastal scored 4.9
+              Why Coastal scored {COASTAL.score.toFixed(1)}
             </div>
             <h2 className="mt-3 font-display text-3xl md:text-4xl font-semibold leading-tight">
-              The only firm with attorneys, settlement, and case management
+              Attorneys, settlement, and case management
               under one roof.
             </h2>
             <p className="mt-5 text-white/75 leading-relaxed">
@@ -324,7 +320,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              { label: "Composite score", value: "4.9 / 5" },
+              { label: "Composite score", value: `${COASTAL.score.toFixed(1)} / 5` },
               { label: "Trustpilot reviews", value: "420+" },
               { label: "Min debt", value: "$25K" },
               { label: "In-house attorneys", value: "Yes" },

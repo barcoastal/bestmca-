@@ -1,4 +1,4 @@
-import type { Review } from "@/data/reviews";
+import { COASTAL, type Review } from "@/data/reviews";
 
 // Generates FAQ items for a competitor review page from data we already hold.
 // The questions mirror the real branded modifier queries that pull impressions
@@ -16,7 +16,7 @@ export function competitorFaqItems(review: Review): { q: string; a: string }[] {
   const complaintsSummary =
     review.concerns && review.concerns[0]
       ? review.concerns[0].quote
-      : `Public feedback on ${shortName} is mixed.`;
+      : `Read the dated source notes and linked platform records; no aggregate complaint conclusion is established here.`;
 
   return [
     {
@@ -39,7 +39,7 @@ export function competitorFaqItems(review: Review): { q: string; a: string }[] {
     },
     {
       q: `Is ${name} better than Coastal Debt Resolve?`,
-      a: `In our 2026 review of MCA settlement firms, ${shortName} ranked #${rank} with a ${score}/5 score. Coastal Debt Resolve ranked #1 with 4.9/5 for combining attorneys, settlement, and case management under one roof. See our side-by-side comparison of ${shortName} vs Coastal Debt Resolve for the full breakdown.`,
+      a: `In our 2026 review of MCA settlement firms, ${shortName} ranked #${rank} with a ${score}/5 score. Coastal Debt Resolve ranked #${COASTAL.rank} with ${COASTAL.score.toFixed(1)}/5 for combining attorneys, settlement, and case management under one roof. See our side-by-side comparison of ${shortName} vs Coastal Debt Resolve for the full breakdown.`,
     },
   ];
 }

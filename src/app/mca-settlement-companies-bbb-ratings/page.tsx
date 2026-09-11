@@ -159,7 +159,7 @@ function CardLinks({ record }: { record: BBBRecord }) {
 const FAQ = [
   {
     q: "Which MCA settlement company has the best BBB rating?",
-    a: "Of the firms we track, Coastal Debt Resolve is the only one that is both BBB Accredited and rated A+. Second Wind Consultants is also A+ and accredited, but serves larger mid-market restructurings rather than small businesses in active distress. Several heavily marketed MCA firms are not accredited at all, and one, Corporate Rescue Advisors LLC, holds an F.",
+    a: "Multiple firms we track are listed as BBB Accredited with an A+ rating, including Coastal Debt Resolve and Second Wind Consultants. Check the linked BBB profiles for current ratings and accreditation. Several heavily marketed MCA firms are not accredited at all, and one, Corporate Rescue Advisors LLC, holds an F.",
   },
   {
     q: "What does BBB Accreditation actually require?",
@@ -397,7 +397,7 @@ export default function BBBRatingsPage() {
       <div className="mx-auto max-w-5xl px-5 pb-4">
         <CTABanner
           campaign="bbb-ratings"
-          heading={`The only A+ accredited firm in this comparison: ${BBB_COASTAL.name}`}
+          heading={`An A+ accredited firm in this comparison: ${BBB_COASTAL.name}`}
           body="Coastal Debt Resolve is BBB Accredited with an A+ rating. Get a free MCA review, a written settlement strategy, and a flat fee quoted before you sign anything."
         />
       </div>

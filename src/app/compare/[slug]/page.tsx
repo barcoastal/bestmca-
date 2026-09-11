@@ -49,7 +49,7 @@ export default async function ComparePage({
 
   const wins = (
     Object.keys(COASTAL.ratings) as (keyof typeof COASTAL.ratings)[]
-  ).filter((k) => COASTAL.ratings[k] >= competitor.ratings[k]).length;
+  ).filter((k) => COASTAL.ratings[k] > competitor.ratings[k]).length;
 
   return (
     <article className="bg-paper">

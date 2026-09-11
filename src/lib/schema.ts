@@ -2,9 +2,6 @@ import type { Review } from "@/data/reviews";
 
 const SITE = "https://www.mcasettlementreviews.com";
 
-// Build-time date so freshness signals reflect the latest deploy rather than a
-// value frozen in source. Regenerated on every static build.
-const BUILD_DATE = new Date().toISOString().split("T")[0];
 
 // Sitewide publisher entity. Strengthens E-E-A-T and entity signals.
 export function organizationSchema() {
@@ -107,7 +104,7 @@ export function reviewSchema(review: Review) {
     reviewBody: review.verdict,
     name: `${review.name} Review`,
     datePublished: "2026-04-28",
-    dateModified: BUILD_DATE,
+    dateModified: review.updatedAt,
   };
 }
 

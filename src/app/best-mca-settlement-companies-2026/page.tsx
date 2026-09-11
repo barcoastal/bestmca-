@@ -34,7 +34,7 @@ export default function BestOfPage() {
             The 17 best MCA settlement companies of 2026
           </h1>
           <p className="mt-4 text-lg text-ink-soft leading-relaxed max-w-3xl">
-            We evaluated 10 merchant cash advance settlement and restructuring
+            We evaluated {RANKED.length} merchant cash advance settlement and restructuring
             firms across five categories. Here is what we found, ranked by
             composite score.
           </p>
@@ -53,9 +53,7 @@ export default function BestOfPage() {
           Each firm was scored on five categories: transparency and disclosures,
           settlement results, client communication, cost and fee structure, and
           litigation defense capability. Scores are composite. We did not weigh
-          marketing claims, brand recognition, or paid placements. We read the
-          contracts, reviewed public client commentary, and checked third-party
-          platforms (BBB, Trustpilot, court records). Full methodology is
+          marketing claims, brand recognition, or paid placements. Review-specific source notes explain the public records and company materials checked, with limits on what was verified. Full methodology is
           available on our{" "}
           <Link href="/methodology" className="text-navy underline">
             methodology page

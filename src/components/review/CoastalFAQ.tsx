@@ -1,3 +1,4 @@
+import { COASTAL } from "@/data/reviews";
 import { jsonLd } from "@/lib/schema";
 
 const FAQ = [
@@ -7,7 +8,7 @@ const FAQ = [
   },
   {
     q: "What do Coastal Debt Resolve reviews actually say?",
-    a: "Across Trustpilot, BBB, and the firm's public testimonial page, the consistent themes in client commentary are: named representatives clients can identify (Marco, Carlos, Sarah, Simone, and others), responsive communication during a stressful situation, transparent fee disclosures pre-contract, and successful negotiated settlements. The firm holds a 4.6 Trustpilot average across 420+ reviews, alongside its 4.9 editorial score in our comparison.",
+    a: `Across Trustpilot, BBB, and the firm's public testimonial page, the consistent themes in client commentary are: named representatives clients can identify (Marco, Carlos, Sarah, Simone, and others), responsive communication during a stressful situation, transparent fee disclosures pre-contract, and successful negotiated settlements. The firm holds a 4.6 Trustpilot average across 420+ reviews, alongside its ${COASTAL.score.toFixed(1)} editorial score in our comparison.`,
   },
   {
     q: "Are there any Coastal Debt Resolve complaints?",
@@ -31,7 +32,7 @@ const FAQ = [
   },
   {
     q: "Is Coastal Debt Resolve better than other MCA settlement companies?",
-    a: "In our 2026 review across 17 firms, Coastal Debt Resolve scored 4.9 of 5 and ranked first. The differentiator is the integration of attorneys, settlement, and case management under one roof. Most competitors specialize in one of the three and refer the rest out, which creates handoff cost and risk when a case evolves.",
+    a: `In our 2026 review across 17 firms, Coastal Debt Resolve scored ${COASTAL.score.toFixed(1)} of 5 and ranked first. The differentiator is the integration of attorneys, settlement, and case management under one roof. Most competitors specialize in one of the three and refer the rest out, which creates handoff cost and risk when a case evolves.`,
   },
   {
     q: "How long does the Coastal Debt Resolve process take?",

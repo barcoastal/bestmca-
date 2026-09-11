@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { REVIEWS, getReviewBySlug } from "@/data/reviews";
+import { COASTAL, REVIEWS, getReviewBySlug } from "@/data/reviews";
 import { ScoreBadge } from "@/components/review/ScoreBadge";
 import { AtAGlanceCard } from "@/components/review/AtAGlanceCard";
 import { ProsConsTable } from "@/components/review/ProsConsTable";
@@ -45,7 +45,7 @@ export async function generateMetadata({
       title:
         "Coastal Debt Resolve Reviews 2026: Trustpilot, Complaints & Verdict",
       description:
-        "Independent 2026 review of Coastal Debt Resolve: 4.9/5 editorial score, 4.6 across 420+ Trustpilot reviews, BBB Accredited A+, in-house attorneys. Complaints, lawsuits, cost, and our complete verdict.",
+        `2026 review of Coastal Debt Resolve: ${review.score.toFixed(1)}/5 editorial score. Services, public reviews, costs and limitations.`,
       keywords: [
         "Coastal Debt Resolve reviews",
         "Coastal Debt Resolve complaints",
@@ -141,6 +141,7 @@ export default async function ReviewPage({
             <p className="mt-5 text-lg text-ink-soft leading-relaxed">
               {review.oneLineVerdict}
             </p>
+            <p className="mt-3 text-sm text-ink-subtle">Editorial update: <time dateTime={review.updatedAt}>{review.updatedAt}</time> · Rating calculation corrected; source checks are dated below.</p>
             <div className="mt-6">
               <TrackedLink
                 href={coastalCta(`review-hero-${review.slug}`)}
@@ -198,14 +199,20 @@ export default async function ReviewPage({
             </p>
           </section>
 
+          {review.sources && (
+            <section className="mt-10 rounded-2xl border border-line bg-white p-6">
+              <h2 className="font-display text-2xl font-semibold text-navy">Sources checked September 11, 2026</h2>
+              <p className="mt-3 text-sm text-ink-muted">This update uses public records and company materials. We did not conduct an intake call, audit case results or review a signed client contract for this update. Category scores remain editorial judgments, not measured success rates.</p>
+              <ul className="mt-5 space-y-5">{review.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-navy underline">{source.label}</a><p className="mt-1 text-sm text-ink-soft leading-relaxed">{source.note}</p></li>)}</ul>
+            </section>
+          )}
           {/* Pros and cons */}
           <section className="mt-12">
             <h2 className="font-display text-2xl font-semibold text-navy">
               Strengths and drawbacks
             </h2>
             <p className="mt-2 text-sm text-ink-muted">
-              What we found across our review of public materials, client
-              commentary, and signed agreement disclosures.
+              Our editorial assessment of available materials. Company claims and client opinions are not independently audited outcomes.
             </p>
             <div className="mt-6">
               <ProsConsTable pros={review.pros} cons={review.cons} />
@@ -354,7 +361,7 @@ export default async function ReviewPage({
               </div>
               <div className="mt-2 flex items-center gap-2">
                 <span className="font-display text-2xl font-semibold text-navy tabular-nums">
-                  4.9
+                  {COASTAL.score.toFixed(1)}
                 </span>
                 <span className="text-xs text-ink-subtle">/ 5</span>
               </div>

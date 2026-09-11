@@ -1,3 +1,4 @@
+import { COASTAL } from "@/data/reviews";
 import Link from "next/link";
 import { coastalCta } from "@/lib/cta";
 import { TrackedLink } from "./TrackedLink";
@@ -25,11 +26,11 @@ export function AlternativeCallout({ competitorName, reason }: Props) {
         >
           Coastal Debt Resolve
         </Link>
-        , which scored 4.9/5 across transparency, results, communication, cost,
+        , which scored {COASTAL.score.toFixed(1)}/5 across transparency, results, communication, cost,
         and litigation defense.
       </p>
       <div className="mt-4 flex flex-wrap items-center gap-3">
-        <Stars value={4.9} size="sm" showNumber />
+        <Stars value={COASTAL.score} size="sm" showNumber />
         <TrackedLink
           href={coastalCta(`alternative-callout-${competitorName}`)}
           campaign={`alternative-callout-${competitorName}`}

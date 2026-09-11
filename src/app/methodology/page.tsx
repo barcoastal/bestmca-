@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { RATING_WEIGHTS } from "@/data/reviews";
 
 export const metadata = {
   title: "Our Methodology: How We Rate MCA Settlement Companies",
@@ -10,7 +11,7 @@ export const metadata = {
 const CRITERIA = [
   {
     title: "Transparency and disclosures",
-    weight: "20%",
+    weight: `${RATING_WEIGHTS.transparency}%`,
     description:
       "Are fees disclosed in writing before any contract is signed? Is the firm clear about what it will and will not do? Are total cost-of-resolution numbers provided, or just headline percentages?",
     redFlags: [
@@ -21,7 +22,7 @@ const CRITERIA = [
   },
   {
     title: "Settlement results",
-    weight: "25%",
+    weight: `${RATING_WEIGHTS.results}%`,
     description:
       "What are the actual outcomes across the firm's client base? We look at independent third-party reviews, verifiable case studies, and where possible, signed agreements clients have shared.",
     redFlags: [
@@ -32,7 +33,7 @@ const CRITERIA = [
   },
   {
     title: "Client communication",
-    weight: "20%",
+    weight: `${RATING_WEIGHTS.communication}%`,
     description:
       "Is a named case manager assigned at intake? What is the typical response cadence? Do clients report consistent communication post-signature, or does the experience drop off?",
     redFlags: [
@@ -43,7 +44,7 @@ const CRITERIA = [
   },
   {
     title: "Cost and fee structure",
-    weight: "15%",
+    weight: `${RATING_WEIGHTS.cost}%`,
     description:
       "Total cost of resolution, including any per-funder fees, attorney fees, success fees, and milestone payments. We compare against the savings the firm actually delivers.",
     redFlags: [
@@ -54,7 +55,7 @@ const CRITERIA = [
   },
   {
     title: "Litigation defense",
-    weight: "20%",
+    weight: `${RATING_WEIGHTS.litigation}%`,
     description:
       "Does the firm have in-house attorneys? Can it defend against a Confession of Judgment, UCC freeze, or active lawsuit without referring out? Litigation capability under the same fee is a meaningful differentiator.",
     redFlags: [
@@ -88,7 +89,9 @@ export default function MethodologyPage() {
           Every firm reviewed on this site is scored on the same five
           categories. Each category is described below, along with the kinds of
           patterns that move a firm up or down the rating. A firm&rsquo;s
-          composite score is a weighted average of the five category scores.
+          composite score is a weighted average of the five category scores,
+          rounded to one decimal place. Rankings follow these composite scores;
+          firms with equal published scores share a rank. Category scores are editorial judgments, not audited success rates. Correcting the arithmetic does not independently validate the underlying category assessments.
         </p>
       </section>
 
@@ -128,10 +131,10 @@ export default function MethodologyPage() {
             <li>BBB business profiles, ratings, and complaint records</li>
             <li>Trustpilot review aggregates and individual reviews</li>
             <li>Reddit and small business forum commentary</li>
-            <li>Court records for active and resolved litigation</li>
-            <li>Firm-published materials, including signed-contract templates</li>
-            <li>State Attorney General consumer protection records</li>
-            <li>Direct intake calls placed by our editorial team</li>
+            <li>Court or regulatory records when a specific record is linked</li>
+            <li>Firm-published service and fee descriptions, identified as company claims</li>
+            <li>Complaint allegations distinguished from business responses and adjudicated findings</li>
+            <li>Review-specific source notes identify what was actually checked and when.</li>
           </ul>
         </div>
         <div className="mt-6 text-sm text-ink-muted leading-relaxed">

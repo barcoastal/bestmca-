@@ -26,6 +26,8 @@ export type Review = {
   name: string;
   shortName: string;
   score: number;
+  updatedAt: string;
+  sources?: { label: string; url: string; note: string }[];
   isCoastal?: boolean;
   rank: number;
   oneLineVerdict: string;
@@ -52,14 +54,13 @@ export type Review = {
   warning?: string;
 };
 
-export const REVIEWS: Review[] = [
+const REVIEW_DATA: Omit<Review, "score" | "rank">[] = [
   {
+    updatedAt: "2026-09-11",
     slug: "coastal-debt-resolve",
     name: "Coastal Debt Resolve",
     shortName: "Coastal",
-    score: 4.9,
     isCoastal: true,
-    rank: 1,
     oneLineVerdict:
       "The most complete MCA settlement firm we evaluated, combining in-house attorneys, transparent pricing, and verified results across hundreds of small businesses.",
     founded: "2019",
@@ -103,7 +104,7 @@ export const REVIEWS: Review[] = [
       "Heavy demand can mean a 24 to 48 hour wait for the first attorney call during peak weeks",
     ],
     verdict:
-      "Coastal Debt Resolve is the only firm in this category that pairs a real legal team with a real settlement operation under one roof. Most competitors do one or the other and refer the rest out. That gap matters: the moment a funder sues or files a UCC, a firm without litigation capability has to hand the file off, restart the relationship, and re-quote a separate retainer. Coastal carries the file from intake through resolution. Pricing is disclosed before contract, the case manager is named, and the public testimonial wall reads like a directory of small business owners willing to be quoted by name. It is the firm we would use ourselves.",
+      "Coastal Debt Resolve combines legal support and settlement services under one roof. That gap matters: the moment a funder sues or files a UCC, a firm without litigation capability has to hand the file off, restart the relationship, and re-quote a separate retainer. Coastal carries the file from intake through resolution. Pricing is disclosed before contract, the case manager is named, and the public testimonial wall reads like a directory of small business owners willing to be quoted by name. It is the firm we would use ourselves.",
     pricing:
       "Coastal quotes a flat fee or a performance-based fee tied to actual savings, disclosed in writing before any agreement is signed. There is no upfront retainer to start a case review. Owners are told what they will pay, when, and against what milestone. We confirmed the disclosure pattern by reviewing client-shared agreements and by asking the intake team directly.",
     process:
@@ -117,32 +118,30 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "second-wind-consultants",
     name: "Second Wind Consultants",
     shortName: "Second Wind",
-    score: 4.4,
-    rank: 4,
     oneLineVerdict:
-      "An established Massachusetts restructuring firm with strong public reviews and a long operating history. Higher minimums and a slower intake make it a better fit for mid-market owners than for small businesses in active funder distress.",
+      "Second Wind provides business restructuring and turnaround services and is BBB A+ accredited. Compare its proposal with Rise Alliance, its related business, and verify fees and legal scope in writing.",
     founded: "2009",
     hq: "Northampton, Massachusetts",
-    minDebt: "$250,000+ in many cases",
+    minDebt: "Not verified; request eligibility criteria",
     specialties: "Business debt restructuring, MCA resolution, asset sales",
-    bbb: "A+ rated, accredited",
-    trustpilot: "No Trustpilot review base; public reviews live on Google and BBB",
+    bbb: "A+; accredited since January 2014 (checked September 11, 2026)",
+    trustpilot: "No current Trustpilot aggregate verified in this update",
     websiteLabel: "secondwindconsultants.com",
     firmWebsite: "https://secondwindconsultants.com",
     recommendedFor:
-      "Mid-market businesses with significant total debt ($250K+) that can wait through a longer evaluation and onboarding cycle.",
+      "Businesses comparing broader restructuring and turnaround services alongside MCA relief.",
     bestFor: [
-      "Established companies with $250K+ in MCA exposure",
-      "Owners with time to absorb a multi-week evaluation",
-    ],
+  "Businesses evaluating a wider operational restructuring",
+  "Owners comparing Second Wind and Rise Alliance proposals"
+],
     notIdealFor: [
-      "Small businesses under $250K in total debt",
-      "Owners already sued or facing imminent freeze",
-      "Operators who want a quick, transparent fee quote",
-    ],
+  "Owners seeking a guaranteed outcome or timeline",
+  "Owners needing a public fixed-price package"
+],
     ratings: {
       transparency: 4,
       results: 4.5,
@@ -151,60 +150,46 @@ export const REVIEWS: Review[] = [
       litigation: 4,
     },
     pros: [
-      "Long operating history (since 2009) in business debt restructuring",
-      "Strong public standing: BBB A+ rated and accredited since 2014, with a solid Google review base",
-      "Established relationships with several major MCA funders",
-      "Handles complex multi-creditor situations well",
-    ],
+  "BBB lists operations since 2009 and accreditation since 2014",
+  "Offers restructuring, turnaround and management consulting",
+  "Discloses its relationship with Rise Alliance"
+],
     cons: [
-      "Higher effective minimums skew it toward mid-market clients",
-      "Intake and evaluation cycle can run several weeks before any action",
-      "Public-facing pricing is opaque; fees disclosed only late in the funnel",
-      "Less integrated litigation defense than firms with full in-house legal team",
-    ],
+  "No complete fee schedule on the homepage reviewed",
+  "No standard intake timeline verified",
+  "Confirm the contracting entity and legal representation in the engagement"
+],
     verdict:
-      "Second Wind has earned its reputation in larger restructurings and has a legitimately strong public review record. For a $750,000 multi-creditor workout with time on the clock, they are a credible choice. For a small business with three MCAs, daily ACH pulls, and a UCC threat next week, the fit is wrong. The intake cycle is the weak point: by the time you finish their evaluation, a funder has often already filed. Owners in active distress should pick a firm built for speed.",
+      "Second Wind has a documented operating history and a broader service offering than MCA negotiation alone. The previous version asserted a $250,000 minimum and a slow intake cycle without sufficient supporting evidence; those claims have been removed. Its suitability depends on the proposed work, total cost and named professionals.",
     pricing:
-      "Pricing is not published. Clients report fee structures tied to total restructured debt, with custom retainers depending on case complexity. Expect to complete a full evaluation before receiving a quote.",
+      "A complete engagement fee schedule was not found on the homepage reviewed. Obtain a written quote separating consulting, restructuring and any legal costs. The site describes management consulting without hourly fees; this does not establish pricing for every service.",
     process:
-      "Intake is consultative and slow by design. A discovery call is followed by document collection, a multi-day analysis, and a proposal call. Implementation begins after a signed engagement, often two to four weeks after first contact.",
-    publicQuotes: [
-      {
-        quote:
-          "There is no question that I could not have navigated that period without their team. From start to finish, their dedication, diligence, and professionalism were exceptional.",
-        source: "BBB Client Review",
-        rating: 5,
-        attribution: "BBB business profile, verified client",
-      },
-      {
-        quote:
-          "We worked with Second Wind to help our business out of a giant financial crisis. They helped us where they could and got great results, and were transparent with the options that were not looking good.",
-        source: "BBB Client Review",
-        rating: 5,
-        attribution: "BBB business profile, verified client",
-      },
-      {
-        quote:
-          "Mixed feelings about pricing; the process sometimes took longer than expected. While many found Second Wind responsive and supportive, a few felt let down by communication lapses.",
-        source: "Aggregated public review summary",
-        rating: 3,
-        attribution: "Common patterns across BBB and Trustpilot",
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "Recurring third-party feedback that the evaluation cycle is materially slower than alternatives, which can be costly when a funder is already escalating.",
-        source: "Public client commentary across BBB and Trustpilot",
-      },
-    ],
+      "The company offers an initial specialist consultation. Request a written sequence of work, timing and responsible professionals. We have not verified a standard two-to-four-week onboarding period.",
+    publicQuotes: [],
+    concerns: [],
+  sources: [
+  {
+    "label": "Second Wind: service overview",
+    "url": "https://secondwindconsultants.com/",
+    "note": "Company descriptions of restructuring, turnaround and management consulting; not independent proof of outcomes."
   },
   {
+    "label": "BBB business profile",
+    "url": "https://www.bbb.org/us/ma/northampton/profile/business-consultant/second-wind-consultants-inc-0261-256587",
+    "note": "A+ and accredited; BBB lists a 2009 business start and January 24, 2014 accreditation."
+  },
+  {
+    "label": "Rise Alliance formation announcement",
+    "url": "https://secondwindconsultants.com/resource/second-wind-consultants-and-polaris-business-advisors-unite-to-form-rise-alliance/",
+    "note": "Company announcement describes the combination with Polaris Business Advisors that formed Rise Alliance."
+  }
+],
+},
+  {
+    updatedAt: "2026-09-11",
     slug: "spergel",
     name: "Spergel",
     shortName: "Spergel",
-    score: 4.5,
-    rank: 3,
     oneLineVerdict:
       "An exceptional Canadian licensed insolvency firm with one of the strongest review records in the category. Limited US footprint means most US MCA owners cannot use them.",
     founded: "1989",
@@ -272,11 +257,10 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "corporate-turnaround",
     name: "Corporate Turnaround",
     shortName: "Corporate Turnaround",
-    score: 3.7,
-    rank: 10,
     oneLineVerdict:
       "Long pedigree in turnaround consulting, but recurring BBB complaints about deceptive billing and undelivered creditor contact pull this firm down significantly.",
     founded: "1998",
@@ -347,11 +331,10 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "regroup-partners",
     name: "Regroup Partners",
     shortName: "Regroup",
-    score: 3.8,
-    rank: 8,
     oneLineVerdict:
       "Consolidation and restructuring firm with no upfront fees and several positive long-term client outcomes. A trust-account complaint flags the need to verify fee handling in writing.",
     founded: "2010s",
@@ -428,11 +411,10 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "corporate-rescue",
     name: "Corporate Rescue Advisors",
     shortName: "Corporate Rescue Advisors",
-    score: 3.5,
-    rank: 12,
     oneLineVerdict:
       "Software-driven restructuring playbook with positive individual reviews from a small sample size, but a serious fraud allegation in public reviews requires careful diligence before engaging.",
     founded: "2017",
@@ -501,31 +483,30 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "eastern-financial-partners",
     name: "Eastern Financial Partners",
     shortName: "Eastern Financial",
-    score: 3.9,
-    rank: 6,
     oneLineVerdict:
-      "Attorney-led MCA shop with a genuine 4.4 Trustpilot score (190+ reviews), but a young firm (started 2023), not BBB accredited (C+), with documented complaints about robo-dialer calls that continue after opt-out and disputed refunds.",
+      "Eastern offers MCA restructuring and advertises attorney-led negotiations. Its BBB profile is currently Not Rated and not accredited; review the dated complaint record and obtain written fees before deciding.",
     founded: "2023",
     hq: "Red Bank, New Jersey",
     minDebt: "Varies",
-    specialties: "MCA negotiation, settlement, attorney-led representation",
-    bbb: "C+ rating, not BBB accredited; two unanswered complaints on record",
-    trustpilot: "4.4 across 190+ reviews",
+    specialties: "MCA restructuring; company-advertised attorney-led negotiations",
+    bbb: "Not Rated; not accredited (checked September 11, 2026)",
+    trustpilot: "See current platform profile; no current aggregate verified in this update",
     websiteLabel: "easternfinancialpartners.com",
     firmWebsite: "https://easternfinancialpartners.com",
     recommendedFor:
-      "Owners who specifically want a smaller, attorney-led shop and are comfortable with aggressive outbound sales cadence during evaluation.",
+      "Business owners comparing MCA restructuring proposals and the scope of attorney involvement.",
     bestFor: [
-      "Owners who prefer a boutique attorney experience",
-      "Smaller MCA cases under $100K",
-    ],
+  "Owners seeking an MCA-specific restructuring proposal",
+  "Owners willing to compare written fees and service commitments"
+],
     notIdealFor: [
-      "Owners who want low-pressure intake",
-      "Complex stacks needing scale and bench depth",
-    ],
+  "Owners needing a guaranteed settlement outcome",
+  "Owners unable to verify who handles an active lawsuit"
+],
     ratings: {
       transparency: 3.5,
       results: 4,
@@ -534,62 +515,46 @@ export const REVIEWS: Review[] = [
       litigation: 4,
     },
     pros: [
-      "Attorney-led representation is the right structural choice for MCA cases",
-      "Solid Trustpilot rating of 4.4 across 190+ reviews",
-      "Public claim of $20M+ in submitted settlements",
-      "Smaller shop can mean more direct attorney access",
-    ],
+  "MCA-specific service offering",
+  "Company describes attorney involvement",
+  "Public BBB profile permits review of complaints and responses"
+],
     cons: [
-      "Young firm: the business only started in 2023, with a limited track record through a full MCA default and litigation cycle",
-      "Not BBB accredited; slipped to a C+ rating with two unanswered complaints on file",
-      "BBB and Trustpilot complaints describe robo-dialer calls and repeated daily calls and texts that continued after removal and do-not-call requests",
-      "Public complaints about funds taken with little progress, with refund requests denied as 'used for attorneys', including a refund not honored inside the stated cancellation window",
-      "At least one client reported that after four months of payments their questions about lender contact were ignored",
-      "Total submitted settlement volume is modest compared to scaled competitors",
-    ],
+  "Not BBB accredited; currently Not Rated",
+  "Exact fees were not available on the homepage reviewed",
+  "Complaint records warrant careful review of billing, communication and cancellation terms"
+],
     verdict:
-      "Eastern Financial Partners is doing the right thing structurally by leading with attorneys, and its 4.4 Trustpilot rating across 190+ reviews is genuine. Two things temper it. First, it is a young firm: the business only started in 2023, so it has a short track record through a full MCA default-and-litigation cycle. Second, the negative pattern is on conduct: BBB and Trustpilot complaints describe robo-dialer calls that continue after opt-out, refund requests denied as already 'used for attorneys', and at least one client whose questions about lender contact went unanswered after four months of payments. Owners who proceed should require milestone-based fee disbursement, the right to refund unused retainer if work has not begun, and written confirmation of removal from all calling lists.",
+      "Eastern merits comparison on its written proposal. The provider describes attorney-led MCA restructuring, but this review has not independently verified its legal staffing or case outcomes. Its BBB status is Not Rated, not the C+ previously shown here. Read the complaint chronology and business responses below before evaluating the engagement.",
     pricing:
-      "Set per case. Owners should request fee schedule, milestones, and explicit refund-on-non-performance language before signing.",
+      "The company says service charges are included in the restructured payment. The homepage reviewed did not provide an itemized fee schedule. Request total charges, payment timing and cancellation terms in writing.",
     process:
-      "Consultation, debt analysis, attorney representation, negotiation, settlement.",
-    publicQuotes: [
-      {
-        quote:
-          "Brian made me feel comfortable and took the time explaining everything. The team helped me with MCA loans that were becoming difficult to manage.",
-        source: "Trustpilot",
-        rating: 5,
-        attribution: "Trustpilot review (190+ total reviews)",
-      },
-      {
-        quote:
-          "The company calls daily and promises results with MCA loans, but they just take money and nothing is done. When I asked for a refund they claim it was already used for attorneys.",
-        source: "Trustpilot",
-        rating: 1,
-        attribution: "Trustpilot negative review",
-      },
-      {
-        quote:
-          "They robo-dial and blow up your phone all day. I asked repeatedly to be put on a do-not-call list and the calls and texts kept coming.",
-        source: "BBB Complaint",
-        rating: 1,
-        attribution: "BBB business profile complaint record",
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "BBB and Trustpilot complaints describe robo-dialer calls and repeated daily contact that continued after do-not-call requests, refunds denied as already 'used for attorneys', and lender-contact questions left unanswered after months of payments.",
-        source: "BBB business profile (Red Bank NJ) and Trustpilot reviews",
-      },
-    ],
+      "The company describes reviewing MCA balances and schedules, followed by attorney-led negotiation. Ask which creditors are covered, when contact begins and whether litigation representation is included.",
+    publicQuotes: [],
+    concerns: [],
+  sources: [
+  {
+    "label": "Eastern: services and payment explanation",
+    "url": "https://www.easternfinancialpartners.com/",
+    "note": "Company description; staffing and outcomes were not independently verified."
   },
   {
+    "label": "BBB business profile",
+    "url": "https://www.bbb.org/us/nj/red-bank/profile/financial-services/eastern-financial-partners-0221-90236109",
+    "note": "Not Rated and not accredited on September 11, 2026. BBB says previously closed complaints are being addressed."
+  },
+  {
+    "label": "BBB complaint chronology",
+    "url": "https://www.bbb.org/us/nj/red-bank/profile/financial-services/eastern-financial-partners-0221-90236109/complaints",
+    "note": "Three complaints listed. June 25, 2026: alleged payments without subsequent communication. January 12, 2026: disputed refund. Both listed as unanswered. An August 2025 calling complaint includes a response saying the caller was disciplined and the number added to a do-not-call list. These are allegations and responses, not court findings."
+  }
+],
+},
+  {
+    updatedAt: "2026-09-11",
     slug: "business-debt-law-group",
     name: "Business Debt Law Group",
     shortName: "BDLG",
-    score: 3.7,
-    rank: 11,
     oneLineVerdict:
       "Litigation-focused law firm useful for owners already sued by an MCA funder. Less efficient than combined settlement-and-defense firms for pre-litigation cases.",
     founded: "Varies by entity",
@@ -641,11 +606,10 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "business-debt-adjusters",
     name: "Business Debt Adjusters",
     shortName: "Business Debt Adjusters",
-    score: 3.4,
-    rank: 14,
     oneLineVerdict:
       "Long-tenured New Jersey firm with an A- rating on its BBB profile and some documented payment-reduction wins, but it is not BBB accredited and draws complaints about high-frequency phone contact and at least one lien dispute. Set written expectations on fees and contact before signing.",
     founded: "2016",
@@ -716,11 +680,10 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "stop-mca",
     name: "Stop MCA",
     shortName: "Stop MCA",
-    score: 3.2,
-    rank: 15,
     oneLineVerdict:
       "Settlement firm with aggressive marketing presence and intermittent outcomes per public commentary. Approach with diligence on fee structure and creditor-contact verification.",
     founded: "Recent entrant",
@@ -772,11 +735,10 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "mca-debt-advisors",
     name: "MCA Debt Advisors",
     shortName: "MCA Debt Advisors",
-    score: 2.6,
-    rank: 16,
     oneLineVerdict:
       "Pennsylvania firm carrying an F rating on its BBB profile with 26 complaints on file (seven left unanswered) and public reviews alleging large fees for little delivered work. High-caution; verify every fee and creditor contact independently.",
     founded: "2020",
@@ -838,11 +800,10 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "mca-resolve",
     name: "MCA Resolve",
     shortName: "MCA Resolve",
-    score: 2.5,
-    rank: 17,
     oneLineVerdict:
       "Significant pattern of negative public reviews and BBB complaints alleging undelivered services, fees taken without creditor contact, and instructions that put clients in default. We do not recommend.",
     founded: "Recent entrant",
@@ -915,11 +876,10 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "national-credit-partners",
     name: "National Credit Partners",
     shortName: "National Credit Partners",
-    score: 4.0,
-    rank: 5,
     oneLineVerdict:
       "One of the more established names in business debt relief (A+ BBB, accredited since 2018), focused on debt modification and restructuring more than attorney-led MCA settlement. Reviews are mostly positive with a few complaints about fee clarity.",
     founded: "2018",
@@ -990,32 +950,30 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "rise-alliance",
     name: "Rise Alliance",
     shortName: "Rise Alliance",
-    score: 3.9,
-    rank: 7,
     oneLineVerdict:
-      "A Second Wind Consultants brand focused on MCA settlement and cash-flow relief, with strong Google and Birdeye ratings (4.5+ across roughly 289 reviews) but limited standalone BBB transparency.",
+      "Rise Alliance describes business debt and personal-guarantee resolution and identifies itself as part of Second Wind Consultants. Verify the contracting entity, fees and legal scope; no standard settlement timeline is established here.",
     founded: "Second Wind Consultants brand",
     hq: "New York, New York",
     minDebt: "Varies",
     specialties: "MCA settlement, cash-flow relief, guaranty resolution",
-    bbb: "No standalone BBB rating; operates under the Second Wind Consultants group",
-    trustpilot: "4.5+ across roughly 289 Google and Birdeye reviews",
+    bbb: "Standalone profile not verified; parent accreditation must not be treated as its own",
+    trustpilot: "No current Trustpilot aggregate verified in this update",
     websiteLabel: "risealliance.com",
     firmWebsite: "https://risealliance.com",
     recommendedFor:
-      "Owners drawn to the Second Wind restructuring approach who want faster MCA settlement and are comfortable with a firm that has limited standalone third-party accreditation.",
+      "Owners comparing a business restructuring proposal with MCA settlement alternatives.",
     bestFor: [
-      "Owners who like the Second Wind restructuring philosophy",
-      "Faster MCA settlements (often two to eight weeks)",
-      "Stacked-MCA cash-flow relief",
-    ],
+  "Owners seeking a proposal for business debt and personal guarantees",
+  "Owners comparing related Second Wind and Rise Alliance offerings"
+],
     notIdealFor: [
-      "Owners who want an independently BBB-accredited firm",
-      "Owners who need in-house litigation and COJ defense under one roof",
-    ],
+  "Owners seeking guaranteed savings or timing",
+  "Owners who have not established which entity and professionals will perform the work"
+],
     ratings: {
       transparency: 3.5,
       results: 4,
@@ -1024,44 +982,41 @@ export const REVIEWS: Review[] = [
       litigation: 3.5,
     },
     pros: [
-      "Strong Google and Birdeye ratings (4.5+ across roughly 289 reviews)",
-      "Backed by Second Wind Consultants' restructuring experience",
-      "Fast reported settlement timelines (two to eight weeks)",
-    ],
+  "Publicly identifies its Second Wind relationship",
+  "Describes business debt and personal-guarantee services",
+  "Provides a contact route for an individual proposal"
+],
     cons: [
-      "No standalone BBB rating or accreditation to verify independently",
-      "Overlaps heavily with the Second Wind brand, so compare the two before choosing",
-      "Settlement-focused rather than full in-house litigation defense",
-    ],
+  "No itemized fee schedule found on the homepage reviewed",
+  "No independently verified standard settlement duration",
+  "Confirm legal scope and contracting entity rather than assuming parent credentials apply"
+],
     verdict:
-      "Rise Alliance is a Second Wind Consultants brand, so its credibility rests largely on Second Wind's restructuring track record plus its own strong Google and Birdeye ratings. The gap is independent verification: there is no standalone BBB accreditation, and its offering overlaps with Second Wind itself. Owners interested in this approach should compare Rise Alliance and Second Wind directly, confirm which entity signs the agreement, and get settlement timelines and fees in writing.",
+      "Rise Alliance identifies itself as part of Second Wind Consultants. Treat the two as related options when comparing proposals. We removed the previous two-to-eight-week claim and blended Google/Birdeye review total because this update did not establish adequate evidence for them. Company testimonials do not establish a typical outcome.",
     pricing:
-      "Fees are set per case and not published. Ask which entity (Rise Alliance or Second Wind) contracts with you, and get the fee schedule and expected timeline in writing.",
+      "No itemized fee schedule was found on the homepage reviewed. Ask for total fees, creditor payments, cancellation provisions and any separate legal charges before signing.",
     process:
-      "Consultation and analysis, a restructuring and settlement plan, then negotiation with funders. Reported average settlement window of two to eight weeks.",
-    publicQuotes: [
-      {
-        quote:
-          "The team was professional and settled our positions quickly, which took a lot of pressure off the business.",
-        source: "Google",
-        rating: 5,
-        attribution: "Google and Birdeye review aggregate (~289 reviews, 4.5+)",
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "Operates as a brand within the Second Wind Consultants group with no standalone BBB accreditation, so independent verification is limited.",
-        source: "Company disclosures and third-party review platforms",
-      },
-    ],
+      "The company describes creditor engagement, debt resolution and subsequent business consulting. Request a case-specific schedule and written explanation of what happens if a creditor declines. No standard settlement duration has been independently verified.",
+    publicQuotes: [],
+    concerns: [],
+  sources: [
+  {
+    "label": "Rise Alliance: services and relationship",
+    "url": "https://risealliance.com/",
+    "note": "Company describes business debt resolution and states that it is part of Second Wind Consultants. Promotional results are not verified typical outcomes."
   },
   {
+    "label": "Formation announcement",
+    "url": "https://secondwindconsultants.com/resource/second-wind-consultants-and-polaris-business-advisors-unite-to-form-rise-alliance/",
+    "note": "Second Wind describes the combination with Polaris Business Advisors that formed Rise Alliance."
+  }
+],
+},
+  {
+    updatedAt: "2026-09-11",
     slug: "delancey-street",
     name: "Delancey Street",
     shortName: "Delancey Street",
-    score: 3.8,
-    rank: 9,
     oneLineVerdict:
       "Attorney-network business debt firm (NYC) handling MCA, SBA, and stacked debt with performance-based fees, but with no BBB rating and a thin independent review base to verify outcomes.",
     founded: "2018",
@@ -1124,11 +1079,10 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "national-debt-relief",
     name: "National Debt Relief",
     shortName: "National Debt Relief",
-    score: 3.5,
-    rank: 13,
     oneLineVerdict:
       "A major, highly-rated consumer debt-settlement company (A+ BBB, 4.7 across 44,900+ reviews), but it does not handle MCA-specific work, no COJ defense, court motions, or funder litigation, so it is the wrong tool for active merchant cash advance distress.",
     founded: "2009",
@@ -1192,11 +1146,10 @@ export const REVIEWS: Review[] = [
     ],
   },
   {
+    updatedAt: "2026-09-11",
     slug: "business-debt-insider",
     name: "Business Debt Insider",
     shortName: "Business Debt Insider",
-    score: 4.7,
-    rank: 2,
     oneLineVerdict:
       "A flat-fee restructuring practice that folds stacked MCA debt into one weekly payment, with no new loan and no bankruptcy filing. A strong, owner-friendly model, newer and smaller than the category's largest firms.",
     founded: "Fort Lauderdale, Florida (GRL Recovery LLC)",
@@ -1251,6 +1204,33 @@ export const REVIEWS: Review[] = [
     ],
   },
 ];
+
+export const RATING_WEIGHTS: Record<RatingKey, number> = {
+  transparency: 20,
+  results: 25,
+  communication: 20,
+  cost: 15,
+  litigation: 20,
+};
+
+export function calculateScore(ratings: Record<RatingKey, number>): number {
+  const total = (Object.keys(RATING_WEIGHTS) as RatingKey[]).reduce(
+    (sum, key) => sum + ratings[key] * RATING_WEIGHTS[key],
+    0,
+  );
+  return Math.round((total / 100 + Number.EPSILON) * 10) / 10;
+}
+
+const SCORED = REVIEW_DATA.map((review) => ({
+  ...review,
+  score: calculateScore(review.ratings),
+}));
+
+// Equal published scores share a rank; no editorial rank overrides.
+export const REVIEWS: Review[] = SCORED.map((review) => ({
+  ...review,
+  rank: 1 + SCORED.filter((other) => other.score > review.score).length,
+}));
 
 export const COASTAL = REVIEWS.find((r) => r.isCoastal)!;
 export const COMPETITORS = REVIEWS.filter((r) => !r.isCoastal);

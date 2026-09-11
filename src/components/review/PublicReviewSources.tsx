@@ -1,3 +1,4 @@
+import { getBBBBySlug } from "@/data/bbb";
 import type { Review } from "@/data/reviews";
 
 type Props = {
@@ -25,7 +26,7 @@ export function PublicReviewSources({ review }: Props) {
     {
       label: "Better Business Bureau",
       summary: review.bbb,
-      href: bbb(review.name),
+      href: getBBBBySlug(review.slug)?.profileUrl || bbb(review.name),
       tag: "BBB",
     },
     {
@@ -58,8 +59,7 @@ export function PublicReviewSources({ review }: Props) {
           What clients say about {review.shortName} on third-party platforms
         </h3>
         <p className="mt-2 text-sm text-ink-muted">
-          We do not embed quotes we cannot independently verify. Use the boxes
-          below to read the actual reviews on the platforms that host them.
+          Use these links to read current platform records. Search links help locate records; they are not evidence for a particular allegation.
         </p>
       </header>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">

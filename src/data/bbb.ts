@@ -54,7 +54,7 @@ export const BBB_RECORDS: BBBRecord[] = [
     profileUrl:
       "https://www.bbb.org/us/fl/fort-lauderdale/profile/debt-relief-services/coastal-debt-resolve-0633-92025913",
     takeaway:
-      "The only firm here that is both BBB Accredited and rated A+. BBB keeps it at A+ because the firm responds to and resolves complaints. Accreditation requires that responsiveness; an F-rated firm with two ignored complaints does not have it.",
+      "Listed as BBB Accredited with an A+ rating. Other firms in this comparison also have A+ ratings and accreditation. Check the linked BBB profile for the current rating, accreditation status, and complaint history.",
     quotes: [],
   },
   {
@@ -74,13 +74,8 @@ export const BBB_RECORDS: BBBRecord[] = [
     profileUrl:
       "https://www.bbb.org/us/ma/northampton/profile/business-consultant/second-wind-consultants-inc-0261-256587",
     takeaway:
-      "One of the cleanest BBB records in the category: A+, accredited since 2014, and just one complaint in three years. Better suited to larger mid-market restructurings than to small businesses in active funder distress.",
-    quotes: [
-      {
-        text: "I worked with Second Wind Consulting for over 2 years, and there is no question that I could not have navigated that period without their team.",
-        sentiment: "positive",
-      },
-    ],
+      "A+ and accredited status checked September 11, 2026. Compare the written service scope and fees; accreditation does not guarantee outcomes.",
+    quotes: [],
   },
   {
     slug: "spergel",
@@ -280,26 +275,18 @@ export const BBB_RECORDS: BBBRecord[] = [
     name: "Eastern Financial Partners",
     shortName: "Eastern Financial",
     accreditation: "not-accredited",
-    grade: "C+",
+    grade: "Not Rated",
     hasProfile: true,
-    complaints3yr: 2,
+    complaints3yr: 3,
     started: "2023",
     hq: "Red Bank, NJ",
     profileUrl:
       "https://www.bbb.org/us/nj/red-bank/profile/financial-services/eastern-financial-partners-0221-90236109",
     takeaway:
-      "Slipped to a C+ on our August 2026 re-check, with two complaints the firm failed to respond to, plus multiple reviews describing harassing robo-dialed calls and texts. Its Trustpilot score is much higher than its BBB standing.",
-    quotes: [
-      {
-        text: "I have asked multiple times to be put on a do not call list and they ignore it.",
-        sentiment: "negative",
-      },
-      {
-        text: "This company employs robo-dialers... and has no respect for being asked to remove your number.",
-        sentiment: "negative",
-      },
-    ],
-  },
+      "Checked September 11, 2026: not accredited and Not Rated. BBB says the business is responding to previously closed complaints. Read the linked complaint record and responses; allegations are not court findings.",
+    quotes: [],
+  complaints12mo: 2,
+},
   {
     logoSlug: "corporate-rescue",
     name: "Corporate Rescue Advisors, LLC",
