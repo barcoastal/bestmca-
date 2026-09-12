@@ -9,6 +9,13 @@ export function competitorFaqItems(review: Review): { q: string; a: string }[] {
   const { name, shortName, founded, hq, bbb, trustpilot, score, rank, pricing } =
     review;
 
+  if (review.ratingNote) return [
+    { q: `What does ${name} offer?`, a: review.oneLineVerdict },
+    { q: `What do the public records say?`, a: `${bbb}. ${trustpilot}. Read the dated source notes and linked records; complaints are allegations, not court findings.` },
+    { q: `How much does ${name} cost?`, a: pricing },
+    { q: `Is the editorial score verified?`, a: review.ratingNote },
+  ];
+
   const inBusiness =
     founded && /\d{4}/.test(founded) ? ` and has been operating since ${founded}` : "";
   const location = hq && hq !== "United States" ? `, headquartered in ${hq},` : "";

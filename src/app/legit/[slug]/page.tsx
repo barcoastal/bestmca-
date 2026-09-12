@@ -25,7 +25,7 @@ export async function generateMetadata({
   if (!firm || firm.isCoastal) return {};
   return {
     title: `Is ${firm.name} Legit or a Scam? Honest 2026 Review`,
-    description: `Is ${firm.name} legit? Our independent verdict, the firm's real BBB rating, verified customer reviews, and what to check before signing. No compensation, no sponsorships.`,
+    description: `Is ${firm.name} legit? Our independent verdict, public records, source limitations, and what to check before signing.`,
     keywords: [
       `is ${firm.name.toLowerCase()} legit`,
       `${firm.name.toLowerCase()} scam`,
@@ -70,7 +70,7 @@ export default async function LegitPage({
   if (!firm || firm.isCoastal) notFound();
 
   const bbb = getBBBBySlug(slug);
-  const band = verdictBand(firm.score, bbb?.grade);
+  const band = firm.ratingNote ? { label: "Review the evidence and service fit", tone: "ok" as const, line: "Public records help identify the business; they do not guarantee outcomes or establish suitability for a particular case." } : verdictBand(firm.score, bbb?.grade);
   const bandCls =
     band.tone === "good"
       ? "border-win bg-win-soft/40"
@@ -185,6 +185,7 @@ export default async function LegitPage({
             </div>
           </div>
           <p className="mt-4 text-ink-soft leading-relaxed">{band.line}</p>
+          {firm.ratingNote && <p className="mt-4 text-sm text-ink-muted">{firm.ratingNote}</p>}
         </div>
       </section>
 
@@ -196,6 +197,10 @@ export default async function LegitPage({
         <p className="mt-4 text-ink-soft leading-relaxed">{firm.verdict}</p>
       </section>
 
+      {firm.sources && <section className="mx-auto max-w-4xl px-5 pb-8">
+        <h2 className="font-display text-2xl font-semibold text-navy">Sources checked {firm.sourcesCheckedAt || "2026-09-11"}</h2>
+        <ul className="mt-4 space-y-4">{firm.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-navy underline">{source.label}</a><p className="mt-1 text-sm text-ink-soft">{source.note}</p></li>)}</ul>
+      </section>}
       {/* BBB record */}
       {bbb?.hasProfile && (
         <section className="mx-auto max-w-4xl px-5 pb-8">

@@ -94,16 +94,10 @@ export const BBB_RECORDS: BBBRecord[] = [
     profileUrl:
       "https://www.bbb.org/ca/on/north-york/profile/bankruptcy-counseling/msi-spergel-inc-0107-1136552",
     entityNote:
-      "Listed on BBB Canada, not the U.S. BBB. Spergel is a Canadian licensed insolvency trustee, a more heavily regulated category than U.S. debt settlement, and does not handle U.S. MCA cases.",
+      "Canadian BBB profile for MSI Spergel Inc. Canadian insolvency services should not be assumed to cover a U.S. MCA dispute.",
     takeaway:
-      "An A+ accredited Canadian insolvency firm with a strong review record. Listed here because the brand surfaces in U.S. searches, but a U.S. business with MCA debt cannot use them.",
-    quotes: [
-      {
-        text: "Their process is simple, fast and easy from beginning to end.",
-        reviewer: "Christopher R",
-        sentiment: "positive",
-      },
-    ],
+      "A+ and accredited status checked September 12, 2026. The Canadian profile does not establish U.S. MCA service coverage or a typical case outcome.",
+    quotes: [],
   },
   {
     slug: "national-credit-partners",
@@ -188,25 +182,14 @@ export const BBB_RECORDS: BBBRecord[] = [
     starRating: 4.2,
     reviewCount: 9,
     complaints3yr: 13,
-    complaints12mo: 3,
+    complaints12mo: 2,
     started: "1998",
     hq: "Paramus, NJ",
     profileUrl:
       "https://www.bbb.org/us/nj/paramus/profile/debt-relief-services/corporate-turnaround-0221-12001541",
     takeaway:
-      "Long operating history and an A letter grade, but not accredited, and 13 complaints in three years with recurring themes: funds taken but allegedly not forwarded to creditors, and disputed fees. Document every fee and verify creditor contact independently.",
-    quotes: [
-      {
-        text: "Very thankful for finding Corporate Turnaround. Adam and his team were great to work with.",
-        reviewer: "Tracey L",
-        sentiment: "positive",
-      },
-      {
-        text: "If I could give no stars I would. This company is all about taking money with no result.",
-        reviewer: "Carnice G",
-        sentiment: "negative",
-      },
-    ],
+      "Checked September 12, 2026: A rated and not accredited. BBB lists 13 complaints in three years and 2 closed in twelve months. Read the dated allegations and responses; complaint counts are not a failure rate.",
+    quotes: [],
   },
   {
     slug: "stop-mca",

@@ -28,3 +28,14 @@ assert(coastal.includes('2026-09-12'));assert(coastal.includes('72 complaints'))
 for(const unsupported of ['Verified Client Reviews','Documented Outcomes','We confirmed the disclosure pattern','Most cases reach a stabilized payment posture','No upfront retainer','24 to 48'])assert(!coastal.includes(unsupported),unsupported);
 assert(!home.includes('420+'));assert(!home.includes('value=\"In-house attorneys\"'));
 console.log('PASS: Coastal evidence caveat, current sources, unsupported testimonials removed, rating rich-result markup withheld.');
+
+for(const slug of ['corporate-turnaround','spergel']) {
+ const r=REVIEWS.find(r=>r.slug===slug);assert(r.ratingNote);assert(r.sources.length>=3);assert.equal(r.publicQuotes.length,0);
+ for(const route of ['reviews','legit']) {
+ const html=fs.readFileSync(`.next/server/app/${route}/${slug}.html`,'utf8');
+ assert(html.includes(r.ratingNote));assert(html.includes('Sources checked'));assert(html.includes('2026-09-12'));
+ assert(html.includes(`rel="canonical" href="https://www.mcasettlementreviews.com/${route}/${slug}"`));assert(!html.includes('content="noindex'));
+ assert(!html.includes('has limited public review footprint'));
+ }
+}
+console.log('PASS: Corporate Turnaround and Spergel source notes, evidence-review notices and preserved review/legitimacy URLs.');

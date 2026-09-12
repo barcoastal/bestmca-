@@ -204,30 +204,31 @@ sources: [
 ],
 },
   {
-    updatedAt: "2026-09-11",
+    updatedAt: "2026-09-12",
     slug: "spergel",
     name: "Spergel",
     shortName: "Spergel",
     oneLineVerdict:
-      "An exceptional Canadian licensed insolvency firm with one of the strongest review records in the category. Limited US footprint means most US MCA owners cannot use them.",
-    founded: "1989",
+      "Spergel offers Canadian insolvency and debt-help services. Its Canadian BBB profile is A+ accredited. Its general customer ratings do not establish suitability or results for U.S. MCA settlement; confirm jurisdiction and service scope.",
+    founded: "1985 (BBB business-start record)",
     hq: "Toronto, Ontario (Canada)",
     minDebt: "Varies",
     specialties:
-      "Licensed insolvency, consumer proposals, corporate restructuring (Canada)",
-    bbb: "Not applicable in same form (Canadian)",
-    trustpilot: "4.9 across 2,590+ reviews",
+      "Canadian personal and business debt help; company-described Licensed Insolvency Trustee services",
+    bbb: "A+ rated; accredited in Canada (checked September 12, 2026)",
+    trustpilot: "4.9 from 2,599 reviews (checked September 12, 2026)",
     websiteLabel: "spergel.ca",
     firmWebsite: "https://www.spergel.ca",
     recommendedFor:
-      "Canadian businesses dealing with creditor distress, including MCA-style products marketed in Canada.",
+      "Canadian business owners comparing personal and corporate debt options with a qualified professional.",
     bestFor: [
-      "Canadian small and mid-market businesses",
-      "Licensed insolvency proceedings under Canadian law",
-    ],
+  "Canadian owners seeking advice on business and personal liabilities",
+  "Owners who confirm the named trustee and applicable jurisdiction"
+],
     notIdealFor: [
-      "US-based businesses with MCA exposure (Spergel does not operate as a US MCA settlement firm)",
-    ],
+  "U.S. MCA cases without confirmed jurisdictional coverage",
+  "Owners treating a general review score as evidence of MCA settlement performance"
+],
     ratings: {
       transparency: 5,
       results: 5,
@@ -236,70 +237,73 @@ sources: [
       litigation: 4,
     },
     pros: [
-      "Exceptional public review record: 4.9 stars across 2,590+ Trustpilot reviews",
-      "Long-tenured Canadian insolvency firm (since 1989)",
-      "Licensed trustees on staff, federally regulated",
-      "Has helped 100,000+ Canadians become debt-free",
-    ],
+  "BBB Canada lists an A+ accredited business profile",
+  "Company publishes named trustee profiles",
+  "Public Trustpilot record offers a separate source of customer opinions"
+],
     cons: [
-      "US footprint for MCA settlement is effectively non-existent",
-      "Different legal system means most US owners cannot use the firm at all",
-    ],
+  "No U.S. MCA service scope verified in this update",
+  "General debt-help reviews do not isolate MCA outcomes",
+  "No case-specific fee or eligibility assessment performed"
+],
     verdict:
-      "Spergel ranks here because owners searching for MCA help often surface the brand. To be clear: if you are a US business with MCA debt, Spergel is not the firm you are looking for. They are an exceptional Canadian insolvency practice with one of the strongest public review records in the broader debt-relief category, and that is the lane to use them in.",
+      "Spergel is presented in company materials as a Canadian insolvency practice. Its BBB record and customer-review profile are relevant checks, but they do not validate the category scores in our U.S.-focused comparison. Canadian and U.S. services should not be treated as interchangeable. Confirm professional credentials and jurisdiction directly before relying on a proposal.",
     pricing:
-      "Set by Canadian licensed insolvency rules and firm policy. Not applicable to US MCA cases.",
+      "We did not verify a case-specific quotation. Ask which procedure is proposed, how all fees are calculated and who is responsible for them. Do not apply Canadian consumer-insolvency pricing assumptions to a corporate or U.S. MCA case.",
     process:
-      "Canadian-statute driven. Intake, assessment, proposal or licensed insolvency proceeding. Not applicable to the US MCA context.",
-    publicQuotes: [
-      {
-        quote:
-          "Outstanding customer service. Truly compassionate and caring team that's always available when needed.",
-        source: "Trustpilot",
-        rating: 5,
-        attribution: "Trustpilot review summary, 2,500+ reviews aggregated",
-      },
-      {
-        quote:
-          "Professional and knowledgeable team that explained every step of the process clearly with a respectful, non-judgmental approach.",
-        source: "Trustpilot",
-        rating: 5,
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "Brand surfaces for US searches but the firm is not set up to handle US merchant cash advance settlement.",
-        source: "Site geography and service descriptions",
-      },
-    ],
+      "The company describes a consultation covering the owner’s personal and business liabilities and possible Canadian debt options. This update did not verify eligibility for any individual case or a U.S. MCA settlement process.",
+    publicQuotes: [],
+    concerns: [],
+  sourcesCheckedAt: "2026-09-12",
+ratingNote: "Spergel: existing editorial score is under evidence review. The formula is reproducible, but the category scores have not been independently substantiated. This is not a measured success rate or a fresh endorsement.",
+sources: [
+  {
+    "label": "Spergel business and self-employed services",
+    "url": "https://www.spergel.ca/business-and-self-employed/",
+    "note": "Company materials distinguish personal liabilities and incorporated-business needs. These descriptions do not establish U.S. MCA coverage."
   },
   {
-    updatedAt: "2026-09-11",
+    "label": "Spergel named team profiles",
+    "url": "https://www.spergel.ca/about-us/meet-the-team/",
+    "note": "Company lists named Licensed Insolvency Trustees. This update did not independently verify each individual’s current licence in the government register."
+  },
+  {
+    "label": "BBB Canada profile",
+    "url": "https://www.bbb.org/ca/on/north-york/profile/bankruptcy-counseling/msi-spergel-inc-0107-1136552",
+    "note": "Checked September 12, 2026: A+ accredited; accreditation May 27, 2021; business start June 25, 1985. This corrects the prior claim that BBB was not applicable."
+  },
+  {
+    "label": "Trustpilot profile",
+    "url": "https://www.trustpilot.com/review/spergel.ca",
+    "note": "Checked September 12, 2026: displayed score 4.9 from 2,599 reviews. It is separate from our editorial score and does not isolate MCA-specific outcomes."
+  }
+],
+},
+  {
+    updatedAt: "2026-09-12",
     slug: "corporate-turnaround",
     name: "Corporate Turnaround",
     shortName: "Corporate Turnaround",
     oneLineVerdict:
-      "Long pedigree in turnaround consulting, but recurring BBB complaints about deceptive billing and undelivered creditor contact pull this firm down significantly.",
+      "Corporate Turnaround offers commercial debt negotiation. Its BBB profile is A rated and not accredited. Review the documented billing disputes and business responses, and obtain written fees and creditor-contact commitments.",
     founded: "1998",
     hq: "Paramus, New Jersey",
-    minDebt: "$100,000+",
+    minDebt: "Not verified; request eligibility criteria",
     specialties: "Turnaround management, creditor negotiation, MCA workouts",
-    bbb: "Accredited, with active complaints",
-    trustpilot: "Birdeye 4.1 across 220 reviews; mixed BBB feedback",
+    bbb: "A rated; not accredited (checked September 12, 2026)",
+    trustpilot: "No current Trustpilot aggregate verified in this update",
     websiteLabel: "corporateturnaround.com",
     firmWebsite: "https://www.corporateturnaround.com",
     recommendedFor:
-      "Owners who want a long-tenured firm and are prepared to validate fee disclosures and creditor contact in writing throughout the engagement.",
+      "Business owners comparing proposals covering multiple types of commercial debt.",
     bestFor: [
-      "Multi-creditor workouts beyond just MCA",
-      "Owners who want a senior consultant they can call directly",
-    ],
+  "Businesses seeking a proposal for vendor, loan or other commercial debts",
+  "Owners able to compare written costs and service scope"
+],
     notIdealFor: [
-      "Owners who want a digital-first, dashboard-driven experience",
-      "Pure MCA cases where speed matters more than full turnaround scope",
-      "Owners without time or capacity to police fee disclosures",
-    ],
+  "Owners seeking guaranteed creditor acceptance",
+  "Owners who have not confirmed representation for active litigation"
+],
     ratings: {
       transparency: 3,
       results: 3.5,
@@ -308,46 +312,43 @@ sources: [
       litigation: 3.5,
     },
     pros: [
-      "Decades-long operating history (since 1998)",
-      "Broad turnaround capability beyond MCA",
-      "220+ Birdeye reviews at 4.1 average",
-    ],
+  "BBB lists a business start in 1998",
+  "Company describes negotiation for several types of commercial debt",
+  "Public complaint responses can be reviewed before engagement"
+],
     cons: [
-      "BBB complaints alleging deceptive and exploitative billing practices",
-      "Reports of fees added without clear upfront explanation",
-      "Documented complaints about claimed creditor contact that was never made",
-      "Reporting and client portal feel dated",
-    ],
+  "Not BBB accredited",
+  "Public billing and service disputes require careful reading",
+  "No complete current fee schedule or standard implementation time independently verified"
+],
     verdict:
-      "If you have a complex business in distress with MCA as one of several creditor issues, Corporate Turnaround can sit at the table. The recurring concerns in BBB complaints around fee transparency and unverified creditor contact are real, however, and owners who proceed should document every fee and verify creditor contact independently throughout the engagement.",
+      "Corporate Turnaround has an identifiable operating history. Its company materials describe negotiating business debts within a monthly budget. Public complaints raise issues to investigate, but their allegations are not adjudicated findings. Our prior $100,000 minimum, standard fee-model description and claims about slow implementation were not adequately sourced and have been removed.",
     pricing:
-      "Engagements often run on a hybrid retainer plus performance model. BBB complaints suggest fees are not always clearly explained upfront. Owners should request a written fee schedule before signing and verify creditor contact in writing at each milestone.",
+      "We did not verify a complete current fee schedule or signed client agreement. Ask for all fees, their triggers and cancellation terms, including charges if a creditor is paid through another route. Individual complaint allegations are not a universal fee schedule.",
     process:
-      "Senior consultant assessment, multi-week diagnostic, written turnaround plan, implementation. Slower than dedicated MCA firms by design.",
-    publicQuotes: [
-      {
-        quote:
-          "Exceptional customer service played a pivotal role in successfully turning around our business.",
-        source: "Birdeye",
-        rating: 5,
-        attribution: "Birdeye review aggregate (220 reviews, 4.1 average)",
-      },
-      {
-        quote:
-          "After months of paying, when I contacted creditors directly they said there was no contact from Corporate Turnaround and the records I was sent were fake.",
-        source: "BBB Complaint",
-        rating: 1,
-        attribution: "BBB complaint record (unresolved)",
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "Multiple BBB complaints alleging deceptive billing and that promised creditor contact never occurred. Documentation provided to clients was alleged to be fabricated in at least one complaint.",
-        source: "BBB business profile complaints",
-      },
-    ],
+      "The company describes assessing the available monthly budget and negotiating with creditors. Confirm the named contact, covered creditors, reporting frequency and legal scope. We have not verified a standard onboarding duration.",
+    publicQuotes: [],
+    concerns: [],
+  sourcesCheckedAt: "2026-09-12",
+ratingNote: "Corporate Turnaround: existing editorial score is under evidence review. The formula is reproducible, but the category scores have not been independently substantiated. This is not a measured success rate or a fresh endorsement.",
+sources: [
+  {
+    "label": "Corporate Turnaround service overview",
+    "url": "https://www.corporateturnaround.com/",
+    "note": "Company describes budget-based negotiation involving vendors, credit cards, leases and loans. These are service claims, not independently audited outcomes."
   },
+  {
+    "label": "BBB business profile",
+    "url": "https://www.bbb.org/us/nj/paramus/profile/debt-relief-services/corporate-turnaround-0221-12001541",
+    "note": "Checked September 12, 2026: A rated, not accredited; business start March 1, 1998. BBB identifies Commercial Credit Counseling Services, Inc. as an alternate name."
+  },
+  {
+    "label": "BBB complaint record and responses",
+    "url": "https://www.bbb.org/us/nj/paramus/profile/debt-relief-services/corporate-turnaround-0221-12001541/complaints",
+    "note": "Checked September 12, 2026: 13 complaints in three years; 2 closed in twelve months. A May 7, 2025 complaint disputes fees following garnishment. The company disputed the amount and reported continued communication; the consumer rejected its response. BBB marks it Answered. Allegations and responses are not court findings, and counts do not establish a failure rate."
+  }
+],
+},
   {
     updatedAt: "2026-09-11",
     slug: "regroup-partners",

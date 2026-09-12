@@ -62,7 +62,9 @@ export async function generateMetadata({
     };
   }
 
-  const title = `${review.name} Reviews (2026): ${review.score.toFixed(1)}/5 Rating, Complaints & BBB`;
+  const title = review.ratingNote
+    ? `${review.name} Reviews (2026): Services, Complaints & BBB`
+    : `${review.name} Reviews (2026): ${review.score.toFixed(1)}/5 Rating, Complaints & BBB`;
   const description = review.oneLineVerdict;
   return {
     title,
