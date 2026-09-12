@@ -27,6 +27,8 @@ export type Review = {
   shortName: string;
   score: number;
   updatedAt: string;
+  sourcesCheckedAt?: string;
+  ratingNote?: string;
   sources?: { label: string; url: string; note: string }[];
   isCoastal?: boolean;
   rank: number;
@@ -56,34 +58,32 @@ export type Review = {
 
 const REVIEW_DATA: Omit<Review, "score" | "rank">[] = [
   {
-    updatedAt: "2026-09-11",
+    updatedAt: "2026-09-12",
     slug: "coastal-debt-resolve",
     name: "Coastal Debt Resolve",
     shortName: "Coastal",
     isCoastal: true,
     oneLineVerdict:
-      "The most complete MCA settlement firm we evaluated, combining in-house attorneys, transparent pricing, and verified results across hundreds of small businesses.",
-    founded: "2019",
+      "Coastal offers MCA settlement and payment restructuring. BBB accreditation and public reviews provide useful records; confirm total fees, cancellation terms and the scope of attorney services in writing.",
+    founded: "2018 (BBB business-start record)",
     hq: "Fort Lauderdale, Florida (national service)",
-    minDebt: "$25,000+",
+    minDebt: "Not verified; request eligibility criteria",
     specialties:
-      "MCA settlement, MCA debt relief, MCA litigation defense, multi-position consolidation, UCC release",
-    bbb: "A+ rated, accredited",
-    trustpilot: "4.6 across 420+ reviews",
+      "MCA settlement and payment restructuring; company-advertised attorney network",
+    bbb: "A+ rated, accredited (checked September 12, 2026)",
+    trustpilot: "4.6 from 429 reviews (checked September 12, 2026)",
     websiteLabel: "coastaldebt.com",
     firmWebsite: "https://www.coastaldebt.com",
     recommendedFor:
-      "Small business owners with one or more active merchant cash advances who need a single firm that can negotiate, defend, and restructure under one roof.",
+      "Business owners comparing a written MCA settlement or restructuring proposal.",
     bestFor: [
-      "Owners juggling 2 to 10 active MCAs",
-      "Businesses already sued or facing UCC freeze",
-      "Operators who want one team handling negotiation and legal defense",
-      "Trucking, restaurants, construction, e-commerce, healthcare",
-    ],
+  "Owners seeking a proposal for MCA payment restructuring",
+  "Owners able to compare program fees, creditor payments and cancellation terms"
+],
     notIdealFor: [
-      "Total MCA debt under $25,000 (use a CPA workout instead)",
-      "Owners shopping purely on lowest fee with no legal exposure",
-    ],
+  "Owners seeking guaranteed savings or completion dates",
+  "Owners who have not confirmed representation for an active lawsuit"
+],
     ratings: {
       transparency: 5,
       results: 5,
@@ -92,31 +92,49 @@ const REVIEW_DATA: Omit<Review, "score" | "rank">[] = [
       litigation: 5,
     },
     pros: [
-      "In-house attorneys handle settlement and lawsuit defense without outside counsel referrals",
-      "Hundreds of verified five-star reviews on Trustpilot and on the public testimonials page, with named representatives clients can identify",
-      "Transparent flat or performance-tied fee structure disclosed before any contract is signed",
-      "Handles UCC liens, frozen merchant accounts, and Confessions of Judgment in addition to negotiation",
-      "Dedicated case manager assigned at intake, not a rotating call center",
-      "Free MCA review with no obligation, no upfront fee to start",
-    ],
+  "Public BBB profile and accreditation",
+  "Public Trustpilot record with both positive and negative reviews",
+  "Company offers a free consultation and publishes program limitations"
+],
     cons: [
-      "$25,000 minimum debt threshold rules out very small balances",
-      "Heavy demand can mean a 24 to 48 hour wait for the first attorney call during peak weeks",
-    ],
+  "No complete fee schedule verified in the reviewed public materials",
+  "BBB includes billing, service and solicitation complaints",
+  "Attorney-network advertising does not establish in-house representation or included litigation fees",
+  "Published customer examples are selected by the company, not an independent outcome audit"
+],
     verdict:
-      "Coastal Debt Resolve combines legal support and settlement services under one roof. That gap matters: the moment a funder sues or files a UCC, a firm without litigation capability has to hand the file off, restart the relationship, and re-quote a separate retainer. Coastal carries the file from intake through resolution. Pricing is disclosed before contract, the case manager is named, and the public testimonial wall reads like a directory of small business owners willing to be quoted by name. It is the firm we would use ourselves.",
+      "Coastal has an identifiable business record and offers MCA settlement and restructuring. Its public materials describe an attorney network; they do not establish that all litigation work is performed in-house for one fee. Compare the signed engagement, public complaint responses and total cost before deciding. Our older claims about verified contracts, guaranteed legal scope and standard response times were not adequately supported and have been removed.",
     pricing:
-      "Coastal quotes a flat fee or a performance-based fee tied to actual savings, disclosed in writing before any agreement is signed. There is no upfront retainer to start a case review. Owners are told what they will pay, when, and against what milestone. We confirmed the disclosure pattern by reviewing client-shared agreements and by asking the intake team directly.",
+      "A free consultation is advertised. We did not verify a complete fee schedule or signed engagement. Ask for all program, administration, legal-plan and cancellation charges, plus the amount reaching creditors. The BBB profile lists a no-refund policy; confirm the applicable contract terms.",
     process:
-      "The flow is: free MCA review and document upload, attorney consult within 24 to 48 hours, written settlement strategy delivered, contract signed with disclosed fees, and case manager assigned. From there the team handles funder communication, settlement negotiation, UCC release, and any litigation that arises. Most cases reach a stabilized payment posture within the first 30 days.",
-    proofPoints: [
-      "420+ Trustpilot reviews at a 4.6 average, plus a public testimonial wall",
-      "Public testimonial wall with named clients and business types",
-      "Documented case studies across real estate, flooring, food delivery, seafood, and trucking",
-      "BBB accredited, A+ rating",
-      "Sponsor of the 2026 BBB Southeast Florida Torch Awards for Ethics (June 25, 2026)",
-    ],
+      "The provider describes consultation, eligibility assessment and creditor negotiation. The public information does not establish a guaranteed completion or attorney-response time. Obtain the proposed work and schedule in writing.",
+    proofPoints: [],
+  sourcesCheckedAt: "2026-09-12",
+ratingNote: "The existing 4.9 editorial score is under evidence review. Its arithmetic matches the published weights, but the category assessments have not been independently substantiated. It is not a verified success rate or a fresh endorsement.",
+publicQuotes: [],
+sources: [
+  {
+    "label": "Coastal service descriptions and disclaimers",
+    "url": "https://www.coastaldebt.com/",
+    "note": "Company materials describe an attorney network and state that results vary. They do not establish a universal fee, minimum balance or litigation package."
   },
+  {
+    "label": "BBB business profile",
+    "url": "https://www.bbb.org/us/fl/fort-lauderdale/profile/debt-relief-services/coastal-debt-resolve-0633-92025913",
+    "note": "Checked September 12, 2026: A+ and accredited since February 28, 2024. Business start: June 20, 2018. The profile lists ABSM LLC and a no-refund policy."
+  },
+  {
+    "label": "BBB complaints and business responses",
+    "url": "https://www.bbb.org/us/fl/fort-lauderdale/profile/debt-relief-services/coastal-debt-resolve-0633-92025913/complaints",
+    "note": "Checked September 12, 2026: 72 complaints in three years; 39 closed in twelve months. A June 15, 2026 billing complaint disputes cancellation charges and communication. Coastal responded that fees were disclosed and services provided; the consumer disputed that response. BBB marks it Answered, not Resolved. A June 25 calling complaint is marked Resolved after a do-not-call response. Allegations are not court findings; complaint counts are not a failure rate."
+  },
+  {
+    "label": "Trustpilot company profile",
+    "url": "https://www.trustpilot.com/review/coastaldebt.com",
+    "note": "Checked September 12, 2026: displayed score 4.6 with 429 reviews. This is a platform score, separate from our editorial rating. Not every review carries a verified label, and customer opinions are not audited settlement outcomes."
+  }
+],
+},
   {
     updatedAt: "2026-09-11",
     slug: "second-wind-consultants",

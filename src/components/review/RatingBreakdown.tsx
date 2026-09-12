@@ -3,6 +3,7 @@ import { Stars } from "./Stars";
 
 type Props = {
   ratings: Record<RatingKey, number>;
+  note?: string;
 };
 
 const ORDER: RatingKey[] = [
@@ -13,12 +14,13 @@ const ORDER: RatingKey[] = [
   "litigation",
 ];
 
-export function RatingBreakdown({ ratings }: Props) {
+export function RatingBreakdown({ ratings, note }: Props) {
   return (
     <div className="rounded-2xl border border-line bg-white p-6 shadow-sm">
       <h3 className="font-display text-lg font-semibold text-navy">
         Rating breakdown
       </h3>
+      {note && <p className="mt-3 text-xs text-ink-muted">{note}</p>}
       <ul className="mt-4 space-y-3.5">
         {ORDER.map((key) => (
           <li

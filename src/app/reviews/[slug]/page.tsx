@@ -9,8 +9,6 @@ import { RatingBreakdown } from "@/components/review/RatingBreakdown";
 import { CTABanner } from "@/components/review/CTABanner";
 import { AlternativeCallout } from "@/components/review/AlternativeCallout";
 import { ConcernsList } from "@/components/review/ConcernsList";
-import { TestimonialCarousel } from "@/components/review/TestimonialCarousel";
-import { CaseStudyGrid } from "@/components/review/CaseStudyGrid";
 import { ExternalResources } from "@/components/review/ExternalResources";
 import { PublicReviewSources } from "@/components/review/PublicReviewSources";
 import { CompetitorReviewBoxes } from "@/components/review/CompetitorReviewBoxes";
@@ -57,7 +55,7 @@ export async function generateMetadata({
       openGraph: {
         title: "Coastal Debt Resolve Reviews 2026: Independent Verdict",
         description:
-          "We reviewed Coastal Debt Resolve and ranked it #1 of 17 MCA settlement firms in 2026. Here is what we found.",
+          "Coastal Debt Resolve: service claims, public records, fees and review limitations.",
         type: "article",
       },
       alternates: { canonical: `/reviews/${review.slug}` },
@@ -94,10 +92,10 @@ export default async function ReviewPage({
 
   return (
     <article className="bg-paper">
-      <script
+      {!review.ratingNote && <script
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLd(reviewSchema(review))}
-      />
+      />}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLd(
@@ -141,7 +139,8 @@ export default async function ReviewPage({
             <p className="mt-5 text-lg text-ink-soft leading-relaxed">
               {review.oneLineVerdict}
             </p>
-            <p className="mt-3 text-sm text-ink-subtle">Editorial update: <time dateTime={review.updatedAt}>{review.updatedAt}</time> · Rating calculation corrected; source checks are dated below.</p>
+            <p className="mt-3 text-sm text-ink-subtle">Editorial update: <time dateTime={review.updatedAt}>{review.updatedAt}</time> · Source checks and editorial limitations are noted below.</p>
+            {review.ratingNote && <p className="mt-4 rounded-xl border border-line bg-white p-4 text-sm text-ink-soft">{review.ratingNote}</p>}
             <div className="mt-6">
               <TrackedLink
                 href={coastalCta(`review-hero-${review.slug}`)}
@@ -150,12 +149,12 @@ export default async function ReviewPage({
               >
                 {isCoastal
                   ? "Get your free MCA review from Coastal →"
-                  : "Get a free second opinion from our #1 pick →"}
+                  : "Request a consultation from Coastal →"}
               </TrackedLink>
             </div>
             {isCoastal && (
               <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-gold/90 text-navy-deep px-3 py-1 text-xs uppercase tracking-[0.16em] font-semibold">
-                Editor&rsquo;s top pick · 2026
+                Featured provider · Score under review
               </div>
             )}
             {!isCoastal && (
@@ -192,7 +191,7 @@ export default async function ReviewPage({
               Our verdict
             </div>
             <h2 className="mt-2 font-display text-2xl font-semibold text-navy">
-              Why we ranked {review.shortName} #{review.rank}
+              {review.ratingNote ? "What the available evidence supports" : `Why we ranked ${review.shortName} #${review.rank}`}
             </h2>
             <p className="mt-4 text-base text-ink-soft leading-relaxed">
               {review.verdict}
@@ -201,7 +200,7 @@ export default async function ReviewPage({
 
           {review.sources && (
             <section className="mt-10 rounded-2xl border border-line bg-white p-6">
-              <h2 className="font-display text-2xl font-semibold text-navy">Sources checked September 11, 2026</h2>
+              <h2 className="font-display text-2xl font-semibold text-navy">Sources checked {review.sourcesCheckedAt || "September 11, 2026"}</h2>
               <p className="mt-3 text-sm text-ink-muted">This update uses public records and company materials. We did not conduct an intake call, audit case results or review a signed client contract for this update. Category scores remain editorial judgments, not measured success rates.</p>
               <ul className="mt-5 space-y-5">{review.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-navy underline">{source.label}</a><p className="mt-1 text-sm text-ink-soft leading-relaxed">{source.note}</p></li>)}</ul>
             </section>
@@ -289,9 +288,7 @@ export default async function ReviewPage({
           {/* Coastal-only blocks */}
           {isCoastal && (
             <>
-              <TestimonialCarousel />
-              <CaseStudyGrid />
-              {review.proofPoints && (
+              {review.proofPoints && review.proofPoints.length > 0 && (
                 <section className="my-10 rounded-2xl bg-navy text-white p-8">
                   <h3 className="font-display text-xl font-semibold">
                     Why these results are verifiable
@@ -320,8 +317,8 @@ export default async function ReviewPage({
             }
             body={
               isCoastal
-                ? "Coastal will give you a free MCA review, a written settlement strategy, and a fixed fee quote before you sign anything."
-                : "Our #1 rated firm Coastal Debt Resolve will give you a free MCA review and a side-by-side comparison with no obligation."
+                ? "Contact Coastal for a consultation and request a written explanation of fees, services and cancellation terms."
+                : "Compare Coastal’s written proposal, fees and service scope before choosing a provider."
             }
             buttonLabel={
               isCoastal ? "Start free review" : "Compare with Coastal"
@@ -340,7 +337,7 @@ export default async function ReviewPage({
         {/* Sidebar */}
         <aside className="flex flex-col gap-6">
           <AtAGlanceCard review={review} />
-          <RatingBreakdown ratings={review.ratings} />
+          <RatingBreakdown ratings={review.ratings} note={review.ratingNote} />
           {!isCoastal && (
             <div className="rounded-2xl border border-line bg-white p-5 shadow-sm">
               <div className="text-xs uppercase tracking-[0.18em] font-semibold text-ink-subtle">
@@ -366,9 +363,9 @@ export default async function ReviewPage({
                 <span className="text-xs text-ink-subtle">/ 5</span>
               </div>
               <p className="mt-3 text-sm text-ink-muted">
-                In-house attorneys, transparent pricing, and 420+ verified
-                client reviews.
+                {COASTAL.oneLineVerdict}
               </p>
+              <p className="mt-3 text-xs text-ink-muted">{COASTAL.ratingNote}</p>
               <Link
                 href="/reviews/coastal-debt-resolve"
                 className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-navy px-4 py-2.5 text-sm font-semibold text-white hover:bg-navy-deep transition-colors"

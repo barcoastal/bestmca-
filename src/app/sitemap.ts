@@ -9,12 +9,12 @@ const SITE = "https://www.mcasettlementreviews.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
-    { url: `${SITE}/`, lastModified: "2026-09-11", priority: 1 },
+    { url: `${SITE}/`, lastModified: "2026-09-12", priority: 1 },
     // /best-mca-settlement-companies-2026 canonicals to the homepage and is
     // intentionally excluded here to avoid a mixed indexing signal.
     {
       url: `${SITE}/mca-settlement-companies-bbb-ratings`,
-      lastModified: "2026-09-11",
+      lastModified: "2026-09-12",
       priority: 0.9,
     },
     {

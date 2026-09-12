@@ -280,7 +280,7 @@ export function ComparisonTable({
                           </Link>
                           {isCoastal && (
                             <span className="inline-block rounded-full bg-gold/90 text-navy-deep text-[10px] font-semibold uppercase tracking-[0.14em] px-2 py-0.5">
-                              Top pick
+                              Featured provider
                             </span>
                           )}
                         </div>
@@ -356,7 +356,7 @@ export function ComparisonTable({
                     <span className="font-display font-semibold text-white">
                       Not sure where to start?
                     </span>{" "}
-                    Our #1 pick reviews your MCA position free, with a written
+                    Request a consultation and written
                     strategy before any contract.
                   </p>
                   <TrackedLink

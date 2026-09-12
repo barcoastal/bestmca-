@@ -39,7 +39,7 @@ export function competitorFaqItems(review: Review): { q: string; a: string }[] {
     },
     {
       q: `Is ${name} better than Coastal Debt Resolve?`,
-      a: `In our 2026 review of MCA settlement firms, ${shortName} ranked #${rank} with a ${score}/5 score. Coastal Debt Resolve ranked #${COASTAL.rank} with ${COASTAL.score.toFixed(1)}/5 for combining attorneys, settlement, and case management under one roof. See our side-by-side comparison of ${shortName} vs Coastal Debt Resolve for the full breakdown.`,
+      a: `In our 2026 review of MCA settlement firms, ${shortName} ranked #${rank} with a ${score}/5 score. Coastal Debt Resolve ranked #${COASTAL.rank} with ${COASTAL.score.toFixed(1)}/5 in the existing editorial model. ${COASTAL.ratingNote} See our side-by-side comparison of ${shortName} vs Coastal Debt Resolve for the full breakdown.`,
     },
   ];
 }

@@ -1,43 +1,38 @@
-import { COASTAL } from "@/data/reviews";
 import { jsonLd } from "@/lib/schema";
 
 const FAQ = [
   {
-    q: "Is Coastal Debt Resolve legit?",
-    a: "Yes. Coastal Debt Resolve is a Florida-headquartered MCA settlement and litigation defense firm with an A+ rating and accreditation from the Better Business Bureau, 420+ verified Trustpilot reviews averaging 4.6, and a public testimonials wall featuring named clients across multiple industries. The firm has in-house attorneys who handle both settlement and lawsuit defense.",
+    "q": "What does Coastal Debt Resolve offer?",
+    "a": "Coastal advertises MCA settlement and payment restructuring. Its public materials describe an attorney network. Confirm which company and professionals will perform each service."
   },
   {
-    q: "What do Coastal Debt Resolve reviews actually say?",
-    a: `Across Trustpilot, BBB, and the firm's public testimonial page, the consistent themes in client commentary are: named representatives clients can identify (Marco, Carlos, Sarah, Simone, and others), responsive communication during a stressful situation, transparent fee disclosures pre-contract, and successful negotiated settlements. The firm holds a 4.6 Trustpilot average across 420+ reviews, alongside its ${COASTAL.score.toFixed(1)} editorial score in our comparison.`,
+    "q": "What is Coastal’s BBB standing?",
+    "a": "The September 12, 2026 check showed an A+ rating and accreditation. The linked BBB complaint record should also be reviewed; accreditation does not guarantee outcomes."
   },
   {
-    q: "Are there any Coastal Debt Resolve complaints?",
-    a: "The firm's public review profile is overwhelmingly positive. Where we identified weaknesses in our review they are: a $25,000 minimum debt threshold that rules out very small balances, and high enough demand during peak weeks that the first attorney call can wait 24 to 48 hours. We did not identify pattern complaints around fee disclosure, post-sale communication, or undelivered settlement outcomes.",
+    "q": "Are there complaints about Coastal?",
+    "a": "Yes. Read the dated BBB complaint summary and business responses in the source notes above. Some records are marked Answered and others Resolved; those labels do not mean the same thing."
   },
   {
-    q: "How much does Coastal Debt Resolve cost?",
-    a: "Coastal quotes either a flat fee or a performance-based fee tied to actual settlement savings, disclosed in writing before any contract is signed. There is no upfront retainer to begin a case review. The total cost of resolution is provided in writing along with payment milestones.",
+    "q": "How much does Coastal cost?",
+    "a": "A free consultation is advertised, but a complete fee schedule was not verified. Ask for program, legal, administration and cancellation charges in writing. The BBB profile lists a no-refund policy."
   },
   {
-    q: "Does Coastal Debt Resolve handle MCA lawsuits and Confessions of Judgment?",
-    a: "Yes. Unlike most settlement-only firms, Coastal has in-house attorneys who handle Confession of Judgment defense, UCC release, frozen merchant account disputes, and active litigation under the same engagement. Owners do not pay a separate retainer if a funder escalates during the negotiation.",
+    "q": "Does Coastal provide in-house lawsuit defense?",
+    "a": "We could not substantiate that all litigation is handled in-house under one fee. Its public materials describe an attorney network. Confirm the named attorney, scope of representation and any separate engagement."
   },
   {
-    q: "What is Coastal Debt Resolve's Trustpilot rating?",
-    a: "Coastal Debt Resolve holds a 4.6 of 5 average across more than 420 verified Trustpilot reviews, one of the larger verified bases among MCA specialists in our comparison. The recurring themes in those reviews are named representatives, responsive communication, and fee terms disclosed in writing before signing.",
+    "q": "What is Coastal’s Trustpilot rating?",
+    "a": "The September 12, 2026 check showed 4.6 from 429 reviews. Individual labels and scores can change; use the linked platform profile for current information."
   },
   {
-    q: "Are there any Coastal Debt Resolve lawsuits I should know about?",
-    a: "Our review did not identify a pattern of client lawsuits against Coastal Debt Resolve. Note that in this industry, court records involving a settlement firm frequently reflect the firm defending its clients against MCA funder suits, which is part of the service, rather than claims brought by clients against the firm. As always, check current court records and the firm's BBB profile when you do your own diligence.",
+    "q": "Have you verified Coastal’s outcomes and editorial score?",
+    "a": "No independent audit of client outcomes or complete litigation search was performed. The existing editorial score is under evidence review. It should not be treated as a measured success rate."
   },
   {
-    q: "Is Coastal Debt Resolve better than other MCA settlement companies?",
-    a: `In our 2026 review across 17 firms, Coastal Debt Resolve scored ${COASTAL.score.toFixed(1)} of 5 and ranked first. The differentiator is the integration of attorneys, settlement, and case management under one roof. Most competitors specialize in one of the three and refer the rest out, which creates handoff cost and risk when a case evolves.`,
-  },
-  {
-    q: "How long does the Coastal Debt Resolve process take?",
-    a: "Most cases reach a stabilized payment posture within the first 30 days. The full settlement timeline depends on the number of MCA positions, the funder mix, and whether litigation is involved. Owners receive a written settlement strategy after the initial attorney consultation, which usually happens within 24 to 48 hours of intake.",
-  },
+    "q": "How long does the program take?",
+    "a": "No standard completion or attorney-response time was independently verified. Request a case-specific schedule and explanation of how creditor decisions may affect it."
+  }
 ];
 
 export function CoastalFAQ() {

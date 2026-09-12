@@ -70,13 +70,14 @@ export function RankingChart({
                   </h3>
                   {isCoastal && (
                     <span className="rounded-full bg-gold text-navy-deep text-[9px] font-semibold uppercase tracking-[0.14em] px-2 py-0.5">
-                      Top pick
+                      {r.ratingNote ? "Score under review" : "Top pick"}
                     </span>
                   )}
                 </div>
                 <p className="mt-1 text-sm text-ink-soft leading-relaxed line-clamp-2 max-w-2xl">
                   {r.oneLineVerdict}
                 </p>
+                {r.ratingNote && <p className="mt-2 text-xs text-ink-muted">{r.ratingNote}</p>}
                 <div className="mt-2 hidden sm:flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-ink-subtle">
                   <BBBChip slug={r.slug} />
                   <span>

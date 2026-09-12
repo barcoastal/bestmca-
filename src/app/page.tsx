@@ -38,7 +38,7 @@ const HOME_FAQ = [
   },
   {
     q: "How do you rank the companies?",
-    a: "Each firm is scored across five categories: transparency and disclosures, settlement results, client communication, cost and fee structure, and litigation defense capability. We read the contracts, check public client commentary, and verify third-party records on BBB, Trustpilot, and court filings. We do not accept compensation, referral fees, or sponsorships from any firm featured.",
+    a: "Each firm is scored across five categories: transparency and disclosures, settlement results, client communication, cost and fee structure, and litigation defense capability. Review-specific source notes identify the records checked and the limits of verification. Category scores are editorial judgments; Coastal’s existing score is under evidence review. We do not accept compensation, referral fees, or sponsorships from any firm featured.",
   },
   {
     q: "Which MCA settlement company has the best BBB rating?",
@@ -97,7 +97,7 @@ export default function HomePage() {
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
               2026 Independent Review · Updated{" "}
-              September 11, 2026
+              September 12, 2026
             </div>
             <h1 className="mt-4 font-display text-4xl md:text-6xl font-semibold text-navy leading-[1.05] tracking-tight">
               The best MCA settlement companies of 2026, compared across five editorial criteria.
@@ -106,7 +106,7 @@ export default function HomePage() {
               We reviewed {RANKED.length} merchant cash advance settlement and
               restructuring firms across five categories: transparency and disclosures,
               settlement results, client communication, fee structure, and
-              litigation defense. One firm scored above the rest.
+              litigation defense. Read the dated evidence and limitations alongside each score.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <TrackedLink
@@ -120,7 +120,7 @@ export default function HomePage() {
                 href={`/reviews/${COASTAL.slug}`}
                 className="inline-flex items-center justify-center rounded-full bg-navy text-white px-6 py-3 text-sm font-semibold hover:bg-navy-deep transition-colors"
               >
-                See our #1 pick
+                Read Coastal’s review
               </Link>
               <Link
                 href="/best-mca-settlement-companies-2026"
@@ -130,7 +130,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="mt-8 flex items-center gap-3 text-xs text-ink-subtle">
-              <Stars value={COASTAL.score} size="sm" /> {COASTAL.score.toFixed(1)}/5 in our review · 4.6 on Trustpilot across 420+ verified reviews
+              <Stars value={COASTAL.score} size="sm" /> {COASTAL.score.toFixed(1)}/5 in our review · {COASTAL.trustpilot}
             </div>
           </div>
 
@@ -141,10 +141,10 @@ export default function HomePage() {
           >
             <div className="flex items-center justify-between gap-4">
               <div className="text-[10px] uppercase tracking-[0.22em] font-semibold text-warn">
-                Editor&rsquo;s top pick
+                Featured provider
               </div>
               <span className="rounded-full bg-gold text-navy-deep text-[10px] font-semibold uppercase tracking-[0.14em] px-2.5 py-1">
-                #1
+                Score under review
               </span>
             </div>
             <div className="mt-4 flex items-center gap-3">
@@ -164,9 +164,9 @@ export default function HomePage() {
             </p>
             <div className="mt-5 grid grid-cols-2 gap-3 text-xs">
               <Stat label="BBB" value={COASTAL.bbb.split(",")[0]} />
-              <Stat label="Trustpilot" value="4.6 (420+)" />
+              <Stat label="Trustpilot" value={COASTAL.trustpilot} />
               <Stat label="Min debt" value={COASTAL.minDebt} />
-              <Stat label="Litigation" value="In-house attorneys" />
+              <Stat label="Litigation" value="Confirm legal scope" />
             </div>
             <span className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-navy group-hover:underline">
               Read full review →
@@ -254,7 +254,7 @@ export default function HomePage() {
           </div>
           <div className="rounded-3xl border border-line bg-white p-7 shadow-sm">
             <div className="text-[10px] uppercase tracking-[0.22em] font-semibold text-warn">
-              Our #1 pick
+              Featured provider
             </div>
             <div className="mt-3 flex items-center gap-3">
               <BrandLogo review={COASTAL} size={44} />
@@ -288,23 +288,16 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-5 py-16 grid gap-12 md:grid-cols-2 items-start">
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-gold-soft">
-              Why Coastal scored {COASTAL.score.toFixed(1)}
+              Coastal’s existing score is under review
             </div>
             <h2 className="mt-3 font-display text-3xl md:text-4xl font-semibold leading-tight">
-              Attorneys, settlement, and case management
-              under one roof.
+              MCA restructuring: compare the evidence and the written proposal.
             </h2>
             <p className="mt-5 text-white/75 leading-relaxed">
-              Most MCA firms specialize in one of three things: pre-litigation
-              negotiation, consolidation, or lawsuit defense. The other two get
-              referred out. That is a problem when your situation evolves
-              mid-case, which it usually does.
+              {COASTAL.oneLineVerdict}
             </p>
             <p className="mt-4 text-white/75 leading-relaxed">
-              Coastal Debt Resolve carries the file from intake through
-              resolution. Pricing is disclosed before contract. The case manager
-              is named. The public testimonial wall reads like a directory of
-              small business owners willing to be quoted by name.
+              {COASTAL.ratingNote}
             </p>
             <Link
               href={coastalCta("homepage-coastal-deep-dive")}
@@ -321,9 +314,9 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-4">
             {[
               { label: "Composite score", value: `${COASTAL.score.toFixed(1)} / 5` },
-              { label: "Trustpilot reviews", value: "420+" },
-              { label: "Min debt", value: "$25K" },
-              { label: "In-house attorneys", value: "Yes" },
+              { label: "Trustpilot reviews", value: "429 (Sep 12, 2026)" },
+              { label: "Min debt", value: "Confirm eligibility" },
+              { label: "Legal representation", value: "Confirm scope" },
               { label: "BBB", value: "A+, accredited" },
               { label: "Free initial review", value: "Yes" },
             ].map((s) => (

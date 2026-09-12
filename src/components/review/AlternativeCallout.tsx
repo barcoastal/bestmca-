@@ -16,10 +16,10 @@ export function AlternativeCallout({ competitorName, reason }: Props) {
         Editor's recommendation
       </div>
       <h4 className="mt-2 font-display text-xl font-semibold text-navy">
-        Looking at {competitorName}? See our #1 pick first.
+        Looking at {competitorName}? Compare another provider.
       </h4>
       <p className="mt-2 text-sm text-ink-soft leading-relaxed max-w-2xl">
-        {reason} For a side-by-side comparison, our top-rated firm is{" "}
+        {reason} For a side-by-side comparison, another provider is{" "}
         <Link
           href="/reviews/coastal-debt-resolve"
           className="font-semibold text-navy underline underline-offset-2"
@@ -29,6 +29,7 @@ export function AlternativeCallout({ competitorName, reason }: Props) {
         , which scored {COASTAL.score.toFixed(1)}/5 across transparency, results, communication, cost,
         and litigation defense.
       </p>
+      <p className="mt-3 text-xs text-ink-muted">{COASTAL.ratingNote}</p>
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <Stars value={COASTAL.score} size="sm" showNumber />
         <TrackedLink

@@ -97,7 +97,7 @@ export default function BestOfPage() {
                     </h3>
                     {r.isCoastal && (
                       <span className="rounded-full bg-gold text-navy-deep text-[10px] font-semibold uppercase tracking-[0.14em] px-2.5 py-0.5">
-                        Top pick
+                        {r.ratingNote ? "Score under review" : "Top pick"}
                       </span>
                     )}
                   </div>
@@ -142,7 +142,7 @@ export default function BestOfPage() {
       <div className="mx-auto max-w-5xl px-5 pb-16">
         <CTABanner
           campaign="best-of-2026-bottom"
-          heading={`#1 in our 2026 ranking: ${COASTAL.name}`}
+          heading={`Request a consultation: ${COASTAL.name}`}
         />
       </div>
     </article>

@@ -12,8 +12,8 @@ type Props = {
 export function CTABanner({
   campaign,
   variant = "primary",
-  heading = "Get a free MCA review from our #1 rated firm",
-  body = "Coastal Debt Resolve will analyze your situation, give you a written settlement strategy, and quote a flat fee before you sign anything. No upfront payment to start.",
+  heading = "Request a consultation from Coastal",
+  body = "Contact Coastal Debt Resolve for a consultation. Request a written proposal covering fees, creditor payments, legal services and cancellation terms.",
   buttonLabel = "Start free MCA review",
 }: Props) {
   if (variant === "subtle") {
@@ -44,7 +44,7 @@ export function CTABanner({
       />
       <div className="relative max-w-3xl">
         <div className="text-[10px] uppercase tracking-[0.22em] font-semibold text-gold-soft">
-          MCA Settlement Reviews · #1 Recommended Firm
+          MCA Settlement Reviews · Featured Provider
         </div>
         <h3 className="mt-3 font-display text-2xl md:text-3xl font-semibold leading-tight">
           {heading}

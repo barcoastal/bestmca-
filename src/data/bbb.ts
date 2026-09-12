@@ -47,14 +47,14 @@ export const BBB_RECORDS: BBBRecord[] = [
     accreditedSince: "Feb 2024",
     grade: "A+",
     hasProfile: true,
-    complaints3yr: 69,
-    complaints12mo: 44,
-    started: "2019",
+    complaints3yr: 72,
+    complaints12mo: 39,
+    started: "2018",
     hq: "Fort Lauderdale, FL",
     profileUrl:
       "https://www.bbb.org/us/fl/fort-lauderdale/profile/debt-relief-services/coastal-debt-resolve-0633-92025913",
     takeaway:
-      "Listed as BBB Accredited with an A+ rating. Other firms in this comparison also have A+ ratings and accreditation. Check the linked BBB profile for the current rating, accreditation status, and complaint history.",
+      "A+ and accredited status checked September 12, 2026. BBB lists 72 complaints in three years and 39 closed in twelve months. Read the responses and outcomes; accreditation is not a guarantee of service results.",
     quotes: [],
   },
   {
