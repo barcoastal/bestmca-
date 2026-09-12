@@ -570,60 +570,70 @@ sources: [
 ],
 },
   {
-    updatedAt: "2026-09-11",
-    slug: "business-debt-law-group",
-    name: "Business Debt Law Group",
-    shortName: "BDLG",
-    oneLineVerdict:
-      "Litigation-focused law firm useful for owners already sued by an MCA funder. Less efficient than combined settlement-and-defense firms for pre-litigation cases.",
-    founded: "Varies by entity",
-    hq: "United States",
-    minDebt: "Litigation-driven",
-    specialties: "MCA litigation defense, COJ vacatur, UCC defense, debt negotiation",
-    bbb: "Varies",
-    trustpilot: "Limited public review presence",
-    websiteLabel: "businessdebtlawgroup.com",
-    recommendedFor:
-      "Owners already sued by a funder who need pure litigation defense and have no need for upstream negotiation.",
-    bestFor: [
-      "Owners served with a Confession of Judgment",
-      "Cases already in active litigation",
-    ],
-    notIdealFor: [
-      "Pre-litigation cases where settlement could resolve the issue cheaper",
-      "Owners who want negotiation and legal under one fee",
-    ],
-    ratings: {
-      transparency: 4,
-      results: 4,
-      communication: 3.5,
-      cost: 3,
-      litigation: 4.5,
-    },
-    pros: [
-      "Genuine litigation capability for active MCA lawsuits",
-      "Useful for cases where the funder has already filed",
-      "Comprehensive legal services across debtor-creditor litigation",
-    ],
-    cons: [
-      "No real upstream negotiation arm — settlement-only cases get over-lawyered",
-      "Hourly billing structure can run high",
-      "Owners often pay more than a combined settlement-and-defense firm would charge",
-    ],
-    verdict:
-      "If you are already sued, defense is what you need and Business Debt Law Group can provide that. If you are pre-litigation, paying a litigation firm to negotiate is the wrong tool. The best MCA outcomes come from firms that can do both under one fee, escalating to litigation only when negotiation fails. BDLG is fine for the narrow case it serves.",
-    pricing:
-      "Hourly billing or case-based retainers. Litigation is expensive by nature.",
-    process:
-      "Engagement on a litigation matter. Defense filings, motion practice, settlement of the litigation, judgment defense.",
-    concerns: [
-      {
-        quote:
-          "Litigation-only structure means owners with negotiable cases pay litigation rates for what could have been a fixed-fee settlement.",
-        source: "Industry pattern across litigation-only practices",
-      },
-    ],
+  "updatedAt": "2026-09-12",
+  "slug": "business-debt-law-group",
+  "name": "Business Debt Law Group",
+  "shortName": "BDLG",
+  "oneLineVerdict": "The firm advertises MCA negotiation, restructuring and litigation services. Compare its written scope and fees; the previous litigation-only description was inaccurate.",
+  "founded": "1998 (BBB business-start record)",
+  "hq": "Fort Lauderdale, Florida",
+  "minDebt": "Not verified; request eligibility criteria",
+  "specialties": "Company-advertised MCA negotiation, restructuring and lawsuit defense",
+  "bbb": "A+ rated; not accredited (checked September 12, 2026)",
+  "trustpilot": "No current aggregate verified in this update",
+  "websiteLabel": "businessdebtlawgroup.com",
+  "recommendedFor": "Owners comparing legal representation for MCA payment disputes or lawsuits.",
+  "bestFor": [
+    "Owners seeking an evaluation of MCA contracts and creditor actions",
+    "Owners comparing negotiation and litigation options"
+  ],
+  "notIdealFor": [
+    "Owners seeking guaranteed results",
+    "Owners who have not confirmed attorney availability in their jurisdiction"
+  ],
+  "ratings": {
+    "transparency": 4,
+    "results": 4,
+    "communication": 3.5,
+    "cost": 3,
+    "litigation": 4.5
   },
+  "pros": [
+    "Publishes named attorneys and a legal entity",
+    "Advertises negotiation alongside litigation",
+    "Identifiable BBB profile"
+  ],
+  "cons": [
+    "No complete fee schedule verified in the reviewed materials",
+    "No independent outcome audit performed",
+    "Jurisdiction and engagement scope require confirmation"
+  ],
+  "verdict": "The earlier review incorrectly described this practice as litigation-only and asserted higher costs without comparative evidence. Its site identifies Rumore Jocelyn Serra PLLC and advertises settlement and restructuring alongside defense. The BBB profile is A+ and not accredited. These records do not establish service quality or likely results; attorney licensing was not independently checked in this update.",
+  "pricing": "No complete fee schedule was verified. Request a written engagement agreement covering negotiation, court work, expenses and termination. The previous hourly-billing assertion was unsupported.",
+  "process": "The firm describes reviewing agreements, payment history and creditor actions before discussing options. Confirm who will handle the matter and what the engagement covers.",
+  "concerns": [],
+  "firmWebsite": "https://businessdebtlawgroup.com",
+  "sources": [
+    {
+      "label": "Firm services and attorney information",
+      "url": "https://businessdebtlawgroup.com/",
+      "note": "Company descriptions, not independent verification of credentials or outcomes."
+    },
+    {
+      "label": "About the firm",
+      "url": "https://businessdebtlawgroup.com/about-us/",
+      "note": "Describes negotiation, settlement, restructuring and litigation options. This contradicts the previous litigation-only characterization."
+    },
+    {
+      "label": "BBB business profile",
+      "url": "https://www.bbb.org/us/fl/ft-lauderdale/profile/lawyers/business-debt-law-group-0633-23006096",
+      "note": "BBB lists A+, no accreditation, a February 18, 1998 business start and the alternate name Rumore Jocelyn Serra PLLC. Checked September 12, 2026; complaint and customer-review totals were not verified."
+    }
+  ],
+  "sourcesCheckedAt": "September 12, 2026",
+  "publicQuotes": [],
+  "ratingNote": "Business Debt Law Group: existing editorial score is under evidence review. The formula is reproducible, but the category scores have not been independently substantiated. This is not a measured success rate or a fresh endorsement."
+},
   {
     updatedAt: "2026-09-11",
     slug: "business-debt-adjusters",
@@ -1165,63 +1175,65 @@ sources: [
     ],
   },
   {
-    updatedAt: "2026-09-11",
-    slug: "business-debt-insider",
-    name: "Business Debt Insider",
-    shortName: "Business Debt Insider",
-    oneLineVerdict:
-      "A flat-fee restructuring practice that folds stacked MCA debt into one weekly payment, with no new loan and no bankruptcy filing. A strong, owner-friendly model, newer and smaller than the category's largest firms.",
-    founded: "Fort Lauderdale, Florida (GRL Recovery LLC)",
-    hq: "Fort Lauderdale, Florida",
-    minDebt: "Varies",
-    specialties: "MCA restructuring, debt relief, single weekly payment consolidation",
-    bbb: "Newer firm; flat-fee, documented agreements (limited BBB footprint to date)",
-    trustpilot: "Limited public review footprint as a newer firm",
-    websiteLabel: "businessdebtinsider.com",
-    firmWebsite: "https://businessdebtinsider.com",
-    recommendedFor:
-      "Owners who want a flat-fee plan that folds stacked MCA debt into one weekly payment without a new loan or a bankruptcy filing.",
-    bestFor: [
-      "Owners who want one weekly payment instead of daily MCA debits",
-      "Businesses that want to keep operating, with no new loan and no bankruptcy",
-      "Owners who want a flat fee and a written plan before any engagement fee",
-    ],
-    notIdealFor: [
-      "Owners who specifically want in-house attorneys and litigation under one roof",
-      "Owners who want the single largest, longest-tenured firm by settlement volume",
-    ],
-    ratings: {
-      transparency: 4.5,
-      results: 4.5,
-      communication: 4.5,
-      cost: 4.5,
-      litigation: 4,
-    },
-    pros: [
-      "Flat fees disclosed in writing before any engagement fee is charged",
-      "Folds stacked business debt into a single weekly payment",
-      "No new loan and no bankruptcy filing",
-      "Free written analysis of total outflow and exposure up front",
-    ],
-    cons: [
-      "Newer and smaller than the category's longest-tenured firms",
-      "Not a law firm; coordinates with outside counsel the client retains for litigation",
-      "Limited public review footprint to verify outcomes independently",
-    ],
-    verdict:
-      "Business Debt Insider runs the kind of model we like to see: a free written analysis first, then a flat fee and a single weekly payment that folds in the stacked advances, with no new loan and no bankruptcy filing. It is transparent that it is not a lender and not a law firm, and it coordinates with outside counsel when a matter needs litigation. The main caveats are that it is newer and smaller than the largest firms in this ranking, and its public review footprint is still limited, so ask for written references and a clear fee schedule. For owners who want one manageable payment and a plan they can read before they sign, it is a credible choice.",
-    pricing:
-      "Flat fees, documented in writing before any engagement fee is charged. No contingency and no percentage-of-enrolled-debt model.",
-    process:
-      "Free written analysis of total outflow and exposure, then relief on the daily debits, a restructured single weekly payment, or settlement, depending on what the business can support.",
-    concerns: [
-      {
-        quote:
-          "A newer and smaller firm than the category leaders, with a limited independent review footprint, so verify references and get the fee schedule in writing.",
-        source: "Firm disclosures and public footprint at time of review",
-      },
-    ],
+  "updatedAt": "2026-09-12",
+  "slug": "business-debt-insider",
+  "name": "Business Debt Insider",
+  "shortName": "Business Debt Insider",
+  "oneLineVerdict": "Business Debt Insider advertises commercial debt restructuring with flat fees. Its disclosure says legal representation requires a separate attorney agreement and separate fees; results are not guaranteed.",
+  "founded": "2026 (company-reported entity formation; not independently verified)",
+  "hq": "Fort Lauderdale, Florida (company-listed)",
+  "minDebt": "Not verified; request eligibility criteria",
+  "specialties": "Company-advertised commercial debt planning and restructuring",
+  "bbb": "No matching profile located in this check; status not independently confirmed",
+  "trustpilot": "No current aggregate verified in this update",
+  "websiteLabel": "businessdebtinsider.com",
+  "firmWebsite": "https://businessdebtinsider.com",
+  "recommendedFor": "Business owners comparing a written commercial debt proposal and its full costs.",
+  "bestFor": [
+    "Owners seeking a written restructuring proposal",
+    "Owners comparing program fees and separate legal costs"
+  ],
+  "notIdealFor": [
+    "Owners seeking guaranteed savings",
+    "Owners requiring legal representation through the consulting engagement itself"
+  ],
+  "ratings": {
+    "transparency": 4.5,
+    "results": 4.5,
+    "communication": 4.5,
+    "cost": 4.5,
+    "litigation": 4
   },
+  "pros": [
+    "Publishes service and fee disclosures",
+    "Explains that legal work requires a separate engagement",
+    "Discloses that outcomes vary"
+  ],
+  "cons": [
+    "No independent client-outcome audit performed",
+    "Attorney fees are separate according to its disclosure",
+    "Current third-party rating aggregates were not verified"
+  ],
+  "verdict": "Business Debt Insider identifies itself as a trade name of GRL Recovery LLC. This review relies on public company materials, not inspected client agreements or verified settlement results. Its disclosed separation of consulting and legal services matters when comparing total costs. The earlier endorsement and relative size assertions lacked independent evidence.",
+  "pricing": "The homepage advertises flat fees. The disclosure says program fees depend on the debt and proposed approach, with terms confirmed before signing. Legal fees are charged separately by the attorney. No complete price schedule was verified.",
+  "process": "The company describes an initial analysis and written plan followed by creditor work. Creditor acceptance, savings and completion dates were not independently verified.",
+  "concerns": [],
+  "sources": [
+    {
+      "label": "Company service descriptions",
+      "url": "https://businessdebtinsider.com/",
+      "note": "Company identifies GRL Recovery LLC and advertises flat fees and restructuring. These are company statements, not an outcome audit."
+    },
+    {
+      "label": "Company disclosure",
+      "url": "https://businessdebtinsider.com/disclosure",
+      "note": "Describes variable program fees, separate attorney engagements and fees, and no guaranteed result. Checked September 12, 2026."
+    }
+  ],
+  "sourcesCheckedAt": "September 12, 2026",
+  "publicQuotes": [],
+  "ratingNote": "Business Debt Insider: existing editorial score is under evidence review. The formula is reproducible, but the category scores have not been independently substantiated. This is not a measured success rate or a fresh endorsement."
+},
 ];
 
 export const RATING_WEIGHTS: Record<RatingKey, number> = {

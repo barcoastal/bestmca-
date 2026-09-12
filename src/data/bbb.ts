@@ -345,19 +345,21 @@ export const BBB_RECORDS: BBBRecord[] = [
     hasProfile: false,
     hq: "Fort Lauderdale, FL",
     takeaway:
-      "A newer flat-fee restructuring practice with no BBB profile yet. Its model is documented agreements and disclosed flat fees; verify directly until a third-party record accumulates.",
+      "No matching BBB profile located in the September 12, 2026 check. This does not establish that no profile exists. Service and fee statements come from the company.",
     quotes: [],
   },
   {
     slug: "business-debt-law-group",
     name: "Business Debt Law Group",
     shortName: "BDLG",
-    accreditation: "none",
-    grade: "No profile",
-    hasProfile: false,
+    accreditation: "not-accredited",
+    grade: "A+",
+    hasProfile: true,
+    started: "1998",
+    profileUrl: "https://www.bbb.org/us/fl/ft-lauderdale/profile/lawyers/business-debt-law-group-0633-23006096",
     hq: "Fort Lauderdale, FL",
     takeaway:
-      "No BBB profile exists under the brand or its underlying law-firm entity. As a litigation practice rather than a settlement company, that is less unusual, but it means no BBB record to evaluate.",
+      "A+ and not accredited, checked September 12, 2026. BBB lists Rumore Jocelyn Serra PLLC as an alternate name. Complaint and customer-review totals were not verified in this update.",
     quotes: [],
   },
 ];

@@ -15,7 +15,7 @@ const gradeRank: Record<string, number> = {
   "C+": 6, C: 5, "C-": 4, "D+": 3, D: 2, "D-": 1, F: 0,
 };
 const belowB = withProfile.filter(
-  (r) => (gradeRank[r.grade] ?? -1) < gradeRank["B"] && r.grade !== "No profile",
+  (r) => r.grade in gradeRank && gradeRank[r.grade] < gradeRank["B"],
 );
 const noProfile = BBB_RECORDS.filter((r) => !r.hasProfile);
 const totalComplaints3yr = BBB_RECORDS.reduce(
@@ -31,7 +31,7 @@ const pctNotAccredited = Math.round(
 
 export const metadata = {
   title: "State of MCA Settlement 2026: BBB Grades of the Industry, Studied",
-  description: `We pulled the live BBB record of ${BBB_RECORDS.length} MCA settlement and debt-relief firms. ${pctNotAccredited}% are not BBB accredited, ${belowB.length} hold a grade below B, and ${noProfile.length} have no BBB profile at all. Full data and methodology.`,
+  description: `We pulled the live BBB record of ${BBB_RECORDS.length} MCA settlement and debt-relief firms. ${pctNotAccredited}% are not BBB accredited, ${belowB.length} hold a grade below B, and ${noProfile.length} have no linked BBB profile in our dataset. Full data and methodology.`,
   alternates: { canonical: "/state-of-mca-settlement-2026" },
 };
 
@@ -58,7 +58,7 @@ export default function StudyPage() {
     },
     {
       n: String(noProfile.length),
-      label: "firms have no BBB profile at all, leaving owners nothing to verify",
+      label: "firms have no linked BBB profile in this dataset",
     },
     {
       n: String(totalComplaints3yr),
@@ -152,7 +152,7 @@ export default function StudyPage() {
                     )}
                   </td>
                   <td className="px-4 py-3">
-                    {r.hasProfile ? r.grade : "No profile"}
+                    {r.hasProfile ? r.grade : "Profile not located"}
                   </td>
                   <td className="px-4 py-3">
                     {r.accreditation === "accredited"

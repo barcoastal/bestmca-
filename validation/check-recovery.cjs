@@ -39,3 +39,15 @@ for(const slug of ['corporate-turnaround','spergel']) {
  }
 }
 console.log('PASS: Corporate Turnaround and Spergel source notes, evidence-review notices and preserved review/legitimacy URLs.');
+
+for(const slug of ['business-debt-law-group','business-debt-insider']) {
+ const r=REVIEWS.find(r=>r.slug===slug);
+ for(const route of ['reviews','legit']) {
+  const h=fs.readFileSync(`.next/server/app/${route}/${slug}.html`,'utf8');
+  assert(h.includes(r.ratingNote)); assert(h.includes('Sources checked')); assert(h.includes('September 12, 2026'));
+  assert(h.includes(`rel="canonical" href="https://www.mcasettlementreviews.com/${route}/${slug}"`)); assert(!h.includes('content="noindex'));
+ }
+}
+const law=fs.readFileSync('.next/server/app/reviews/business-debt-law-group.html','utf8');
+assert(law.includes('business-debt-law-group-0633-23006096')); assert(!law.includes('over-lawyered')); assert(!law.includes('Hourly billing or case-based retainers'));
+console.log('PASS: BDI and BDLG evidence notices, sources, canonicals and corrected BBB link.');
