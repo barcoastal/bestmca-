@@ -105,6 +105,7 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
+      <div className="mx-auto max-w-6xl px-5 pb-8"><nav aria-label="Related resources" style={{ display: "block", margin: "24px 0 0", fontSize: "14px", lineHeight: 1.8 }}><strong>Related resources</strong><p style={{ margin: "8px 0 0" }}><a href="https://www.fintiex.com/" style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>Fintiex</a> · <a href="https://mca-clarity.com/" style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>MCA Clarity</a> · <a href="https://www.coastaldebtreviews.com/" style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}>Coastal Debt Reviews</a></p></nav></div>
       <div className="border-t border-line">
         <div className="mx-auto max-w-6xl px-5 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-ink-subtle">
           <p className="max-w-3xl leading-relaxed">
