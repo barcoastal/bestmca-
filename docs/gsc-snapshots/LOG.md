@@ -163,3 +163,39 @@ Totals: **1 clicks**, 250 impressions, 0.4% CTR, avg pos 55.6  (vs prev: clicks 
 | corporate turnaround reviews | 0 | 2 | 0.0% | 50.5 | +2.5 |
 | rise alliance reviews | - | - | - | not shown | |
 | regroup partners reviews | 0 | 2 | 0.0% | 41.5 | +0.5 |
+
+## 2026-09-13 (window 2026-09-04 to 2026-09-10)
+
+Totals: **1 clicks**, 245 impressions, 0.4% CTR, avg pos 58.9  (vs prev: clicks 0, impr -5, pos +3.4)
+
+| Tracked query | Clicks | Impr | CTR | Pos | Pos delta |
+|---|---|---|---|---|---|
+| best mca debt relief companies | 0 | 6 | 0.0% | 66.0 | -3.3 |
+| mca settlement companies | 0 | 10 | 0.0% | 80.6 | +0.7 |
+| mca debt relief reviews | 0 | 3 | 0.0% | 54.0 | 0.0 |
+| merchant cash advance settlement companies | 0 | 11 | 0.0% | 90.4 | -0.1 |
+| mca debt relief companies | 0 | 1 | 0.0% | 76.0 | 0.0 |
+| second wind consultants reviews | 0 | 4 | 0.0% | 44.5 | -0.5 |
+| eastern financial partners reviews | 0 | 3 | 0.0% | 30.3 | +0.3 |
+| spergel reviews | 0 | 1 | 0.0% | 32.0 | 0.0 |
+| corporate turnaround reviews | 0 | 2 | 0.0% | 62.5 | +12.0 |
+| rise alliance reviews | - | - | - | not shown | |
+| regroup partners reviews | 0 | 1 | 0.0% | 42.0 | +0.5 |
+
+## 2026-09-14 (window 2026-09-05 to 2026-09-11)
+
+Totals: **2 clicks**, 150 impressions, 1.3% CTR, avg pos 53.0  (vs prev: clicks +1, impr -95, pos -5.9)
+
+| Tracked query | Clicks | Impr | CTR | Pos | Pos delta |
+|---|---|---|---|---|---|
+| best mca debt relief companies | 0 | 6 | 0.0% | 66.0 | 0.0 |
+| mca settlement companies | 0 | 12 | 0.0% | 81.1 | +0.5 |
+| mca debt relief reviews | 0 | 3 | 0.0% | 54.0 | 0.0 |
+| merchant cash advance settlement companies | 0 | 11 | 0.0% | 90.4 | 0.0 |
+| mca debt relief companies | 0 | 1 | 0.0% | 76.0 | 0.0 |
+| second wind consultants reviews | 0 | 3 | 0.0% | 44.0 | -0.5 |
+| eastern financial partners reviews | 0 | 3 | 0.0% | 30.3 | 0.0 |
+| spergel reviews | 0 | 1 | 0.0% | 32.0 | 0.0 |
+| corporate turnaround reviews | 0 | 2 | 0.0% | 62.5 | 0.0 |
+| rise alliance reviews | - | - | - | not shown | |
+| regroup partners reviews | 0 | 1 | 0.0% | 42.0 | 0.0 |
