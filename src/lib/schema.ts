@@ -1,4 +1,5 @@
 import type { Review } from "@/data/reviews";
+import { OWNERSHIP_DISCLOSURE } from "@/lib/disclosure";
 
 const SITE = "https://www.mcasettlementreviews.com";
 
@@ -13,7 +14,7 @@ export function organizationSchema() {
     url: SITE,
     logo: `${SITE}/icon`,
     description:
-      "Independent reviews and rankings of merchant cash advance (MCA) settlement and debt-relief companies. We do not accept compensation, referral fees, or sponsorships from any firm we cover.",
+      `Reviews and rankings of merchant cash advance (MCA) settlement and debt-relief companies. ${OWNERSHIP_DISCLOSURE}`,
     knowsAbout: [
       "Merchant cash advance settlement",
       "MCA debt relief",
@@ -33,14 +34,6 @@ export function websiteSchema() {
     name: "MCA Settlement Reviews",
     url: SITE,
     publisher: { "@id": `${SITE}/#organization` },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${SITE}/best-mca-settlement-companies-2026?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 

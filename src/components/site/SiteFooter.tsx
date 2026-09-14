@@ -1,5 +1,6 @@
 import { COASTAL } from "@/data/reviews";
 import Link from "next/link";
+import { OWNERSHIP_DISCLOSURE } from "@/lib/disclosure";
 import { BBBSeal } from "@/components/review/BBBSeal";
 
 export function SiteFooter() {
@@ -107,11 +108,8 @@ export function SiteFooter() {
       <div className="border-t border-line">
         <div className="mx-auto max-w-6xl px-5 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-ink-subtle">
           <p className="max-w-3xl leading-relaxed">
-            <span className="font-medium text-ink-muted">Disclosure:</span> We
-            do not accept compensation, referral fees, affiliate payments, or
-            sponsorships from any company featured on this site. This site
-            exists solely to publish real, sourced reviews of MCA settlement
-            firms based on the criteria explained on our{" "}
+            <span className="font-medium text-ink-muted">Disclosure:</span>{" "}
+            {OWNERSHIP_DISCLOSURE} Read our{" "}
             <Link
               href="/methodology"
               className="underline underline-offset-2 hover:text-navy"

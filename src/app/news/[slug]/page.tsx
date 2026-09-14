@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { NEWS, getNewsBySlug } from "@/data/news";
 import { CTABanner } from "@/components/review/CTABanner";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { jsonLd } from "@/lib/schema";
 
 export const dynamicParams = false;
 
@@ -26,6 +28,7 @@ export async function generateMetadata({
       description: article.metaDescription,
       type: "article",
       publishedTime: article.publishedAt,
+      url: `/news/${article.slug}`,
     },
     alternates: { canonical: `/news/${article.slug}` },
   };
@@ -47,8 +50,27 @@ export default async function NewsPage({
 
   return (
     <article className="bg-paper">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLd({
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          headline: article.title,
+          description: article.excerpt,
+          datePublished: article.publishedAt,
+          mainEntityOfPage: `https://www.mcasettlementreviews.com/news/${article.slug}`,
+          publisher: { "@id": "https://www.mcasettlementreviews.com/#organization" },
+          citation: article.sources.map((source) => source.url),
+        })}
+      />
       <header className="border-b border-line bg-paper-soft">
         <div className="mx-auto max-w-3xl px-5 py-14">
+          <div className="mb-4">
+            <Breadcrumbs items={[
+              { name: "News", path: "/news" },
+              { name: article.title, path: `/news/${article.slug}` },
+            ]} />
+          </div>
           <div className="flex items-center gap-3 text-xs uppercase tracking-[0.2em] font-semibold text-warn">
             <Link href="/news" className="hover:text-navy">
               News
@@ -129,7 +151,7 @@ export default async function NewsPage({
           <CTABanner
             campaign={`news-${article.slug}`}
             heading="Read our full Coastal Debt Resolve review"
-            body="See the complete 2026 evaluation of Coastal Debt Resolve, including pricing, process, attorney capability, and 420+ verified Trustpilot reviews."
+            body="Read our Coastal Debt Resolve review for dated public sources, service claims, complaints, and the limits of our verification."
             buttonLabel="Get a free MCA review"
           />
           <Link

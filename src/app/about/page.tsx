@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { OWNERSHIP_DISCLOSURE } from "@/lib/disclosure";
 
 export const metadata = {
   title: "About MCA Settlement Reviews",
@@ -65,18 +66,9 @@ export default function AboutPage() {
           consult a qualified attorney for advice on a specific situation.
         </p>
         <h2 className="font-display text-2xl font-semibold text-navy mt-10">
-          Compensation disclosure
+          Ownership and compensation
         </h2>
-        <p>
-          We do not accept compensation, referral fees, affiliate payments, or
-          sponsorships from any company featured on this site. There is no
-          paid placement, no pay-to-play, and no firm has bought its way into
-          a higher ranking. This site exists solely to publish real, sourced
-          reviews of MCA settlement firms so small business owners can make an
-          informed choice. Our top-ranked firm earned its position through the
-          same scoring process applied to every other firm on the list. If the
-          ratings ever shifted, the order would shift with them.
-        </p>
+        <p>{OWNERSHIP_DISCLOSURE}</p>
         <h2 className="font-display text-2xl font-semibold text-navy mt-10">
           Contact
         </h2>

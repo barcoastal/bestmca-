@@ -5,6 +5,7 @@ import { GUIDES, getGuideBySlug } from "@/data/guides";
 import { CTABanner } from "@/components/review/CTABanner";
 import { FeaturedReviews } from "@/components/review/FeaturedReviews";
 import { faqSchema, jsonLd } from "@/lib/schema";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 
 export const dynamicParams = false;
 
@@ -23,6 +24,12 @@ export async function generateMetadata({
   return {
     title: guide.metaTitle,
     description: guide.metaDescription,
+    openGraph: {
+      title: guide.metaTitle,
+      description: guide.metaDescription,
+      type: "article",
+      url: `/guides/${guide.slug}`,
+    },
     alternates: { canonical: `/guides/${guide.slug}` },
   };
 }
@@ -64,12 +71,9 @@ export default async function GuidePage({
       )}
       <header className="border-b border-line bg-paper-soft">
         <div className="mx-auto max-w-3xl px-5 py-14">
-          <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
-            <Link href="/" className="hover:text-navy">
-              Home
-            </Link>{" "}
-            · MCA Guides
-          </div>
+          <Breadcrumbs items={[
+            { name: guide.title, path: `/guides/${guide.slug}` },
+          ]} />
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold text-navy leading-[1.1]">
             {guide.title}
           </h1>

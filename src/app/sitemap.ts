@@ -28,8 +28,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE}/ucc-9-406-merchant-cash-advance`,
       priority: 0.8,
     },
-    { url: `${SITE}/methodology`, lastModified: "2026-09-11", priority: 0.6 },
-    { url: `${SITE}/about`, priority: 0.5 },
+    { url: `${SITE}/methodology`, lastModified: "2026-09-14", priority: 0.6 },
+    { url: `${SITE}/about`, lastModified: "2026-09-14", priority: 0.5 },
     {
       url: `${SITE}/best-for-trucking-companies`,
       priority: 0.7,
