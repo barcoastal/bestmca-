@@ -29,6 +29,7 @@ export async function generateMetadata({
       description: guide.metaDescription,
       type: "article",
       url: `/guides/${guide.slug}`,
+      modifiedTime: guide.updatedAt,
     },
     alternates: { canonical: `/guides/${guide.slug}` },
   };
@@ -50,11 +51,13 @@ export default async function GuidePage({
     description: guide.metaDescription,
     author: {
       "@type": "Organization",
-      name: "MCA Settlement Reviews Editorial Team",
+      name: "MCA Settlement Reviews",
       url: "https://www.mcasettlementreviews.com/about",
     },
     publisher: { "@id": "https://www.mcasettlementreviews.com/#organization" },
     mainEntityOfPage: `https://www.mcasettlementreviews.com/guides/${guide.slug}`,
+    dateModified: guide.updatedAt,
+    citation: guide.sources?.map((source) => source.url),
   };
 
   return (
@@ -80,9 +83,16 @@ export default async function GuidePage({
           <p className="mt-5 text-lg text-ink-soft leading-relaxed">
             {guide.intro}
           </p>
+          {guide.updatedAt && <p className="mt-3 text-sm text-ink-muted">Updated <time dateTime={guide.updatedAt}>{guide.updatedAt}</time></p>}
         </div>
       </header>
 
+      {guide.sources && <section className="mx-auto max-w-3xl px-5 pt-8">
+        <h2 className="font-display text-xl text-navy">Sources and scope</h2>
+        <ul className="mt-3 space-y-3 text-sm text-ink-soft">
+          {guide.sources.map((source) => <li key={source.url}><a href={source.url} className="text-navy underline" target="_blank" rel="noopener noreferrer">{source.label}</a> — {source.note}</li>)}
+        </ul>
+      </section>}
       <section className="mx-auto max-w-3xl px-5 py-12 space-y-10">
         {guide.sections.map((s, i) => (
           <section key={i}>

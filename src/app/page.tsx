@@ -210,7 +210,8 @@ export default function HomePage() {
           <p className="mt-3 text-base text-ink-soft leading-relaxed">
             Ranked by composite score across five rating categories. Click any
             firm to read the full review, including pricing, process, and
-            sourced concerns.
+            sourced concerns. All existing editorial scores are under evidence
+            review; they are not verified success rates or fresh endorsements.
           </p>
         </header>
         <RankingChart />

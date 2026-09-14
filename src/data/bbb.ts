@@ -1,9 +1,6 @@
-// Verified Better Business Bureau (bbb.org) profile data for every MCA settlement
-// and debt-relief firm we cover. All figures were read directly from each firm's
-// live bbb.org (or BBB Canada) profile on 2026-06-02. BBB data is live and changes
-// over time; these are point-in-time snapshots. We do not fabricate any figure: where
-// a firm has no BBB profile, or a metric is not published, that is stated explicitly.
-// Grades and complaint counts re-verified against live bbb.org profiles on 2026-08-11.
+// Point-in-time BBB records. Each takeaway states its check date where available.
+// Grades, accreditation and customer-review averages are different measures.
+// Unverified totals are omitted rather than carried forward as current figures.
 
 export type BBBAccreditation = "accredited" | "not-accredited" | "none";
 
@@ -100,78 +97,59 @@ export const BBB_RECORDS: BBBRecord[] = [
     quotes: [],
   },
   {
-    slug: "national-credit-partners",
-    name: "National Credit Partners",
-    shortName: "National Credit Partners",
-    accreditation: "accredited",
-    accreditedSince: "Nov 2018",
-    grade: "A+",
-    hasProfile: true,
-    started: "2018",
-    hq: "Costa Mesa, CA",
-    profileUrl:
-      "https://www.bbb.org/us/ca/costa-mesa/profile/corporate/national-credit-partners-1126-1000056604",
-    takeaway:
-      "A+ and accredited since 2018, one of the stronger BBB records in the category. The profile itself publishes no complaint counts, so pair it with third-party reviews when you do diligence.",
-    quotes: [],
-  },
+  "slug": "national-credit-partners",
+  "name": "National Credit Partners",
+  "shortName": "National Credit Partners",
+  "accreditation": "accredited",
+  "accreditedSince": "Nov 2018",
+  "grade": "A+",
+  "hasProfile": true,
+  "started": "2018",
+  "hq": "Costa Mesa, CA",
+  "profileUrl": "https://www.bbb.org/us/ca/costa-mesa/profile/corporate/national-credit-partners-1126-1000056604",
+  "takeaway": "Checked September 14, 2026: A+ and accredited since November 2018. This supports identifying the business, not a guarantee of savings or legal representation.",
+  "quotes": []
+},
   {
-    slug: "national-debt-relief",
-    name: "National Debt Relief",
-    shortName: "National Debt Relief",
-    accreditation: "accredited",
-    accreditedSince: "Feb 2013",
-    grade: "A+",
-    hasProfile: true,
-    started: "2009",
-    hq: "New York, NY",
-    profileUrl:
-      "https://www.bbb.org/us/ny/new-york/profile/debt-relief-services/national-debt-relief-0121-110899",
-    takeaway:
-      "A+ and accredited since 2013 with a massive consumer review base. The caveat is scope, not standing: it is a consumer debt-settlement operation and does not handle MCA-specific work.",
-    quotes: [],
-  },
+  "slug": "national-debt-relief",
+  "name": "National Debt Relief",
+  "shortName": "National Debt Relief",
+  "accreditation": "accredited",
+  "accreditedSince": "Feb 2013",
+  "grade": "A+",
+  "hasProfile": true,
+  "started": "2009",
+  "hq": "New York, NY",
+  "profileUrl": "https://www.bbb.org/us/ny/new-york/profile/debt-relief-services/national-debt-relief-0121-110899",
+  "takeaway": "Checked September 14, 2026: A+ and accredited. Company materials discuss some business-related unsecured debt; specific MCA eligibility and legal-service scope require confirmation.",
+  "quotes": []
+},
   {
-    slug: "regroup-partners",
-    name: "Regroup Partners Co.",
-    shortName: "Regroup",
-    accreditation: "not-accredited",
-    grade: "A+",
-    hasProfile: true,
-    starRating: 3.67,
-    reviewCount: 3,
-    started: "2019",
-    hq: "Boca Raton, FL",
-    profileUrl:
-      "https://www.bbb.org/us/fl/boca-raton/profile/debt-relief-services/regroup-partners-co-0633-90540825",
-    takeaway:
-      "A+ rated but not accredited, with a thin review base (3 reviews) split between strong praise and a serious billing complaint. Verify fee handling in writing before engaging.",
-    quotes: [
-      {
-        text: "I would like to extend my gratitude to Regroup Partners for your invaluable assistance in restructuring our business.",
-        sentiment: "positive",
-      },
-      {
-        text: "Regroup Partners collected $59,808.48 and settled only one account for $25,769.13. They are now lying...",
-        sentiment: "negative",
-      },
-    ],
-  },
+  "slug": "regroup-partners",
+  "name": "Regroup Partners Co.",
+  "shortName": "Regroup",
+  "accreditation": "not-accredited",
+  "grade": "A+",
+  "hasProfile": true,
+  "started": "2019",
+  "hq": "Boca Raton, FL",
+  "profileUrl": "https://www.bbb.org/us/fl/boca-raton/profile/debt-relief-services/regroup-partners-co-0633-90540825",
+  "takeaway": "Checked September 14, 2026: A+, not accredited; BBB lists a 2019 business start. Read individual records and responses rather than treating a grade as proof of results.",
+  "quotes": []
+},
   {
-    slug: "business-debt-adjusters",
-    name: "Business Debt Adjusters",
-    shortName: "Business Debt Adjusters",
-    accreditation: "not-accredited",
-    grade: "A-",
-    hasProfile: true,
-    started: "2016",
-    hq: "Englewood Cliffs, NJ",
-    profileUrl:
-      "https://www.bbb.org/us/nj/englewd-clfs/profile/debt-relief-services/business-debt-adjusters-0221-90179879",
-    takeaway:
-      "An A- with no accreditation and one complaint the business failed to respond to. Complaints describe high-frequency phone outreach; some reviews report genuine payment reductions.",
-    quotes: [],
-  },
+  "slug": "business-debt-adjusters",
+  "name": "Business Debt Adjusters",
+  "shortName": "Business Debt Adjusters",
+  "accreditation": "not-accredited",
+  "grade": "A-",
+  "hasProfile": true,
+  "started": "2016",
+  "hq": "Englewood Cliffs, NJ",
+  "profileUrl": "https://www.bbb.org/us/nj/englewd-clfs/profile/debt-relief-services/business-debt-adjusters-0221-90179879",
+  "takeaway": "Checked September 14, 2026: A- and not accredited. BBB cites one unanswered complaint. The grade is not an independently measured settlement outcome.",
+  "quotes": []
+},
   {
     slug: "corporate-turnaround",
     name: "Corporate Turnaround",
@@ -192,67 +170,32 @@ export const BBB_RECORDS: BBBRecord[] = [
     quotes: [],
   },
   {
-    slug: "stop-mca",
-    name: "Stop MCA",
-    shortName: "Stop MCA",
-    accreditation: "not-accredited",
-    grade: "A-",
-    hasProfile: true,
-    starRating: 3.18,
-    reviewCount: 11,
-    complaints3yr: 3,
-    complaints12mo: 0,
-    started: "2016",
-    hq: "Englewood Cliffs, NJ",
-    profileUrl:
-      "https://www.bbb.org/us/nj/englewd-clfs/profile/debt-relief-services/business-debt-adjusters-0221-90179879",
-    entityNote:
-      "The stopmca.com brand has no BBB profile of its own. The record shown is for Business Debt Adjusters, LLC, named as the site operator in Stop MCA's own privacy policy.",
-    takeaway:
-      "An A grade under the operating entity, but not accredited, a below-average 3.18-star review average, and BBB notes a failure to respond to one complaint. Reviews flag aggressive, repeated sales calls.",
-    quotes: [
-      {
-        text: "Gonenc Eddy was amazing. Was there for me every step of the way.",
-        reviewer: "Brandon B",
-        sentiment: "positive",
-      },
-      {
-        text: "This company calls us multiple times a day... they lie and say one of our vendors has filed something against us.",
-        reviewer: "Kerry D",
-        sentiment: "negative",
-      },
-    ],
-  },
+  "slug": "stop-mca",
+  "name": "Stop MCA",
+  "shortName": "Stop MCA",
+  "accreditation": "not-accredited",
+  "grade": "A-",
+  "hasProfile": true,
+  "started": "2016",
+  "hq": "Englewood Cliffs, NJ",
+  "profileUrl": "https://www.bbb.org/us/nj/englewd-clfs/profile/debt-relief-services/business-debt-adjusters-0221-90179879",
+  "entityNote": "Stop MCA’s privacy policy names Business Debt Adjusters, LLC. The profile below concerns that entity; confirm the business on your contract.",
+  "takeaway": "Operator record checked September 14, 2026: Business Debt Adjusters is A- and not accredited. This is not a separate Stop MCA accreditation.",
+  "quotes": []
+},
   {
-    slug: "mca-resolve",
-    name: "MCA Resolve, LLC",
-    shortName: "MCA Resolve",
-    accreditation: "not-accredited",
-    grade: "B",
-    hasProfile: true,
-    starRating: 3.5,
-    reviewCount: 38,
-    complaints3yr: 23,
-    complaints12mo: 6,
-    started: "2019",
-    hq: "Delray Beach, FL",
-    profileUrl:
-      "https://www.bbb.org/us/fl/delray-beach/profile/debt-relief-services/mca-resolve-llc-0633-92028391",
-    takeaway:
-      "Not accredited, a B grade, and 25 complaints in three years against a mediocre 3.5-star average. The recurring complaint pattern is fees taken in full with little to no creditor contact made. Approach with extreme caution.",
-    quotes: [
-      {
-        text: "MCA Resolve settled my debt in less than the estimated time. I am now debt free and free of those lenders!",
-        reviewer: "Rita E",
-        sentiment: "positive",
-      },
-      {
-        text: "MCA Resolve took 24k of which all was taken for fees... they kept taking. Even after I put a stop to the withdrawals they still continued.",
-        reviewer: "Ed R",
-        sentiment: "negative",
-      },
-    ],
-  },
+  "slug": "mca-resolve",
+  "name": "MCA Resolve, LLC",
+  "shortName": "MCA Resolve",
+  "accreditation": "not-accredited",
+  "grade": "B",
+  "hasProfile": true,
+  "started": "2019",
+  "hq": "Delray Beach, FL",
+  "profileUrl": "https://www.bbb.org/us/fl/delray-beach/profile/debt-relief-services/mca-resolve-llc-0633-92028391",
+  "takeaway": "Checked September 14, 2026: B and not accredited. Rating reasons cite 23 complaints. The domain now redirects to DebtResolvePro; legal succession is not established by that redirect.",
+  "quotes": []
+},
   {
     slug: "eastern-financial-partners",
     name: "Eastern Financial Partners",
@@ -271,57 +214,45 @@ export const BBB_RECORDS: BBBRecord[] = [
   complaints12mo: 2,
 },
   {
-    logoSlug: "corporate-rescue",
-    name: "Corporate Rescue Advisors, LLC",
-    shortName: "Corporate Rescue Advisors",
-    accreditation: "not-accredited",
-    grade: "F",
-    hasProfile: true,
-    complaints3yr: 2,
-    started: "May 2025",
-    hq: "Boca Raton, FL",
-    profileUrl:
-      "https://www.bbb.org/us/fl/boca-raton/profile/financial-consultants/corporate-rescue-advisors-llc-0633-92053458",
-    takeaway:
-      "The worst BBB record in this comparison: an F grade, not accredited, in business less than a year, and two complaints the firm simply failed to respond to. The grade is low precisely because of that non-response.",
-    quotes: [
-      {
-        text: "...me for over 20k. Stay far away!",
-        sentiment: "negative",
-      },
-    ],
-  },
+  "logoSlug": "corporate-rescue",
+  "name": "Corporate Rescue Advisors, LLC",
+  "shortName": "Corporate Rescue Advisors",
+  "accreditation": "not-accredited",
+  "grade": "Not Rated",
+  "hasProfile": true,
+  "started": "2025",
+  "hq": "Boca Raton, FL",
+  "profileUrl": "https://www.bbb.org/us/fl/boca-raton/profile/financial-consultants/corporate-rescue-advisors-llc-0633-92053458",
+  "takeaway": "Checked September 14, 2026: Not Rated and not accredited. BBB says previously closed complaints are being addressed; business start listed as May 16, 2025.",
+  "quotes": [],
+  "slug": "corporate-rescue"
+},
   {
-    slug: "mca-debt-advisors",
-    name: "MCA Debt Advisors, LLC",
-    shortName: "MCA Debt Advisors",
-    accreditation: "not-accredited",
-    grade: "F",
-    hasProfile: true,
-    complaints3yr: 26,
-    started: "2020",
-    hq: "Erie, PA",
-    profileUrl:
-      "https://www.bbb.org/us/pa/erie/profile/debt-relief-services/mca-debt-advisors-llc-0141-71077651",
-    takeaway:
-      "An F with 26 complaints on file and seven left unanswered as of our August 2026 re-check. The recurring theme in complaints is large fees for little delivered work.",
-    quotes: [],
-  },
+  "slug": "mca-debt-advisors",
+  "name": "MCA Debt Advisors, LLC",
+  "shortName": "MCA Debt Advisors",
+  "accreditation": "not-accredited",
+  "grade": "F",
+  "hasProfile": true,
+  "started": "2020",
+  "hq": "Erie, PA",
+  "profileUrl": "https://www.bbb.org/us/pa/erie/profile/debt-relief-services/mca-debt-advisors-llc-0141-71077651",
+  "takeaway": "Checked September 14, 2026: F and not accredited. BBB rating reasons cite 25 complaints, including seven unanswered. Complaint counts change and are not a failure rate.",
+  "quotes": []
+},
   {
-    slug: "delancey-street",
-    name: "Delancey Street Group LLC",
-    shortName: "Delancey Street",
-    accreditation: "not-accredited",
-    grade: "Not rated",
-    hasProfile: true,
-    started: "2018",
-    hq: "New York, NY",
-    profileUrl:
-      "https://www.bbb.org/us/ny/new-york/profile/debt-relief-services/delancey-street-group-llc-0121-87176359",
-    takeaway:
-      "A profile exists but BBB states it has insufficient information to issue a rating. No complaint channel history to evaluate either way, so diligence rests on other sources.",
-    quotes: [],
-  },
+  "slug": "delancey-street",
+  "name": "Delancey Street LLC",
+  "shortName": "Delancey Street",
+  "accreditation": "not-accredited",
+  "grade": "Not rated",
+  "hasProfile": true,
+  "started": "2023",
+  "hq": "New York, NY",
+  "profileUrl": "https://www.bbb.org/us/ny/new-york/profile/debt-relief-services/delancey-street-llc-0121-87176359",
+  "takeaway": "Checked September 14, 2026: Not Rated and not accredited. BBB lists a February 2023 business start and says it lacks enough information to rate the business.",
+  "quotes": []
+},
   {
     slug: "rise-alliance",
     name: "Rise Alliance",

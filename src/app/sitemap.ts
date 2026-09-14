@@ -9,12 +9,12 @@ const SITE = "https://www.mcasettlementreviews.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
-    { url: `${SITE}/`, lastModified: "2026-09-12", priority: 1 },
+    { url: `${SITE}/`, lastModified: "2026-09-14", priority: 1 },
     // /best-mca-settlement-companies-2026 canonicals to the homepage and is
     // intentionally excluded here to avoid a mixed indexing signal.
     {
       url: `${SITE}/mca-settlement-companies-bbb-ratings`,
-      lastModified: "2026-09-12",
+      lastModified: "2026-09-14",
       priority: 0.9,
     },
     {
@@ -53,6 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const guides: MetadataRoute.Sitemap = GUIDES.map((g) => ({
     url: `${SITE}/guides/${g.slug}`,
+    lastModified: g.updatedAt,
     priority: 0.7,
   }));
 
@@ -76,7 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...NEWS.map((n) => ({
       url: `${SITE}/news/${n.slug}`,
-      lastModified: new Date(n.publishedAt),
+      lastModified: new Date(n.updatedAt || n.publishedAt),
       priority: 0.75,
     })),
   ];

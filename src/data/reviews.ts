@@ -138,6 +138,7 @@ sources: [
   {
     updatedAt: "2026-09-11",
     slug: "second-wind-consultants",
+    ratingNote: "The existing editorial score is under evidence review. Its category assessments have not been independently substantiated; it is not a measured success rate or a fresh endorsement.",
     name: "Second Wind Consultants",
     shortName: "Second Wind",
     oneLineVerdict:
@@ -350,160 +351,123 @@ sources: [
 ],
 },
   {
-    updatedAt: "2026-09-11",
-    slug: "regroup-partners",
-    name: "Regroup Partners",
-    shortName: "Regroup",
-    oneLineVerdict:
-      "Consolidation and restructuring firm with no upfront fees and several positive long-term client outcomes. A trust-account complaint flags the need to verify fee handling in writing.",
-    founded: "2010s",
-    hq: "United States",
-    minDebt: "Varies",
-    specialties: "MCA restructuring, settlement, consolidation, reverse consolidation",
-    bbb: "Limited public BBB profile",
-    trustpilot: "Mixed (small sample on independent platforms)",
-    websiteLabel: "regrouppartners.com",
-    firmWebsite: "https://regrouppartners.com",
-    recommendedFor:
-      "Owners with multiple MCAs who want a no-upfront-fee restructuring or consolidation product and can document fee handling carefully.",
-    bestFor: [
-      "Multi-position MCA consolidation candidates",
-      "Owners who want a no-upfront-fee structure",
-      "Salons, hospitality, professional services",
-    ],
-    notIdealFor: [
-      "Active litigation cases needing in-house attorneys",
-      "Owners who cannot independently verify trust-account handling",
-    ],
-    ratings: {
-      transparency: 3.5,
-      results: 4,
-      communication: 4,
-      cost: 4.5,
-      litigation: 3,
-    },
-    pros: [
-      "No upfront fees model",
-      "Multiple positive long-term client outcomes (one client reported 39% debt reduction; another worked with them 19 months)",
-      "Range of products: restructuring, settlement, consolidation, reverse consolidation",
-    ],
-    cons: [
-      "Complaint on record alleging $12,000 in trust-account funds being mishandled",
-      "Limited litigation defense capability compared to attorney-led firms",
-      "Lower volume of independent third-party reviews than top-ranked firms",
-    ],
-    verdict:
-      "Regroup Partners has done legitimate restructuring work for small businesses, with at least one publicly documented client engagement of 19 months that produced material savings. The trust-account complaint is the flag: insist on written documentation of any funds held and verify directly with creditors that scheduled payments are being made. For owners who can self-police those steps, Regroup is a credible mid-tier choice.",
-    pricing:
-      "No upfront fees per public materials. Owners should request a written fee schedule and an explanation of how any funds placed in trust are held and disbursed.",
-    process:
-      "Free initial review, expense and obligation analysis, restructuring proposal, implementation. Some engagements include trust-account funds for staged creditor payments.",
-    publicQuotes: [
-      {
-        quote:
-          "After Regroup reviewed our expenses and financial obligations they negotiated with vendors and combined everything into one simple loan, saving 39% of our debt obligations.",
-        source: "Public client review (Revdex)",
-        rating: 5,
-        attribution: "Independent review aggregator",
-      },
-      {
-        quote:
-          "We worked with them for 19 months. They restructured our business debt and saved us considerable money. Transparency, honesty, and unwavering support throughout.",
-        source: "Public client review (Revdex)",
-        rating: 5,
-        attribution: "Hair salon franchise owner, public review",
-      },
-      {
-        quote:
-          "My money was supposedly placed in a trust account, but when I asked for information and paperwork I was passed around to different people. They took $12,000 and I found the company dishonest.",
-        source: "Public Complaint",
-        rating: 1,
-        attribution: "Independent review aggregator",
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "Trust-account handling complaint with significant claimed losses ($12K). Worth verifying fund handling in writing if engaging.",
-        source: "Public review aggregator (Revdex)",
-      },
-    ],
+  "updatedAt": "2026-09-14",
+  "slug": "regroup-partners",
+  "name": "Regroup Partners",
+  "shortName": "Regroup",
+  "oneLineVerdict": "Regroup advertises business restructuring and creditor coordination. BBB lists an A+ grade without accreditation. Request a written proposal and an explanation of how client funds are handled.",
+  "founded": "2019 (BBB record)",
+  "hq": "Boca Raton, Florida",
+  "minDebt": "Not verified; request written eligibility criteria",
+  "specialties": "Company-advertised business restructuring, creditor coordination and MCA advisory",
+  "bbb": "A+; not accredited (checked September 14, 2026)",
+  "trustpilot": "Current platform aggregate not verified in this audit",
+  "websiteLabel": "regrouppartners.com",
+  "firmWebsite": "https://regrouppartners.com",
+  "recommendedFor": "Owners comparing the documented service scope, costs and public records before choosing a provider.",
+  "bestFor": [
+    "Comparing a written proposal for the services described below"
+  ],
+  "notIdealFor": [
+    "Anyone relying on guaranteed savings, timing or unverified legal representation"
+  ],
+  "ratings": {
+    "transparency": 3.5,
+    "results": 4,
+    "communication": 4,
+    "cost": 4.5,
+    "litigation": 3
   },
+  "pros": [
+    "Public service descriptions",
+    "Matching BBB profile"
+  ],
+  "cons": [
+    "No complete engagement pricing verified",
+    "Company experience claims are distinct from the BBB business-start date"
+  ],
+  "verdict": "The company offers advisory services; its experience claims and selected testimonials do not establish typical results. BBB lists a 2019 business start. We removed unlinked quotations and unsupported savings and trust-account allegations from the previous review.",
+  "pricing": "A complete fee schedule was not established by the homepage reviewed. The previous no-upfront-fee assertion is not verified. Request total charges, cancellation terms and any arrangements for holding client funds.",
+  "process": "The company describes an initial discussion of business obligations and restructuring options. Obtain written deliverables, creditor-contact milestones and reporting commitments.",
+  "publicQuotes": [],
+  "concerns": [],
+  "sourcesCheckedAt": "September 14, 2026",
+  "proofPoints": [],
+  "ratingNote": "Regroup Partners: the existing editorial score is under evidence review. Its category assessments have not been independently substantiated. It is not a measured success rate or a fresh endorsement.",
+  "sources": [
+    {
+      "label": "Company website and service descriptions",
+      "url": "https://regrouppartners.com",
+      "note": "Company descriptions of restructuring, cash-flow advisory and creditor coordination. Experience and testimonial claims are promotional, not audited results."
+    },
+    {
+      "label": "BBB business profile",
+      "url": "https://www.bbb.org/us/fl/boca-raton/profile/debt-relief-services/regroup-partners-co-0633-90540825",
+      "note": "A+; not accredited. Checked September 14, 2026. Accreditation and grades are distinct from customer-review averages and are not guarantees of outcomes."
+    }
+  ]
+},
   {
-    updatedAt: "2026-09-11",
-    slug: "corporate-rescue",
-    name: "Corporate Rescue Advisors",
-    shortName: "Corporate Rescue Advisors",
-    oneLineVerdict:
-      "Software-driven restructuring playbook with positive individual reviews from a small sample size, but a serious fraud allegation in public reviews requires careful diligence before engaging.",
-    founded: "2017",
-    hq: "United States (national service)",
-    minDebt: "$20,000+",
-    specialties: "MCA restructuring, payment reduction, term extension",
-    bbb: "Accredited",
-    trustpilot: "4.0 across 4 reviews (very small sample)",
-    websiteLabel: "corporaterescue.com",
-    firmWebsite: "https://www.corporaterescue.com",
-    recommendedFor:
-      "Owners with smaller MCA debt who can independently verify creditor contact and fee disbursement after signing.",
-    bestFor: [
-      "Smaller MCA stacks ($20K to $200K)",
-      "Owners who want a productized intake and clear playbook",
-    ],
-    notIdealFor: [
-      "Active lawsuits or aggressive funder litigation",
-      "Owners who cannot personally verify creditor contact mid-engagement",
-    ],
-    ratings: {
-      transparency: 3.5,
-      results: 3.5,
-      communication: 4,
-      cost: 3.5,
-      litigation: 3,
-    },
-    pros: [
-      "Productized restructuring approach is easy to understand",
-      "Public materials describe the process clearly",
-      "Individual positive reviews note professional handling and clear explanation",
-    ],
-    cons: [
-      "Trustpilot review base is only 4 reviews — sample too small for confident pattern reading",
-      "Public review alleges suspected fraud with $18K+ in withdrawals across multiple accounts and undelivered creditor contact",
-      "Less depth in litigation defense than attorney-led competitors",
-    ],
-    verdict:
-      "Corporate Rescue Advisors has individually positive reviews and a clean-looking productized model. The concern is that the publicly available review sample is very small (4 Trustpilot reviews), and one of those reviews alleges material fraud. Owners who proceed should document every fee, verify creditor contact independently within the first 30 days, and refuse instructions to stop paying creditors without written confirmation that negotiation has begun.",
-    pricing:
-      "Fees vary by total debt restructured. Public marketing claims payment reductions of up to 60% but should be validated against signed agreement language.",
-    process:
-      "Free initial review, debt analysis, restructuring proposal, implementation, ongoing support.",
-    publicQuotes: [
-      {
-        quote:
-          "Frank Venezio was very professional. He explained to me all the details and made me feel very safe.",
-        source: "Trustpilot",
-        rating: 5,
-        attribution: "Trustpilot review (one of only 4)",
-      },
-      {
-        quote:
-          "Suspected fraud. The company withdrew over $18,000 from multiple accounts including recurring withdrawals exceeding $1,400 per week. The company did not perform the services promised and never contacted any lenders or creditors. They instructed us to stop paying creditors which caused our accounts to become delinquent.",
-        source: "Trustpilot",
-        rating: 1,
-        attribution: "Trustpilot review (one of only 4)",
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "A specific allegation of $18,000+ in withdrawals across multiple accounts with no creditor contact made, plus instructions to stop paying creditors. Verify in writing before any engagement.",
-        source: "Trustpilot review of Corporate Rescue Advisors",
-      },
-    ],
+  "updatedAt": "2026-09-14",
+  "slug": "corporate-rescue",
+  "name": "Corporate Rescue Advisors",
+  "shortName": "Corporate Rescue Advisors",
+  "oneLineVerdict": "Corporate Rescue Advisors advertises an MCA restructuring program. Its BBB profile is Not Rated and not accredited. Clarify when negotiations begin and what fees are collected beforehand.",
+  "founded": "2025 (BBB record)",
+  "hq": "Boca Raton, Florida",
+  "minDebt": "Not verified; request written eligibility criteria",
+  "specialties": "Company-advertised MCA restructuring and attorney-related services",
+  "bbb": "Not Rated; not accredited (checked September 14, 2026)",
+  "trustpilot": "Current platform aggregate not verified in this audit",
+  "websiteLabel": "corporaterescue.com",
+  "firmWebsite": "https://www.corporaterescue.com",
+  "recommendedFor": "Owners comparing the documented service scope, costs and public records before choosing a provider.",
+  "bestFor": [
+    "Comparing a written proposal for the services described below"
+  ],
+  "notIdealFor": [
+    "Anyone relying on guaranteed savings, timing or unverified legal representation"
+  ],
+  "ratings": {
+    "transparency": 3.5,
+    "results": 3.5,
+    "communication": 4,
+    "cost": 3.5,
+    "litigation": 3
   },
+  "pros": [
+    "Public description of its program",
+    "Matching BBB profile"
+  ],
+  "cons": [
+    "Not Rated and not BBB accredited",
+    "Negotiation timing needs a precise contractual explanation"
+  ],
+  "verdict": "BBB lists a May 2025 business start and says previously closed complaints are being addressed. This corrects our older accreditation and founding claims. The prior fraud quotations were not adequately linked and have been removed; no finding of fraud is established here.",
+  "pricing": "No complete fee schedule was established by the reviewed homepage. Ask for all enrollment, recurring, legal and cancellation charges before paying.",
+  "process": "The homepage says negotiations may begin around 60% of the way through its program. Ask what that milestone measures, what happens before it and how creditor actions are handled. Do not interpret the marketing as a guaranteed outcome.",
+  "publicQuotes": [],
+  "concerns": [],
+  "sourcesCheckedAt": "September 14, 2026",
+  "proofPoints": [],
+  "ratingNote": "Corporate Rescue Advisors: the existing editorial score is under evidence review. Its category assessments have not been independently substantiated. It is not a measured success rate or a fresh endorsement.",
+  "sources": [
+    {
+      "label": "Company website and service descriptions",
+      "url": "https://www.corporaterescue.com",
+      "note": "Homepage describes an MCA program and says negotiations may begin around the 60% point. This is a company statement, not evidence of actual case timing."
+    },
+    {
+      "label": "BBB business profile",
+      "url": "https://www.bbb.org/us/fl/boca-raton/profile/financial-consultants/corporate-rescue-advisors-llc-0633-92053458",
+      "note": "Not Rated; not accredited. Checked September 14, 2026. BBB says previously closed complaints are being addressed."
+    }
+  ]
+},
   {
     updatedAt: "2026-09-11",
     slug: "eastern-financial-partners",
+    ratingNote: "The existing editorial score is under evidence review. Its category assessments have not been independently substantiated; it is not a measured success rate or a fresh endorsement.",
     name: "Eastern Financial Partners",
     shortName: "Eastern Financial",
     oneLineVerdict:
@@ -635,352 +599,304 @@ sources: [
   "ratingNote": "Business Debt Law Group: existing editorial score is under evidence review. The formula is reproducible, but the category scores have not been independently substantiated. This is not a measured success rate or a fresh endorsement."
 },
   {
-    updatedAt: "2026-09-11",
-    slug: "business-debt-adjusters",
-    name: "Business Debt Adjusters",
-    shortName: "Business Debt Adjusters",
-    oneLineVerdict:
-      "Long-tenured New Jersey firm with an A- rating on its BBB profile and some documented payment-reduction wins, but it is not BBB accredited and draws complaints about high-frequency phone contact and at least one lien dispute. Set written expectations on fees and contact before signing.",
-    founded: "2016",
-    hq: "Englewood Cliffs, New Jersey",
-    minDebt: "Varies",
-    specialties: "Business debt settlement, MCA and creditor negotiation",
-    bbb: "A- rating, not BBB accredited; one unanswered complaint on record",
-    trustpilot: "4.9 across 190 Trustpilot reviews",
-    websiteLabel: "businessdebtadjusters.com",
-    firmWebsite: "https://www.businessdebtadjusters.com",
-    recommendedFor:
-      "Owners who want an established firm and are prepared to set written expectations on contact frequency and fee handling before they sign.",
-    bestFor: [
-      "Owners who value a longer operating history (since 2016)",
-      "Multi-creditor business debt beyond a single MCA",
-    ],
-    notIdealFor: [
-      "Owners sensitive to high-frequency phone outreach",
-      "Owners who treat BBB accreditation as a baseline requirement",
-      "Owners who need every fee guaranteed in writing before any contact",
-    ],
-    ratings: {
-      transparency: 3,
-      results: 3.5,
-      communication: 3,
-      cost: 3.5,
-      litigation: 3.5,
-    },
-    pros: [
-      "A- rating on its BBB business profile",
-      "Nearly a decade in business (since 2016)",
-      "Public reviews include real payment-reduction outcomes",
-    ],
-    cons: [
-      "Not BBB accredited despite the A- rating",
-      "Complaints describe high-frequency phone outreach (multiple calls per day)",
-      "At least one complaint alleges a lien was placed after assurances to the contrary",
-      "Mixed employee reviews raise questions about sales practices",
-    ],
-    verdict:
-      "Business Debt Adjusters has a longer track record than most firms in this space and its BBB profile carries an A- rating, and some clients report genuine payment reductions. The offsetting concerns are that the firm is not BBB accredited, complaints describe aggressive daily phone contact, and at least one owner alleged a lien was placed after being told it would not be. Owners who engage should get a written fee schedule, a written outcome definition, and clear limits on contact frequency before signing.",
-    pricing:
-      "Fee structure varies by case and is not published. Request a written fee schedule and a written description of the expected outcome before signing.",
-    process:
-      "Phone-led intake and consultation, engagement agreement, then creditor negotiation on the client's behalf.",
-    publicQuotes: [
-      {
-        quote:
-          "A consultant reduced our payments by roughly half and gave us the breathing room that kept the business out of bankruptcy.",
-        source: "Trustpilot",
-        rating: 5,
-        attribution: "Trustpilot review (representative positive)",
-      },
-      {
-        quote:
-          "We were assured the lender would work with us, then a lien was placed on the business anyway.",
-        source: "BBB Complaint",
-        rating: 1,
-        attribution: "BBB business profile complaint record",
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "BBB complaints describe repeated daily phone contact and, in at least one case, a lien placed on the client's business after assurances it would not happen.",
-        source: "BBB business profile, Business Debt Adjusters, Englewood Cliffs NJ",
-      },
-    ],
+  "updatedAt": "2026-09-14",
+  "slug": "business-debt-adjusters",
+  "name": "Business Debt Adjusters",
+  "shortName": "Business Debt Adjusters",
+  "oneLineVerdict": "Business Debt Adjusters offers debt negotiation and payment restructuring. BBB lists A- and no accreditation, citing an unanswered complaint. Compare written costs and creditor commitments.",
+  "founded": "2016 (BBB record)",
+  "hq": "Englewood Cliffs, New Jersey",
+  "minDebt": "Not verified; request written eligibility criteria",
+  "specialties": "Company-advertised business debt negotiation and payment restructuring",
+  "bbb": "A-; not accredited (checked September 14, 2026)",
+  "trustpilot": "Current platform aggregate not verified in this audit",
+  "websiteLabel": "businessdebtadjusters.com",
+  "firmWebsite": "https://www.businessdebtadjusters.com",
+  "recommendedFor": "Owners comparing the documented service scope, costs and public records before choosing a provider.",
+  "bestFor": [
+    "Comparing a written proposal for the services described below"
+  ],
+  "notIdealFor": [
+    "Anyone relying on guaranteed savings, timing or unverified legal representation"
+  ],
+  "ratings": {
+    "transparency": 3,
+    "results": 3.5,
+    "communication": 3,
+    "cost": 3.5,
+    "litigation": 3.5
   },
+  "pros": [
+    "Public explanation of consultation and underwriting",
+    "Matching BBB operating record"
+  ],
+  "cons": [
+    "Full program pricing not verified",
+    "BBB cites failure to answer one complaint"
+  ],
+  "verdict": "The company describes potential payment relief, with results dependent on creditor agreement. BBB provides an operating record, not proof of typical savings. Unsupported quotations, lien allegations and employee-review conclusions have been removed from this review.",
+  "pricing": "The homepage advertises a free consultation but does not establish the full program cost. Request an itemized agreement, payment allocation and cancellation terms.",
+  "process": "The provider describes consultation, underwriting and creditor negotiation. Ask for the contact schedule and documentation of each creditor agreement.",
+  "publicQuotes": [],
+  "concerns": [],
+  "sourcesCheckedAt": "September 14, 2026",
+  "proofPoints": [],
+  "ratingNote": "Business Debt Adjusters: the existing editorial score is under evidence review. Its category assessments have not been independently substantiated. It is not a measured success rate or a fresh endorsement.",
+  "sources": [
+    {
+      "label": "Company website and service descriptions",
+      "url": "https://www.businessdebtadjusters.com",
+      "note": "Homepage describes a free consultation, underwriting and negotiation, with variable results. Selected customer stories do not establish typical outcomes."
+    },
+    {
+      "label": "BBB business profile",
+      "url": "https://www.bbb.org/us/nj/englewd-clfs/profile/debt-relief-services/business-debt-adjusters-0221-90179879",
+      "note": "A-; not accredited. Checked September 14, 2026. Accreditation and grades are distinct from customer-review averages and are not guarantees of outcomes."
+    }
+  ]
+},
   {
-    updatedAt: "2026-09-11",
-    slug: "stop-mca",
-    name: "Stop MCA",
-    shortName: "Stop MCA",
-    oneLineVerdict:
-      "Settlement firm with aggressive marketing presence and intermittent outcomes per public commentary. Approach with diligence on fee structure and creditor-contact verification.",
-    founded: "Recent entrant",
-    hq: "United States",
-    minDebt: "Varies",
-    specialties: "MCA settlement, payment reduction marketing",
-    bbb: "Limited footprint",
-    trustpilot: "Mixed and limited",
-    websiteLabel: "stopmca.com",
-    firmWebsite: "https://stopmca.com",
-    recommendedFor:
-      "Owners who have already done their own diligence and are simply price-shopping after they understand the deal structure.",
-    bestFor: [
-      "Owners with high diligence willingness",
-      "Single-MCA cases",
-    ],
-    notIdealFor: [
-      "First-time settlement seekers who need clear disclosures up front",
-      "Owners with no time to validate marketing claims",
-    ],
-    ratings: {
-      transparency: 3,
-      results: 3.5,
-      communication: 3,
-      cost: 3.5,
-      litigation: 3,
-    },
-    pros: [
-      "Easy to find via paid search and social",
-      "Quick intake process",
-    ],
-    cons: [
-      "Marketing claims about percentage reductions are not always tied to a written guarantee",
-      "Fee structure is harder to nail down than top-ranked firms",
-      "Limited public review base for outcome validation",
-    ],
-    verdict:
-      "Marketing-led firms in any consumer category tend to underdeliver against pitch. Owners who go this route should insist on a written fee schedule, a written description of what success looks like, and a named case manager before signing anything.",
-    pricing:
-      "Owners report fee structures that vary case to case. Get the fee schedule in writing before signing.",
-    process:
-      "Inbound funnel from paid marketing, sales call, signed agreement, settlement attempt.",
-    concerns: [
-      {
-        quote:
-          "Marketing-driven firms in adjacent debt-relief categories have historically attracted regulatory and AG attention when fee disclosures are weak.",
-        source: "Industry pattern, prior FTC and state AG actions in adjacent categories",
-      },
-    ],
+  "updatedAt": "2026-09-14",
+  "slug": "stop-mca",
+  "name": "Stop MCA",
+  "shortName": "Stop MCA",
+  "oneLineVerdict": "Stop MCA advertises MCA negotiation and identifies Business Debt Adjusters in its privacy policy. Treat the brands as related when comparing proposals; confirm the entity on the contract.",
+  "founded": "2016 (Business Debt Adjusters record) (BBB record)",
+  "hq": "Englewood Cliffs, New Jersey (operator record)",
+  "minDebt": "Not verified; request written eligibility criteria",
+  "specialties": "Company-advertised MCA negotiation; not a law firm",
+  "bbb": "Operating entity Business Debt Adjusters: A-; not accredited (checked September 14, 2026)",
+  "trustpilot": "Current platform aggregate not verified in this audit",
+  "websiteLabel": "stopmca.com",
+  "firmWebsite": "https://stopmca.com",
+  "recommendedFor": "Owners comparing the documented service scope, costs and public records before choosing a provider.",
+  "bestFor": [
+    "Comparing a written proposal for the services described below"
+  ],
+  "notIdealFor": [
+    "Anyone relying on guaranteed savings, timing or unverified legal representation"
+  ],
+  "ratings": {
+    "transparency": 3,
+    "results": 3.5,
+    "communication": 3,
+    "cost": 3.5,
+    "litigation": 3
   },
+  "pros": [
+    "FAQ distinguishes the service from a law firm",
+    "Privacy policy identifies an operating entity"
+  ],
+  "cons": [
+    "Enrollment and service fees require a written quote",
+    "Operator BBB record must not be presented as separate brand accreditation"
+  ],
+  "verdict": "Stop MCA states it is not a law firm and uses an attorney network when needed. Its privacy policy names Business Debt Adjusters. The BBB record below concerns that operator, not a separately accredited Stop MCA business.",
+  "pricing": "The FAQ describes an enrollment fee plus a service fee related to savings. No dollar amount or percentage is specified there. Verify refund eligibility and all legal charges in the engagement.",
+  "process": "The FAQ gives a company-estimated range of 2–25 months. That is not a verified completion forecast. Confirm the work schedule and creditor-contact process for the proposed case.",
+  "concerns": [],
+  "sourcesCheckedAt": "September 14, 2026",
+  "publicQuotes": [],
+  "proofPoints": [],
+  "ratingNote": "Stop MCA: the existing editorial score is under evidence review. Its category assessments have not been independently substantiated. It is not a measured success rate or a fresh endorsement.",
+  "sources": [
+    {
+      "label": "Company website and service descriptions",
+      "url": "https://stopmca.com",
+      "note": "FAQ discloses an enrollment fee, savings-related service fee, 2–25 month estimate and that Stop MCA is not a law firm."
+    },
+    {
+      "label": "BBB business profile",
+      "url": "https://www.bbb.org/us/nj/englewd-clfs/profile/debt-relief-services/business-debt-adjusters-0221-90179879",
+      "note": "Operating entity Business Debt Adjusters: A-; not accredited. Checked September 14, 2026. This record concerns Business Debt Adjusters, the entity named in Stop MCA’s privacy policy."
+    },
+    {
+      "label": "Stop MCA privacy policy",
+      "url": "https://stopmca.com/privacy-policy",
+      "note": "Identifies Business Debt Adjusters, LLC. This supports disclosing the brand relationship, not assuming identical contracts."
+    }
+  ]
+},
   {
-    updatedAt: "2026-09-11",
-    slug: "mca-debt-advisors",
-    name: "MCA Debt Advisors",
-    shortName: "MCA Debt Advisors",
-    oneLineVerdict:
-      "Pennsylvania firm carrying an F rating on its BBB profile with 26 complaints on file (seven left unanswered) and public reviews alleging large fees for little delivered work. High-caution; verify every fee and creditor contact independently.",
-    founded: "2020",
-    hq: "Erie, Pennsylvania",
-    minDebt: "Varies",
-    specialties: "MCA debt settlement, creditor negotiation",
-    bbb: "F rating, not accredited; 26 complaints on file, 7 unanswered",
-    trustpilot: "Mixed; roughly 120 reviews on Reviews.io with recurring fee and delivery complaints",
-    websiteLabel: "mcadebtadvisors.com",
-    firmWebsite: "https://www.mcadebtadvisors.com",
-    warning:
-      "We include this firm for completeness and brand-defense. Its BBB business profile carries an F rating with 26 complaints on file, seven of them left unanswered, alleging large fees for little delivered work. Owners considering this firm should read the BBB complaint record in full before any engagement.",
-    recommendedFor:
-      "We do not currently recommend MCA Debt Advisors based on the BBB rating and complaint pattern.",
-    bestFor: [],
-    notIdealFor: [
-      "Owners who need clear, written fee disclosures up front",
-      "Owners who cannot absorb fees paid with no guaranteed outcome",
-      "First-time settlement seekers",
-    ],
-    ratings: {
-      transparency: 2,
-      results: 2.5,
-      communication: 2,
-      cost: 2.5,
-      litigation: 2.5,
-    },
-    pros: [
-      "Has an established web presence and intake process",
-      "Some positive outcome reviews exist among the roughly 120 on Reviews.io",
-    ],
-    cons: [
-      "F rating on its BBB business profile",
-      "23 BBB complaints on file, seven left unanswered by the business",
-      "Complaints allege large fees (reports of tens of thousands) for little delivered work",
-      "Reports of poor communication and unreturned emails during engagements",
-    ],
-    verdict:
-      "We do not recommend MCA Debt Advisors at this time. The firm carries an F rating on its BBB profile with 26 complaints, seven unanswered, and the recurring theme is large fees collected for limited or no delivered work. We document the pattern here so owners searching for MCA Debt Advisors find it before they sign rather than after. Anyone who still proceeds should get a written fee schedule, a written outcome definition, and should verify creditor contact independently at every step.",
-    pricing:
-      "Fees are not published and complaints describe large sums collected, sometimes as ACH drafts with a short two-day dispute window. Get a written fee schedule and outcome definition before signing.",
-    process:
-      "Intake and consultation, engagement agreement with ACH-drafted fees, then negotiation attempts. Some complaints note the short two-day ACH dispute window.",
-    publicQuotes: [
-      {
-        quote:
-          "They took tens of thousands in fees over months and could not point to a single settled account or documented creditor contact.",
-        source: "BBB Complaint",
-        rating: 1,
-        attribution: "BBB business profile complaint record",
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "The BBB business profile carries an F rating with 26 complaints, seven unanswered, describing large fees collected for limited or no delivered results.",
-        source: "BBB business profile, MCA Debt Advisors LLC, Erie PA",
-      },
-    ],
+  "updatedAt": "2026-09-14",
+  "slug": "mca-debt-advisors",
+  "name": "MCA Debt Advisors",
+  "shortName": "MCA Debt Advisors",
+  "oneLineVerdict": "MCA Debt Advisors advertises payment restructuring. BBB lists an F grade and seven unanswered complaints. Review the public record and written engagement carefully before deciding.",
+  "founded": "2020 (BBB record)",
+  "hq": "Erie, Pennsylvania",
+  "minDebt": "Not verified; request written eligibility criteria",
+  "specialties": "Company-advertised MCA and business debt payment restructuring",
+  "bbb": "F; not accredited (checked September 14, 2026)",
+  "trustpilot": "Current platform aggregate not verified in this audit",
+  "websiteLabel": "mcadebtadvisors.com",
+  "firmWebsite": "https://www.mcadebtadvisors.com",
+  "recommendedFor": "Owners comparing the documented service scope, costs and public records before choosing a provider.",
+  "bestFor": [
+    "Comparing a written proposal for the services described below"
+  ],
+  "notIdealFor": [
+    "Anyone relying on guaranteed savings, timing or unverified legal representation"
+  ],
+  "ratings": {
+    "transparency": 2,
+    "results": 2.5,
+    "communication": 2,
+    "cost": 2.5,
+    "litigation": 2.5
   },
+  "pros": [
+    "Identifiable company contact details",
+    "Public BBB record"
+  ],
+  "cons": [
+    "BBB F grade with seven unanswered complaints",
+    "Full fees and typical results not verified"
+  ],
+  "verdict": "The BBB grade and unanswered complaints warrant attention. They do not independently establish every customer allegation. We removed unsourced quotations and the previous generic account of fee collection; company testimonials are not independently verified outcomes.",
+  "pricing": "The homepage offers a free consultation but does not establish a complete fee schedule. Ask how payments are split between fees and creditors and what is refundable.",
+  "process": "The company describes reviewing obligations, contacting creditors and proposing a revised payment structure. No standard completion time or successful-result rate was verified.",
+  "publicQuotes": [],
+  "concerns": [],
+  "sourcesCheckedAt": "September 14, 2026",
+  "proofPoints": [],
+  "ratingNote": "MCA Debt Advisors: the existing editorial score is under evidence review. Its category assessments have not been independently substantiated. It is not a measured success rate or a fresh endorsement.",
+  "sources": [
+    {
+      "label": "Company website and service descriptions",
+      "url": "https://www.mcadebtadvisors.com",
+      "note": "Company describes creditor contact and revised payment structures. Its displayed testimonial aggregate was not independently checked against a review platform."
+    },
+    {
+      "label": "BBB business profile",
+      "url": "https://www.bbb.org/us/pa/erie/profile/debt-relief-services/mca-debt-advisors-llc-0141-71077651",
+      "note": "F; not accredited. Checked September 14, 2026. Rating reasons cite 25 complaints and seven unanswered; counts can change and are not a failure rate."
+    }
+  ]
+},
   {
-    updatedAt: "2026-09-11",
-    slug: "mca-resolve",
-    name: "MCA Resolve",
-    shortName: "MCA Resolve",
-    oneLineVerdict:
-      "Significant pattern of negative public reviews and BBB complaints alleging undelivered services, fees taken without creditor contact, and instructions that put clients in default. We do not recommend.",
-    founded: "Recent entrant",
-    hq: "Delray Beach, Florida",
-    minDebt: "Varies",
-    specialties: "MCA debt settlement, restructuring",
-    bbb: "23 BBB complaints on record at time of review",
-    trustpilot: "2.7 across 86 Trustpilot reviews",
-    websiteLabel: "mcaresolve.com",
-    firmWebsite: "https://mcaresolve.com",
-    warning:
-      "We include this firm for completeness and brand-defense. Multiple public reviews and 23 BBB complaints describe undelivered services and fees taken without creditor contact. Owners considering this firm should research the BBB complaint record carefully before any engagement.",
-    recommendedFor:
-      "We do not currently recommend MCA Resolve based on the pattern of public complaints.",
-    bestFor: [],
-    notIdealFor: [
-      "All owners until the public complaint pattern resolves",
-    ],
-    ratings: {
-      transparency: 2,
-      results: 2,
-      communication: 2.5,
-      cost: 3,
-      litigation: 2,
-    },
-    pros: [
-      "Has a public-facing presence and intake process",
-    ],
-    cons: [
-      "23 BBB complaints on record at time of review",
-      "Multiple reviews allege fees taken with no creditor contact made",
-      "Reports of being instructed to stop paying creditors, leading to default and lost fees",
-      "Recurring use of words like 'scam' in public reviews",
-    ],
-    verdict:
-      "We do not recommend MCA Resolve at this time. The pattern across 23 BBB complaints and Trustpilot reviews is consistent: clients report being told their debt would go into default to use the service, paying substantial fees, and then discovering the firm never contacted creditors. We include this review on the site so that owners searching for MCA Resolve can find the public complaint pattern documented in one place rather than discover it after signing.",
-    pricing:
-      "Public complaints describe fees taken in full with no creditor contact subsequently made. Verify any fee handling and creditor contact independently before any engagement.",
-    process:
-      "Per public complaints, the typical pattern is: intake, instruction to stop paying creditors, fees collected, no creditor contact verified, contract canceled if a payment is missed.",
-    publicQuotes: [
-      {
-        quote:
-          "I was told my debt would go into default to use this service and that they would contact creditors. When I contacted creditors directly they said they had no business dealings with MCA Resolve.",
-        source: "BBB Complaint",
-        rating: 1,
-        attribution: "BBB business profile complaint record",
-      },
-      {
-        quote:
-          "I paid substantial amounts taken entirely as fees with no creditors contacted. With all the lies that MCA Resolve stated about their services they took thousands of dollars for complete lies.",
-        source: "BBB Complaint",
-        rating: 1,
-        attribution: "BBB business profile complaint record",
-      },
-      {
-        quote:
-          "I was canceled after one missed payment, lost thousands in fees while still owing all my original debt, with no proof the company contacted creditors.",
-        source: "Public review",
-        rating: 1,
-        attribution: "Public review platform",
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "23 BBB complaints on record describing a consistent pattern: instruction to default, fees collected, no creditor contact, contract canceled on first missed payment.",
-        source: "BBB business profile, MCA Resolve LLC, Delray Beach FL",
-      },
-    ],
+  "updatedAt": "2026-09-14",
+  "slug": "mca-resolve",
+  "name": "MCA Resolve",
+  "shortName": "MCA Resolve",
+  "oneLineVerdict": "MCA Resolve’s website redirects to DebtResolvePro. BBB retains a separate MCA Resolve LLC profile with a B grade and no accreditation. Confirm the contracting entity before treating the brands as interchangeable.",
+  "founded": "2019 (BBB record)",
+  "hq": "Delray Beach, Florida (BBB record)",
+  "minDebt": "Not verified; request written eligibility criteria",
+  "specialties": "Historical MCA Resolve listing; current destination advertises business debt negotiation",
+  "bbb": "B; not accredited (checked September 14, 2026)",
+  "trustpilot": "Current platform aggregate not verified in this audit",
+  "websiteLabel": "mcaresolve.com",
+  "firmWebsite": "https://mcaresolve.com",
+  "recommendedFor": "Owners comparing the documented service scope, costs and public records before choosing a provider.",
+  "bestFor": [
+    "Comparing a written proposal for the services described below"
+  ],
+  "notIdealFor": [
+    "Anyone relying on guaranteed savings, timing or unverified legal representation"
+  ],
+  "ratings": {
+    "transparency": 2,
+    "results": 2,
+    "communication": 2.5,
+    "cost": 3,
+    "litigation": 2
   },
+  "pros": [
+    "Historical BBB record remains available",
+    "Current website destination can be checked"
+  ],
+  "cons": [
+    "Brand and contracting-entity continuity not verified",
+    "BBB complaints require review in their original context"
+  ],
+  "verdict": "A website redirect is observable, but it does not prove legal succession or who is responsible for an existing contract. BBB cites complaints for MCA Resolve LLC. We removed unlinked quotations and claims that every engagement follows the same complaint pattern.",
+  "pricing": "The current destination did not establish a complete fee schedule in the homepage reviewed. Existing clients should consult their signed MCA Resolve agreement; new applicants should confirm the entity and all charges.",
+  "process": "The destination advertises a free assessment and MCA resolution services. Do not infer that its process, legal entity or terms match an older MCA Resolve contract.",
+  "publicQuotes": [],
+  "concerns": [],
+  "sourcesCheckedAt": "September 14, 2026",
+  "proofPoints": [],
+  "ratingNote": "MCA Resolve: the existing editorial score is under evidence review. Its category assessments have not been independently substantiated. It is not a measured success rate or a fresh endorsement.",
+  "sources": [
+    {
+      "label": "Company website and service descriptions",
+      "url": "https://mcaresolve.com",
+      "note": "Opening mcaresolve.com redirected to debtrespro.com on September 14, 2026. The destination markets MCA resolution; legal succession was not established."
+    },
+    {
+      "label": "BBB business profile",
+      "url": "https://www.bbb.org/us/fl/delray-beach/profile/debt-relief-services/mca-resolve-llc-0633-92028391",
+      "note": "B; not accredited. Checked September 14, 2026. Rating reasons cite 23 complaints for MCA Resolve LLC; this is not a record for every business using the destination brand."
+    },
+    {
+      "label": "Current website destination",
+      "url": "https://debtrespro.com/",
+      "note": "Markets services as DebtResolvePro. A domain redirect alone does not establish a transfer of contractual obligations."
+    }
+  ]
+},
   {
-    updatedAt: "2026-09-11",
-    slug: "national-credit-partners",
-    name: "National Credit Partners",
-    shortName: "National Credit Partners",
-    oneLineVerdict:
-      "One of the more established names in business debt relief (A+ BBB, accredited since 2018), focused on debt modification and restructuring more than attorney-led MCA settlement. Reviews are mostly positive with a few complaints about fee clarity.",
-    founded: "2018",
-    hq: "Costa Mesa, California",
-    minDebt: "Varies",
-    specialties: "Business debt modification, MCA restructuring, creditor negotiation",
-    bbb: "A+ rating, BBB accredited since 2018",
-    trustpilot: "3.8 across 8 Trustpilot reviews; thin base, with occasional fee-transparency complaints",
-    websiteLabel: "nationalcreditpartners.com",
-    firmWebsite: "https://nationalcreditpartners.com",
-    recommendedFor:
-      "Owners who want an established, BBB-accredited firm for broad business debt modification and are comfortable clarifying the fee math in writing before signing.",
-    bestFor: [
-      "Owners who value an A+ BBB, accredited firm",
-      "Broad business debt beyond a single MCA",
-      "Restructuring and modification rather than pure litigation",
-    ],
-    notIdealFor: [
-      "Owners who specifically need attorney-led COJ or lawsuit defense",
-      "Owners who want fees tied strictly to settlement savings",
-    ],
-    ratings: {
-      transparency: 4,
-      results: 4,
-      communication: 4,
-      cost: 3.5,
-      litigation: 3.5,
-    },
-    pros: [
-      "A+ BBB rating, accredited since 2018",
-      "Roughly eight years operating with an established track record",
-      "Mostly positive client reviews citing real creditor-payoff help",
-      "Broad business-debt modification capability",
-    ],
-    cons: [
-      "Positioned around debt modification and consulting rather than attorney-led MCA settlement",
-      "Some reviews cite hidden fees and disputed contract calculations",
-      "Not primarily a litigation or Confession-of-Judgment defense shop",
-    ],
-    verdict:
-      "National Credit Partners is one of the more established, credibly-rated firms in this space, with an A+ BBB profile and accreditation since 2018. Its model leans toward business debt modification and restructuring rather than the attorney-led settlement and litigation defense that hard MCA cases often require, and a minority of reviews flag fee clarity. Owners should get the full fee math and the scope (modification vs settlement vs litigation) in writing before signing. For pure MCA distress with lawsuit or COJ risk, an attorney-led firm is a closer fit.",
-    pricing:
-      "Fees are set per case and not published. Because a few reviews mention disputed calculations, request the complete fee schedule and a worked example in writing before signing.",
-    process:
-      "Consultation and debt analysis, a proposed modification and restructuring plan, then creditor negotiation and program management.",
-    publicQuotes: [
-      {
-        quote:
-          "They went beyond the call of duty to help pay our creditors off and were instrumental in helping save the company.",
-        source: "Trustpilot",
-        rating: 5,
-        attribution: "Trustpilot review",
-      },
-      {
-        quote:
-          "I ran into hidden fees and totally wrong calculations on the contracts.",
-        source: "Trustpilot",
-        rating: 2,
-        attribution: "Trustpilot negative review",
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "A minority of reviews allege hidden fees and incorrect contract calculations, though most feedback is positive.",
-        source: "Trustpilot reviews and BBB profile (Costa Mesa CA)",
-      },
-    ],
+  "updatedAt": "2026-09-14",
+  "slug": "national-credit-partners",
+  "name": "National Credit Partners",
+  "shortName": "National Credit Partners",
+  "oneLineVerdict": "National Credit Partners advertises business debt modification and restructuring. BBB lists A+ accreditation. Confirm fees, state availability and any legal services in the written proposal.",
+  "founded": "2018 (BBB record)",
+  "hq": "Costa Mesa, California",
+  "minDebt": "Not verified; request written eligibility criteria",
+  "specialties": "Company-advertised business debt modification and restructuring",
+  "bbb": "A+; accredited (checked September 14, 2026)",
+  "trustpilot": "Current platform aggregate not verified in this audit",
+  "websiteLabel": "nationalcreditpartners.com",
+  "firmWebsite": "https://nationalcreditpartners.com",
+  "recommendedFor": "Owners comparing the documented service scope, costs and public records before choosing a provider.",
+  "bestFor": [
+    "Comparing a written proposal for the services described below"
+  ],
+  "notIdealFor": [
+    "Anyone relying on guaranteed savings, timing or unverified legal representation"
+  ],
+  "ratings": {
+    "transparency": 4,
+    "results": 4,
+    "communication": 4,
+    "cost": 3.5,
+    "litigation": 3.5
   },
+  "pros": [
+    "Matching accredited BBB profile",
+    "Public fee and availability FAQ"
+  ],
+  "cons": [
+    "No full public fee schedule established",
+    "Litigation representation and typical outcomes not verified"
+  ],
+  "verdict": "BBB lists a 2018 business start and accreditation since November 2018. These identify the business but do not establish results. The homepage directs applicants to a consultation for fees; prior quotations and hidden-fee allegations lacked adequate citations and were removed.",
+  "pricing": "The fee FAQ directs customers to a free consultation rather than publishing a full schedule. Obtain total program costs, cancellation rules and any separate attorney costs.",
+  "process": "The provider markets case-specific debt modification and says availability can vary by state. Ask for the covered creditors, proposed changes and professional responsibilities.",
+  "publicQuotes": [],
+  "concerns": [],
+  "sourcesCheckedAt": "September 14, 2026",
+  "proofPoints": [],
+  "ratingNote": "National Credit Partners: the existing editorial score is under evidence review. Its category assessments have not been independently substantiated. It is not a measured success rate or a fresh endorsement.",
+  "sources": [
+    {
+      "label": "Company website and service descriptions",
+      "url": "https://nationalcreditpartners.com",
+      "note": "Homepage FAQ directs applicants to a consultation for pricing and says programs may vary by state. Marketing claims are not independently audited results."
+    },
+    {
+      "label": "BBB business profile",
+      "url": "https://www.bbb.org/us/ca/costa-mesa/profile/corporate/national-credit-partners-1126-1000056604",
+      "note": "A+; accredited. Checked September 14, 2026. Accreditation and grades are distinct from customer-review averages and are not guarantees of outcomes."
+    }
+  ]
+},
   {
     updatedAt: "2026-09-11",
     slug: "rise-alliance",
+    ratingNote: "The existing editorial score is under evidence review. Its category assessments have not been independently substantiated; it is not a measured success rate or a fresh endorsement.",
     name: "Rise Alliance",
     shortName: "Rise Alliance",
     oneLineVerdict:
@@ -1042,138 +958,124 @@ sources: [
 ],
 },
   {
-    updatedAt: "2026-09-11",
-    slug: "delancey-street",
-    name: "Delancey Street",
-    shortName: "Delancey Street",
-    oneLineVerdict:
-      "Attorney-network business debt firm (NYC) handling MCA, SBA, and stacked debt with performance-based fees, but with no BBB rating and a thin independent review base to verify outcomes.",
-    founded: "2018",
-    hq: "New York, New York",
-    minDebt: "Around $10,000 enrolled",
-    specialties: "MCA and business debt settlement, attorney network, stacked-debt restructuring",
-    bbb: "Not BBB accredited; BBB has insufficient information to issue a rating",
-    trustpilot: "3.9 across 26 Trustpilot reviews",
-    websiteLabel: "delanceystreet.com",
-    firmWebsite: "https://www.delanceystreet.com",
-    recommendedFor:
-      "Owners who want an attorney-network model with fees contingent on settlement and are comfortable with a firm that has a limited independent review footprint.",
-    bestFor: [
-      "Owners who want fees only after a settlement is reached",
-      "MCA plus SBA or other stacked business debt",
-      "Attorney-coordinated negotiation",
-    ],
-    notIdealFor: [
-      "Owners who want an established BBB rating to check",
-      "Owners who want a large independent review base before signing",
-    ],
-    ratings: {
-      transparency: 3.5,
-      results: 3.5,
-      communication: 4,
-      cost: 4,
-      litigation: 3.5,
-    },
-    pros: [
-      "Performance-based fees (15 to 20% of enrolled debt), nothing until a settlement is approved",
-      "Attorney-network model coordinating legal leverage",
-      "Public claim of $100M+ settled across 1,000+ cases since 2018",
-    ],
-    cons: [
-      "No BBB rating (insufficient information on file)",
-      "Thin independent review base (roughly 26 Trustpilot reviews) to verify claims",
-      "Fee is a percent of enrolled debt, not of savings, so model the total cost",
-    ],
-    verdict:
-      "Delancey Street runs an attorney-network model with performance-based fees, which is structurally sound, and it publishes strong volume claims ($100M+ across 1,000+ cases). The caution is verification: there is no BBB rating and only a small independent review base, so its results are harder to confirm from the outside than higher-volume, better-documented firms. Owners should get the fee (a percentage of enrolled debt, not savings) modeled in writing and confirm the no-fee-until-settlement terms.",
-    pricing:
-      "Charges roughly 15 to 20 percent of enrolled debt, with no fee until a settlement is negotiated and approved. Because the fee is a percent of enrolled debt rather than savings, model the total dollar cost before signing.",
-    process:
-      "Consultation, enrollment, attorney-coordinated negotiation with funders, then settlement. No fee is charged until a settlement is approved.",
-    publicQuotes: [
-      {
-        quote:
-          "They were patient and guided us through the whole debt process without pressure.",
-        source: "Trustpilot",
-        rating: 5,
-        attribution: "Trustpilot review (limited review base)",
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "No BBB rating on file and only a small independent review base, so outcome and volume claims are harder to verify externally.",
-        source: "BBB profile (no rating) and Trustpilot",
-      },
-    ],
+  "updatedAt": "2026-09-14",
+  "slug": "delancey-street",
+  "name": "Delancey Street",
+  "shortName": "Delancey Street",
+  "oneLineVerdict": "Delancey Street advertises MCA and business debt negotiation. BBB lists the matching LLC as Not Rated and not accredited, with a 2023 business start. Verify fees and who provides legal work.",
+  "founded": "2023 (BBB record)",
+  "hq": "New York, New York",
+  "minDebt": "Not verified; request written eligibility criteria",
+  "specialties": "Company-advertised MCA, SBA and stacked-debt negotiation",
+  "bbb": "Not Rated; not accredited (checked September 14, 2026)",
+  "trustpilot": "Current platform aggregate not verified in this audit",
+  "websiteLabel": "delanceystreet.com",
+  "firmWebsite": "https://www.delanceystreet.com",
+  "recommendedFor": "Owners comparing the documented service scope, costs and public records before choosing a provider.",
+  "bestFor": [
+    "Comparing a written proposal for the services described below"
+  ],
+  "notIdealFor": [
+    "Anyone relying on guaranteed savings, timing or unverified legal representation"
+  ],
+  "ratings": {
+    "transparency": 3.5,
+    "results": 3.5,
+    "communication": 4,
+    "cost": 4,
+    "litigation": 3.5
   },
+  "pros": [
+    "Public service descriptions",
+    "BBB profile linked to the company website"
+  ],
+  "cons": [
+    "Not Rated and not BBB accredited",
+    "Promotional volume and legal-service claims not independently verified"
+  ],
+  "verdict": "The company publishes service and settlement-volume claims. We have not independently audited those outcomes or attorney arrangements. BBB’s linked entity record starts in 2023, which does not substantiate the 2018 founding date previously shown here.",
+  "pricing": "The previously stated 15–20% fee and universal no-fee-until-settlement terms were not adequately substantiated in this audit. Ask for the exact fee basis, trigger, cancellation provisions and separate legal costs.",
+  "process": "The site offers consultation and negotiation services. Establish a case-specific schedule and named legal professionals rather than relying on promotional response-time or savings figures.",
+  "publicQuotes": [],
+  "concerns": [],
+  "sourcesCheckedAt": "September 14, 2026",
+  "proofPoints": [],
+  "ratingNote": "Delancey Street: the existing editorial score is under evidence review. Its category assessments have not been independently substantiated. It is not a measured success rate or a fresh endorsement.",
+  "sources": [
+    {
+      "label": "Company website and service descriptions",
+      "url": "https://www.delanceystreet.com",
+      "note": "Homepage markets MCA, SBA and stacked-debt services. Its settlement volumes, testimonials and response-time claims are not verified typical outcomes."
+    },
+    {
+      "label": "BBB business profile",
+      "url": "https://www.bbb.org/us/ny/new-york/profile/debt-relief-services/delancey-street-llc-0121-87176359",
+      "note": "Not Rated; not accredited. Checked September 14, 2026. Accreditation and grades are distinct from customer-review averages and are not guarantees of outcomes."
+    }
+  ]
+},
   {
-    updatedAt: "2026-09-11",
-    slug: "national-debt-relief",
-    name: "National Debt Relief",
-    shortName: "National Debt Relief",
-    oneLineVerdict:
-      "A major, highly-rated consumer debt-settlement company (A+ BBB, 4.7 across 44,900+ reviews), but it does not handle MCA-specific work, no COJ defense, court motions, or funder litigation, so it is the wrong tool for active merchant cash advance distress.",
-    founded: "2009",
-    hq: "New York, New York",
-    minDebt: "Around $7,500 (unsecured debt)",
-    specialties: "Consumer and unsecured debt settlement (not MCA-specific)",
-    bbb: "A+ rating; one of the largest debt-settlement firms",
-    trustpilot: "4.7 across 44,900+ Trustpilot reviews",
-    websiteLabel: "nationaldebtrelief.com",
-    firmWebsite: "https://www.nationaldebtrelief.com",
-    recommendedFor:
-      "Owners whose problem is mainly unsecured or consumer debt (credit cards, lines of credit) rather than merchant cash advances. For MCA-specific distress, choose an MCA specialist.",
-    bestFor: [
-      "Consumers and owners with unsecured, non-MCA debt",
-      "People who want a very large, established, A+ firm",
-      "Credit card and line-of-credit settlement",
-    ],
-    notIdealFor: [
-      "Owners in active MCA distress needing settlement or defense",
-      "Anyone facing a Confession of Judgment, frozen account, or funder lawsuit",
-      "Owners who need court motions or MCA-specific litigation",
-    ],
-    ratings: {
-      transparency: 4,
-      results: 4,
-      communication: 4,
-      cost: 4,
-      litigation: 2,
-    },
-    pros: [
-      "A+ BBB rating and a 4.7 Trustpilot average across 44,900+ reviews",
-      "Over $1B settled and 550,000+ clients, a huge, proven operation",
-      "Strong fit for unsecured and consumer debt",
-    ],
-    cons: [
-      "Does not handle MCA-specific work: no COJ challenge, no court motions, no funder litigation",
-      "Not built for active merchant cash advance distress",
-      "Owners with MCA problems would still need a separate MCA specialist",
-    ],
-    verdict:
-      "National Debt Relief is a genuinely strong, highly-rated company, but for the wrong problem. It is built for consumer and unsecured debt settlement at massive scale, and it explicitly does not challenge Confessions of Judgment, file court motions, or handle MCA funder litigation. If your core issue is merchant cash advance debt, especially with lawsuit or COJ risk, National Debt Relief is not the right firm and you would want an MCA specialist. We rank it here because owners search it, not because it competes for MCA cases.",
-    pricing:
-      "Typically 15 to 25 percent of enrolled debt on settled consumer accounts, with no upfront fees. Note this pricing is for unsecured debt programs, not MCA settlement.",
-    process:
-      "Enroll unsecured debts, pause payments into a dedicated account, and negotiate settlements over 24 to 48 months. This is a consumer-debt process, not an MCA workout.",
-    publicQuotes: [
-      {
-        quote:
-          "They settled my unsecured accounts for far less than I owed and kept me updated the whole way.",
-        source: "Trustpilot",
-        rating: 5,
-        attribution: "Trustpilot review aggregate (44,900+ reviews, 4.7 average)",
-      },
-    ],
-    concerns: [
-      {
-        quote:
-          "Explicitly does not handle MCA-specific work, no Confession of Judgment defense, court motions, or funder litigation, so it does not fit active MCA distress.",
-        source: "Company service scope and category reviews",
-      },
-    ],
+  "updatedAt": "2026-09-14",
+  "slug": "national-debt-relief",
+  "name": "National Debt Relief",
+  "shortName": "National Debt Relief",
+  "oneLineVerdict": "National Debt Relief offers unsecured-debt settlement, including some business-related debts. BBB lists A+ accreditation. Eligibility for a specific MCA and the scope of litigation help must be confirmed directly.",
+  "founded": "Not reverified in this audit",
+  "hq": "New York, New York",
+  "minDebt": "Not verified; request written eligibility criteria",
+  "specialties": "Unsecured-debt settlement; company materials also discuss business debt",
+  "bbb": "A+; accredited (checked September 14, 2026)",
+  "trustpilot": "Current platform aggregate not verified in this audit",
+  "websiteLabel": "nationaldebtrelief.com",
+  "firmWebsite": "https://www.nationaldebtrelief.com",
+  "recommendedFor": "Owners comparing the documented service scope, costs and public records before choosing a provider.",
+  "bestFor": [
+    "Comparing a written proposal for the services described below"
+  ],
+  "notIdealFor": [
+    "Anyone relying on guaranteed savings, timing or unverified legal representation"
+  ],
+  "ratings": {
+    "transparency": 4,
+    "results": 4,
+    "communication": 4,
+    "cost": 4,
+    "litigation": 2
   },
+  "pros": [
+    "Matching accredited BBB profile",
+    "Public information about business-related unsecured debt"
+  ],
+  "cons": [
+    "Specific MCA eligibility not established by the reviewed material",
+    "No verified MCA litigation-service scope"
+  ],
+  "verdict": "Its business-debt resource describes potential eligibility for business credit cards and certain unsecured loans or credit lines. This does not establish acceptance of every MCA. Our earlier blanket assertion that it never handles MCA-specific work was not adequately substantiated.",
+  "pricing": "Get a written quote for the actual debts accepted. Consumer-program fee ranges should not be assumed to apply to an MCA, business debt or a separate legal engagement.",
+  "process": "The company describes debt review and negotiated settlement. Creditor participation, timing and fees depend on the accepted accounts and contract; no result is guaranteed here.",
+  "publicQuotes": [],
+  "concerns": [],
+  "sourcesCheckedAt": "September 14, 2026",
+  "proofPoints": [],
+  "ratingNote": "National Debt Relief: the existing editorial score is under evidence review. Its category assessments have not been independently substantiated. It is not a measured success rate or a fresh endorsement.",
+  "sources": [
+    {
+      "label": "Company website and service descriptions",
+      "url": "https://www.nationaldebtrelief.com",
+      "note": "Company homepage describes unsecured-debt relief. Review-platform totals and advertised customer outcomes were not independently audited."
+    },
+    {
+      "label": "BBB business profile",
+      "url": "https://www.bbb.org/us/ny/new-york/profile/debt-relief-services/national-debt-relief-0121-110899",
+      "note": "A+; accredited. Checked September 14, 2026. Accreditation and grades are distinct from customer-review averages and are not guarantees of outcomes."
+    },
+    {
+      "label": "Company business-debt resource",
+      "url": "https://www.nationaldebtrelief.com/resources/business-debt-relief/",
+      "note": "Discusses business credit cards and some unsecured business loans or lines of credit. It does not establish eligibility for every MCA contract."
+    }
+  ]
+},
   {
   "updatedAt": "2026-09-12",
   "slug": "business-debt-insider",

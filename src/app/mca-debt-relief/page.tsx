@@ -17,7 +17,7 @@ const FAQ = [
   },
   {
     q: "How much does MCA debt relief cost?",
-    a: "Reconciliation is free, it is a right many contracts already grant. Professional settlement typically costs 15 to 25 percent of enrolled debt or a share of savings. Attorneys bill hourly or flat per matter. Consolidation costs whatever the new financing costs, which is often more than it looks. Always get fee schedules in writing before signing anything.",
+    a: "Reconciliation rights and requirements depend on the agreement. Professional fees vary; no representative industry fee range was verified here. Ask for total creditor payments, all program and legal fees, cancellation charges and any new financing costs in writing.",
   },
   {
     q: "Does MCA debt relief hurt your credit?",
@@ -33,7 +33,7 @@ const OPTIONS = [
   {
     name: "Reconciliation",
     when: "Payments sized off better months; revenue has dropped",
-    body: "Many MCA contracts contain a clause that entitles you to have the daily pull adjusted to actual revenue. It is free, fast when honored, and the first thing to check before paying anyone.",
+    body: "Check whether the contract includes a reconciliation procedure, what documentation it requires and how any adjustment is calculated. Do not assume every agreement grants the same right or response time.",
     href: "/guides/mca-reconciliation-clause",
     link: "Reconciliation guide",
   },
@@ -47,7 +47,7 @@ const OPTIONS = [
   {
     name: "Settlement",
     when: "Full repayment is not realistic",
-    body: "Negotiating the balance down, commonly 30 to 60 percent reductions on distressed files, and resolving liens and guarantees as part of the deal. The core tool for stacked or defaulted positions.",
+    body: "Seeking an agreed payoff or revised balance. Creditor consent is required; the proposal should explicitly address any guarantees, filings and pending proceedings. No typical discount is established here.",
     href: "/guides/what-is-mca-settlement",
     link: "How settlement works",
   },
@@ -82,7 +82,7 @@ export default function Page() {
     description: metadata.description,
     author: {
       "@type": "Organization",
-      name: "MCA Settlement Reviews Editorial Team",
+      name: "MCA Settlement Reviews",
       url: "https://www.mcasettlementreviews.com/about",
     },
     publisher: { "@id": "https://www.mcasettlementreviews.com/#organization" },

@@ -13,184 +13,163 @@ export type Guide = {
   sections: GuideSection[];
   faq?: { q: string; a: string }[];
   takeaway: string;
+  updatedAt?: string;
+  sources?: { label: string; url: string; note: string }[];
 };
 
 export const GUIDES: Guide[] = [
   {
-    slug: "what-is-mca-settlement",
-    title: "What is MCA settlement, and how does it actually work?",
-    metaTitle: "MCA Debt Settlement Explained: How It Works in 2026",
-    metaDescription:
-      "Merchant cash advance settlement explained: what it is, how negotiation works, what it costs, and when it makes sense for a small business.",
-    intro:
-      "Merchant cash advance (MCA) settlement is the process of negotiating with an MCA funder to reduce the total amount owed, restructure the daily or weekly payment, or release a UCC lien. It is not the same as consolidation, refinancing, or bankruptcy, and the differences matter.",
-    sections: [
-      {
-        heading: "Why MCA settlement exists",
-        paragraphs: [
-          "MCAs are technically purchases of future receivables, not loans. That structure means traditional debt-relief tools like bankruptcy and standard refinancing often do not apply cleanly. Funders also have unusual leverage tools (UCC liens, ACH access, Confessions of Judgment) that make a default catastrophic if mishandled.",
-          "Settlement firms exist to negotiate directly with funders to reduce the balance, restructure the payment, and protect the merchant account, ideally before any of those leverage tools get pulled.",
-        ],
-      },
-      {
-        heading: "How the negotiation works",
-        paragraphs: [
-          "A settlement firm typically gathers the original MCA agreement, payment history, and current revenue. They then approach the funder with a written proposal: usually a reduced lump sum, a stretched-out payment plan, or both. The funder either accepts, counters, or refuses.",
-          "Acceptance rates depend on the funder, how long the MCA has been outstanding, the merchant's revenue trajectory, and the firm's relationship with that funder. Firms that handle volume across many funders develop predictable settlement bands per funder, which is part of what owners pay for.",
-        ],
-      },
-      {
-        heading: "What settlement does not solve",
-        paragraphs: [
-          "Settlement does not magically restore a frozen merchant account, vacate an entered Confession of Judgment without legal action, or undo a UCC lien that has already been used to seize receivables. Those situations require a litigation defense capability alongside negotiation.",
-          "This is why we rate firms separately on litigation defense in our methodology. Owners in active distress need both, ideally under one fee.",
-        ],
-      },
-      {
-        heading: "When MCA settlement is the right tool",
-        paragraphs: [
-          "Settlement is usually the right tool when the business is operationally viable but cash flow is choking on the daily ACH pulls, when the owner wants to avoid bankruptcy, and when the funder relationship has not yet escalated past negotiation.",
-        ],
-        bullets: [
-          "You have one or more active MCAs draining daily revenue",
-          "Your business can still cover essential operating costs after a restructured payment",
-          "You want to avoid Chapter 7 or Chapter 11 if possible",
-          "You have not yet been sued, or a lawsuit is recent and defensible",
-        ],
-      },
-      {
-        heading: "The settlement process, step by step",
-        paragraphs: [
-          "A typical engagement follows a predictable arc. Week one is document gathering and analysis: every MCA agreement, the payment history on each position, bank statements, and current revenue. From that, the firm builds the picture funders will respond to, what the business actually generates versus what the stacked positions pull.",
-          "Weeks two through four are the negotiation window. The firm contacts each funder, presents the financial reality, and works toward either a discounted payoff or a restructured schedule. Funders respond at different speeds; aggressive ones sometimes escalate before settling, which is where a firm with litigation capability keeps the process on track.",
-          "Resolution usually lands between week four and month six depending on position count and whether litigation was already in motion. A complete resolution includes signed settlement agreements for each position, UCC lien releases, and written confirmation that the account is closed. Missing any of those three invites problems later.",
-        ],
-      },
-      {
-        heading: "What happens if you default instead",
-        paragraphs: [
-          "Understanding the alternative clarifies why settlement exists. An unmanaged MCA default typically unfolds fast: default notices within days of missed remittances, ACH attempts that overdraw the account, a frozen merchant processor if the funder contacts it, and UCC notices sent to your customers instructing them to redirect payment. Contracts with a Confession of Judgment can produce an enforceable judgment in weeks with no trial.",
-          "None of that means default is unrecoverable, firms resolve post-default cases every day. It means the price of resolution rises with each escalation step. The same funder that would have taken a steep discount pre-default may demand more, plus legal fees, once a judgment is entered. Timing is the single biggest factor owners control.",
-        ],
-      },
-      {
-        heading: "Settlement vs consolidation, refinancing, and bankruptcy",
-        paragraphs: [
-          "Consolidation and reverse-consolidation products replace your MCAs with a new obligation, often at a similar true cost, and add a new creditor to the picture. They change the payment shape without reducing what you owe. Refinancing into a term loan genuinely helps when you qualify, but businesses buried in stacked MCAs with UCC filings usually do not qualify until the MCAs are resolved first.",
-          "Bankruptcy is the heaviest tool: it stops collection instantly but puts the business through a public court process with long credit consequences, and because MCAs are structured as receivable purchases, funders sometimes contest their treatment. Settlement sits between doing nothing and filing: it reduces the actual balance, keeps the matter private, and keeps the business operating. The right choice depends on whether the underlying business is viable once the daily pulls stop.",
-        ],
-      },
-    ],
-    faq: [
-      {
-        q: "How long does MCA settlement take?",
-        a: "Simple single-position cases can resolve in four to eight weeks. Stacked positions across multiple funders, or cases where litigation has already started, commonly run three to six months. The timeline is driven mostly by how many funders are involved and how far each has escalated.",
-      },
-      {
-        q: "Is MCA settlement legal?",
-        a: "Yes. Settlement is an ordinary commercial negotiation between you (through your representative) and the funder, ending in a written agreement both sides sign. What varies is the quality of representation, which is why we review the firms in this space.",
-      },
-      {
-        q: "Does settling an MCA hurt my business credit?",
-        a: "A negotiated settlement is significantly better for your credit picture than a default, judgment, or open UCC liens. Some funders report settled accounts, but a resolved balance with released liens positions the business to qualify for conventional financing again, which an unresolved default never does.",
-      },
-      {
-        q: "Can I negotiate an MCA settlement myself?",
-        a: "You can, and on a single small position with a cooperative funder it sometimes works. The difficulty is that funders negotiate these contracts daily and you do not, and mistakes like stopping payment without a strategy can trigger defaults and judgments. Multiple positions or any litigation risk is usually where professional representation pays for itself.",
-      },
-      {
-        q: "How much does MCA settlement cost?",
-        a: "Most firms charge either a percentage of enrolled debt (commonly 15 to 25 percent), a percentage of savings achieved, or a flat fee. The structure matters as much as the number: get the full fee schedule in writing before signing, and read our cost guide for a breakdown of each model.",
-      },
-    ],
-    takeaway:
-      "MCA settlement is a specific tool for a specific problem. The right firm is one that can negotiate, defend in court if needed, and quote a fixed fee before you sign anything.",
-  },
+  "slug": "what-is-mca-settlement",
+  "title": "What is MCA settlement, and how does it actually work?",
+  "metaTitle": "MCA Debt Settlement Explained: How It Works in 2026",
+  "metaDescription": "Merchant cash advance settlement explained: what it is, how negotiation works, what it costs, and when it makes sense for a small business.",
+  "intro": "MCA settlement is an attempt to reach a written agreement with a funder about an outstanding obligation. A proposal may seek a discounted payoff or revised payments. The funder can decline, and negotiations do not automatically stop enforcement.",
+  "sections": [
+    {
+      "heading": "Settlement, restructuring and refinancing",
+      "paragraphs": [
+        "Settlement generally seeks an agreed resolution of a claimed balance. Restructuring changes payment terms. Refinancing uses new financing to address existing obligations. Ask which result the proposal actually offers and calculate the total amount you would pay, including fees."
+      ]
+    },
+    {
+      "heading": "Start with the contracts and cash flow",
+      "paragraphs": [
+        "Gather each agreement, current claimed balance, payment history, security filing, personal guarantee and any legal notices. Build a cash-flow forecast that includes essential operating costs. A representative should explain which creditors will be approached and what payments the business can sustain."
+      ]
+    },
+    {
+      "heading": "Put any agreement in writing",
+      "paragraphs": [
+        "Confirm the creditors and accounts covered, the amount and timing of payments, what happens on a missed payment and what releases are included. Do not assume settling a balance also releases a personal guarantee, ends a lawsuit or terminates every UCC filing. Have those provisions reviewed and verify completion."
+      ]
+    },
+    {
+      "heading": "There is no verified standard timeline or savings rate",
+      "paragraphs": [
+        "We have not established a representative MCA settlement dataset from which to estimate typical discounts or completion times. Provider examples are selected cases. Ask for assumptions, supporting records and a plan for a creditor that refuses."
+      ]
+    },
+    {
+      "heading": "Compare legal alternatives when needed",
+      "paragraphs": [
+        "Bankruptcy, litigation defense and consensual negotiation have different requirements and consequences. The U.S. Courts explains that Chapter 11 can permit continued operations under court supervision. An attorney should assess whether it is available or appropriate; an MCA label alone does not decide the legal treatment."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long does MCA settlement take?",
+      "a": "There is no verified industry-wide timeframe in our research. Timing depends on creditor participation, funding, disputed terms and any court proceedings. Request a case-specific plan without treating it as a guarantee."
+    },
+    {
+      "q": "Should I stop payments while negotiations take place?",
+      "a": "Negotiations do not themselves change payment obligations. Payment changes may trigger default or enforcement. Obtain advice on your contract and any legal notices before changing payments."
+    },
+    {
+      "q": "Will a settlement protect my credit?",
+      "a": "No credit outcome is guaranteed. Reporting, existing defaults, guarantees and future lender decisions vary. Review the proposed reporting terms and check the relevant credit records."
+    }
+  ],
+  "takeaway": "Compare the written scope, creditor payments, all fees and unresolved legal issues. A sales promise does not replace a signed creditor agreement.",
+  "sources": [
+    {
+      "label": "U.S. Courts: Chapter 11 basics",
+      "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics",
+      "note": "Federal court explanation of reorganization; not a determination about an individual MCA."
+    }
+  ],
+  "updatedAt": "2026-09-14"
+},
   {
-    slug: "how-much-does-mca-settlement-cost",
-    title: "How much does MCA settlement actually cost?",
-    metaTitle: "MCA Settlement Cost in 2026: Fees, Structures, Real Numbers",
-    metaDescription:
-      "What MCA settlement firms actually charge, the three main fee structures, and how to evaluate total cost of resolution before signing.",
-    intro:
-      "MCA settlement firms charge in three main ways: flat fees, percentage of total debt, and percentage of savings. Each has trade-offs. The number that actually matters is the total cost of resolution, not the headline rate.",
-    sections: [
-      {
-        heading: "The three main fee structures",
-        paragraphs: [
-          "Flat fee: a single agreed dollar amount, usually paid in installments tied to milestones (intake, agreement signed, settlement closed). Predictable and clean. Best when the case is straightforward.",
-          "Percentage of total debt: usually 12 to 25 percent of the original MCA balance. Easier for the firm to underwrite. Owners pay the same whether the firm settles for 50 percent or 30 percent of the balance, which can misalign incentives.",
-          "Percentage of savings: usually 20 to 35 percent of the difference between original balance and settled amount. Aligns the firm with the owner. Higher upside for both. Some firms blend this with a smaller flat retainer.",
-        ],
-      },
-      {
-        heading: "What 'cheap' actually costs you",
-        paragraphs: [
-          "The cheapest fee quote is rarely the cheapest total resolution. A firm that charges 10 percent up front but cannot defend a UCC freeze will cost you a separate litigation retainer when the funder escalates. A firm that quotes a low headline percentage but bills hourly post-signature can run far past the initial number.",
-          "Total cost of resolution = settlement firm fees + any referred-out legal fees + any per-funder add-ons + any post-engagement fees if the situation evolves. Ask for that number in writing before signing.",
-        ],
-      },
-      {
-        heading: "Red flags in fee disclosures",
-        paragraphs: [
-          "Watch for verbal-only fee discussions, separate retainers required for each funder, hourly billing on what should be a fixed-fee case, and 'success fees' that activate on outcomes you did not specifically authorize.",
-        ],
-        bullets: [
-          "No written fee schedule before contract",
-          "Separate retainer per funder",
-          "Hourly billing for routine settlement work",
-          "Vague 'additional services may apply' clauses",
-          "Fee tied to total debt rather than savings achieved",
-        ],
-      },
-    ],
-    takeaway:
-      "Get the total cost of resolution in writing, not the headline rate. The cheapest quote that requires a separate litigation retainer later is rarely the cheapest path to resolution.",
-  },
+  "slug": "how-much-does-mca-settlement-cost",
+  "title": "How much does MCA settlement actually cost?",
+  "metaTitle": "MCA Settlement Costs: Compare Fees and Total Payments",
+  "metaDescription": "How to compare written MCA settlement fees, creditor payments, legal charges and cancellation terms without relying on unverified industry averages.",
+  "intro": "A settlement quote is incomplete unless it separates the provider’s fees from money reaching creditors. We have not verified a representative industry fee range. Compare written proposals for the same balances and services.",
+  "sections": [
+    {
+      "heading": "Identify the fee basis",
+      "paragraphs": [
+        "A proposal may use a fixed amount, a percentage of enrolled balances, a percentage of claimed savings or multiple charges. Ask exactly what is included in the calculation, when each charge becomes due and whether an unsuccessful negotiation still generates fees."
+      ]
+    },
+    {
+      "heading": "Calculate the full cost",
+      "paragraphs": [
+        "For a hypothetical $100,000 obligation, a $60,000 creditor settlement plus a $20,000 provider fee costs $80,000 before other charges. The net reduction is $20,000, not the $40,000 headline discount. These figures illustrate arithmetic, not typical MCA pricing or a predicted outcome."
+      ]
+    },
+    {
+      "heading": "Include legal and account charges",
+      "paragraphs": [
+        "Request any attorney, administration, payment-processing, account-maintenance and cancellation fees. Ask whether legal representation requires a separate agreement and whether fees apply separately to each creditor. Neither hourly billing nor a separate attorney engagement proves poor service; unclear scope makes comparison difficult."
+      ]
+    },
+    {
+      "heading": "Check the fee trigger and refund terms",
+      "paragraphs": [
+        "Stop MCA’s public FAQ, for example, describes an enrollment fee and a savings-related service fee but does not specify the amounts. This illustrates why a “free consultation” does not mean a free program. Confirm any refund conditions against the agreement."
+      ]
+    },
+    {
+      "heading": "Compare proposals on the same assumptions",
+      "paragraphs": [
+        "List creditor payments, provider fees, outside legal costs and unresolved balances. Model what happens if one creditor refuses, an account is sued or the business leaves the program. Ask for actual written terms instead of relying on a headline percentage."
+      ]
+    }
+  ],
+  "takeaway": "Compare the full cash outflow and contractual obligations. A lower provider fee is not necessarily a lower total cost.",
+  "sources": [
+    {
+      "label": "Stop MCA: fee FAQ",
+      "url": "https://stopmca.com/",
+      "note": "Company disclosure of enrollment and service fees; not an industry-wide pricing benchmark."
+    }
+  ],
+  "updatedAt": "2026-09-14"
+},
   {
-    slug: "mca-settlement-vs-bankruptcy",
-    title: "MCA settlement vs bankruptcy: which one fits your situation?",
-    metaTitle: "MCA Settlement vs Bankruptcy: Side-by-Side Comparison",
-    metaDescription:
-      "When MCA settlement is the right tool, when bankruptcy is, and how to think about the trade-offs around credit, control, and personal exposure.",
-    intro:
-      "MCA settlement and bankruptcy are different tools for different problems. Settlement preserves the business as a going concern. Bankruptcy is a legal proceeding under federal law that restructures or discharges debt. Picking the wrong one is expensive.",
-    sections: [
-      {
-        heading: "When settlement is the right tool",
-        paragraphs: [
-          "Settlement is the right tool when the underlying business is operationally viable, when the owner wants to keep the business running and the bank line intact, and when the MCA balance is the primary stress point.",
-        ],
-        bullets: [
-          "Business is still generating revenue",
-          "Owner wants to preserve credit and bank relationships",
-          "MCA debt is the main issue, not a symptom of broader collapse",
-          "Time exists to negotiate before funders sue",
-        ],
-      },
-      {
-        heading: "When bankruptcy is the right tool",
-        paragraphs: [
-          "Bankruptcy makes sense when debt extends well beyond MCAs, when the business cannot operate even with restructured payments, when assets need to be protected from multiple creditor actions at once, or when a personal guarantee is exposing the owner's home or savings.",
-        ],
-        bullets: [
-          "Debt is broad: MCAs plus tax liens, equipment loans, supplier judgments",
-          "Operations are non-viable even at zero MCA payment",
-          "Personal assets are exposed via guarantee",
-          "Multiple creditors are circling at once",
-        ],
-      },
-      {
-        heading: "Trade-offs to think through",
-        paragraphs: [
-          "Settlement preserves credit and operating relationships but does not stop a determined funder. Bankruptcy creates a legal stay but is public, slow, and expensive in legal fees. Settlement keeps the owner in control. Bankruptcy hands material control to the court.",
-          "A good MCA settlement firm will tell you when bankruptcy is the better tool. A firm that pushes settlement when bankruptcy is clearly indicated is selling its product, not solving your problem.",
-        ],
-      },
-    ],
-    takeaway:
-      "Pick the tool that matches the problem. If you are not sure, talk to a firm that has handled both paths and will tell you which one fits, even if it costs them the engagement.",
-  },
+  "slug": "mca-settlement-vs-bankruptcy",
+  "title": "MCA settlement vs bankruptcy: which one fits your situation?",
+  "metaTitle": "MCA Settlement vs Bankruptcy: Side-by-Side Comparison",
+  "metaDescription": "When MCA settlement is the right tool, when bankruptcy is, and how to think about the trade-offs around credit, control, and personal exposure.",
+  "intro": "Consensual settlement and bankruptcy are different ways of addressing financial distress. Neither automatically preserves credit, assets or business operations. The appropriate route depends on the entity, obligations, contracts and applicable law.",
+  "sections": [
+    {
+      "heading": "What settlement requires",
+      "paragraphs": [
+        "A negotiated proposal needs the relevant creditor’s agreement. It can address a balance or payment schedule, but other creditors and court deadlines remain relevant. Check whether the business can afford the resulting payments plus fees and ordinary operating expenses."
+      ]
+    },
+    {
+      "heading": "What Chapter 11 can involve",
+      "paragraphs": [
+        "The U.S. Courts describes Chapter 11 as reorganization in which a debtor often remains in possession and can continue operating. A filing generally creates an automatic stay, subject to exceptions and possible relief from the stay. This is not a promise that every collection action stops or that a particular business qualifies."
+      ]
+    },
+    {
+      "heading": "Business and personal exposure are separate questions",
+      "paragraphs": [
+        "The entity that owes the obligation, any personal guarantee and the property subject to security interests all matter. An agreement with one creditor does not necessarily release a guarantor or solve other liabilities. Obtain an assessment that includes both the business and personal exposure."
+      ]
+    },
+    {
+      "heading": "Compare realistic alternatives",
+      "paragraphs": [
+        "Ask counsel to compare eligibility, expected costs, creditor participation, court supervision, taxes and effects on operations. There is no universal rule that settlement is cheaper or bankruptcy is a last resort. Compare scenarios using a cash-flow forecast rather than a guaranteed savings claim."
+      ]
+    }
+  ],
+  "takeaway": "Get case-specific advice comparing negotiation and court-supervised options. Do not assume that either path guarantees continued operations or protects credit.",
+  "sources": [
+    {
+      "label": "U.S. Courts: Chapter 11 basics",
+      "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics",
+      "note": "Explains debtor-in-possession operations, reorganization and the automatic stay, including limits."
+    }
+  ],
+  "updatedAt": "2026-09-14"
+},
   {
     slug: "how-to-choose-mca-settlement-company",
     title: "How to choose the right MCA settlement company",
@@ -515,13 +494,13 @@ export const GUIDES: Guide[] = [
     metaDescription:
       "A straight answer on DIY MCA settlement: the situations where owners succeed alone, the mistakes that trigger defaults and judgments, and the honest math on professional fees.",
     intro:
-      "Settlement firms charge 15 to 25 percent of enrolled debt, so the question is fair: can you just call the funder yourself? Sometimes yes. This is an honest map of where DIY works, where it predictably backfires, and how to decide which side of the line you are on.",
+      "Professional fees vary, and this site has not established a representative industry range. Direct negotiation may be worth exploring, but assess the contract, disputed balances and any legal proceedings before deciding whether representation is needed.",
     sections: [
       {
         heading: "Where DIY genuinely works",
         paragraphs: [
           "One position, a funder you are current with, and a documentable hardship: that is the DIY sweet spot. Funders handle hardship requests daily, and a single-position merchant asking for a temporary reduction or invoking a reconciliation clause often gets it without any intermediary.",
-          "DIY also works for owners who can fund a lump-sum payoff. Cash on the table at 50 to 70 percent of balance speaks for itself, and some funders will paper that deal directly with you in a week.",
+          "Available cash may support a lump-sum proposal, but no particular percentage or acceptance time is assured. Document the claimed balance and ask for the creditor’s written terms before transferring funds.",
         ],
         bullets: [
           "Single MCA position, no default yet",
@@ -541,7 +520,7 @@ export const GUIDES: Guide[] = [
       {
         heading: "The honest math on fees",
         paragraphs: [
-          "A firm charging 20 percent of a $200,000 enrolled balance costs $40,000, which only makes sense if representation improves your outcome by more than that. On a single clean position it often does not. On a stacked, defaulted, or litigated file, where the spread between a good and bad outcome is 30 to 50 points of balance plus legal exposure, it usually does.",
+          "Hypothetically, a 20 percent fee on $200,000 is $40,000. Compare that fee plus creditor payments and legal costs with other available proposals. These figures are an arithmetic example, not evidence that a representative will improve an outcome by a particular amount.",
           "Whatever you choose, the fee structure rules from our cost guide apply: written fee schedule, defined success, fees tied to results, and no large upfront payments before any work.",
         ],
       },
@@ -676,7 +655,7 @@ export const GUIDES: Guide[] = [
       {
         heading: "What each costs",
         paragraphs: [
-          "Settlement companies: typically 15 to 25 percent of enrolled debt or a percentage of savings. MCA defense attorneys: hourly (often $300 to $600) or flat fees per matter; some take settlement mandates on contingency-like structures. The hybrid firms quote one fee covering both, which is worth real money the moment a file turns legal mid-negotiation.",
+          "No representative industry fee range was verified for this guide. Request written settlement and attorney quotes for the actual services needed, including separate engagements, ongoing charges and cancellation terms.",
         ],
       },
     ],
@@ -876,7 +855,7 @@ export const GUIDES: Guide[] = [
       {
         heading: "What settlement really is",
         paragraphs: [
-          "Settlement negotiates the balances down, commonly by 30 to 60 percent on distressed files, and restructures what remains into payments the business can carry. It resolves the debt rather than refinancing it. The costs are different in kind: settlement fees, credit and relationship consequences with the settled funders, and a process measured in weeks to months rather than a single funding event.",
+          "Settlement seeks an agreed resolution of outstanding balances; a creditor may accept revised terms or decline. There is no verified typical savings rate in our research. Compare creditor payments, all fees, possible reporting effects and unresolved legal issues.",
         ],
       },
       {

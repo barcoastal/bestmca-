@@ -1,7 +1,7 @@
 #!/bin/zsh
 # Weekly GSC snapshot: pull data, commit just the snapshot files, push.
-# Pushing also triggers a Railway rebuild, which refreshes the site's
-# build-stamped freshness signals (dateModified + Updated label).
+# Pushing also triggers a Railway rebuild. Editorial dates change only when
+# the relevant content changes; a monitoring run does not refresh them.
 set -e
 cd "$HOME/mca-settlement-reviews"
 $HOME/.nvm/versions/node/v20.20.0/bin/node scripts/gsc-snapshot.mjs >> /tmp/mcasr-gsc-snapshot.log 2>&1 || exit 1

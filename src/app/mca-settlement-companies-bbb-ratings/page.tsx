@@ -11,7 +11,7 @@ export const metadata = {
   title:
     "MCA Settlement Companies BBB Ratings Compared (2026): Real Grades & Reviews",
   description:
-    "The real Better Business Bureau record for every major MCA settlement and debt-relief firm: accreditation status, letter grade, and customer-review stars. Verified directly from bbb.org, no fabricated data.",
+    "Compare selected MCA providers using dated BBB profiles, accreditation, grades and source limitations. Check the linked records for current information.",
   keywords: [
     "mca settlement companies bbb",
     "mca debt relief bbb rating",
@@ -24,7 +24,7 @@ export const metadata = {
   alternates: { canonical: "/mca-settlement-companies-bbb-ratings" },
 };
 
-const VERIFIED_DATE = "June 2, 2026";
+const VERIFIED_DATE = "See individual record dates";
 
 function GradeBadge({
   grade,
@@ -80,7 +80,7 @@ function AccreditationPill({ record }: { record: BBBRecord }) {
   }
   return (
     <span className="inline-flex items-center gap-1.5 rounded-full bg-paper-soft px-3 py-1 text-xs font-medium text-ink-subtle">
-      No BBB profile
+      Profile not located
     </span>
   );
 }
@@ -166,8 +166,8 @@ const FAQ = [
     a: "Accreditation requires a business to meet BBB standards and, critically, to respond to complaints filed against it. It is not a guarantee of quality, but a firm that is not accredited, or that has lost accreditation, has chosen not to participate in that process or failed to meet the bar.",
   },
   {
-    q: "Why do some firms have no BBB profile?",
-    a: "Some firms have simply never registered with the BBB, and litigation-focused law firms often are not listed under a BBB business category at all. No profile means there is no independently tracked rating or review history to check before you sign, which is a reason to ask for references and written disclosures directly.",
+    q: "Why do some firms have no linked BBB profile?",
+    a: "A matching profile was not established in our reviewed records for those brands. This does not prove that none exists. Search the legal entity and alternate names, and check the source notes before drawing conclusions.",
   },
 ];
 
@@ -192,7 +192,7 @@ export default function BBBRatingsPage() {
     "@type": "ItemList",
     name: "MCA Settlement Companies Ranked by BBB Record",
     description:
-      "Merchant cash advance settlement and debt-relief firms ranked by their verified Better Business Bureau record: accreditation status, letter grade, and customer-review average.",
+      "Selected MCA provider brands compared by recorded BBB accreditation, grades and customer-review averages. Record dates and coverage vary.",
     url: PAGE_URL,
     numberOfItems: BBB_RECORDS.length,
     itemListOrder: "https://schema.org/ItemListOrderDescending",
@@ -228,7 +228,7 @@ export default function BBBRatingsPage() {
                       : ""
                 }`,
               }
-            : { name: `${r.name}: no BBB profile` }),
+            : { name: `${r.name}: no linked BBB profile` }),
         },
       },
     })),
@@ -252,7 +252,7 @@ export default function BBBRatingsPage() {
             />
           </div>
           <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
-            Verified BBB Records · {VERIFIED_DATE}
+            BBB Record Comparison · {VERIFIED_DATE}
           </div>
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">
             MCA settlement companies and their real BBB record
@@ -268,7 +268,7 @@ export default function BBBRatingsPage() {
             .
           </p>
           <p className="mt-4 text-lg text-ink-soft leading-relaxed max-w-3xl">
-            We pulled the actual Better Business Bureau profile for every major
+            We compare available Better Business Bureau profiles for selected
             merchant cash advance settlement and debt-relief firm, the
             accreditation status, the letter grade, and the customer-review
             average, and put them side by side. Every figure below was read
@@ -385,7 +385,7 @@ export default function BBBRatingsPage() {
         </div>
 
         <p className="mt-6 text-xs text-ink-subtle leading-relaxed">
-          Snapshot taken {VERIFIED_DATE}. BBB ratings and reviews are live and
+          Records have different check dates. BBB ratings and reviews are live and
           change over time; check each profile for the current figure. Spergel is
           listed on BBB Canada and does not serve U.S. MCA cases. Stop MCA&apos;s
           record is filed under its operating entity, Business Debt Adjusters,

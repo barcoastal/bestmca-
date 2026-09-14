@@ -31,7 +31,7 @@ const pctNotAccredited = Math.round(
 
 export const metadata = {
   title: "State of MCA Settlement 2026: BBB Grades of the Industry, Studied",
-  description: `We pulled the live BBB record of ${BBB_RECORDS.length} MCA settlement and debt-relief firms. ${pctNotAccredited}% are not BBB accredited, ${belowB.length} hold a grade below B, and ${noProfile.length} have no linked BBB profile in our dataset. Full data and methodology.`,
+  description: `Point-in-time BBB records for ${BBB_RECORDS.length} selected MCA settlement and debt-relief brands. ${pctNotAccredited}% are not BBB accredited, ${belowB.length} hold a grade below B, and ${noProfile.length} have no linked BBB profile in our dataset. Full data and methodology.`,
   alternates: { canonical: "/state-of-mca-settlement-2026" },
 };
 
@@ -40,7 +40,7 @@ export default function StudyPage() {
     "@context": "https://schema.org",
     "@type": "Dataset",
     name: "State of MCA Settlement 2026: BBB standing of MCA settlement firms",
-    description: `Point-in-time BBB accreditation status, letter grade, and complaint counts for ${BBB_RECORDS.length} merchant cash advance settlement and debt-relief firms, read directly from live bbb.org profiles.`,
+    description: `Point-in-time BBB accreditation status, letter grade, and complaint counts for ${BBB_RECORDS.length} merchant cash advance settlement and debt-relief firms, with linked profiles and record-specific check dates.`,
     url: `${SITE}/state-of-mca-settlement-2026`,
     creator: { "@id": `${SITE}/#organization` },
     license: `${SITE}/methodology`,
@@ -62,7 +62,7 @@ export default function StudyPage() {
     },
     {
       n: String(totalComplaints3yr),
-      label: `BBB complaints on record in 3 years across the ${firmsWithComplaintData.length} firms that publish complaint data`,
+      label: `BBB complaints on record in 3 years across the ${firmsWithComplaintData.length} records with complaint totals verified in this dataset`,
     },
   ];
 
@@ -75,16 +75,16 @@ export default function StudyPage() {
       <header className="border-b border-line bg-paper-soft">
         <div className="mx-auto max-w-4xl px-5 py-14">
           <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
-            Original Research · 2026
+            Provider Record Comparison · 2026
           </div>
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">
             State of MCA Settlement 2026: what the industry&rsquo;s BBB records
             actually show
           </h1>
           <p className="mt-5 text-lg text-ink-soft leading-relaxed">
-            We read the live Better Business Bureau profile of every merchant
-            cash advance settlement and debt-relief firm we track:{" "}
-            {BBB_RECORDS.length} companies, their accreditation status, letter
+            We compare point-in-time Better Business Bureau records for selected
+            merchant cash advance settlement and debt-relief brands:{" "}
+            {BBB_RECORDS.length} brands, their recorded accreditation status, letter
             grades, and complaint records. The picture is uneven enough that no
             business owner should sign with a firm before checking it.
           </p>
@@ -118,8 +118,8 @@ export default function StudyPage() {
           The full dataset
         </h2>
         <p className="mt-2 text-sm text-ink-muted">
-          Read directly from each firm&rsquo;s live bbb.org profile. Where a
-          metric is not published, the cell says so. Snapshot dates and full
+          Records may have different check dates. Missing values were not
+          established in this dataset. Snapshot dates and full
           notes on each firm are on the{" "}
           <Link
             href="/mca-settlement-companies-bbb-ratings"
@@ -160,7 +160,7 @@ export default function StudyPage() {
                       : "No"}
                   </td>
                   <td className="px-4 py-3 tabular-nums">
-                    {r.complaints3yr ?? "Not published"}
+                    {r.complaints3yr ?? "Not verified"}
                   </td>
                 </tr>
               ))}
@@ -174,12 +174,12 @@ export default function StudyPage() {
           Methodology
         </h2>
         <p className="text-ink-soft leading-relaxed">
-          Every figure was read directly from the firm&rsquo;s live profile on
-          bbb.org (or BBB Canada where applicable). BBB data changes over time;
+          Source profiles are linked on the comparison page. BBB data changes over time;
           this study reflects point-in-time snapshots, most recently updated
           alongside our review cycle. We do not estimate or fabricate any
-          figure: where a firm publishes no profile or metric, we report
-          exactly that. Firm selection covers every company reviewed in our{" "}
+          figure. A missing metric does not mean the source publishes none. Related
+          brands may share an operating entity; this is not an industry census.
+          Selection follows our{" "}
           <Link href="/" className="text-navy underline">
             2026 MCA settlement rankings
           </Link>

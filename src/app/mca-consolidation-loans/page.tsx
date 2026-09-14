@@ -37,7 +37,7 @@ export default function Page() {
     description: metadata.description,
     author: {
       "@type": "Organization",
-      name: "MCA Settlement Reviews Editorial Team",
+      name: "MCA Settlement Reviews",
       url: "https://www.mcasettlementreviews.com/about",
     },
     publisher: { "@id": "https://www.mcasettlementreviews.com/#organization" },

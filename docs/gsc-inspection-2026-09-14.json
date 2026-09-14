@@ -1,0 +1,198 @@
+[
+  {
+    "url": "https://www.mcasettlementreviews.com/",
+    "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:mcasettlementreviews.com&id=jJdLubEUJAlAhE-vBHK2qQ&utm_medium=link&utm_source=api",
+    "indexStatusResult": {
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-13T04:18:47Z",
+      "pageFetchState": "SUCCESSFUL",
+      "googleCanonical": "https://www.mcasettlementreviews.com/",
+      "userCanonical": "https://www.mcasettlementreviews.com/",
+      "referringUrls": [
+        "https://www.mcasettlementreviews.com/best-mca-settlement-companies-2026?q={search_term_string}",
+        "https://www.mcasettlementreviews.com/sitemap.xml"
+      ],
+      "crawledAs": "MOBILE"
+    },
+    "mobileUsabilityResult": {
+      "verdict": "VERDICT_UNSPECIFIED"
+    }
+  },
+  {
+    "url": "https://www.mcasettlementreviews.com/about",
+    "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:mcasettlementreviews.com&id=Xx7UI1pqQ8sjYedY1LRSPA&utm_medium=link&utm_source=api",
+    "indexStatusResult": {
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-08-30T17:41:00Z",
+      "pageFetchState": "SUCCESSFUL",
+      "googleCanonical": "https://www.mcasettlementreviews.com/about",
+      "userCanonical": "https://www.mcasettlementreviews.com/about",
+      "sitemap": [
+        "https://www.mcasettlementreviews.com/sitemap.xml"
+      ],
+      "referringUrls": [
+        "https://www.mcasettlementreviews.com/sitemap.xml"
+      ],
+      "crawledAs": "MOBILE"
+    },
+    "mobileUsabilityResult": {
+      "verdict": "VERDICT_UNSPECIFIED"
+    }
+  },
+  {
+    "url": "https://www.mcasettlementreviews.com/reviews/coastal-debt-resolve",
+    "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:mcasettlementreviews.com&id=psyML6TjHGTbpz4BJSCwOA&utm_medium=link&utm_source=api",
+    "indexStatusResult": {
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-08-24T15:19:19Z",
+      "pageFetchState": "SUCCESSFUL",
+      "googleCanonical": "https://www.mcasettlementreviews.com/reviews/coastal-debt-resolve",
+      "userCanonical": "https://www.mcasettlementreviews.com/reviews/coastal-debt-resolve",
+      "referringUrls": [
+        "https://www.mcasettlementreviews.com/sitemap.xml"
+      ],
+      "crawledAs": "MOBILE"
+    },
+    "mobileUsabilityResult": {
+      "verdict": "VERDICT_UNSPECIFIED"
+    },
+    "richResultsResult": {
+      "verdict": "PASS",
+      "detectedItems": [
+        {
+          "richResultType": "Breadcrumbs",
+          "items": [
+            {
+              "name": "Unnamed item"
+            }
+          ]
+        },
+        {
+          "richResultType": "Review snippets",
+          "items": [
+            {
+              "name": "Coastal Debt Resolve"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://www.mcasettlementreviews.com/reviews/eastern-financial-partners",
+    "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:mcasettlementreviews.com&id=4CZtZE_nvm5FRkvdjdmgkA&utm_medium=link&utm_source=api",
+    "indexStatusResult": {
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-09T18:16:42Z",
+      "pageFetchState": "SUCCESSFUL",
+      "googleCanonical": "https://www.mcasettlementreviews.com/reviews/eastern-financial-partners",
+      "userCanonical": "https://www.mcasettlementreviews.com/reviews/eastern-financial-partners",
+      "sitemap": [
+        "https://www.mcasettlementreviews.com/sitemap.xml"
+      ],
+      "referringUrls": [
+        "https://www.mcasettlementreviews.com/sitemap.xml"
+      ],
+      "crawledAs": "MOBILE"
+    },
+    "mobileUsabilityResult": {
+      "verdict": "VERDICT_UNSPECIFIED"
+    },
+    "richResultsResult": {
+      "verdict": "PASS",
+      "detectedItems": [
+        {
+          "richResultType": "Breadcrumbs",
+          "items": [
+            {
+              "name": "Unnamed item"
+            }
+          ]
+        },
+        {
+          "richResultType": "Review snippets",
+          "items": [
+            {
+              "name": "Eastern Financial Partners"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://www.mcasettlementreviews.com/reviews/corporate-rescue",
+    "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:mcasettlementreviews.com&id=jVhP0N7C5V7ePT13tTRkbQ&utm_medium=link&utm_source=api",
+    "indexStatusResult": {
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-04T13:48:54Z",
+      "pageFetchState": "SUCCESSFUL",
+      "googleCanonical": "https://www.mcasettlementreviews.com/reviews/corporate-rescue",
+      "userCanonical": "https://www.mcasettlementreviews.com/reviews/corporate-rescue",
+      "referringUrls": [
+        "https://www.mcasettlementreviews.com/sitemap.xml"
+      ],
+      "crawledAs": "MOBILE"
+    },
+    "mobileUsabilityResult": {
+      "verdict": "VERDICT_UNSPECIFIED"
+    },
+    "richResultsResult": {
+      "verdict": "PASS",
+      "detectedItems": [
+        {
+          "richResultType": "Breadcrumbs",
+          "items": [
+            {
+              "name": "Unnamed item"
+            }
+          ]
+        },
+        {
+          "richResultType": "Review snippets",
+          "items": [
+            {
+              "name": "Corporate Rescue Advisors"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://www.mcasettlementreviews.com/guides/what-is-mca-settlement",
+    "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:mcasettlementreviews.com&id=WrG4HkaI_TA99pOJrT3vBg&utm_medium=link&utm_source=api",
+    "indexStatusResult": {
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-13T02:30:36Z",
+      "pageFetchState": "SUCCESSFUL",
+      "googleCanonical": "https://www.mcasettlementreviews.com/guides/what-is-mca-settlement",
+      "userCanonical": "https://www.mcasettlementreviews.com/guides/what-is-mca-settlement",
+      "referringUrls": [
+        "https://www.mcasettlementreviews.com/sitemap.xml"
+      ],
+      "crawledAs": "MOBILE"
+    },
+    "mobileUsabilityResult": {
+      "verdict": "VERDICT_UNSPECIFIED"
+    }
+  }
+]

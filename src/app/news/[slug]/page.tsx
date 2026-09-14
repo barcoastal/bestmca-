@@ -28,6 +28,7 @@ export async function generateMetadata({
       description: article.metaDescription,
       type: "article",
       publishedTime: article.publishedAt,
+      modifiedTime: article.updatedAt,
       url: `/news/${article.slug}`,
     },
     alternates: { canonical: `/news/${article.slug}` },
@@ -58,6 +59,7 @@ export default async function NewsPage({
           headline: article.title,
           description: article.excerpt,
           datePublished: article.publishedAt,
+          dateModified: article.updatedAt,
           mainEntityOfPage: `https://www.mcasettlementreviews.com/news/${article.slug}`,
           publisher: { "@id": "https://www.mcasettlementreviews.com/#organization" },
           citation: article.sources.map((source) => source.url),
@@ -88,6 +90,8 @@ export default async function NewsPage({
           <p className="mt-5 text-lg text-ink-soft leading-relaxed">
             {article.excerpt}
           </p>
+          {article.updatedAt && <p className="mt-3 text-sm text-ink-muted">Updated <time dateTime={article.updatedAt}>{article.updatedAt}</time></p>}
+          {article.correctionNote && <p className="mt-4 rounded-xl border border-line bg-white p-4 text-sm text-ink-soft">{article.correctionNote}</p>}
         </div>
       </header>
 
@@ -118,8 +122,8 @@ export default async function NewsPage({
             Sources
           </h2>
           <p className="mt-2 text-sm text-ink-muted">
-            Original announcement and third-party coverage referenced in this
-            article.
+            Sources and original links. Any verification limitations are noted
+            in the article above.
           </p>
           <ul className="mt-4 space-y-3">
             {article.sources.map((s) => (
@@ -137,7 +141,7 @@ export default async function NewsPage({
                     {s.url.replace(/^https?:\/\//, "").replace(/\/$/, "")}
                   </div>
                   <div className="mt-1 text-[11px] text-ink-subtle">
-                    Published {s.publishedAt}
+                    {s.publishedAt ? `Published ${s.publishedAt}` : "See source for publication and update dates"}
                   </div>
                 </a>
               </li>

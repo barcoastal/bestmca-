@@ -65,7 +65,7 @@ export const INDUSTRIES: Industry[] = [
       },
       {
         q: "How much can retail businesses typically save in an MCA settlement?",
-        a: "Public outcomes across the industry generally range from 30 to 60 percent reductions on the outstanding balance, depending on how many positions are stacked, whether litigation has started, and whether you can fund a lump-sum settlement. Any firm guaranteeing a specific percentage before reviewing your contracts is a red flag.",
+        a: "We have not established a representative savings range for retail MCA settlements. Outcomes depend on the contracts, creditor agreement and available funding. Ask for evidence supporting a proposal and distinguish gross balance reductions from savings after fees.",
       },
       {
         q: "Should I stop paying my MCA to force a settlement?",

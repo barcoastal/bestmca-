@@ -91,11 +91,11 @@ export default async function LegitPage({
               ? "BBB Accredited"
               : "not BBB Accredited"
           }. ${bbb.takeaway}`
-        : `${firm.name} does not have a Better Business Bureau profile, which means there is no independently tracked BBB rating or complaint record to check before signing.`,
+        : `A matching standalone Better Business Bureau profile was not established in our reviewed records for ${firm.name}. This does not prove that no profile exists. Check the entity name and current BBB search results.`,
     },
     {
       q: `What should I check before signing with ${firm.name}?`,
-      a: "Get the full fee schedule in writing before paying anything, confirm whether creditor contact has actually begun within the first 30 days, and never agree to stop paying creditors without written confirmation that negotiation is underway. Compare at least one alternative firm first.",
+      a: "Get an itemized agreement and creditor-contact schedule, confirm the contracting entity and any legal representation, and compare alternatives. Negotiations do not suspend contractual obligations or court deadlines; discuss payment changes with qualified counsel.",
     },
   ];
 
