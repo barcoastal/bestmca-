@@ -9,6 +9,7 @@ import { BBBSeal } from "@/components/review/BBBSeal";
 import { coastalCta } from "@/lib/cta";
 import { TrackedLink } from "@/components/review/TrackedLink";
 import { NEWS } from "@/data/news";
+import { BBB_RECORDS } from "@/data/bbb";
 
 export const metadata = {
   // Brand leads so it survives SERP truncation and the homepage (not /about)
@@ -18,7 +19,7 @@ export const metadata = {
       "MCA Settlement Reviews: Best MCA Debt Relief Companies 2026",
   },
   description:
-    "Independent reviews and rankings of the 17 best MCA debt relief and merchant cash advance settlement companies of 2026. Compare BBB ratings, fees, complaints, and real results.",
+    "Compare 17 MCA settlement and debt relief companies. Read dated BBB records, complaints, fee disclosures, and the evidence limits behind our editorial ratings.",
   keywords: [
     "mca debt relief",
     "mca debt relief reviews",
@@ -38,7 +39,7 @@ const HOME_FAQ = [
   },
   {
     q: "How do you rank the companies?",
-    a: "Each firm is scored across five categories: transparency and disclosures, settlement results, client communication, cost and fee structure, and litigation defense capability. Review-specific source notes identify the records checked and the limits of verification. Category scores are editorial judgments; Coastal’s existing score is under evidence review. We do not accept compensation, referral fees, or sponsorships from any firm featured.",
+    a: "Each firm is scored across five categories: transparency and disclosures, settlement results, client communication, cost and fee structure, and litigation defense capability. Review-specific source notes identify the records checked and the limits of verification. Category scores are editorial judgments; all existing scores are under evidence review and have not been independently substantiated. We do not accept compensation, referral fees, or sponsorships from any firm featured.",
   },
   {
     q: "Which MCA settlement company has the best BBB rating?",
@@ -46,7 +47,7 @@ const HOME_FAQ = [
   },
   {
     q: "Is MCA settlement the same as bankruptcy?",
-    a: "No. Settlement negotiates down what you owe while keeping the business operating and usually avoids the long-term credit and public-record consequences of bankruptcy. Bankruptcy is a legal proceeding of last resort. For many small businesses with active MCAs, settlement or restructuring resolves the problem without filing.",
+    a: "No. Settlement involves negotiating an agreement with a creditor or funder. Bankruptcy is a court process; Chapter 11 can allow a business to reorganize while continuing operations. Neither route guarantees that you will preserve assets, credit, or the business. Compare the options with qualified counsel.",
   },
 ];
 
@@ -97,7 +98,7 @@ export default function HomePage() {
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
               2026 Independent Review · Updated{" "}
-              September 12, 2026
+              September 18, 2026
             </div>
             <h1 className="mt-4 font-display text-4xl md:text-6xl font-semibold text-navy leading-[1.05] tracking-tight">
               The best MCA settlement companies of 2026, compared across five editorial criteria.
@@ -180,7 +181,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-5 py-10 grid gap-6 md:grid-cols-5">
           {[
             { n: "01", t: "Transparency", d: "Fees disclosed before signing" },
-            { n: "02", t: "Results", d: "Verified settlement outcomes" },
+            { n: "02", t: "Results", d: "Outcome evidence and its limitations" },
             { n: "03", t: "Communication", d: "Named case manager, response cadence" },
             { n: "04", t: "Cost", d: "Total cost of resolution, not headline rate" },
             { n: "05", t: "Litigation", d: "In-house attorneys vs referral" },
@@ -230,21 +231,28 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-5 py-14 grid gap-10 md:grid-cols-[1.3fr_1fr] items-center">
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
-              Verified, not self-reported
+              Dated public records
             </div>
             <h2 className="mt-3 font-display text-3xl md:text-4xl font-semibold text-navy leading-tight">
-              We pulled every firm&rsquo;s real BBB record
+              Compare the BBB records behind our reviews
             </h2>
             <p className="mt-4 text-base text-ink-soft leading-relaxed max-w-xl">
-              Accreditation status, letter grade, and customer-review average for
-              every MCA settlement company we cover, read directly from bbb.org.
-              The spread is wide: a few hold A+ accredited records, while others
-              sit at B, F, or have no BBB profile at all.
+              Compare available letter grades, accreditation status, complaints, and
+              customer-review averages. Our BBB comparison identifies the linked
+              profiles, check dates, related entities, and missing information.
+              These records do not establish settlement outcomes.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
-              <GradeChip grade="A+" tone="good" label="Coastal Debt Resolve" />
-              <GradeChip grade="B" tone="ok" label="MCA Resolve" />
-              <GradeChip grade="F" tone="bad" label="Corporate Rescue Advisors" />
+              {BBB_RECORDS.filter((record) =>
+                ["coastal-debt-resolve", "mca-resolve", "corporate-rescue"].includes(record.slug || ""),
+              ).map((record) => (
+                <GradeChip
+                  key={record.slug}
+                  grade={record.grade}
+                  tone={record.grade === "A+" ? "good" : "ok"}
+                  label={record.name}
+                />
+              ))}
             </div>
             <Link
               href="/mca-settlement-companies-bbb-ratings"
@@ -377,6 +385,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-5 pb-16">
+        <h2 className="font-display text-3xl font-semibold text-navy">
+          Compare MCA debt relief options before choosing a firm
+        </h2>
+        <p className="mt-3 max-w-3xl text-ink-soft leading-relaxed">
+          Start with the type of help you need, then compare the proposed fees,
+          payment terms, and service scope in writing. These guides explain the
+          questions to ask alongside our company reviews.
+        </p>
+        <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {[
+            { href: "/mca-debt-relief", title: "MCA debt relief options", text: "Compare the available approaches and questions to discuss with an adviser." },
+            { href: "/mca-debt-restructuring", title: "MCA debt restructuring", text: "Understand proposed payment changes and what to check in an agreement." },
+            { href: "/mca-consolidation-loans", title: "MCA consolidation loans", text: "Compare new financing with settlement and restructuring proposals." },
+            { href: "/guides/how-much-does-mca-settlement-cost", title: "MCA settlement costs", text: "Review provider fees and creditor payments together when comparing proposals." },
+            { href: "/guides/mca-settlement-vs-bankruptcy", title: "MCA settlement vs. bankruptcy", text: "Explore the differences and questions to take to qualified counsel." },
+            { href: "/methodology", title: "How to read our company ratings", text: "See our criteria, dated evidence, and the limitations of existing scores." },
+          ].map((guide) => (
+            <Link key={guide.href} href={guide.href} className="rounded-2xl border border-line bg-white p-5 hover:shadow-md transition-shadow">
+              <h3 className="font-display text-lg font-semibold text-navy">{guide.title}</h3>
+              <p className="mt-2 text-sm text-ink-soft leading-relaxed">{guide.text}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Latest News */}
       <section className="mx-auto max-w-6xl px-5 pb-8">
         <header className="mb-6 flex items-end justify-between">
@@ -453,6 +487,14 @@ export default function HomePage() {
                 </span>
               </summary>
               <p className="mt-3 text-ink-soft leading-relaxed">{f.a}</p>
+              {f.q === "Is MCA settlement the same as bankruptcy?" && (
+                <a
+                  href="https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics"
+                  className="mt-3 inline-block text-sm text-navy underline"
+                >
+                  Source: U.S. Courts Chapter 11 overview
+                </a>
+              )}
             </details>
           ))}
         </div>

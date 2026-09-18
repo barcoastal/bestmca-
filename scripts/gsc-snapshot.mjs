@@ -2,7 +2,7 @@
 // Weekly GSC snapshot for mcasettlementreviews.com.
 // Pulls a clean 7-day window (ending 3 days ago to allow for GSC data lag),
 // writes docs/gsc-snapshots/YYYY-MM-DD.json, and appends a human-readable
-// delta report vs the previous snapshot to docs/gsc-snapshots/LOG.md.
+// delta report vs the preceding non-overlapping week to docs/gsc-snapshots/LOG.md.
 // Auth: reuses the working OAuth client from ~/mirai-seo/.env (see gsc-pull.mjs).
 
 import fs from "node:fs";
@@ -99,7 +99,7 @@ async function main() {
   const token = await accessToken(env);
   const startDate = dateStr(9);
   const endDate = dateStr(3);
-  const base = { startDate, endDate };
+  const base = { startDate, endDate, dataState: "final" };
 
   const [totalRows, queryRows, pageRows] = [
     await query(token, base),
@@ -140,23 +140,29 @@ async function main() {
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const stamp = dateStr(0);
-  fs.writeFileSync(path.join(OUT_DIR, `${stamp}.json`), JSON.stringify(snapshot, null, 2));
 
-  // Find the previous snapshot for deltas.
-  const prevFile = fs
-    .readdirSync(OUT_DIR)
-    .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f) && f !== `${stamp}.json`)
-    .sort()
-    .pop();
-  const prev = prevFile
-    ? JSON.parse(fs.readFileSync(path.join(OUT_DIR, prevFile), "utf8"))
-    : null;
+  // Query the preceding seven days: ad-hoc runs must not compare overlapping windows.
+  const comparisonWindow = { startDate: dateStr(16), endDate: dateStr(10) };
+  const comparisonBase = { ...comparisonWindow, dataState: "final" };
+  const [previousTotals, previousQueries] = await Promise.all([
+    query(token, comparisonBase),
+    query(token, { ...comparisonBase, dimensions: ["query"], rowLimit: 500 }),
+  ]);
+  const prev = {
+    totals: previousTotals[0] || { clicks: 0, impressions: 0, ctr: 0, position: 0 },
+    tracked: Object.fromEntries(TRACKED.map((q) => {
+      const row = previousQueries.find((r) => r.keys[0] === q);
+      return [q, row || null];
+    })),
+  };
+  snapshot.comparison = { window: comparisonWindow, ...prev };
+  fs.writeFileSync(path.join(OUT_DIR, `${stamp}.json`), JSON.stringify(snapshot, null, 2));
 
   let md = `\n## ${stamp} (window ${startDate} to ${endDate})\n\n`;
   md += `Totals: **${t.clicks} clicks**, ${t.impressions} impressions, ${pct(t.ctr)} CTR, avg pos ${t.position.toFixed(1)}`;
   if (prev) {
     const p = prev.totals;
-    md += `  (vs prev: clicks ${sign(t.clicks - p.clicks)}, impr ${sign(t.impressions - p.impressions)}, pos ${sign(t.position - p.position, 1)})`;
+    md += `  (vs ${comparisonWindow.startDate}–${comparisonWindow.endDate}: clicks ${sign(t.clicks - p.clicks)}, impr ${sign(t.impressions - p.impressions)}, pos ${sign(t.position - p.position, 1)})`;
   }
   md += `\n\n| Tracked query | Clicks | Impr | CTR | Pos | Pos delta |\n|---|---|---|---|---|---|\n`;
   for (const q of TRACKED) {
@@ -175,10 +181,16 @@ async function main() {
   if (!fs.existsSync(logPath)) {
     fs.writeFileSync(
       logPath,
-      "# GSC weekly snapshots\n\nOne entry per run. Position deltas are vs the previous snapshot; negative is better.\n",
+      "# GSC weekly snapshots\n\nOne entry per run. Position deltas are vs the preceding non-overlapping seven days; negative is better.\n",
     );
   }
-  fs.appendFileSync(logPath, md);
+  // Replace today's entry on repeat runs instead of appending contradictory copies.
+  const log = fs.readFileSync(logPath, "utf8");
+  const marker = `\n## ${stamp} (window `;
+  const entryStart = log.indexOf(marker);
+  const nextEntry = entryStart < 0 ? -1 : log.indexOf("\n## ", entryStart + marker.length);
+  const retained = entryStart < 0 ? log : log.slice(0, entryStart) + (nextEntry < 0 ? "" : log.slice(nextEntry));
+  fs.writeFileSync(logPath, retained + md);
   console.log(md);
 }
 

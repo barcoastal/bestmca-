@@ -2,6 +2,9 @@
 
 One entry per run. Position deltas are vs the previous snapshot; negative is better.
 
+From September 18, 2026, comparisons use the immediately preceding non-overlapping seven-day window. Older entries retain their original snapshot comparisons, which may overlap.
+
+
 ## 2026-07-22 (window 2026-07-13 to 2026-07-19)
 
 Totals: **28 clicks**, 3339 impressions, 0.8% CTR, avg pos 9.6
@@ -199,3 +202,21 @@ Totals: **2 clicks**, 150 impressions, 1.3% CTR, avg pos 53.0  (vs prev: clicks 
 | corporate turnaround reviews | 0 | 2 | 0.0% | 62.5 | 0.0 |
 | rise alliance reviews | - | - | - | not shown | |
 | regroup partners reviews | 0 | 1 | 0.0% | 42.0 | 0.0 |
+
+## 2026-09-18 (window 2026-09-09 to 2026-09-15)
+
+Totals: **1 clicks**, 151 impressions, 0.7% CTR, avg pos 54.0  (vs 2026-09-02–2026-09-08: clicks 0, impr -99, pos -1.6)
+
+| Tracked query | Clicks | Impr | CTR | Pos | Pos delta |
+|---|---|---|---|---|---|
+| best mca debt relief companies | 0 | 7 | 0.0% | 64.9 | -4.4 |
+| mca settlement companies | 0 | 11 | 0.0% | 82.0 | +2.1 |
+| mca debt relief reviews | 0 | 2 | 0.0% | 54.5 | +0.5 |
+| merchant cash advance settlement companies | 0 | 6 | 0.0% | 89.7 | -0.8 |
+| mca debt relief companies | - | - | - | not shown | |
+| second wind consultants reviews | 0 | 1 | 0.0% | 44.0 | -1.0 |
+| eastern financial partners reviews | 0 | 2 | 0.0% | 30.5 | +0.5 |
+| spergel reviews | - | - | - | not shown | |
+| corporate turnaround reviews | 0 | 1 | 0.0% | 72.0 | +21.5 |
+| rise alliance reviews | - | - | - | not shown | |
+| regroup partners reviews | - | - | - | not shown | |

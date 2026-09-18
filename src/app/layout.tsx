@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | MCA Settlement Reviews",
   },
   description:
-    "Independent reviews of the top merchant cash advance settlement companies. Compare pricing, results, and complaints to find the right MCA debt relief firm.",
+    "Independent reviews of the top merchant cash advance settlement companies. Compare dated public records, fee disclosures, complaints, and review limitations.",
   openGraph: {
     siteName: "MCA Settlement Reviews",
     type: "website",

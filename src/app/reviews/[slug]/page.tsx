@@ -43,7 +43,7 @@ export async function generateMetadata({
       title:
         "Coastal Debt Resolve Reviews 2026: Trustpilot, Complaints & Verdict",
       description:
-        `2026 review of Coastal Debt Resolve: ${review.score.toFixed(1)}/5 editorial score. Services, public reviews, costs and limitations.`,
+        "Coastal Debt Resolve review: dated BBB and Trustpilot records, complaints, advertised services, fee questions, and the limits of our assessment.",
       keywords: [
         "Coastal Debt Resolve reviews",
         "Coastal Debt Resolve complaints",
@@ -57,6 +57,8 @@ export async function generateMetadata({
         description:
           "Coastal Debt Resolve: service claims, public records, fees and review limitations.",
         type: "article",
+        url: `/reviews/${review.slug}`,
+        modifiedTime: review.updatedAt,
       },
       alternates: { canonical: `/reviews/${review.slug}` },
     };
@@ -76,7 +78,7 @@ export async function generateMetadata({
       `is ${review.name.toLowerCase()} legit`,
       `${review.name.toLowerCase()} bbb`,
     ],
-    openGraph: { title, description, type: "article" },
+    openGraph: { title, description, type: "article", url: `/reviews/${review.slug}`, modifiedTime: review.updatedAt },
     alternates: { canonical: `/reviews/${review.slug}` },
   };
 }
