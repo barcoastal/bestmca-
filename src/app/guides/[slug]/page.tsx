@@ -161,8 +161,8 @@ export default async function GuidePage({
         <CTABanner
           campaign={`guide-${guide.slug}`}
           variant="subtle"
-          heading="Talk to our #1 rated MCA settlement firm"
-          body="Coastal Debt Resolve will give you a free MCA review and a written settlement strategy before any contract."
+          heading="Talk to our featured first provider"
+          body="Request a free consultation from Coastal Debt Resolve. Confirm fees, service scope, and any legal representation in writing."
           buttonLabel="Get a free review"
         />
       </div>

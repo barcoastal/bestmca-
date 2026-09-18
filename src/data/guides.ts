@@ -19,1058 +19,1115 @@ export type Guide = {
 
 export const GUIDES: Guide[] = [
   {
-  "slug": "what-is-mca-settlement",
-  "title": "What is MCA settlement, and how does it actually work?",
-  "metaTitle": "MCA Debt Settlement Explained: How It Works in 2026",
-  "metaDescription": "Merchant cash advance settlement explained: what it is, how negotiation works, what it costs, and when it makes sense for a small business.",
-  "intro": "MCA settlement is an attempt to reach a written agreement with a funder about an outstanding obligation. A proposal may seek a discounted payoff or revised payments. The funder can decline, and negotiations do not automatically stop enforcement.",
-  "sections": [
-    {
-      "heading": "Settlement, restructuring and refinancing",
-      "paragraphs": [
-        "Settlement generally seeks an agreed resolution of a claimed balance. Restructuring changes payment terms. Refinancing uses new financing to address existing obligations. Ask which result the proposal actually offers and calculate the total amount you would pay, including fees."
-      ]
-    },
-    {
-      "heading": "Start with the contracts and cash flow",
-      "paragraphs": [
-        "Gather each agreement, current claimed balance, payment history, security filing, personal guarantee and any legal notices. Build a cash-flow forecast that includes essential operating costs. A representative should explain which creditors will be approached and what payments the business can sustain."
-      ]
-    },
-    {
-      "heading": "Put any agreement in writing",
-      "paragraphs": [
-        "Confirm the creditors and accounts covered, the amount and timing of payments, what happens on a missed payment and what releases are included. Do not assume settling a balance also releases a personal guarantee, ends a lawsuit or terminates every UCC filing. Have those provisions reviewed and verify completion."
-      ]
-    },
-    {
-      "heading": "There is no verified standard timeline or savings rate",
-      "paragraphs": [
-        "We have not established a representative MCA settlement dataset from which to estimate typical discounts or completion times. Provider examples are selected cases. Ask for assumptions, supporting records and a plan for a creditor that refuses."
-      ]
-    },
-    {
-      "heading": "Compare legal alternatives when needed",
-      "paragraphs": [
-        "Bankruptcy, litigation defense and consensual negotiation have different requirements and consequences. The U.S. Courts explains that Chapter 11 can permit continued operations under court supervision. An attorney should assess whether it is available or appropriate; an MCA label alone does not decide the legal treatment."
-      ]
-    }
-  ],
-  "faq": [
-    {
-      "q": "How long does MCA settlement take?",
-      "a": "There is no verified industry-wide timeframe in our research. Timing depends on creditor participation, funding, disputed terms and any court proceedings. Request a case-specific plan without treating it as a guarantee."
-    },
-    {
-      "q": "Should I stop payments while negotiations take place?",
-      "a": "Negotiations do not themselves change payment obligations. Payment changes may trigger default or enforcement. Obtain advice on your contract and any legal notices before changing payments."
-    },
-    {
-      "q": "Will a settlement protect my credit?",
-      "a": "No credit outcome is guaranteed. Reporting, existing defaults, guarantees and future lender decisions vary. Review the proposed reporting terms and check the relevant credit records."
-    }
-  ],
-  "takeaway": "Compare the written scope, creditor payments, all fees and unresolved legal issues. A sales promise does not replace a signed creditor agreement.",
-  "sources": [
-    {
-      "label": "U.S. Courts: Chapter 11 basics",
-      "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics",
-      "note": "Federal court explanation of reorganization; not a determination about an individual MCA."
-    }
-  ],
-  "updatedAt": "2026-09-14"
-},
-  {
-  "slug": "how-much-does-mca-settlement-cost",
-  "title": "How much does MCA settlement actually cost?",
-  "metaTitle": "MCA Settlement Costs: Compare Fees and Total Payments",
-  "metaDescription": "How to compare written MCA settlement fees, creditor payments, legal charges and cancellation terms without relying on unverified industry averages.",
-  "intro": "A settlement quote is incomplete unless it separates the provider’s fees from money reaching creditors. We have not verified a representative industry fee range. Compare written proposals for the same balances and services.",
-  "sections": [
-    {
-      "heading": "Identify the fee basis",
-      "paragraphs": [
-        "A proposal may use a fixed amount, a percentage of enrolled balances, a percentage of claimed savings or multiple charges. Ask exactly what is included in the calculation, when each charge becomes due and whether an unsuccessful negotiation still generates fees."
-      ]
-    },
-    {
-      "heading": "Calculate the full cost",
-      "paragraphs": [
-        "For a hypothetical $100,000 obligation, a $60,000 creditor settlement plus a $20,000 provider fee costs $80,000 before other charges. The net reduction is $20,000, not the $40,000 headline discount. These figures illustrate arithmetic, not typical MCA pricing or a predicted outcome."
-      ]
-    },
-    {
-      "heading": "Include legal and account charges",
-      "paragraphs": [
-        "Request any attorney, administration, payment-processing, account-maintenance and cancellation fees. Ask whether legal representation requires a separate agreement and whether fees apply separately to each creditor. Neither hourly billing nor a separate attorney engagement proves poor service; unclear scope makes comparison difficult."
-      ]
-    },
-    {
-      "heading": "Check the fee trigger and refund terms",
-      "paragraphs": [
-        "Stop MCA’s public FAQ, for example, describes an enrollment fee and a savings-related service fee but does not specify the amounts. This illustrates why a “free consultation” does not mean a free program. Confirm any refund conditions against the agreement."
-      ]
-    },
-    {
-      "heading": "Compare proposals on the same assumptions",
-      "paragraphs": [
-        "List creditor payments, provider fees, outside legal costs and unresolved balances. Model what happens if one creditor refuses, an account is sued or the business leaves the program. Ask for actual written terms instead of relying on a headline percentage."
-      ]
-    }
-  ],
-  "takeaway": "Compare the full cash outflow and contractual obligations. A lower provider fee is not necessarily a lower total cost.",
-  "sources": [
-    {
-      "label": "Stop MCA: fee FAQ",
-      "url": "https://stopmca.com/",
-      "note": "Company disclosure of enrollment and service fees; not an industry-wide pricing benchmark."
-    }
-  ],
-  "updatedAt": "2026-09-14"
-},
-  {
-  "slug": "mca-settlement-vs-bankruptcy",
-  "title": "MCA settlement vs bankruptcy: which one fits your situation?",
-  "metaTitle": "MCA Settlement vs Bankruptcy: Side-by-Side Comparison",
-  "metaDescription": "When MCA settlement is the right tool, when bankruptcy is, and how to think about the trade-offs around credit, control, and personal exposure.",
-  "intro": "Consensual settlement and bankruptcy are different ways of addressing financial distress. Neither automatically preserves credit, assets or business operations. The appropriate route depends on the entity, obligations, contracts and applicable law.",
-  "sections": [
-    {
-      "heading": "What settlement requires",
-      "paragraphs": [
-        "A negotiated proposal needs the relevant creditor’s agreement. It can address a balance or payment schedule, but other creditors and court deadlines remain relevant. Check whether the business can afford the resulting payments plus fees and ordinary operating expenses."
-      ]
-    },
-    {
-      "heading": "What Chapter 11 can involve",
-      "paragraphs": [
-        "The U.S. Courts describes Chapter 11 as reorganization in which a debtor often remains in possession and can continue operating. A filing generally creates an automatic stay, subject to exceptions and possible relief from the stay. This is not a promise that every collection action stops or that a particular business qualifies."
-      ]
-    },
-    {
-      "heading": "Business and personal exposure are separate questions",
-      "paragraphs": [
-        "The entity that owes the obligation, any personal guarantee and the property subject to security interests all matter. An agreement with one creditor does not necessarily release a guarantor or solve other liabilities. Obtain an assessment that includes both the business and personal exposure."
-      ]
-    },
-    {
-      "heading": "Compare realistic alternatives",
-      "paragraphs": [
-        "Ask counsel to compare eligibility, expected costs, creditor participation, court supervision, taxes and effects on operations. There is no universal rule that settlement is cheaper or bankruptcy is a last resort. Compare scenarios using a cash-flow forecast rather than a guaranteed savings claim."
-      ]
-    }
-  ],
-  "takeaway": "Get case-specific advice comparing negotiation and court-supervised options. Do not assume that either path guarantees continued operations or protects credit.",
-  "sources": [
-    {
-      "label": "U.S. Courts: Chapter 11 basics",
-      "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics",
-      "note": "Explains debtor-in-possession operations, reorganization and the automatic stay, including limits."
-    }
-  ],
-  "updatedAt": "2026-09-14"
-},
-  {
-    slug: "how-to-choose-mca-settlement-company",
-    title: "How to choose the right MCA settlement company",
-    metaTitle: "How to Pick an MCA Settlement Company: 7 Things That Matter",
-    metaDescription:
-      "A practical checklist for evaluating MCA settlement firms: legal capability, fee structure, communication, third-party validation, and the right questions to ask.",
-    intro:
-      "Most MCA settlement firms look similar from a marketing page. The differences show up in the contract, in litigation capability, and in what happens after the sales call. Here is a checklist you can run before signing.",
-    sections: [
+    "slug": "what-is-mca-settlement",
+    "title": "What is MCA settlement, and how does it actually work?",
+    "metaTitle": "MCA Debt Settlement Explained: How It Works in 2026",
+    "metaDescription": "Merchant cash advance settlement explained: what it is, how negotiation works, what it costs, and when it makes sense for a small business.",
+    "intro": "MCA settlement is an attempt to reach a written agreement with a funder about an outstanding obligation. A proposal may seek a discounted payoff or revised payments. The funder can decline, and negotiations do not automatically stop enforcement.",
+    "sections": [
       {
-        heading: "1. Verify in-house legal capability",
-        paragraphs: [
-          "Ask: do you have attorneys on staff, and will they represent me if a funder sues during this engagement, under the same fee? If the answer is 'we partner with outside counsel and you would pay them separately,' that is a referral arrangement, not in-house legal.",
-        ],
+        "heading": "Settlement, restructuring and refinancing",
+        "paragraphs": [
+          "Settlement generally seeks an agreed resolution of a claimed balance. Restructuring changes payment terms. Refinancing uses new financing to address existing obligations. Ask which result the proposal actually offers and calculate the total amount you would pay, including fees."
+        ]
       },
       {
-        heading: "2. Get the fee schedule in writing pre-contract",
-        paragraphs: [
-          "Insist on a written fee schedule that includes: total cost, payment milestones, what triggers each fee, and any additional fees that may apply. Verbal pricing is not pricing.",
-        ],
+        "heading": "Start with the contracts and cash flow",
+        "paragraphs": [
+          "Gather each agreement, current claimed balance, payment history, security filing, personal guarantee and any legal notices. Build a cash-flow forecast that includes essential operating costs. A representative should explain which creditors will be approached and what payments the business can sustain."
+        ]
       },
       {
-        heading: "3. Ask for the named case manager",
-        paragraphs: [
-          "Sales teams hand off to operations teams. Ask who specifically will handle your file post-signature, and how to reach them. A firm that cannot name the person should not get your business.",
-        ],
+        "heading": "Put any agreement in writing",
+        "paragraphs": [
+          "Confirm the creditors and accounts covered, the amount and timing of payments, what happens on a missed payment and what releases are included. Do not assume settling a balance also releases a personal guarantee, ends a lawsuit or terminates every UCC filing. Have those provisions reviewed and verify completion."
+        ]
       },
       {
-        heading: "4. Validate third-party reviews",
-        paragraphs: [
-          "Look for Trustpilot reviews with named clients, BBB profiles with multi-year history, and Reddit commentary in r/smallbusiness and adjacent subs. Outcome patterns repeat across reviews; sales claims do not.",
-        ],
+        "heading": "There is no verified standard timeline or savings rate",
+        "paragraphs": [
+          "We have not established a representative MCA settlement dataset from which to estimate typical discounts or completion times. Provider examples are selected cases. Ask for assumptions, supporting records and a plan for a creditor that refuses."
+        ]
       },
       {
-        heading: "5. Confirm scope clarity",
-        paragraphs: [
-          "Get in writing: which funders are covered, what happens if a new MCA is taken on during engagement, what counts as 'success,' and what happens if a funder refuses to negotiate.",
-        ],
-      },
-      {
-        heading: "6. Test responsiveness during intake",
-        paragraphs: [
-          "If the firm is slow or evasive during the sales process, it will be slow or evasive during the engagement. The intake experience predicts the operational experience.",
-        ],
-      },
-      {
-        heading: "7. Get a second opinion",
-        paragraphs: [
-          "Talk to at least two firms. Cross-check fee quotes, scope language, and what each firm tells you about your specific situation. Real firms welcome the comparison. Marketing-led firms pressure you to sign immediately.",
-        ],
-      },
+        "heading": "Compare legal alternatives when needed",
+        "paragraphs": [
+          "Bankruptcy, litigation defense and consensual negotiation have different requirements and consequences. The U.S. Courts explains that Chapter 11 can permit continued operations under court supervision. An attorney should assess whether it is available or appropriate; an MCA label alone does not decide the legal treatment."
+        ]
+      }
     ],
-    takeaway:
-      "The right MCA firm answers all seven of these in writing, without pressure. If a firm pushes back on any of these, that is your signal.",
+    "faq": [
+      {
+        "q": "How long does MCA settlement take?",
+        "a": "There is no verified industry-wide timeframe in our research. Timing depends on creditor participation, funding, disputed terms and any court proceedings. Request a case-specific plan without treating it as a guarantee."
+      },
+      {
+        "q": "Should I stop payments while negotiations take place?",
+        "a": "Negotiations do not themselves change payment obligations. Payment changes may trigger default or enforcement. Obtain advice on your contract and any legal notices before changing payments."
+      },
+      {
+        "q": "Will a settlement protect my credit?",
+        "a": "No credit outcome is guaranteed. Reporting, existing defaults, guarantees and future lender decisions vary. Review the proposed reporting terms and check the relevant credit records."
+      }
+    ],
+    "takeaway": "Compare the written scope, creditor payments, all fees and unresolved legal issues. A sales promise does not replace a signed creditor agreement.",
+    "sources": [
+      {
+        "label": "U.S. Courts: Chapter 11 basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics",
+        "note": "Federal court explanation of reorganization; not a determination about an individual MCA."
+      }
+    ],
+    "updatedAt": "2026-09-14"
   },
   {
-    slug: "mca-debt-relief-red-flags",
-    title: "MCA debt relief red flags: how to spot the firms to avoid",
-    metaTitle: "MCA Debt Relief Red Flags: 9 Warning Signs to Watch For",
-    metaDescription:
-      "Patterns that show up in problem MCA settlement firms: opaque fees, missing legal capability, aggressive sales pressure, and the regulatory history of the category.",
-    intro:
-      "The MCA settlement category has attracted regulatory attention for the same reasons every consumer debt-relief category has: high stress, urgent decisions, and structural information asymmetry. Most firms are legitimate. The patterns below describe the ones that are not.",
-    sections: [
+    "slug": "how-much-does-mca-settlement-cost",
+    "title": "How much does MCA settlement actually cost?",
+    "metaTitle": "MCA Settlement Costs: Compare Fees and Total Payments",
+    "metaDescription": "How to compare written MCA settlement fees, creditor payments, legal charges and cancellation terms without relying on unverified industry averages.",
+    "intro": "A settlement quote is incomplete unless it separates the provider’s fees from money reaching creditors. We have not verified a representative industry fee range. Compare written proposals for the same balances and services.",
+    "sections": [
       {
-        heading: "1. No written fee schedule pre-contract",
-        paragraphs: [
-          "If a firm will not put fees in writing before you sign, walk. This is the most consistent predictor of post-engagement disputes.",
-        ],
+        "heading": "Identify the fee basis",
+        "paragraphs": [
+          "A proposal may use a fixed amount, a percentage of enrolled balances, a percentage of claimed savings or multiple charges. Ask exactly what is included in the calculation, when each charge becomes due and whether an unsuccessful negotiation still generates fees."
+        ]
       },
       {
-        heading: "2. Pressure to sign on the first call",
-        paragraphs: [
-          "Real firms are comfortable with you taking 24 to 48 hours to think and to talk to a second firm. Aggressive same-call closes are a marketing-shop pattern.",
-        ],
+        "heading": "Calculate the full cost",
+        "paragraphs": [
+          "For a hypothetical $100,000 obligation, a $60,000 creditor settlement plus a $20,000 provider fee costs $80,000 before other charges. The net reduction is $20,000, not the $40,000 headline discount. These figures illustrate arithmetic, not typical MCA pricing or a predicted outcome."
+        ]
       },
       {
-        heading: "3. Promises of guaranteed percentage reductions",
-        paragraphs: [
-          "Settlement outcomes depend on funder, business situation, and timing. Firms that 'guarantee' specific percentage reductions in marketing materials are often unable to back the guarantee with contract language.",
-        ],
+        "heading": "Include legal and account charges",
+        "paragraphs": [
+          "Request any attorney, administration, payment-processing, account-maintenance and cancellation fees. Ask whether legal representation requires a separate agreement and whether fees apply separately to each creditor. Neither hourly billing nor a separate attorney engagement proves poor service; unclear scope makes comparison difficult."
+        ]
       },
       {
-        heading: "4. No in-house legal capability",
-        paragraphs: [
-          "MCA cases are fundamentally legal products. A firm without attorneys on staff is going to refer out the moment your situation requires defense, and the referred counsel will charge separately.",
-        ],
+        "heading": "Check the fee trigger and refund terms",
+        "paragraphs": [
+          "Stop MCA’s public FAQ, for example, describes an enrollment fee and a savings-related service fee but does not specify the amounts. This illustrates why a “free consultation” does not mean a free program. Confirm any refund conditions against the agreement."
+        ]
       },
       {
-        heading: "5. Vague scope language in the contract",
-        paragraphs: [
-          "If the contract uses phrases like 'additional services may apply,' 'fees may vary,' or 'as determined by the firm,' those are blanks the firm fills in later, in their favor.",
-        ],
-      },
-      {
-        heading: "6. Limited or absent third-party reviews",
-        paragraphs: [
-          "A firm operating for several years should have BBB and Trustpilot footprints. Limited public reviews despite long operation suggests either small client volume or active suppression of negative feedback.",
-        ],
-      },
-      {
-        heading: "7. Sales team you cannot get past",
-        paragraphs: [
-          "Refusal to introduce you to operations, attorneys, or your post-signature case manager pre-contract usually means that experience will be different from the sales experience.",
-        ],
-      },
-      {
-        heading: "8. Disregard for bankruptcy as an option",
-        paragraphs: [
-          "A firm that refuses to discuss whether bankruptcy might fit your situation is selling its product, not advising you. Real firms tell you when their tool is not the right one.",
-        ],
-      },
-      {
-        heading: "9. Regulatory history",
-        paragraphs: [
-          "Check the firm against state Attorney General actions, FTC actions in the broader debt-relief category, and any active litigation. Past regulatory action is the strongest predictor of future regulatory action.",
-        ],
-      },
+        "heading": "Compare proposals on the same assumptions",
+        "paragraphs": [
+          "List creditor payments, provider fees, outside legal costs and unresolved balances. Model what happens if one creditor refuses, an account is sued or the business leaves the program. Ask for actual written terms instead of relying on a headline percentage."
+        ]
+      }
     ],
-    takeaway:
-      "Most legitimate MCA firms answer every one of these without flinching. The firms that flinch are the firms to avoid.",
+    "takeaway": "Compare the full cash outflow and contractual obligations. A lower provider fee is not necessarily a lower total cost.",
+    "sources": [
+      {
+        "label": "Stop MCA: fee FAQ",
+        "url": "https://stopmca.com/",
+        "note": "Company disclosure of enrollment and service fees; not an industry-wide pricing benchmark."
+      }
+    ],
+    "updatedAt": "2026-09-14"
   },
   {
-    slug: "mca-contract-red-flags",
-    title: "Common red flags in MCA contract terms, explained clause by clause",
-    metaTitle: "MCA Contract Red Flags: 8 Terms to Check Before You Sign",
-    metaDescription:
-      "The MCA contract terms that hurt business owners most: Confessions of Judgment, broad UCC liens, no reconciliation clause, personal guarantees, and default triggers, explained in plain English.",
-    intro:
-      "Most owners sign an MCA agreement in under a day, often under cash pressure, and discover what the terms actually mean months later. These are the clauses that do the damage, what each one means in plain English, and what to check before you sign or before you negotiate your way out.",
-    sections: [
+    "slug": "mca-settlement-vs-bankruptcy",
+    "title": "MCA settlement vs bankruptcy: which one fits your situation?",
+    "metaTitle": "MCA Settlement vs Bankruptcy: Side-by-Side Comparison",
+    "metaDescription": "When MCA settlement is the right tool, when bankruptcy is, and how to think about the trade-offs around credit, control, and personal exposure.",
+    "intro": "Consensual settlement and bankruptcy are different ways of addressing financial distress. Neither automatically preserves credit, assets or business operations. The appropriate route depends on the entity, obligations, contracts and applicable law.",
+    "sections": [
       {
-        heading: "Confession of Judgment (COJ)",
-        paragraphs: [
-          "A COJ is a signed admission that you owe the money, filed away until the funder needs it. If you default, the funder can enter a judgment against you almost immediately, without a lawsuit, without a hearing, and in some states without notice. It converts a contract dispute into an enforceable judgment overnight.",
-          "New York banned COJs against out-of-state debtors in 2019, but they persist in other jurisdictions and in older agreements. If your contract contains one, treat any default as a legal emergency rather than a negotiation opening, and get representation involved before you miss a payment, not after.",
-        ],
+        "heading": "What settlement requires",
+        "paragraphs": [
+          "A negotiated proposal needs the relevant creditor’s agreement. It can address a balance or payment schedule, but other creditors and court deadlines remain relevant. Check whether the business can afford the resulting payments plus fees and ordinary operating expenses."
+        ]
       },
       {
-        heading: "Blanket UCC liens",
-        paragraphs: [
-          "Most MCA agreements file a UCC-1 lien against all business assets, not just receivables. The practical damage: the lien blocks bank loans, SBA refinancing, and inventory financing until it is released, and an aggressive funder can send UCC notices to your customers instructing them to redirect payments.",
-          "Check how many UCC filings are already against your business (your state's Secretary of State site lists them free). Every settlement you negotiate should include a written lien release, and no resolution is complete until the filings are actually terminated.",
-        ],
+        "heading": "What Chapter 11 can involve",
+        "paragraphs": [
+          "The U.S. Courts describes Chapter 11 as reorganization in which a debtor often remains in possession and can continue operating. A filing generally creates an automatic stay, subject to exceptions and possible relief from the stay. This is not a promise that every collection action stops or that a particular business qualifies."
+        ]
       },
       {
-        heading: "No reconciliation clause, or one that requires you to ask",
-        paragraphs: [
-          "A reconciliation clause lets the daily pull be adjusted to your actual revenue. Its presence is also what legally distinguishes a receivables purchase from a disguised loan. Contracts without one, or with a version that puts the burden entirely on you to request and document, are the ones that break businesses in a slow month.",
-          "If your contract has a reconciliation clause you have never used, that is often the fastest legitimate payment relief available. See our reconciliation guide for how to invoke it.",
-        ],
+        "heading": "Business and personal exposure are separate questions",
+        "paragraphs": [
+          "The entity that owes the obligation, any personal guarantee and the property subject to security interests all matter. An agreement with one creditor does not necessarily release a guarantor or solve other liabilities. Obtain an assessment that includes both the business and personal exposure."
+        ]
       },
       {
-        heading: "Personal guarantees and spousal signatures",
-        paragraphs: [
-          "A personal guarantee means the funder can pursue your personal assets when the business cannot pay. Watch especially for guarantee language buried in performance covenants, and for requests that a spouse co-sign, which extends exposure to household assets that have nothing to do with the business.",
-        ],
-      },
-      {
-        heading: "Default triggers that have nothing to do with missing payments",
-        paragraphs: [
-          "Many agreements define default to include things owners do routinely: changing banks, adding another financing, dipping below a minimum daily balance, or even declining revenue itself. Broad triggers let a funder call default, and use COJ or lien remedies, while you are still technically paying.",
-        ],
-        bullets: [
-          "Changing bank accounts without funder consent",
-          "Taking any additional financing (anti-stacking clauses)",
-          "Minimum balance or minimum deposit covenants",
-          "Blocked or rerouted card processing",
-        ],
-      },
-      {
-        heading: "Fees that survive the advance",
-        paragraphs: [
-          "Origination fees, ACH fees, default fees, attorney fee shifting, and prepayment terms that make early payoff cost the same as full term. On a stacked file these fees compound. Any settlement conversation should start from a full accounting of what was advanced, what has been repaid, and what the fees actually were.",
-        ],
-      },
+        "heading": "Compare realistic alternatives",
+        "paragraphs": [
+          "Ask counsel to compare eligibility, expected costs, creditor participation, court supervision, taxes and effects on operations. There is no universal rule that settlement is cheaper or bankruptcy is a last resort. Compare scenarios using a cash-flow forecast rather than a guaranteed savings claim."
+        ]
+      }
     ],
-    faq: [
+    "takeaway": "Get case-specific advice comparing negotiation and court-supervised options. Do not assume that either path guarantees continued operations or protects credit.",
+    "sources": [
       {
-        q: "What is the single worst clause to find in an MCA contract?",
-        a: "A Confession of Judgment. It removes your right to defend yourself in court before a judgment is entered, which turns any default into an immediate legal emergency. Contracts with COJs need professional handling before a missed payment, not after.",
-      },
-      {
-        q: "Are MCA contracts even legal?",
-        a: "Generally yes, because they are structured as purchases of future receivables rather than loans, which exempts them from usury caps in most states. Courts occasionally recharacterize an MCA as a loan when it lacks true reconciliation and recourse features, which is one of the legal levers settlement attorneys use.",
-      },
-      {
-        q: "Can I get out of an MCA contract I already signed?",
-        a: "You cannot simply cancel it, but the balance, payment schedule, and liens are all negotiable, especially when the funder's realistic alternative is a default they would have to chase. That negotiation is what MCA settlement is. See our guide to how settlement works.",
-      },
+        "label": "U.S. Courts: Chapter 11 basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics",
+        "note": "Explains debtor-in-possession operations, reorganization and the automatic stay, including limits."
+      }
     ],
-    takeaway:
-      "Read for the COJ, the lien scope, the reconciliation clause, the guarantee, and the default triggers. Those five clauses decide how bad a bad month becomes.",
+    "updatedAt": "2026-09-14"
   },
   {
-    slug: "warning-signs-mca-funder-legal-action",
-    title: "8 warning signs your MCA funder is about to take legal action",
-    metaTitle: "8 Warning Signs Your MCA Funder Is About to Sue (2026)",
-    metaDescription:
-      "The escalation pattern MCA funders follow before filing suit: default notices, UCC letters to your customers, frozen processing, COJ threats, and what to do at each stage.",
-    intro:
-      "Funders rarely sue out of nowhere. There is a recognizable escalation ladder, and owners who know the rungs can act one step ahead instead of one step behind. Here are the eight signs litigation is coming, roughly in the order they appear.",
-    sections: [
+    "slug": "how-to-choose-mca-settlement-company",
+    "title": "How to choose the right MCA settlement company",
+    "metaTitle": "How to Pick an MCA Settlement Company: Scope, Fees, and Evidence",
+    "metaDescription": "Compare MCA settlement firms by documented services, full fees, responsible professionals, public evidence, communication, and alternatives.",
+    "intro": "Compare the written engagement, the people responsible for your file, and the evidence behind the sales claims. This checklist is an editorial buying framework, not a prediction of which provider will achieve the largest reduction.",
+    "sections": [
       {
-        heading: "The escalation ladder",
-        paragraphs: [
-          "Each of these steps is a signal, and each one narrows your options slightly. The earlier on this list you act, the more leverage you have.",
-        ],
-        bullets: [
-          "1. Missed-remittance calls turn into formal default notices citing contract sections",
-          "2. The funder starts re-presenting failed ACH pulls multiple times a day",
-          "3. You receive a demand letter from a law firm rather than the funder's collections desk",
-          "4. UCC notification letters go out to your customers or card processor",
-          "5. Your merchant processing account is frozen or reserves are imposed",
-          "6. The funder requests updated bank statements or an estoppel letter (building its case file)",
-          "7. References to the personal guarantee, or your spouse, enter the conversation",
-          "8. In COJ contracts: any mention that judgment 'can be entered at any time'",
-        ],
+        "heading": "1. Identify who provides legal representation",
+        "paragraphs": [
+          "Ask whether a named attorney will represent you, in which jurisdiction, and under which agreement. An attorney network, referral arrangement, or in-house title does not by itself establish that court work is included."
+        ]
       },
       {
-        heading: "What each stage means for your options",
-        paragraphs: [
-          "Stages one through three are still negotiation territory. Funders send legal-flavored letters precisely because they are cheaper than actual litigation, and most funders would still rather restructure or settle than pay counsel to chase a distressed business.",
-          "Stages four and five are operational attacks. Once customers get UCC letters or processing freezes, the funder is spending real effort, and the damage to your revenue makes every later settlement harder to fund. This is the point where professional representation stops being optional in practice.",
-          "Stages six through eight mean litigation is being prepared. If a COJ exists, judgment can arrive in days. Anything you send the funder at this stage, statements, estoppel letters, admissions on calls, can be used in the case, so route communication through your representative.",
-        ],
+        "heading": "2. Compare the complete fee schedule",
+        "paragraphs": [
+          "Request the fee basis, payment triggers, account charges, legal expenses, cancellation terms, and refund policy. Model the amount paid to creditors plus every service fee, including a scenario where a creditor declines."
+        ]
       },
       {
-        heading: "What not to do when the letters start",
-        paragraphs: [
-          "Do not silently close the bank account the funder debits: in most agreements that is itself an event of default and reads as bad faith in any later proceeding. Do not sign anything new, particularly hardship or modification agreements with fresh COJs inside, without review. And do not stop all payments as a negotiation tactic without a legal strategy prepared for what follows.",
-        ],
+        "heading": "3. Confirm the handoff and communication plan",
+        "paragraphs": [
+          "Ask who handles negotiations after intake, how often you receive written updates, and how you can escalate an unresolved question. Record the promised response standard in the engagement."
+        ]
       },
       {
-        heading: "The window that matters",
-        paragraphs: [
-          "The best settlements in our review data happen between the first default notice and the first filing. Before the notice, funders see no reason to discount. After a judgment, they have no reason to. The weeks in between are when a credible representative can convert the funder's litigation cost into your discount.",
-        ],
+        "heading": "4. Check dated public evidence",
+        "paragraphs": [
+          "Read company materials, public reviews, complaint responses, and relevant regulatory records separately. A review score is not a verified settlement success rate, and a complaint is not automatically an established finding."
+        ]
       },
+      {
+        "heading": "5. Define the work and its limits",
+        "paragraphs": [
+          "List the creditors, balances, disputes, and proceedings covered. Ask what happens if a new lawsuit arrives or a funder refuses a proposal. Identify any services requiring another professional."
+        ]
+      },
+      {
+        "heading": "6. Compare alternatives",
+        "paragraphs": [
+          "Obtain another written proposal when practical. If court deadlines are involved, secure appropriate legal advice promptly rather than waiting for sales calls. Discuss refinancing, direct negotiation, and bankruptcy where relevant."
+        ]
+      }
     ],
-    faq: [
+    "takeaway": "Choose on documented scope, total cost, qualifications, and communication. Coastal remains our featured first provider by editorial choice; that placement does not replace your contract review.",
+    "sources": [
       {
-        q: "How fast can an MCA funder actually get a judgment?",
-        a: "With a Confession of Judgment on file, days. Without one, the funder must sue and win, which takes weeks to months and costs them real money, which is exactly the leverage a settlement negotiation uses.",
+        "label": "New York Courts: responding to a summons and complaint",
+        "url": "https://www.nycourts.gov/legacypdfs/courts/1jd/supctmanh/HelpCenterForms/How_to_Respond_to_a_Summons_and_Complaint.pdf",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
       },
       {
-        q: "My funder sent a UCC letter to my biggest customer. Is it over?",
-        a: "No, but the clock is loud. UCC notices are as much pressure tactic as remedy, and they are frequently withdrawn as part of a negotiated resolution. Get representation involved immediately so customer relationships take as little damage as possible.",
-      },
-      {
-        q: "Should I answer calls from the funder's law firm?",
-        a: "Politely take their contact details and route the conversation through your representative. Anything you say on those calls can shape the case; experienced counsel says less and settles more.",
-      },
+        "label": "U.S. Courts: Chapter 11 bankruptcy basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
     ],
-    takeaway:
-      "Funders telegraph litigation before they file. The window between the first default notice and the first filing is where settlements are won, use it.",
+    "updatedAt": "2026-09-18"
   },
   {
-    slug: "what-happens-mca-default",
-    updatedAt: "2026-09-18",
-    title: "What actually happens when you default on a merchant cash advance",
-    metaTitle: "MCA Default: What Actually Happens, Week by Week (2026)",
-    metaDescription:
-      "The real timeline of an MCA default: default notices, ACH re-presentments, frozen processing, UCC letters, COJ judgments, and the recovery paths that still exist at each stage.",
-    intro:
-      "Owners imagine default as a cliff. It is closer to a staircase: a sequence of escalations, each with options still attached. Here is the realistic week-by-week pattern we see across public court records and client accounts, and what remains recoverable at each stage.",
-    sections: [
+    "slug": "mca-debt-relief-red-flags",
+    "title": "MCA debt relief red flags: how to spot the firms to avoid",
+    "metaTitle": "MCA Debt Relief Red Flags: Claims and Contracts to Check",
+    "metaDescription": "Questions to investigate before choosing MCA debt relief: written fees, evidence for promises, legal representation, public records, and alternatives.",
+    "intro": "Unclear fees, unsupported promises, and pressure deserve scrutiny. These are questions to investigate, not proof that a particular company is fraudulent. We have not established how common misconduct is across this industry.",
+    "sections": [
       {
-        heading: "Days 1 to 7: the machine notices",
-        paragraphs: [
-          "The first missed remittances trigger automated re-presentments, often multiple ACH attempts per day, each one generating bank fees on your side. Collections calls begin. A formal default notice usually lands within the week, citing the contract and reserving all remedies.",
-          "What is still fully available: everything. At this stage funders routinely accept reinstated payments, temporary reductions, or a reconciliation adjustment if your contract has the clause. The mistake owners make in week one is silence.",
-        ],
+        "heading": "Fees you cannot calculate",
+        "paragraphs": [
+          "Ask for a written quote explaining what triggers payment, which amounts the percentage applies to, and what remains payable if negotiations fail. Do not rely on a headline fee alone."
+        ]
       },
       {
-        heading: "Weeks 2 to 4: pressure becomes operational",
-        paragraphs: [
-          "If contact fails, funders move on the infrastructure: instructing your card processor to hold funds, imposing reserves, or sending UCC notification letters to your customers directing payments to the funder. Stacked positions accelerate here, because one funder's freeze causes defaults on the others.",
-          "What is still available: negotiated restructures and settlements, though the funder's asking price rises once it has spent effort. Owners with multiple positions need the negotiation coordinated across funders now, not one at a time.",
-        ],
+        "heading": "Guaranteed reductions or fixed completion dates",
+        "paragraphs": [
+          "Ask for the underlying evidence and the conditions behind every claim. The provider cannot promise that an independent creditor will accept a proposal. Treat examples as examples unless the sample and methodology are disclosed."
+        ]
       },
       {
-        heading: "Month 2 onward: the legal phase",
-        paragraphs: [
-          "Contracts with a Confession of Judgment can produce an entered judgment almost immediately once the funder decides to use it, followed by bank restraints and levies. Without a COJ, expect a filed lawsuit that you must answer, typically within 20 to 30 days depending on the state, or face default judgment.",
-          "What is still available: more than most owners think. Filed cases settle constantly, COJ judgments can sometimes be vacated on procedural grounds, and even post-judgment balances get negotiated because enforcement against a struggling business is slow and expensive. But every option costs more here than it did in week one.",
-        ],
+        "heading": "Court representation left unexplained",
+        "paragraphs": [
+          "Find out who will handle legal advice, motions, hearings, and urgent notices. Outside counsel can be an appropriate arrangement; the concern is undisclosed responsibility or cost, not the staffing model."
+        ]
       },
       {
-        heading: "What default does not automatically mean",
-        paragraphs: [
-          "Default does not automatically close your business, seize your equipment, or take your house. Those outcomes require enforcement steps that take time and money, which is exactly why negotiated resolutions remain available deep into the process. It also does not appear on personal credit automatically, though judgments and guarantee enforcement can get there eventually.",
-        ],
+        "heading": "Pressure or incomplete paperwork",
+        "paragraphs": [
+          "Take the time needed to read the engagement and compare options while honoring actual legal deadlines. Request missing terms, including cancellation and refund provisions, before committing."
+        ]
       },
       {
-        heading: "If you are reading this before defaulting",
-        paragraphs: [
-          "The single highest-leverage moment in the entire timeline is right before the first missed payment. A funder approached with a documented hardship and a restructure proposal before default treats you as a merchant managing a problem. The same conversation two months later happens against default interest, legal fees, and a case file.",
-        ],
+        "heading": "Public records presented without context",
+        "paragraphs": [
+          "Check dates, exact legal entities, company responses, and case outcomes. Few reviews do not establish review suppression, and a filed allegation does not establish misconduct."
+        ]
       },
+      {
+        "heading": "A single solution offered before reviewing your documents",
+        "paragraphs": [
+          "A recommendation should account for balances, cash flow, guarantees, and active proceedings. Bankruptcy and other alternatives warrant professional consideration where appropriate."
+        ]
+      }
     ],
-    faq: [
+    "takeaway": "Investigate the claim and the contract. No review platform, staffing label, or marketing promise establishes the right result for your business.",
+    "sources": [
       {
-        q: "Will an MCA default hurt my personal credit?",
-        a: "Personal liability and credit reporting are separate questions. Check the guarantee, the provider’s reporting practices, and actual credit reports. Resolving a balance does not guarantee a particular reporting or score outcome.",
+        "label": "New York Courts: responding to a summons and complaint",
+        "url": "https://www.nycourts.gov/legacypdfs/courts/1jd/supctmanh/HelpCenterForms/How_to_Respond_to_a_Summons_and_Complaint.pdf",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
       },
       {
-        q: "Can the funder take money directly from my bank account?",
-        a: "During the contract it already does, via authorized ACH. After default and a judgment, it can restrain and levy accounts through legal process. Between those two points, closing accounts without strategy tends to trigger default clauses, so make banking moves part of a plan, not a panic.",
-      },
-      {
-        q: "Is it ever too late to settle an MCA debt?",
-        a: "Rarely. Even post-judgment balances settle, because enforcement is slow and uncertain for the funder. What changes is price: each escalation stage raises the percentage funders demand. Earlier is cheaper, but later is still negotiable.",
-      },
+        "label": "U.S. Courts: Chapter 11 bankruptcy basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
     ],
-    takeaway:
-      "Default is a staircase, not a cliff. Options exist at every stage; they just get more expensive each step down. Act on the first notice, not the fifth.",
+    "updatedAt": "2026-09-18"
   },
   {
-    slug: "negotiate-mca-debt-yourself",
-    title: "Can you negotiate MCA debt yourself? An honest DIY assessment",
-    metaTitle: "Negotiating MCA Debt Yourself: When DIY Works and When It Backfires",
-    metaDescription:
-      "A straight answer on DIY MCA settlement: the situations where owners succeed alone, the mistakes that trigger defaults and judgments, and the honest math on professional fees.",
-    intro:
-      "Professional fees vary, and this site has not established a representative industry range. Direct negotiation may be worth exploring, but assess the contract, disputed balances and any legal proceedings before deciding whether representation is needed.",
-    sections: [
+    "slug": "mca-contract-red-flags",
+    "title": "Common red flags in MCA contract terms, explained clause by clause",
+    "metaTitle": "MCA Contract Red Flags: Terms to Check Before You Sign",
+    "metaDescription": "Review MCA payment, reconciliation, collateral, guarantee, default, and judgment terms together. The actual agreement and applicable law determine exposure.",
+    "intro": "Read the complete funding package, including addenda and guarantees. The practical questions are what you must pay, what changes when revenue falls, what constitutes default, and what enforcement rights the documents claim.",
+    "sections": [
       {
-        heading: "Where DIY genuinely works",
-        paragraphs: [
-          "One position, a funder you are current with, and a documentable hardship: that is the DIY sweet spot. Funders handle hardship requests daily, and a single-position merchant asking for a temporary reduction or invoking a reconciliation clause often gets it without any intermediary.",
-          "Available cash may support a lump-sum proposal, but no particular percentage or acceptance time is assured. Document the claimed balance and ask for the creditor’s written terms before transferring funds.",
-        ],
-        bullets: [
-          "Single MCA position, no default yet",
-          "A contract with a reconciliation clause you can invoke",
-          "Access to lump-sum cash for an immediate discounted payoff",
-          "A cooperative, established funder rather than a litigation-heavy one",
-        ],
+        "heading": "Judgment-by-confession documents",
+        "paragraphs": [
+          "Locate any affidavit or authorization for judgment and ask counsel to assess it. New York CPLR 3218 imposes conditions on this procedure. Do not assume that every signed document is enforceable, that an older agreement is exempt from current rules, or that judgment occurs on a universal timetable."
+        ]
       },
       {
-        heading: "Where DIY predictably backfires",
-        paragraphs: [
-          "Stacked positions are the clearest disqualifier. Settling one funder while three others keep pulling daily achieves nothing, and the negotiations interact: one funder learning another got a discount changes its posture. Coordinated multi-funder negotiation is genuinely hard to run from inside the business.",
-          "The second disqualifier is any legal exposure: a Confession of Judgment in the contract, a received demand letter, or a litigation-aggressive funder. Owners negotiating solo make admissions on recorded calls, sign modifications with fresh COJs inside, or stop payments as a bluff, each of which converts a negotiation into a judgment.",
-          "The third is the knowledge gap on price. Funders negotiate these balances all day and know exactly what each week of pressure is worth. Owners anchor against hope. Firms that work the same funders repeatedly know each one's actual settlement bands, which is a real information asymmetry, and most of what the fee buys.",
-        ],
+        "heading": "Collateral and assignment terms",
+        "paragraphs": [
+          "Compare the security agreement with any public financing statements. A filing does not itself seize property. Check the specific assets, assignments, and release terms rather than assuming every agreement covers all assets."
+        ]
       },
       {
-        heading: "The honest math on fees",
-        paragraphs: [
-          "Hypothetically, a 20 percent fee on $200,000 is $40,000. Compare that fee plus creditor payments and legal costs with other available proposals. These figures are an arithmetic example, not evidence that a representative will improve an outcome by a particular amount.",
-          "Whatever you choose, the fee structure rules from our cost guide apply: written fee schedule, defined success, fees tied to results, and no large upfront payments before any work.",
-        ],
+        "heading": "Reconciliation and adjustments",
+        "paragraphs": [
+          "Find the revenue definition, calculation period, request process, required records, and response terms. A reconciliation clause is relevant to legal analysis, but its existence alone does not decide whether a transaction is a loan."
+        ]
       },
       {
-        heading: "A middle path most owners skip",
-        paragraphs: [
-          "An hour or two of consultation with an MCA-experienced attorney, paid hourly, buys a contract read, a COJ check, and a realistic settlement range, without enrolling in anything. For single-position owners leaning DIY, that small spend removes the most dangerous unknowns before you dial the funder.",
-        ],
+        "heading": "Guarantees and additional signers",
+        "paragraphs": [
+          "Identify who signed, in what capacity, and what events trigger each guarantee. Business nonpayment does not automatically establish every guarantor’s liability or what property is available for enforcement."
+        ]
       },
+      {
+        "heading": "Default triggers and fees",
+        "paragraphs": [
+          "Review banking-change, additional-financing, information, and remittance provisions. Reconcile the cash received, amounts paid, claimed balance, and additional charges. Have proposed modifications reviewed before signing."
+        ]
+      }
     ],
-    faq: [
+    "faq": [
       {
-        q: "What should I say when I call my MCA funder to negotiate?",
-        a: "Lead with documentation, not emotion: revenue is down X percent, here are the statements, the current pull is unsustainable, and you are proposing a specific restructured amount. Ask whether the contract's reconciliation provision applies. Never state that you intend to stop paying.",
+        "q": "Which clause should I review first?",
+        "a": "Prioritize any existing court deadline or enforcement notice. Then review the full package; no single clause establishes your total exposure."
       },
       {
-        q: "Can I record my calls with the funder?",
-        a: "Recording laws vary by state (some require all-party consent), but you should assume the funder records everything, and that anything you admit can surface later. Keep calls factual and short, and follow up in writing.",
+        "q": "Are MCA contracts automatically exempt from lending laws?",
+        "a": "No label settles that question. Legal treatment depends on the substance of the transaction and applicable law."
       },
       {
-        q: "If I start DIY and it goes wrong, can a firm take over?",
-        a: "Yes, firms inherit half-negotiated files constantly. The handoff is harder if you have made written admissions or signed a modification, so if you feel the conversation turning legal, stop and get representation before signing anything.",
-      },
+        "q": "Can I change a contract I already signed?",
+        "a": "You can request changes or a settlement. Acceptance is not assured, and a request does not itself suspend the existing terms."
+      }
     ],
-    takeaway:
-      "One clean position: consider DIY, ideally after an hour of legal review. Stacked, defaulted, or COJ-exposed: the information asymmetry is against you, and representation usually pays for itself.",
+    "takeaway": "Review payment, reconciliation, collateral, guarantees, default, and dispute terms together. The signed documents and applicable law determine the analysis.",
+    "sources": [
+      {
+        "label": "New York CPLR 3218: judgment by confession",
+        "url": "https://www.nysenate.gov/legislation/laws/CVP/3218",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      },
+      {
+        "label": "New York Courts: Davis v. Richmond Capital Group (2021)",
+        "url": "https://www.nycourts.gov/REPORTER/3dseries/2021/2021_03111.htm",
+        "note": "Checked September 18, 2026. A pleading-stage decision, not a finding that every MCA is a loan or every reconciliation refusal proves a defense."
+      },
+      {
+        "label": "New York UCC 9-406: assignment notices",
+        "url": "https://www.nysenate.gov/legislation/laws/UCC/9-406",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
+    ],
+    "updatedAt": "2026-09-18"
   },
   {
-    slug: "mca-reconciliation-clause",
-    title: "The MCA reconciliation clause: the payment cut most owners never claim",
-    metaTitle: "MCA Reconciliation Clause: How to Lower Your Daily Payment (2026)",
-    metaDescription:
-      "Most MCA contracts contain a reconciliation clause that legally entitles you to a payment adjusted to real revenue. How to find it, invoke it, and what to do if the funder stalls.",
-    intro:
-      "Buried in most MCA agreements is a clause that can lower your daily payment without a settlement, a default, or a fee: reconciliation. It exists because the funder needs it there for legal reasons. Most owners never use it. Here is how it works and how to claim it.",
-    sections: [
+    "slug": "warning-signs-mca-funder-legal-action",
+    "title": "MCA collection notices: warning signs and documents to check",
+    "metaTitle": "MCA Collection Notices: Demands, Court Papers, and Deadlines",
+    "metaDescription": "Distinguish MCA demands, customer notices, and court papers. Verify the actual record and deadline without assuming a standard escalation sequence.",
+    "intro": "A demand letter, a customer notice, and a summons are different documents. Identify what actually arrived and any deadline it creates. We have not verified a standard escalation sequence or a best-discount window.",
+    "sections": [
       {
-        heading: "Why the clause exists at all",
-        paragraphs: [
-          "An MCA is legally a purchase of a percentage of your future revenue, not a loan. But the daily amount you pay is a fixed dollar figure estimated from past revenue. Reconciliation is the mechanism that trues the fixed pull back to the agreed percentage of actual revenue, and its presence is a core reason courts treat MCAs as purchases rather than usurious loans.",
-          "That legal function is your leverage: a funder that ignores its own reconciliation clause is undermining the characterization its entire contract depends on, and experienced attorneys make exactly that point when funders stall.",
-        ],
+        "heading": "Separate a demand from a court filing",
+        "paragraphs": [
+          "Preserve the envelope, email, attachments, and date received. Verify any case through the relevant court. A demand is not itself a judgment, and the absence of a demand does not establish that no case exists."
+        ]
       },
       {
-        heading: "How to invoke it, step by step",
-        paragraphs: [
-          "The process is administrative, not adversarial. Done properly it reads like bookkeeping, not distress.",
+        "heading": "Records to collect now",
+        "paragraphs": [
+          "Build a single file for counsel or an adviser."
         ],
-        bullets: [
-          "Find the clause: search the agreement for 'reconciliation', 'adjustment', or 'true-up'",
-          "Compute the gap: agreed percentage times actual monthly revenue versus what was actually debited",
-          "Gather proof: bank statements and processing statements for the period",
-          "Send the request in writing, to the notice address in the contract, citing the clause number",
-          "Ask for both: a refund or credit of the over-collection, and a reduced go-forward daily amount",
-          "Calendar the response deadline the clause specifies, and follow up in writing",
-        ],
+        "bullets": [
+          "Complete agreements, addenda, and guarantees",
+          "Payment history and the claimed balance",
+          "Default notices and correspondence",
+          "Court papers and service details",
+          "Bank or processor notices and customer assignment letters"
+        ]
       },
       {
-        heading: "What funders do when you ask",
-        paragraphs: [
-          "Established funders process legitimate reconciliation requests, grudgingly but routinely. The stall patterns to expect: requests for endless additional documentation, offers to 'modify' the agreement instead (read anything new for fresh guarantees or COJs before signing), or simple silence past the contractual deadline.",
-          "Silence or refusal converts a bookkeeping request into evidence. Documented refusal to reconcile supports a recharacterization argument, the claim that the MCA is actually a disguised loan, which is one of the stronger levers a settlement attorney can bring to the table afterward.",
-        ],
+        "heading": "Do not infer a timetable from collection contact",
+        "paragraphs": [
+          "Calls, document requests, or references to a guarantee do not prove when a suit will be filed. Obtain advice about the actual document, particularly if it concerns a judgment or restraint."
+        ]
       },
       {
-        heading: "What reconciliation cannot do",
-        paragraphs: [
-          "Reconciliation adjusts the payment to your revenue reality. It does not reduce the total you owe, remove liens, or fix a stack of five positions each pulling daily. If the business cannot survive even a correctly reconciled payment, you are past the bookkeeping remedy and into restructuring or settlement territory, and it is better to know that early.",
-        ],
-      },
+        "heading": "Keep negotiation separate from procedural deadlines",
+        "paragraphs": [
+          "Ask the appropriate professional to identify response obligations and any formal extension. A settlement discussion is not a substitute for a timely response. Obtain advice before changing banking arrangements or signing an admission."
+        ]
+      }
     ],
-    faq: [
+    "faq": [
       {
-        q: "Does every MCA contract have a reconciliation clause?",
-        a: "Most modern agreements do, because it protects the funder's legal characterization. Some older or more aggressive contracts omit it or make it discretionary. If yours has none, that absence itself is useful to a settlement attorney arguing the advance functions as a loan.",
+        "q": "How quickly can a funder obtain judgment?",
+        "a": "There is no universal timeline. The process, jurisdiction, service, documents, and court history matter; counsel should review the actual record."
       },
       {
-        q: "Will asking for reconciliation put me in default?",
-        a: "No. Invoking a right the contract grants you is not a default event, and the request, made in writing with documentation, signals a merchant managing the account rather than one about to disappear. What triggers defaults is missed payments and silence.",
+        "q": "Does a customer assignment notice mean I have lost the case?",
+        "a": "No. Have the assignment, notice, and relevant law reviewed. Do not treat the notice as either automatically valid or safe to ignore."
       },
       {
-        q: "My revenue dropped 40 percent. How much should my payment drop?",
-        a: "In principle, proportionally: the daily pull should true up to the agreed percentage of actual revenue, so a 40 percent revenue drop supports roughly a 40 percent payment reduction for the period, plus a credit for what was over-collected. The contract's exact formula governs.",
-      },
+        "q": "Should I respond to a demand letter?",
+        "a": "Preserve it and arrange an appropriate response. If represented, route it through counsel; do not make commitments you have not reviewed."
+      }
     ],
-    takeaway:
-      "Before you pay anyone to fix an unaffordable MCA payment, check whether the contract already obligates the funder to fix it. Reconciliation is free, fast when it works, and evidence when it does not.",
+    "takeaway": "Respond to verified documents and deadlines. No sequence of phone calls predicts a judgment date or settlement discount.",
+    "sources": [
+      {
+        "label": "New York Courts: responding to a summons and complaint",
+        "url": "https://www.nycourts.gov/legacypdfs/courts/1jd/supctmanh/HelpCenterForms/How_to_Respond_to_a_Summons_and_Complaint.pdf",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      },
+      {
+        "label": "New York CPLR 3218: judgment by confession",
+        "url": "https://www.nysenate.gov/legislation/laws/CVP/3218",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      },
+      {
+        "label": "New York UCC 9-406: assignment notices",
+        "url": "https://www.nysenate.gov/legislation/laws/UCC/9-406",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
+    ],
+    "updatedAt": "2026-09-18"
   },
   {
-    slug: "mca-attorneys-vs-settlement-companies",
-    updatedAt: "2026-09-18",
-    title: "MCA attorneys vs settlement companies: which one do you actually need?",
-    metaTitle: "MCA Attorney or Settlement Company? How to Choose (2026)",
-    metaDescription:
-      "Lawyers and settlement firms solve different MCA problems. When you need an attorney, when a settlement company is enough, what each costs, and how to find the right one in your state.",
-    intro:
-      "Owners searching for MCA help find two different animals: law firms and settlement companies. They overlap enough to be confusing and differ enough that picking wrong costs real money. Here is the clean split, and a state-by-state note on when the lawyer question actually matters.",
-    sections: [
+    "slug": "what-happens-mca-default",
+    "updatedAt": "2026-09-18",
+    "title": "What actually happens when you default on a merchant cash advance",
+    "metaTitle": "MCA Default: Notices, Legal Process, and Options (2026)",
+    "metaDescription": "Understand an alleged MCA default: check the balance, payment terms, bank notices, legal deadlines, and resolution options without assuming a fixed timeline.",
+    "intro": "Default is determined by the agreement and applicable law. A missed debit, a claimed breach, a filed case, and an enforceable judgment are separate events. This guide describes issues to check rather than an invented week-by-week timeline.",
+    "sections": [
       {
-        heading: "What each one actually does",
-        paragraphs: [
-          "A settlement company negotiates commercial deals: reduced balances, restructured payments, coordinated multi-funder workouts. Its leverage is financial, the funder's cost of chasing you versus taking a discount today. It cannot represent you in court, file motions, or vacate a judgment.",
-          "An attorney brings legal leverage: answering lawsuits, challenging Confessions of Judgment, contesting UCC enforcement, and raising recharacterization arguments (that the advance functions as a usurious loan). Attorneys can also negotiate settlements, though a litigation shop billing hourly is not always the cheapest negotiator.",
-          "Coastal is featured first by editorial choice. Its company materials describe an attorney network; we have not verified an in-house litigation team or a universal legal-services package. Confirm the named attorney, scope, jurisdiction, and fees in a written agreement.",
-        ],
+        "heading": "Verify the claimed breach and balance",
+        "paragraphs": [
+          "Compare the notice with the signed terms and payment records. Ask for a ledger explaining principal or purchased receivables, credits, fees, and any claimed acceleration. Record which amounts you dispute."
+        ]
       },
       {
-        heading: "Clear signs you need an attorney, not just a negotiator",
-        paragraphs: [
-          "Some situations are legal problems wearing a debt costume. In any of these, negotiation without counsel leaves you exposed:",
+        "heading": "Identify effects on operations",
+        "paragraphs": [
+          "Review any bank, processor, or customer notice. Different restrictions have different legal and contractual bases. Obtain advice before moving funds or changing arrangements that may be subject to restrictions."
+        ]
+      },
+      {
+        "heading": "If legal papers arrive",
+        "paragraphs": [
+          "Identify the court, parties, service details, and response deadline promptly. Counsel should assess the required response and any existing judgment. Missing a deadline may support a default application, not automatic entitlement to every amount demanded."
+        ]
+      },
+      {
+        "heading": "Evaluate resolution options",
+        "paragraphs": [
+          "Ask whether reconciliation, revised payments, settlement, refinancing, or bankruptcy is appropriate. Compare available cash, total costs, guarantees, and creditor participation. None is a guaranteed solution."
+        ]
+      },
+      {
+        "heading": "Keep credit reporting separate",
+        "paragraphs": [
+          "A guarantee concerns liability; a credit report is a separate record. Check actual reporting and the proposed resolution terms rather than assuming default or settlement has a particular score effect."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Will default hurt my personal credit?",
+        "a": "Check actual account reporting separately from guarantee exposure and court records. No score outcome is promised."
+      },
+      {
+        "q": "Can the funder take money from my bank account?",
+        "a": "Review payment authorizations and any legal process. An authorized debit, an account restriction, and a levy are different mechanisms."
+      },
+      {
+        "q": "Can I negotiate after default?",
+        "a": "You may request a resolution, including after proceedings begin, but acceptance and terms are uncertain. Negotiations do not automatically pause deadlines."
+      }
+    ],
+    "takeaway": "Work from the actual notice, balance, contract, and court record. No representative enforcement timeline or stage-by-stage settlement price is established here.",
+    "sources": [
+      {
+        "label": "New York Courts: responding to a summons and complaint",
+        "url": "https://www.nycourts.gov/legacypdfs/courts/1jd/supctmanh/HelpCenterForms/How_to_Respond_to_a_Summons_and_Complaint.pdf",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      },
+      {
+        "label": "New York CPLR 5222: restraining notices",
+        "url": "https://www.nysenate.gov/legislation/laws/CVP/5222",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      },
+      {
+        "label": "U.S. Courts: Chapter 11 bankruptcy basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
+    ]
+  },
+  {
+    "slug": "negotiate-mca-debt-yourself",
+    "title": "Can you negotiate MCA debt yourself? An honest DIY assessment",
+    "metaTitle": "Negotiate MCA Debt Yourself: Preparation, Costs, and Legal Review",
+    "metaDescription": "Prepare a documented MCA negotiation request, compare total costs, identify legal issues, and review written terms before deciding on representation.",
+    "intro": "Direct negotiation can avoid a representative’s service fee, but it also leaves you responsible for understanding the proposal and its consequences. Decide what you can handle after reviewing your contracts and any legal proceedings.",
+    "sections": [
+      {
+        "heading": "Prepare a documented request",
+        "paragraphs": [
+          "List the amount advanced, payments, current claimed balance, and disputed charges. Prepare a cash-flow forecast and check whether the agreement offers reconciliation or other adjustments. Ask for the written procedure."
+        ]
+      },
+      {
+        "heading": "Know when to obtain legal help",
+        "paragraphs": [
+          "Court papers, judgments, restraints, guarantees, or conflicting creditor claims warrant professional review. An owner’s ability to represent a business in court depends on court rules; direct commercial negotiation is a separate activity."
+        ]
+      },
+      {
+        "heading": "Compare total cost, not promised savings",
+        "paragraphs": [
+          "Include creditor payments, service fees, legal expenses, and ongoing account charges. Hypothetically, a 20 percent fee on $200,000 is $40,000; this arithmetic does not establish a typical fee or the value of representation."
+        ]
+      },
+      {
+        "heading": "Review the written outcome",
+        "paragraphs": [
+          "Specify the covered accounts and parties, payment dates, missed-payment consequences, releases, and handling of filings or court cases. Keep copies of acceptance and payment confirmation. A proposal is not a completed settlement."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "What should I ask the funder?",
+        "a": "Request a balance breakdown and the process for a documented hardship or reconciliation request. State the proposed terms accurately and keep written records."
+      },
+      {
+        "q": "Should I record calls?",
+        "a": "Recording rules vary by jurisdiction. Check the applicable rules before recording; written follow-up can also document the discussion."
+      },
+      {
+        "q": "Can I hire someone after starting negotiations?",
+        "a": "You can seek representation later, subject to availability and engagement terms. Provide all prior messages, proposals, and signed documents."
+      }
+    ],
+    "takeaway": "Use records and written terms. Get professional review for legal exposure, and do not assume either DIY or paid representation produces a better discount.",
+    "sources": [
+      {
+        "label": "New York Courts: responding to a summons and complaint",
+        "url": "https://www.nycourts.gov/legacypdfs/courts/1jd/supctmanh/HelpCenterForms/How_to_Respond_to_a_Summons_and_Complaint.pdf",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      },
+      {
+        "label": "New York UCC 9-513: termination statements",
+        "url": "https://www.nysenate.gov/legislation/laws/UCC/9-513",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
+    ],
+    "updatedAt": "2026-09-18"
+  },
+  {
+    "slug": "mca-reconciliation-clause",
+    "title": "The MCA reconciliation clause: how to check and request an adjustment",
+    "metaTitle": "MCA Reconciliation Clause: Calculation and Request Process",
+    "metaDescription": "Review your MCA reconciliation formula, required records, request procedure, and disputed responses. Payment adjustments depend on the contract.",
+    "intro": "Reconciliation is a contractual process for comparing remittances with the agreed share of actual revenue. The formula, eligibility, records, deadlines, and available adjustments depend on your agreement.",
+    "sections": [
+      {
+        "heading": "Read the calculation before requesting relief",
+        "paragraphs": [
+          "Identify the defined revenue, specified percentage, measurement period, and treatment of refunds or credits. Distinguish a backward-looking reconciliation from a change to future debits."
+        ]
+      },
+      {
+        "heading": "Prepare the request",
+        "paragraphs": [
+          "Follow the notice method and document requirements in the contract."
         ],
-        bullets: [
+        "bullets": [
+          "Locate the clause and any amendments",
+          "Calculate the relevant revenue and remittances for the same period",
+          "Collect the requested bank and processor records",
+          "Send the calculation and request to the specified address",
+          "Keep delivery evidence and calendar any stated response period"
+        ]
+      },
+      {
+        "heading": "If the response is disputed",
+        "paragraphs": [
+          "Keep the request, supporting records, and response. Davis v. Richmond Capital Group allowed certain allegations concerning reconciliation and loan characterization to proceed at the pleading stage. It did not establish that every refusal proves an unlawful loan."
+        ]
+      },
+      {
+        "heading": "Do not confuse a request with an approved change",
+        "paragraphs": [
+          "A submitted request does not itself authorize you to stop paying or change debits. Ask for the calculation and any approved adjustment in writing. Review a new agreement for added fees, guarantees, or waivers."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does every MCA have this clause?",
+        "a": "Do not assume so. Read your agreement and ask counsel about missing, discretionary, or disputed provisions."
+      },
+      {
+        "q": "Does requesting reconciliation prevent default?",
+        "a": "The request does not automatically waive other obligations or resolve an existing claimed breach. Check the contract and obtain advice if default is disputed."
+      },
+      {
+        "q": "Does a 40 percent revenue drop mean a 40 percent payment cut?",
+        "a": "Not necessarily. The defined revenue, comparison period, prior collections, and contractual formula determine the calculation."
+      }
+    ],
+    "takeaway": "Use the contract’s formula and procedure. No universal cost, response time, payment reduction, or legal outcome is promised.",
+    "sources": [
+      {
+        "label": "New York Courts: Davis v. Richmond Capital Group (2021)",
+        "url": "https://www.nycourts.gov/REPORTER/3dseries/2021/2021_03111.htm",
+        "note": "Checked September 18, 2026. A pleading-stage decision, not a finding that every MCA is a loan or every reconciliation refusal proves a defense."
+      }
+    ],
+    "updatedAt": "2026-09-18"
+  },
+  {
+    "slug": "mca-attorneys-vs-settlement-companies",
+    "updatedAt": "2026-09-18",
+    "title": "MCA attorneys vs settlement companies: which one do you actually need?",
+    "metaTitle": "MCA Attorney or Settlement Company? Scope, Fees, and Qualifications",
+    "metaDescription": "Compare MCA legal representation and negotiation services, including responsibility, jurisdiction, engagement terms, and fees. Verify actual scope before signing.",
+    "intro": "Owners searching for MCA help find two different animals: law firms and settlement companies. They overlap enough to be confusing and differ enough that picking wrong costs real money. Here is the clean split, and a state-by-state note on when the lawyer question actually matters.",
+    "sections": [
+      {
+        "heading": "What each one actually does",
+        "paragraphs": [
+          "A settlement provider may negotiate revised payments or balances. Confirm which services it actually offers. Court representation and legal advice require appropriately authorized professionals; an advertised attorney relationship does not establish an engagement.",
+          "A lawyer may assess legal claims, respond to proceedings, review enforcement, and negotiate. Request the proposed scope and fee agreement rather than assuming every law firm handles all of these services.",
+          "Coastal is featured first by editorial choice. Its company materials describe an attorney network; we have not verified an in-house litigation team or a universal legal-services package. Confirm the named attorney, scope, jurisdiction, and fees in a written agreement."
+        ]
+      },
+      {
+        "heading": "Clear signs you need an attorney, not just a negotiator",
+        "paragraphs": [
+          "Some situations are legal problems wearing a debt costume. In any of these, negotiation without counsel leaves you exposed:"
+        ],
+        "bullets": [
           "You have been served with a lawsuit, or a judgment already exists",
           "Your contract contains a Confession of Judgment",
           "Your bank account has been restrained or levied",
           "UCC notices have gone to your customers or processor",
-          "The funder's conduct suggests a recharacterization or usury defense worth raising",
-        ],
+          "The funder's conduct suggests a recharacterization or usury defense worth raising"
+        ]
       },
       {
-        heading: "Clear signs a settlement company is enough",
-        paragraphs: [
-          "Even without a lawsuit, a proposed payment change can have contractual consequences. Compare the services offered and ask whether legal review is needed. The absence of litigation does not establish that a settlement company alone is sufficient.",
-        ],
+        "heading": "When comparing a negotiation service",
+        "paragraphs": [
+          "Even without a lawsuit, a proposed payment change can have contractual consequences. Compare the services offered and ask whether legal review is needed. The absence of litigation does not establish that a settlement company alone is sufficient."
+        ]
       },
       {
-        heading: "Does my state matter?",
-        paragraphs: [
+        "heading": "Does my state matter?",
+        "paragraphs": [
           "Jurisdiction matters. Have counsel review forum and choice-of-law provisions alongside applicable law, the parties, and any actual proceeding. Do not assume a contractual clause conclusively resolves every jurisdiction or enforcement issue.",
-          "Confirm that the lawyer is authorized to handle the relevant matter and court. Local advice may also be necessary for assets, enforcement, or other issues in a different jurisdiction.",
-        ],
+          "Confirm that the lawyer is authorized to handle the relevant matter and court. Local advice may also be necessary for assets, enforcement, or other issues in a different jurisdiction."
+        ]
       },
       {
-        heading: "What each costs",
-        paragraphs: [
-          "No representative industry fee range was verified for this guide. Request written settlement and attorney quotes for the actual services needed, including separate engagements, ongoing charges and cancellation terms.",
-        ],
-      },
+        "heading": "What each costs",
+        "paragraphs": [
+          "No representative industry fee range was verified for this guide. Request written settlement and attorney quotes for the actual services needed, including separate engagements, ongoing charges and cancellation terms."
+        ]
+      }
     ],
-    faq: [
+    "faq": [
       {
-        q: "Can a settlement company stop a lawsuit?",
-        a: "No. Only an attorney can appear in court for you. A settlement company can negotiate while a suit is pending, but the deadlines to answer a complaint run regardless, which is why sued owners need counsel first and negotiation second.",
+        "q": "Can a settlement company stop a lawsuit?",
+        "a": "Negotiation does not automatically stop a case or its deadlines. Court representation rules differ for individuals and business entities; arrange appropriate counsel for the actual proceeding."
       },
       {
-        q: "Do I need a lawyer in my own state?",
-        a: "The answer depends on the contract, applicable law, location of assets, and any court proceeding. Confirm appropriate licensing and whether counsel in more than one jurisdiction is needed.",
+        "q": "Do I need a lawyer in my own state?",
+        "a": "The answer depends on the contract, applicable law, location of assets, and any court proceeding. Confirm appropriate licensing and whether counsel in more than one jurisdiction is needed."
       },
       {
-        q: "Is a law firm always the safer choice?",
-        a: "Neither a label nor a staffing model guarantees a better result. Compare qualifications, proposed services, written fees, and conflicts. Ask who is responsible for legal advice and representation.",
-      },
+        "q": "Is a law firm always the safer choice?",
+        "a": "Neither a label nor a staffing model guarantees a better result. Compare qualifications, proposed services, written fees, and conflicts. Ask who is responsible for legal advice and representation."
+      }
     ],
-    takeaway:
-      "Confirm the actual service scope, responsible professionals, jurisdiction, and total fees. Do not infer court representation from an advertised attorney network.",
+    "takeaway": "Confirm the actual service scope, responsible professionals, jurisdiction, and total fees. Do not infer court representation from an advertised attorney network.",
+    "sources": [
+      {
+        "label": "New York Courts: responding to a summons and complaint",
+        "url": "https://www.nycourts.gov/legacypdfs/courts/1jd/supctmanh/HelpCenterForms/How_to_Respond_to_a_Summons_and_Complaint.pdf",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
+    ]
   },
   {
-    slug: "ucc-lien-release-mca",
-    title: "UCC liens from MCA funders: how they hurt you and how to get them released",
-    metaTitle: "MCA UCC Liens: Removal and Release After Settlement (2026)",
-    metaDescription:
-      "MCA funders file blanket UCC-1 liens that block refinancing and can reach your customers. How to find every filing, what a release requires, and the settlement mistake that leaves liens alive.",
-    intro:
-      "Every MCA you signed almost certainly produced a UCC-1 filing against your business, and those filings outlive the problems you can see. They block refinancing, spook lenders, and let funders reach your customers. Here is how to find them, what they really do, and how to get them off.",
-    sections: [
+    "slug": "ucc-lien-release-mca",
+    "title": "UCC liens from MCA funders: how they hurt you and how to get them released",
+    "metaTitle": "MCA UCC Liens: Reviewing Release and Termination Requirements",
+    "metaDescription": "Find MCA-related financing statements, compare them with the agreement, document termination requirements, and verify filing authority and completion.",
+    "intro": "A UCC financing statement is a public filing to investigate alongside the underlying agreement. Identify the debtor, secured party, collateral, amendments, and termination requirements before treating a balance as fully resolved.",
+    "sections": [
       {
-        heading: "What the filing actually is",
-        paragraphs: [
-          "A UCC-1 financing statement is a public notice, filed with your state's Secretary of State, that a creditor claims a security interest in your assets. MCA funders typically claim everything: receivables, inventory, equipment, deposit accounts. The filing itself seizes nothing, but it establishes priority and it is public.",
-          "Two practical harms follow. First, any bank, SBA lender, or factor that searches your name sees the filings and either declines or demands subordination. Second, a funder in default posture can send notices to your account debtors, your customers, directing them to pay the funder directly, which is both a cash-flow attack and a reputation hit.",
-        ],
+        "heading": "Find the relevant records",
+        "paragraphs": [
+          "Use the applicable filing office and correct legal debtor name. Search methods and charges vary. Keep filing numbers and copies, then compare them with your agreements and payoff history."
+        ]
       },
       {
-        heading: "Find every filing before you negotiate",
-        paragraphs: [
-          "Search your state's Secretary of State UCC database (free in most states) for your legal entity name and any DBAs. Stacked owners are routinely surprised: filings from funders long paid off, duplicate filings, even filings from brokers who never advanced a dollar. Build the list first; every one of them is a negotiation item.",
-        ],
+        "heading": "A filing is not a complete statement of rights",
+        "paragraphs": [
+          "Collateral coverage, attachment, perfection, priority, and enforcement are separate questions. A filing does not by itself seize property or establish that every asset is covered. Ask a prospective lender what an existing filing means for its proposal."
+        ]
       },
       {
-        heading: "How releases actually happen",
-        paragraphs: [
-          "A proper settlement agreement obligates the funder to file a UCC-3 termination within a stated window after final payment, and gives you the right to file it yourself if they fail. That last clause matters: collections departments are diligent about filing liens and lazy about terminating them.",
-          "After final payment, verify. Pull the state record again two to four weeks later and confirm the termination is on file. If it is not, send written demand citing the agreement; funders who ignore termination obligations after being paid are exposed under UCC Article 9's own remedy provisions, and they know it.",
-        ],
+        "heading": "Agree how termination will be handled",
+        "paragraphs": [
+          "The written resolution should identify affected filings, any remaining obligations, who must deliver or file termination documents, and when. New York UCC 9-513 contains conditional termination duties, including provisions for sold accounts; do not treat all filings as identical."
+        ]
       },
       {
-        heading: "The settlement mistake that leaves liens alive",
-        paragraphs: [
-          "Paying a discounted balance without a written release clause is the classic error. The debt is compromised, the funder loses interest, and the filing sits on the record for its full five-year life, blocking your refinance two years later when the funder's phone number no longer answers. No release language, no deal, that rule has no exceptions worth making.",
-        ],
-      },
+        "heading": "Verify the record after completion",
+        "paragraphs": [
+          "Calendar the contractual dates and recheck the filing office. If a termination is missing, preserve proof of payment and seek advice about a proper demand and filing authority. Do not file an unauthorized termination yourself."
+        ]
+      }
     ],
-    faq: [
+    "faq": [
       {
-        q: "How long does a UCC lien last if nobody removes it?",
-        a: "Five years from filing in most states, and the funder can renew it. Waiting out the clock is rarely a plan; termination through settlement or demand is.",
+        "q": "How long does a financing statement remain effective?",
+        "a": "New York’s general rule is five years, subject to exceptions and continuation provisions. Check the applicable filing and jurisdiction."
       },
       {
-        q: "Can I get financing while MCA UCC liens are on file?",
-        a: "It is hard. Most lenders require first position or clean records. Some will lend against a payoff-and-release arranged at closing, which is another reason your settlement paperwork must nail the release mechanics.",
+        "q": "Can I obtain financing with an existing filing?",
+        "a": "That depends on collateral, priority, the lender’s requirements, and proposed payoff or subordination arrangements."
       },
       {
-        q: "A funder I finished paying years ago still has a filing. What do I do?",
-        a: "Send a written demand for termination under UCC 9-513; the funder generally must file or authorize termination within about 20 days once the obligation is satisfied. If they ignore it, you can file a UCC-3 with an explanation, and an attorney letter usually resolves it faster than that.",
-      },
+        "q": "Can I terminate a paid-off filing myself?",
+        "a": "Not merely because you believe the balance is paid. Check statutory conditions, authorization, the agreement, and the filing office’s requirements with counsel."
+      }
     ],
-    takeaway:
-      "Liens outlive debts. List every filing before negotiating, put release language in every settlement, and verify the terminations actually hit the public record.",
+    "takeaway": "Match each filing to its obligation, document the release process, and verify completion. A payoff receipt alone does not answer every lien question.",
+    "sources": [
+      {
+        "label": "New York UCC 9-513: termination statements",
+        "url": "https://www.nysenate.gov/legislation/laws/UCC/9-513",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      },
+      {
+        "label": "New York UCC 9-509: who may file",
+        "url": "https://www.nysenate.gov/legislation/laws/UCC/9-509",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      },
+      {
+        "label": "New York UCC 9-515: duration and continuation",
+        "url": "https://www.nysenate.gov/legislation/laws/UCC/9-515",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
+    ],
+    "updatedAt": "2026-09-18"
   },
   {
-    slug: "stacked-mca-debt",
-    title: "Stacked MCAs: why the third advance breaks the business, and the way out",
-    metaTitle: "Stacked MCA Debt: How to Get Out of Multiple Positions (2026)",
-    metaDescription:
-      "Why MCA stacking spirals so fast, what total daily remittance your revenue can actually carry, and how coordinated multi-funder settlement unwinds a stack without closing the business.",
-    intro:
-      "Nobody plans to stack. The second advance covered the first one's pulls; the third covered payroll; by the fourth the business is remitting a quarter of gross revenue daily. Stacking is the single most common shape of the files that reach settlement firms, and unwinding it has rules of its own.",
-    sections: [
+    "slug": "stacked-mca-debt",
+    "title": "Stacked MCAs: compare obligations and coordinated options",
+    "metaTitle": "Stacked MCA Debt: Comparing Multiple Obligations and Options",
+    "metaDescription": "Build a combined forecast for multiple MCA obligations and compare payment, settlement, and legal options without assuming a standard discount or outcome.",
+    "intro": "Multiple advances can compete for the same cash flow. Start with a complete obligation schedule and operating forecast. We have not verified a typical number of positions, discount, or success rate for a stacked workout.",
+    "sections": [
       {
-        heading: "The arithmetic of the spiral",
-        paragraphs: [
-          "Each advance is priced as if it were the only one: a pull sized to 10 or 15 percent of revenue is survivable alone. Three of them remit 30 to 45 percent of gross off the top, against businesses whose entire margin is often under 15 percent. From that point the stack is mathematically unpayable from operations; it is being paid from working capital, supplier float, and the owner's savings, which is why it feels fine until it suddenly does not.",
-          "Stacking also usually violates every contract in the pile. Anti-stacking clauses make each new advance an event of default on the earlier ones, leverage funders hold quietly until they want it.",
-        ],
+        "heading": "Build one cash-flow picture",
+        "paragraphs": [
+          "Record each funder, remittance, claimed balance, maturity or delivery terms, collateral, and guarantee. Include payroll, tax, supplier, and other obligations so an affordable payment is based on the whole business."
+        ]
       },
       {
-        heading: "Why you cannot settle a stack one funder at a time",
-        paragraphs: [
-          "Settle position one while positions two through four keep pulling daily, and you have spent your settlement cash without changing the math. Worse, funders talk: a discount granted to one repositions the others' demands. Stacks get resolved as a coordinated negotiation, one financial picture presented to all funders, priority respected, and the total resolution sized to what the business can actually fund.",
-          "Priority matters more than owners expect. First-position funders with senior UCC filings have real leverage; fourth-position funders behind three liens are often functionally unsecured and settle at the steepest discounts. A negotiator who understands the priority ladder spends your money where it buys the most.",
-        ],
+        "heading": "Use arithmetic as a scenario, not an industry statistic",
+        "paragraphs": [
+          "For illustration, three positions each collecting 10 percent of the same revenue would together take 30 percent before other expenses. Your actual percentages, timing, and agreements may differ."
+        ]
       },
       {
-        heading: "The number that decides everything",
-        paragraphs: [
-          "Before any strategy: compute total daily remittance across all positions as a percentage of average daily revenue, and compare it to your true operating margin. That single ratio determines whether the answer is reconciliation and restructure (ratio modestly above margin), coordinated settlement (well above), or a wind-down conversation (multiples above with declining revenue). Honest firms run this math on the first call; be suspicious of any that promise outcomes before seeing it.",
-        ],
+        "heading": "Review overlapping contractual rights",
+        "paragraphs": [
+          "Check additional-financing restrictions and all relevant security interests. Do not infer legal priority solely from a marketing label such as first or fourth position. A professional should evaluate competing rights and any restrictions on payments."
+        ]
       },
       {
-        heading: "While the workout runs",
-        paragraphs: [
-          "Keep revenue visible and honest: hiding deposits in new accounts breaches every agreement in the stack and destroys the credibility a coordinated deal depends on. Do not take a fifth advance to buy a quiet month; each new position resets every negotiation. And keep supplier relationships current where possible, because the business's survival is the asset every funder is being asked to bet on.",
-        ],
-      },
+        "heading": "Compare coordinated proposals",
+        "paragraphs": [
+          "Model reconciliation, revised payments, settlement, financing, and court-supervised options. Resolving one position may help, but check the remaining obligations before committing cash. There is no guaranteed benefit from a particular negotiation order."
+        ]
+      }
     ],
-    faq: [
+    "faq": [
       {
-        q: "How many MCA positions can realistically be settled at once?",
-        a: "Coordinated workouts across three to six positions are routine at established firms; the record files run higher. The constraint is not the count, it is whether the business generates enough to fund a credible total resolution.",
+        "q": "How many positions can be negotiated at once?",
+        "a": "There is no verified universal limit or typical result here. The documents, available funds, creditor participation, and legal issues determine feasibility."
       },
       {
-        q: "Should I pay the most aggressive funder first?",
-        a: "Not automatically. Aggression and legal priority are different things. Strategy usually follows the UCC priority ladder and each funder's litigation posture together, quieting the genuinely dangerous positions while junior liens wait, which is exactly the coordination a stacked workout exists to manage.",
+        "q": "Should I pay the most aggressive funder first?",
+        "a": "Do not choose solely on collection pressure. Obtain advice about competing rights and the operational effect of any proposed payment."
       },
       {
-        q: "Is a reverse consolidation a way out of a stack?",
-        a: "It replaces many daily pulls with one, which feels like relief, but it adds a new funded position on top of the stack, usually at real cost, and resolves nothing. For most stacked files it postpones the reckoning and raises its price. See our consolidation guide for the full comparison.",
-      },
+        "q": "Does reverse consolidation eliminate the stack?",
+        "a": "Check whether it actually pays off existing obligations or adds funding alongside them. Compare total repayment and all remaining contracts."
+      }
     ],
-    takeaway:
-      "A stack is one problem, not four. Compute the remittance-to-revenue ratio, respect the priority ladder, and resolve the whole picture in one coordinated negotiation.",
+    "takeaway": "Evaluate the full set of obligations and keep the cash-flow assumptions explicit. Creditor participation and outcomes remain uncertain.",
+    "sources": [
+      {
+        "label": "U.S. Courts: Chapter 11 bankruptcy basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      },
+      {
+        "label": "New York UCC 9-406: assignment notices",
+        "url": "https://www.nysenate.gov/legislation/laws/UCC/9-406",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
+    ],
+    "updatedAt": "2026-09-18"
   },
   {
-    slug: "frozen-account-mca-funder",
-    title: "Funder froze your account? What to do in the first 48 hours",
-    metaTitle: "MCA Funder Froze Your Bank or Merchant Account: First 48 Hours",
-    metaDescription:
-      "Whether it is a restrained bank account or a held merchant processor, the first 48 hours decide how bad an MCA freeze gets. The triage steps, in order, and the calls not to make.",
-    intro:
-      "A freeze is the moment an MCA problem stops being theoretical: payroll is Friday and the money will not move. Bank restraints and processor holds have different mechanics and different fixes, and the first 48 hours of response determine most of the damage. Here is the triage, in order.",
-    sections: [
+    "slug": "frozen-account-mca-funder",
+    "title": "Account frozen after an MCA dispute? Check the notice and options",
+    "metaTitle": "MCA Account Freeze: Bank Notices, Processor Holds, and Options",
+    "metaDescription": "Identify the actual bank or processor notice, obtain legal review, and verify release requirements without moving restricted funds.",
+    "intro": "An inaccessible account can disrupt payroll and suppliers, but different restrictions require different responses. Obtain the actual bank or processor notice and arrange prompt legal review. No universal 48-hour release process exists.",
+    "sections": [
       {
-        heading: "First, identify which freeze you have",
-        paragraphs: [
-          "A merchant processing hold means the funder (or its partner processor) is holding card settlements before they reach you. It is contractual, fast, and usually reversible by agreement. A bank account restraint means a judgment exists, almost always via a Confession of Judgment or a suit you did not answer, and the funder's attorneys have served your bank. That one is legal process, and it is the more serious of the two.",
-          "You can tell the difference in one call to your bank: ask whether there is a legal restraint on the account and who served it. If the bank says restraint, get the case caption and index number; your attorney needs both.",
-        ],
+        "heading": "Identify the restriction",
+        "paragraphs": [
+          "Ask the institution for its stated reason, amount affected, document reference, issuing party, and any case number. A processor reserve, bank compliance hold, restraining notice, and levy are not interchangeable."
+        ]
       },
       {
-        heading: "Hour 1 to 12: stop the bleeding",
-        paragraphs: [
-          "Protect payroll first: if a restraint hit your operating account, do not deposit new funds into it, incoming money is captured too. Run essential payments from an account at a different bank that was never on file with the funder, opened properly, not hidden, your attorney will disclose it in negotiation. Notify your payroll provider before the run date; failed payroll pulls create their own cascade.",
-          "Do not call the funder and vent. Every statement is negotiation material, and desperation reprices the settlement against you. The outreach that works is representative-to-funder within a day, with a concrete proposal attached to the release.",
-        ],
+        "heading": "Review urgent operating needs lawfully",
+        "paragraphs": [
+          "Prepare a list of payroll, tax, and supplier deadlines for counsel. Do not move restricted funds or route receipts elsewhere to evade a notice or order. Ask which lawful options are available under the actual restriction."
+        ]
       },
       {
-        heading: "Hour 12 to 48: the release negotiation",
-        paragraphs: [
-          "Processor holds release by agreement: funders use them to force contact, and routinely lift them against a signed payment plan or settlement framework. Speed matters because every held settlement batch is revenue your resolution will need.",
-          "Bank restraints release three ways: negotiated stipulation (fastest and most common), motion to vacate the judgment where grounds exist, COJ procedural defects and service failures are the usual ones, or satisfaction of the judgment. An attorney who works MCA files will know within one read of the paperwork which path your facts support.",
-        ],
+        "heading": "Evaluate the release process",
+        "paragraphs": [
+          "Counsel can assess the notice, applicable exemptions, challenge procedures, and any negotiated release. New York CPLR 5222 is one jurisdiction’s restraining-notice provision, not a description of every bank hold. Do not assume a payment plan automatically releases funds."
+        ]
       },
       {
-        heading: "After the release: fix the cause",
-        paragraphs: [
-          "A freeze is a symptom. The judgment or default that produced it is still there, and a funder who froze once will freeze again. Fold the release into a full resolution, settled balance, payment schedule, UCC release, judgment satisfaction filed with the court, rather than paying whatever unlocks the account today and facing the same funder next quarter.",
-        ],
-      },
+        "heading": "Confirm what was resolved",
+        "paragraphs": [
+          "Obtain written confirmation of any release from the appropriate party and verify the institution has processed it. Separately address any remaining debt, guarantee, filing, or court case. Removing one restriction may not resolve the underlying dispute."
+        ]
+      }
     ],
-    faq: [
+    "faq": [
       {
-        q: "Can the funder freeze my personal bank account too?",
-        a: "If you signed a personal guarantee and the judgment names you personally, yes, personal accounts can be restrained. That escalation is exactly why guarantee files need counsel before default, not after the freeze.",
+        "q": "Can a personal account be affected?",
+        "a": "That depends on the account ownership, legal process, parties, exemptions, and applicable law. A business guarantee alone does not answer the question."
       },
       {
-        q: "How long does a processor hold last?",
-        a: "As long as it takes to force the conversation the funder wants, days to weeks. Holds typically lift within days of a signed framework, which is why fast, credible engagement beats waiting the funder out.",
+        "q": "How long does a processor hold last?",
+        "a": "The reason, terms, documentation, and release procedure matter. Ask the processor for written conditions rather than assuming a standard duration."
       },
       {
-        q: "The judgment was entered through a COJ I barely remember signing. Can it be undone?",
-        a: "Sometimes. COJ judgments get vacated for procedural defects, defective affidavits, improper venue, service failures, and New York barred out-of-state COJs in 2019. Whether attacking the judgment beats settling it is a fact-specific attorney call, and both paths often run in parallel.",
-      },
+        "q": "Can a confession-of-judgment entry be challenged?",
+        "a": "Potential grounds, procedure, and deadlines require review of the actual record. No success rate is established here."
+      }
     ],
-    takeaway:
-      "Identify the freeze type, protect payroll from a clean account, say nothing to the funder directly, and trade the release for a full resolution, not just a reopened account.",
+    "takeaway": "Get the notice, identify the legal or contractual basis, and obtain advice about lawful operations and release. Do not rely on a promised release timetable.",
+    "sources": [
+      {
+        "label": "New York CPLR 5222: restraining notices",
+        "url": "https://www.nysenate.gov/legislation/laws/CVP/5222",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      },
+      {
+        "label": "New York CPLR 3218: judgment by confession",
+        "url": "https://www.nysenate.gov/legislation/laws/CVP/3218",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
+    ],
+    "updatedAt": "2026-09-18"
   },
   {
-    slug: "mca-consolidation-vs-settlement",
-    title: "MCA consolidation vs settlement: one reduces payments, one reduces debt",
-    metaTitle: "MCA Consolidation vs Settlement: Which Actually Helps? (2026)",
-    metaDescription:
-      "Consolidation and reverse consolidation restructure MCA payments; settlement reduces the balance itself. The honest comparison, the reverse-consolidation trap, and how to choose.",
-    intro:
-      "Half the ads promising MCA relief sell consolidation; the other half sell settlement. They sound interchangeable and are nearly opposites: one changes the shape of what you pay, the other changes the amount you owe. Choosing wrong adds months and real money to the problem.",
-    sections: [
+    "slug": "mca-consolidation-vs-settlement",
+    "title": "MCA consolidation vs settlement: compare written terms and costs",
+    "metaTitle": "MCA Consolidation vs Settlement: Comparing Terms and Costs",
+    "metaDescription": "Compare MCA consolidation, reverse consolidation, and settlement by remaining obligations, creditor participation, fees, cash flow, and risks.",
+    "intro": "Compare what each proposal actually changes: creditors, outstanding balances, payment timing, and total cost. Neither a consolidation label nor a settlement label establishes affordability or a particular credit result.",
+    "sections": [
       {
-        heading: "What consolidation really is",
-        paragraphs: [
-          "MCA consolidation replaces multiple advances with one new obligation, a term loan or a fresh advance, that pays the others off. Your daily chaos becomes one payment, which is genuine operational relief. What it does not do is reduce principal: you still owe everything, now to a new creditor, plus the new product's cost.",
-          "The reverse consolidation variant is the one to scrutinize. Instead of paying your funders off, the reverse-consolidation company deposits weekly amounts that cover your existing daily pulls while pulling its own, longer payment from you. Every original position stays alive, a new one is added on top, and the effective cost of the arrangement is routinely brutal. For stacked files it usually postpones the reckoning and raises its price.",
-        ],
+        "heading": "What consolidation proposes",
+        "paragraphs": [
+          "A true payoff consolidation uses new financing to retire specified obligations. Obtain payoff amounts and confirmation of which old accounts and filings will be resolved. Compare the new repayment total, fees, collateral, and guarantees."
+        ]
       },
       {
-        heading: "What settlement really is",
-        paragraphs: [
-          "Settlement seeks an agreed resolution of outstanding balances; a creditor may accept revised terms or decline. There is no verified typical savings rate in our research. Compare creditor payments, all fees, possible reporting effects and unresolved legal issues.",
-        ],
+        "heading": "Check a reverse-consolidation offer carefully",
+        "paragraphs": [
+          "Some offers provide funds toward existing debits while adding a new repayment obligation. If old balances remain, include them in the forecast. Do not confuse a lower immediate debit with a lower total cost."
+        ]
       },
       {
-        heading: "The decision in one question",
-        paragraphs: [
-          "Can the business fully repay everything it owes at a survivable monthly cost, if the payments were merely reshaped? If yes, and you qualify for a genuine term loan at sane pricing, consolidation is the cleaner path: no settled-debt consequences, relationships intact. If no, if full repayment is arithmetic fiction, then consolidation only rearranges an unpayable number, and settlement is the tool that changes the number itself.",
-          "The uncomfortable pattern: businesses distressed enough to be shopping for relief rarely qualify for the good consolidation products, and the products that will take them price like the problem they are. That is why so many stacked files pass through a failed consolidation on the way to the settlement that should have come first.",
-        ],
+        "heading": "What settlement proposes",
+        "paragraphs": [
+          "Settlement seeks creditor agreement on a balance or revised terms. A creditor can decline. Include service charges and legal expenses when comparing a proposal with full repayment or other options."
+        ]
       },
       {
-        heading: "Questions that expose a bad consolidation offer",
-        paragraphs: [
-          "Three answers reveal most of what matters:",
-        ],
-        bullets: [
-          "Does this pay off my existing positions entirely, or sit alongside them? (Alongside means reverse consolidation)",
-          "What is the total dollar repayment across the new product's life, next to my current total payoff?",
-          "What UCC position does the new lender take, and what happens to the old filings?",
-        ],
-      },
+        "heading": "Use the same forecast for each option",
+        "paragraphs": [
+          "Model expected revenue, essential costs, all payments, and a weaker-revenue scenario. Ask what happens if a creditor refuses or a payment is missed. Review credit reporting, tax, and legal consequences with the appropriate professionals."
+        ]
+      }
     ],
-    faq: [
+    "faq": [
       {
-        q: "Does consolidating MCAs hurt my credit like settlement does?",
-        a: "A true consolidation that pays funders in full avoids settled-debt marks, which is its main advantage. A reverse consolidation avoids nothing if the underlying stack later defaults anyway, which is the common ending for stacks that were unpayable before the extra layer.",
+        "q": "Does consolidation protect personal credit?",
+        "a": "No particular result is assured. Check actual reporting, payment performance, guarantees, and the new agreement."
       },
       {
-        q: "Can I consolidate first and settle later if it fails?",
-        a: "You can, and many owners do, but the failed consolidation makes the later settlement harder: one more funded position, one more UCC filing, and less cash left to fund resolutions. If the full-repayment math already fails, skipping straight to settlement preserves your leverage.",
+        "q": "Can I seek settlement after consolidation?",
+        "a": "You may request it, but the new creditor can decline. Include the additional costs and obligations before choosing a sequence."
       },
       {
-        q: "Is there any legitimate use of reverse consolidation?",
-        a: "As a short bridge for a fundamentally solvent business with a dated, specific revenue event ahead, arguably. As a fix for structural over-remittance, no: it adds cost to a stack that already cannot carry its cost.",
-      },
+        "q": "How do I compare reverse consolidation?",
+        "a": "List every existing balance that remains, every new charge, and the full payment schedule. Assess affordability beyond the initial relief period."
+      }
     ],
-    takeaway:
-      "Consolidation reshapes payments; settlement reduces debt. Run the full-repayment math honestly, and be ruthless about the reverse-consolidation trap: if the offer sits alongside your positions instead of retiring them, walk.",
-  },
-];
-
-export function getGuideBySlug(slug: string) {
-  return GUIDES.find((g) => g.slug === slug);
-}
-
-GUIDES.push(
-  {
-    slug: "how-to-get-out-of-mca",
-    title: "How to get out of a merchant cash advance: the decision tree",
-    metaTitle: "How to Get Out of a Merchant Cash Advance (2026 Decision Tree)",
-    metaDescription:
-      "The realistic paths out of MCA debt, organized as a decision tree: your situation, your best first move, and what to avoid, from current-but-squeezed to sued-and-frozen.",
-    intro:
-      "Every article about escaping MCA debt lists the same six options. What owners actually need is a decision tree: given your specific situation right now, which move comes first? This guide routes you by scenario rather than listing theory.",
-    sections: [
+    "takeaway": "Compare written terms and total obligations under the same cash-flow assumptions. No option guarantees savings, preserved credit, or continued financing access.",
+    "sources": [
       {
-        heading: "Scenario 1: current on payments, but the squeeze is on",
-        paragraphs: [
-          "You have the most options and the most leverage of anyone reading this page. First move: check your agreement for a reconciliation clause and compute what a true-up would change; if revenue is down from when the advance was priced, that is free relief you are entitled to. Second: if the business can repay in full at a saner pace, propose a restructure before you miss anything, funders price cooperation higher for merchants who come to them first.",
-          "What to avoid at this stage: taking another advance to ease the pressure (that is how stacks are born) and signing anything new without reading it for fresh guarantees or Confessions of Judgment.",
-        ],
-      },
-      {
-        heading: "Scenario 2: stacked, and the math stopped working",
-        paragraphs: [
-          "Compute the number that decides everything: total daily remittance across all positions as a share of revenue, against your true margin. If it is structurally unpayable, stop optimizing single positions. Stacks resolve as one coordinated negotiation, respecting UCC priority, quieting the litigation-prone funders first, sized to what the business can actually fund.",
-          "This is the scenario where professional representation most clearly pays for itself, and where the choice of firm matters most. Vet against our red-flags list before signing with anyone.",
-        ],
-      },
-      {
-        heading: "Scenario 3: default notices arrived",
-        paragraphs: [
-          "The window between the first default notice and the first legal filing is where the best settlements in this industry happen. The funder has signaled escalation but not yet spent money on lawyers; discounts are at their deepest. Engage now, through representation if a COJ exists in your contract, and do not go silent, silence is what converts notices into filings.",
-        ],
-      },
-      {
-        heading: "Scenario 4: sued, judgment entered, or account frozen",
-        paragraphs: [
-          "Legal problems need legal tools first: answering the lawsuit before the deadline, moving to vacate defective COJ judgments, negotiating restraint releases. Settlement still happens in this scenario, post-judgment balances get compromised every day, but it happens alongside defense, not instead of it. A firm without litigation capability cannot run this scenario alone.",
-        ],
-      },
-      {
-        heading: "The moves that make every scenario worse",
-        paragraphs: [
-          "Four mistakes appear in almost every catastrophic MCA story: silently switching bank accounts (a default event that reads as fraud in court), taking a reverse consolidation on top of an unpayable stack, stopping payments as a bluff with no legal strategy behind it, and signing hardship modifications containing fresh COJs. Whatever scenario you are in, not doing these four things preserves your options.",
-        ],
-        bullets: [
-          "Do not hide revenue or switch banks without a strategy",
-          "Do not add positions to escape positions",
-          "Do not stop paying without defense prepared",
-          "Do not sign new documents unread",
-        ],
-      },
+        "label": "U.S. Courts: Chapter 11 bankruptcy basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
     ],
-    faq: [
-      {
-        q: "What is the fastest way out of an MCA?",
-        a: "If you have cash available, a negotiated lump-sum settlement is the fastest clean exit, distressed positions commonly resolve at meaningful discounts, with lien releases, in weeks. If you do not have cash, a restructure that converts daily pulls to an affordable payment is the fastest relief, with settlement as the endgame.",
-      },
-      {
-        q: "Can I just pay the MCA off early and be done?",
-        a: "You can, but factor-rate pricing means early payoff usually saves little or nothing, you owe the full purchased amount regardless. Some contracts include early-payoff discounts or addendums; check before wiring anything, and get a zero-balance letter and UCC termination as part of any payoff.",
-      },
-      {
-        q: "Is bankruptcy ever the right way out of MCA debt?",
-        a: "Occasionally, when the business is not viable even without the MCA pulls, or personal exposure is unmanageable. For operating businesses, settlement or restructuring resolves most MCA situations without the public process and lasting consequences of filing. Get advice on both paths before choosing either.",
-      },
-    ],
-    takeaway:
-      "Route by scenario, not by product pitch. Current: reconcile and restructure. Stacked: coordinate everything. Noticed: negotiate now. Sued: defend first. And in every scenario, avoid the four moves that destroy options.",
+    "updatedAt": "2026-09-18"
   },
   {
-    slug: "mca-confession-of-judgment",
-    title: "Signed a Confession of Judgment? What it means and what to do now",
-    metaTitle: "MCA Confession of Judgment: What to Do If You Signed One (2026)",
-    metaDescription:
-      "Most owners discover the COJ in their MCA paperwork only when it is used. What a Confession of Judgment does, where it is enforceable in 2026, and the moves that protect you before and after entry.",
-    intro:
-      "Buried in many MCA funding packages is the single most dangerous document in commercial finance: a Confession of Judgment. Most owners learn they signed one at the worst possible moment, when a judgment appears against them without a lawsuit. Here is what it is, what it is not, and what to do at each stage.",
-    sections: [
+    "slug": "how-to-get-out-of-mca",
+    "title": "How to get out of a merchant cash advance: the decision tree",
+    "metaTitle": "How to Get Out of a Merchant Cash Advance (2026 Decision Tree)",
+    "metaDescription": "The realistic paths out of MCA debt, organized as a decision tree: your situation, your best first move, and what to avoid, from current-but-squeezed to sued-and-frozen.",
+    "intro": "Start with the current documents and cash flow, then compare available options. This guide helps organize the decision; it does not establish that settlement is the best route or promise an exit date.",
+    "sections": [
       {
-        heading: "What you actually signed",
-        paragraphs: [
-          "A COJ is a pre-signed admission of liability. On default, real or claimed, the funder's attorney files it with a supporting affidavit, and a court clerk enters judgment against you: no complaint served, no hearing, no chance to raise defenses. Enforcement tools follow immediately: bank restraints, levies, liens on the judgment amount plus fees.",
-          "The COJ typically binds both the business and every personal guarantor, which is how a business default reaches personal bank accounts within days.",
-        ],
+        "heading": "Current on payments but under pressure",
+        "paragraphs": [
+          "Check whether the agreement provides reconciliation or payment adjustments. Prepare supporting records and compare a written request with other proposals. Do not change payments on the assumption that a request has been accepted."
+        ]
       },
       {
-        heading: "Where COJs stand in 2026",
-        paragraphs: [
-          "New York, the venue that processed most MCA COJs for a decade, banned their use against out-of-state debtors in 2019, and its recent reforms have added merchant protections with real teeth: courts have vacated thousands of judgments entered with procedural defects. But COJs remain enforceable in other states, in older agreements, and against in-state debtors where permitted. The document in your file is dangerous until a lawyer says otherwise about your specific facts.",
-        ],
+        "heading": "Several advances competing for cash",
+        "paragraphs": [
+          "Create a combined schedule including essential operating costs and other debts. Ask an adviser to assess overlapping agreements, collateral, guarantees, and the feasibility of coordinated changes."
+        ]
       },
       {
-        heading: "If you signed one and are still current",
-        paragraphs: [
-          "Your job is to make sure the COJ never gets used. That means no silent defaults: if payments are becoming unsustainable, move on reconciliation, restructuring, or settlement before a missed remittance gives the funder cause. It also means professional handling of any negotiation, because a misstep that triggers default carries judgment-level consequences within days, not months.",
-        ],
+        "heading": "A default notice has arrived",
+        "paragraphs": [
+          "Verify the allegation, claimed balance, and response terms. Preserve communications and ask about available resolution options. We have no verified evidence of a special pre-lawsuit window that produces the deepest discounts."
+        ]
       },
       {
-        heading: "If judgment has already been entered",
-        paragraphs: [
-          "Move on two tracks the same week. Defense: an MCA-experienced attorney reviews the entry for vacatur grounds, defective affidavits, improper venue, service failures, statutory noncompliance, which are common enough that thousands of COJ judgments have been undone. Resolution: the judgment amount itself remains negotiable, because enforcement is slower and costlier for the funder than a settlement. Restraint releases, vacatur motions, and settlement talks routinely run in parallel.",
-        ],
+        "heading": "A suit, judgment, or restriction exists",
+        "paragraphs": [
+          "Arrange prompt legal review of the actual record. Negotiations may occur alongside legal work, but they do not automatically pause deadlines or enforcement. Obtain written scope for any representative’s responsibilities."
+        ]
       },
+      {
+        "heading": "Compare negotiation, financing, and bankruptcy",
+        "paragraphs": [
+          "Use the same cash-flow forecast for all proposals. Chapter 11 is a potential reorganization process, subject to eligibility and professional review. Do not treat bankruptcy as appropriate only when a business has already failed."
+        ]
+      }
     ],
-    faq: [
+    "faq": [
       {
-        q: "How do I know if my MCA contract has a Confession of Judgment?",
-        a: "Search the funding package for 'confession of judgment', 'affidavit of confession', or 'COJ', it is often a separate signature page rather than a clause. If you cannot find your copy, request the full signed agreement from the funder; you are entitled to it.",
+        "q": "What is the fastest way out?",
+        "a": "No universal route or timeframe is established. Existing cash, contractual payoff terms, creditor acceptance, and proceedings affect timing."
       },
       {
-        q: "Can a COJ judgment be undone?",
-        a: "Frequently, yes. Vacatur is granted for procedural defects, and New York's reforms made several categories of MCA COJ entries vulnerable. Success depends on your facts and venue, which is an attorney's call after reading the actual filing.",
+        "q": "Can I pay off early?",
+        "a": "Request a dated written payoff quote, check any discount or fee terms, and confirm how releases and filings will be handled."
       },
       {
-        q: "Are new MCA contracts still allowed to include COJs?",
-        a: "In some states yes, and some funders shifted filings to permissive venues after New York's ban. Refusing to sign one, or negotiating it out, is a legitimate ask before taking any advance, and a funder that will not fund without it is telling you how it collects.",
-      },
+        "q": "Could bankruptcy be appropriate for an operating business?",
+        "a": "Potentially. Obtain advice about eligibility, costs, alternatives, and effects on the business and guarantors."
+      }
     ],
-    takeaway:
-      "A COJ converts default into judgment overnight. If you signed one: never default silently. If judgment entered: vacatur review and settlement talks, same week, parallel tracks.",
+    "takeaway": "Choose from documented options with appropriate advice. Avoid guarantees about discounts, credit, business survival, or timing.",
+    "sources": [
+      {
+        "label": "New York Courts: responding to a summons and complaint",
+        "url": "https://www.nycourts.gov/legacypdfs/courts/1jd/supctmanh/HelpCenterForms/How_to_Respond_to_a_Summons_and_Complaint.pdf",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      },
+      {
+        "label": "U.S. Courts: Chapter 11 bankruptcy basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-11-bankruptcy-basics",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
+    ],
+    "updatedAt": "2026-09-18"
   },
   {
-    slug: "mca-lawsuit-first-30-days",
-    updatedAt: "2026-09-18",
-    title: "Served with an MCA lawsuit: what the first 30 days decide",
-    metaTitle: "MCA Lawsuit: What to Do in the First 30 Days (2026)",
-    metaDescription:
-      "A funder filed suit. The first 30 days decide whether you face a default judgment or a defensible negotiation. Deadlines, defenses, and the sequence that protects the business.",
-    intro:
-      "A process server at the counter changes the problem: this is no longer a debt to negotiate at leisure but a case with a clock. Miss the answer deadline and the funder wins everything by default. Use the window well and most MCA suits end in settlements far better than the complaint demands. Here is the sequence.",
-    sections: [
+    "slug": "mca-confession-of-judgment",
+    "title": "Signed a Confession of Judgment? What it means and what to do now",
+    "metaTitle": "MCA Confession of Judgment: Documents, Requirements, and Review",
+    "metaDescription": "Locate the MCA confession affidavit, check jurisdiction-specific requirements, and obtain legal review of the judgment and enforcement record.",
+    "intro": "A confession-of-judgment document can authorize a judgment procedure without an ordinary action where permitted. Its effect depends on statutory requirements, the affidavit, parties, and filing history. A signature alone does not establish that a judgment is valid.",
+    "sections": [
       {
-        heading: "Week 1: the clock and the counsel",
-        paragraphs: [
-          "Find the answer deadline first, typically 20 to 30 days from service depending on the court, and calendar it in red. Then get MCA-experienced counsel reviewing the complaint; the venue is usually the one the contract chose (often New York), so experience in that forum matters more than a local address. Do not call the funder's lawyers to explain yourself; everything said becomes evidence.",
-        ],
+        "heading": "Locate the complete document",
+        "paragraphs": [
+          "Gather the funding agreement, any confession affidavit, guarantees, amendments, and related notices. Identify each signer and the capacity in which they signed."
+        ]
       },
       {
-        heading: "Weeks 1-2: what a defense review looks for",
-        paragraphs: [
-          "MCA complaints are volume paperwork, and volume paperwork has defects. Common defense angles: recharacterization (the advance functioned as a usurious loan, no true reconciliation, fixed payments regardless of revenue), service defects, standing and assignment gaps when positions were sold between funders, damage calculations that ignore payments made, and conduct claims under newer statutes like New York's FAIR Act. Raising real defenses changes the settlement math even when the case never reaches trial.",
-        ],
+        "heading": "Check the governing procedure",
+        "paragraphs": [
+          "New York CPLR 3218 contains requirements for the affidavit and limits on filing, including residence-related conditions and a three-year filing period. Other jurisdictions differ. Do not assume old documents automatically remain usable or that every default becomes a judgment overnight."
+        ]
       },
       {
-        heading: "Weeks 2-4: answer, protect, negotiate",
-        paragraphs: [
-          "File the answer on time, always, even mid-negotiation, because the deadline is leverage the funder is counting on you to miss. Protect operations in parallel: know your exposure to restraints and levies before they arrive, and manage which accounts hold operating cash. Then negotiate from the defended position: a funder facing a filed answer, real defenses, and a represented merchant reprices the case, litigation is now a cost center for them, not a shortcut.",
-        ],
+        "heading": "If no judgment has been entered",
+        "paragraphs": [
+          "Ask counsel to assess the document and available options before making commitments or changing performance. A request for reconciliation or settlement does not itself prevent a filing."
+        ]
       },
       {
-        heading: "What settlements look like after filing",
-        paragraphs: [
-          "Filed cases settle constantly, at discounts that reflect both sides' litigation costs. A complete post-filing settlement includes dismissal of the case with prejudice, mutual releases, UCC terminations, and if any judgment was entered, its satisfaction on the court record. Paying without those paper terms resolves nothing.",
-        ],
-      },
+        "heading": "If a judgment exists",
+        "paragraphs": [
+          "Obtain the docket, entry documents, and any enforcement notices. Counsel should identify the proper procedure and deadline for any challenge and whether temporary relief is available. A challenge or negotiation does not itself vacate the judgment."
+        ]
+      }
     ],
-    faq: [
+    "faq": [
       {
-        q: "What happens if I ignore an MCA lawsuit?",
-        a: "Default judgment for everything demanded: full balance, default fees, attorney fees, interest. Then enforcement: bank restraints, levies, liens, and pursuit of personal guarantors. Ignoring the suit is choosing the worst available outcome; answering preserves every other option.",
+        "q": "How can I find a COJ in my funding package?",
+        "a": "Look for a confession affidavit or authorization for judgment, including separate attachments. Request the complete signed package if documents are missing."
       },
       {
-        q: "Can I settle after being sued, or is it too late?",
-        a: "Settlement may remain an option after a case is filed, but no representative settlement rate or discount was verified here. Court deadlines continue unless formally changed; discuss the actual case and any proposal with counsel.",
+        "q": "Can the judgment be undone?",
+        "a": "That depends on the grounds, procedural route, deadlines, and evidence. No representative success rate was verified."
       },
       {
-        q: "Do I need a lawyer in the state where I was sued?",
-        a: "You need counsel admitted in the forum court, which the contract usually fixed in advance (frequently New York regardless of where you operate). MCA-experienced firms handle these forums daily; your local business attorney can co-counsel but usually should not run it alone.",
-      },
+        "q": "Are new COJ documents allowed?",
+        "a": "The answer is jurisdiction- and transaction-specific. Obtain advice on the applicable law before signing or relying on one."
+      }
     ],
-    takeaway:
-      "Answer on time, defend for leverage, negotiate from the defended position, and paper the settlement with dismissal, releases, and UCC terminations. The suit is a phase, not the ending.",
+    "takeaway": "Review the actual affidavit and court record with counsel. Neither enforceability nor successful vacatur can be inferred from a general guide.",
+    "sources": [
+      {
+        "label": "New York CPLR 3218: judgment by confession",
+        "url": "https://www.nysenate.gov/legislation/laws/CVP/3218",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      },
+      {
+        "label": "New York Courts: Champion Auto Sales v. Pearl Beta Funding (2018)",
+        "url": "https://www.nycourts.gov/Reporter/3dseries/2018/2018_01645.htm",
+        "note": "Checked September 18, 2026. The court affirmed dismissal of this particular challenge; it does not establish a general result for other agreements."
+      }
+    ],
+    "updatedAt": "2026-09-18"
+  },
+  {
+    "slug": "mca-lawsuit-first-30-days",
+    "updatedAt": "2026-09-18",
+    "title": "Served with an MCA lawsuit: identify the deadline and response",
+    "metaTitle": "MCA Lawsuit: Response Deadlines, Documents, and Legal Review",
+    "metaDescription": "Verify the actual MCA lawsuit deadline, prepare records for counsel, and coordinate the appropriate response with any settlement discussions.",
+    "intro": "The actual response deadline comes first; the title is not a promise that you have 30 days. Identify the court, service details, and papers received, and arrange appropriate legal representation promptly.",
+    "sections": [
+      {
+        "heading": "Immediately: verify service and the deadline",
+        "paragraphs": [
+          "Keep all papers and delivery details. Confirm the case through the court and have counsel determine the response required. Do not assume a standard 20- or 30-day period applies to every service method, court, or document."
+        ]
+      },
+      {
+        "heading": "Prepare the record for counsel",
+        "paragraphs": [
+          "Supply agreements, assignments, guarantees, payment histories, notices, and correspondence. Identify disputed amounts and prior modifications. Counsel can assess jurisdiction, service, the contract, available defenses, and the evidence actually supporting each position."
+        ]
+      },
+      {
+        "heading": "Respond through the appropriate procedure",
+        "paragraphs": [
+          "The response may involve an answer, motion, or another authorized procedure. A business entity may require an attorney even when an individual could appear personally. Obtain confirmation of any valid extension; a sales or settlement discussion does not create one."
+        ]
+      },
+      {
+        "heading": "Review any proposed resolution",
+        "paragraphs": [
+          "Identify the parties and claims covered, payment obligations, releases, case disposition, and handling of judgments or security filings. Specify which documents must be filed and verify completion. No representative post-filing settlement rate or discount is established."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "What happens if I ignore the lawsuit?",
+        "a": "The plaintiff may seek default relief. What it must establish and what relief can be granted depend on the applicable rules and record. Obtain advice promptly if a deadline has passed."
+      },
+      {
+        "q": "Can I settle after being sued?",
+        "a": "You may seek a resolution, but acceptance is uncertain. Continue complying with court requirements unless they are formally changed."
+      },
+      {
+        "q": "Which lawyer do I need?",
+        "a": "Confirm that counsel can act in the relevant court and handle the issues involved. Ask whether additional counsel is needed for another jurisdiction."
+      }
+    ],
+    "takeaway": "Preserve the documents, determine the actual deadline, and coordinate legal work with any negotiations. Do not assume that default grants every demand or that an answer guarantees a discount.",
+    "sources": [
+      {
+        "label": "New York Courts: responding to a summons and complaint",
+        "url": "https://www.nycourts.gov/legacypdfs/courts/1jd/supctmanh/HelpCenterForms/How_to_Respond_to_a_Summons_and_Complaint.pdf",
+        "note": "Primary reference checked September 18, 2026. Apply the relevant jurisdiction and facts; this guide is general information."
+      }
+    ]
   },
   {
     "slug": "mca-personal-credit",
@@ -1133,5 +1190,9 @@ GUIDES.push(
         "note": "Checked September 18, 2026. General reporting guidance and limits on removing accurate negative information."
       }
     ]
-  },
-);
+  }
+];
+
+export function getGuideBySlug(slug: string) {
+  return GUIDES.find((g) => g.slug === slug);
+}

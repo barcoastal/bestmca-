@@ -144,9 +144,10 @@ async function main() {
   // Query the preceding seven days: ad-hoc runs must not compare overlapping windows.
   const comparisonWindow = { startDate: dateStr(16), endDate: dateStr(10) };
   const comparisonBase = { ...comparisonWindow, dataState: "final" };
-  const [previousTotals, previousQueries] = await Promise.all([
+  const [previousTotals, previousQueries, previousPages] = await Promise.all([
     query(token, comparisonBase),
     query(token, { ...comparisonBase, dimensions: ["query"], rowLimit: 500 }),
+    query(token, { ...comparisonBase, dimensions: ["page"], rowLimit: 100 }),
   ]);
   const prev = {
     totals: previousTotals[0] || { clicks: 0, impressions: 0, ctr: 0, position: 0 },
@@ -156,6 +157,28 @@ async function main() {
     })),
   };
   snapshot.comparison = { window: comparisonWindow, ...prev };
+  const pageMap = new Map(pageRows.map((r) => [r.keys[0], r]));
+  const previousPageMap = new Map(previousPages.map((r) => [r.keys[0], r]));
+  snapshot.pageChanges = [...new Set([...pageMap.keys(), ...previousPageMap.keys()])]
+    .map((page) => {
+      const current = pageMap.get(page);
+      const previous = previousPageMap.get(page);
+      return {
+        page,
+        current: current ? { clicks: current.clicks, impressions: current.impressions, ctr: current.ctr } : null,
+        previous: previous ? { clicks: previous.clicks, impressions: previous.impressions, ctr: previous.ctr } : null,
+        // Missing rows are not proof of zero: row limits and reporting omissions apply.
+        clickDelta: current && previous ? current.clicks - previous.clicks : null,
+        impressionDelta: current && previous ? current.impressions - previous.impressions : null,
+      };
+    }).sort((a, b) => (b.current?.impressions || b.previous?.impressions || 0) - (a.current?.impressions || a.previous?.impressions || 0));
+  snapshot.releaseContext = {
+    published: "2026-09-18",
+    firstFullWeek: { startDate: "2026-09-19", endDate: "2026-09-25" },
+    first28Days: { startDate: "2026-09-19", endDate: "2026-10-16" },
+    windowEntirelyAfterRelease: startDate > "2026-09-18",
+    note: "September 18 evidence/mobile changes need their own window. September 14 monitoring is a separate baseline. GSC does not measure qualified inquiries.",
+  };
   fs.writeFileSync(path.join(OUT_DIR, `${stamp}.json`), JSON.stringify(snapshot, null, 2));
 
   let md = `\n## ${stamp} (window ${startDate} to ${endDate})\n\n`;
@@ -176,6 +199,13 @@ async function main() {
       old != null ? sign(cur.position - old.position, 1) : "new";
     md += `| ${q} | ${cur.clicks} | ${cur.impressions} | ${pct(cur.ctr)} | ${cur.position.toFixed(1)} | ${delta} |\n`;
   }
+
+  md += `\n### Page trends\n\n| Page | Clicks | Click delta | Impressions | Impression delta |\n|---|---:|---:|---:|---:|\n`;
+  for (const p of snapshot.pageChanges.slice(0, 15)) {
+    md += `| ${new URL(p.page).pathname} | ${p.current?.clicks ?? "not shown"} | ${p.clickDelta === null ? "n/a" : sign(p.clickDelta)} | ${p.current?.impressions ?? "not shown"} | ${p.impressionDelta === null ? "n/a" : sign(p.impressionDelta)} |\n`;
+  }
+  md += `\nMissing rows are not treated as zero. Page/query totals may differ from property totals due to reporting limits.\n`;
+  md += `\nSeptember 18 release: first full week September 19–25; first 28 days September 19–October 16, assessed after reporting lag. This snapshot ${snapshot.releaseContext.windowEntirelyAfterRelease ? "is entirely after publication, but does not establish causation" : "contains pre-release data and cannot measure the September 18 changes"}. Qualified leads require separate CRM reconciliation.\n`;
 
   const logPath = path.join(OUT_DIR, "LOG.md");
   if (!fs.existsSync(logPath)) {

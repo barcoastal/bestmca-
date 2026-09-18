@@ -48,6 +48,7 @@ export default async function FunderPage({
     },
     publisher: { "@id": "https://www.mcasettlementreviews.com/#organization" },
     mainEntityOfPage: `https://www.mcasettlementreviews.com/funders/${f.slug}`,
+    dateModified: "2026-09-18",
   };
 
   const others = FUNDERS.filter((x) => x.slug !== f.slug).slice(0, 4);
@@ -159,7 +160,7 @@ export default async function FunderPage({
           <div className="text-[10px] uppercase tracking-[0.2em] font-semibold text-ink-subtle">
             Sources and scope
           </div>
-          <p className="mt-3 text-sm text-ink-soft">Edited September 18, 2026 to remove unsupported predictions about enforcement and settlement outcomes. The linked records concern particular matters; this is not a complete litigation search or a fresh verification of every source. Allegations and commentary are not findings about your case.</p>
+          <p className="mt-3 text-sm text-ink-soft">Source review: September 18, 2026. The records below support the specific statements on this page; retrieval limitations are identified in the text. This is not a complete litigation search, a current licensing determination, or a prediction about your case.</p>
           <p className="mt-3 text-sm text-ink-soft">For New York, consult the actual <a className="underline" href="https://www.nysenate.gov/legislation/laws/CVP/3218">judgment-by-confession rules</a> and <a className="underline" href="https://www.nysenate.gov/legislation/laws/UCC/9-406">assignment-notice provisions</a>, checked September 18, 2026. Applicability depends on the facts and jurisdiction.</p>
           <ul className="mt-2 space-y-1.5 text-xs text-ink-muted">
             {f.sources.map((s) => (

@@ -4,7 +4,7 @@ import { FUNDERS } from "@/data/funders";
 export const metadata = {
   title: "MCA Funder Files: Lawsuits and Collection Records by Funder (2026)",
   description:
-    "Public-record profiles of the MCA funders merchants most often face: who sues, who settles, consent orders, COJ history, and the response playbook per funder.",
+    "Read specific MCA funder court decisions, regulatory records, company statements, and their limitations. Prepare questions about your own agreement and notices.",
   alternates: { canonical: "/funders" },
 };
 
@@ -17,15 +17,14 @@ export default function FundersPage() {
             The Funder Files
           </div>
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">
-            Know your funder: lawsuits, collection patterns, and public records
+            Know your funder: court decisions and public records
           </h1>
           <p className="mt-5 text-lg text-ink-soft leading-relaxed">
-            How an MCA dispute goes depends heavily on who is on the other
-            side: some funders sue within weeks, some negotiate for months,
-            some operate under regulatory consent orders. These profiles
-            compile what the public record, court decisions, regulatory
-            actions, and complaint records, shows about each funder, with a
-            response playbook for merchants dealing with them.
+            These profiles identify specific court decisions, historical
+            regulatory records, and company statements. Each explains what
+            the source establishes, its limits, and which documents to review
+            in your own matter. They do not establish typical discounts or
+            collection timelines. Sources reviewed September 18, 2026.
           </p>
           <p className="mt-3 text-xs text-ink-subtle">
             We are not affiliated with any funder listed. Profiles summarize

@@ -36,10 +36,9 @@ export default function GlossaryPage() {
             The MCA glossary: every term, in plain English
           </h1>
           <p className="mt-5 text-lg text-ink-soft leading-relaxed">
-            MCA agreements are written to be signed fast and understood late.
-            These are the {GLOSSARY.length} terms that decide what you owe,
-            what the funder can do, and what your options are, defined the
-            way a business owner actually needs them.
+            Understand {GLOSSARY.length} terms used in MCA agreements and
+            disputes. These general definitions were edited September 18,
+            2026; the actual agreement, facts, and applicable law matter.
           </p>
         </div>
       </header>

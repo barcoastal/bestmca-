@@ -10,13 +10,14 @@ import { organizationSchema, websiteSchema, jsonLd } from "@/lib/schema";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  display: "swap",
+  // Keep readable fallback text when a slow connection misses the initial font load.
+  display: "optional",
 });
 
 const sourceSerif = Source_Serif_4({
   variable: "--font-source-serif",
   subsets: ["latin"],
-  display: "swap",
+  display: "optional",
 });
 
 export const metadata: Metadata = {

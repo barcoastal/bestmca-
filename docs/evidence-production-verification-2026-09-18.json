@@ -1,0 +1,421 @@
+{
+  "commit": "439231b",
+  "pages": [
+    {
+      "route": "/",
+      "passed": true
+    },
+    {
+      "route": "/mca-settlement-companies-bbb-ratings",
+      "passed": true
+    },
+    {
+      "route": "/state-of-mca-settlement-2026",
+      "passed": true
+    },
+    {
+      "route": "/mca-debt-relief",
+      "passed": true
+    },
+    {
+      "route": "/mca-debt-restructuring",
+      "passed": true
+    },
+    {
+      "route": "/mca-consolidation-loans",
+      "passed": true
+    },
+    {
+      "route": "/ucc-9-406-merchant-cash-advance",
+      "passed": true
+    },
+    {
+      "route": "/methodology",
+      "passed": true
+    },
+    {
+      "route": "/about",
+      "passed": true
+    },
+    {
+      "route": "/best-for-trucking-companies",
+      "passed": true
+    },
+    {
+      "route": "/best-for-restaurants-and-hospitality",
+      "passed": true
+    },
+    {
+      "route": "/reviews/coastal-debt-resolve",
+      "passed": true
+    },
+    {
+      "route": "/reviews/second-wind-consultants",
+      "passed": true
+    },
+    {
+      "route": "/reviews/spergel",
+      "passed": true
+    },
+    {
+      "route": "/reviews/corporate-turnaround",
+      "passed": true
+    },
+    {
+      "route": "/reviews/regroup-partners",
+      "passed": true
+    },
+    {
+      "route": "/reviews/corporate-rescue",
+      "passed": true
+    },
+    {
+      "route": "/reviews/eastern-financial-partners",
+      "passed": true
+    },
+    {
+      "route": "/reviews/business-debt-law-group",
+      "passed": true
+    },
+    {
+      "route": "/reviews/business-debt-adjusters",
+      "passed": true
+    },
+    {
+      "route": "/reviews/stop-mca",
+      "passed": true
+    },
+    {
+      "route": "/reviews/mca-debt-advisors",
+      "passed": true
+    },
+    {
+      "route": "/reviews/mca-resolve",
+      "passed": true
+    },
+    {
+      "route": "/reviews/national-credit-partners",
+      "passed": true
+    },
+    {
+      "route": "/reviews/rise-alliance",
+      "passed": true
+    },
+    {
+      "route": "/reviews/delancey-street",
+      "passed": true
+    },
+    {
+      "route": "/reviews/national-debt-relief",
+      "passed": true
+    },
+    {
+      "route": "/reviews/business-debt-insider",
+      "passed": true
+    },
+    {
+      "route": "/legit/second-wind-consultants",
+      "passed": true
+    },
+    {
+      "route": "/legit/spergel",
+      "passed": true
+    },
+    {
+      "route": "/legit/corporate-turnaround",
+      "passed": true
+    },
+    {
+      "route": "/legit/regroup-partners",
+      "passed": true
+    },
+    {
+      "route": "/legit/corporate-rescue",
+      "passed": true
+    },
+    {
+      "route": "/legit/eastern-financial-partners",
+      "passed": true
+    },
+    {
+      "route": "/legit/business-debt-law-group",
+      "passed": true
+    },
+    {
+      "route": "/legit/business-debt-adjusters",
+      "passed": true
+    },
+    {
+      "route": "/legit/stop-mca",
+      "passed": true
+    },
+    {
+      "route": "/legit/mca-debt-advisors",
+      "passed": true
+    },
+    {
+      "route": "/legit/mca-resolve",
+      "passed": true
+    },
+    {
+      "route": "/legit/national-credit-partners",
+      "passed": true
+    },
+    {
+      "route": "/legit/rise-alliance",
+      "passed": true
+    },
+    {
+      "route": "/legit/delancey-street",
+      "passed": true
+    },
+    {
+      "route": "/legit/national-debt-relief",
+      "passed": true
+    },
+    {
+      "route": "/legit/business-debt-insider",
+      "passed": true
+    },
+    {
+      "route": "/guides/what-is-mca-settlement",
+      "passed": true
+    },
+    {
+      "route": "/guides/how-much-does-mca-settlement-cost",
+      "passed": true
+    },
+    {
+      "route": "/guides/mca-settlement-vs-bankruptcy",
+      "passed": true
+    },
+    {
+      "route": "/guides/how-to-choose-mca-settlement-company",
+      "passed": true
+    },
+    {
+      "route": "/guides/mca-debt-relief-red-flags",
+      "passed": true
+    },
+    {
+      "route": "/guides/mca-contract-red-flags",
+      "passed": true
+    },
+    {
+      "route": "/guides/warning-signs-mca-funder-legal-action",
+      "passed": true
+    },
+    {
+      "route": "/guides/what-happens-mca-default",
+      "passed": true
+    },
+    {
+      "route": "/guides/negotiate-mca-debt-yourself",
+      "passed": true
+    },
+    {
+      "route": "/guides/mca-reconciliation-clause",
+      "passed": true
+    },
+    {
+      "route": "/guides/mca-attorneys-vs-settlement-companies",
+      "passed": true
+    },
+    {
+      "route": "/guides/ucc-lien-release-mca",
+      "passed": true
+    },
+    {
+      "route": "/guides/stacked-mca-debt",
+      "passed": true
+    },
+    {
+      "route": "/guides/frozen-account-mca-funder",
+      "passed": true
+    },
+    {
+      "route": "/guides/mca-consolidation-vs-settlement",
+      "passed": true
+    },
+    {
+      "route": "/guides/how-to-get-out-of-mca",
+      "passed": true
+    },
+    {
+      "route": "/guides/mca-confession-of-judgment",
+      "passed": true
+    },
+    {
+      "route": "/guides/mca-lawsuit-first-30-days",
+      "passed": true
+    },
+    {
+      "route": "/guides/mca-personal-credit",
+      "passed": true
+    },
+    {
+      "route": "/mca-debt-relief-for-retail",
+      "passed": true
+    },
+    {
+      "route": "/mca-debt-relief-for-salons",
+      "passed": true
+    },
+    {
+      "route": "/mca-debt-relief-for-staffing-companies",
+      "passed": true
+    },
+    {
+      "route": "/mca-debt-relief-for-security-firms",
+      "passed": true
+    },
+    {
+      "route": "/mca-debt-relief-for-professional-services",
+      "passed": true
+    },
+    {
+      "route": "/mca-debt-relief-for-construction",
+      "passed": true
+    },
+    {
+      "route": "/mca-debt-relief-for-ecommerce",
+      "passed": true
+    },
+    {
+      "route": "/mca-debt-relief-for-medical-dental",
+      "passed": true
+    },
+    {
+      "route": "/mca-debt-relief-for-auto-repair",
+      "passed": true
+    },
+    {
+      "route": "/funders",
+      "passed": true
+    },
+    {
+      "route": "/funders/everest-business-funding",
+      "passed": true
+    },
+    {
+      "route": "/funders/forward-financing",
+      "passed": true
+    },
+    {
+      "route": "/funders/fora-financial",
+      "passed": true
+    },
+    {
+      "route": "/funders/cfg-merchant-solutions",
+      "passed": true
+    },
+    {
+      "route": "/funders/reliant-funding",
+      "passed": true
+    },
+    {
+      "route": "/funders/expansion-capital-group",
+      "passed": true
+    },
+    {
+      "route": "/funders/kalamata-capital-group",
+      "passed": true
+    },
+    {
+      "route": "/funders/pearl-capital",
+      "passed": true
+    },
+    {
+      "route": "/news",
+      "passed": true
+    },
+    {
+      "route": "/news/coastal-debt-resolve-bbb-torch-awards-sponsorship",
+      "passed": true
+    },
+    {
+      "route": "/news/ftc-first-mca-refunds-ram-capital",
+      "passed": true
+    },
+    {
+      "route": "/news/ny-fair-business-practices-act-mca",
+      "passed": true
+    },
+    {
+      "route": "/news/state-mca-disclosure-wave-texas-louisiana",
+      "passed": true
+    },
+    {
+      "route": "/news/state-of-mca-settlement-2026-study-published",
+      "passed": true
+    },
+    {
+      "route": "/best-mca-settlement-companies-2026",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-second-wind-consultants",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-spergel",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-corporate-turnaround",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-regroup-partners",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-corporate-rescue",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-eastern-financial-partners",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-business-debt-law-group",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-business-debt-adjusters",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-stop-mca",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-mca-debt-advisors",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-mca-resolve",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-national-credit-partners",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-rise-alliance",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-delancey-street",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-national-debt-relief",
+      "passed": true
+    },
+    {
+      "route": "/compare/coastal-debt-vs-business-debt-insider",
+      "passed": true
+    }
+  ]
+}

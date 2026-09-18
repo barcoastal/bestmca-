@@ -58,3 +58,15 @@ The previously repaired weekly Search Console job remains unchanged. September 1
 Production build and TypeScript passed during implementation. `validation/check-evidence.cjs` verifies Coastal first, all 17 dated review records, withheld numeric rating schema, preserved canonicals/indexability, all 16 comparison routes, and the nine revised industry routes. Existing recovery checks pass with the rank assertion updated to the disclosed editorial ordering.
 
 Publication verification follows below.
+
+## Publication verification
+
+Published commit `439231b` through the existing GitHub/Railway integration. Deployment `42cdf6eb-938c-4d55-bd3d-562639c9cb04` reported success. Read-only GET checks passed on 104 production routes (87 sitemap pages, the full comparison and 16 head-to-head pages). Checks confirmed Coastal first in ItemList, the new placement/evidence policy, withheld numerical ratings, source notes, mobile navigation, optimized image URLs, canonicals and preserved indexing directives. Results: `evidence-production-verification-2026-09-18.json`.
+
+Browser inspection confirmed the live homepage displays Coastal’s “#1 editorial placement” label and the new menu. The temporary local validation server was stopped.
+
+First post-deployment mobile lab run: performance 86, accessibility 100, best practices 100, SEO 100; FCP 2.0s, LCP 3.5s, TBT 10ms, CLS 0, Speed Index 4.4s. The LCP element was the hero paragraph, with a reported 2,370ms render delay. Image-delivery and contrast warnings from the baseline were absent. This run does not establish a loading-speed improvement. Report: https://pagespeed.web.dev/analysis/https-www-mcasettlementreviews-com/6s48b37oiu?form_factor=mobile
+
+A repeat without code changes scored performance 84, accessibility 100, best practices 100, SEO 100; FCP 2.1s, LCP 3.8s, TBT 110ms, CLS 0, Speed Index 4.5s. Report: https://pagespeed.web.dev/analysis/https-www-mcasettlementreviews-com/469ew13odg?form_factor=mobile
+
+The two post-release runs support the accessibility fix but indicate slower simulated mobile rendering than the single baseline. Loading performance remains an open issue; neither ranking improvement nor a Core Web Vitals pass is established. Further work should isolate hero text/font rendering and request timing using comparable traces before making another performance change.

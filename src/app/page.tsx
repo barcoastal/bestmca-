@@ -103,10 +103,9 @@ export default function HomePage() {
               MCA settlement companies for 2026: compare services, records, and fees.
             </h1>
             <p className="mt-6 text-lg text-ink-soft leading-relaxed max-w-2xl">
-              We reviewed {RANKED.length} merchant cash advance settlement and
-              restructuring firms across five categories: transparency and disclosures,
-              settlement results, client communication, fee structure, and
-              litigation defense. Coastal appears first as our featured provider; read the dated evidence and limitations for every firm.
+              Compare {RANKED.length} merchant cash advance settlement and
+              restructuring firms using dated public records, fee information,
+              and service limitations. Coastal is featured first by editorial choice.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <TrackedLink

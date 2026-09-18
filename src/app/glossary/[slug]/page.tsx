@@ -73,6 +73,7 @@ export default async function TermPage({
             Why it matters
           </h2>
           <p className="mt-3 text-ink-soft leading-relaxed">{t.detail}</p>
+          <p className="mt-4 text-xs text-ink-subtle">Edited September 18, 2026. General information; see the related guides for source references and jurisdiction limits.</p>
         </div>
         {t.related.length > 0 && (
           <div className="rounded-2xl border border-line bg-white p-5">
@@ -116,7 +117,7 @@ export default async function TermPage({
           campaign={`glossary-${t.slug}`}
           variant="subtle"
           heading="Dealing with the real thing, not just the definition?"
-          body="Our #1 rated firm gives free MCA reviews with a written strategy before any contract."
+          body="Request a consultation from Coastal, our featured first provider. Confirm the proposed services and fees in writing."
           buttonLabel="Get a free review"
         />
       </div>

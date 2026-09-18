@@ -4,37 +4,37 @@ import { FeaturedReviews } from "@/components/review/FeaturedReviews";
 import { faqSchema, jsonLd } from "@/lib/schema";
 
 export const metadata = {
-  title: "MCA Debt Restructuring: Daily Pulls to One Affordable Payment (2026)",
-  description:
-    "How merchant cash advance restructuring actually works: converting daily ACH debits into a payment matched to real revenue, when it beats settlement, what it costs, and who does it well.",
+  title: "MCA Debt Restructuring: Payment Changes, Costs, and Questions (2026)",
+  description: "Compare proposed MCA payment changes, total cost, creditor consent, and alternatives. Restructuring does not guarantee affordability or a particular outcome.",
   alternates: { canonical: "/mca-debt-restructuring" },
 };
 
 const FAQ = [
   {
-    q: "What is MCA debt restructuring?",
-    a: "Restructuring converts the payment terms of your existing advances, typically daily ACH pulls, into a schedule the business can sustain, usually one weekly or monthly payment sized to actual revenue. Unlike settlement it does not necessarily reduce the balance; it changes the shape of repayment so the business survives to repay it.",
+    "q": "What is MCA debt restructuring?",
+    "a": "An agreed change to existing payment terms. It may alter timing or amount without necessarily reducing the balance."
   },
   {
-    q: "Is restructuring better than settlement?",
-    a: "They solve different problems. If the business can repay what it owes at a survivable pace, restructuring preserves funder relationships and avoids settled-debt consequences. If full repayment is not realistic, restructuring only stretches an unpayable number and settlement is the honest tool. Reputable firms run this math before recommending either.",
+    "q": "Is restructuring better than settlement?",
+    "a": "There is no universal answer. Compare creditor participation, total payments, fees, legal exposure, and affordability under the same forecast."
   },
   {
-    q: "Will funders actually agree to restructure?",
-    a: "Routinely, when approached credibly. A funder's alternative to restructuring is a default they must chase. Documented revenue, a specific proposal, and professional presentation get restructures approved every day, especially before default rather than after.",
+    "q": "Will a funder accept my request?",
+    "a": "It may accept, counter, or decline. We have not verified a representative acceptance rate or timeline."
   },
   {
-    q: "How is restructuring different from a reverse consolidation?",
-    a: "Restructuring changes the terms of what you already owe. A reverse consolidation adds a new funded position that covers your existing pulls while charging its own, usually at a heavy cost. One reduces pressure structurally; the other borrows against it.",
-  },
+    "q": "Is restructuring the same as reverse consolidation?",
+    "a": "No. Check whether an offer changes existing terms or adds a new financing obligation while old balances remain."
+  }
 ];
 
 export default function Page() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "MCA Debt Restructuring, Explained",
+    headline: "MCA Debt Restructuring: Payment Changes and Costs",
     description: metadata.description,
+    dateModified: "2026-09-18",
     author: {
       "@type": "Organization",
       name: "MCA Settlement Reviews",
@@ -55,86 +55,23 @@ export default function Page() {
           <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
             Restructuring · 2026
           </div>
-          <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">
-            MCA debt restructuring: from daily pulls to one payment you can
-            actually make
-          </h1>
-          <p className="mt-5 text-lg text-ink-soft leading-relaxed">
-            Restructuring is the middle path the marketing skips: it does not
-            wave the balance away like settlement ads promise, and it does not
-            pile on new debt like consolidation offers. It renegotiates the
-            terms of what you already owe, daily pulls become a weekly or
-            monthly payment matched to what the business actually earns.
-          </p>
+          <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">MCA debt restructuring: compare proposed payment changes</h1>
+          <p className="mt-5 text-lg text-ink-soft leading-relaxed">A restructuring proposal seeks changes to existing payment terms. Review the entire written offer, including any additional cost or obligation, before assuming it creates an affordable payment.</p>
         </div>
       </header>
 
       <section className="mx-auto max-w-4xl px-5 py-12 space-y-8">
-        <div>
-          <h2 className="font-display text-2xl font-semibold text-navy">
-            What a restructure actually changes
-          </h2>
-          <p className="mt-3 text-ink-soft leading-relaxed">
-            Three levers move in a typical restructure. Cadence: daily ACH
-            debits convert to weekly or monthly payments, which alone can
-            rescue a business whose problem is timing rather than totals.
-            Sizing: the payment gets tied to current revenue instead of the
-            revenue projected when the advance was sold, formalizing what a{" "}
-            <Link href="/guides/mca-reconciliation-clause" className="text-navy underline">
-              reconciliation clause
-            </Link>{" "}
-            does informally. Duration: the repayment window stretches, which
-            funders accept when the alternative is a default worth cents on
-            the dollar.
-          </p>
-        </div>
-        <div>
-          <h2 className="font-display text-2xl font-semibold text-navy">
-            When restructuring is the right tool
-          </h2>
-          <p className="mt-3 text-ink-soft leading-relaxed">
-            The test is one honest calculation: can the business repay its
-            full obligations at some survivable pace? If yes, restructuring
-            preserves relationships, avoids settled-debt reporting, and keeps
-            the door open with funders you may want again. Restaurants coming
-            off a bad season, contractors between projects, and{" "}
-            <Link href="/mca-debt-relief-for-staffing-companies" className="text-navy underline">
-              staffing firms
-            </Link>{" "}
-            waiting on slow receivables are classic restructure candidates.
-            If the math says full repayment is fiction, stop: stretching an
-            unpayable number just funds more months of fees. That is{" "}
-            <Link href="/guides/what-is-mca-settlement" className="text-navy underline">
-              settlement
-            </Link>{" "}
-            territory, and the honest firms will tell you so on the first
-            call.
-          </p>
-        </div>
-        <div>
-          <h2 className="font-display text-2xl font-semibold text-navy">
-            Stacked positions: restructure as triage
-          </h2>
-          <p className="mt-3 text-ink-soft leading-relaxed">
-            In{" "}
-            <Link href="/guides/stacked-mca-debt" className="text-navy underline">
-              stacked files
-            </Link>
-            , restructures and settlements usually run together: senior,
-            well-secured positions get restructured while junior positions
-            settle at discounts. That coordination, who gets stretched, who
-            gets settled, in what order, is most of what a competent firm
-            earns its fee doing. Our{" "}
-            <Link href="/" className="text-navy underline">
-              2026 ranking
-            </Link>{" "}
-            scores which firms run that play transparently, and the{" "}
-            <Link href="/mca-settlement-companies-bbb-ratings" className="text-navy underline">
-              BBB comparison
-            </Link>{" "}
-            shows their real complaint records.
-          </p>
-        </div>
+        <div><h2 className="font-display text-2xl font-semibold text-navy">What might change</h2><p className="mt-3 text-ink-soft leading-relaxed">A proposal may change remittance timing, amounts, or other terms. Identify what remains payable, which creditors agree, and whether there are new fees, guarantees, or default conditions. A request is not an accepted amendment.</p></div>
+        <div><h2 className="font-display text-2xl font-semibold text-navy">Compare reconciliation with a new agreement</h2><p className="mt-3 text-ink-soft leading-relaxed">Reconciliation applies an existing contractual calculation; a restructuring may change the agreement itself. Check your signed terms and compare any replacement documents before accepting them.</p></div>
+        <div><h2 className="font-display text-2xl font-semibold text-navy">Test the complete cash-flow forecast</h2><p className="mt-3 text-ink-soft leading-relaxed">Include all creditors, payroll, taxes, suppliers, and service fees. Model weaker revenue as well as your expected case. A lower payment does not necessarily mean lower total cost, and no acceptance or business-survival result is assured.</p></div>
+        <div><h2 className="font-display text-2xl font-semibold text-navy">Compare alternatives and responsibility</h2><p className="mt-3 text-ink-soft leading-relaxed">Ask who will negotiate, who handles legal advice, what representation costs, and what happens if a creditor declines. Review other financing, settlement, and bankruptcy options with qualified professionals where appropriate.</p></div>
+        <div><h2 className="font-display text-xl font-semibold text-navy">Related guides</h2><ul className="mt-3 space-y-2">
+          <li><Link href="/guides/mca-reconciliation-clause" className="text-navy underline">Reconciliation requests</Link></li>
+          <li><Link href="/guides/how-much-does-mca-settlement-cost" className="text-navy underline">Comparing service fees</Link></li>
+          <li><Link href="/guides/mca-settlement-vs-bankruptcy" className="text-navy underline">Settlement and bankruptcy</Link></li>
+          <li><Link href="/" className="text-navy underline">Compare reviewed providers</Link></li>
+        </ul></div>
+        <p className="text-xs text-ink-subtle">Edited September 18, 2026. General comparison framework; related guides identify legal sources and their scope. No representative approval, settlement, or credit outcome is established.</p>
       </section>
 
       <section className="mx-auto max-w-4xl px-5 py-6">

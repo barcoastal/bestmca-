@@ -220,3 +220,27 @@ Totals: **1 clicks**, 151 impressions, 0.7% CTR, avg pos 54.0  (vs 2026-09-02–
 | corporate turnaround reviews | 0 | 1 | 0.0% | 72.0 | +21.5 |
 | rise alliance reviews | - | - | - | not shown | |
 | regroup partners reviews | - | - | - | not shown | |
+
+### Page trends
+
+| Page | Clicks | Click delta | Impressions | Impression delta |
+|---|---:|---:|---:|---:|
+| / | 0 | -1 | 98 | -91 |
+| /reviews/coastal-debt-resolve | 0 | 0 | 18 | +7 |
+| /reviews/business-debt-law-group | 0 | 0 | 10 | +7 |
+| /reviews/rise-alliance | 1 | +1 | 7 | -1 |
+| /reviews/eastern-financial-partners | 0 | 0 | 4 | -4 |
+| /reviews/national-debt-relief | 0 | 0 | 3 | -4 |
+| /reviews/corporate-rescue | 0 | 0 | 2 | -6 |
+| /reviews/second-wind-consultants | 0 | n/a | 2 | n/a |
+| /about | not shown | n/a | not shown | n/a |
+| /funders/expansion-capital-group | not shown | n/a | not shown | n/a |
+| /reviews/regroup-partners | not shown | n/a | not shown | n/a |
+| /best-for-trucking-companies | 0 | n/a | 1 | n/a |
+| /mca-settlement-companies-bbb-ratings | 0 | 0 | 1 | -2 |
+| /reviews/business-debt-adjusters | 0 | 0 | 1 | -1 |
+| /reviews/business-debt-insider | 0 | 0 | 1 | 0 |
+
+Missing rows are not treated as zero. Page/query totals may differ from property totals due to reporting limits.
+
+September 18 release: first full week September 19–25; first 28 days September 19–October 16, assessed after reporting lag. This snapshot contains pre-release data and cannot measure the September 18 changes. Qualified leads require separate CRM reconciliation.

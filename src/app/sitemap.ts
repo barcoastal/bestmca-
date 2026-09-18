@@ -22,8 +22,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     { url: `${SITE}/mca-debt-relief`, priority: 0.9 },
-    { url: `${SITE}/mca-debt-restructuring`, priority: 0.85 },
-    { url: `${SITE}/mca-consolidation-loans`, priority: 0.85 },
+    { url: `${SITE}/mca-debt-restructuring`, lastModified: "2026-09-18", priority: 0.85 },
+    { url: `${SITE}/mca-consolidation-loans`, lastModified: "2026-09-18", priority: 0.85 },
     {
       url: `${SITE}/ucc-9-406-merchant-cash-advance`,
       lastModified: "2026-09-18",
@@ -67,7 +67,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const funders: MetadataRoute.Sitemap = [
-    { url: `${SITE}/funders`, priority: 0.8 },
+    { url: `${SITE}/funders`, lastModified: "2026-09-18", priority: 0.8 },
     ...FUNDERS.map((f) => ({
       url: `${SITE}/funders/${f.slug}`,
       lastModified: "2026-09-18",

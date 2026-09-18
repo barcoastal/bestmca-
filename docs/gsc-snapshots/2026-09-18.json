@@ -621,5 +621,314 @@
         "position": 41.5
       }
     }
+  },
+  "pageChanges": [
+    {
+      "page": "https://www.mcasettlementreviews.com/",
+      "current": {
+        "clicks": 0,
+        "impressions": 98,
+        "ctr": 0
+      },
+      "previous": {
+        "clicks": 1,
+        "impressions": 189,
+        "ctr": 0.005291005291005291
+      },
+      "clickDelta": -1,
+      "impressionDelta": -91
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/coastal-debt-resolve",
+      "current": {
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0
+      },
+      "previous": {
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0
+      },
+      "clickDelta": 0,
+      "impressionDelta": 7
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/business-debt-law-group",
+      "current": {
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0
+      },
+      "previous": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0
+      },
+      "clickDelta": 0,
+      "impressionDelta": 7
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/rise-alliance",
+      "current": {
+        "clicks": 1,
+        "impressions": 7,
+        "ctr": 0.14285714285714285
+      },
+      "previous": {
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0
+      },
+      "clickDelta": 1,
+      "impressionDelta": -1
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/eastern-financial-partners",
+      "current": {
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0
+      },
+      "previous": {
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0
+      },
+      "clickDelta": 0,
+      "impressionDelta": -4
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/national-debt-relief",
+      "current": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0
+      },
+      "previous": {
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0
+      },
+      "clickDelta": 0,
+      "impressionDelta": -4
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/corporate-rescue",
+      "current": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0
+      },
+      "previous": {
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0
+      },
+      "clickDelta": 0,
+      "impressionDelta": -6
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/second-wind-consultants",
+      "current": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0
+      },
+      "previous": null,
+      "clickDelta": null,
+      "impressionDelta": null
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/about",
+      "current": null,
+      "previous": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0
+      },
+      "clickDelta": null,
+      "impressionDelta": null
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/funders/expansion-capital-group",
+      "current": null,
+      "previous": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0
+      },
+      "clickDelta": null,
+      "impressionDelta": null
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/regroup-partners",
+      "current": null,
+      "previous": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0
+      },
+      "clickDelta": null,
+      "impressionDelta": null
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/best-for-trucking-companies",
+      "current": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "previous": null,
+      "clickDelta": null,
+      "impressionDelta": null
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/mca-settlement-companies-bbb-ratings",
+      "current": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "previous": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0
+      },
+      "clickDelta": 0,
+      "impressionDelta": -2
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/business-debt-adjusters",
+      "current": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "previous": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0
+      },
+      "clickDelta": 0,
+      "impressionDelta": -1
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/business-debt-insider",
+      "current": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "previous": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "clickDelta": 0,
+      "impressionDelta": 0
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/mca-resolve",
+      "current": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "previous": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0
+      },
+      "clickDelta": 0,
+      "impressionDelta": -2
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/national-credit-partners",
+      "current": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "previous": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "clickDelta": 0,
+      "impressionDelta": 0
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/spergel",
+      "current": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "previous": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0
+      },
+      "clickDelta": 0,
+      "impressionDelta": -2
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/methodology",
+      "current": null,
+      "previous": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "clickDelta": null,
+      "impressionDelta": null
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/news/state-mca-disclosure-wave-texas-louisiana",
+      "current": null,
+      "previous": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "clickDelta": null,
+      "impressionDelta": null
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/mca-debt-advisors",
+      "current": null,
+      "previous": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "clickDelta": null,
+      "impressionDelta": null
+    },
+    {
+      "page": "https://www.mcasettlementreviews.com/reviews/stop-mca",
+      "current": null,
+      "previous": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0
+      },
+      "clickDelta": null,
+      "impressionDelta": null
+    }
+  ],
+  "releaseContext": {
+    "published": "2026-09-18",
+    "firstFullWeek": {
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-25"
+    },
+    "first28Days": {
+      "startDate": "2026-09-19",
+      "endDate": "2026-10-16"
+    },
+    "windowEntirelyAfterRelease": false,
+    "note": "September 18 evidence/mobile changes need their own window. September 14 monitoring is a separate baseline. GSC does not measure qualified inquiries."
   }
 }
