@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { RANKED, type Review } from "@/data/reviews";
 import { getBBBBySlug, bbbGradeTone } from "@/data/bbb";
-import { Stars } from "./Stars";
 import { BrandLogo } from "./BrandLogo";
 
 type Props = {
@@ -53,7 +52,7 @@ export function RankingChart({
                 : "border-line bg-white shadow-sm"
             }`}
           >
-            <div className="flex items-center gap-4 md:gap-5">
+            <div className="flex items-start gap-3 md:gap-5">
               {/* Rank */}
               <span className="font-display text-2xl md:text-3xl font-semibold text-ink-subtle tabular-nums leading-none w-7 shrink-0 text-center">
                 {r.rank}
@@ -70,7 +69,7 @@ export function RankingChart({
                   </h3>
                   {isCoastal && (
                     <span className="rounded-full bg-gold text-navy-deep text-[9px] font-semibold uppercase tracking-[0.14em] px-2 py-0.5">
-                      {r.ratingNote ? "Score under review" : "Top pick"}
+                      {r.ratingNote ? "Featured provider" : "Top pick"}
                     </span>
                   )}
                 </div>
@@ -91,20 +90,7 @@ export function RankingChart({
                 </div>
               </div>
 
-              {/* Score */}
-              <div className="flex flex-col items-center gap-1 shrink-0 pl-1">
-                <span
-                  className={`font-display text-2xl md:text-3xl font-semibold tabular-nums leading-none ${
-                    isCoastal ? "text-navy" : "text-navy"
-                  }`}
-                >
-                  {r.score.toFixed(1)}
-                </span>
-                <Stars value={r.score} size="sm" />
-                <span className="text-[9px] uppercase tracking-[0.14em] text-ink-subtle font-semibold mt-0.5 hidden md:block">
-                  Score
-                </span>
-              </div>
+
             </div>
           </Link>
         );

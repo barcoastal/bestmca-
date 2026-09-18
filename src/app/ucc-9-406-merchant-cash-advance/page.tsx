@@ -11,22 +11,10 @@ export const metadata = {
 };
 
 const FAQ = [
-  {
-    q: "What is a UCC 9-406 notice?",
-    a: "Section 9-406 of the Uniform Commercial Code lets an assignee of receivables notify the account debtor, your customer, to pay the assignee directly. MCA funders, claiming ownership of your future receivables, send these letters to your customers after default, instructing them to redirect payments to the funder.",
-  },
-  {
-    q: "Do my customers have to comply with a 9-406 letter?",
-    a: "A valid notification puts the customer at risk of paying twice if they ignore it, which is why most corporate payables departments comply reflexively. But customers can demand reasonable proof of the assignment, and letters are frequently defective, overbroad, or sent on disputed positions. Getting counsel involved fast is how those defects get raised before your revenue reroutes.",
-  },
-  {
-    q: "Can 9-406 letters be withdrawn?",
-    a: "Yes, and they routinely are as part of a negotiated resolution. Funders use the letters as pressure; releasing them is a standard chip in settlement talks. The damage to customer confidence is the part that does not withdraw as easily, which is why speed of response matters more than anything.",
-  },
-  {
-    q: "Is a 9-406 notice the same as a UCC lien?",
-    a: "No. The UCC-1 financing statement is a public filing that establishes the funder's security interest. The 9-406 notification is an operational weapon built on top of it: a letter that actually redirects your cash. The lien blocks financing; the letter attacks revenue.",
-  },
+  { q: "What is a UCC 9-406 notice?", a: "Under New York UCC 9-406, a qualifying assignment notice can change whom an account debtor must pay to discharge an obligation. The provision has conditions and exceptions; the actual notice, agreement, and applicable law matter." },
+  { q: "Do my customers have to comply with every letter?", a: "Do not assume every letter is effective or ineffective. New York’s statute addresses identification of assigned rights, proof of assignment, and exceptions. The account debtor should obtain advice on the actual notice before deciding whom to pay." },
+  { q: "Can the notice be withdrawn in a settlement?", a: "A proposed agreement can address withdrawal or changed payment instructions, but acceptance is not guaranteed. Confirm which notices and parties are covered and how any change will be communicated." },
+  { q: "Is this the same as a UCC financing statement?", a: "No. A financing statement is a public filing; an assignment notice addresses payment of an assigned obligation. A filing alone does not resolve every question about the validity, scope, or enforcement of an asserted interest." },
 ];
 
 export default function Page() {
@@ -35,6 +23,7 @@ export default function Page() {
     "@type": "Article",
     headline: "UCC 9-406 and MCA Debt: When Funders Contact Your Customers",
     description: metadata.description,
+    dateModified: "2026-09-18",
     author: {
       "@type": "Organization",
       name: "MCA Settlement Reviews",
@@ -53,87 +42,26 @@ export default function Page() {
       <header className="border-b border-line bg-paper-soft">
         <div className="mx-auto max-w-4xl px-5 py-14">
           <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
-            Legal Mechanics · UCC 9-406
+            Legal Mechanics · UCC 9-406 · Updated September 18, 2026
           </div>
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">
-            UCC 9-406: the letter that sends your customers&rsquo; money to
-            your funder
+            UCC 9-406: evaluating an MCA assignment notice
           </h1>
           <p className="mt-5 text-lg text-ink-soft leading-relaxed">
-            Of everything in an MCA funder&rsquo;s toolkit, the 9-406
-            notification does the most damage the fastest: one letter, and
-            your biggest customer starts paying the funder instead of you.
-            Here is what the statute actually authorizes, where the letters
-            overreach, and what the first week of response looks like.
+            An assignment notice can raise questions about where customer payments
+            should go. This overview uses New York’s current statute as an example;
+            it does not determine the law or outcome for your particular agreement.
           </p>
         </div>
       </header>
 
-      <section className="mx-auto max-w-4xl px-5 py-12 space-y-8">
-        <div>
-          <h2 className="font-display text-2xl font-semibold text-navy">
-            Why funders can do this at all
-          </h2>
-          <p className="mt-3 text-ink-soft leading-relaxed">
-            An MCA is structured as a purchase of your future receivables.
-            UCC 9-406 exists so a buyer of receivables can collect what it
-            bought: it entitles an assignee to notify your account debtors to
-            pay the assignee directly, and a customer who pays you after
-            receiving valid notice risks having to pay twice. That double-pay
-            risk is why payables departments comply quickly, and why the
-            letters are so effective as pressure even when the underlying
-            claim is contestable.
-          </p>
-        </div>
-        <div>
-          <h2 className="font-display text-2xl font-semibold text-navy">
-            Where the letters overreach
-          </h2>
-          <p className="mt-3 text-ink-soft leading-relaxed">
-            In practice, notices go out that are defective in ways counsel can
-            attack: sent on positions that are current or disputed, claiming
-            all receivables when the agreement assigned a percentage, missing
-            the identification the statute requires, or sent by junior
-            funders standing behind senior filings. Customers are also
-            entitled to request reasonable proof of the assignment before
-            redirecting anything, a right almost no one exercises unless your
-            attorney tells them to. None of this makes the letters harmless;
-            it makes them negotiable.
-          </p>
-        </div>
-        <div>
-          <h2 className="font-display text-2xl font-semibold text-navy">
-            The first-week response
-          </h2>
-          <p className="mt-3 text-ink-soft leading-relaxed">
-            Move on three fronts at once. Legal: get MCA-experienced counsel
-            reviewing the notice and the underlying agreement for defects,
-            this overlaps with everything in our{" "}
-            <Link href="/guides/warning-signs-mca-funder-legal-action" className="text-navy underline">
-              escalation-signs guide
-            </Link>
-            . Customers: contact affected accounts personally, calm and
-            factual, telling them the matter is with counsel and asking them
-            to route proof-of-assignment demands through you. Resolution: a
-            funder deploying 9-406 letters is spending real effort, which
-            means it will negotiate; withdrawal of the notices should be an
-            explicit term of any{" "}
-            <Link href="/guides/what-is-mca-settlement" className="text-navy underline">
-              settlement
-            </Link>
-            , alongside the{" "}
-            <Link href="/guides/ucc-lien-release-mca" className="text-navy underline">
-              UCC terminations
-            </Link>
-            . Firms with in-house litigation capability handle this sequence
-            under one roof, a core reason litigation defense is a scored
-            category in our{" "}
-            <Link href="/" className="text-navy underline">
-              2026 rankings
-            </Link>
-            .
-          </p>
-        </div>
+      <section className="mx-auto max-w-4xl px-5 py-12 space-y-6 text-ink-soft leading-relaxed">
+        <h2 className="font-display text-2xl font-semibold text-navy">Read the actual notice and statute</h2>
+        <p>New York UCC 9-406 addresses when payment to an assignor or assignee discharges an account debtor’s obligation. It includes rules about identifying the rights assigned, requests for reasonable proof, and exceptions. It does not establish that every funder letter is valid or that a disputed notice can simply be ignored.</p>
+        <p>Preserve the notice, underlying agreements, payment records, and correspondence. Have qualified counsel assess the relevant parties, assigned rights, jurisdiction, and any deadline. Do not assume that negotiation suspends the notice or other proceedings.</p>
+        <p>If an agreement changes payment instructions or withdraws notices, identify the affected accounts and parties in writing and confirm how the change will be communicated. No withdrawal, discount, or completion time is guaranteed.</p>
+        <p>Source checked September 18, 2026: <a className="text-navy underline" href="https://www.nysenate.gov/legislation/laws/UCC/9-406">New York Senate: UCC 9-406</a>. Other jurisdictions and agreements require their own analysis.</p>
+        <Link className="inline-block text-navy underline" href="/guides/what-is-mca-settlement">Read the settlement overview and its limitations</Link>
       </section>
 
       <section className="mx-auto max-w-4xl px-5 py-6">

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { RANKED, COASTAL } from "@/data/reviews";
-import { Stars } from "@/components/review/Stars";
 import { ComparisonTable } from "@/components/review/ComparisonTable";
 import { CTABanner } from "@/components/review/CTABanner";
 import { BrandLogo } from "@/components/review/BrandLogo";
@@ -10,7 +9,7 @@ export const metadata = {
   title:
     "The 17 Best MCA Settlement Firms of 2026, Compared Side by Side",
   description:
-    "All 17 MCA debt relief and merchant cash advance settlement firms we reviewed in 2026, compared side by side with category-by-category scoring across transparency, results, cost, and litigation defense.",
+    "All 17 MCA debt relief and merchant cash advance settlement firms we reviewed in 2026, compared using dated records, service claims, fees, and review limitations.",
   // This page shows the same ranked leaderboard as the homepage, which was
   // splitting head-term signal between the two (both ranked, both poorly).
   // Canonicalizing to the homepage consolidates that authority in one place.
@@ -35,8 +34,8 @@ export default function BestOfPage() {
           </h1>
           <p className="mt-4 text-lg text-ink-soft leading-relaxed max-w-3xl">
             We evaluated {RANKED.length} merchant cash advance settlement and restructuring
-            firms across five categories. Here is what we found, ranked by
-            composite score.
+            firms using dated public records. Coastal is featured first by editorial
+            choice; list positions do not establish superior outcomes.
           </p>
         </div>
       </header>
@@ -50,10 +49,10 @@ export default function BestOfPage() {
           How we ranked the firms
         </h2>
         <p className="text-ink-soft leading-relaxed">
-          Each firm was scored on five categories: transparency and disclosures,
-          settlement results, client communication, cost and fee structure, and
-          litigation defense capability. Scores are composite. We did not weigh
-          marketing claims, brand recognition, or paid placements. Review-specific source notes explain the public records and company materials checked, with limits on what was verified. Full methodology is
+          We compare services, public records, and fee limitations. Coastal is
+          featured first by editorial choice. Numerical scores are not published
+          because their category assessments have not been independently
+          substantiated. Our placement policy and source standards are
           available on our{" "}
           <Link href="/methodology" className="text-navy underline">
             methodology page
@@ -97,7 +96,7 @@ export default function BestOfPage() {
                     </h3>
                     {r.isCoastal && (
                       <span className="rounded-full bg-gold text-navy-deep text-[10px] font-semibold uppercase tracking-[0.14em] px-2.5 py-0.5">
-                        {r.ratingNote ? "Score under review" : "Top pick"}
+                        {r.ratingNote ? "Featured provider" : "Top pick"}
                       </span>
                     )}
                   </div>
@@ -122,12 +121,11 @@ export default function BestOfPage() {
                   </div>
                 </div>
                 <div className="flex flex-col items-center gap-1 shrink-0">
-                  <div className="font-display text-4xl font-semibold text-navy tabular-nums leading-none">
-                    {r.score.toFixed(1)}
+                  <div className="text-xs font-semibold text-ink-subtle">
+                    Not numerically rated
                   </div>
-                  <Stars value={r.score} size="sm" />
                   <div className="text-[10px] uppercase tracking-[0.16em] text-ink-subtle font-semibold mt-1">
-                    Composite score
+                    Editorial assessment
                   </div>
                 </div>
               </div>

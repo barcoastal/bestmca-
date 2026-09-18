@@ -157,8 +157,10 @@ export default async function FunderPage({
       <section className="mx-auto max-w-4xl px-5 py-4">
         <div className="rounded-2xl border border-line bg-white p-5">
           <div className="text-[10px] uppercase tracking-[0.2em] font-semibold text-ink-subtle">
-            Sources
+            Sources and scope
           </div>
+          <p className="mt-3 text-sm text-ink-soft">Edited September 18, 2026 to remove unsupported predictions about enforcement and settlement outcomes. The linked records concern particular matters; this is not a complete litigation search or a fresh verification of every source. Allegations and commentary are not findings about your case.</p>
+          <p className="mt-3 text-sm text-ink-soft">For New York, consult the actual <a className="underline" href="https://www.nysenate.gov/legislation/laws/CVP/3218">judgment-by-confession rules</a> and <a className="underline" href="https://www.nysenate.gov/legislation/laws/UCC/9-406">assignment-notice provisions</a>, checked September 18, 2026. Applicability depends on the facts and jurisdiction.</p>
           <ul className="mt-2 space-y-1.5 text-xs text-ink-muted">
             {f.sources.map((s) => (
               <li key={s.url}>
@@ -194,7 +196,7 @@ export default async function FunderPage({
         <CTABanner
           campaign={`funder-${f.slug}`}
           heading={`Dealing with ${f.name} right now?`}
-          body="Our #1 rated firm reviews your position free, with attorneys in-house for the files that turn legal, and a written strategy before any contract."
+          body="Request a consultation from Coastal, our featured first provider. Confirm fees, service scope, and any legal representation in writing."
           buttonLabel="Get a free review"
         />
       </div>

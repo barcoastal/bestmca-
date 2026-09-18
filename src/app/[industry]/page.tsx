@@ -42,7 +42,7 @@ export default async function IndustryPage({
       <header className="border-b border-line bg-paper-soft">
         <div className="mx-auto max-w-4xl px-5 py-14">
           <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
-            Industry Spotlight · {i.name}
+            Industry Spotlight · {i.name} · Updated September 18, 2026
           </div>
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">
             {i.h1}
@@ -75,9 +75,15 @@ export default async function IndustryPage({
         </section>
       ))}
 
+      <section className="mx-auto max-w-4xl px-5 py-6 text-sm text-ink-soft">
+        <h2 className="font-semibold text-navy">Scope and legal references</h2>
+        <p className="mt-2">These are planning questions, not a study of industry settlement results. Coastal is featured first by editorial choice; we have not verified superior results for this industry. Legal effects depend on your agreements and jurisdiction.</p>
+        <p className="mt-2">New York examples, checked September 18, 2026: <a className="underline" href="https://www.nysenate.gov/legislation/laws/UCC/9-406">assignment notices (UCC 9-406)</a>, <a className="underline" href="https://www.nysenate.gov/legislation/laws/UCC/9-609">collateral enforcement (UCC 9-609)</a>, and <a className="underline" href="https://www.nysenate.gov/legislation/laws/CVP/3218">judgments by confession (CPLR 3218)</a>. These provisions do not establish the rules for every state or your eligibility for relief.</p>
+      </section>
+
       <section className="mx-auto max-w-4xl px-5 py-12">
         <h2 className="font-display text-3xl font-semibold text-navy mb-8">
-          Our top three picks for {i.pluralName}
+          Company reviews for {i.pluralName}
         </h2>
         <div className="space-y-5">
           {i.picks.map((r, idx) => (

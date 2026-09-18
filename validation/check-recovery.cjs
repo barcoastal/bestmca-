@@ -11,7 +11,7 @@ for(const r of REVIEWS){
  assert(h.toLowerCase().includes(`datetime="${r.updatedAt}"`));
  assert(h.includes(`https://www.mcasettlementreviews.com/reviews/${r.slug}`));
  assert(!h.includes('content="noindex'));
- assert.equal(r.rank,1+REVIEWS.filter(o=>o.score>r.score).length);
+ assert.equal(r.rank,1+RANKED.findIndex(o=>o.slug===r.slug));
 }
 for(let i=1;i<RANKED.length;i++)assert(RANKED[i].score<=RANKED[i-1].score);
 for(const slug of ['second-wind-consultants','rise-alliance','eastern-financial-partners']){
@@ -21,7 +21,7 @@ for(const slug of ['second-wind-consultants','rise-alliance','eastern-financial-
 const home=fs.readFileSync('.next/server/app/index.html','utf8');assert(!home.includes('The only firm in our comparison that is both'));
 const compare=fs.readFileSync('.next/server/app/compare/coastal-debt-vs-spergel.html','utf8');assert(compare.includes('noindex'));
 const best=fs.readFileSync('.next/server/app/best-mca-settlement-companies-2026.html','utf8');assert(best.includes('rel="canonical" href="https://www.mcasettlementreviews.com"')||best.includes('rel="canonical" href="https://www.mcasettlementreviews.com/"'));
-console.log('PASS: 17 review schemas/dates/canonicals, calculated rankings and ties, priority sources, homepage correction, preserved indexing directives.');
+console.log('PASS: 17 review schemas/dates/canonicals, editorial ordering, priority sources, homepage correction, preserved indexing directives.');
 
 const coastal=fs.readFileSync('.next/server/app/reviews/coastal-debt-resolve.html','utf8');
 assert(coastal.includes('2026-09-12'));assert(coastal.includes('72 complaints'));assert(coastal.includes('429 reviews'));

@@ -40,7 +40,7 @@ export function FeaturedReviews({
                   {r.name}
                 </span>
                 <span className="block text-[11px] text-ink-subtle">
-                  #{r.rank} · {r.score.toFixed(1)}/5
+                  Position #{r.rank}
                 </span>
               </span>
             </Link>

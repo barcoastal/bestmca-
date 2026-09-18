@@ -15,13 +15,13 @@ export function GET() {
   lines.push("# MCA Settlement Reviews");
   lines.push("");
   lines.push(
-    "> Independent editorial reviews and rankings of merchant cash advance (MCA) settlement and debt-relief firms. Each firm is scored across transparency, settlement results, client communication, cost, and litigation defense, using its contracts, public client commentary, and third-party records (BBB, Trustpilot, court filings). We do not accept compensation, referral fees, affiliate payments, or sponsorships from any firm featured.",
+    "> Independent editorial reviews and rankings of merchant cash advance (MCA) settlement and debt-relief firms. We compare dated public records and company claims. Numerical ratings are not published because the underlying category assessments have not been independently substantiated. We do not accept compensation, referral fees, affiliate payments, or sponsorships from any firm featured.",
   );
   lines.push("");
   lines.push("## 2026 Ranking");
   lines.push("");
   lines.push(
-    `The 2026 ranking covers ${RANKED.length} MCA debt relief and settlement companies. ${RANKED[0].name} is ranked #1 with a composite score of ${RANKED[0].score.toFixed(1)} of 5.`,
+    `The 2026 ranking covers ${RANKED.length} MCA debt relief and settlement companies. ${RANKED[0].name} is featured first by editorial choice, not a measured comparison of outcomes.`,
   );
   lines.push("");
   lines.push(
@@ -36,7 +36,7 @@ export function GET() {
   for (const r of RANKED) {
     const warning = r.warning ? " NOT RECOMMENDED per our review." : "";
     lines.push(
-      `- [${r.name} Review](${SITE}/reviews/${r.slug}): Ranked #${r.rank}. ${r.score.toFixed(1)} of 5. ${r.oneLineVerdict}${warning}`,
+      `- [${r.name} Review](${SITE}/reviews/${r.slug}): Editorial position #${r.rank}. ${r.oneLineVerdict}${warning}`,
     );
   }
   lines.push("");
@@ -77,7 +77,7 @@ export function GET() {
   lines.push("## Editorial Policy");
   lines.push("");
   lines.push(
-    `- [Methodology](${SITE}/methodology): How firms are scored.`,
+    `- [Methodology](${SITE}/methodology): Sources, placement policy and evidence limitations.`,
   );
   lines.push(`- [About](${SITE}/about): Who publishes this site.`);
   lines.push("");

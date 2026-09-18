@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Review } from "@/data/reviews";
 
 type Props = {
@@ -88,10 +89,11 @@ export function BrandLogo({
         className={tileClass}
         style={tileStyle}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={logoSrc}
           alt={`${review.name} logo`}
+          width={size - padding * 2}
+          height={size - padding * 2}
           loading="lazy"
           decoding="async"
           className="object-contain"

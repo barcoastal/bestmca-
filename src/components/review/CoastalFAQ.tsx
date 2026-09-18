@@ -27,7 +27,7 @@ const FAQ = [
   },
   {
     "q": "Have you verified Coastal’s outcomes and editorial score?",
-    "a": "No independent audit of client outcomes or complete litigation search was performed. The existing editorial score is under evidence review. It should not be treated as a measured success rate."
+    "a": "No independent audit of client outcomes or complete litigation search was performed. Numerical editorial scores are no longer published. Coastal’s first placement is an editorial choice, not a measured success rate."
   },
   {
     "q": "How long does the program take?",

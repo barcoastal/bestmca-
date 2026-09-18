@@ -64,9 +64,7 @@ export async function generateMetadata({
     };
   }
 
-  const title = review.ratingNote
-    ? `${review.name} Reviews (2026): Services, Complaints & BBB`
-    : `${review.name} Reviews (2026): ${review.score.toFixed(1)}/5 Rating, Complaints & BBB`;
+  const title = `${review.name} Reviews (2026): Services, Complaints & BBB`;
   const description = review.oneLineVerdict;
   return {
     title,
@@ -158,7 +156,7 @@ export default async function ReviewPage({
             </div>
             {isCoastal && (
               <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-gold/90 text-navy-deep px-3 py-1 text-xs uppercase tracking-[0.16em] font-semibold">
-                Featured provider · Score under review
+                Featured provider · Featured provider
               </div>
             )}
             {!isCoastal && (
@@ -361,10 +359,10 @@ export default async function ReviewPage({
                 </div>
               </div>
               <div className="mt-2 flex items-center gap-2">
-                <span className="font-display text-2xl font-semibold text-navy tabular-nums">
-                  {COASTAL.score.toFixed(1)}
+                <span className="text-xs font-semibold text-ink-subtle">
+                  Not numerically rated
                 </span>
-                <span className="text-xs text-ink-subtle">/ 5</span>
+
               </div>
               <p className="mt-3 text-sm text-ink-muted">
                 {COASTAL.oneLineVerdict}

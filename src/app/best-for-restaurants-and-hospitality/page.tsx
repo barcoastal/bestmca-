@@ -80,7 +80,7 @@ export default function RestaurantsPage() {
                     {r.name}
                     {r.isCoastal && (
                       <span className="ml-3 rounded-full bg-gold text-navy-deep text-[10px] font-semibold uppercase tracking-[0.14em] px-2 py-0.5 align-middle">
-                        Top pick
+                        Featured first
                       </span>
                     )}
                   </h3>
@@ -98,7 +98,7 @@ export default function RestaurantsPage() {
       <div className="mx-auto max-w-4xl px-5 pb-16">
         <CTABanner
           campaign="best-for-restaurants"
-          heading="Coastal has handled MCA settlements for restaurant and hospitality operators across the country"
+          heading="Compare a Coastal proposal for your restaurant or hospitality business"
         />
       </div>
     </article>

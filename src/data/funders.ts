@@ -38,19 +38,19 @@ export const FUNDERS: Funder[] = [
       "Merchant-side litigation has alleged predatory practices including fee and disclosure issues and historic use of Confessions of Judgment; no global settlement of such claims had been publicly announced as of early 2026.",
     ],
     playbook: [
-      "Everest files. Treat its default notices as a precursor to litigation, not letterhead theater, and use the window before filing, that is when discounts run deepest.",
+      "A default notice should be reviewed promptly with the agreement and any actual court papers. This page does not establish a discount advantage from a particular negotiation stage.",
       "Its complaints lean on diverted-receivables allegations: silently switching bank accounts is the exact conduct its lawyers plead. Any banking changes belong inside a represented strategy.",
-      "Guarantors are named in its suits as a matter of course. If you personally guaranteed, your response plan is personal, not just corporate.",
-      "Everest resolves. The volume of its filings is matched by a steady flow of negotiated resolutions; represented merchants with filed answers and documented finances settle these cases routinely.",
+      "If the demand names a guarantor, have counsel review the signed guarantee and the allegations separately from the business obligation. A demand does not establish liability.",
+      "This page does not establish a representative settlement rate or discount for Everest. A resolved docket entry alone does not disclose the financial terms or establish a comparable outcome.",
     ],
     faq: [
       {
         q: "Everest Business Funding is suing me. What do I do first?",
-        a: "Calendar the answer deadline from the day you were served (typically 20 to 30 days) and get MCA-experienced counsel on the complaint the same week. Filing an answer on time preserves every settlement option; missing it converts the complaint into a default judgment for everything demanded.",
+        a: "Have qualified counsel identify the actual response deadline from the court, service details, and applicable rules. Missing a deadline can expose a party to a request for default relief; it does not automatically establish every amount claimed.",
       },
       {
         q: "Will Everest settle instead of litigating?",
-        a: "Court records show a steady pattern of resolved and discontinued cases alongside the filings. Funders that file at volume also settle at volume; a represented merchant with a filed answer and a documented financial picture is a settlement candidate, not just a defendant.",
+        a: "A particular case may settle, but filing volume does not establish settlement rates or expected terms. A proposal does not suspend court deadlines unless the applicable process changes them.",
       },
       {
         q: "Does Everest use Confessions of Judgment?",
@@ -75,7 +75,7 @@ export const FUNDERS: Funder[] = [
     record: [
       "Forward Financing provides revenue-based financing structured as purchases of future receivables, with fixed daily or weekly ACH remittances, the structure that governs what happens in a dispute.",
       "Public records show Forward Financing acting as a co-plaintiff alongside other funders in litigation against a debt-relief operation (MCA Debt Advisors), indicating it actively protects its contracts against interference-style relief tactics.",
-      "Defense-side commentary describes the standard post-default sequence for its category: collections contact within hours of failed withdrawals, breach-of-contract claims as the lead theory, and personal guarantees enforced on default.",
+      "Secondary commentary does not establish this funder’s typical collection timeline or your contractual exposure. Check the actual notices, agreement, and court docket.",
     ],
     playbook: [
       "The absence of a headline litigation record is not a free pass: contract remedies (default fees, UCC rights, guarantee enforcement) exist in the agreement regardless of how often a funder ends up in published dockets.",
@@ -86,15 +86,15 @@ export const FUNDERS: Funder[] = [
     faq: [
       {
         q: "Does Forward Financing sue merchants?",
-        a: "Like every MCA funder, it holds contractual remedies and enforces them; its published litigation footprint is smaller than the industry's most aggressive filers, but default still triggers collections, guarantee exposure, and potential suit. Plan around the contract, not the docket count.",
+        a: "This page does not establish how often Forward Financing sues merchants. Check the contracting entity and any actual docket or notice; possible remedies depend on the agreement and applicable law.",
       },
       {
         q: "Can I settle a Forward Financing balance?",
-        a: "Revenue-based financing balances are negotiated and settled across this industry daily, and there is nothing structurally different here. Documented hardship plus a specific proposal, presented before escalation, is the standard path.",
+        a: "You may request revised terms or a settlement, but this page does not establish a standard discount, acceptance rate, or timeline for Forward Financing. Obtain any agreement in writing.",
       },
       {
         q: "My payments are unaffordable but I have not defaulted. What now?",
-        a: "This is the strongest position you will ever negotiate from. Check your agreement for reconciliation language, document the revenue change, and propose the restructure before a missed remittance changes your file from cooperative to defaulted.",
+        a: "Gather the signed agreement and revenue records. Ask about any contractual reconciliation procedure or proposed payment change; do not assume approval or change payments without understanding the consequences.",
       },
     ],
     sources: [
@@ -116,7 +116,7 @@ export const FUNDERS: Funder[] = [
       "Fora Financial entities litigate actively: dockets include Fora Financial Holdings v. New York Tribeca Group (S.D.N.Y.) and a 2025 First Department appellate decision in Fora Fin. Advance v. 4 Pillar Consulting, and Fora appears as co-plaintiff in funder litigation against MCA Debt Advisors and related parties.",
       "Defense-firm reporting states Fora files UCC-1 liens under at least four entity names, including Empire Merchant Advance, which can make filings hard for merchants to identify when auditing their own UCC record.",
       "The same defense-side commentary reports fixed ACH remittances continuing through low-revenue periods with reconciliation requests rarely granted in practice, despite contractual language, an attributed characterization worth testing with your own written reconciliation request.",
-      "Personal guarantees are enforced on default per the standard industry pattern, extending exposure to owners individually.",
+      "Personal exposure depends on the guarantee’s language, triggering conditions, and applicable law. A default allegation is not an automatic finding of guarantor liability.",
     ],
     playbook: [
       "Audit your state's UCC database for all filings against your business and check unfamiliar secured-party names against Fora's known entities; you cannot negotiate releases for liens you have not found.",
@@ -131,11 +131,11 @@ export const FUNDERS: Funder[] = [
       },
       {
         q: "Fora denied my reconciliation request. Is that the end of it?",
-        a: "No, it may be the beginning of your leverage. Send the request in writing with documentation and keep the refusal. A funder that will not honor its own reconciliation clause is exposing its contract's legal characterization, which is exactly the pressure point experienced negotiators and attorneys use.",
+        a: "Keep a copy of the request, supporting records, and response. Counsel can assess the actual reconciliation language and any relevant legal issues; a refusal alone does not establish a defense or a right to a discount.",
       },
       {
         q: "Does Fora Financial settle merchant balances?",
-        a: "Its litigation volume implies resolution volume; funders that enforce actively also settle actively. Represented merchants with documented finances and, where applicable, preserved reconciliation paper trails negotiate these balances routinely.",
+        a: "Litigation volume does not establish settlement volume or outcomes. This page does not provide a verified settlement rate or discount for Fora Financial.",
       },
     ],
     sources: [
@@ -169,11 +169,11 @@ export const FUNDERS: Funder[] = [
     faq: [
       {
         q: "CFG is calling my customers. Can they do that?",
-        a: "Funders claiming receivables ownership use UCC 9-406 notices to redirect customer payments, but harassment-style contact is a different matter, and BBB complaints against CFG allege exactly that. Document every contact and get representation involved; conduct-based leverage is real, especially under New York's newer statutes.",
+        a: "Preserve the customer notice and related agreements. New York UCC 9-406 addresses assignment notices and their effect, subject to conditions and exceptions. Counsel should assess the notice and applicable jurisdiction; a BBB allegation does not establish unlawful conduct or negotiating leverage.",
       },
       {
         q: "I signed a settlement with CFG and fell behind on it. How bad is that?",
-        a: "Bad but recoverable: CFG has pleaded breached settlements in court, so expect the next agreement to be harder-won. Come back with representation, a realistic number, and documentation of what changed; funders still prefer a performing deal to a judgment they must enforce.",
+        a: "A missed settlement payment may trigger rights under the settlement and underlying documents. Obtain advice promptly about notices, deadlines, and available options; a second settlement or better terms are not assured.",
       },
       {
         q: "Does CFG Merchant Solutions use Confessions of Judgment?",
@@ -213,11 +213,11 @@ export const FUNDERS: Funder[] = [
       },
       {
         q: "Do Reliant's regulatory settlements help my case?",
-        a: "Not automatically, those matters concerned marketing and compliance, not your contract. But if your dispute involves representations made at signing, the documented history makes origination-conduct arguments more credible. Preserve your sales communications and raise it with counsel.",
+        a: "A regulatory or marketing matter does not automatically invalidate your agreement or establish a defense. Preserve your own communications and ask counsel whether a specific finding applies to your facts.",
       },
       {
         q: "Can I settle a Reliant Funding balance?",
-        a: "Reliant balances are negotiated and settled through the standard process: documented hardship, a specific proposal, written terms with UCC terminations. Engaging before default beats engaging after, as with every funder.",
+        a: "You can request a proposal addressing payment terms, fees, guarantees, and any filings. We have not verified a typical Reliant settlement result or timeline, and agreement is not guaranteed.",
       },
     ],
     sources: [
@@ -252,11 +252,11 @@ export const FUNDERS: Funder[] = [
       },
       {
         q: "A collector called about my ECG account. Do I have to deal with them?",
-        a: "Verify first: which entity, and are they licensed to collect in your state? A BBB complaint against ECG documents exactly this issue with an allegedly unlicensed third-party collector. You are entitled to deal with the actual creditor, in writing, through representation.",
+        a: "Identify the entity making the demand and request the basis for its authority and balance calculation. Whether licensing requirements apply depends on the entity, activity, and jurisdiction; ask qualified counsel rather than assuming a complaint proves a violation.",
       },
       {
         q: "The UCC lien ECG filed shows more than I owe. What can I do?",
-        a: "Demand an accounting in writing: advance amount, payments made, contractual fees. Liens with inflated or undisclosed-fee balances are contestable, and correcting the recorded amount matters because that filing is what other lenders see.",
+        a: "Request a written accounting of the amount advanced, payments, and claimed fees. Have counsel compare it with the agreement and filing. A financing statement is not necessarily a statement of the current payoff balance.",
       },
     ],
     sources: [
@@ -286,15 +286,15 @@ export const FUNDERS: Funder[] = [
     faq: [
       {
         q: "How fast does Kalamata actually sue?",
-        a: "Defense firms report it among the fastest filers in the industry, sometimes within weeks of default. Treat any default notice from Kalamata as a litigation countdown and engage counsel immediately rather than negotiating solo on the phone.",
+        a: "We have not verified a representative filing timeline for Kalamata. Read any summons or notice promptly and have counsel identify the actual response deadline. Do not infer your deadline from another case.",
       },
       {
         q: "Kalamata got a default judgment against me. Is it over?",
-        a: "No. Default judgments are vacated for service defects and other procedural grounds regularly, and even standing judgments get negotiated because enforcement costs the funder time and money. The sequence is vacatur review and settlement talks in parallel, started this week, not this quarter.",
+        a: "A judgment may have options for review, enforcement relief, or negotiation, but availability and deadlines depend on the case and jurisdiction. Obtain the docket and judgment for counsel; no particular remedy or outcome is guaranteed.",
       },
       {
         q: "Why do defense lawyers talk about this funder so much?",
-        a: "Volume and speed. A funder that files quickly and wins by default frequently generates a lot of defense work, and a lot of commentary. The practical takeaway for merchants is simple: with Kalamata, deadlines are the whole game.",
+        a: "The amount of online legal commentary does not establish a funder’s filing frequency, success rate, or settlement practices. Use specific primary records and your own documents when evaluating a claim.",
       },
     ],
     sources: [
@@ -311,25 +311,25 @@ export const FUNDERS: Funder[] = [
     metaDescription:
       "Pearl Capital's litigation shaped MCA law, including the landmark Champion Auto v. Pearl Beta usury ruling. What its court record means for merchants dealing with Pearl entities today.",
     intro:
-      "Pearl Capital occupies a unique place in MCA history: its cases helped define the legal ground every funder now stands on, including the landmark appellate ruling that MCA agreements structured as receivables purchases are not usurious loans. Dealing with Pearl means dealing with a funder that litigates, and wins on paper it drafted carefully.",
+      "Cases involving Pearl entities are part of the published MCA litigation record. Individual decisions do not establish that every Pearl agreement is enforceable or predict what will happen in another dispute.",
     record: [
-      "In Champion Auto Sales v. Pearl Beta Funding (First Department, 2018), merchants sought to vacate a Confession of Judgment arguing the underlying agreement was criminally usurious; the appellate court unanimously held the agreement was not usurious, a foundational precedent the entire industry cites.",
+      "In Champion Auto Sales, LLC v. Pearl Beta Funding, LLC (First Department, March 15, 2018), the court affirmed dismissal of the complaint seeking to vacate a judgment by confession and concluded that the underlying agreement was not a usurious transaction. This holding concerns that agreement and record.",
       "Pearl operates through a family of entities, Pearl Capital Business Funding, Pearl Alpha, Pearl Beta, Pearl Gamma, Pearl Delta, which appear together in litigation, including a judgment affirmed on appeal in 2022 arising from a servicing dispute.",
       "Pearl's historic collection model relied heavily on Confessions of Judgment in the pre-2019 New York era; the state's reforms ended COJ entry against out-of-state merchants and pushed funders, including Pearl-era portfolios, into ordinary litigation.",
     ],
     playbook: [
       "Know which Pearl entity holds your position: agreements and UCC filings may name any of the Alpha/Beta/Gamma/Delta entities, and complete resolutions must cover the right ones.",
-      "Do not build a strategy on the usury argument alone; Champion Auto is the case that closed that door for well-drafted agreements. Modern defenses run through reconciliation practice, characterization facts, conduct, and procedure, not the headline usury claim.",
-      "Older Pearl positions may carry pre-reform COJ paper; if a historic judgment exists against you, vacatur review under the newer case law is worth a fresh look, thousands of COJ judgments have been undone on procedural grounds.",
+      "A decision involving one agreement does not decide every other agreement. Ask counsel to evaluate the actual contract, performance, jurisdiction, and relevant current law rather than treating a case summary as a universal rule.",
+      "If an older judgment exists, obtain the affidavit, entry documents, and docket for counsel. Changes in law do not automatically undo an existing judgment; any challenge depends on the facts and applicable rules.",
     ],
     faq: [
       {
         q: "Can I argue my Pearl Capital agreement is an illegal usurious loan?",
-        a: "That exact argument, against this exact funder, produced the 2018 appellate ruling holding a well-drafted receivables purchase is not usurious. Recharacterization arguments still exist, but they turn on how the agreement operated in practice (reconciliation, contingency of repayment), not on the factor rate alone. Get a professional read on your specific facts.",
+        a: "Do not treat a case involving one Pearl entity and agreement as a ruling on your contract. Classification and any available defense require review of the actual facts, agreement, and applicable law.",
       },
       {
         q: "I have an old judgment from a Pearl entity via a Confession of Judgment. Options?",
-        a: "Pre-2019 COJ judgments are exactly the category New York's reforms and subsequent case law have disturbed: procedural-defect vacatur has undone thousands. A review of how your judgment was entered, venue, affidavit, service, is worth doing even years later, alongside negotiation on the balance.",
+        a: "Obtain the judgment, supporting affidavit, docket, and relevant notices. Counsel can assess the applicable law, any procedural issue, and deadlines. We have not established that your judgment can be vacated or a count of comparable successful challenges.",
       },
       {
         q: "Which Pearl entity do I actually owe?",
@@ -337,7 +337,7 @@ export const FUNDERS: Funder[] = [
       },
     ],
     sources: [
-      { label: "deBanked, Champion Auto v. Pearl Beta ruling coverage", url: "https://debanked.com/2018/03/its-settled-merchant-cash-advance-not-usurious/" },
+      { label: "New York Courts: Champion Auto Sales v. Pearl Beta Funding (2018), checked September 18, 2026", url: "https://www.nycourts.gov/Reporter/3dseries/2018/2018_01645.htm" },
       { label: "vLex, Pearl Capital v. Berkovitch (1st Dept 2022)", url: "https://case-law.vlex.com/vid/pearl-capital-bus-funding-929077955" },
       { label: "FindLaw, In re Pearl Capital Business Funding (2022)", url: "https://caselaw.findlaw.com/court/ny-supreme-court-appellate-division/2083115.html" },
     ],

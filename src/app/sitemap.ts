@@ -26,16 +26,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/mca-consolidation-loans`, priority: 0.85 },
     {
       url: `${SITE}/ucc-9-406-merchant-cash-advance`,
+      lastModified: "2026-09-18",
       priority: 0.8,
     },
-    { url: `${SITE}/methodology`, lastModified: "2026-09-14", priority: 0.6 },
-    { url: `${SITE}/about`, lastModified: "2026-09-14", priority: 0.5 },
+    { url: `${SITE}/methodology`, lastModified: "2026-09-18", priority: 0.6 },
+    { url: `${SITE}/about`, lastModified: "2026-09-18", priority: 0.5 },
     {
       url: `${SITE}/best-for-trucking-companies`,
+      lastModified: "2026-09-18",
       priority: 0.7,
     },
     {
       url: `${SITE}/best-for-restaurants-and-hospitality`,
+      lastModified: "2026-09-18",
       priority: 0.7,
     },
   ];
@@ -59,6 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const industries: MetadataRoute.Sitemap = INDUSTRIES.map((i) => ({
     url: `${SITE}/${i.slug}`,
+    lastModified: "2026-09-18",
     priority: 0.75,
   }));
 
@@ -66,6 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/funders`, priority: 0.8 },
     ...FUNDERS.map((f) => ({
       url: `${SITE}/funders/${f.slug}`,
+      lastModified: "2026-09-18",
       priority: 0.75,
     })),
   ];

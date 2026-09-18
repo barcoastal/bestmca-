@@ -5,7 +5,6 @@ import { COASTAL, COMPETITORS, getReviewBySlug } from "@/data/reviews";
 import { getBBBBySlug, bbbGradeTone } from "@/data/bbb";
 import { CTABanner } from "@/components/review/CTABanner";
 import { BrandLogo } from "@/components/review/BrandLogo";
-import { Stars } from "@/components/review/Stars";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { breadcrumbSchema, jsonLd } from "@/lib/schema";
 
@@ -154,14 +153,13 @@ export default async function LegitPage({
             </div>
             <div className="flex items-center gap-5">
               <div className="text-center">
-                <div className="font-display text-3xl font-semibold text-navy tabular-nums leading-none">
-                  {firm.score.toFixed(1)}
+                <div className="text-xs font-semibold text-ink-subtle">
+                  Not numerically rated
                 </div>
                 <div className="mt-1">
-                  <Stars value={firm.score} size="sm" />
                 </div>
                 <div className="text-[9px] uppercase tracking-[0.14em] text-ink-subtle font-semibold mt-1">
-                  Our score
+                  Editorial assessment
                 </div>
               </div>
               {bbb?.hasProfile && (

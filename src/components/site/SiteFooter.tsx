@@ -13,7 +13,7 @@ export function SiteFooter() {
           </div>
           <p className="mt-3 text-sm text-ink-muted leading-relaxed max-w-md">
             Independent reviews and rankings of merchant cash advance settlement
-            and restructuring companies. We rate firms across transparency,
+            and restructuring companies. We compare public information across transparency,
             results, communication, cost, and litigation defense.
           </p>
           <p className="mt-3 text-sm text-ink-muted leading-relaxed max-w-md">{COASTAL.ratingNote}</p>

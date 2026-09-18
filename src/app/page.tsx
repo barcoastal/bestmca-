@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { RANKED, COASTAL } from "@/data/reviews";
 import { ScoreBadge } from "@/components/review/ScoreBadge";
-import { Stars } from "@/components/review/Stars";
 import { RankingChart } from "@/components/review/RankingChart";
 import { CTABanner } from "@/components/review/CTABanner";
 import { BrandLogo } from "@/components/review/BrandLogo";
@@ -19,7 +18,7 @@ export const metadata = {
       "MCA Settlement Reviews: Best MCA Debt Relief Companies 2026",
   },
   description:
-    "Compare 17 MCA settlement and debt relief companies. Read dated BBB records, complaints, fee disclosures, and the evidence limits behind our editorial ratings.",
+    "Compare 17 MCA settlement and debt relief companies. Read dated BBB records, complaints, fee disclosures, and the limitations behind our editorial comparison.",
   keywords: [
     "mca debt relief",
     "mca debt relief reviews",
@@ -39,7 +38,7 @@ const HOME_FAQ = [
   },
   {
     q: "How do you rank the companies?",
-    a: "Each firm is scored across five categories: transparency and disclosures, settlement results, client communication, cost and fee structure, and litigation defense capability. Review-specific source notes identify the records checked and the limits of verification. Category scores are editorial judgments; all existing scores are under evidence review and have not been independently substantiated. We do not accept compensation, referral fees, or sponsorships from any firm featured.",
+    a: "List positions are editorial, with Coastal Debt Resolve featured first. We compare dated public records and company claims across service scope, fees, communication, outcomes, and legal representation. Numerical scores are no longer published because their underlying category assessments have not been independently substantiated. We receive no compensation from featured firms. Read our methodology and each review’s sources and limitations.",
   },
   {
     q: "Which MCA settlement company has the best BBB rating?",
@@ -101,13 +100,13 @@ export default function HomePage() {
               September 18, 2026
             </div>
             <h1 className="mt-4 font-display text-4xl md:text-6xl font-semibold text-navy leading-[1.05] tracking-tight">
-              The best MCA settlement companies of 2026, compared across five editorial criteria.
+              MCA settlement companies for 2026: compare services, records, and fees.
             </h1>
             <p className="mt-6 text-lg text-ink-soft leading-relaxed max-w-2xl">
               We reviewed {RANKED.length} merchant cash advance settlement and
               restructuring firms across five categories: transparency and disclosures,
               settlement results, client communication, fee structure, and
-              litigation defense. Read the dated evidence and limitations alongside each score.
+              litigation defense. Coastal appears first as our featured provider; read the dated evidence and limitations for every firm.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <TrackedLink
@@ -130,8 +129,7 @@ export default function HomePage() {
                 Full ranking →
               </Link>
             </div>
-            <div className="mt-8 flex items-center gap-3 text-xs text-ink-subtle">
-              <Stars value={COASTAL.score} size="sm" /> {COASTAL.score.toFixed(1)}/5 in our review · {COASTAL.trustpilot}
+            <div className="mt-8 flex items-center gap-3 text-xs text-ink-subtle"> Dated Trustpilot record: {COASTAL.trustpilot}
             </div>
           </div>
 
@@ -145,7 +143,7 @@ export default function HomePage() {
                 Featured provider
               </div>
               <span className="rounded-full bg-gold text-navy-deep text-[10px] font-semibold uppercase tracking-[0.14em] px-2.5 py-1">
-                Score under review
+                #1 editorial placement
               </span>
             </div>
             <div className="mt-4 flex items-center gap-3">
@@ -154,12 +152,7 @@ export default function HomePage() {
                 {COASTAL.name}
               </h2>
             </div>
-            <div className="mt-3 flex items-center gap-3">
-              <span className="font-display text-3xl font-semibold text-navy tabular-nums">
-                {COASTAL.score.toFixed(1)}
-              </span>
-              <Stars value={COASTAL.score} size="md" />
-            </div>
+            <p className="mt-3 text-xs text-ink-muted">Featured first by editorial choice. Compare the sources and written terms.</p>
             <p className="mt-4 text-sm text-ink-soft leading-relaxed">
               {COASTAL.oneLineVerdict}
             </p>
@@ -209,10 +202,9 @@ export default function HomePage() {
             Top 17 MCA settlement and restructuring firms
           </h2>
           <p className="mt-3 text-base text-ink-soft leading-relaxed">
-            Ranked by composite score across five rating categories. Click any
-            firm to read the full review, including pricing, process, and
-            sourced concerns. All existing editorial scores are under evidence
-            review; they are not verified success rates or fresh endorsements.
+            Coastal is featured first by editorial choice. List positions do not
+            measure outcomes. Compare each firm’s dated sources, advertised
+            services, pricing limitations, and complaints before requesting a proposal.
           </p>
         </header>
         <RankingChart />
@@ -221,7 +213,7 @@ export default function HomePage() {
             href="/best-mca-settlement-companies-2026"
             className="inline-flex items-center justify-center rounded-full border border-line bg-white px-6 py-3 text-sm font-semibold text-navy hover:bg-paper-soft transition-colors"
           >
-            See the full 2026 ranking with detailed scoring →
+            See the full 2026 company comparison →
           </Link>
         </div>
       </section>
@@ -297,7 +289,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-5 py-16 grid gap-12 md:grid-cols-2 items-start">
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-gold-soft">
-              Coastal’s existing score is under review
+              Coastal is our featured first provider
             </div>
             <h2 className="mt-3 font-display text-3xl md:text-4xl font-semibold leading-tight">
               MCA restructuring: compare the evidence and the written proposal.
@@ -322,7 +314,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              { label: "Composite score", value: `${COASTAL.score.toFixed(1)} / 5` },
+              { label: "Placement", value: "Featured first" },
               { label: "Trustpilot reviews", value: "429 (Sep 12, 2026)" },
               { label: "Min debt", value: "Confirm eligibility" },
               { label: "Legal representation", value: "Confirm scope" },
@@ -401,7 +393,7 @@ export default function HomePage() {
             { href: "/mca-consolidation-loans", title: "MCA consolidation loans", text: "Compare new financing with settlement and restructuring proposals." },
             { href: "/guides/how-much-does-mca-settlement-cost", title: "MCA settlement costs", text: "Review provider fees and creditor payments together when comparing proposals." },
             { href: "/guides/mca-settlement-vs-bankruptcy", title: "MCA settlement vs. bankruptcy", text: "Explore the differences and questions to take to qualified counsel." },
-            { href: "/methodology", title: "How to read our company ratings", text: "See our criteria, dated evidence, and the limitations of existing scores." },
+            { href: "/methodology", title: "How to read our company ratings", text: "See our placement policy, dated evidence, and assessment limitations." },
           ].map((guide) => (
             <Link key={guide.href} href={guide.href} className="rounded-2xl border border-line bg-white p-5 hover:shadow-md transition-shadow">
               <h3 className="font-display text-lg font-semibold text-navy">{guide.title}</h3>

@@ -30,14 +30,14 @@ export function SiteHeader() {
               />
             </svg>
           </span>
-          <span className="font-display text-xl text-navy font-semibold tracking-tight">
+          <span className="font-display text-base sm:text-xl text-navy font-semibold tracking-tight">
             MCA Settlement Reviews
           </span>
-          <span className="hidden sm:inline text-[10px] uppercase tracking-[0.2em] text-ink-subtle">
+          <span className="hidden xl:inline text-[10px] uppercase tracking-[0.2em] text-ink-subtle">
             Independent · 2026
           </span>
         </Link>
-        <nav className="hidden md:flex items-center gap-7 text-sm text-ink-soft">
+        <nav aria-label="Main navigation" className="hidden xl:flex items-center gap-7 text-sm text-ink-soft">
           {NAV.map((n) => (
             <Link
               key={n.href}
@@ -48,6 +48,12 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
+        <details className="relative xl:hidden shrink-0 ml-3">
+          <summary className="cursor-pointer rounded-lg border border-line bg-white px-3 py-2 text-sm font-semibold text-navy">Menu</summary>
+          <nav aria-label="Mobile navigation" className="absolute right-0 top-full mt-2 w-64 max-w-[calc(100vw-2.5rem)] rounded-xl border border-line bg-white p-2 shadow-lg">
+            {NAV.map(n => <a key={n.href} href={n.href} className="block rounded-lg px-3 py-3 text-sm text-navy hover:bg-paper-soft">{n.label}</a>)}
+          </nav>
+        </details>
       </div>
     </header>
   );

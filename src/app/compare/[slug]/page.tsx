@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { COASTAL, COMPETITORS, getReviewBySlug } from "@/data/reviews";
 import { HeadToHeadTable } from "@/components/review/HeadToHeadTable";
 import { CTABanner } from "@/components/review/CTABanner";
-import { Stars } from "@/components/review/Stars";
 
 export const dynamicParams = false;
 
@@ -47,9 +46,6 @@ export default async function ComparePage({
   const competitor = parseCompareSlug(slug);
   if (!competitor) notFound();
 
-  const wins = (
-    Object.keys(COASTAL.ratings) as (keyof typeof COASTAL.ratings)[]
-  ).filter((k) => COASTAL.ratings[k] > competitor.ratings[k]).length;
 
   return (
     <article className="bg-paper">
@@ -62,9 +58,9 @@ export default async function ComparePage({
             Coastal Debt Resolve vs {competitor.name}
           </h1>
           <p className="mt-4 text-lg text-ink-soft leading-relaxed max-w-3xl">
-            We scored both firms across our five-category rating system. Coastal
-            won {wins} of 5 categories and finished with a higher composite
-            score.
+            Coastal is our featured first provider. Compare both firms using the
+            dated public records, advertised services, and fee limitations below.
+            Placement is an editorial choice, not a measured outcome comparison.
           </p>
           <div className="mt-6 flex flex-wrap gap-6 text-sm">
             <div>
@@ -73,9 +69,8 @@ export default async function ComparePage({
               </div>
               <div className="mt-1 flex items-center gap-2">
                 <span className="font-display text-2xl font-semibold text-navy">
-                  {COASTAL.score.toFixed(1)}
+                  Not numerically rated
                 </span>
-                <Stars value={COASTAL.score} size="sm" />
               </div>
             </div>
             <div>
@@ -84,9 +79,8 @@ export default async function ComparePage({
               </div>
               <div className="mt-1 flex items-center gap-2">
                 <span className="font-display text-2xl font-semibold text-navy">
-                  {competitor.score.toFixed(1)}
+                  Not numerically rated
                 </span>
-                <Stars value={competitor.score} size="sm" />
               </div>
             </div>
           </div>
@@ -103,7 +97,7 @@ export default async function ComparePage({
       <section className="mx-auto max-w-5xl px-5 pb-14 grid gap-8 md:grid-cols-2">
         <div className="rounded-2xl border border-line bg-white p-6">
           <h3 className="font-display text-xl font-semibold text-navy">
-            Where Coastal wins
+            Coastal: services and limitations
           </h3>
           <p className="mt-3 text-ink-soft leading-relaxed">
             {COASTAL.verdict}
@@ -135,7 +129,7 @@ export default async function ComparePage({
         <CTABanner
           campaign={`compare-coastal-vs-${competitor.slug}`}
           heading={`Considering ${competitor.name}? Talk to our #1 pick first.`}
-          body="Coastal Debt Resolve will give you a free MCA review and a written settlement strategy before you commit to anyone. No upfront fee."
+          body="Request a consultation and confirm fees, cancellation terms, and any legal services in writing."
         />
       </div>
     </article>

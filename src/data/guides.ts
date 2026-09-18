@@ -429,6 +429,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "what-happens-mca-default",
+    updatedAt: "2026-09-18",
     title: "What actually happens when you default on a merchant cash advance",
     metaTitle: "MCA Default: What Actually Happens, Week by Week (2026)",
     metaDescription:
@@ -473,7 +474,7 @@ export const GUIDES: Guide[] = [
     faq: [
       {
         q: "Will an MCA default hurt my personal credit?",
-        a: "Not automatically, since the advance is to the business. It reaches personal credit through the personal guarantee: judgments and collections against you individually can be reported. Resolving the debt before judgment is how you keep it off the personal side.",
+        a: "Personal liability and credit reporting are separate questions. Check the guarantee, the provider’s reporting practices, and actual credit reports. Resolving a balance does not guarantee a particular reporting or score outcome.",
       },
       {
         q: "Can the funder take money directly from my bank account?",
@@ -611,6 +612,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "mca-attorneys-vs-settlement-companies",
+    updatedAt: "2026-09-18",
     title: "MCA attorneys vs settlement companies: which one do you actually need?",
     metaTitle: "MCA Attorney or Settlement Company? How to Choose (2026)",
     metaDescription:
@@ -623,7 +625,7 @@ export const GUIDES: Guide[] = [
         paragraphs: [
           "A settlement company negotiates commercial deals: reduced balances, restructured payments, coordinated multi-funder workouts. Its leverage is financial, the funder's cost of chasing you versus taking a discount today. It cannot represent you in court, file motions, or vacate a judgment.",
           "An attorney brings legal leverage: answering lawsuits, challenging Confessions of Judgment, contesting UCC enforcement, and raising recharacterization arguments (that the advance functions as a usurious loan). Attorneys can also negotiate settlements, though a litigation shop billing hourly is not always the cheapest negotiator.",
-          "The strongest model in our rankings is the hybrid: negotiation handled at scale with attorneys in-house for the files that turn legal. That is a core reason Coastal Debt Resolve sits at #1 in our comparison.",
+          "Coastal is featured first by editorial choice. Its company materials describe an attorney network; we have not verified an in-house litigation team or a universal legal-services package. Confirm the named attorney, scope, jurisdiction, and fees in a written agreement.",
         ],
       },
       {
@@ -642,14 +644,14 @@ export const GUIDES: Guide[] = [
       {
         heading: "Clear signs a settlement company is enough",
         paragraphs: [
-          "No litigation, no COJ, payments current or barely slipping, and the core problem is arithmetic: the daily pulls exceed what the business generates. That is a negotiation file. What matters then is the firm's transparency and track record, which is exactly what our rankings score.",
+          "Even without a lawsuit, a proposed payment change can have contractual consequences. Compare the services offered and ask whether legal review is needed. The absence of litigation does not establish that a settlement company alone is sufficient.",
         ],
       },
       {
         heading: "Does my state matter?",
         paragraphs: [
-          "Less than the search results suggest. MCA agreements almost always choose New York or another funder-friendly forum in the contract, so the case, if there is one, usually lives there, not where your shop is. What your state does affect: COJ enforceability against you, bank levy procedure, and homestead protections if a personal guarantee is chased.",
-          "Practical implication: you rarely need a 'Montana MCA lawyer', you need counsel experienced in MCA litigation wherever the forum clause points, plus local counsel only if enforcement reaches your state. National settlement firms and MCA-focused attorneys handle exactly this split every day.",
+          "Jurisdiction matters. Have counsel review forum and choice-of-law provisions alongside applicable law, the parties, and any actual proceeding. Do not assume a contractual clause conclusively resolves every jurisdiction or enforcement issue.",
+          "Confirm that the lawyer is authorized to handle the relevant matter and court. Local advice may also be necessary for assets, enforcement, or other issues in a different jurisdiction.",
         ],
       },
       {
@@ -666,15 +668,15 @@ export const GUIDES: Guide[] = [
       },
       {
         q: "Do I need a lawyer in my own state?",
-        a: "Usually the contract's forum clause, most often New York, controls where disputes live, so MCA-experienced counsel matters more than local counsel. Local attorneys come into play when a judgment is enforced against assets in your state.",
+        a: "The answer depends on the contract, applicable law, location of assets, and any court proceeding. Confirm appropriate licensing and whether counsel in more than one jurisdiction is needed.",
       },
       {
         q: "Is a law firm always the safer choice?",
-        a: "Safer legally, not always better financially. Pure litigation shops can cost more than the discount they win on a simple negotiation file. Match the tool to the problem: legal exposure means attorney, arithmetic means negotiator, both means a hybrid firm.",
+        a: "Neither a label nor a staffing model guarantees a better result. Compare qualifications, proposed services, written fees, and conflicts. Ask who is responsible for legal advice and representation.",
       },
     ],
     takeaway:
-      "Lawsuit, COJ, or frozen account: attorney. Unaffordable but not yet legal: settlement firm. Both risks live in your file: pick a firm with attorneys in-house.",
+      "Confirm the actual service scope, responsible professionals, jurisdiction, and total fees. Do not infer court representation from an advertised attorney network.",
   },
   {
     slug: "ucc-lien-release-mca",
@@ -1020,6 +1022,7 @@ GUIDES.push(
   },
   {
     slug: "mca-lawsuit-first-30-days",
+    updatedAt: "2026-09-18",
     title: "Served with an MCA lawsuit: what the first 30 days decide",
     metaTitle: "MCA Lawsuit: What to Do in the First 30 Days (2026)",
     metaDescription:
@@ -1059,7 +1062,7 @@ GUIDES.push(
       },
       {
         q: "Can I settle after being sued, or is it too late?",
-        a: "Most MCA suits end in settlement, not trial. Filing is a pressure move as much as a collection step, and funders routinely accept discounted resolutions after filing, especially against represented merchants with filed answers and credible defenses.",
+        a: "Settlement may remain an option after a case is filed, but no representative settlement rate or discount was verified here. Court deadlines continue unless formally changed; discuss the actual case and any proposal with counsel.",
       },
       {
         q: "Do I need a lawyer in the state where I was sued?",
@@ -1070,54 +1073,65 @@ GUIDES.push(
       "Answer on time, defend for leverage, negotiate from the defended position, and paper the settlement with dismissal, releases, and UCC terminations. The suit is a phase, not the ending.",
   },
   {
-    slug: "mca-personal-credit",
-    title: "Do MCAs affect your personal credit? Guarantees, judgments, and what actually reports",
-    metaTitle: "Do MCAs Affect Personal Credit? What Reports and When (2026)",
-    metaDescription:
-      "MCAs are business financing, so when do they touch your personal credit? The honest map: what reports during repayment, what happens at default, and how guarantees and judgments reach your personal file.",
-    intro:
-      "Funders sell MCAs as invisible to personal credit, and during normal repayment that is mostly true. The honest answer has three stages: while you pay, when you default, and when a judgment lands on a personal guarantee. Each stage touches your personal file differently.",
-    sections: [
+    "slug": "mca-personal-credit",
+    "title": "Do MCAs affect personal credit? Reporting, guarantees, and judgments",
+    "metaTitle": "Do MCAs Affect Personal Credit? Reporting and Guarantees (2026)",
+    "metaDescription": "Distinguish MCA account reporting, personal guarantees, public court records, and credit reports. A settlement does not guarantee a clean personal credit file.",
+    "intro": "A personal guarantee, an account reported to a credit bureau, and a court judgment are different things. Do not assume an MCA is invisible to personal credit or that settling it will preserve a particular score. Check the actual agreement, reporting practices, and records.",
+    "updatedAt": "2026-09-18",
+    "sections": [
       {
-        heading: "While you are paying: mostly invisible",
-        paragraphs: [
-          "Most MCA funders do not report to consumer credit bureaus, and many do not report to business bureaus either. The advance typically appeared on your personal file only once, as a hard inquiry at application if the funder pulled personal credit. This invisibility is a genuine feature during repayment, and a trap: it means the first personal-credit consequence usually arrives at the worst stage, not gradually.",
-        ],
+        "heading": "Ask what is reported and to whom",
+        "paragraphs": [
+          "Ask the provider whether it reports the account to consumer or business reporting agencies and how it handles delinquency or settlement. An application inquiry alone does not answer those questions. Review the actual reports instead of relying on a general promise about MCA financing."
+        ]
       },
       {
-        heading: "At default: the business absorbs the first hits",
-        paragraphs: [
-          "Default triggers land first on the business side: UCC filings are already public record, collections activity may reach business credit files, and lenders searching the business see the distress. Your personal file still shows little, unless and until the personal guarantee activates.",
-        ],
+        "heading": "A guarantee is a liability question",
+        "paragraphs": [
+          "A guarantee can create obligations separate from the business agreement. Its scope and triggering conditions require review of the signed terms and applicable law. Liability, collection activity, and what appears on a particular credit report should not be treated as interchangeable."
+        ]
       },
       {
-        heading: "When the guarantee is enforced: it gets personal",
-        paragraphs: [
-          "A funder pursuing a personal guarantor changes the picture. Judgments against you personally become public records that surface in background and credit checks; collection accounts can be reported; and in COJ scenarios a personal judgment can exist within days of default. Personal bank restraints follow judgments. This is the stage where an MCA stops being business financing and starts being a personal financial event.",
-        ],
+        "heading": "Court records are not the same as credit reports",
+        "paragraphs": [
+          "Experian states that it no longer includes civil judgments or tax liens in consumer credit histories. That reporting practice does not erase a court judgment or decide its enforceability. Other records and underwriting checks may raise separate questions.",
+          "The CFPB explains that accurate negative account information generally cannot be removed simply because a consumer wants it removed. Do not promise deletion, a specific score change, or future financing approval as a result of settlement."
+        ]
       },
       {
-        heading: "Protecting your personal file",
-        paragraphs: [
-          "The strategy writes itself backward from the stages: resolve the debt before guarantee enforcement, and if resolution happens, paper it fully, judgment satisfactions filed with the court, accounts confirmed closed, so nothing lingers to surface in future checks. A negotiated settlement that never reaches personal judgment usually leaves personal credit untouched, which is one of the quiet arguments for resolving MCA distress early rather than riding it into enforcement.",
-        ],
-      },
+        "heading": "Check the proposed resolution",
+        "paragraphs": [
+          "Ask what the agreement says about any guarantor release, remaining balance, account status, and existing proceedings. Check whether each relevant party is bound. If information on a credit report is inaccurate, use the reporting agency’s dispute process and keep supporting records."
+        ]
+      }
     ],
-    faq: [
+    "faq": [
       {
-        q: "Will settling an MCA show up on my personal credit report?",
-        a: "Usually not. The settlement is a private business agreement, and if no personal judgment was entered and no collection account was reported against you personally, your consumer file typically never reflects the episode.",
+        "q": "Will settling an MCA keep it off my personal credit report?",
+        "a": "That outcome is not guaranteed. Check the actual account reporting, the agreement, and your reports. A settlement does not automatically delete accurate negative information."
       },
       {
-        q: "My funder pulled my personal credit at funding. Does that mean it reports?",
-        a: "No, an application inquiry does not imply ongoing reporting. Most MCA funders use the pull for underwriting the guarantee, not for monthly reporting to consumer bureaus.",
+        "q": "Does a personal credit inquiry mean the funder reports monthly?",
+        "a": "No. An inquiry and ongoing account reporting are separate questions. Ask the provider and check the relevant reports."
       },
       {
-        q: "A judgment was entered against me personally. How bad is it?",
-        a: "Judgments are public records: they can restrain personal accounts, complicate mortgages and financing, and appear in background checks even where credit bureaus no longer list them. Vacatur (for defective COJ entries) or negotiated satisfaction, filed with the court, are the cleanup paths, and both are routine parts of MCA resolutions.",
-      },
+        "q": "Does the absence of a judgment from my credit report mean it is gone?",
+        "a": "No. A credit-reporting policy does not erase a court record or resolve a legal obligation. Have qualified counsel assess the judgment and any available options."
+      }
     ],
-    takeaway:
-      "During repayment, MCAs barely touch personal credit. The damage arrives through the guarantee: judgments and enforcement. Resolve before that stage and your personal file usually stays clean.",
+    "takeaway": "Verify account reporting, guarantee exposure, and court records separately. No credit or financing result is promised.",
+    "sources": [
+      {
+        "label": "Experian: civil judgments and consumer credit reports",
+        "url": "https://www.experian.com/blogs/ask-experian/judgments-no-longer-included-on-credit-report/",
+        "note": "Checked September 18, 2026. Describes Experian’s treatment of civil judgments and tax liens; does not establish individual MCA account reporting."
+      },
+      {
+        "label": "CFPB: how long information stays on a credit report",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/how-long-does-information-stay-on-my-credit-report-en-323/",
+        "note": "Checked September 18, 2026. General reporting guidance and limits on removing accurate negative information."
+      }
+    ]
   },
 );

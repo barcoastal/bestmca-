@@ -1,46 +1,20 @@
 import { RATING_LABELS, type RatingKey } from "@/data/reviews";
-import { Stars } from "./Stars";
 
-type Props = {
-  ratings: Record<RatingKey, number>;
-  note?: string;
+type Props = { ratings: Record<RatingKey, number>; note?: string };
+const EVIDENCE: Record<RatingKey, string> = {
+  transparency: "Request written fees, cancellation terms, and service scope.",
+  results: "Representative client outcomes have not been independently audited.",
+  communication: "Read dated complaints and responses; confirm your point of contact.",
+  cost: "Compare provider fees, creditor payments, and any separate legal fees.",
+  litigation: "Confirm the attorney, jurisdiction, and separate representation agreement where applicable.",
 };
-
-const ORDER: RatingKey[] = [
-  "transparency",
-  "results",
-  "communication",
-  "cost",
-  "litigation",
-];
-
-export function RatingBreakdown({ ratings, note }: Props) {
-  return (
-    <div className="rounded-2xl border border-line bg-white p-6 shadow-sm">
-      <h3 className="font-display text-lg font-semibold text-navy">
-        Rating breakdown
-      </h3>
-      {note && <p className="mt-3 text-xs text-ink-muted">{note}</p>}
-      <ul className="mt-4 space-y-3.5">
-        {ORDER.map((key) => (
-          <li
-            key={key}
-            className="flex items-center justify-between gap-4 border-b border-line pb-3.5 last:border-0 last:pb-0"
-          >
-            <div>
-              <div className="text-sm font-medium text-ink">
-                {RATING_LABELS[key]}
-              </div>
-            </div>
-            <div className="flex items-center gap-3 shrink-0">
-              <Stars value={ratings[key]} size="sm" />
-              <span className="font-display text-base font-semibold text-navy tabular-nums w-8 text-right">
-                {ratings[key].toFixed(1)}
-              </span>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+export function RatingBreakdown({ note }: Props) {
+  return <div className="rounded-2xl border border-line bg-white p-6 shadow-sm">
+    <h3 className="font-display text-lg font-semibold text-navy">Evidence and questions to verify</h3>
+    {note && <p className="mt-3 text-xs text-ink-muted">{note}</p>}
+    <ul className="mt-4 space-y-4">{(Object.keys(EVIDENCE) as RatingKey[]).map(key => <li key={key}>
+      <h4 className="text-sm font-semibold text-ink">{RATING_LABELS[key]}</h4>
+      <p className="mt-1 text-sm text-ink-soft">{EVIDENCE[key]}</p>
+    </li>)}</ul>
+  </div>;
 }

@@ -1159,17 +1159,20 @@ const SCORED = REVIEW_DATA.map((review) => ({
   score: calculateScore(review.ratings),
 }));
 
-// Equal published scores share a rank; no editorial rank overrides.
+// Preserve the previous comparison sequence, with Coastal featured first.
+// Legacy score inputs are retained for the audit trail, not published as evidence.
 export const REVIEWS: Review[] = SCORED.map((review) => ({
   ...review,
-  rank: 1 + SCORED.filter((other) => other.score > review.score).length,
+  updatedAt: review.updatedAt < "2026-09-18" ? "2026-09-18" : review.updatedAt,
+  sourcesCheckedAt: review.sourcesCheckedAt || "September 11, 2026",
+  ratingNote: `${review.name}: numerical editorial ratings are not published because the category assessments have not been independently substantiated. Read the dated sources and service limitations. Placement is editorial, not a measured success rate.`,
+  rank: 1 + [...SCORED].sort((a, b) => Number(!!b.isCoastal) - Number(!!a.isCoastal) || b.score - a.score).findIndex((r) => r.slug === review.slug),
 }));
 
 export const COASTAL = REVIEWS.find((r) => r.isCoastal)!;
 export const COMPETITORS = REVIEWS.filter((r) => !r.isCoastal);
 
-// Leaderboard order is driven by the rank field, not array order, so entries
-// can be appended anywhere in REVIEWS and still render in ranked position.
+// Display positions are editorial ordering, not substantiated performance ranks.
 export const RANKED = [...REVIEWS].sort((a, b) => a.rank - b.rank);
 
 export function getReviewBySlug(slug: string) {

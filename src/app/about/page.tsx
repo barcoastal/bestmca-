@@ -32,13 +32,14 @@ export default function AboutPage() {
           account, its UCC position, or its bank line.
         </p>
         <p>
-          Every review on this site is built on the same five-category scoring
-          system. We do not weigh ad spend, brand size, or paid placement.
+          Our reviews use the same five evidence categories. Coastal is featured
+          first by editorial choice; list order does not establish better outcomes.
+          Numerical scores are not published.
           Read our full{" "}
           <Link href="/methodology" className="text-navy underline">
             methodology
           </Link>{" "}
-          for the criteria and sources.
+          for the placement policy, criteria, and sources.
         </p>
         <h2 className="font-display text-2xl font-semibold text-navy mt-10">
           Who writes these reviews
