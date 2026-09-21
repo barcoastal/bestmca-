@@ -244,3 +244,45 @@ Totals: **1 clicks**, 151 impressions, 0.7% CTR, avg pos 54.0  (vs 2026-09-02–
 Missing rows are not treated as zero. Page/query totals may differ from property totals due to reporting limits.
 
 September 18 release: first full week September 19–25; first 28 days September 19–October 16, assessed after reporting lag. This snapshot contains pre-release data and cannot measure the September 18 changes. Qualified leads require separate CRM reconciliation.
+
+## 2026-09-21 (window 2026-09-12 to 2026-09-18)
+
+Totals: **1 clicks**, 158 impressions, 0.6% CTR, avg pos 46.6  (vs 2026-09-05–2026-09-11: clicks -1, impr +8, pos -6.4)
+
+| Tracked query | Clicks | Impr | CTR | Pos | Pos delta |
+|---|---|---|---|---|---|
+| best mca debt relief companies | 0 | 6 | 0.0% | 62.8 | -3.2 |
+| mca settlement companies | 0 | 7 | 0.0% | 78.1 | -2.9 |
+| mca debt relief reviews | 0 | 2 | 0.0% | 54.5 | +0.5 |
+| merchant cash advance settlement companies | 0 | 5 | 0.0% | 89.0 | -1.4 |
+| mca debt relief companies | - | - | - | not shown | |
+| second wind consultants reviews | - | - | - | not shown | |
+| eastern financial partners reviews | - | - | - | not shown | |
+| spergel reviews | - | - | - | not shown | |
+| corporate turnaround reviews | - | - | - | not shown | |
+| rise alliance reviews | - | - | - | not shown | |
+| regroup partners reviews | - | - | - | not shown | |
+
+### Page trends
+
+| Page | Clicks | Click delta | Impressions | Impression delta |
+|---|---:|---:|---:|---:|
+| / | 0 | -1 | 101 | +6 |
+| /reviews/business-debt-law-group | 0 | 0 | 13 | +8 |
+| /reviews/rise-alliance | 1 | 0 | 12 | +5 |
+| /reviews/coastal-debt-resolve | 0 | 0 | 10 | -4 |
+| /reviews/business-debt-insider | 0 | 0 | 7 | +6 |
+| /mca-settlement-companies-bbb-ratings | 0 | 0 | 5 | +2 |
+| /reviews/corporate-rescue | not shown | n/a | not shown | n/a |
+| /reviews/second-wind-consultants | 0 | n/a | 3 | n/a |
+| /mca-debt-relief | 0 | n/a | 2 | n/a |
+| /reviews/eastern-financial-partners | 0 | 0 | 2 | -3 |
+| /reviews/national-debt-relief | 0 | 0 | 2 | -2 |
+| /reviews/business-debt-adjusters | not shown | n/a | not shown | n/a |
+| /reviews/spergel | not shown | n/a | not shown | n/a |
+| /funders/reliant-funding | 0 | n/a | 1 | n/a |
+| /reviews/mca-resolve | 0 | 0 | 1 | -2 |
+
+Missing rows are not treated as zero. Page/query totals may differ from property totals due to reporting limits.
+
+September 18 release: first full week September 19–25; first 28 days September 19–October 16, assessed after reporting lag. This snapshot contains pre-release data and cannot measure the September 18 changes. Qualified leads require separate CRM reconciliation.
