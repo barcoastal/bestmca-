@@ -16,7 +16,7 @@ const CRITERIA = [
 export default function MethodologyPage() {
   return <article className="bg-paper">
     <header className="border-b border-line bg-paper-soft"><div className="mx-auto max-w-3xl px-5 py-14">
-      <p className="text-xs uppercase tracking-widest text-warn">Editorial standards · Updated September 18, 2026</p>
+      <p className="text-xs uppercase tracking-widest text-warn">Editorial standards · Updated September 22, 2026</p>
       <h1 className="mt-3 font-display text-4xl font-semibold text-navy">How we compare MCA settlement companies</h1>
       <p className="mt-4 text-lg text-ink-soft">Our reviews organize public records, company claims, and questions to verify before signing an agreement.</p>
     </div></header>
@@ -32,6 +32,10 @@ export default function MethodologyPage() {
       </section>
       <section><h2 className="font-display text-2xl font-semibold text-navy">What we examine</h2>
         <div className="mt-5 space-y-6">{CRITERIA.map(c => <div key={c.title}><h3 className="font-semibold text-navy">{c.title}</h3><p className="mt-2">{c.text}</p></div>)}</div>
+      </section>
+      <section><h2 className="font-display text-2xl font-semibold text-navy">Research, writing and review</h2>
+        <p className="mt-3">Our anonymous contributor researches, writes and reviews articles. The publisher reports more than 15 years of MCA sales experience; that background has not been independently verified. This is the author’s own editorial review, not a separate expert or legal review.</p>
+        <Link href="/about#contributor" className="mt-3 inline-block text-navy underline">Read the contributor’s background and scope</Link>
       </section>
       <section><h2 className="font-display text-2xl font-semibold text-navy">Sources and corrections</h2>
         <p className="mt-3">Each review identifies the sources checked and their dates. We distinguish company advertising, third-party reviews, complaint allegations, business responses, and specific court or regulator findings. BBB grades, accreditation, customer stars, and complaint totals are separate measures.</p>

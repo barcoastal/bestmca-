@@ -1,3 +1,5 @@
+import { ContributorByline } from "@/components/site/ContributorByline";
+import { contributorSchema } from "@/lib/contributor";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -57,6 +59,7 @@ export default async function NewsPage({
           "@context": "https://schema.org",
           "@type": "NewsArticle",
           headline: article.title,
+          author: contributorSchema,
           description: article.excerpt,
           datePublished: article.publishedAt,
           dateModified: article.updatedAt,
@@ -87,6 +90,7 @@ export default async function NewsPage({
           <h1 className="mt-4 font-display text-4xl md:text-5xl font-semibold text-navy leading-[1.1]">
             {article.title}
           </h1>
+          <ContributorByline />
           <p className="mt-5 text-lg text-ink-soft leading-relaxed">
             {article.excerpt}
           </p>

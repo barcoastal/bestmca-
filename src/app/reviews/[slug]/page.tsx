@@ -1,3 +1,5 @@
+import { ContributorByline } from "@/components/site/ContributorByline";
+import { contributorSchema } from "@/lib/contributor";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -95,6 +97,13 @@ export default async function ReviewPage({
 
   return (
     <article className="bg-paper">
+      {review.ratingNote && <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd({
+        "@context": "https://schema.org", "@type": "Article",
+        headline: `${review.name} Reviews`, author: contributorSchema,
+        publisher: { "@id": "https://www.mcasettlementreviews.com/#organization" },
+        mainEntityOfPage: `https://www.mcasettlementreviews.com/reviews/${review.slug}`,
+        dateModified: review.updatedAt, citation: review.sources?.map(source => source.url),
+      })} />}
       {!review.ratingNote && <script
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLd(reviewSchema(review))}
@@ -134,6 +143,7 @@ export default async function ReviewPage({
                   {review.name} Reviews
                   <span className="text-ink-subtle font-normal"> · 2026</span>
                 </h1>
+          <ContributorByline />
                 <div className="mt-1 text-sm text-ink-subtle">
                   {review.websiteLabel}
                 </div>

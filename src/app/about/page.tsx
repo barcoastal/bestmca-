@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { CONTRIBUTOR_NAME, CONTRIBUTOR_BIO, contributorSchema } from "@/lib/contributor";
+import { jsonLd } from "@/lib/schema";
 import { OWNERSHIP_DISCLOSURE } from "@/lib/disclosure";
 
 export const metadata = {
@@ -11,6 +13,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <article className="bg-paper">
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd({ "@context": "https://schema.org", ...contributorSchema })} />
       <header className="border-b border-line bg-paper-soft">
         <div className="mx-auto max-w-3xl px-5 py-14">
           <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
@@ -41,19 +44,14 @@ export default function AboutPage() {
           </Link>{" "}
           for the placement policy, criteria, and sources.
         </p>
-        <h2 className="font-display text-2xl font-semibold text-navy mt-10">
-          Who writes these reviews
-        </h2>
-        <p>
-          Articles are published under the MCA Settlement Reviews name. Our
-          reviews compare publicly available company materials and third-party
-          records. Source notes identify the material checked and its date.
-          Company claims and customer allegations are distinguished from
-          independently established facts. We have not independently audited
-          client contracts, typical outcomes or the category scores used in our
-          existing rankings. Corrections can be sent to the editorial address
-          below.
-        </p>
+        <section id="contributor" className="scroll-mt-24 rounded-2xl border border-line bg-paper-soft p-6">
+          <h2 className="font-display text-2xl font-semibold text-navy">Who writes and reviews our articles</h2>
+          <h3 className="mt-4 font-semibold text-navy">{CONTRIBUTOR_NAME}</h3>
+          <p className="mt-3">{CONTRIBUTOR_BIO}</p>
+          <p className="mt-3">This background is supplied by the publisher and has not been independently verified. Editorial review is performed by the same contributor who writes the articles; it is not a separate independent review. Sales experience is not a legal or financial advisory qualification.</p>
+          <p className="mt-3">Articles are published by MCA Settlement Reviews. Reviews compare public company materials and third-party records, with dated source notes. The contributor’s experience does not establish a provider’s results. We have not independently audited client contracts or typical outcomes.</p>
+          <p className="mt-3">For corrections or questions about an article, contact <a href="mailto:editorial@mcasettlementreviews.com" className="text-navy underline">editorial@mcasettlementreviews.com</a>.</p>
+        </section>
         <h2 className="font-display text-2xl font-semibold text-navy mt-10">
           What we are not
         </h2>

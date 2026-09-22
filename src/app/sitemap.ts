@@ -29,8 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: "2026-09-18",
       priority: 0.8,
     },
-    { url: `${SITE}/methodology`, lastModified: "2026-09-18", priority: 0.6 },
-    { url: `${SITE}/about`, lastModified: "2026-09-18", priority: 0.5 },
+    { url: `${SITE}/methodology`, lastModified: "2026-09-22", priority: 0.6 },
+    { url: `${SITE}/about`, lastModified: "2026-09-22", priority: 0.5 },
     {
       url: `${SITE}/best-for-trucking-companies`,
       lastModified: "2026-09-18",

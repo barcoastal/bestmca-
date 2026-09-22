@@ -1,3 +1,5 @@
+import { ContributorByline } from "@/components/site/ContributorByline";
+import { contributorSchema } from "@/lib/contributor";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -49,11 +51,7 @@ export default async function GuidePage({
     "@type": "Article",
     headline: guide.title,
     description: guide.metaDescription,
-    author: {
-      "@type": "Organization",
-      name: "MCA Settlement Reviews",
-      url: "https://www.mcasettlementreviews.com/about",
-    },
+    author: contributorSchema,
     publisher: { "@id": "https://www.mcasettlementreviews.com/#organization" },
     mainEntityOfPage: `https://www.mcasettlementreviews.com/guides/${guide.slug}`,
     dateModified: guide.updatedAt,
@@ -80,6 +78,7 @@ export default async function GuidePage({
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold text-navy leading-[1.1]">
             {guide.title}
           </h1>
+          <ContributorByline />
           <p className="mt-5 text-lg text-ink-soft leading-relaxed">
             {guide.intro}
           </p>
