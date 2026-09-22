@@ -300,15 +300,15 @@ export default async function LegitPage({
           href={`/compare/coastal-debt-vs-${firm.slug}`}
           className="text-navy hover:underline"
         >
-          Compare {firm.shortName} vs our #1 pick →
+          Compare {firm.shortName} with Coastal →
         </Link>
       </section>
 
       <div className="mx-auto max-w-4xl px-5 pb-16">
         <CTABanner
           campaign={`legit-${firm.slug}`}
-          heading={`Researching ${firm.name}? Compare it with our #1-rated firm first.`}
-          body={`${COASTAL.name} is BBB Accredited with an A+ rating. Get a free MCA review and a written settlement strategy before you commit to anyone.`}
+          heading={`Researching ${firm.name}? Compare the written proposals.`}
+          body={`${COASTAL.name} is our featured first provider. Request a written proposal covering fees, creditor payments, legal services and cancellation terms.`}
         />
       </div>
     </article>

@@ -1163,7 +1163,7 @@ const SCORED = REVIEW_DATA.map((review) => ({
 // Legacy score inputs are retained for the audit trail, not published as evidence.
 export const REVIEWS: Review[] = SCORED.map((review) => ({
   ...review,
-  updatedAt: review.updatedAt < "2026-09-18" ? "2026-09-18" : review.updatedAt,
+  updatedAt: "2026-09-22",
   sourcesCheckedAt: review.sourcesCheckedAt || "September 11, 2026",
   ratingNote: `${review.name}: numerical editorial ratings are not published because the category assessments have not been independently substantiated. Read the dated sources and service limitations. Placement is editorial, not a measured success rate.`,
   rank: 1 + [...SCORED].sort((a, b) => Number(!!b.isCoastal) - Number(!!a.isCoastal) || b.score - a.score).findIndex((r) => r.slug === review.slug),

@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // intentionally excluded here to avoid a mixed indexing signal.
     {
       url: `${SITE}/mca-settlement-companies-bbb-ratings`,
-      lastModified: "2026-09-14",
+      lastModified: "2026-09-22",
       priority: 0.9,
     },
     {
@@ -51,6 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const legit: MetadataRoute.Sitemap = COMPETITORS.map((c) => ({
     url: `${SITE}/legit/${c.slug}`,
+    lastModified: "2026-09-22",
     priority: 0.75,
   }));
 

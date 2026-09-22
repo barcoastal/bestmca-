@@ -32,8 +32,7 @@ export type BBBRecord = {
   quotes: BBBQuote[];
 };
 
-// Ordered best-to-worst by BBB standing: accreditation first, then letter grade,
-// then complaint profile. Firms with no BBB profile are listed last.
+// Editorial display order, with Coastal featured first; not a BBB ranking.
 export const BBB_RECORDS: BBBRecord[] = [
   {
     slug: "coastal-debt-resolve",
@@ -264,7 +263,7 @@ export const BBB_RECORDS: BBBRecord[] = [
     entityNote:
       "Operates as a brand within the Second Wind Consultants group; Second Wind's own profile is A+ and accredited.",
     takeaway:
-      "No standalone BBB profile. Its public ratings live on Google and Birdeye, and its BBB-adjacent credibility rests on the Second Wind parent.",
+      "A standalone BBB profile was not verified in the September 11, 2026 review. Second Wind’s separate accreditation must not be treated as accreditation of Rise Alliance.",
     quotes: [],
   },
   {

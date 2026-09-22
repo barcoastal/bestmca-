@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { COASTAL, REVIEWS, getReviewBySlug } from "@/data/reviews";
+import { ReviewDecisionGuide } from "@/components/review/ReviewDecisionGuide";
 import { ScoreBadge } from "@/components/review/ScoreBadge";
 import { AtAGlanceCard } from "@/components/review/AtAGlanceCard";
 import { ProsConsTable } from "@/components/review/ProsConsTable";
@@ -156,7 +157,7 @@ export default async function ReviewPage({
             </div>
             {isCoastal && (
               <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-gold/90 text-navy-deep px-3 py-1 text-xs uppercase tracking-[0.16em] font-semibold">
-                Featured provider · Featured provider
+                Featured provider
               </div>
             )}
             {!isCoastal && (
@@ -203,10 +204,11 @@ export default async function ReviewPage({
           {review.sources && (
             <section className="mt-10 rounded-2xl border border-line bg-white p-6">
               <h2 className="font-display text-2xl font-semibold text-navy">Sources checked {review.sourcesCheckedAt || "September 11, 2026"}</h2>
-              <p className="mt-3 text-sm text-ink-muted">This update uses public records and company materials. We did not conduct an intake call, audit case results or review a signed client contract for this update. Category scores remain editorial judgments, not measured success rates.</p>
+              <p className="mt-3 text-sm text-ink-muted">This update uses public records and company materials. We did not conduct an intake call, audit case results or review a signed client contract for this update. Numerical editorial scores are not published; these records do not establish typical settlement outcomes.</p>
               <ul className="mt-5 space-y-5">{review.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-navy underline">{source.label}</a><p className="mt-1 text-sm text-ink-soft leading-relaxed">{source.note}</p></li>)}</ul>
             </section>
           )}
+          <ReviewDecisionGuide review={review} />
           {/* Pros and cons */}
           <section className="mt-12">
             <h2 className="font-display text-2xl font-semibold text-navy">

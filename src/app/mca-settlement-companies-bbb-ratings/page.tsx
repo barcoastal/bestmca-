@@ -159,11 +159,11 @@ function CardLinks({ record }: { record: BBBRecord }) {
 const FAQ = [
   {
     q: "Which MCA settlement company has the best BBB rating?",
-    a: "Multiple firms we track are listed as BBB Accredited with an A+ rating, including Coastal Debt Resolve and Second Wind Consultants. Check the linked BBB profiles for current ratings and accreditation. Several heavily marketed MCA firms are not accredited at all, and one, Corporate Rescue Advisors LLC, holds an F.",
+    a: "Multiple firms we track are listed as BBB Accredited with an A+ rating, including Coastal Debt Resolve and Second Wind Consultants. Check the linked BBB profiles for current ratings and accreditation. A grade does not establish settlement results. Corporate Rescue Advisors is listed as Not Rated in our September 14, 2026 record.",
   },
   {
     q: "What does BBB Accreditation actually require?",
-    a: "Accreditation requires a business to meet BBB standards and, critically, to respond to complaints filed against it. It is not a guarantee of quality, but a firm that is not accredited, or that has lost accreditation, has chosen not to participate in that process or failed to meet the bar.",
+    a: "BBB accreditation requires meeting its standards, including responsiveness to complaints, and paying an accreditation fee. Non-accreditation alone does not establish why a business is not accredited or prove poor service. Accreditation does not guarantee outcomes.",
   },
   {
     q: "Why do some firms have no linked BBB profile?",
@@ -185,52 +185,19 @@ export default function BBBRatingsPage() {
     })),
   };
 
-  // Ranked ItemList of every firm's BBB standing. Each item carries a nested
-  // Review with the BBB letter grade so the ranking is machine-readable.
+  // Describe the comparison without republishing third-party ratings as our own.
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "MCA Settlement Companies Ranked by BBB Record",
-    description:
-      "Selected MCA provider brands compared by recorded BBB accreditation, grades and customer-review averages. Record dates and coverage vary.",
+    name: "MCA provider BBB record comparison",
     url: PAGE_URL,
     numberOfItems: BBB_RECORDS.length,
-    itemListOrder: "https://schema.org/ItemListOrderDescending",
+    itemListOrder: "https://schema.org/ItemListUnordered",
     itemListElement: BBB_RECORDS.map((r, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      item: {
-        "@type": "Organization",
-        name: r.name,
-        ...(r.profileUrl ? { url: r.profileUrl } : {}),
-        ...(typeof r.starRating === "number" && r.reviewCount
-          ? {
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: r.starRating,
-                bestRating: 5,
-                worstRating: 1,
-                reviewCount: r.reviewCount,
-              },
-            }
-          : {}),
-        review: {
-          "@type": "Review",
-          author: { "@type": "Organization", name: "MCA Settlement Reviews" },
-          reviewBody: r.takeaway,
-          ...(r.hasProfile
-            ? {
-                name: `${r.name} BBB record: ${r.grade}${
-                  r.accreditation === "accredited"
-                    ? ", BBB Accredited"
-                    : r.accreditation === "not-accredited"
-                      ? ", not accredited"
-                      : ""
-                }`,
-              }
-            : { name: `${r.name}: no linked BBB profile` }),
-        },
-      },
+      item: { "@type": "Organization", name: r.name,
+        ...(r.profileUrl ? { url: r.profileUrl } : {}) },
     })),
   };
 
@@ -269,13 +236,11 @@ export default function BBBRatingsPage() {
           </p>
           <p className="mt-4 text-lg text-ink-soft leading-relaxed max-w-3xl">
             We compare available Better Business Bureau profiles for selected
-            merchant cash advance settlement and debt-relief firm, the
+            merchant cash advance settlement and debt-relief firms, the
             accreditation status, the letter grade, and the customer-review
-            average, and put them side by side. Every figure below was read
-            directly from{" "}
-            <span className="font-semibold text-ink-soft">bbb.org</span>. We do
-            not accept compensation from any firm, and we did not soften or
-            invent a single number.
+            average, and put them side by side. Records are dated snapshots,
+            not live ratings. Follow the profile links and read the source
+            limitations before comparing providers.
           </p>
         </div>
       </header>
@@ -287,17 +252,16 @@ export default function BBBRatingsPage() {
             How to read a BBB grade
           </h2>
           <p className="mt-3 text-ink-soft leading-relaxed">
-            The Better Business Bureau scores a business from A+ down to F, and
-            separately marks whether it is{" "}
-            <span className="font-semibold text-navy">BBB Accredited</span>.
-            Those two signals matter more than raw complaint counts, which simply
-            scale with how many clients a firm serves. Accreditation requires a
-            company to meet BBB standards and respond to complaints, so a firm
-            that is accredited and rated A+ has both passed the bar and stayed
-            responsive. A firm that is not accredited, or carries a C, D, or F,
-            has not. Among MCA settlement companies, that gap is wide: a few hold
-            A+ accredited records, while others sit at B, F, or have no BBB
-            profile at all.
+            BBB letter grades, accreditation and customer-review averages are
+            separate measures. Customer reviews do not determine the letter grade.
+            A Not Rated record is not an F. Complaint counts need context, including
+            the period covered, business size, responses and outcomes; they are not
+            settlement failure rates. Neither a grade nor accreditation guarantees results.
+          </p>
+          <p className="mt-3 text-sm text-ink-soft">
+            Sources: <a className="underline" href="https://www.bbb.org/about/overview-of-ratings">BBB rating definitions</a>
+            {" · "}<a className="underline" href="https://www.bbb.org/business/accreditation/standards">BBB accreditation standards</a>.
+            Definitions checked September 22, 2026; company records retain their individual dates.
           </p>
         </div>
       </section>
@@ -305,8 +269,24 @@ export default function BBBRatingsPage() {
       {/* Stacked chart: one firm per row, ranked top to bottom */}
       <section className="mx-auto max-w-5xl px-5 py-12">
         <h2 className="font-display text-3xl font-semibold text-navy mb-7">
-          Every MCA settlement company&apos;s BBB rating, ranked
+          Compare the available BBB records
         </h2>
+        <p className="mb-4 text-sm text-ink-soft">Coastal is featured first by editorial choice. Display order is not a BBB ranking. Missing counts mean not verified, not zero; related brands may share a profile.</p>
+        <div className="mb-8 overflow-x-auto rounded-xl border border-line" role="region" aria-label="BBB comparison table" tabIndex={0}>
+          <table className="w-full min-w-[640px] text-left text-sm">
+            <caption className="p-4 text-left text-ink-muted">Dated BBB records at a glance. Detailed check dates, entity notes and profile links appear below.</caption>
+            <thead className="bg-paper-soft text-navy"><tr>
+              {["Company", "Grade", "Accreditation", "Complaints: 3 years", "Closed: 12 months"].map(label => <th key={label} scope="col" className="p-3">{label}</th>)}
+            </tr></thead>
+            <tbody>{BBB_RECORDS.map(r => <tr key={r.name} className="border-t border-line">
+              <th scope="row" className="p-3 font-semibold">{r.slug ? <Link className="underline text-navy" href={`/reviews/${r.slug}`}>{r.name}</Link> : r.name}</th>
+              <td className="p-3">{r.grade}</td>
+              <td className="p-3">{r.accreditation === "accredited" ? "Accredited" : r.accreditation === "not-accredited" ? "Not accredited" : "Not verified"}</td>
+              <td className="p-3">{r.complaints3yr ?? "Not verified"}</td>
+              <td className="p-3">{r.complaints12mo ?? "Not verified"}</td>
+            </tr>)}</tbody>
+          </table>
+        </div>
         <div className="space-y-4">
           {BBB_RECORDS.map((r, i) => (
             <div
@@ -339,7 +319,7 @@ export default function BBBRatingsPage() {
                         </h3>
                         {r.isCoastal && (
                           <span className="rounded-full bg-gold text-navy-deep text-[9px] font-semibold uppercase tracking-[0.14em] px-2 py-0.5">
-                            Our #1
+                            Featured provider
                           </span>
                         )}
                       </div>
@@ -387,7 +367,7 @@ export default function BBBRatingsPage() {
         <p className="mt-6 text-xs text-ink-subtle leading-relaxed">
           Records have different check dates. BBB ratings and reviews are live and
           change over time; check each profile for the current figure. Spergel is
-          listed on BBB Canada and does not serve U.S. MCA cases. Stop MCA&apos;s
+          listed on BBB Canada; U.S. MCA service eligibility was not established. Stop MCA&apos;s
           record is filed under its operating entity, Business Debt Adjusters,
           LLC.
         </p>
@@ -398,7 +378,7 @@ export default function BBBRatingsPage() {
         <CTABanner
           campaign="bbb-ratings"
           heading={`An A+ accredited firm in this comparison: ${BBB_COASTAL.name}`}
-          body="Coastal Debt Resolve is BBB Accredited with an A+ rating. Get a free MCA review, a written settlement strategy, and a flat fee quoted before you sign anything."
+          body="Coastal is our featured first provider. Request a written proposal covering all program fees, creditor payments, legal services and cancellation terms."
         />
       </div>
 
