@@ -30,7 +30,7 @@ export function ReviewDecisionGuide({ review }: { review: Review }) {
   return (
     <section className="mt-10 rounded-2xl border border-line bg-paper-soft p-6" aria-labelledby="before-signing">
       <h2 id="before-signing" className="font-display text-2xl font-semibold text-navy">What to verify before choosing {review.shortName}</h2>
-      <p className="mt-3 text-sm text-ink-muted">This checklist summarizes the dated sources above. It is not a new verification of company records or an inspection of your contract.</p>
+      <p className="mt-3 text-sm text-ink-muted">This checklist summarizes the dated sources above. Company statements are distinguished from verified outcomes; we have not inspected your contract.</p>
       <dl className="mt-5 space-y-4 text-sm text-ink-soft">
         <div><dt className="font-semibold text-navy">Contracting entity</dt><dd className="mt-1">{checks.entity}</dd></div>
         <div><dt className="font-semibold text-navy">Fees and cancellation</dt><dd className="mt-1">{review.pricing}</dd></div>

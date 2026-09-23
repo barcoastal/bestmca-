@@ -51,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const legit: MetadataRoute.Sitemap = COMPETITORS.map((c) => ({
     url: `${SITE}/legit/${c.slug}`,
-    lastModified: "2026-09-22",
+    lastModified: c.updatedAt,
     priority: 0.75,
   }));
 

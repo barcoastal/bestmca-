@@ -1,3 +1,5 @@
+import { REVIEW_RESEARCH, type ResearchUpdate } from "./review-research";
+
 export type RatingKey =
   | "transparency"
   | "results"
@@ -28,6 +30,7 @@ export type Review = {
   score: number;
   updatedAt: string;
   sourcesCheckedAt?: string;
+  researchUpdate?: ResearchUpdate;
   ratingNote?: string;
   sources?: { label: string; url: string; note: string }[];
   isCoastal?: boolean;
@@ -1163,7 +1166,9 @@ const SCORED = REVIEW_DATA.map((review) => ({
 // Legacy score inputs are retained for the audit trail, not published as evidence.
 export const REVIEWS: Review[] = SCORED.map((review) => ({
   ...review,
-  updatedAt: "2026-09-22",
+  updatedAt: REVIEW_RESEARCH[review.slug]?.checkedAt || "2026-09-22",
+  pricing: REVIEW_RESEARCH[review.slug]?.pricing || review.pricing,
+  researchUpdate: REVIEW_RESEARCH[review.slug],
   sourcesCheckedAt: review.sourcesCheckedAt || "September 11, 2026",
   ratingNote: `${review.name}: numerical editorial ratings are not published because the category assessments have not been independently substantiated. Read the dated sources and service limitations. Placement is editorial, not a measured success rate.`,
   rank: 1 + [...SCORED].sort((a, b) => Number(!!b.isCoastal) - Number(!!a.isCoastal) || b.score - a.score).findIndex((r) => r.slug === review.slug),

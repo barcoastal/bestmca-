@@ -102,7 +102,7 @@ export default async function ReviewPage({
         headline: `${review.name} Reviews`, author: contributorSchema,
         publisher: { "@id": "https://www.mcasettlementreviews.com/#organization" },
         mainEntityOfPage: `https://www.mcasettlementreviews.com/reviews/${review.slug}`,
-        dateModified: review.updatedAt, citation: review.sources?.map(source => source.url),
+        dateModified: review.updatedAt, citation: [...new Set([...(review.sources?.map(source => source.url) || []), ...(review.researchUpdate?.findings.map(finding => finding.sourceUrl) || [])])],
       })} />}
       {!review.ratingNote && <script
         type="application/ld+json"
@@ -216,6 +216,19 @@ export default async function ReviewPage({
               <h2 className="font-display text-2xl font-semibold text-navy">Sources checked {review.sourcesCheckedAt || "September 11, 2026"}</h2>
               <p className="mt-3 text-sm text-ink-muted">This update uses public records and company materials. We did not conduct an intake call, audit case results or review a signed client contract for this update. Numerical editorial scores are not published; these records do not establish typical settlement outcomes.</p>
               <ul className="mt-5 space-y-5">{review.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-navy underline">{source.label}</a><p className="mt-1 text-sm text-ink-soft leading-relaxed">{source.note}</p></li>)}</ul>
+            </section>
+          )}
+          {review.researchUpdate && (
+            <section className="mt-10 scroll-mt-24" id="latest-source-check">
+              <h2 className="font-display text-2xl font-semibold text-navy">Fees, contracts and service scope: latest source check</h2>
+              <p className="mt-3 text-sm text-ink-muted">Company pages checked <time dateTime={review.researchUpdate.checkedAt}>{review.researchUpdate.checkedAt}</time>. This check covers public disclosures, not signed client contracts or independently verified results. Earlier BBB and customer-review records retain their own dates above.</p>
+              <div className="mt-6 space-y-6">{review.researchUpdate.findings.map(finding => (
+                <section key={finding.heading} className="rounded-xl border border-line bg-white p-5">
+                  <h3 className="font-semibold text-navy">{finding.heading}</h3>
+                  <p className="mt-2 text-sm text-ink-soft leading-relaxed">{finding.text}</p>
+                  <a href={finding.sourceUrl} className="mt-3 inline-block text-sm text-navy underline" target="_blank" rel="noopener noreferrer">Source: {finding.sourceLabel}</a>
+                </section>
+              ))}</div>
             </section>
           )}
           <ReviewDecisionGuide review={review} />

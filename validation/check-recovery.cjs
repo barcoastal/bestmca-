@@ -1,5 +1,6 @@
 const fs=require('fs'), vm=require('vm'), ts=require('typescript'), assert=require('node:assert/strict');
-const x={exports:{}};vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/data/reviews.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,x);
+const research={exports:{}};vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/data/review-research.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,research);
+const x={exports:{},require:(name)=>{assert.equal(name,'./review-research');return research.exports;}};vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/data/reviews.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,x);
 const {REVIEWS,RANKED,calculateScore}=x.exports;
 assert.equal(calculateScore({transparency:4.5,results:4.5,communication:4.5,cost:4.5,litigation:4}),4.4);
 assert.equal(REVIEWS.find(r=>r.slug==='second-wind-consultants').score,4.1);
