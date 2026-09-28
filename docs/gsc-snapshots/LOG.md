@@ -286,3 +286,45 @@ Totals: **1 clicks**, 158 impressions, 0.6% CTR, avg pos 46.6  (vs 2026-09-05–
 Missing rows are not treated as zero. Page/query totals may differ from property totals due to reporting limits.
 
 September 18 release: first full week September 19–25; first 28 days September 19–October 16, assessed after reporting lag. This snapshot contains pre-release data and cannot measure the September 18 changes. Qualified leads require separate CRM reconciliation.
+
+## 2026-09-28 (window 2026-09-19 to 2026-09-25)
+
+Totals: **1 clicks**, 70 impressions, 1.4% CTR, avg pos 37.8  (vs 2026-09-12–2026-09-18: clicks 0, impr -88, pos -8.8)
+
+| Tracked query | Clicks | Impr | CTR | Pos | Pos delta |
+|---|---|---|---|---|---|
+| best mca debt relief companies | 0 | 2 | 0.0% | 64.0 | +1.2 |
+| mca settlement companies | 0 | 8 | 0.0% | 71.6 | -6.5 |
+| mca debt relief reviews | - | - | - | not shown | |
+| merchant cash advance settlement companies | - | - | - | not shown | |
+| mca debt relief companies | 0 | 1 | 0.0% | 75.0 | new |
+| second wind consultants reviews | - | - | - | not shown | |
+| eastern financial partners reviews | 0 | 2 | 0.0% | 31.5 | new |
+| spergel reviews | 0 | 1 | 0.0% | 34.0 | new |
+| corporate turnaround reviews | 0 | 1 | 0.0% | 49.0 | new |
+| rise alliance reviews | - | - | - | not shown | |
+| regroup partners reviews | 0 | 1 | 0.0% | 37.0 | new |
+
+### Page trends
+
+| Page | Clicks | Click delta | Impressions | Impression delta |
+|---|---:|---:|---:|---:|
+| / | 0 | 0 | 38 | -63 |
+| /reviews/business-debt-insider | 1 | +1 | 4 | -3 |
+| /reviews/coastal-debt-resolve | 0 | 0 | 4 | -6 |
+| /reviews/eastern-financial-partners | 0 | 0 | 4 | +2 |
+| /reviews/rise-alliance | 0 | -1 | 4 | -8 |
+| /mca-settlement-companies-bbb-ratings | 0 | 0 | 3 | -2 |
+| /reviews/corporate-rescue | 0 | n/a | 3 | n/a |
+| /best-mca-settlement-companies-2026 | 0 | n/a | 2 | n/a |
+| /funders/expansion-capital-group | 0 | n/a | 2 | n/a |
+| /reviews/spergel | 0 | n/a | 2 | n/a |
+| /mca-debt-relief | not shown | n/a | not shown | n/a |
+| /about | 0 | n/a | 1 | n/a |
+| /best-mca-settlement-companies-2026 | 0 | n/a | 1 | n/a |
+| /guides/mca-contract-red-flags | 0 | n/a | 1 | n/a |
+| /guides/what-is-mca-settlement | 0 | n/a | 1 | n/a |
+
+Missing rows are not treated as zero. Page/query totals may differ from property totals due to reporting limits.
+
+September 18 release: first full week September 19–25; first 28 days September 19–October 16, assessed after reporting lag. This snapshot is entirely after publication, but does not establish causation. Qualified leads require separate CRM reconciliation.
