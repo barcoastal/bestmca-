@@ -328,3 +328,45 @@ Totals: **1 clicks**, 70 impressions, 1.4% CTR, avg pos 37.8  (vs 2026-09-12–2
 Missing rows are not treated as zero. Page/query totals may differ from property totals due to reporting limits.
 
 September 18 release: first full week September 19–25; first 28 days September 19–October 16, assessed after reporting lag. This snapshot is entirely after publication, but does not establish causation. Qualified leads require separate CRM reconciliation.
+
+## 2026-10-05 (window 2026-09-26 to 2026-10-02)
+
+Totals: **0 clicks**, 98 impressions, 0.0% CTR, avg pos 48.4  (vs 2026-09-19–2026-09-25: clicks -1, impr +28, pos +10.6)
+
+| Tracked query | Clicks | Impr | CTR | Pos | Pos delta |
+|---|---|---|---|---|---|
+| best mca debt relief companies | 0 | 4 | 0.0% | 61.0 | -3.0 |
+| mca settlement companies | 0 | 6 | 0.0% | 73.3 | +1.7 |
+| mca debt relief reviews | 0 | 8 | 0.0% | 31.8 | new |
+| merchant cash advance settlement companies | - | - | - | not shown | |
+| mca debt relief companies | 0 | 2 | 0.0% | 81.5 | +6.5 |
+| second wind consultants reviews | 0 | 1 | 0.0% | 47.0 | new |
+| eastern financial partners reviews | - | - | - | not shown | |
+| spergel reviews | - | - | - | not shown | |
+| corporate turnaround reviews | - | - | - | not shown | |
+| rise alliance reviews | - | - | - | not shown | |
+| regroup partners reviews | - | - | - | not shown | |
+
+### Page trends
+
+| Page | Clicks | Click delta | Impressions | Impression delta |
+|---|---:|---:|---:|---:|
+| / | 0 | 0 | 62 | +24 |
+| /reviews/coastal-debt-resolve | 0 | 0 | 7 | +3 |
+| /mca-debt-relief-for-professional-services | 0 | n/a | 6 | n/a |
+| /reviews/corporate-rescue | 0 | 0 | 5 | +2 |
+| /reviews/eastern-financial-partners | 0 | 0 | 5 | +1 |
+| /reviews/business-debt-insider | not shown | n/a | not shown | n/a |
+| /reviews/rise-alliance | 0 | 0 | 3 | -1 |
+| /mca-settlement-companies-bbb-ratings | not shown | n/a | not shown | n/a |
+| /funders/expansion-capital-group | 0 | 0 | 2 | 0 |
+| /news/ftc-first-mca-refunds-ram-capital | 0 | n/a | 2 | n/a |
+| /reviews/business-debt-law-group | 0 | 0 | 2 | +1 |
+| /reviews/spergel | not shown | n/a | not shown | n/a |
+| /best-mca-settlement-companies-2026 | 0 | 0 | 1 | -1 |
+| /glossary/receivables-purchase-agreement | 0 | n/a | 1 | n/a |
+| /reviews/business-debt-adjusters | 0 | 0 | 1 | 0 |
+
+Missing rows are not treated as zero. Page/query totals may differ from property totals due to reporting limits.
+
+September 18 release: first full week September 19–25; first 28 days September 19–October 16, assessed after reporting lag. This snapshot is entirely after publication, but does not establish causation. Qualified leads require separate CRM reconciliation.
