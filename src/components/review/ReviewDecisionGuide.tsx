@@ -12,6 +12,16 @@ const CHECKS: Record<string, { entity: string; legal: string; questions: string[
     legal: "Business debt and personal-guarantee resolution are advertised; named counsel, jurisdiction and representation require confirmation.",
     questions: ["How does this proposal differ from Second Wind’s offering?", "Which creditors and personal guarantees does the scope cover?", "What fees and obligations remain if a creditor declines the proposal?"],
   },
+  "eastern-financial-partners": {
+    entity: "Match the legal entity and every covered MCA to the proposed agreement.",
+    legal: "The company advertises a dedicated attorney and legal protection. Its public pages do not define the representation, start date or included fees for your case.",
+    questions: ["What are the creditor payments, service fees and legal charges separately?", "Which named attorney handles an existing lawsuit, and when does that engagement begin?", "What assumptions in the published savings example apply to my written proposal?"],
+  },
+  "second-wind-consultants": {
+    entity: "Second Wind and Rise Alliance describe related offerings. Confirm which entity contracts with you and performs each part of the work.",
+    legal: "The company describes creditor negotiations and possible Article 9 restructuring. The transaction and professional roles must be specified in the engagement.",
+    questions: ["Is this proposal limited to creditor negotiations or does it include an Article 9 transaction?", "What work and third-party costs are included in the fixed scope-of-work fee?", "How will liens, personal guarantees and any pending litigation be addressed?"],
+  },
   "business-debt-law-group": {
     entity: "The reviewed company and BBB materials identify Rumore Jocelyn Serra PLLC. Match this to the proposed engagement.",
     legal: "Negotiation, restructuring and lawsuit defense are advertised. Attorney licensing and availability in your jurisdiction were not independently checked.",

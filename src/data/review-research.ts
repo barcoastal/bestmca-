@@ -4,8 +4,26 @@ export type ResearchUpdate = {
   findings: { heading: string; text: string; sourceLabel: string; sourceUrl: string }[];
 };
 
-// Public company disclosures checked September 24; not client-contract audits.
+// Dated public company disclosures; not client-contract audits.
 export const REVIEW_RESEARCH: Record<string, ResearchUpdate> = {
+  "eastern-financial-partners": {
+    checkedAt: "2026-10-07",
+    pricing: "Eastern says its service charges are included in a restructured payment, but its public How It Works page does not give an itemized fee schedule or a case-specific quote. Request the creditor payment, provider and legal charges, total amount paid, payment dates, and cancellation terms separately. The page's $45,000 MCA illustration is marketing material, not an independently verified typical result.",
+    findings: [
+      { heading: "The public offering is MCA-specific", text: "Eastern's How It Works FAQ says it handles business debt restructuring for businesses with merchant cash advances. It describes analyzing balances and payment schedules before negotiating with funders. Ask which of your obligations are within the written scope, especially if you also have loans, tax debt or an active lawsuit. This is the company's service description, not a verified case outcome.", sourceLabel: "Eastern How It Works FAQ", sourceUrl: "https://www.easternfinancialpartners.com/how-it-works" },
+      { heading: "The savings example is not a case-specific quote", text: "The same page compares a $45,000 MCA with a 1.6 factor rate and shows $31,500 for Eastern restructuring against $72,000 in minimum payments. It does not provide the assumptions, creditor agreement or itemized fees needed to apply that figure to another business. Request a written calculation showing the original obligation, proposed creditor payments, all service and legal charges, and the total payable under your plan.", sourceLabel: "Eastern's published MCA illustration", sourceUrl: "https://www.easternfinancialpartners.com/how-it-works" },
+      { heading: "Clarify the advertised attorney role", text: "Eastern's How It Works page says attorneys submit new terms and claims legal protection after a first payment. The page is not a signed legal engagement and does not define what representation is included for a specific case. Ask who the attorney is, which matters and jurisdictions are covered, when representation begins, and whether any legal fee is separate.", sourceLabel: "Eastern How It Works page", sourceUrl: "https://www.easternfinancialpartners.com/how-it-works" },
+    ],
+  },
+  "second-wind-consultants": {
+    checkedAt: "2026-10-07",
+    pricing: "Second Wind's FAQ says it sets a flat, fixed scope-of-work fee before engagement and structures payment over time. The reviewed FAQ does not publish a dollar amount or establish which consulting, creditor-negotiation, Article 9, attorney or third-party costs are included. Request an itemized written scope, payment schedule, cancellation terms and any separate professional fees.",
+    findings: [
+      { heading: "The service can extend beyond MCA negotiation", text: "Second Wind describes Credit Rehabilitation Restructuring as a framework combining payment negotiations with business stabilization and future financing goals. It says some businesses need only creditor accommodations, while others may need an Article 9 restructuring. Ask which work is actually proposed for your business and whether Rise Alliance, Second Wind or another entity will perform it.", sourceLabel: "Second Wind Credit Rehabilitation Restructuring overview", sourceUrl: "https://secondwindconsultants.com/credit-rehabilitation-restructuring/" },
+      { heading: "A fixed-scope fee is advertised, but the amount is case-specific", text: "The company's FAQ says it does not bill hourly or use open-ended retainers and instead sets a flat scope-of-work fee before engagement. This does not establish a universal price or show what outside legal, financing or transaction costs are included. Compare the signed scope and total expected payments with any MCA-only negotiation proposal.", sourceLabel: "Second Wind FAQ on fees", sourceUrl: "https://secondwindconsultants.com/faq/" },
+      { heading: "Ask whether an Article 9 transaction is part of the proposal", text: "The FAQ describes the RISE program using an Article 9 transaction and personal-guarantee negotiations. Its separate restructuring overview says a full Article 9 transaction is not needed in every distressed-business case. If one is proposed, request a written explanation from qualified counsel of the entities, assets, creditor rights, guarantees and costs involved; the public pages do not establish how an individual matter will resolve.", sourceLabel: "Second Wind RISE FAQ", sourceUrl: "https://secondwindconsultants.com/faq/" },
+    ],
+  },
   "coastal-debt-resolve": {
     checkedAt: "2026-09-24",
     pricing: "Coastal advertises a free consultation. Its public disclaimer distinguishes savings before and after program fees, but does not provide an itemized enrollment fee schedule. Obtain program, administration, legal and cancellation charges in writing, separately from creditor payments. The September 12 BBB record noted a no-refund policy; this update did not recheck that record or inspect a signed client agreement.",
