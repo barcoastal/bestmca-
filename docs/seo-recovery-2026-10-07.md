@@ -6,7 +6,7 @@ Read-only Search Console Web Search comparison: July 18–August 14 had 152 clic
 
 Raw read-only diagnostic: `/private/tmp/mca-traffic-diagnosis.json`. The existing weekly Search Console snapshots remain in `docs/gsc-snapshots/`.
 
-## Local changes
+## Published changes
 
 - Eastern Financial Partners and Second Wind Consultants reviews now analyze dated company disclosures about service scope, fee structure and legal or restructuring arrangements. Six new findings link directly to the relevant company pages. Marketing examples are described as examples, not typical outcomes or case-specific quotes.
 - Both reviews now include provider-specific questions for a written proposal. Their editorial modification dates advance to October 7; earlier BBB and customer-review check dates remain unchanged.
@@ -21,4 +21,4 @@ Next.js production build, TypeScript, the three existing validation scripts and 
 
 This is a content and usability improvement, not proof of a ranking fix. Removing earlier Coastal placements may affect consultation clicks; compare organic engagement and qualified inquiries after publication. The first full 28-day period after the September 18 release ends October 16, with Search Console reporting lag afterward. This October 7 work needs its own later comparison window.
 
-The changes are local and have not been published.
+Published from commit `fb4c51e` on October 7 through Railway. The production deployment succeeded. Both updated review URLs returned HTTP 200 and showed the new dated findings, source links and evidence-first navigation. Each rendered page retained one canonical and no `noindex` directive.
