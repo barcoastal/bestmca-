@@ -7,6 +7,11 @@ const CHECKS: Record<string, { entity: string; legal: string; questions: string[
     legal: "Company materials describe an attorney network; included litigation representation and fees were not established.",
     questions: ["Which charges remain payable if I cancel, and how does the stated no-refund policy apply?", "Who is the named attorney, and does the engagement cover an existing lawsuit?", "How much of each payment reaches creditors rather than program or legal fees?"],
   },
+  "corporate-rescue": {
+    entity: "The BBB profile identifies Corporate Rescue Advisors, LLC in Boca Raton. Match it to the proposed agreement.",
+    legal: "Confirm any separate attorney engagement and the services it covers.",
+    questions: ["What does the 60% negotiation milestone measure?", "How is each payment divided between fees, creditor payments and reserves?", "Which charges remain payable if I cancel, and who handles an existing lawsuit?"],
+  },
   "rise-alliance": {
     entity: "Rise identifies itself as part of Second Wind Consultants. Confirm which entity signs the agreement and receives payments.",
     legal: "Business debt and personal-guarantee resolution are advertised; named counsel, jurisdiction and representation require confirmation.",

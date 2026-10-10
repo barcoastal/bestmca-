@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 
 export const metadata = {
   title:
-    "The 17 Best MCA Settlement Firms of 2026, Compared Side by Side",
+    "17 MCA Settlement Companies Compared: Services, Fees & Records",
   description:
     "All 17 MCA debt relief and merchant cash advance settlement firms we reviewed in 2026, compared using dated records, service claims, fees, and review limitations.",
   // This page shows the same ranked leaderboard as the homepage, which was
@@ -23,14 +23,14 @@ export default function BestOfPage() {
         <div className="mx-auto max-w-5xl px-5 py-16">
           <div className="mb-5">
             <Breadcrumbs
-              items={[{ name: "Best Companies 2026", path: "/best-mca-settlement-companies-2026" }]}
+              items={[{ name: "Company comparison", path: "/best-mca-settlement-companies-2026" }]}
             />
           </div>
           <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
-            2026 Independent Ranking
+            2026 Company Comparison
           </div>
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold text-navy leading-tight">
-            The 17 best MCA settlement companies of 2026
+            Compare 17 MCA settlement companies in 2026
           </h1>
           <p className="mt-4 text-lg text-ink-soft leading-relaxed max-w-3xl">
             We evaluated {RANKED.length} merchant cash advance settlement and restructuring
@@ -46,7 +46,7 @@ export default function BestOfPage() {
 
       <section className="mx-auto max-w-5xl px-5 py-12 prose prose-slate max-w-none">
         <h2 className="font-display text-2xl font-semibold text-navy">
-          How we ranked the firms
+          How we compare the firms
         </h2>
         <p className="text-ink-soft leading-relaxed">
           We compare services, public records, and fee limitations. Coastal is
@@ -62,9 +62,9 @@ export default function BestOfPage() {
             href="/mca-settlement-companies-bbb-ratings"
             className="text-navy underline"
           >
-            real Better Business Bureau rating
+            dated Better Business Bureau record
           </Link>
-          , verified directly from bbb.org.
+          , with links to the BBB profiles and their check dates.
         </p>
       </section>
 
@@ -87,16 +87,13 @@ export default function BestOfPage() {
               <div className="flex items-start justify-between gap-6 flex-wrap">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-3">
-                    <span className="font-display text-3xl font-semibold text-navy tabular-nums">
-                      #{r.rank}
-                    </span>
                     <BrandLogo review={r} size={44} />
                     <h3 className="font-display text-2xl font-semibold text-navy">
                       {r.name}
                     </h3>
                     {r.isCoastal && (
                       <span className="rounded-full bg-gold text-navy-deep text-[10px] font-semibold uppercase tracking-[0.14em] px-2.5 py-0.5">
-                        {r.ratingNote ? "Featured provider" : "Top pick"}
+                        Featured provider
                       </span>
                     )}
                   </div>

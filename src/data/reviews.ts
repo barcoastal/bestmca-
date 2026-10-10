@@ -415,12 +415,12 @@ sources: [
   "slug": "corporate-rescue",
   "name": "Corporate Rescue Advisors",
   "shortName": "Corporate Rescue Advisors",
-  "oneLineVerdict": "Corporate Rescue Advisors advertises an MCA restructuring program. Its BBB profile is Not Rated and not accredited. Clarify when negotiations begin and what fees are collected beforehand.",
+  "oneLineVerdict": "Corporate Rescue Advisors advertises an MCA restructuring program. Its BBB profile shows A- and no accreditation (checked October 11, 2026). Clarify when negotiations begin and what fees are collected beforehand.",
   "founded": "2025 (BBB record)",
   "hq": "Boca Raton, Florida",
   "minDebt": "Not verified; request written eligibility criteria",
   "specialties": "Company-advertised MCA restructuring and attorney-related services",
-  "bbb": "Not Rated; not accredited (checked September 14, 2026)",
+  "bbb": "A-; not accredited (checked October 11, 2026)",
   "trustpilot": "Current platform aggregate not verified in this audit",
   "websiteLabel": "corporaterescue.com",
   "firmWebsite": "https://www.corporaterescue.com",
@@ -443,15 +443,15 @@ sources: [
     "Matching BBB profile"
   ],
   "cons": [
-    "Not Rated and not BBB accredited",
+    "Not BBB accredited; complaint responses warrant review",
     "Negotiation timing needs a precise contractual explanation"
   ],
-  "verdict": "BBB lists a May 2025 business start and says previously closed complaints are being addressed. This corrects our older accreditation and founding claims. The prior fraud quotations were not adequately linked and have been removed; no finding of fraud is established here.",
+  "verdict": "CRA advertises MCA restructuring; its public program outline leaves negotiation milestones and payment allocation important to clarify. BBB now shows A- without accreditation, replacing our older Not Rated snapshot. Compare the company’s responses with the complaints and the agreement you receive. Neither a BBB grade nor a complaint establishes typical outcomes.",
   "pricing": "No complete fee schedule was established by the reviewed homepage. Ask for all enrollment, recurring, legal and cancellation charges before paying.",
   "process": "The homepage says negotiations may begin around 60% of the way through its program. Ask what that milestone measures, what happens before it and how creditor actions are handled. Do not interpret the marketing as a guaranteed outcome.",
   "publicQuotes": [],
   "concerns": [],
-  "sourcesCheckedAt": "September 14, 2026",
+  "sourcesCheckedAt": "October 11, 2026",
   "proofPoints": [],
   "ratingNote": "Corporate Rescue Advisors: the existing editorial score is under evidence review. Its category assessments have not been independently substantiated. It is not a measured success rate or a fresh endorsement.",
   "sources": [
@@ -463,7 +463,12 @@ sources: [
     {
       "label": "BBB business profile",
       "url": "https://www.bbb.org/us/fl/boca-raton/profile/financial-consultants/corporate-rescue-advisors-llc-0633-92053458",
-      "note": "Not Rated; not accredited. Checked September 14, 2026. BBB says previously closed complaints are being addressed."
+      "note": "Checked October 11, 2026: A-; not accredited. BBB cites operating history as its rating reason and lists a May 16, 2025 business start."
+    },
+    {
+      "label": "BBB complaints and company responses",
+      "url": "https://www.bbb.org/us/fl/boca-raton/profile/financial-consultants/corporate-rescue-advisors-llc-0633-92053458/complaints",
+      "note": "Checked October 11, 2026: five complaints in three years, five closed in twelve months; four Answered and one Resolved. These statuses are distinct, and allegations are not findings."
     }
   ]
 },

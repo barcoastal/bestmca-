@@ -14,7 +14,7 @@ export function organizationSchema() {
     url: SITE,
     logo: `${SITE}/icon`,
     description:
-      `Reviews and rankings of merchant cash advance (MCA) settlement and debt-relief companies. ${OWNERSHIP_DISCLOSURE}`,
+      `Reviews and comparisons of merchant cash advance (MCA) settlement and debt-relief companies. ${OWNERSHIP_DISCLOSURE}`,
     knowsAbout: [
       "Merchant cash advance settlement",
       "MCA debt relief",

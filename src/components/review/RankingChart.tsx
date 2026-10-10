@@ -32,8 +32,7 @@ function BBBChip({ slug }: { slug: string }) {
   );
 }
 
-// Stacked leaderboard: one firm per row, ranked top to bottom. Matches the
-// visual language of the BBB ratings chart for a consistent feel across the site.
+// Company comparison cards. Placement does not represent performance.
 export function RankingChart({
   reviews = RANKED,
   highlightSlug = "coastal-debt-resolve",
@@ -53,11 +52,6 @@ export function RankingChart({
             }`}
           >
             <div className="flex items-start gap-3 md:gap-5">
-              {/* Rank */}
-              <span className="font-display text-2xl md:text-3xl font-semibold text-ink-subtle tabular-nums leading-none w-7 shrink-0 text-center">
-                {r.rank}
-              </span>
-
               {/* Logo */}
               <BrandLogo review={r} size={52} />
 
@@ -69,14 +63,13 @@ export function RankingChart({
                   </h3>
                   {isCoastal && (
                     <span className="rounded-full bg-gold text-navy-deep text-[9px] font-semibold uppercase tracking-[0.14em] px-2 py-0.5">
-                      {r.ratingNote ? "Featured provider" : "Top pick"}
+                      Featured provider
                     </span>
                   )}
                 </div>
                 <p className="mt-1 text-sm text-ink-soft leading-relaxed line-clamp-2 max-w-2xl">
                   {r.oneLineVerdict}
                 </p>
-                {r.ratingNote && <p className="mt-2 text-xs text-ink-muted">{r.ratingNote}</p>}
                 <div className="mt-2 hidden sm:flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-ink-subtle">
                   <BBBChip slug={r.slug} />
                   <span>

@@ -159,7 +159,7 @@ function CardLinks({ record }: { record: BBBRecord }) {
 const FAQ = [
   {
     q: "Which MCA settlement company has the best BBB rating?",
-    a: "Multiple firms we track are listed as BBB Accredited with an A+ rating, including Coastal Debt Resolve and Second Wind Consultants. Check the linked BBB profiles for current ratings and accreditation. A grade does not establish settlement results. Corporate Rescue Advisors is listed as Not Rated in our September 14, 2026 record.",
+    a: "Multiple firms we track are listed as BBB Accredited with an A+ rating, including Coastal Debt Resolve and Second Wind Consultants. Check the linked BBB profiles for current ratings and accreditation. A grade does not establish settlement results. Corporate Rescue Advisors is listed as A- and not accredited in our October 11, 2026 record.",
   },
   {
     q: "What does BBB Accreditation actually require?",

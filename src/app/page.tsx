@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { RANKED, COASTAL } from "@/data/reviews";
-import { ScoreBadge } from "@/components/review/ScoreBadge";
 import { RankingChart } from "@/components/review/RankingChart";
 import { CTABanner } from "@/components/review/CTABanner";
 import { BrandLogo } from "@/components/review/BrandLogo";
@@ -15,7 +14,7 @@ export const metadata = {
   // owns the "mca settlement reviews" brand query. Head term kept second.
   title: {
     absolute:
-      "MCA Settlement Reviews: Best MCA Debt Relief Companies 2026",
+      "MCA Settlement Reviews: Compare MCA Debt Relief Companies 2026",
   },
   description:
     "Compare 17 MCA settlement and debt relief companies. Read dated BBB records, complaints, fee disclosures, and the limitations behind our editorial comparison.",
@@ -37,7 +36,7 @@ const HOME_FAQ = [
     a: "MCA settlement is the process of negotiating with a merchant cash advance funder to reduce the total owed, restructure the daily or weekly payment, or release a UCC lien. Because MCAs are structured as purchases of future receivables rather than loans, they need a different approach than ordinary debt relief.",
   },
   {
-    q: "How do you rank the companies?",
+    q: "How do you compare the companies?",
     a: "List positions are editorial, with Coastal Debt Resolve featured first. We compare dated public records and company claims across service scope, fees, communication, outcomes, and legal representation. Numerical scores are no longer published because their underlying category assessments have not been independently substantiated. We receive no compensation from featured firms. Read our methodology and each review’s sources and limitations.",
   },
   {
@@ -61,13 +60,12 @@ export default function HomePage() {
     })),
   };
 
-  // Tells Google this page IS the ranked list for "best MCA debt relief
-  // companies" queries, with one entry per firm pointing at its review.
+  // An unordered company comparison, not a performance ranking.
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Best MCA Debt Relief Companies 2026",
-    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    name: "MCA Settlement Company Comparison 2026",
+    itemListOrder: "https://schema.org/ItemListUnordered",
     numberOfItems: RANKED.length,
     itemListElement: RANKED.map((r) => ({
       "@type": "ListItem",
@@ -97,7 +95,7 @@ export default function HomePage() {
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
               2026 Independent Review · Updated{" "}
-              September 18, 2026
+              October 11, 2026
             </div>
             <h1 className="mt-4 font-display text-4xl md:text-6xl font-semibold text-navy leading-[1.05] tracking-tight">
               MCA settlement companies for 2026: compare services, records, and fees.
@@ -113,7 +111,7 @@ export default function HomePage() {
                 campaign="homepage-hero"
                 className="inline-flex items-center justify-center rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep hover:bg-gold/90 transition-colors shadow-[0_2px_10px_rgba(245,184,0,0.35)]"
               >
-                Get a free MCA review →
+                Request a Coastal consultation →
               </TrackedLink>
               <Link
                 href={`/reviews/${COASTAL.slug}`}
@@ -125,14 +123,14 @@ export default function HomePage() {
                 href="/best-mca-settlement-companies-2026"
                 className="inline-flex items-center justify-center rounded-full border border-line bg-white px-6 py-3 text-sm font-semibold text-navy hover:bg-paper-soft transition-colors"
               >
-                Full ranking →
+                Compare all firms →
               </Link>
             </div>
-            <div className="mt-8 flex items-center gap-3 text-xs text-ink-subtle"> Dated Trustpilot record: {COASTAL.trustpilot}
+            <div className="mt-8 flex items-center gap-3 text-xs text-ink-subtle"> Coastal Debt Resolve’s Trustpilot record: {COASTAL.trustpilot}
             </div>
           </div>
 
-          {/* Hero #1 card */}
+          {/* Featured provider card */}
           <Link
             href={`/reviews/${COASTAL.slug}`}
             className="group block rounded-3xl border border-line bg-white p-7 shadow-sm hover:shadow-md transition-shadow"
@@ -142,7 +140,7 @@ export default function HomePage() {
                 Featured provider
               </div>
               <span className="rounded-full bg-gold text-navy-deep text-[10px] font-semibold uppercase tracking-[0.14em] px-2.5 py-1">
-                #1 editorial placement
+                Editorial feature
               </span>
             </div>
             <div className="mt-4 flex items-center gap-3">
@@ -191,14 +189,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Top 10 ranking */}
+      {/* Company comparison */}
       <section className="mx-auto max-w-6xl px-5 py-16">
         <header className="mb-8 max-w-3xl">
           <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
-            The 2026 Ranking
+            The 2026 Comparison
           </div>
           <h2 className="mt-3 font-display text-3xl md:text-4xl font-semibold text-navy">
-            Top 17 MCA settlement and restructuring firms
+            Compare 17 MCA settlement and restructuring firms
           </h2>
           <p className="mt-3 text-base text-ink-soft leading-relaxed">
             Coastal is featured first by editorial choice. List positions do not
@@ -283,7 +281,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why we rank Coastal #1 */}
+      {/* Featured provider */}
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-6xl px-5 py-16 grid gap-12 md:grid-cols-2 items-start">
           <div>
@@ -305,7 +303,7 @@ export default function HomePage() {
               rel="noopener"
               className="mt-7 inline-flex items-center justify-center rounded-full bg-gold text-navy-deep px-6 py-3 text-sm font-semibold hover:bg-gold/90 transition-colors"
             >
-              Get a free MCA review →
+              Request a Coastal consultation →
             </Link>
             <div className="mt-7">
               <BBBSeal campaign="homepage-coastal-seal" />
@@ -336,43 +334,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Browse reviews */}
       <section className="mx-auto max-w-6xl px-5 py-16">
-        <header className="mb-8">
-          <div className="text-[11px] uppercase tracking-[0.24em] font-semibold text-warn">
-            Browse all reviews
-          </div>
-          <h2 className="mt-3 font-display text-3xl md:text-4xl font-semibold text-navy">
-            Every firm we evaluated, in detail
-          </h2>
-        </header>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {RANKED.map((r) => (
-            <Link
-              key={r.slug}
-              href={`/reviews/${r.slug}`}
-              className="group block rounded-2xl border border-line bg-white p-6 shadow-sm hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-center justify-between">
-                <span className="text-[10px] uppercase tracking-[0.18em] font-semibold text-ink-subtle">
-                  Rank #{r.rank}
-                </span>
-                <ScoreBadge score={r.score} variant="compact" />
-              </div>
-              <div className="mt-3 flex items-center gap-3">
-                <BrandLogo review={r} size={36} />
-                <h3 className="font-display text-lg font-semibold text-navy group-hover:underline">
-                  {r.name}
-                </h3>
-              </div>
-              <p className="mt-2 text-sm text-ink-soft leading-relaxed line-clamp-3">
-                {r.oneLineVerdict}
-              </p>
-              <div className="mt-4 text-xs text-ink-subtle">
-                {r.minDebt} · {r.specialties.split(",")[0]}
-              </div>
-            </Link>
-          ))}
+        <div className="rounded-2xl border border-line bg-paper-soft p-8">
+          <h2 className="font-display text-3xl font-semibold text-navy">Find a company review</h2>
+          <p className="mt-3 max-w-2xl text-ink-soft">Looking into a specific provider? Browse all 17 firms alphabetically, then read their sources, fees, complaints and service limitations.</p>
+          <Link href="/reviews" className="mt-5 inline-flex rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white">Browse all company reviews →</Link>
         </div>
       </section>
 

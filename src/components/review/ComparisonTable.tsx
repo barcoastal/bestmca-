@@ -7,7 +7,7 @@ export function ComparisonTable({ reviews = RANKED, highlightSlug = "coastal-deb
   return <div className="space-y-4">
     <p className="text-sm text-ink-soft">Coastal is featured first by editorial choice. Display order does not establish better outcomes; numerical ratings are not published. Compare dated sources and written terms.</p>
     {reviews.map(r => <article key={r.slug} className={`rounded-2xl border p-5 ${r.slug === highlightSlug ? "border-gold bg-gold-soft/30" : "border-line bg-white"}`}>
-      <div className="flex items-center gap-3"><span className="text-lg font-semibold text-navy">{r.rank}.</span><BrandLogo review={r} size={44}/><h3 className="font-display text-xl font-semibold text-navy"><Link href={`/reviews/${r.slug}`}>{r.name}</Link></h3></div>
+      <div className="flex items-center gap-3"><BrandLogo review={r} size={44}/><h3 className="font-display text-xl font-semibold text-navy"><Link href={`/reviews/${r.slug}`}>{r.name}</Link></h3></div>
       <p className="mt-3 text-sm text-ink-soft">{r.oneLineVerdict}</p>
       <dl className="mt-4 grid gap-4 md:grid-cols-2 text-sm">
         <div><dt className="font-semibold">BBB record</dt><dd>{r.bbb}</dd></div>

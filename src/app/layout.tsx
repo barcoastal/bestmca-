@@ -24,11 +24,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.mcasettlementreviews.com"),
   title: {
     default:
-      "MCA Settlement Reviews — Independent Ratings of MCA Debt Relief Companies",
+      "MCA Settlement Reviews — Independent MCA Company Comparisons",
     template: "%s | MCA Settlement Reviews",
   },
   description:
-    "Independent reviews of the top merchant cash advance settlement companies. Compare dated public records, fee disclosures, complaints, and review limitations.",
+    "Independent reviews of merchant cash advance settlement companies. Compare dated public records, fee disclosures, complaints, and review limitations.",
   openGraph: {
     siteName: "MCA Settlement Reviews",
     type: "website",

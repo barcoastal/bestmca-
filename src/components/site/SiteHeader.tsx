@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const NAV = [
-  { href: "/best-mca-settlement-companies-2026", label: "Best of 2026" },
+  { href: "/best-mca-settlement-companies-2026", label: "Compare firms" },
   { href: "/mca-settlement-companies-bbb-ratings", label: "BBB Ratings" },
-  { href: "/reviews/coastal-debt-resolve", label: "Reviews" },
+  { href: "/reviews", label: "Reviews" },
   { href: "/guides/what-is-mca-settlement", label: "Guides" },
   { href: "/news", label: "News" },
   { href: "/methodology", label: "Methodology" },

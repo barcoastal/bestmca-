@@ -217,13 +217,15 @@ export const BBB_RECORDS: BBBRecord[] = [
   "name": "Corporate Rescue Advisors, LLC",
   "shortName": "Corporate Rescue Advisors",
   "accreditation": "not-accredited",
-  "grade": "Not Rated",
+  "grade": "A-",
   "hasProfile": true,
   "started": "2025",
   "hq": "Boca Raton, FL",
   "profileUrl": "https://www.bbb.org/us/fl/boca-raton/profile/financial-consultants/corporate-rescue-advisors-llc-0633-92053458",
-  "takeaway": "Checked September 14, 2026: Not Rated and not accredited. BBB says previously closed complaints are being addressed; business start listed as May 16, 2025.",
+  "takeaway": "Checked October 11, 2026: A- and not accredited. Five complaints in three years; five closed in twelve months. Business start: May 16, 2025.",
   "quotes": [],
+  "complaints3yr": 5,
+  "complaints12mo": 5,
   "slug": "corporate-rescue"
 },
   {

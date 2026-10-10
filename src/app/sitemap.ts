@@ -9,16 +9,18 @@ const SITE = "https://www.mcasettlementreviews.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
-    { url: `${SITE}/`, lastModified: "2026-09-18", priority: 1 },
+    { url: `${SITE}/`, lastModified: "2026-10-11", priority: 1 },
+    { url: `${SITE}/reviews`, lastModified: "2026-10-11", priority: 0.8 },
     // /best-mca-settlement-companies-2026 canonicals to the homepage and is
     // intentionally excluded here to avoid a mixed indexing signal.
     {
       url: `${SITE}/mca-settlement-companies-bbb-ratings`,
-      lastModified: "2026-09-22",
+      lastModified: "2026-10-11",
       priority: 0.9,
     },
     {
       url: `${SITE}/state-of-mca-settlement-2026`,
+      lastModified: "2026-10-11",
       priority: 0.85,
     },
     { url: `${SITE}/mca-debt-relief`, priority: 0.9 },
@@ -29,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: "2026-09-18",
       priority: 0.8,
     },
-    { url: `${SITE}/methodology`, lastModified: "2026-09-22", priority: 0.6 },
+    { url: `${SITE}/methodology`, lastModified: "2026-10-11", priority: 0.6 },
     { url: `${SITE}/about`, lastModified: "2026-09-22", priority: 0.5 },
     {
       url: `${SITE}/best-for-trucking-companies`,

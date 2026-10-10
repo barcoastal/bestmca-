@@ -1,4 +1,3 @@
-import { COASTAL } from "@/data/reviews";
 import Link from "next/link";
 import { OWNERSHIP_DISCLOSURE } from "@/lib/disclosure";
 import { BBBSeal } from "@/components/review/BBBSeal";
@@ -12,11 +11,11 @@ export function SiteFooter() {
             MCA Settlement Reviews
           </div>
           <p className="mt-3 text-sm text-ink-muted leading-relaxed max-w-md">
-            Independent reviews and rankings of merchant cash advance settlement
+            Independent reviews and comparisons of merchant cash advance settlement
             and restructuring companies. We compare public information across transparency,
             results, communication, cost, and litigation defense.
           </p>
-          <p className="mt-3 text-sm text-ink-muted leading-relaxed max-w-md">{COASTAL.ratingNote}</p>
+          <p className="mt-3 text-sm text-ink-muted leading-relaxed max-w-md">Coastal is a featured provider by editorial choice. We do not publish numerical ratings or rank firms by outcomes.</p>
           <div className="mt-5">
             <BBBSeal campaign="bbb-seal-footer" />
             <p className="mt-2 text-[11px] text-ink-subtle max-w-xs leading-relaxed">
@@ -30,12 +29,13 @@ export function SiteFooter() {
             Reviews
           </div>
           <ul className="mt-3 space-y-2 text-sm text-ink-soft">
+            <li><Link href="/reviews" className="hover:text-navy">All company reviews</Link></li>
             <li>
               <Link
                 href="/best-mca-settlement-companies-2026"
                 className="hover:text-navy"
               >
-                Best Companies 2026
+                Compare Companies 2026
               </Link>
             </li>
             <li>

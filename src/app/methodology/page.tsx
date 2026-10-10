@@ -16,7 +16,7 @@ const CRITERIA = [
 export default function MethodologyPage() {
   return <article className="bg-paper">
     <header className="border-b border-line bg-paper-soft"><div className="mx-auto max-w-3xl px-5 py-14">
-      <p className="text-xs uppercase tracking-widest text-warn">Editorial standards · Updated September 22, 2026</p>
+      <p className="text-xs uppercase tracking-widest text-warn">Editorial standards · Updated October 11, 2026</p>
       <h1 className="mt-3 font-display text-4xl font-semibold text-navy">How we compare MCA settlement companies</h1>
       <p className="mt-4 text-lg text-ink-soft">Our reviews organize public records, company claims, and questions to verify before signing an agreement.</p>
     </div></header>
@@ -28,7 +28,7 @@ export default function MethodologyPage() {
       </section>
       <section><h2 className="font-display text-2xl font-semibold text-navy">Why numerical scores are no longer displayed</h2>
         <p className="mt-3">Earlier versions used a weighted five-category score. The category assessments were not independently substantiated, so we stopped publishing those numbers on September 18, 2026. Reproducible arithmetic does not make the underlying judgments verified evidence.</p>
-        <p className="mt-3">List numbers show editorial display positions. Coastal stays first; the remaining sequence is retained for continuity and does not measure relative performance. We do not assign category winners or publish rating structured data from the retired scores.</p>
+        <p className="mt-3">The homepage features Coastal first; the remaining comparison sequence is retained for continuity and does not measure relative performance. The company review directory is alphabetical. We have removed numbered placement badges so they are not mistaken for performance ratings. We do not assign category winners or publish rating structured data from the retired scores.</p>
       </section>
       <section><h2 className="font-display text-2xl font-semibold text-navy">What we examine</h2>
         <div className="mt-5 space-y-6">{CRITERIA.map(c => <div key={c.title}><h3 className="font-semibold text-navy">{c.title}</h3><p className="mt-2">{c.text}</p></div>)}</div>

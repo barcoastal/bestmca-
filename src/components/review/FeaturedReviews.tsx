@@ -2,9 +2,7 @@ import Link from "next/link";
 import { RANKED } from "@/data/reviews";
 import { BrandLogo } from "./BrandLogo";
 
-// Funnels internal link equity from content pages (guides, funders, glossary,
-// pillars) into the firm review pages, the site's money pages. Links the
-// top-ranked firms by default so the strongest commercial pages get the weight.
+// Contextual links to existing reviews, with the full directory available.
 export function FeaturedReviews({
   count = 6,
   heading = "Compare the firms we reviewed",
@@ -21,10 +19,10 @@ export function FeaturedReviews({
             {heading}
           </h2>
           <Link
-            href="/"
+            href="/reviews"
             className="text-xs font-semibold text-navy hover:underline whitespace-nowrap"
           >
-            Full 2026 ranking →
+            All reviews →
           </Link>
         </div>
         <div className="mt-4 grid gap-2 sm:grid-cols-2">
@@ -40,7 +38,7 @@ export function FeaturedReviews({
                   {r.name}
                 </span>
                 <span className="block text-[11px] text-ink-subtle">
-                  Position #{r.rank}
+                  Company review
                 </span>
               </span>
             </Link>

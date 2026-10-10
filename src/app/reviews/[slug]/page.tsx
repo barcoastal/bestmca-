@@ -111,7 +111,7 @@ export default async function ReviewPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLd(
           breadcrumbSchema([
-            { name: "Best Companies 2026", path: "/best-mca-settlement-companies-2026" },
+            { name: "Company reviews", path: "/reviews" },
             { name: review.name, path: `/reviews/${review.slug}` },
           ]),
         )}
@@ -127,10 +127,10 @@ export default async function ReviewPage({
               </Link>
               <span>·</span>
               <Link
-                href="/best-mca-settlement-companies-2026"
+                href="/reviews"
                 className="hover:text-navy"
               >
-                Best of 2026
+                Company reviews
               </Link>
               <span>·</span>
               <span className="text-ink-soft">{isCoastal ? "Featured provider" : "Company review"}</span>
@@ -227,7 +227,7 @@ export default async function ReviewPage({
           {review.researchUpdate && (
             <section className="mt-10 scroll-mt-24" id="latest-source-check">
               <h2 className="font-display text-2xl font-semibold text-navy">Fees, contracts and service scope: latest source check</h2>
-              <p className="mt-3 text-sm text-ink-muted">Company pages checked <time dateTime={review.researchUpdate.checkedAt}>{review.researchUpdate.checkedAt}</time>. This check covers public disclosures, not signed client contracts or independently verified results. Earlier BBB and customer-review records retain their own dates above.</p>
+              <p className="mt-3 text-sm text-ink-muted">Public sources checked <time dateTime={review.researchUpdate.checkedAt}>{review.researchUpdate.checkedAt}</time>. This check covers public disclosures and records, not signed client contracts or independently verified results. Other source checks retain their own dates above.</p>
               <div className="mt-6 space-y-6">{review.researchUpdate.findings.map(finding => (
                 <section key={finding.heading} className="rounded-xl border border-line bg-white p-5">
                   <h3 className="font-semibold text-navy">{finding.heading}</h3>
