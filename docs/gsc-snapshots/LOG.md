@@ -370,3 +370,45 @@ Totals: **0 clicks**, 98 impressions, 0.0% CTR, avg pos 48.4  (vs 2026-09-19–2
 Missing rows are not treated as zero. Page/query totals may differ from property totals due to reporting limits.
 
 September 18 release: first full week September 19–25; first 28 days September 19–October 16, assessed after reporting lag. This snapshot is entirely after publication, but does not establish causation. Qualified leads require separate CRM reconciliation.
+
+## 2026-10-12 (window 2026-10-03 to 2026-10-09)
+
+Totals: **1 clicks**, 96 impressions, 1.0% CTR, avg pos 53.2  (vs 2026-09-26–2026-10-02: clicks +1, impr -2, pos +4.8)
+
+| Tracked query | Clicks | Impr | CTR | Pos | Pos delta |
+|---|---|---|---|---|---|
+| best mca debt relief companies | 0 | 2 | 0.0% | 63.5 | +2.5 |
+| mca settlement companies | 0 | 5 | 0.0% | 77.4 | +4.1 |
+| mca debt relief reviews | 0 | 5 | 0.0% | 42.0 | +10.3 |
+| merchant cash advance settlement companies | 0 | 6 | 0.0% | 93.5 | new |
+| mca debt relief companies | 0 | 1 | 0.0% | 86.0 | +4.5 |
+| second wind consultants reviews | 0 | 1 | 0.0% | 51.0 | +4.0 |
+| eastern financial partners reviews | 0 | 1 | 0.0% | 28.0 | new |
+| spergel reviews | - | - | - | not shown | |
+| corporate turnaround reviews | 0 | 2 | 0.0% | 50.0 | new |
+| rise alliance reviews | - | - | - | not shown | |
+| regroup partners reviews | - | - | - | not shown | |
+
+### Page trends
+
+| Page | Clicks | Click delta | Impressions | Impression delta |
+|---|---:|---:|---:|---:|
+| / | 0 | 0 | 70 | +8 |
+| /reviews/rise-alliance | 1 | +1 | 4 | +1 |
+| /reviews/coastal-debt-resolve | 0 | 0 | 4 | -3 |
+| /funders/expansion-capital-group | 0 | 0 | 3 | +1 |
+| /mca-debt-relief-for-professional-services | 0 | 0 | 2 | -4 |
+| /reviews/business-debt-adjusters | 0 | 0 | 2 | +1 |
+| /reviews/business-debt-law-group | 0 | 0 | 2 | 0 |
+| /reviews/corporate-rescue | 0 | 0 | 2 | -3 |
+| /news/ftc-first-mca-refunds-ram-capital | not shown | n/a | not shown | n/a |
+| /glossary/specified-percentage | 0 | n/a | 1 | n/a |
+| /guides/mca-debt-relief-red-flags | 0 | n/a | 1 | n/a |
+| /news/coastal-debt-resolve-bbb-torch-awards-sponsorship | 0 | n/a | 1 | n/a |
+| /reviews/business-debt-insider | 0 | n/a | 1 | n/a |
+| /reviews/eastern-financial-partners | 0 | 0 | 1 | -4 |
+| /reviews/mca-resolve | 0 | n/a | 1 | n/a |
+
+Missing rows are not treated as zero. Page/query totals may differ from property totals due to reporting limits.
+
+September 18 release: first full week September 19–25; first 28 days September 19–October 16, assessed after reporting lag. This snapshot is entirely after publication, but does not establish causation. Qualified leads require separate CRM reconciliation.
